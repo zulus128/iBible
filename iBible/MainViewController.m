@@ -92,18 +92,32 @@
     blue.backgroundColor = [UIColor colorWithRed:0x0e/255.0f green:0x22/255.0f blue:0x33/255.0f alpha:0.9f];
     [self.view addSubview:blue];
  
-    [NSLayoutConstraint constraintWithItem:blue attribute:NSLayoutAttributeLeft
+    [blue setTranslatesAutoresizingMaskIntoConstraints:NO];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:blue attribute:NSLayoutAttributeLeft
                                  relatedBy:NSLayoutRelationEqual toItem:self.view
-                                 attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0];
-    [NSLayoutConstraint constraintWithItem:blue attribute:NSLayoutAttributeRight
+                                 attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:blue attribute:NSLayoutAttributeRight
                                  relatedBy:NSLayoutRelationEqual toItem:self.view
-                                 attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0];
-    [NSLayoutConstraint constraintWithItem:blue attribute:NSLayoutAttributeTop
+                                 attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:blue attribute:NSLayoutAttributeTop
                                  relatedBy:NSLayoutRelationEqual toItem:self.view
-                                 attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0];
-    [NSLayoutConstraint constraintWithItem:blue attribute:NSLayoutAttributeBottom
+                                 attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:blue attribute:NSLayoutAttributeBottom
                                  relatedBy:NSLayoutRelationEqual toItem:self.view
-                                 attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0];
+                                 attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
+    [self showMenu];
+}
+
+- (void) showMenu {
+
+    CGRect sb = [[UIApplication sharedApplication] statusBarFrame];
+    NSLog(@"sbh = %f", sb.size.height);
+
+    UIView* blue = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 100, 100)];
+    blue.tag = BLUEFON_TAG;
+    blue.backgroundColor = [UIColor colorWithRed:0x0e/255.0f green:0x22/255.0f blue:0x33/255.0f alpha:0.9f];
+    [self.view addSubview:blue];
 
 }
 

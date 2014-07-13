@@ -8,6 +8,17 @@
 
 #import "MainViewController.h"
 
+@implementation NSString ( containsCategory )
+
+- (BOOL) containsString: (NSString*) substring
+{
+    NSRange range = [self.lowercaseString rangeOfString : substring.lowercaseString];
+    BOOL found = ( range.location != NSNotFound );
+    return found;
+}
+
+@end
+
 @implementation MainViewController
 
 - (void)viewDidLoad
@@ -17,10 +28,33 @@
     self.innerViewHeight.constant = 44.5f;
     self.csHeight.constant = 37.5f;
     self.csWidth.constant = 53.5f;
+    self.rusHeight.constant = 37.5f;
+    self.rusWidth.constant = 53.5f;
     self.spaceBetweenRuCs.constant = 13.5f;
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     self.curLanguage = [prefs integerForKey:LNG_USERDEF];
+//    [self refreshUnderline];
+    [self performSelector:@selector(refreshUnderline) withObject:nil afterDelay:0.2f];
+
+ 
+    statusBarVisible = YES;
+    
+    [self parseJsons];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardDidShow:)
+                                                 name:UIKeyboardDidShowNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardDidHide:)
+                                                 name:UIKeyboardDidHideNotification
+                                               object:nil];
+}
+
+- (void) refreshUnderline {
+
     switch (self.curLanguage) {
         default:
             [self langButtonPressed:self.buttonRus];
@@ -29,10 +63,32 @@
             [self langButtonPressed:self.buttonCs];
             break;
     }
- 
-    statusBarVisible = YES;
+}
+
+-(void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    UIView* prev = [self.view viewWithTag:UNDERLINE_TAG];
+    [prev removeFromSuperview];
+
+}
+
+- (void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+
+    [self refreshUnderline];
+}
+
+- (float) getScreenHeight {
     
-    [self parseJsons];
+    CGFloat screenHeight;
+    // it is important to do this after presentModalViewController:animated:
+    if ([[UIApplication sharedApplication] statusBarOrientation] == UIDeviceOrientationPortrait || [[UIApplication sharedApplication] statusBarOrientation] == UIDeviceOrientationPortraitUpsideDown){
+        screenHeight = [UIScreen mainScreen].applicationFrame.size.height;
+    }
+    else{
+        screenHeight = [UIScreen mainScreen].applicationFrame.size.width;
+    }
+    
+    return screenHeight;
 }
 
 - (void) parseJsons
@@ -50,7 +106,7 @@
     } else {
         
         NSLog(@"Parsing groups: OK!");
-        //        NSLog(@"Parsing groups: OK! %@", self.grsjson);
+//        NSLog(@"Parsing groups: OK! %@", self.grsjson);
     }
     
     NSString* bkPath = [[NSBundle mainBundle] pathForResource:@"books" ofType:@"json"];
@@ -68,6 +124,47 @@
 //        NSLog(@"Parsing books: OK! %@", self.bookjson);
     }
     
+}
+
+- (NSString*) getBookShortNameForCode:(NSString*)code/* andChapter:(int)ch*/ {
+    
+    for(NSDictionary* d in [self.bookjson allValues]) {
+
+        NSString* shortEn = [d objectForKey:JSON_BOOK_SHORTEN];
+        if([shortEn isEqualToString:code]) {
+            
+            return [d objectForKey:JSON_BOOK_SHORTRU];
+        }
+    }
+    
+    return @"N/a";
+}
+
+- (NSArray*) searchBooks:(NSString*) title {
+
+    NSMutableArray *filteredBooks = [NSMutableArray array];
+    
+    for(int i = 1; i <= self.bookjson.count; i++) {
+        
+        NSDictionary* d = [self.bookjson objectForKey:[NSString stringWithFormat:@"%d", i]];
+        NSString* s = [d objectForKey:JSON_BOOK_DISPLAYNAME];
+        if(!title.length || [s containsString:title]){
+            
+            [filteredBooks addObject:d];
+        }
+    }
+//    if(title.length < 3) {//including ''
+//        
+//        filteredBooks = [self.bookjson allValues];
+//        
+//    }
+//    else {
+//        NSPredicate *filter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@ contains[c] %@", JSON_BOOK_DISPLAYNAME, title]];
+//        filteredBooks = [[self.bookjson allValues] filteredArrayUsingPredicate:filter];
+//    }
+
+    NSLog(@"cnt = %d", filteredBooks.count);
+    return filteredBooks;
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -89,29 +186,35 @@
 
 - (IBAction)langButtonPressed:(id)sender {
 
-    float x, w;
+//    float x, w;
+    UIView* but;
     switch (((UIButton*)sender).tag) {
         default:
-            x = self.buttonRus.frame.origin.x;
-            w = self.buttonRus.frame.size.width;
+//            x = self.buttonRus.frame.origin.x;
+//            w = self.buttonRus.frame.size.width;
+            but = self.buttonRus;
             self.curLanguage = lngRu;
             break;
         case lngCs:
-            x = self.buttonCs.frame.origin.x;
-            w = self.buttonCs.frame.size.width;
+//            x = self.buttonCs.frame.origin.x;
+//            w = self.buttonCs.frame.size.width;
+            but = self.buttonCs;
             self.curLanguage = lngCs;
             break;
     }
 
-    float y = self.view.frame.size.height - 3.5f;
-//    float y = 300;
+//    float y = [self getScreenHeight] - 3.5f;
+//    y = 300;
+//    NSLog(@"y = %f", [self getScreenHeight]);
     UIView* prev = [self.view viewWithTag:UNDERLINE_TAG];
     [prev removeFromSuperview];
-    
-    UIView* new = [[UIView alloc] initWithFrame:CGRectMake(x, y, w, 3.5f)];
+//    UIView* new = [[UIView alloc] initWithFrame:CGRectMake(x, y, w, 3.5f)];
+    UIView* new = [[UIView alloc] initWithFrame:CGRectMake(0, but.frame.size.height - 0.5f, but.frame.size.width, 3.5f)];
     new.tag = UNDERLINE_TAG;
     new.backgroundColor = [UIColor colorWithRed:102/255.0f green:76/255.0f blue:15/255.0f alpha:1];
-    [self.view addSubview:new];
+//    [self.view addSubview:new];
+    
+    [but addSubview:new];
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setInteger:self.curLanguage forKey:LNG_USERDEF];
@@ -134,6 +237,9 @@
                          
                          [blue removeFromSuperview];
                          [menu removeFromSuperview];
+                         
+                         [self setNeedsStatusBarAppearanceUpdate];
+
                      }];
 
 }
@@ -142,7 +248,9 @@
     
     //    CGRect sb = [[UIApplication sharedApplication] statusBarFrame];
     //    NSLog(@"sbh = %f", sb.size.height);
-    
+
+    [self setNeedsStatusBarAppearanceUpdate];
+  
     UIView* blue = [self getBlueFon];
     UIView* menu = [self getMenu];
     
@@ -156,6 +264,8 @@
                          
                      }
                      completion:^(BOOL finished) {
+                         
+
                      }];
     
 }
@@ -189,7 +299,7 @@
      forControlEvents:UIControlEventTouchUpInside];
     //    button.frame = CGRectMake(80.0, 210.0, 67, 44.0);
     [button setBackgroundImage:[UIImage imageNamed:@"bottom-menu-button"] forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor colorWithRed:0xee/255.0f green:0xdf/255.0f blue:0xbe/255.0f alpha:1.0f];
+    button.backgroundColor = MENU_FON_COLOR;
     [blue addSubview:button];
     NSDictionary *viewsDictionary = @{@"view":button};
     [blue addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[view(==67)]" options:0 metrics:nil views:viewsDictionary]];
@@ -203,7 +313,6 @@
     
     UIView* menu= [[UIView alloc] initWithFrame:CGRectMake(10, 10, 100, 100)];
     menu.tag = MENU_TAG;
-//    menu.backgroundColor = [UIColor colorWithRed:0xee/255.0f green:0xdf/255.0f blue:0xbe/255.0f alpha:1.0f];
     [self.view addSubview:menu];
     [menu setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:menu attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view                                                          attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
@@ -234,35 +343,36 @@
     [menu addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[layer]-0-|" options:0 metrics:nil views:viewsDictionary1]];
     [menu addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[layer]-0-|" options:0 metrics:nil views:viewsDictionary1]];
     [scroll setTranslatesAutoresizingMaskIntoConstraints:NO];
-    scroll.backgroundColor = [UIColor colorWithRed:0xee/255.0f green:0xdf/255.0f blue:0xbe/255.0f alpha:1.0f];
-
-    UIView* innerView= [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 200)];
-//    innerView.backgroundColor = [UIColor redColor];
-    [scroll addSubview:innerView];
-    [innerView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    scroll.backgroundColor = MENU_FON_COLOR;
+    scroll.tag = SCROLL_TAG;
     
-    [scroll addConstraint:[NSLayoutConstraint constraintWithItem:innerView attribute:NSLayoutAttributeLeft
+    self.innerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 200)];
+//    innerView.backgroundColor = [UIColor redColor];
+    [scroll addSubview:self.innerView];
+    [self.innerView setTranslatesAutoresizingMaskIntoConstraints:NO];
+    
+    [scroll addConstraint:[NSLayoutConstraint constraintWithItem:self.self.innerView attribute:NSLayoutAttributeLeft
                                                           relatedBy:NSLayoutRelationEqual toItem:scroll
                                                           attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
-    [scroll addConstraint:[NSLayoutConstraint constraintWithItem:innerView attribute:NSLayoutAttributeRight
+    [scroll addConstraint:[NSLayoutConstraint constraintWithItem:self.innerView attribute:NSLayoutAttributeRight
                                                           relatedBy:NSLayoutRelationEqual toItem:scroll
                                                           attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0]];
-    [scroll addConstraint:[NSLayoutConstraint constraintWithItem:innerView attribute:NSLayoutAttributeTop
+    [scroll addConstraint:[NSLayoutConstraint constraintWithItem:self.innerView attribute:NSLayoutAttributeTop
                                                           relatedBy:NSLayoutRelationEqual toItem:scroll
                                                           attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0]];
-    [scroll addConstraint:[NSLayoutConstraint constraintWithItem:innerView attribute:NSLayoutAttributeBottom
+    [scroll addConstraint:[NSLayoutConstraint constraintWithItem:self.innerView attribute:NSLayoutAttributeBottom
                                                           relatedBy:NSLayoutRelationEqual toItem:scroll
                                                           attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]];
 
-    
-    [scroll addConstraint:[NSLayoutConstraint constraintWithItem:innerView
-                                                       attribute:NSLayoutAttributeHeight
-                                                       relatedBy:NSLayoutRelationEqual
-                                                          toItem:nil
-                                                       attribute:NSLayoutAttributeNotAnAttribute
-                                                      multiplier:1.0
-                                                        constant:3000.0]];
-    [scroll addConstraint:[NSLayoutConstraint constraintWithItem:innerView
+    self.scrollHeight = [NSLayoutConstraint constraintWithItem:self.innerView
+                                 attribute:NSLayoutAttributeHeight
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:nil
+                                 attribute:NSLayoutAttributeNotAnAttribute
+                                multiplier:1.0
+                                                      constant:3000.0];
+    [scroll addConstraint:self.scrollHeight];
+    [scroll addConstraint:[NSLayoutConstraint constraintWithItem:self.innerView
                                                        attribute:NSLayoutAttributeWidth
                                                        relatedBy:NSLayoutRelationEqual
                                                           toItem:nil
@@ -270,13 +380,8 @@
                                                       multiplier:1.0
                                                         constant:303.0]];
     
-//    for (int i = 0; i < 100; i++) {
-//        
-//        UIView* iView= [[UIView alloc] initWithFrame:CGRectMake(0, i * 20, 15, 15)];
-//        iView.backgroundColor = [UIColor yellowColor];
-//        [innerView addSubview:iView];
-//    }
-    
+    UITapGestureRecognizer *innerFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleInnerTap:)];
+    [self.innerView addGestureRecognizer:innerFingerTap];
     
     //Razdels
     
@@ -288,14 +393,247 @@
 //    rname.backgroundColor = [UIColor greenColor];
     rname.numberOfLines = 0;
     [rname sizeToFit];
-    [innerView addSubview:rname];
+    [self.innerView addSubview:rname];
 
+    for(int i = 1; i <= self.grsjson.count; i++) {
+        
+        NSDictionary* gr = [self.grsjson objectForKey:[NSString stringWithFormat:@"%d", i]];
+//        NSLog(@"i = %d, gr = %@", i, [gr objectForKey:JSON_BOOK_LASTCODE]);
+        
+        UIView* grview = [[UIView alloc] initWithFrame:CGRectMake(16.0f + (i - 1) * 95 - COVER_DELTAX, 40.5f, 80 + 2 * COVER_DELTAX, 100 + COVER_DELTAY)];
+//        grview.backgroundColor = [UIColor greenColor];
+        [self.innerView addSubview:grview];
+
+        UIImageView* iv = [[UIImageView alloc] initWithFrame:CGRectMake(COVER_DELTAX, 0, 80, 100)];
+        iv.image = [UIImage imageNamed:[NSString stringWithFormat:@"group-%d", i]];
+        [grview addSubview:iv];
+
+        UILabel* cname = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, grview.frame.size.width, 25)];
+        cname.backgroundColor = [UIColor clearColor];
+//        cname.backgroundColor = [UIColor blueColor];
+        cname.textColor = [UIColor colorWithRed:0x48/255.0f green:0x39/255.0f blue:0x0b/255.0f alpha:1.0f];
+        cname.font = FONT_COVER_NAME;
+        cname.text = [gr objectForKey:JSON_GROUP_NAME];
+        [cname setTextAlignment:NSTextAlignmentCenter];
+        [grview addSubview:cname];
+        
+        UILabel* cpart = [[UILabel alloc] initWithFrame:CGRectMake(0, 120, grview.frame.size.width, 20)];
+        cpart.backgroundColor = [UIColor clearColor];
+//        cpart.backgroundColor = [UIColor blueColor];
+        cpart.textColor = [UIColor colorWithRed:0xb4/255.0f green:0x94/255.0f blue:0x4f/255.0f alpha:1.0f];
+        cpart.font = FONT_COVER_NAME;
+        NSString* cn = [self getBookShortNameForCode:[gr objectForKey:JSON_BOOK_LASTCODE]];
+        NSNumber* nn = [gr valueForKey:JSON_BOOK_LASTCHAPTER];
+        cpart.text = [NSString stringWithFormat:@"%@. %d", cn, nn.intValue];
+        [cpart setTextAlignment:NSTextAlignmentCenter];
+        [grview addSubview:cpart];
+        
+        grview.tag = i;
+        UITapGestureRecognizer *singleFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGroupTap:)];
+        [grview addGestureRecognizer:singleFingerTap];
+
+    }
     
+    //Separator
     
+    UIView* sepview = [[UIView alloc] initWithFrame:CGRectMake(0, 195, 303, 1)];
+    sepview.backgroundColor = [UIColor colorWithRed:0xb4/255.0f green:0x94/255.0f blue:0x4f/255.0f alpha:1.0f];
+    [self.innerView addSubview:sepview];
+
+    //All books
     
-    
+    UILabel* bname = [[UILabel alloc] initWithFrame:CGRectMake(17.5f, sepview.frame.origin.y + 15.5f, 300, 50)];
+    bname.backgroundColor = [UIColor clearColor];
+    bname.textColor = [UIColor colorWithRed:0x72/255.0f green:0x58/255.0f blue:0x1d/255.0f alpha:1.0f];
+    bname.font = FONT_RAZDEL_NAME;
+    bname.text = ALLBOOKS_TEXT_NAME;
+    //    rname.backgroundColor = [UIColor greenColor];
+    bname.numberOfLines = 0;
+    [bname sizeToFit];
+    [self.innerView addSubview:bname];
+   
+    UISearchBar* sbar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, bname.frame.origin.y + 20, 303, 44)];
+
+    sbar.delegate = self;
+    sbar.layer.borderWidth = 2;
+    sbar.layer.borderColor = [MENU_FON_COLOR CGColor];
+    sbar.barTintColor = MENU_FON_COLOR;
+    sbar.placeholder = SEARCH_PLACEHOLDER;
+
+    CGSize size = CGSizeMake(300, 30);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 1);
+    [[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, 300, 30) cornerRadius:5.0] addClip];
+    [SEARCHBAR_FON_COLOR setFill];
+    UIRectFill(CGRectMake(0, 0, size.width, size.height));
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    [sbar setSearchFieldBackgroundImage:image forState:UIControlStateNormal];
+    sbar.tag = SEARCHBAR_TAG;
+    [self.innerView addSubview:sbar];
+
+    [self setSearchResults:@""];
     
     return menu;
+}
+
+- (void) setSearchResults:(NSString*) text {
+    
+//    self.res = [self searchBooks:[NSString stringWithFormat:@"'%@'", text]];
+    self.res = [self searchBooks:text];
+    NSLog(@"res = %@", self.res);
+
+    UIView* noresv = [self.innerView viewWithTag:NORESULTS_TAG];
+    [noresv removeFromSuperview];
+
+    UIView* sres = [self.innerView viewWithTag:SEARCHRESULTS_TAG];
+    if(!self.res.count && text.length) {
+        
+        [sres removeFromSuperview];
+        
+        UILabel* nores = [[UILabel alloc] initWithFrame:CGRectMake(0, 70, 300, 50)];
+        nores.backgroundColor = [UIColor clearColor];
+        nores.textColor = [UIColor colorWithRed:0xb6/255.0f green:0xab/255.0f blue:0x92/255.0f alpha:1.0f];
+        nores.font = FONT_NORES_NAME;
+        nores.text = NORES_TEXT;
+        nores.tag = NORESULTS_TAG;
+        [nores setTextAlignment:NSTextAlignmentCenter];
+        [self.innerView addSubview:nores];
+        
+        [self refreshNoRes:NO];
+
+    }
+    else {
+        
+        if(!sres) {
+            
+            sres = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 303, 0)];
+            sres.backgroundColor = [UIColor whiteColor];
+            sres.tag = SEARCHRESULTS_TAG;
+//            sres.userInteractionEnabled = YES;
+            [self.innerView addSubview:sres];
+//            UITapGestureRecognizer *innerFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleInnerTap:)];
+//            [self.innerView addGestureRecognizer:innerFingerTap];
+
+
+        }
+        
+        for(UIView* c in sres.subviews) {
+            
+            [c removeFromSuperview];
+        }
+        
+        UIView* sbar = [self.innerView viewWithTag:SEARCHBAR_TAG];
+        CGRect f = sres.frame;
+        sres.frame = CGRectMake(f.origin.x, sbar.frame.origin.y + 45, f.size.width, self.res.count * SEARCHRES_LINE_HEIGHT);
+        for(int i = 0; i < self.res.count; i++) {
+            
+            NSDictionary* item = [self.res objectAtIndex:i];
+            UIButton* button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+            [button1 addTarget:self action:@selector(btSelected:) forControlEvents:UIControlEventTouchUpInside];
+            button1.frame = CGRectMake(19.0, SEARCHRES_LINE_HEIGHT * i, 280, SEARCHRES_LINE_HEIGHT);
+            [button1 setTitle:[item objectForKey:JSON_BOOK_DISPLAYNAME] forState:UIControlStateNormal];
+            button1.tag = (i + 1);
+            [[button1 titleLabel] setFont:FONT_SEARCHRES_NAME];
+            button1.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+            [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            button1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+
+            [sres addSubview:button1];
+        }
+        
+        self.scrollHeight.constant = sbar.frame.origin.y + ((sres.frame.size.height > 460)?sres.frame.size.height:460) + 40;
+
+    }
+}
+
+- (void) btSelected:(id)sender {
+
+    UIButton* bt = (UIButton*)sender;
+    NSLog(@"button %d pressed", bt.tag);
+}
+
+- (void) refreshNoRes:(BOOL)anim {
+
+    UIView* nores = [self.innerView viewWithTag:NORESULTS_TAG];
+
+    UIView* sbar = [self.innerView viewWithTag:SEARCHBAR_TAG];
+    float y = ([self getScreenHeight] - keybHeight) / 2;
+    y += sbar.frame.origin.y;
+    y -= 20;
+    
+//    NSLog(@"y = %f %f", y, sres.frame.origin.y);
+
+//    CGRect f = nores.frame;
+//    nores.frame = CGRectMake(f.origin.x, 800, f.size.width, f.size.height);
+
+    CGRect f = nores.frame;
+    [UIView animateWithDuration:anim?0.1f:0.0f delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
+                     animations:^{
+                         
+                         nores.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
+                     }
+                     completion:^(BOOL finished) {
+                         
+                     }];
+
+    self.scrollHeight.constant = sbar.frame.origin.y - 40 + [self getScreenHeight];
+
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+ 
+
+//    NSLog(@"search: %@", searchText);
+    [self setSearchResults:searchText];
+    
+}
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    
+    [self performSelector:@selector(scrollToSearch) withObject:nil afterDelay:0.1f];
+
+}
+
+- (void) scrollToSearch {
+
+    UIView* menu = [self.view viewWithTag:MENU_TAG];
+    UIScrollView* scrollView = (UIScrollView*)[menu viewWithTag:SCROLL_TAG];
+    [scrollView setContentOffset:CGPointMake(0, 230) animated:YES];
+
+}
+
+- (void)handleInnerTap:(UITapGestureRecognizer *)recognizer {
+
+    UIView* sb = [self.innerView viewWithTag:SEARCHBAR_TAG];
+    [sb resignFirstResponder];
+}
+
+- (void)handleGroupTap:(UITapGestureRecognizer *)recognizer {
+
+    [self handleInnerTap:nil];
+    
+    int n = recognizer.view.tag;
+    NSLog(@"group %d tapped", n);
+}
+
+- (void) keyboardDidHide:(NSNotification*)notification {
+    
+    keybShow = NO;
+}
+
+- (void) keyboardDidShow:(NSNotification*)notification {
+
+    keybShow = YES;
+    
+    CGRect keyboardFrame = [[[notification userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+//    NSLog(@"keyboard frame raw %@", NSStringFromCGRect(keyboardFrame));
+    
+    UIWindow *window = [[[UIApplication sharedApplication] windows]objectAtIndex:0];
+    UIView *mainSubviewOfWindow = window.rootViewController.view;
+    CGRect keyboardFrameConverted = [mainSubviewOfWindow convertRect:keyboardFrame fromView:window];
+//    NSLog(@"keyboard frame converted %@", NSStringFromCGRect(keyboardFrameConverted));
+    
+    keybHeight = keyboardFrameConverted.size.height;
+    [self refreshNoRes:YES];
 }
 
 - (IBAction)menuButtonPressed:(id)sender {
@@ -304,8 +642,10 @@
     inMenu = !inMenu;
     
     statusBarVisible = inMenu;
-    [self setNeedsStatusBarAppearanceUpdate];
-    
+//    [self setNeedsStatusBarAppearanceUpdate];
+
+    [self refreshUnderline];
+
     if(inMenu) {
         
         [self showMenu];

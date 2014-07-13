@@ -13,15 +13,41 @@
 #define UNDERLINE_TAG 1122
 #define BLUEFON_TAG 1123
 #define MENU_TAG 1124
+#define SEARCHBAR_TAG 1125
+#define SEARCHRESULTS_TAG 1126
+#define NORESULTS_TAG 1127
+#define SCROLL_TAG 1128
+
 #define MENUFADE_DELAY 0.2f
+
+#define COVER_DELTAX 7.0f
+#define COVER_DELTAY 40.0f
+
+#define SEARCHRES_LINE_HEIGHT 37.5f
+//#define SEARCHRES_LINE_HEIGHT 75.0f
+
+#define JSON_GROUP_NAME @"name"
+#define JSON_BOOK_SHORTRU @"ShortRu"
+#define JSON_BOOK_SHORTEN @"ShortEn"
+#define JSON_BOOK_LASTCODE @"default_last_book_code"
+#define JSON_BOOK_LASTCHAPTER @"default_last_book_chapter"
+#define JSON_BOOK_DISPLAYNAME @"DisplayName"
 
 enum {lngRu, lngCs};
 
-@interface MainViewController : UIViewController {
+@interface NSString ( containsCategory )
+- (BOOL) containsString: (NSString*) substring;
+@end
+
+@interface MainViewController : UIViewController <UISearchBarDelegate> {
     
     BOOL statusBarVisible;
     BOOL inMenu;
+    BOOL keybShow;
+    float keybHeight;
 }
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *rusWidth;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *rusHeight;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *innerViewHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *csHeight;
@@ -37,5 +63,8 @@ enum {lngRu, lngCs};
 
 @property (nonatomic, strong) NSDictionary* grsjson;
 @property (nonatomic, strong) NSDictionary* bookjson;
+@property (nonatomic, strong) UIView* innerView;
+@property (nonatomic, strong) NSArray* res;
+@property (nonatomic, strong) NSLayoutConstraint* scrollHeight;
 
 @end

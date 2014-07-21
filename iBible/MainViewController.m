@@ -584,6 +584,8 @@
     if(nChapts % CHAPT_COLUMNS)
         lines++;
     
+    int last = [self loadLastOpenChapterForBook:n];
+    
     NSLog(@"chapters = %d, lines = %d", nChapts, lines);
 //    NSArray* col = [NSArray arrayWithObjects:[UIColor blueColor],[UIColor yellowColor],[UIColor greenColor],[UIColor grayColor],[UIColor redColor],[UIColor magentaColor],[UIColor cyanColor],[UIColor orangeColor],[UIColor purpleColor],[UIColor brownColor],[UIColor blackColor], nil];
     
@@ -610,16 +612,28 @@
                 UIButton* button1 = [UIButton buttonWithType:UIButtonTypeCustom];
                 [button1 addTarget:self action:@selector(cpSelected:) forControlEvents:UIControlEventTouchUpInside];
                 
-                button1.frame = CGRectMake(19.0f + i * 40, 0, 40, SEARCHRES_LINE_HEIGHT);
                 [button1 setTitle:[NSString stringWithFormat:@"%d", num] forState:UIControlStateNormal];
                 button1.tag = num;
                 [[button1 titleLabel] setFont:(num > 99)?FONT_DIGITS_AFTER99_NAME:FONT_DIGITS_BEFORE99_NAME];
-                [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
                 button1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
                 button1.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
 //                button1.backgroundColor = (UIColor*)[col objectAtIndex:i];
-//                if()
-                button1.backgroundColor = [UIColor clearColor];
+                if(last == num) {
+
+                    button1.backgroundColor = LASTCHAP_COLOR;
+                    [button1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                    button1.layer.cornerRadius = 15;
+                    button1.frame = CGRectMake(19.0f + i * 40 + 5, 0 + 3, 30, 30);
+
+                    
+                }
+                else {
+                
+                    button1.backgroundColor = [UIColor clearColor];
+                    [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+                    button1.frame = CGRectMake(19.0f + i * 40, 0, 40, SEARCHRES_LINE_HEIGHT);
+
+                }
                 [line addSubview:button1];
             }
         }

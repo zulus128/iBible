@@ -17,6 +17,7 @@
 #define SEARCHRESULTS_TAG 1126
 #define NORESULTS_TAG 1127
 #define SCROLL_TAG 1128
+#define CHAPTER_LINE_TAG 5000
 
 #define MENUFADE_DELAY 0.2f
 
@@ -32,6 +33,10 @@
 #define JSON_BOOK_LASTCODE @"default_last_book_code"
 #define JSON_BOOK_LASTCHAPTER @"default_last_book_chapter"
 #define JSON_BOOK_DISPLAYNAME @"DisplayName"
+#define JSON_BOOK_CHAPTERS_CNT @"NChapters"
+
+#define CHAPT_COLUMNS 7
+#define SPREADLIST_DELAY 0.08f
 
 enum {lngRu, lngCs};
 
@@ -45,7 +50,9 @@ enum {lngRu, lngCs};
     BOOL inMenu;
     BOOL keybShow;
     float keybHeight;
+    int openedChapts;
 }
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *rusWidth;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *rusHeight;
 

@@ -124,7 +124,7 @@
     } else {
         
         NSLog(@"Parsing groups: OK!");
-//        NSLog(@"Parsing groups: OK! %@", self.grsjson);
+        NSLog(@"Parsing groups: OK! %@", self.grsjson);
     }
     
     NSString* bkPath = [[NSBundle mainBundle] pathForResource:@"books" ofType:@"json"];

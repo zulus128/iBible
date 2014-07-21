@@ -36,7 +36,7 @@
 #define JSON_BOOK_CHAPTERS_CNT @"NChapters"
 
 #define CHAPT_COLUMNS 7
-#define SPREADLIST_DELAY 0.08f
+#define SPREADLIST_DELAY 0.05f
 
 enum {lngRu, lngCs};
 

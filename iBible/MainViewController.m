@@ -481,7 +481,7 @@
     
 //    self.res = [self searchBooks:[NSString stringWithFormat:@"'%@'", text]];
     self.res = [self searchBooks:text];
-    NSLog(@"res = %@", self.res);
+//    NSLog(@"res = %@", self.res);
 
     UIView* noresv = [self.innerView viewWithTag:NORESULTS_TAG];
     [noresv removeFromSuperview];
@@ -552,16 +552,8 @@
     UIButton* bt = (UIButton*)sender;
     NSLog(@"button %d pressed", bt.tag);
 
-    [self closeChapts];
+    [self closeChapts:bt.tag];
 
-    if(openedChapts == bt.tag) {
-        
-        openedChapts = -1;
-        return;
-    }
-    
-    openedChapts = bt.tag;
-    [self openChapts:bt.tag];
 }
 
 - (void) openChapts:(int)n {
@@ -577,8 +569,8 @@
     if(nChapts % CHAPT_COLUMNS)
         lines++;
     
-    NSLog(@"lines = %d", lines);
-    NSArray* col = [NSArray arrayWithObjects:[UIColor blueColor],[UIColor yellowColor],[UIColor greenColor],[UIColor grayColor],[UIColor redColor],[UIColor magentaColor],[UIColor cyanColor],[UIColor orangeColor],[UIColor purpleColor],[UIColor brownColor],[UIColor blackColor], nil];
+    NSLog(@"chapters = %d, lines = %d", nChapts, lines);
+//    NSArray* col = [NSArray arrayWithObjects:[UIColor blueColor],[UIColor yellowColor],[UIColor greenColor],[UIColor grayColor],[UIColor redColor],[UIColor magentaColor],[UIColor cyanColor],[UIColor orangeColor],[UIColor purpleColor],[UIColor brownColor],[UIColor blackColor], nil];
     
     NSMutableArray* arrLines = [NSMutableArray arrayWithCapacity:lines];
     for(int j = lines; j >= 1; j--) {
@@ -586,7 +578,8 @@
         UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, fcurr.origin.y + 1 * SEARCHRES_LINE_HEIGHT, 300, SEARCHRES_LINE_HEIGHT)];
         line.tag = CHAPTER_LINE_TAG;
         [sres addSubview:line];
-        line.backgroundColor = (UIColor*)[col objectAtIndex:j];
+//        line.backgroundColor = (UIColor*)[col objectAtIndex:j];
+        line.backgroundColor = [UIColor whiteColor];
         [arrLines addObject:line];
         
         float deltaY = (j == lines)?2.0f:0.0f;
@@ -594,20 +587,26 @@
         vert.backgroundColor = VERTLINE_COLOR;
         [line addSubview:vert];
         
-//        for(p = 0; p < CHAPT_COLUMNS; p++) {
+        for(int i = 0; i < CHAPT_COLUMNS; i++) {
 
-//            UIButton* button1 = [UIButton buttonWithType:UIButtonTypeCustom];
-//            [button1 addTarget:self action:@selector(cpSelected:) forControlEvents:UIControlEventTouchUpInside];
-//            button1.frame = CGRectMake(19.0, SEARCHRES_LINE_HEIGHT * i, 280, SEARCHRES_LINE_HEIGHT);
-//            [button1 setTitle:[item objectForKey:JSON_BOOK_DISPLAYNAME] forState:UIControlStateNormal];
-//            button1.tag = i;
-//            [[button1 titleLabel] setFont:FONT_SEARCHRES_NAME];
-//            button1.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
-//            [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//            button1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-//            
-//            [line addSubview:button1];
-//        }
+            int num = (j - 1) * CHAPT_COLUMNS + 1 + i;
+            if(num <= nChapts) {
+
+                UIButton* button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+                [button1 addTarget:self action:@selector(cpSelected:) forControlEvents:UIControlEventTouchUpInside];
+                
+                button1.frame = CGRectMake(19.0f + i * 40, 0, 40, SEARCHRES_LINE_HEIGHT);
+                [button1 setTitle:[NSString stringWithFormat:@"%d", num] forState:UIControlStateNormal];
+                button1.tag = num;
+                [[button1 titleLabel] setFont:(num > 99)?FONT_DIGITS_AFTER99_NAME:FONT_DIGITS_BEFORE99_NAME];
+                [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+                button1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+                button1.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+//                button1.backgroundColor = (UIColor*)[col objectAtIndex:i];
+                button1.backgroundColor = [UIColor clearColor];
+                [line addSubview:button1];
+            }
+        }
 
     }
     
@@ -636,10 +635,14 @@
 
 }
 
-- (void) closeChapts {
+- (void) closeChapts:(int)n {
 
-    if(openedChapts < 0)
+    if((openedChapts < 0) && (n >= 0)) {
+
+        openedChapts = n;
+        [self openChapts:n];
         return;
+    }
     
     UIView* sres = [self.innerView viewWithTag:SEARCHRESULTS_TAG];
     UIView* curr = [sres viewWithTag:openedChapts];
@@ -682,6 +685,19 @@
                              
                          }
                          
+                         if(openedChapts == n) {
+                             
+                             openedChapts = -1;
+                             
+                         }
+                         else {
+                             
+                             openedChapts = n;
+                             if(n >= 0)
+                                 [self openChapts:n];
+                         }
+
+                         
                      }];
 
 }
@@ -723,6 +739,8 @@
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
  
+    if(openedChapts > 0)
+        [self closeChapts:-1];
 
 //    NSLog(@"search: %@", searchText);
     [self setSearchResults:searchText];
@@ -740,6 +758,7 @@
     UIScrollView* scrollView = (UIScrollView*)[menu viewWithTag:SCROLL_TAG];
     [scrollView setContentOffset:CGPointMake(0, 230) animated:YES];
 
+    [self closeChapts:-1];
 }
 
 - (void)handleInnerTap:(UITapGestureRecognizer *)recognizer {

@@ -54,6 +54,21 @@
     openedChapts = -1;
 }
 
+- (void) saveLastOpenChapter:(int)chap forBook:(int)book {
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setInteger:chap forKey:[NSString stringWithFormat:CURCHAP_USERDEF, book]];
+    [prefs synchronize];
+
+}
+
+- (int) loadLastOpenChapterForBook:(int)book {
+
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    int n = [prefs integerForKey:[NSString stringWithFormat:CURCHAP_USERDEF, book]];
+    return (n > 0)?n:1;
+}
+
 - (void) refreshUnderline {
 
     switch (self.curLanguage) {
@@ -399,7 +414,7 @@
     for(int i = 1; i <= self.grsjson.count; i++) {
         
         NSDictionary* gr = [self.grsjson objectForKey:[NSString stringWithFormat:@"%d", i]];
-//        NSLog(@"i = %d, gr = %@", i, [gr objectForKey:JSON_BOOK_LASTCODE]);
+        NSLog(@"i = %d, gr = %@", i, [gr objectForKey:JSON_BOOK_LASTCODE]);
         
         UIView* grview = [[UIView alloc] initWithFrame:CGRectMake(16.0f + (i - 1) * 95 - COVER_DELTAX, 40.5f, 80 + 2 * COVER_DELTAX, 100 + COVER_DELTAY)];
 //        grview.backgroundColor = [UIColor greenColor];
@@ -603,6 +618,7 @@
                 button1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
                 button1.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
 //                button1.backgroundColor = (UIColor*)[col objectAtIndex:i];
+//                if()
                 button1.backgroundColor = [UIColor clearColor];
                 [line addSubview:button1];
             }

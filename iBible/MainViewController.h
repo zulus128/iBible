@@ -11,6 +11,8 @@
 
 #define LNG_USERDEF @"cur_lng_save"
 #define CURCHAP_USERDEF @"book%d"
+#define CURBOOK_USERDEF @"last_book"
+
 #define UNDERLINE_TAG 1122
 #define BLUEFON_TAG 1123
 #define MENU_TAG 1124

@@ -52,22 +52,71 @@
                                                  name:UIKeyboardDidHideNotification
                                                object:nil];
     openedChapts = -1;
-    [self myNavigate:self.viewPath ? self.viewPath : @"nz.cs.html"];
+    //[self myNavigate:self.viewPath ? self.viewPath : @"nz.cs.html"];
 
+    int lastbook = [self loadLastOpenBook];
+    int lastchap = [self loadLastOpenChapterForBook:lastbook];
+    NSString* path = [self getPathForBook:lastbook andChapter:lastchap];
+    [self myNavigate:path];
 }
+
+- (NSString*) getPathForBook:(int)book andChapter:(int)chap {
+
+    for(NSDictionary* d in [self.bookjson allValues]) {
+        
+        NSString* shortEn = [d objectForKey:JSON_BOOK_SHORTEN];
+        if([shortEn isEqualToString:code]) {
+            
+            return [d objectForKey:JSON_BOOK_SHORTRU];
+        }
+    }
+    
+    return @"N/a";
+    
+}
+
+- (NSString*) getBookShortNameForCode:(NSString*)code/* andChapter:(int)ch*/ {
+    
+    for(NSDictionary* d in [self.bookjson allValues]) {
+        
+        NSString* shortEn = [d objectForKey:JSON_BOOK_SHORTEN];
+        if([shortEn isEqualToString:code]) {
+            
+            return [d objectForKey:JSON_BOOK_SHORTRU];
+        }
+    }
+    
+    return @"N/a";
+}
+
 
 - (void) saveLastOpenChapter:(int)chap forBook:(int)book {
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setInteger:chap forKey:[NSString stringWithFormat:CURCHAP_USERDEF, book]];
     [prefs synchronize];
-
+    
 }
 
 - (int) loadLastOpenChapterForBook:(int)book {
-
+    
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     int n = [prefs integerForKey:[NSString stringWithFormat:CURCHAP_USERDEF, book]];
+    return (n > 0)?n:1;
+}
+
+- (void) saveLastOpenBook:(int)book {
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    [prefs setInteger:book forKey:CURBOOK_USERDEF];
+    [prefs synchronize];
+    
+}
+
+- (int) loadLastOpenBook {
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    int n = [prefs integerForKey:CURBOOK_USERDEF];
     return (n > 0)?n:1;
 }
 
@@ -142,20 +191,6 @@
         NSLog(@"Parsing books: OK! %@", self.bookjson);
     }
     
-}
-
-- (NSString*) getBookShortNameForCode:(NSString*)code/* andChapter:(int)ch*/ {
-    
-    for(NSDictionary* d in [self.bookjson allValues]) {
-
-        NSString* shortEn = [d objectForKey:JSON_BOOK_SHORTEN];
-        if([shortEn isEqualToString:code]) {
-            
-            return [d objectForKey:JSON_BOOK_SHORTRU];
-        }
-    }
-    
-    return @"N/a";
 }
 
 - (NSArray*) searchBooks:(NSString*) title {

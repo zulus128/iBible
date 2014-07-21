@@ -52,7 +52,8 @@
                                                  name:UIKeyboardDidHideNotification
                                                object:nil];
     openedChapts = -1;
-    //[self myNavigate:self.viewPath ? self.viewPath : @"nz.cs.html"];
+    
+//    [self myNavigate:self.viewPath ? self.viewPath : @"nz.cs.html"];
 
     int lastbook = [self loadLastOpenBook];
     int lastchap = [self loadLastOpenChapterForBook:lastbook];
@@ -62,17 +63,11 @@
 
 - (NSString*) getPathForBook:(int)book andChapter:(int)chap {
 
-    for(NSDictionary* d in [self.bookjson allValues]) {
-        
-        NSString* shortEn = [d objectForKey:JSON_BOOK_SHORTEN];
-        if([shortEn isEqualToString:code]) {
-            
-            return [d objectForKey:JSON_BOOK_SHORTRU];
-        }
-    }
-    
-    return @"N/a";
-    
+    NSDictionary* b = [self.bookjson objectForKey:[NSString stringWithFormat:@"%d", book]];
+    NSString* name = [b objectForKey:JSON_BOOK_SHORTEN];
+//    NSString* path = [NSString stringWithFormat:@"%@.%d.%%@", name, chap];
+    NSString* path = [NSString stringWithFormat:@"%@.%d", name, chap];
+    return path;
 }
 
 - (NSString*) getBookShortNameForCode:(NSString*)code/* andChapter:(int)ch*/ {
@@ -118,6 +113,24 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     int n = [prefs integerForKey:CURBOOK_USERDEF];
     return (n > 0)?n:1;
+}
+
+- (int) saveLastOpenBookWithName:(NSString*)sbook {
+    
+    for(int i = 1; i <= self.bookjson.count; i++) {
+        
+        NSDictionary* d = [self.bookjson objectForKey:[NSString stringWithFormat:@"%d", i]];
+        NSString* shortEn = [d objectForKey:JSON_BOOK_SHORTEN];
+        if([shortEn isEqualToString:sbook]) {
+
+            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+            [prefs setInteger:i forKey:CURBOOK_USERDEF];
+            [prefs synchronize];
+            return i;
+        }
+    }
+    
+    return -1;
 }
 
 - (void) refreshUnderline {
@@ -895,17 +908,17 @@
 
 - (void)myNavigate:(NSString *)path
 {
-    bool original = false;
+//    bool original = false;
     
     if (([path length] > 8) && ([[path substringFromIndex:[path length] - 5] isEqualToString:@".html"]))
     {
         path = [path substringToIndex:[path length] - 8];
-        original = true;
+//        original = true;
     }
     
     self.viewPath = path;
     
-    //NSLog(@"myNavigate: to %@ (%@) # original=%d", path, [self langCode], original);
+//    NSLog(@"myNavigate: to %@ (%@) # original=%d", path, path, original);
     
     NSURL * url = [[NSURL alloc] initFileURLWithPath:
                    [[NSBundle mainBundle] pathForResource:
@@ -923,6 +936,11 @@
                                                         error:&err];
     [self.ruWebView loadHTMLString:text baseURL:nil];
     [self.csWebView loadHTMLString:text1 baseURL:nil];
+    
+    NSArray* arr = [path componentsSeparatedByString:@"."];
+    int n = [self saveLastOpenBookWithName:[arr objectAtIndex:0]];
+    int chap = ((NSString*)[arr objectAtIndex:1]).intValue;
+    [self saveLastOpenChapter:chap forBook:n];
     
 //    if (original)
 //        [self navigateOthers:path];

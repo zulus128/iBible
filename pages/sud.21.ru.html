@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sud.ru.html">Книга Судей</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 21
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И поклялись Израильтяне в Массифе, говоря: никто из нас не отдаст дочери своей сынам Вениамина в замужество.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И пришел народ в дом Божий, и сидели там до вечера пред Богом, и подняли громкий вопль, и сильно плакали,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и сказали: Господи, Боже Израилев! для чего случилось это в Израиле, что не стало теперь у Израиля одного колена?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">На другой день встал народ поутру, и устроили там жертвенник, и вознесли всесожжения и мирные жертвы.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И сказали сыны Израилевы: кто не приходил в собрание пред Господа из всех колен Израилевых? Ибо великое проклятие <i>произнесено</i> было на тех, которые не пришли пред Господа в Массифу, и сказано было, что те преданы будут смерти.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сжалились сыны Израилевы над Вениамином, братом своим, и сказали: ныне отсечено одно колено от Израиля;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">как поступить нам с оставшимися из них <i>касательно</i> жен, когда мы поклялись Господом не давать им жен из дочерей наших?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сказали: нет ли кого из колен Израилевых, кто не приходил пред Господа в Массифу? И оказалось, что из Иависа Галаадского никто не приходил пред Господа в стан на собрание.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И осмотрен народ, и вот, не было там ни одного из жителей Иависа Галаадского.
+</p>
+<div class="num">10</div><p id="n10">И послало туда общество двенадцать тысяч человек, мужей сильных, и дали им приказание, говоря: идите и поразите жителей Иависа Галаадского мечом, и женщин и детей;
+</p>
+<div class="num">11</div><p id="n11">и вот что сделайте: всякого мужчину и всякую женщину, познавшую ложе мужеское, предайте заклятию, [а девиц оставляйте в живых. И сделали так].
+</p>
+<div class="num">12</div><p id="n12">И нашли они между жителями Иависа Галаадского четыреста девиц, не познавших ложа мужеского, и привели их в стан в Силом, что в земле Ханаанской.
+</p>
+<div class="num">13</div><p id="n13">И послало все общество переговорить с сынами Вениамина, бывшими в скале Риммоне, и объявило им мир.
+</p>
+<div class="num">14</div><p id="n14">Тогда возвратились сыны Вениамина [к Израильтянам], и дали им [Израильтяне] жен, которых оставили в живых из женщин Иависа Галаадского; но оказалось, что этого было недостаточно.
+</p>
+<div class="num">15</div><p id="n15">Народ же сожалел о Вениамине, что Господь не сохранил целости колен Израилевых.
+</p>
+<div class="num">16</div><p id="n16">И сказали старейшины общества: что нам делать с оставшимися <i>касательно</i> жен, ибо истреблены женщины у Вениамина?
+</p>
+<div class="num">17</div><p id="n17">И сказали: наследственная земля пусть остается уцелевшим сынам Вениамина, чтобы не исчезло колено от Израиля;
+</p>
+<div class="num">18</div><p id="n18">но мы не можем дать им жен из дочерей наших; ибо сыны Израилевы поклялись, говоря: проклят, кто даст жену Вениамину.
+</p>
+<div class="num">19</div><p id="n19">И сказали: вот, каждый год бывает праздник Господень в Силоме, который на север от Вефиля и на восток от дороги, ведущей от Вефиля в Сихем, и на юг от Левоны.
+</p>
+<div class="num">20</div><p id="n20">И приказали сынам Вениамина и сказали: пойдите и засядьте в виноградниках,
+</p>
+<div class="num">21</div><p id="n21">и смотрите, когда выйдут девицы Силомские плясать в хороводах, тогда выйдите из виноградников и схватите себе каждый жену из девиц Силомских и идите в землю Вениаминову;
+</p>
+<div class="num">22</div><p id="n22">и когда придут отцы их, или братья их с жалобою к нам, мы скажем им: простите нас за них, ибо мы не взяли для каждого из них жены на войне, и вы не дали им; теперь вы виновны.
+</p>
+<div class="num">23</div><p id="n23">Сыны Вениамина так и сделали, и взяли жен по числу своему из бывших в хороводе, которых они похитили, и пошли и возвратились в удел свой, и построили города и стали жить в них.
+</p>
+<div class="num">24</div><p id="n24">В то же время Израильтяне разошлись оттуда каждый в колено свое и в племя свое, и пошли оттуда каждый в удел свой.
+</p>
+<div class="num">25</div><p id="n25">В те дни не было царя у Израиля; каждый делал то, что ему казалось справедливым
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sud.ru.html">Книга Судей</a>
+</div></div>
+
+</body>
+</html>

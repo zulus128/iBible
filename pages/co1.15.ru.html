@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="co1.ru.html">Первое послание к<br />Коринфянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 15
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Напоминаю вам, братия, Евангелие, которое я благовествовал вам, которое вы и приняли, в котором и утвердились,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">которым и спасаетесь, если преподанное удерживаете так, как я благовествовал вам, если только не тщетно уверовали.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ибо я первоначально преподал вам, что и <i>сам</i> принял, <i>то</i> <i>есть,</i> что Христос умер за грехи наши, по Писанию,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и что Он погребен был, и что воскрес в третий день, по Писанию,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и что явился Кифе, потом двенадцати;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">потом явился более нежели пятистам братий в одно время, из которых бо&#769;льшая часть доныне в живых, а некоторые и почили;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">потом явился Иакову, также всем Апостолам;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">а после всех явился и мне, как некоему извергу.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ибо я наименьший из Апостолов, и недостоин называться Апостолом, потому что гнал церковь Божию.
+</p>
+<div class="num">10</div><p id="n10">Но благодатию Божиею есмь то, что есмь; и благодать Его во мне не была тщетна, но я более всех их потрудился: не я, впрочем, а благодать Божия, которая со мною.
+</p>
+<div class="num">11</div><p id="n11">Итак я ли, они ли, мы так проповедуем, и вы так уверовали.
+</p>
+<div class="num">12</div><p id="n12">Если же о Христе проповедуется, что Он воскрес из мертвых, то ка&#769;к некоторые из вас говорят, что нет воскресения мертвых?
+</p>
+<div class="num">13</div><p id="n13">Если нет воскресения мертвых, то и Христос не воскрес;
+</p>
+<div class="num">14</div><p id="n14">а если Христос не воскрес, то и проповедь наша тщетна, тщетна и вера ваша.
+</p>
+<div class="num">15</div><p id="n15">Притом мы оказались бы и лжесвидетелями о Боге, потому что свидетельствовали бы о Боге, что Он воскресил Христа, Которого Он не воскрешал, если, <i>то</i> <i>есть,</i> мертвые не воскресают;
+</p>
+<div class="num">16</div><p id="n16">ибо если мертвые не воскресают, то и Христос не воскрес.
+</p>
+<div class="num">17</div><p id="n17">А если Христос не воскрес, то вера ваша тщетна: вы еще во грехах ваших.
+</p>
+<div class="num">18</div><p id="n18">Поэтому и умершие во Христе погибли.
+</p>
+<div class="num">19</div><p id="n19">И если мы в этой только жизни надеемся на Христа, то мы несчастнее всех человеков.
+</p>
+<div class="num">20</div><p id="n20">Но Христос воскрес из мертвых, первенец из умерших.
+</p>
+<div class="num">21</div><p id="n21">Ибо, как смерть через человека, <i>так</i> через человека и воскресение мертвых.
+</p>
+<div class="num">22</div><p id="n22">Как в Адаме все умирают, так во Христе все оживут,
+</p>
+<div class="num">23</div><p id="n23">каждый в своем порядке: первенец Христос, потом Христовы, в пришествие Его.
+</p>
+<div class="num">24</div><p id="n24">А затем конец, когда Он предаст Царство Богу и Отцу, когда упразднит всякое начальство и всякую власть и силу.
+</p>
+<div class="num">25</div><p id="n25">Ибо Ему надлежит царствовать, доколе низложит всех врагов под ноги Свои.
+</p>
+<div class="num">26</div><p id="n26">Последний же враг истребится - смерть,
+</p>
+<div class="num">27</div><p id="n27">потому что все покорил под ноги Его. Когда же сказано, что <i>Ему</i> все покорено, то ясно, что кроме Того, Который покорил Ему все.
+</p>
+<div class="num">28</div><p id="n28">Когда же все покорит Ему, тогда и Сам Сын покорится Покорившему все Ему, да будет Бог все во всем.
+</p>
+<div class="num">29</div><p id="n29">Иначе, <br /> что делают крестящиеся для мертвых? Если мертвые совсем не воскресают, то для чего и крестятся для мертвых?
+</p>
+<div class="num">30</div><p id="n30">Для чего и мы ежечасно подвергаемся бедствиям?
+</p>
+<div class="num">31</div><p id="n31">Я каждый день умираю: свидетельствуюсь в том похвалою вашею, братия, которую я имею во Христе Иисусе, Господе нашем.
+</p>
+<div class="num">32</div><p id="n32">По <i>рассуждению</i> человеческому, когда я боролся со зверями в Ефесе, какая мне польза, если мертвые не воскресают? Станем есть и пить, ибо завтра умрем!
+</p>
+<div class="num">33</div><p id="n33">Не обманывайтесь: худые сообщества развращают добрые нравы.
+</p>
+<div class="num">34</div><p id="n34">Отрезвитесь, как должно, и не грешите; ибо, к стыду вашему скажу, некоторые из вас не знают Бога.
+</p>
+<div class="num">35</div><p id="n35">Но скажет кто-нибудь: как воскреснут мертвые? и в каком теле придут?
+</p>
+<div class="num">36</div><p id="n36">Безрассудный! то, что ты сеешь, не оживет, если не умрет.
+</p>
+<div class="num">37</div><p id="n37">И когда ты сеешь, то сеешь не тело будущее, а голое зерно, какое случится, пшеничное или другое какое;
+</p>
+<div class="num">38</div><p id="n38">но Бог дает ему тело, как хочет, и каждому семени свое тело.
+</p>
+<div class="num">39</div><p id="n39">Не всякая плоть такая же плоть; но иная плоть у человеков, иная плоть у скотов, иная у рыб, иная у птиц.
+</p>
+<div class="num">40</div><p id="n40">Есть тела небесные и тела земные; но иная слава небесных, иная земных.
+</p>
+<div class="num">41</div><p id="n41">Иная слава солнца, иная слава луны, иная звезд; и звезда от звезды разнится в славе.
+</p>
+<div class="num">42</div><p id="n42">Так и при воскресении мертвых: сеется в тлении, восстает в нетлении;
+</p>
+<div class="num">43</div><p id="n43">сеется в уничижении, восстает в славе; сеется в немощи, восстает в силе;
+</p>
+<div class="num">44</div><p id="n44">сеется тело душевное, восстает тело духовное. Есть тело душевное, есть тело и духовное.
+</p>
+<div class="num">45</div><p id="n45">Так и написано: первый человек Адам стал душею живущею; а последний Адам есть дух животворящий.
+</p>
+<div class="num">46</div><p id="n46">Но не духовное прежде, а душевное, потом духовное.
+</p>
+<div class="num">47</div><p id="n47">Первый человек - из земли, перстный; второй человек - Господь с неба.
+</p>
+<div class="num">48</div><p id="n48">Каков перстный, таковы и перстные; и каков небесный, таковы и небесные.
+</p>
+<div class="num">49</div><p id="n49">И как мы носили образ перстного, будем носить и образ небесного.
+</p>
+<div class="num">50</div><p id="n50">Но то скажу <i>вам,</i> братия, что плоть и кровь не могут наследовать Царствия Божия, и тление не наследует нетления.
+</p>
+<div class="num">51</div><p id="n51">Говорю вам тайну: не все мы умрем, но все изменимся
+</p>
+<div class="num">52</div><p id="n52">вдруг, во мгновение ока, при последней трубе; ибо вострубит, и мертвые воскреснут нетленными, а мы изменимся.
+</p>
+<div class="num">53</div><p id="n53">Ибо тленному сему надлежит облечься в нетление, и смертному сему облечься в бессмертие.
+</p>
+<div class="num">54</div><p id="n54">Когда же тленное сие облечется в нетление и смертное сие облечется в бессмертие, тогда сбудется слово написанное: поглощена смерть победою.
+</p>
+<div class="num">55</div><p id="n55">Смерть! где твое жало? ад! где твоя победа?
+</p>
+<div class="num">56</div><p id="n56">Жало же смерти - грех; а сила греха - закон.
+</p>
+<div class="num">57</div><p id="n57">Благодарение Богу, даровавшему нам победу Господом нашим Иисусом Христом!
+</p>
+<div class="num">58</div><p id="n58">Итак, братия мои возлюбленные, будьте тверды, непоколебимы, всегда преуспевайте в деле Господнем, зная, что труд ваш не тщетен пред Господом.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="co1.16.ru.html">к главе 16</a></div></div>
+
+</body>
+</html>

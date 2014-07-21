@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king3.ru.html">Третья книга Царств</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 11
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И полюбил царь Соломон многих чужестранных женщин, кроме дочери фараоновой, Моавитянок, Аммонитянок, Идумеянок, Сидонянок, Хеттеянок,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">из тех народов, о которых Господь сказал сынам Израилевым: "не входите к ним, и они пусть не входят к вам, чтобы они не склонили сердца вашего к своим богам"; к ним прилепился Соломон любовью.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И было у него семьсот жен и триста наложниц; и развратили жены его сердце его.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Во время старости Соломона жены его склонили сердце его к иным богам, и сердце его не было вполне предано Господу Богу своему, как сердце Давида, отца его.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И стал Соломон служить Астарте, божеству Сидонскому, и Милхому, мерзости Аммонитской.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И делал Соломон неугодное пред очами Господа и не вполне последовал Господу, как Давид, отец его.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Тогда построил Соломон капище Хамосу, мерзости Моавитской, на горе, которая пред Иерусалимом, и Молоху, мерзости Аммонитской.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Так сделал он для всех своих чужестранных жен, которые кадили и приносили жертвы своим богам.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И разгневался Господь на Соломона за то, что он уклонил сердце свое от Господа Бога Израилева, Который два раза являлся ему
+</p>
+<div class="num">10</div><p id="n10">и заповедал ему, чтобы он не следовал иным богам; но он не исполнил того, что заповедал ему Господь [Бог].
+</p>
+<div class="num">11</div><p id="n11">И сказал Господь Соломону: за то, что так у тебя делается, и ты не сохранил завета Моего и уставов Моих, которые Я заповедал тебе, Я отторгну от тебя царство и отдам его рабу твоему;
+</p>
+<div class="num">12</div><p id="n12">но во дни твои Я не сделаю сего ради Давида, отца твоего; из руки сына твоего исторгну его;
+</p>
+<div class="num">13</div><p id="n13">и не все царство исторгну; одно колено дам сыну твоему ради Давида, раба Моего, и ради Иерусалима, который Я избрал.
+</p>
+<div class="num">14</div><p id="n14">И воздвиг Господь противника на Соломона, Адера Идумеянина, из царского Идумейского рода.
+</p>
+<div class="num">15</div><p id="n15">Когда Давид был в Идумее, и военачальник Иоав пришел для погребения убитых и избил весь мужеский пол в Идумее,-
+</p>
+<div class="num">16</div><p id="n16">ибо шесть месяцев прожил там Иоав и все Израильтяне, доколе не истребили всего мужеского пола в Идумее,-
+</p>
+<div class="num">17</div><p id="n17">тогда сей Адер убежал в Египет и с ним несколько Идумеян, служивших при отце его; Адер <i>был</i> <i>тогда</i> малым ребенком.
+</p>
+<div class="num">18</div><p id="n18">Отправившись из Мадиама, они пришли в Фаран и взяли с собою людей из Фарана и пришли в Египет к фараону, царю Египетскому. [Адер вошел к фараону, и] он дал ему дом, и назначил ему содержание, и дал ему землю.
+</p>
+<div class="num">19</div><p id="n19">Адер снискал у фараона большую милость, так что он дал ему в жену сестру своей жены, сестру царицы Тахпенесы.
+</p>
+<div class="num">20</div><p id="n20">И родила ему сестра Тахпенесы сына Генувата. Тахпенеса воспитывала его в доме фараоновом; и жил Генуват в доме фараоновом вместе с сыновьями фараоновыми.
+</p>
+<div class="num">21</div><p id="n21">Когда Адер услышал, что Давид почил с отцами своими и что военачальник Иоав умер, то сказал фараону: отпусти меня, я пойду в свою землю.
+</p>
+<div class="num">22</div><p id="n22">И сказал ему фараон: разве ты нуждаешься в чем у меня, что хочешь идти в свою землю? Он отвечал: нет, но отпусти меня. [И возвратился Адер в землю свою.]
+</p>
+<div class="num">23</div><p id="n23">И воздвиг Бог против Соломона еще противника, Разона, сына Елиады, который убежал от государя своего Адраазара, царя Сувского,
+</p>
+<div class="num">24</div><p id="n24">и, собрав около себя людей, сделался начальником шайки, после того, как Давид разбил <i>Адраазара;</i> и пошли они в Дамаск, и водворились там, и владычествовали в Дамаске.
+</p>
+<div class="num">25</div><p id="n25">И был он противником Израиля во все дни Соломона. Кроме зла, <i>причиненного</i> Адером, он всегда вредил Израилю и сделался царем Сирии.
+</p>
+<div class="num">26</div><p id="n26">И Иеровоам, сын Наватов, Ефремлянин из Цареды,- имя матери его вдовы: Церуа,- раб Соломонов, поднял руку на царя.
+</p>
+<div class="num">27</div><p id="n27">И вот обстоятельство, по которому он поднял руку на царя: Соломон строил Милло, починивал повреждения в городе Давида, отца своего.
+</p>
+<div class="num">28</div><p id="n28">Иеровоам был человек мужественный. Соломон, заметив, что этот молодой человек умеет делать дело, поставил его смотрителем над оброчными из дома Иосифова.
+</p>
+<div class="num">29</div><p id="n29">В то время случилось Иеровоаму выйти из Иерусалима; и встретил его на дороге пророк Ахия Силомлянин, и на нем была новая одежда. На поле их было только двое.
+</p>
+<div class="num">30</div><p id="n30">И взял Ахия новую одежду, которая была на нем, и разодрал ее на двенадцать частей,
+</p>
+<div class="num">31</div><p id="n31">и сказал Иеровоаму: возьми себе десять частей, ибо так говорит Господь Бог Израилев: вот, Я исторгаю царство из руки Соломоновой и даю тебе десять колен,
+</p>
+<div class="num">32</div><p id="n32">а одно колено<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;В греческом переводе: два колена.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p1"></a> останется за ним ради раба Моего Давида и ради города Иерусалима, который Я избрал из всех колен Израилевых.
+</p>
+<div class="num">33</div><p id="n33">Это за то, что они оставили Меня и стали поклоняться Астарте, божеству Сидонскому, и Хамосу, богу Моавитскому, и Милхому, богу Аммонитскому, и не пошли путями Моими, чтобы делать угодное пред очами Моими и <i>соблюдать</i> уставы Мои и заповеди Мои, подобно Давиду, отцу его.
+</p>
+<div class="num">34</div><p id="n34">Я не беру всего царства из руки его, но Я оставлю его владыкою на все дни жизни его ради Давида, раба Моего, которого Я избрал, который соблюдал заповеди Мои и уставы Мои;
+</p>
+<div class="num">35</div><p id="n35">но возьму царство из руки сына его и дам тебе из него десять колен;
+</p>
+<div class="num">36</div><p id="n36">а сыну его дам одно колено, дабы оставался светильник Давида, раба Моего, во все дни пред лицем Моим, в городе Иерусалиме, который Я избрал Себе для пребывания там имени Моего.
+</p>
+<div class="num">37</div><p id="n37">Тебя Я избираю, и ты будешь владычествовать над всем, чего пожелает душа твоя, и будешь царем над Израилем;
+</p>
+<div class="num">38</div><p id="n38">и если будешь соблюдать все, что Я заповедую тебе, и будешь ходить путями Моими и делать угодное пред очами Моими, соблюдая уставы Мои и заповеди Мои, как делал раб Мой Давид, то Я буду с тобою и устрою тебе дом твердый, как Я устроил Давиду, и отдам тебе Израиля;
+</p>
+<div class="num">39</div><p id="n39">и смирю Я род Давидов за сие, но не на все дни.
+</p>
+<div class="num">40</div><p id="n40">Соломон же хотел умертвить Иеровоама; но Иеровоам встал и убежал в Египет к Сусакиму, царю Египетскому, и жил в Египте до смерти Соломоновой.
+</p>
+<div class="num">41</div><p id="n41">Прочие события Соломоновы и все, что он делал, и мудрость его описаны в книге дел Соломоновых.
+</p>
+<div class="num">42</div><p id="n42">Времени царствования Соломонова в Иерусалиме над всем Израилем <i>было</i> сорок лет.
+</p>
+<div class="num">43</div><p id="n43">И почил Соломон с отцами своими и погребен был в городе Давида, отца своего, и воцарился вместо него сын его Ровоам.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king3.12.ru.html">к главе 12</a></div></div>
+
+</body>
+</html>

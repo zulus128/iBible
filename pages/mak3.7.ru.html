@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mak3.ru.html">Третья книга<br />Маккавейская</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">"Царь Птоломей Филопатор начальникам Египетским и всем поставленным в должностях - радоваться и здравствовать. Здравствуем и мы и дети наши, ибо великий Бог благопоспешествует нам в делах по нашему желанию.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Некоторые из друзей наших по злоумышлению своему часто представляли нам и убеждали нас собрать всех Иудеев, находящихся в царстве, и замучить необычайными казнями, как изменников,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">присовокупляя, что, доколе не будет этого сделано, дела нашего царства никогда не будут благоустроены по ненависти, которую питают они ко всем народам.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Они-то привели их в оковах, с насилием, как невольников, или, лучше, как наветников, и без всякого рассмотрения и исследования покушались погубить их, изобретая жестокости, лютейшие даже Скифских обычаев.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Мы строго воспретили это и по благоволению, которое питаем ко всем людям, тотчас даровали им жизнь; а когда узнали, что небесный Бог есть верный покров Иудеев и всегда защищает их, как отец сынов, еще же приняв во внимание известное их доброжелательство к нам и к предкам нашим, мы справедливо освободили их от всякого обвинения в чем бы то ни было
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и приказали всем и каждому возвратиться в свои домы, так чтобы нигде никто ни в чем не оскорблял их и не укорял в том, что произошло без их вины.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Знайте, что если мы предпримем против них что-либо злое или вообще оскорбим их, то будем иметь против себя не человека, но властвующего над всякою властью всевышнего Бога отмстителем за дела наши во всем и всегда неизбежно. Будьте здравы".
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Получив это послание, Иудеи не спешили тотчас отправиться, но просили царя, чтобы те из рода Иудейского, которые самовольно оставили святаго Бога и закон Божий, получили через них должное наказание,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">присовокупляя, что преступившие ради чрева постановления Божественные никогда не будут иметь добрых расположений и к правлению царя.
+</p>
+<div class="num">10</div><p id="n10">Царь нашел, что они говорят правду, одобрил их и дал им полномочие на всё, чтобы они преступивших закон Божий истребили во всяком месте царства его беспрепятственно, без особого позволения или надзора царя.
+</p>
+<div class="num">11</div><p id="n11">Тогда, возблагодарив его, как надлежало, священники и все народное множество воспели "аллилуия" и радостно отправились.
+</p>
+<div class="num">12</div><p id="n12">Всякого соплеменника из осквернившихся, которого встречали на пути, они наказывали и убивали в пример другим.
+</p>
+<div class="num">13</div><p id="n13">В этот день они умертвили более трехсот мужей и торжествовали с весельем, умерщвляя нечистых.
+</p>
+<div class="num">14</div><p id="n14">Сами же, пребыв с Богом до смерти и получив полную радость спасения, поднялись из города, увенчанные всякими благоуханными цветами, с весельем и восклицаниями, хвалами и благозвучными песнями, благодаря Бога отцов, вечного Спасителя Израиля.
+</p>
+<div class="num">15</div><p id="n15">Придя в Птолемаиду, называемую по свойству места Родофором [розоносною], в которой по общему их уговору ожидали их корабли семь дней,
+</p>
+<div class="num">16</div><p id="n16">они учредили там пиршество спасения, ибо царь щедро снабдил их всем, что потребно было каждому до прибытия в свой дом.
+</p>
+<div class="num">17</div><p id="n17">Так как они достигли сюда в мире, с приличными благодарениями, то и здесь также установили весело праздновать эти дни во время пребывания своего.
+</p>
+<div class="num">18</div><p id="n18">Освятив эти дни и утвердив свой обет поставлением столба на месте пиршества, они отправились далее сушею и морем и рекою, каждый в свое жилище, невредимые, свободные, в полной радости, охраняемые царским повелением. Тогда-то приобрели они бо&#769;льшую, нежели прежде, силу и славу и сделались страшными для врагов, ни от кого нисколько не притесняемые в своем владении,
+</p>
+<div class="num">19</div><p id="n19">и все получили свое по описи, так что, кто имел что-либо у себя, с величайшим страхом отдавали им, ибо величайшие благодеяния явил им величайший Бог на спасение их.
+</p>
+<div class="num">20</div><p id="n20">Благословен Спаситель Израиля на вечные времена! Аминь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mak3.ru.html">Третья книга<br />Маккавейская</a>
+</div></div>
+
+</body>
+</html>

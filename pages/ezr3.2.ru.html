@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ezr3.ru.html">Третья книга Ездры</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Так говорит Господь: Я вывел народ сей из работы, дал им повеление через рабов Моих, пророков, которых они не захотели слушать, но отвергли Мои советы.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Мать, которая родила их, говорит им: "идите, дети; ибо я вдова и оставлена.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Я воспитала вас с радостью, и отпустила с плачем и горестью, потому что вы согрешили пред Господом Богом вашим, и сделали злое пред Ним.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Ныне же что сделаю для вас? Я вдова и оставлена: идите, дети, и просите у Господа милости".
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Тебя, Отче, призываю во свидетеля на мать сыновей, которые не захотели хранить завета моего.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Предай их посрамлению и мать их - на расхищение, чтобы не было рода их.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Пусть рассеются имена их по народам и изгладятся от земли, ибо они презрели завет мой.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Горе тебе, Ассур, скрывающий у себя нечестивых! Род лукавый! вспомни, что Я сделал Содому и Гоморре.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Земля их лежит в смоляных глыбах и холмах пепельных. Так поступлю Я с теми, которые Меня не слушались, говорит Господь Вседержитель.
+</p>
+<div class="num">10</div><p id="n10">Так говорит Господь к Ездре: возвести народу Моему, что Я дам им царство Иерусалимское, которое обещал Израилю,
+</p>
+<div class="num">11</div><p id="n11">и прииму славу от них и дам им обители вечные, которые приготовил для них.
+</p>
+<div class="num">12</div><p id="n12">Древо жизни будет для них мастью благовонною; не будут изнуряемы трудом и не изнемогут.
+</p>
+<div class="num">13</div><p id="n13">Идите и получи&#769;те; проси&#769;те себе дней малых, дабы они не замедлили. Уже готово для вас царство: бодрствуйте.
+</p>
+<div class="num">14</div><p id="n14">Свидетельствуй, небо и земля, ибо Я стер злое и сотворил доброе. Живу Я! говорит Господь.
+</p>
+<div class="num">15</div><p id="n15">Мать! обними сыновей твоих, воспитывай их с радостью; как голубица укрепляй ноги их, ибо Я избрал тебя, говорит Господь.
+</p>
+<div class="num">16</div><p id="n16">И воскрешу мертвых от мест их и из гробов выведу их, потому что Я познал имя Мое в Израиле.
+</p>
+<div class="num">17</div><p id="n17">Не бойся, мать сынов, ибо Я избрал тебя, говорит Господь.
+</p>
+<div class="num">18</div><p id="n18">Я пошлю тебе в помощь рабов Моих Исаию и Иеремию, по совету которых Я освятил и приготовил тебе двенадцать дерев, обремененных различными плодами,
+</p>
+<div class="num">19</div><p id="n19">и столько же источников, текущих молоком и медом, и семь гор величайших, произращающих розу и лилию, через которые исполню радостью сынов твоих.
+</p>
+<div class="num">20</div><p id="n20">Оправдай вдову, дай суд бедному, помоги нищему, защити сироту, одень нагого,
+</p>
+<div class="num">21</div><p id="n21">о расслабленном и немощном попекись, над хромым не смейся, безрукого защити, и слепого приведи к видению света Моего,
+</p>
+<div class="num">22</div><p id="n22">старца и юношу в стенах твоих сохрани,
+</p>
+<div class="num">23</div><p id="n23">мертвых, где найдешь, запечатлев, предай гробу, и Я дам тебе первое место в Моем воскресении.
+</p>
+<div class="num">24</div><p id="n24">Отдыхай и покойся, народ Мой, ибо придет покой твой.
+</p>
+<div class="num">25</div><p id="n25">Корми сынов твоих, добрая кормилица, укрепляй ноги их.
+</p>
+<div class="num">26</div><p id="n26">Из рабов, которых Я дал тебе, никто да не погибнет, ибо Я взыщу их от тебя.
+</p>
+<div class="num">27</div><p id="n27">Не ослабевай. Когда придет день печали и тесноты, другие будут плакать и сокрушаться, а ты будешь весела и изобильна.
+</p>
+<div class="num">28</div><p id="n28">Язычники будут завидовать тебе, но ничего против тебя сделать не могут, говорит Господь.
+</p>
+<div class="num">29</div><p id="n29">Руки Мои покроют тебя, чтобы сыны твои не видели геенны.
+</p>
+<div class="num">30</div><p id="n30">Утешайся, мать, с сынами твоими, ибо Я спасу тебя.
+</p>
+<div class="num">31</div><p id="n31">Помни о сынах твоих почивающих. Я выведу их от краев земли и окажу им милость, ибо Я милостив, говорит Господь Вседержитель.
+</p>
+<div class="num">32</div><p id="n32">Обними детей твоих, доколе Я приду и сделаю им милость; ибо источники Мои обильны и благодать Моя не оскудеет.
+</p>
+<div class="num">33</div><p id="n33">Я, Ездра, получил на горе Орив повеление от Господа идти к Израилю. Когда я пришел к ним, они отвергли меня и презрели заповедь Господню.
+</p>
+<div class="num">34</div><p id="n34">Посему вам говорю, язычники, которые можете слышать и понимать: ожидайте Пастыря вашего, Он даст вам покой вечный, ибо близко Тот, Который придет в скончание века.
+</p>
+<div class="num">35</div><p id="n35">Будьте готовы к воздаянию царствия, ибо свет немерцающий воссияет вам на вечное время.
+</p>
+<div class="num">36</div><p id="n36">Избегайте тени века сего; приимите сладость славы вашей. Я открыто свидетельствую о Спасителе моем.
+</p>
+<div class="num">37</div><p id="n37">Вверенный дар приимите, и наслаждайтесь, благодаря Того, Кто призвал вас в небесное царство.
+</p>
+<div class="num">38</div><p id="n38">Встаньте и стойте, и смотрите, какое число знаменованных на вечери Господней,
+</p>
+<div class="num">39</div><p id="n39">которые, переселившись от тени века сего, получили от Господа светлые одежды.
+</p>
+<div class="num">40</div><p id="n40">Приими число твое, Сион, и заключи твоих, одетых в белые одеяния, которые исполнили закон Господень.
+</p>
+<div class="num">41</div><p id="n41">Число желанных сынов твоих полно. Проси державу Господа, чтобы освятился народ твой, призванный от начала.
+</p>
+<div class="num">42</div><p id="n42">Я, Ездра, видел на горе Сионской сонм великий, которого не мог исчислить, и все они песнями прославляли Господа.
+</p>
+<div class="num">43</div><p id="n43">Посреди них был юноша величественный, превосходящий всех их, и возлагал венцы на главу каждого из них и тем более возвышался; я поражен был удивлением.
+</p>
+<div class="num">44</div><p id="n44">Тогда я спросил Ангела: кто сии, господин мой?
+</p>
+<div class="num">45</div><p id="n45">Он в ответ мне сказал: это те, которые сложили смертную одежду и облеклись в бессмертную и исповедали имя Божие; они теперь увенчиваются и принимают победные пальмы.
+</p>
+<div class="num">46</div><p id="n46">Я спросил: а кто сей юноша, который возлагает на них венцы и вручает им пальмы?
+</p>
+<div class="num">47</div><p id="n47">Он отвечал мне: Сам Сын Божий, Которого они прославляли в веке сем. И я начал славить их, мужественно стоявших за имя Господне.
+</p>
+<div class="num">48</div><p id="n48">Тогда Ангел сказал мне: иди и возвести народу моему, какие видел ты дивные дела Господа Бога.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ezr3.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

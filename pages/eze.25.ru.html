@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eze.ru.html">Книга Пророка Иезекииля</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 25
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И было ко мне слово Господне:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">сын человеческий! обрати лице твое к сынам Аммоновым и изреки на них пророчество,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и скажи сынам Аммоновым: слушайте слово Господа Бога: так говорит Господь Бог: за то, что ты о святилище Моем говоришь: "а! а!", потому что оно поругано,- и о земле Израилевой, потому что она опустошена, и о доме Иудином, потому что они пошли в плен,-
+</p>
+<div class="num">&nbsp;4</div><p id="n4">за то вот, Я отдам тебя в наследие сынам востока, и построят у тебя овчарни свои, и поставят у тебя шатры свои, и будут есть плоды твои и пить молоко твое.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Я сделаю Равву стойлом для верблюдов, и сынов Аммоновых - пастухами овец, и узнаете, что Я Господь.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Ибо так говорит Господь Бог: за то, что ты рукоплескал и топал ногою, и со всем презрением к земле Израилевой душевно радовался,-
+</p>
+<div class="num">&nbsp;7</div><p id="n7">за то вот, Я простру руку Мою на тебя и отдам тебя на расхищение народам, и истреблю тебя из числа народов, и изглажу тебя из числа земель; сокрушу тебя, и узнаешь, что Я Господь.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Так говорит Господь Бог: за то, что Моав и Сеир говорят: "вот и дом Иудин, как все народы!",
+</p>
+<div class="num">&nbsp;9</div><p id="n9">за то вот, Я, <i>начиная</i> от городов, от всех пограничных городов его, красы земли, от Беф-Иешимофа, Ваалмеона и Кириафаима, открою бок Моава
+</p>
+<div class="num">10</div><p id="n10">для сынов востока и отдам его в наследие <i>им</i>, вместе с сынами Аммоновыми, чтобы сыны Аммона не упоминались более среди народов.
+</p>
+<div class="num">11</div><p id="n11">И над Моавом произведу суд, и узнают, что Я Господь.
+</p>
+<div class="num">12</div><p id="n12">Так говорит Господь Бог: за то, что Едом жестоко мстил дому Иудину и тяжко согрешил, совершая над ним мщение,
+</p>
+<div class="num">13</div><p id="n13">за то, так говорит Господь Бог: простру руку Мою на Едома и истреблю у него людей и скот, и сделаю его пустынею; от Фемана до Дедана все падут от меча.
+</p>
+<div class="num">14</div><p id="n14">И совершу мщение Мое над Едомом рукою народа Моего, Израиля; и они будут действовать в Идумее по Моему гневу и Моему негодованию, и узнают мщение Мое, говорит Господь Бог.
+</p>
+<div class="num">15</div><p id="n15">Так говорит Господь Бог: за то, что Филистимляне поступили мстительно и мстили с презрением в душе, на погибель, по вечной неприязни,
+</p>
+<div class="num">16</div><p id="n16">за то, так говорит Господь Бог: вот, Я простру руку Мою на Филистимлян, и истреблю Критян, и уничтожу остаток их на берегу моря;
+</p>
+<div class="num">17</div><p id="n17">и совершу над ними великое мщение наказаниями яростными; и узнают, что Я Господь, когда совершу над ними Мое мщение.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eze.26.ru.html">к главе 26</a></div></div>
+
+</body>
+</html>

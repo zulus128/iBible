@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mk.ru.html">Евангелие от Марка</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И начал говорить им притчами: некоторый человек насадил виноградник и обнес оградою, и выкопал точило, и построил башню, и, отдав его виноградарям, отлучился.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И послал в свое время к виноградарям слугу - принять от виноградарей плодов из виноградника.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Они же, схватив его, били, и отослали ни с чем.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Опять послал к ним другого слугу; и тому камнями разбили голову и отпустили его с бесчестьем.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И опять иного послал: и того убили; и многих других то били, то убивали.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Имея же еще одного сына, любезного ему, напоследок послал и его к ним, говоря: постыдятся сына моего.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Но виноградари сказали друг другу: это наследник; пойдем, убьем его, и наследство будет наше.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И, схватив его, убили и выбросили вон из виноградника.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Что же сделает хозяин виноградника? - Придет и предаст смерти виноградарей, и отдаст виноградник другим.
+</p>
+<div class="num">10</div><p id="n10">Неужели вы не читали сего в Писании: камень, который отвергли строители, тот самый сделался главою угла;
+</p>
+<div class="num">11</div><p id="n11">это от Господа, и есть дивно в очах наших.
+</p>
+<div class="num">12</div><p id="n12">И старались схватить Его, но побоялись народа, ибо поняли, что о них сказал притчу; и, оставив Его, отошли.
+</p>
+<div class="num">13</div><p id="n13">И посылают к Нему некоторых из фарисеев и иродиан, чтобы уловить Его в слове.
+</p>
+<div class="num">14</div><p id="n14">Они же, придя, говорят Ему: Учитель! мы знаем, что Ты справедлив и не заботишься об угождении кому-либо, ибо не смотришь ни на какое лице, но истинно пути Божию учишь. Позволительно ли давать по&#769;дать кесарю или нет? давать ли нам или не давать?
+</p>
+<div class="num">15</div><p id="n15">Но Он, зная их лицемерие, сказал им: что искушаете Меня? принесите Мне динарий, чтобы Мне видеть его.
+</p>
+<div class="num">16</div><p id="n16">Они принесли. Тогда говорит им: чье это изображение и надпись? Они сказали Ему: кесаревы.
+</p>
+<div class="num">17</div><p id="n17">Иисус сказал им в ответ: отдавайте кесарево кесарю, а Божие Богу. И дивились Ему.
+</p>
+<div class="num">18</div><p id="n18">Потом пришли к Нему саддукеи, которые говорят, что нет воскресения, и спросили Его, говоря:
+</p>
+<div class="num">19</div><p id="n19">Учитель! Моисей написал нам: если у кого умрет брат и оставит жену, а детей не оставит, то брат его пусть возьмет жену его и восстановит семя брату своему.
+</p>
+<div class="num">20</div><p id="n20">Было семь братьев: первый взял жену и, умирая, не оставил детей.
+</p>
+<div class="num">21</div><p id="n21">Взял ее второй и умер, и он не оставил детей; также и третий.
+</p>
+<div class="num">22</div><p id="n22">Брали ее <i>за</i> <i>себя</i> семеро и не оставили детей. После всех умерла и жена.
+</p>
+<div class="num">23</div><p id="n23">Итак, в воскресении, когда воскреснут, которого из них будет она женою? Ибо семеро имели ее женою.
+</p>
+<div class="num">24</div><p id="n24">Иисус сказал им в ответ: этим ли приводитесь вы в заблуждение, не зная Писаний, ни силы Божией?
+</p>
+<div class="num">25</div><p id="n25">Ибо, когда из мертвых воскреснут, <i>тогда</i> не будут ни жениться, ни замуж выходить, но будут, как Ангелы на небесах.
+</p>
+<div class="num">26</div><p id="n26">А о мертвых, что они воскреснут, разве не читали вы в книге Моисея, как Бог при купине сказал ему: Я Бог Авраама, и Бог Исаака, и Бог Иакова?
+</p>
+<div class="num">27</div><p id="n27"><i>Бог</i> не есть Бог мертвых, но Бог живых. Итак, вы весьма заблуждаетесь.
+</p>
+<div class="num">28</div><p id="n28">Один из книжников, слыша их прения и видя, что <i>Иисус</i> хорошо им отвечал, подошел и спросил Его: какая первая из всех заповедей?
+</p>
+<div class="num">29</div><p id="n29">Иисус отвечал ему: первая из всех заповедей: слушай, Израиль! Господь Бог наш есть Господь единый;
+</p>
+<div class="num">30</div><p id="n30">и возлюби Господа Бога твоего всем сердцем твоим, и всею душею твоею, и всем разумением твоим, и всею крепостию твоею,- вот первая заповедь!
+</p>
+<div class="num">31</div><p id="n31">Вторая подобная ей: возлюби ближнего твоего, как самого себя. Иной большей сих заповеди нет.
+</p>
+<div class="num">32</div><p id="n32">Книжник сказал Ему: хорошо, Учитель! истину сказал Ты, что один есть Бог и нет иного, кроме Его;
+</p>
+<div class="num">33</div><p id="n33">и любить Его всем сердцем и всем умом, и всею душею, и всею крепостью, и любить ближнего, как самого себя, есть больше всех всесожжений и жертв.
+</p>
+<div class="num">34</div><p id="n34">Иисус, видя, что он разумно отвечал, сказал ему: недалеко ты от Царствия Божия. После того никто уже не смел спрашивать Его.
+</p>
+<div class="num">35</div><p id="n35">Продолжая учить в храме, Иисус говорил: как говорят книжники, что Христос есть Сын Давидов?
+</p>
+<div class="num">36</div><p id="n36">Ибо сам Давид сказал Духом Святым: сказал Господь Господу моему: седи одесную Меня, доколе положу врагов Твоих в подножие ног Твоих.
+</p>
+<div class="num">37</div><p id="n37">Итак, сам Давид называет Его Господом: как же Он Сын ему? И множество народа слушало Его с услаждением.
+</p>
+<div class="num">38</div><p id="n38">И говорил им в учении Своем: остерегайтесь книжников, любящих ходить в длинных одеждах и <i>принимать</i> приветствия в народных собраниях,
+</p>
+<div class="num">39</div><p id="n39">сидеть впереди в синагогах и возлежать на первом <i>месте</i> на пиршествах,-
+</p>
+<div class="num">40</div><p id="n40">сии, поядающие домы вдов и напоказ долго молящиеся, примут тягчайшее осуждение.
+</p>
+<div class="num">41</div><p id="n41">И сел Иисус против сокровищницы и смотрел, как народ кладет деньги в сокровищницу. Многие богатые клали много.
+</p>
+<div class="num">42</div><p id="n42">Придя же, одна бедная вдова положила две лепты, что составляет кодрант.
+</p>
+<div class="num">43</div><p id="n43">Подозвав учеников Своих, <i>Иисус</i> сказал им: истинно говорю вам, что эта бедная вдова положила больше всех, клавших в сокровищницу,
+</p>
+<div class="num">44</div><p id="n44">ибо все клали от избытка своего, а она от скудости своей положила всё, что имела, всё пропитание свое.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mk.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

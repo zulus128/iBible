@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nav.ru.html">Книга Иисуса Навина</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">По смерти Моисея, раба Господня, Господь сказал Иисусу, сыну Навину, служителю Моисееву:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Моисей, раб Мой, умер; итак встань, перейди через Иордан сей, ты и весь народ сей, в землю, которую Я даю им, сынам Израилевым.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Всякое место, на которое ступят стопы ног ваших, Я даю вам, как Я сказал Моисею:
+</p>
+<div class="num">&nbsp;4</div><p id="n4">от пустыни и Ливана сего до реки великой, реки Евфрата, всю землю Хеттеев; и до великого моря к западу солнца будут пределы ваши.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Никто не устоит пред тобою во все дни жизни твоей; и как Я был с Моисеем, так буду и с тобою: не отступлю от тебя и не оставлю тебя.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Будь тверд и мужествен; ибо ты народу сему передашь во владение землю, которую Я клялся отцам их дать им;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">только будь тверд и очень мужествен, и тщательно храни и исполняй весь закон, который завещал тебе Моисей, раб Мой; не уклоняйся от него ни направо ни налево, дабы поступать благоразумно во всех предприятиях твоих.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Да не отходит сия книга закона от уст твоих; но поучайся в ней день и ночь, дабы в точности исполнять все, что в ней написано: тогда ты будешь успешен в путях твоих и будешь поступать благоразумно.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Вот Я повелеваю тебе: будь тверд и мужествен, не страшись и не ужасайся; ибо с тобою Господь Бог твой везде, куда ни пойдешь.
+</p>
+<div class="num">10</div><p id="n10">И дал Иисус повеление надзирателям народа и сказал:
+</p>
+<div class="num">11</div><p id="n11">пройдите по стану и дайте повеление народу и скажите: заготовляйте себе пищу для пути, потому что, спустя три дня, вы пойдете за Иордан сей, дабы прийти взять землю, которую Господь Бог [отцов] ваших дает вам в наследие.
+</p>
+<div class="num">12</div><p id="n12">А колену Рувимову, Гадову и половине колена Манассиина Иисус сказал:
+</p>
+<div class="num">13</div><p id="n13">вспомните, что заповедал вам Моисей, раб Господень, говоря: Господь Бог ваш успокоил вас и дал вам землю сию;
+</p>
+<div class="num">14</div><p id="n14">жены ваши, дети ваши и скот ваш пусть останутся в земле, которую дал вам Моисей за Иорданом; а вы все, могущие сражаться, вооружившись идите пред братьями вашими и помогайте им,
+</p>
+<div class="num">15</div><p id="n15">доколе Господь [Бог ваш] не успокоит братьев ваших, как и вас; доколе и они не получат в наследие землю, которую Господь Бог ваш дает им; тогда возвратитесь в наследие ваше и владейте землею, которую Моисей, раб Господень, дал вам за Иорданом к востоку солнца.
+</p>
+<div class="num">16</div><p id="n16">Они в ответ Иисусу сказали: все, что ни повелишь нам, сделаем, и куда ни пошлешь нас, пойдем;
+</p>
+<div class="num">17</div><p id="n17">как слушали мы Моисея, так будем слушать и тебя: только Господь, Бог твой, да будет с тобою, как Он был с Моисеем;
+</p>
+<div class="num">18</div><p id="n18">всякий, кто воспротивится повелению твоему и не послушает слов твоих во всем, что ты ни повелишь ему, будет предан смерти. Только будь тверд и мужествен!
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nav.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

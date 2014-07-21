@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nav.ru.html">Книга Иисуса Навина</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Когда весь народ перешел чрез Иордан, Господь сказал Иисусу:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">возьмите себе из народа двенадцать человек, по одному человеку из колена,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и дайте им повеление и скажите: возьмите себе отсюда, из средины Иордана, где стояли ноги священников неподвижно, двенадцать камней, и перенесите их с собою, и положите их на ночлеге, где будете ночевать в эту ночь.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Иисус призвал двенадцать человек, которых назначил из сынов Израилевых, по одному человеку из колена,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и сказал им Иисус: пойдите пред ковчегом Господа Бога вашего в средину Иордана и [возьмите оттуда и] положите на плечо свое каждый по одному камню, по числу колен сынов Израилевых,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">чтобы они были у вас [лежащим всегда] знамением; когда спросят вас в последующее время сыны ваши и скажут: "к чему у вас эти камни?",
+</p>
+<div class="num">&nbsp;7</div><p id="n7">вы скажете им: "<i>в</i> <i>память</i> <i>того,</i> что вода Иордана разделилась пред ковчегом завета Господа [всей земли]; когда он переходил чрез Иордан, тогда вода Иордана разделилась"; таким образом камни сии будут [у вас] для сынов Израилевых памятником на век.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сделали сыны Израилевы так, как приказал Иисус: взяли двенадцать камней из Иордана, как говорил Господь Иисусу, по числу колен сынов Израилевых, и перенесли их с собою на ночлег, и положили их там.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И [другие] двенадцать камней поставил Иисус среди Иордана на месте, где стояли ноги священников, несших ковчег завета [Господня]. Они там и до сего дня.
+</p>
+<div class="num">10</div><p id="n10">Священники, несшие ковчег [завета Господня], стояли среди Иордана, доколе не окончено было [Иисусом] все, что Господь повелел Иисусу сказать народу - так, как завещал Моисей Иисусу; а народ между тем поспешно переходил.
+</p>
+<div class="num">11</div><p id="n11">Когда весь народ перешел [Иордан], тогда перешел и ковчег [завета] Господня, и священники пред народом;
+</p>
+<div class="num">12</div><p id="n12">и сыны Рувима и сыны Гада и половина колена Манассиина перешли вооруженные впереди сынов Израилевых, как говорил им Моисей.
+</p>
+<div class="num">13</div><p id="n13">Около сорока тысяч вооруженных на брань перешло пред Господом на равнины Иерихонские, чтобы сразиться.
+</p>
+<div class="num">14</div><p id="n14">В тот день прославил Господь Иисуса пред очами всего Израиля и стали бояться его, как боялись Моисея, во все дни жизни его.
+</p>
+<div class="num">15</div><p id="n15">И сказал Господь Иисусу, говоря:
+</p>
+<div class="num">16</div><p id="n16">прикажи священникам, несущим ковчег откровения, выйти из Иордана.
+</p>
+<div class="num">17</div><p id="n17">Иисус приказал священникам и сказал: выйдите из Иордана.
+</p>
+<div class="num">18</div><p id="n18">И когда священники, несшие ковчег завета Господня, вышли из Иордана, то, лишь только стопы ног их ступили на сушу, вода Иордана устремилась по своему месту и пошла, как вчера и третьего дня, выше всех берегов своих.
+</p>
+<div class="num">19</div><p id="n19">И вышел народ из Иордана в десятый день первого месяца и поставил стан в Галгале, на восточной стороне Иерихона.
+</p>
+<div class="num">20</div><p id="n20">И двенадцать камней, которые взяли они из Иордана, Иисус поставил в Галгале
+</p>
+<div class="num">21</div><p id="n21">и сказал сынам Израилевым: когда спросят в последующее время сыны ваши отцов своих: "что значат эти камни?",
+</p>
+<div class="num">22</div><p id="n22">скажите сынам вашим: "Израиль перешел чрез Иордан сей по суше",
+</p>
+<div class="num">23</div><p id="n23">ибо Господь Бог ваш иссушил воды Иордана для вас, доколе вы не перешли его, так же, как Господь Бог ваш сделал с Чермным морем, которое иссушил [Господь, Бог ваш,] пред нами, доколе мы не перешли его,
+</p>
+<div class="num">24</div><p id="n24">дабы все народы земли познали, что рука Господня сильна, и дабы вы боялись Господа Бога вашего во все дни.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nav.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

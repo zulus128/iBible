@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mk.ru.html">Евангелие от Марка</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 5
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И пришли на другой берег моря, в страну Гадаринскую.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И когда вышел Он из лодки, тотчас встретил Его вышедший из гробов человек, <i>одержимый</i> нечистым духом,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">он имел жилище в гробах, и никто не мог его связать даже цепями,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">потому что многократно был он скован оковами и цепями, но разрывал цепи и разбивал оковы, и никто не в силах был укротить его;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">всегда, ночью и днем, в горах и гробах, кричал он и бился о камни;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">увидев же Иисуса издалека, прибежал и поклонился Ему,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и, вскричав громким голосом, сказал: что Тебе до меня, Иисус, Сын Бога Всевышнего? заклинаю Тебя Богом, не мучь меня!
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ибо <i>Иисус</i> сказал ему: выйди, дух нечистый, из сего человека.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И спросил его: как тебе имя? И он сказал в ответ: легион имя мне, потому что нас много.
+</p>
+<div class="num">10</div><p id="n10">И много просили Его, чтобы не высылал их вон из страны той.
+</p>
+<div class="num">11</div><p id="n11">Паслось же там при горе большое стадо свиней.
+</p>
+<div class="num">12</div><p id="n12">И просили Его все бесы, говоря: пошли нас в свиней, чтобы нам войти в них.
+</p>
+<div class="num">13</div><p id="n13">Иисус тотчас позволил им. И нечистые духи, выйдя, вошли в свиней; и устремилось стадо с крутизны в море, а их было около двух тысяч; и потонули в море.
+</p>
+<div class="num">14</div><p id="n14">Пасущие же свиней побежали и рассказали в городе и в деревнях. И <i>жители</i> вышли посмотреть, что случилось.
+</p>
+<div class="num">15</div><p id="n15">Приходят к Иисусу и видят, что бесновавшийся, в котором был легион, сидит и одет, и в здравом уме; и устрашились.
+</p>
+<div class="num">16</div><p id="n16">Видевшие рассказали им о том, как это произошло с бесноватым, и о свиньях.
+</p>
+<div class="num">17</div><p id="n17">И начали просить Его, чтобы отошел от пределов их.
+</p>
+<div class="num">18</div><p id="n18">И когда Он вошел в лодку, бесновавшийся просил Его, чтобы быть с Ним.
+</p>
+<div class="num">19</div><p id="n19">Но Иисус не дозволил ему, а сказал: иди домой к своим и расскажи им, что сотворил с тобою Господь и <i>как</i> помиловал тебя.
+</p>
+<div class="num">20</div><p id="n20">И пошел и начал проповедовать в Десятиградии, что сотворил с ним Иисус; и все дивились.
+</p>
+<div class="num">21</div><p id="n21">Когда Иисус опять переправился в лодке на другой берег, собралось к Нему множество народа. Он был у моря.
+</p>
+<div class="num">22</div><p id="n22">И вот, приходит один из начальников синагоги, по имени Иаир, и, увидев Его, падает к ногам Его
+</p>
+<div class="num">23</div><p id="n23">и усильно просит Его, говоря: дочь моя при смерти; приди и возложи на нее руки, чтобы она выздоровела и осталась жива.
+</p>
+<div class="num">24</div><p id="n24"><i>Иисус</i> пошел с ним. <br /> За Ним следовало множество народа, и теснили Его.
+</p>
+<div class="num">25</div><p id="n25">Одна женщина, которая страдала кровотечением двенадцать лет,
+</p>
+<div class="num">26</div><p id="n26">много потерпела от многих врачей, истощила всё, что было у ней, и не получила никакой пользы, но пришла еще в худшее состояние,-
+</p>
+<div class="num">27</div><p id="n27">услышав об Иисусе, подошла сзади в народе и прикоснулась к одежде Его,
+</p>
+<div class="num">28</div><p id="n28">ибо говорила: если хотя к одежде Его прикоснусь, то выздоровею.
+</p>
+<div class="num">29</div><p id="n29">И тотчас иссяк у ней источник крови, и она ощутила в теле, что исцелена от болезни.
+</p>
+<div class="num">30</div><p id="n30">В то же время Иисус, почувствовав Сам в Себе, что вышла из Него сила, обратился в народе и сказал: кто прикоснулся к Моей одежде?
+</p>
+<div class="num">31</div><p id="n31">Ученики сказали Ему: Ты видишь, что народ теснит Тебя, и говоришь: кто прикоснулся ко Мне?
+</p>
+<div class="num">32</div><p id="n32">Но Он смотрел вокруг, чтобы видеть ту, которая сделала это.
+</p>
+<div class="num">33</div><p id="n33">Женщина в страхе и трепете, зная, что с нею произошло, подошла, пала пред Ним и сказала Ему всю истину.
+</p>
+<div class="num">34</div><p id="n34">Он же сказал ей: дщерь! вера твоя спасла тебя; иди в мире и будь здорова от болезни твоей.
+</p>
+<div class="num">35</div><p id="n35">Когда Он еще говорил сие, приходят от начальника синагоги и говорят: дочь твоя умерла; что еще утруждаешь Учителя?
+</p>
+<div class="num">36</div><p id="n36">Но Иисус, услышав сии слова, тотчас говорит начальнику синагоги: не бойся, только веруй.
+</p>
+<div class="num">37</div><p id="n37">И не позволил никому следовать за Собою, кроме Петра, Иакова и Иоанна, брата Иакова.
+</p>
+<div class="num">38</div><p id="n38">Приходит в дом начальника синагоги и видит смятение и плачущих и вопиющих громко.
+</p>
+<div class="num">39</div><p id="n39">И, войдя, говорит им: что смущаетесь и плачете? девица не умерла, но спит.
+</p>
+<div class="num">40</div><p id="n40">И смеялись над Ним. Но Он, выслав всех, берет с Собою отца и мать девицы и бывших с Ним и входит туда, где девица лежала.
+</p>
+<div class="num">41</div><p id="n41">И, взяв девицу за руку, говорит ей: "талифа&#769; куми&#769;", что значит: девица, тебе говорю, встань.
+</p>
+<div class="num">42</div><p id="n42">И девица тотчас встала и начала ходить, ибо была лет двенадцати. <i>Видевшие</i> пришли в великое изумление.
+</p>
+<div class="num">43</div><p id="n43">И Он строго приказал им, чтобы никто об этом не знал, и сказал, чтобы дали ей есть.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mk.6.ru.html">к главе 6</a></div></div>
+
+</body>
+</html>

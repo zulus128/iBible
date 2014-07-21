@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 22
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Грязному камню подобен ленивый: всякий освищет бесславие его.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Воловьему помету подобен ленивый: всякий, поднявший его, отряхнет руку.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Стыд отцу рождение невоспитанного сына, дочь же <i>невоспитанная</i> рождается на унижение.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Разумная дочь приобретет себе мужа, а бесстыдная - печаль родившему.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Наглая позорит отца и мужа, и у обоих будет в презрении.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Не вовремя рассказ - то же, что музыка во время печали; наказание же и учение мудрости прилично всякому времени.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Поучающий глупого - то же, что склеивающий черепки или пробуждающий спящего от глубокого сна.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Рассказывающий что-либо глупому - то же, что рассказывающий дремлющему, который по окончании спрашивает: "что?"
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Плачь над умершим, ибо свет исчез для него; плачь и над глупым, ибо разум исчез для него.
+</p>
+<div class="num">10</div><p id="n10">Меньше плачь над умершим, потому что он успокоился, а злая жизнь глупого - хуже смерти.
+</p>
+<div class="num">11</div><p id="n11">Плачь об умершем - семь дней, а о глупом и нечестивом - все дни жизни его.
+</p>
+<div class="num">12</div><p id="n12">С безрассудным много не говори, и к неразумному не ходи;
+</p>
+<div class="num">13</div><p id="n13">берегись от него, чтобы не иметь неприятности и не замарать себя столкновением с ним;
+</p>
+<div class="num">14</div><p id="n14">уклонись от него и найдешь покой и не будешь огорчен безумием его.
+</p>
+<div class="num">15</div><p id="n15">Что тяжелее свинца? и какое имя ему, как не глупый?
+</p>
+<div class="num">16</div><p id="n16">Легче понести песок и соль и глыбу железа, нежели человека бессмысленного.
+</p>
+<div class="num">17</div><p id="n17">Как деревянная связь в доме, крепко устроенная, не дает ему распадаться при сотрясении, так сердце, утвержденное на обдуманном совете, не поколеблется во время страха.
+</p>
+<div class="num">18</div><p id="n18">Сердце, утвержденное на разумном размышлении,- как лепное украшение на вытесанной стене.
+</p>
+<div class="num">19</div><p id="n19">Подпорка, поставленная на высоте, не устоит против ветра:
+</p>
+<div class="num">20</div><p id="n20">так боязливое сердце, при глупом размышлении, не устоит против страха.
+</p>
+<div class="num">21</div><p id="n21">Наносящий удар глазу вызывает слезы, а наносящий удар сердцу возбуждает чувство болезненное.
+</p>
+<div class="num">22</div><p id="n22">Бросающий камень в птиц отгонит их; а поносящий друга расторгнет дружбу.
+</p>
+<div class="num">23</div><p id="n23">Если ты на друга извлек меч, не отчаивайся, ибо возможно возвращение дружбы.
+</p>
+<div class="num">24</div><p id="n24">Если ты открыл уста против друга, не бойся, ибо возможно примирение.
+</p>
+<div class="num">25</div><p id="n25">Только поношение, гордость, обнаружение тайны и коварное злодейство могут отогнать всякого друга.
+</p>
+<div class="num">26</div><p id="n26">Приобретай доверенность ближнего в нищете его, чтобы радоваться вместе с ним при богатстве его;
+</p>
+<div class="num">27</div><p id="n27">оставайся с ним во время скорби, чтобы иметь участие в его наследии.
+</p>
+<div class="num">28</div><p id="n28">Прежде пламени бывает в печи пар и дым: так прежде кровопролития - ссоры.
+</p>
+<div class="num">29</div><p id="n29">Защищать друга я не постыжусь и не скроюсь от лица его;
+</p>
+<div class="num">30</div><p id="n30">а если приключится мне чрез него зло, то всякий, кто услышит, будет остерегаться его.
+</p>
+<div class="num">31</div><p id="n31">Кто даст мне стражу к устам моим и печать благоразумия на уста мои, чтобы мне не пасть чрез них и чтобы язык мой не погубил меня!
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.23.ru.html">к главе 23</a></div></div>
+
+</body>
+</html>

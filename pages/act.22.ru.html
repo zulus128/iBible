@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="act.ru.html">Деяния Апостолов</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 22
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Мужи братия и отцы! выслушайте теперь мое оправдание перед вами.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Услышав же, что он заговорил с ними на еврейском языке, они еще более утихли. Он сказал:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">я Иудеянин, родившийся в Тарсе Киликийском, воспитанный в сем городе при ногах Гамалиила, тщательно наставленный в отеческом законе, ревнитель по Боге, как и все вы ныне.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Я даже до смерти гнал <i>последователей</i> сего учения, связывая и предавая в темницу и мужчин и женщин,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">как засвидетельствует о мне первосвященник и все старейшины, от которых и письма взяв к братиям, живущим в Дамаске, я шел, чтобы тамошних привести в оковах в Иерусалим на истязание.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Когда же я был в пути и приближался к Дамаску, около полудня вдруг осиял меня великий свет с неба.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Я упал на землю и услышал голос, говоривший мне: Савл, Савл! что ты гонишь Меня?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Я отвечал: кто Ты, Господи? Он сказал мне: Я Иисус Назорей, Которого ты гонишь.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Бывшие же со мною свет видели, и пришли в страх; но голоса Говорившего мне не слыхали.
+</p>
+<div class="num">10</div><p id="n10">Тогда я сказал: Господи! что мне делать? Господь же сказал мне: встань и иди в Дамаск, и там тебе сказано будет всё, что назначено тебе делать.
+</p>
+<div class="num">11</div><p id="n11">А как я от славы света того лишился зрения, то бывшие со мною за руку привели меня в Дамаск.
+</p>
+<div class="num">12</div><p id="n12">Некто Анания, муж благочестивый по закону, одобряемый всеми Иудеями, живущими в Дамаске,
+</p>
+<div class="num">13</div><p id="n13">пришел ко мне и, подойдя, сказал мне: брат Савл! прозри. И я тотчас увидел его.
+</p>
+<div class="num">14</div><p id="n14">Он же сказал мне: Бог отцов наших предъизбрал тебя, чтобы ты познал волю Его, увидел Праведника и услышал глас из уст Его,
+</p>
+<div class="num">15</div><p id="n15">потому что ты будешь Ему свидетелем пред всеми людьми о том, что ты видел и слышал.
+</p>
+<div class="num">16</div><p id="n16">Итак, что ты медлишь? Встань, крестись и омой грехи твои, призвав имя Господа Иисуса.
+</p>
+<div class="num">17</div><p id="n17">Когда же я возвратился в Иерусалим и молился в храме, пришел я в исступление,
+</p>
+<div class="num">18</div><p id="n18">и увидел Его, и Он сказал мне: поспеши и выйди скорее из Иерусалима, потому что <i>здесь</i> не примут твоего свидетельства о Мне.
+</p>
+<div class="num">19</div><p id="n19">Я сказал: Господи! им известно, что я верующих в Тебя заключал в темницы и бил в синагогах,
+</p>
+<div class="num">20</div><p id="n20">и когда проливалась кровь Стефана, свидетеля Твоего, я там стоял, одобрял убиение его и стерег одежды побивавших его.
+</p>
+<div class="num">21</div><p id="n21">И Он сказал мне: иди; Я пошлю тебя далеко к язычникам.
+</p>
+<div class="num">22</div><p id="n22">До этого слова слушали его; а за сим подняли крик, говоря: истреби от земли такого! ибо ему не должно жить.
+</p>
+<div class="num">23</div><p id="n23">Между тем как они кричали, метали одежды и бросали пыль на воздух,
+</p>
+<div class="num">24</div><p id="n24">тысяченачальник повелел ввести его в крепость, приказав бичевать его, чтобы узнать, по какой причине так кричали против него.
+</p>
+<div class="num">25</div><p id="n25">Но когда растянули его ремнями, Павел сказал стоявшему сотнику: разве вам позволено бичевать Римского гражданина, да и без суда?
+</p>
+<div class="num">26</div><p id="n26">Услышав это, сотник подошел и донес тысяченачальнику, говоря: смотри, что ты хочешь делать? этот человек - Римский гражданин.
+</p>
+<div class="num">27</div><p id="n27">Тогда тысяченачальник, подойдя к нему, сказал: скажи мне, ты Римский гражданин? Он сказал: да.
+</p>
+<div class="num">28</div><p id="n28">Тысяченачальник отвечал: я за большие деньги приобрел это гражданство. Павел же сказал: а я и родился в нем.
+</p>
+<div class="num">29</div><p id="n29">Тогда тотчас отступили от него хотевшие пытать его. А тысяченачальник, узнав, что он Римский гражданин, испугался, что связал его.
+</p>
+<div class="num">30</div><p id="n30">На другой день, желая достоверно узнать, в чем обвиняют его Иудеи, освободил его от оков и повелел собраться первосвященникам и всему синедриону и, выведя Павла, поставил его перед ними.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="act.23.ru.html">к главе 23</a></div></div>
+
+</body>
+</html>

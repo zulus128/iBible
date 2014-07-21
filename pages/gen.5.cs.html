@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.cs.html">Кни1га пeрваz мwmсeова. БытіE</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA є7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">СіS кни1га бытіS человёча, въ џньже дeнь сотвори2 бGъ ґдaма, по w4бразу б9ію сотвори2 є3го2,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">мyжа и3 женY сотвори2 и5хъ и3 блгcви2 и5хъ: и3 наречE и4мz є3мY ґдaмъ, въ џньже дeнь сотвори2 и5хъ.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Поживe же ґдaмъ лётъ двёстэ три1десzть и3 роди2 сhна по ви1ду своемY и3 по w4бразу своемY, и3 наречE и4мz є3мY си1fъ.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Бhша же днjе ґдaмwвы, ±же поживE, по є4же роди1ти є3мY си1fа, лётъ сeдмь сHтъ, и3 роди2 сhны и3 дщє1ри.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И# бhша вси2 днjе ґдaмwвы, ±же поживE, лётъ дeвzть сHтъ и3 три1десzть: и3 ќмре.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Поживe же си1fъ лётъ двёстэ пsть и3 роди2 є3нHса.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И# поживE си1fъ, по є4же роди1ти є3мY є3нHса, лётъ сeдмь сHтъ и3 сeдмь, и3 роди2 сhны и3 дщє1ри.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И# бhша вси2 днjе си1fwвы лётъ дeвzть сHтъ и3 дванaдесzть: и3 ќмре.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И# поживE є3нHсъ лётъ сто2 дeвzтьдесzтъ и3 роди2 каінaна.
+</p>
+<div class="num">10</div><p id="n10">И# поживE є3нHсъ, по є4же роди1ти є3мY каінaна, лётъ сeдмь сHтъ и3 пzтьнaдесzть, и3 роди2 сhны и3 дщє1ри.
+</p>
+<div class="num">11</div><p id="n11">И# бhша вси2 днjе є3нHсwвы лётъ дeвzть сHтъ и3 пsть: и3 ќмре.
+</p>
+<div class="num">12</div><p id="n12">И# поживE каінaнъ лётъ сто2 сeдмьдесzтъ и3 роди2 малелеи1ла.
+</p>
+<div class="num">13</div><p id="n13">И# поживE каінaнъ, по є4же роди1ти є3мY малелеи1ла, лётъ сeдмь сHтъ и3 четhредесzть, и3 роди2 сhны и3 дщє1ри.
+</p>
+<div class="num">14</div><p id="n14">И# бhша вси2 днjе каінaнwвы лётъ дeвzть сHтъ и3 дeсzть: и3 ќмре.
+</p>
+<div class="num">15</div><p id="n15">И# поживE малелеи1лъ лётъ сто2 шестьдесsтъ пsть и3 роди2 їaреда.
+</p>
+<div class="num">16</div><p id="n16">И# поживE малелеи1лъ, по є4же роди1ти є3мY їaреда, лётъ сeдмь сHтъ и3 три1десzть, и3 роди2 сhны и3 дщє1ри.
+</p>
+<div class="num">17</div><p id="n17">И# бhша вси2 днjе малелеи1лwвы лётъ џсмь сHтъ и3 дeвzтьдесzтъ пsть: и3 ќмре.
+</p>
+<div class="num">18</div><p id="n18">И# поживE їaредъ лётъ сто2 шестьдесsтъ двA и3 роди2 є3нHха.
+</p>
+<div class="num">19</div><p id="n19">И# поживE їaредъ, по є4же роди1ти є3мY є3нHха, лётъ џсмь сHтъ, и3 роди2 сhны и3 дщє1ри.
+</p>
+<div class="num">20</div><p id="n20">И# бhша вси2 днjе їaредwвы лётъ дeвzть сHтъ и3 шестьдесsтъ двA: и3 ќмре.
+</p>
+<div class="num">21</div><p id="n21">И# поживE є3нHхъ лётъ сто2 шестьдесsтъ пsть и3 роди2 маfусaла.
+</p>
+<div class="num">22</div><p id="n22">Ўгоди1 же є3нHхъ бGу, и3 поживE є3нHхъ, по є4же роди1ти є3мY маfусaла, лётъ двёстэ, и3 роди2 сhны и3 дщє1ри.
+</p>
+<div class="num">23</div><p id="n23">И# бhша вси2 днjе є3нHхwвы лётъ три1ста шестьдесsтъ пsть.
+</p>
+<div class="num">24</div><p id="n24">И# ўгоди2 є3нHхъ бGу, и3 не њбрэтaшесz, занE преложи2 є3го2 бGъ.
+</p>
+<div class="num">25</div><p id="n25">И# поживE маfусaлъ лётъ сто2 џсмьдесzтъ сeдмь и3 роди2 ламeха.
+</p>
+<div class="num">26</div><p id="n26">И# поживE маfусaлъ, по є4же роди1ти є3мY ламeха, лётъ сeдмь сHтъ џсмьдесzтъ двA, и3 роди2 сhны и3 дщє1ри.
+</p>
+<div class="num">27</div><p id="n27">И# бhша вси2 днjе маfусaлwвы, ±же поживE, лётъ дeвzть сHтъ и3 шестьдесsтъ дeвzть: и3 ќмре.
+</p>
+<div class="num">28</div><p id="n28">И# поживE ламeхъ лётъ сто2 џсмьдесzтъ џсмь и3 роди2 сhна,
+</p>
+<div class="num">29</div><p id="n29">и3 наречE и4мz є3мY нHе, глаг0лz: сeй ўпок0итъ нaсъ t дёлъ нaшихъ и3 t печaли рyкъ нaшихъ, и3 t земли2, ю4же проклS гDь бGъ.
+</p>
+<div class="num">30</div><p id="n30">И# поживE ламeхъ, по є4же роди1ти є3мY нHа, лётъ пsть сHтъ и3 шестьдесsтъ пsть, и3 роди2 сhны и3 дщє1ри.
+</p>
+<div class="num">31</div><p id="n31">И# бhша вси2 днjе ламeхwвы лётъ сeдмь сHтъ и3 пzтьдесsтъ три2: и3 ќмре.
+</p>
+<div class="num">32</div><p id="n32">И# бЁ нHе лётъ пzти2 сHтъ, и3 роди2 сhны три2, си1ма, хaма, їaфеfа.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.6.cs.html">главA ѕ7</a></div></div>
+
+</body>
+</html>

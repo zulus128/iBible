@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 10
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Господь Моисею: войди к фараону, ибо Я отягчил сердце его и сердце рабов его, чтобы явить между ними сии знамения Мои,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и чтобы ты рассказывал сыну твоему и сыну сына твоего о том, что Я сделал в Египте, и о знамениях Моих, которые Я показал в нем, и чтобы вы знали, что Я Господь.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Моисей и Аарон пришли к фараону и сказали ему: так говорит Господь, Бог Евреев: долго ли ты не смиришься предо Мною? отпусти народ Мой, чтобы он совершил Мне служение;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">а если ты не отпустишь народа Моего, то вот, завтра [в это самое время] Я наведу саранчу на [всю] твою область:
+</p>
+<div class="num">&nbsp;5</div><p id="n5">она покроет лице земли так, что нельзя будет видеть земли, и поест у вас [все] оставшееся [на земле], уцелевшее от града; объест также все дерева, растущие у вас в поле,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и наполнит домы твои, домы всех рабов твоих и [все] домы всех Египтян, чего не видели отцы твои, ни отцы отцов твоих со дня, как живут на земле, даже до сего дня. [Моисей] обратился и вышел от фараона.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Тогда рабы фараоновы сказали ему: долго ли он будет мучить нас? отпусти сих людей, пусть они совершат служение Господу, Богу своему; неужели ты еще не видишь, что Египет гибнет?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И возвратили Моисея и Аарона к фараону, и [фараон] сказал им: пойдите, совершите служение Господу, Богу вашему; кто же и кто пойдет?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказал Моисей: пойдем с малолетними нашими и стариками нашими, с сыновьями нашими и дочерями нашими, и с овцами нашими и с волами нашими пойдем, ибо у нас праздник Господу [Богу нашему].
+</p>
+<div class="num">10</div><p id="n10">[Фараон] сказал им: пусть будет так, Господь с вами! я готов отпустить вас: но зачем с детьми? видите, у вас худое намерение!
+</p>
+<div class="num">11</div><p id="n11">нет: пойдите <i>одни</i> мужчины и совершите служение Господу, так как вы сего просили. И выгнали их от фараона.
+</p>
+<div class="num">12</div><p id="n12">Тогда Господь сказал Моисею: простри руку твою на землю Египетскую, и пусть нападет саранча на землю Египетскую и поест всю траву земную [и все плоды древесные], всё, что уцелело от града.
+</p>
+<div class="num">13</div><p id="n13">И простер Моисей жезл свой на землю Египетскую, и Господь навел на сию землю восточный ветер, <i>продолжавшийся</i> весь тот день и всю ночь. Настало утро, и восточный ветер нанес саранчу.
+</p>
+<div class="num">14</div><p id="n14">И напала саранча на всю землю Египетскую и легла по всей стране Египетской в великом множестве: прежде не бывало такой саранчи, и после сего не будет такой;
+</p>
+<div class="num">15</div><p id="n15">она покрыла лице всей земли, так что земли не было видно, и поела всю траву земную и все плоды древесные, уцелевшие от града, и не осталось никакой зелени ни на деревах, ни на траве полевой во всей земле Египетской.
+</p>
+<div class="num">16</div><p id="n16">Фараон поспешно призвал Моисея и Аарона и сказал: согрешил я пред Господом, Богом вашим, и пред вами;
+</p>
+<div class="num">17</div><p id="n17">теперь простите грех мой еще раз и помолитесь Господу Богу вашему, чтобы Он только отвратил от меня сию смерть.
+</p>
+<div class="num">18</div><p id="n18">[Моисей] вышел от фараона и помолился Господу.
+</p>
+<div class="num">19</div><p id="n19">И воздвигнул Господь с противной стороны западный весьма сильный ветер, и он понес саранчу и бросил ее в Чермное море: не осталось ни одной саранчи во всей стране Египетской.
+</p>
+<div class="num">20</div><p id="n20">Но Господь ожесточил сердце фараона, и он не отпустил сынов Израилевых.
+</p>
+<div class="num">21</div><p id="n21">И сказал Господь Моисею: простри руку твою к небу, и будет тьма на земле Египетской, осязаемая тьма.
+</p>
+<div class="num">22</div><p id="n22">Моисей простер руку свою к небу, и была густая тьма по всей земле Египетской три дня;
+</p>
+<div class="num">23</div><p id="n23">не видели друг друга, и никто не вставал с места своего три дня; у всех же сынов Израилевых был свет в жилищах их.
+</p>
+<div class="num">24</div><p id="n24">Фараон призвал Моисея [и Аарона] и сказал: пойдите, совершите служение Господу [Богу вашему], пусть только останется мелкий и крупный скот ваш, а дети ваши пусть идут с вами.
+</p>
+<div class="num">25</div><p id="n25">Но Моисей сказал: [нет,] дай также в руки наши жертвы и всесожжения, чтобы принести Господу Богу нашему;
+</p>
+<div class="num">26</div><p id="n26">пусть пойдут и стада наши с нами, не останется ни копыта; ибо из них мы возьмем на жертву Господу, Богу нашему; но доколе не придем туда, мы не знаем, что принести в жертву Господу [Богу нашему].
+</p>
+<div class="num">27</div><p id="n27">И ожесточил Господь сердце фараона, и он не захотел отпустить их.
+</p>
+<div class="num">28</div><p id="n28">И сказал ему фараон: пойди от меня; берегись, не являйся более пред лице мое; в тот день, когда ты увидишь лице мое, умрешь.
+</p>
+<div class="num">29</div><p id="n29">И сказал Моисей: как сказал ты, так и будет; я не увижу более лица твоего.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.11.ru.html">к главе 11</a></div></div>
+
+</body>
+</html>

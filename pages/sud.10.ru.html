@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sud.ru.html">Книга Судей</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 10
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">После Авимелеха восстал для спасения Израиля Фола, сын Фуи, сына Додова, из колена Иссахарова. Он жил в Шамире на горе Ефремовой.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Он был судьею Израиля двадцать три года, и умер, и погребен в Шамире.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">После него восстал Иаир из Галаада и был судьею Израиля двадцать два года.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">У него было тридцать [два] сына, ездивших на тридцати [двух] молодых ослах, и тридцать [два] города было у них; их до сего дня называют селениями Иаира, что в земле Галаадской.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И умер Иаир и погребен в Камоне.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Сыны Израилевы продолжали делать злое пред очами Господа и служили Ваалам и Астартам, и богам Арамейским, и богам Сидонским, и богам Моавитским, и богам Аммонитским, и богам Филистимским; а Господа оставили и не служили Ему.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И воспылал гнев Господа на Израиля, и Он предал их в руки Филистимлян и в руки Аммонитян;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">они теснили и мучили сынов Израилевых с того года восемнадцать лет, всех сынов Израилевых по ту сторону Иордана в земле Аморрейской, которая в Галааде.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Наконец Аммонитяне перешли Иордан, чтобы вести войну с Иудою и Вениамином и с домом Ефремовым. И весьма тесно было сынам Израиля.
+</p>
+<div class="num">10</div><p id="n10">И возопили сыны Израилевы к Господу, и говорили: согрешили мы пред Тобою, потому что оставили Бога нашего и служили Ваалам.
+</p>
+<div class="num">11</div><p id="n11">И сказал Господь сынам Израилевым: не угнетали ли вас Египтяне, и Аморреи, и Аммонитяне, и Филистимляне,
+</p>
+<div class="num">12</div><p id="n12">и Сидоняне, и Амаликитяне, и Моавитяне, и когда вы взывали ко Мне, не спасал ли Я вас от рук их?
+</p>
+<div class="num">13</div><p id="n13">А вы оставили Меня и стали служить другим богам; за то Я не буду уже спасать вас:
+</p>
+<div class="num">14</div><p id="n14">пойдите, взывайте к богам, которых вы избрали, пусть они спасают вас в тесное для вас время.
+</p>
+<div class="num">15</div><p id="n15">И сказали сыны Израилевы Господу: согрешили мы; делай с нами все, что Тебе угодно, только избавь нас ныне.
+</p>
+<div class="num">16</div><p id="n16">И отвергли от себя чужих богов и стали служить [только] Господу. И не потерпела душа Его страдания Израилева.
+</p>
+<div class="num">17</div><p id="n17">Аммонитяне собрались и расположились станом в Галааде; собрались также сыны Израилевы и стали станом в Массифе.
+</p>
+<div class="num">18</div><p id="n18">Народ <i>и</i> князья Галаадские сказали друг другу: кто начнет войну против Аммонитян, тот будет начальником всех жителей Галаадских.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sud.11.ru.html">к главе 11</a></div></div>
+
+</body>
+</html>

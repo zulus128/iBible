@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eze.ru.html">Книга Пророка Иезекииля</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 32
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В двенадцатом году, в двенадцатом месяце, в первый <i>день</i> месяца, было ко мне слово Господне:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">сын человеческий! подними плач о фараоне, царе Египетском, и скажи ему: ты, как молодой лев между народами и как чудовище в морях, кидаешься в реках твоих, и мутишь ногами твоими воды, и попираешь потоки их.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Так говорит Господь Бог: Я закину на тебя сеть Мою в собрании многих народов, и они вытащат тебя Моею мрежею.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И выкину тебя на землю, на открытом поле брошу тебя, и будут садиться на тебя всякие небесные птицы, и насыщаться тобою звери всей земли.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И раскидаю мясо твое по горам, и долины наполню твоими трупами.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И землю плавания твоего напою кровью твоею до самых гор; и рытвины будут наполнены тобою.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И когда ты угаснешь, закрою небеса и звезды их помрачу, солнце закрою облаком, и луна не будет светить светом своим.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Все светила, светящиеся на небе, помрачу над тобою и на землю твою наведу тьму, говорит Господь Бог.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Приведу в смущение сердце многих народов, когда разглашу о падении твоем между народами, по землям, которых ты не знал.
+</p>
+<div class="num">10</div><p id="n10">И приведу тобою в ужас многие народы, и цари их содрогнутся о тебе в страхе, когда мечом Моим потрясу перед лицем их, и поминутно будут трепетать каждый за душу свою в день падения твоего.
+</p>
+<div class="num">11</div><p id="n11">Ибо так говорит Господь Бог: меч царя Вавилонского придет на тебя.
+</p>
+<div class="num">12</div><p id="n12">От мечей сильных падет народ твой; все они - лютейшие из народов, и уничтожат гордость Египта, и погибнет все множество его.
+</p>
+<div class="num">13</div><p id="n13">И истреблю весь скот его при великих водах, и вперед не будет мутить их нога человеческая, и копыта скота не будут мутить их.
+</p>
+<div class="num">14</div><p id="n14">Тогда дам покой водам их, и сделаю, что реки их потекут, как масло, говорит Господь Бог.
+</p>
+<div class="num">15</div><p id="n15">Когда сделаю землю Египетскую пустынею, и когда лишится земля всего, наполняющего ее; когда поражу всех живущих на ней, тогда узнают, что Я Господь.
+</p>
+<div class="num">16</div><p id="n16">Вот плачевная песнь, которую будут петь; дочери народов будут петь ее; о Египте и обо всем множестве его будут петь ее, говорит Господь Бог.
+</p>
+<div class="num">17</div><p id="n17">В двенадцатом году, в пятнадцатый <i>день того же</i> месяца, было ко мне слово Господне:
+</p>
+<div class="num">18</div><p id="n18">сын человеческий! оплачь народ Египетский, и низринь его, его и дочерей знаменитых народов в преисподнюю, с отходящими в могилу.
+</p>
+<div class="num">19</div><p id="n19">Кого ты превосходишь? сойди, и лежи с необрезанными.
+</p>
+<div class="num">20</div><p id="n20">Те падут среди убитых мечом, и он отдан мечу; влеките его и все множество его.
+</p>
+<div class="num">21</div><p id="n21">Среди преисподней будут говорить о нем и о союзниках его первые из героев; они пали и лежат там между необрезанными, сраженные мечом.
+</p>
+<div class="num">22</div><p id="n22">Там Ассур и все полчище его, вокруг него гробы их, все пораженные, павшие от меча.
+</p>
+<div class="num">23</div><p id="n23">Гробы его поставлены в самой глубине преисподней, и полчище его вокруг гробницы его, все пораженные, павшие от меча, те, которые распространяли ужас на земле живых.
+</p>
+<div class="num">24</div><p id="n24">Так Елам со всем множеством своим вокруг гробницы его, все они пораженные, павшие от меча, которые необрезанными сошли в преисподнюю, которые распространили собою ужас на земле живых и несут позор свой с отшедшими в могилу.
+</p>
+<div class="num">25</div><p id="n25">Среди пораженных дали ложе ему со всем множеством его; вокруг него гробы их, все необрезанные, пораженные мечом; и как они распространяли ужас на земле живых, то и несут на себе позор наравне с отшедшими в могилу и положены среди пораженных.
+</p>
+<div class="num">26</div><p id="n26">Там Мешех и Фувал со всем множеством своим; вокруг него гробы их, все необрезанные, пораженные мечом, потому что они распространяли ужас на земле живых.
+</p>
+<div class="num">27</div><p id="n27">Не должны ли <i>и </i>они лежать с павшими героями необрезанными, которые с воинским оружием своим сошли в преисподнюю и мечи свои положили себе под головы, и осталось беззаконие их на костях их, потому что они, как сильные, были ужасом на земле живых.
+</p>
+<div class="num">28</div><p id="n28">И ты будешь сокрушен среди необрезанных и лежать с пораженными мечом.
+</p>
+<div class="num">29</div><p id="n29">Там Едом и цари его и все князья его, которые при всей своей храбрости положены среди пораженных мечом; они лежат с необрезанными и сошедшими в могилу.
+</p>
+<div class="num">30</div><p id="n30">Там властелины севера, все они и все Сидоняне, которые сошли туда с пораженными, быв посрамлены в могуществе своем, наводившем ужас, и лежат они с необрезанными, пораженными мечом, и несут позор свой с отшедшими в могилу.
+</p>
+<div class="num">31</div><p id="n31">Увидит их фараон и утешится о всем множестве своем, пораженном мечом, фараон и все войско его, говорит Господь Бог.
+</p>
+<div class="num">32</div><p id="n32">Ибо Я распространю страх Мой на земле живых, и положен будет фараон и все множество его среди необрезанных с пораженными мечом, говорит Господь Бог.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eze.33.ru.html">к главе 33</a></div></div>
+
+</body>
+</html>

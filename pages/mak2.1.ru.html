@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mak2.ru.html">Вторая книга<br />Маккавейская</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Братьям Иудеям в Египте - радоваться; братья Иудеи в Иерусалиме и во всей стране Иудейской желают счастливого мира.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Да благодетельствует вам Бог и да помянет завет Свой с верными рабами Своими: Авраамом, Исааком и Иаковом!
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Да даст всем вам сердце, чтобы чтить Его и исполнять волю Его всем сердцем и усердною душею!
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Да откроет сердце ваше для закона Его и повелений и дарует мир!
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Да услышит моления ваши и да будет милостив к вам, и да не оставит вас во время бедствия!
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Так ныне здесь мы молимся о вас.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">В царствование Димитрия, в сто шестьдесят девятом году, мы, Иудеи, писали к вам в скорби и страданиях, постигших нас в те годы, как отложился Иасон и соумышленники его от святой земли и царства.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Они сожгли ворота и пролили невинную кровь. Тогда мы молились Господу и были услышаны, и приносили жертву и семидал, и возжигали светильники, и предлагали хлебы.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И ныне совершайте праздник кущей в месяце Хаслеве.
+</p>
+<div class="num">10</div><p id="n10">В сто восемьдесят восьмом году живущие в Иерусалиме и в Иудее, и старейшины и Иуда - Аристовулу, учителю царя Птоломея, происходящему из рода помазанных священников, и пребывающим в Египте Иудеям - радоваться и здравствовать.
+</p>
+<div class="num">11</div><p id="n11">Избавленные Богом от великих опасностей, мы торжественно благодарим Его, как бы сражавшиеся против царя,
+</p>
+<div class="num">12</div><p id="n12">так как Он изгнал ополчившихся на святый град.
+</p>
+<div class="num">13</div><p id="n13">Ибо когда царь пошел в Персию и с ним войско, которое казалось непобедимым, они поражены были в храме Нанеи через обман, употребленный жрецами Нанеи.
+</p>
+<div class="num">14</div><p id="n14">Именно, когда Антиох, как бы намереваясь сочетаться с нею, пришел на то место, а бывшие с ним друзья пришли взять деньги как приданое,
+</p>
+<div class="num">15</div><p id="n15">и жрецы Нанеи предложили их, и Антиох с немногими вошел во внутренность храма,- тогда они заключили храм, как только вошел Антиох,
+</p>
+<div class="num">16</div><p id="n16">и, отворив потаенное отверстие в своде, стали бросать камни, и поразили предводителя и бывших с ним, и, рассекши на части и отрубив головы, выбросили их к находившимся снаружи.
+</p>
+<div class="num">17</div><p id="n17">Во всем благословен Бог наш, предавший нечестивцев.
+</p>
+<div class="num">18</div><p id="n18">Итак, намереваясь в двадцать пятый день Хаслева праздновать очищение храма, мы почли нужным известить вас, чтобы и вы совершили праздник кущей и огня, подобно тому как Неемия, построив храм и жертвенник, принес жертву.
+</p>
+<div class="num">19</div><p id="n19">Ибо, когда отцы наши отведены были в Персию, тогда благочестивые священники, взяв огня с жертвенника тайно, скрыли его во глубине колодезя, имевшего безводное дно, и в нем безопасно сохранили его, так как никому не известно было это место.
+</p>
+<div class="num">20</div><p id="n20">По прошествии же многих лет, когда угодно было Богу, Неемия, присланный от Персидского царя, послал за сим огнем потомков тех священников, которые скрыли его. Когда же объявили нам, что не нашли огня, а только густую воду,
+</p>
+<div class="num">21</div><p id="n21">тогда он приказал им, почерпнув, принести ее; и когда потом приготовлены были жертвы, Неемия приказал священникам окропить этою водою дрова и положенное на них.
+</p>
+<div class="num">22</div><p id="n22">Когда же это было сделано и наступило время, когда просияло солнце, прежде закрытое облаками, тогда воспламенился большой огонь, так что все удивились.
+</p>
+<div class="num">23</div><p id="n23">Священники же, доколе горела жертва, совершали молитву, священники и все; Ионафан начинал, а прочие припевали, как и Неемия.
+</p>
+<div class="num">24</div><p id="n24">Молитва же была такая: "Господи, Господи Боже, Создателю всех, страшный и сильный, и праведный и милостивый, единый Царь и благодетель,
+</p>
+<div class="num">25</div><p id="n25">единый податель всего, единый праведный и всемогущий и вечный, избавляющий Израиля от всякого зла, избравший отцов и освятивший их!
+</p>
+<div class="num">26</div><p id="n26">Прими жертву сию за весь народ Твой - Израиля, и сохрани сей удел Твой, и освяти его;
+</p>
+<div class="num">27</div><p id="n27">собери рассеяние наше, освободи порабощенных язычниками, призри на уничиженных и презренных, и да познают язычники, что Ты Бог наш;
+</p>
+<div class="num">28</div><p id="n28">покарай угнетающих и обижающих нас с надмением,
+</p>
+<div class="num">29</div><p id="n29">насади народ Твой на святом месте Твоем, как сказал Моисей".
+</p>
+<div class="num">30</div><p id="n30">Священники воспевали при сем торжественные песни.
+</p>
+<div class="num">31</div><p id="n31">Когда же жертва была сожжена, Неемия приказал оставшеюся водою полить большие камни.
+</p>
+<div class="num">32</div><p id="n32">Как только это было исполнено, вспыхнуло пламя, но от света, воссиявшего от жертвенника, оно исчезло.
+</p>
+<div class="num">33</div><p id="n33">Когда это событие сделалось известным и донесено было царю Персов, что в том месте, где переселенные священники скрыли огонь, оказалась вода, которою Неемия и бывшие с ним освятили жертвы;
+</p>
+<div class="num">34</div><p id="n34">царь, по исследовании дела, оградил это место, как священное.
+</p>
+<div class="num">35</div><p id="n35">И тем, к кому царь благоволил, он раздавал много даров, которые сам получал.
+</p>
+<div class="num">36</div><p id="n36">Бывшие с Неемиею прозвали это место Нефтар, что значит: "очищение"; многими же называется оно Нефтай.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mak2.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nav.ru.html">Книга Иисуса Навина</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И встал Иисус рано поутру, и двинулись они от Ситтима и пришли к Иордану, он и все сыны Израилевы, и ночевали там, еще не переходя <i>его.</i>
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Чрез три дня пошли надзиратели по стану
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и дали народу повеление, говоря: когда увидите ковчег завета Господа Бога вашего и священников [наших и] левитов, несущих его, то и вы двиньтесь с места своего и идите за ним;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">впрочем расстояние между вами и им должно быть до двух тысяч локтей мерою; не подходите к нему близко, чтобы знать вам путь, по которому идти; ибо вы не ходили сим путем ни вчера, ни третьего дня.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И сказал Иисус народу: освятитесь [к утру], ибо завтра сотворит Господь среди вас чудеса.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Священникам же сказал Иисус: возьмите ковчег завета [Господня] и идите пред народом. [Священники] взяли ковчег завета [Господня] и пошли пред народом.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Тогда Господь сказал Иисусу: в сей день Я начну прославлять тебя пред очами всех [сынов] Израиля, дабы они узнали, что как Я был с Моисеем, так буду и с тобою;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">а ты дай повеление священникам, несущим ковчег завета, и скажи: как только войдете в воды Иордана, остановитесь в Иордане.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Иисус сказал сынам Израилевым: подойдите сюда и выслушайте слова Господа, Бога вашего.
+</p>
+<div class="num">10</div><p id="n10">И сказал Иисус: из сего узнаете, что среди вас есть Бог живый, Который прогонит от вас Хананеев и Хеттеев, и Евеев, и Ферезеев, и Гергесеев, и Аморреев, и Иевусеев:
+</p>
+<div class="num">11</div><p id="n11">вот, ковчег завета Господа всей земли пойдет пред вами чрез Иордан;
+</p>
+<div class="num">12</div><p id="n12">и возьмите себе двенадцать человек из колен Израилевых, по одному человеку из колена;
+</p>
+<div class="num">13</div><p id="n13">и как только стопы ног священников, несущих ковчег Господа, Владыки всей земли, ступят в воду Иордана, вода Иорданская иссякнет, текущая же сверху вода остановится стеною.
+</p>
+<div class="num">14</div><p id="n14">Итак, когда народ двинулся от своих шатров, чтобы переходить Иордан, и священники понесли ковчег завета [Господня] пред народом,
+</p>
+<div class="num">15</div><p id="n15">то, лишь только несущие ковчег [завета Господня] вошли в Иордан, и ноги священников, несших ковчег, погрузились в воду Иордана - Иордан же выступает из всех берегов своих во все дни жатвы пшеницы,-
+</p>
+<div class="num">16</div><p id="n16">вода, текущая сверху, остановилась и стала стеною на весьма большое расстояние, до города Адама, который подле Цартана; а текущая в море равнины, в море Соленое, ушла и иссякла.
+</p>
+<div class="num">17</div><p id="n17">И народ переходил против Иерихона; священники же, несшие ковчег завета Господня, стояли на суше среди Иордана твердою ногою. Все [сыны] Израилевы переходили по суше, доколе весь народ не перешел чрез Иордан.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nav.4.ru.html">к главе 4</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nav.cs.html">Кни1га їисyса наvи1на</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA з7i
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# бhша предёлы плeмене сынHвъ манассjиныхъ, ћкw сeй пeрвенецъ їHсифу, махjрови пeрвенцу манассjину, nтцY галаaдову, (сeй бо бhсть мyжъ хрaбръ) въ галаадjтідэ и3 васанjтідэ.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И# бhша сынHмъ манасс‡инымъ пр0чымъ по с0нмwмъ и4хъ: сынHмъ ґхіезeрwвымъ и3 сынHмъ є3лeкwвымъ и3 сынHмъ є3сріи1лєвымъ, и3 сынHмъ сехeмwвымъ и3 сынHмъ семіраeлwвымъ и3 сынHмъ nфeрwвымъ: сjи сyть сhнове манасс‡ины, сhна їHсифова, мyжескъ п0лъ по племенHмъ свои6мъ.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И# салпаaду сhну nфeрову, сhна галаaдова, сhна махjрова, сhна манассjина, не бhша сhны, но т0кмw дщє1ри: и3 <nobr>сі‰</nobr> и3менA дщeремъ салпаaдwвымъ: маалA и3 нуA, и3 є3глA и3 мелхA и3 fерсA.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И# стaша пред8 є3леазaромъ жерцeмъ и3 пред8 їисyсомъ сhномъ наvи1нымъ и3 пред8 <nobr>кн‰зи,</nobr> глаг0лющz: бGъ заповёда рук0ю мwmсeовою дaти нaмъ наслёдіе посредЁ брaтіи нaшеz. И# дадeсz и5мъ наслёдіе повелёніемъ гDнимъ, жрeбій въ брaтіи nтцA и4хъ.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И# падE жрeбій манассjю п0ле лавeково кромЁ земли2 галаaдовы и3 васaни, ћже є4сть њб8 nнY странY їoрдaна,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">понeже дщє1ри сынHвъ манассjиныхъ наслёдиша жрeбій посредЁ брaтій свои1хъ: землs же галаaдова бhсть сынHмъ манасс‡инымъ пр0чымъ.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И# бhша предёлы сынHвъ манассjиныхъ t ґси1ръ-махfHfа, и3 данafъ, ћже є4сть пред8 лицeмъ сmхeма, и3 и4дутъ предёлы на їамjнъ и3 на їасjфъ ко и3ст0чнику fафfHfъ.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Манассjю бyдетъ землS fафfHfъ: и3 fафfHfъ над8 предBлы манассjиными сынHмъ є3фрє1млимъ:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и3 сни1дутъ предёлы къ дeбри канA на ю4гъ по дeбри їарjмъ: теревjнfъ є3фрeму посредЁ грaда манассjина. И# предёлы манасс‡ины къ сёверу на водотeчь, и3 бyдетъ и3сх0дъ є3гw2 м0ре:
+</p>
+<div class="num">10</div><p id="n10">t ю4га є3фрeму, и3 къ сёверу манассjи, и3 бyдетъ м0ре предёлъ и5мъ: и3 ко ґси1ру совокупsтсz къ сёверу, и3 їссахaру t востHкъ.
+</p>
+<div class="num">11</div><p id="n11">И# бyдетъ манассjю (предёлъ) междY їссахaромъ и3 междY ґси1ромъ веfсaнъ и3 вє1си и4хъ, и3 їевлаaмъ и3 вє1си є3гw2, и3 живyщыz въ дHрэ и3 вє1си є3гw2, и3 живyщыz въ є3ндHрэ и3 вє1си є3гw2, и3 живyщыz въ магeддэ и3 вє1си є3гw2, и3 живyщыz въ танaхэ и3 вє1си є3гw2, и3 трeтіz чaсть нафefа и3 вє1си є3гw2.
+</p>
+<div class="num">12</div><p id="n12">И# не возмог0ша сhнове манасс‡ины потреби1ти градHвъ си1хъ: и3 начA хананeй жи1ти въ земли2 сeй.
+</p>
+<div class="num">13</div><p id="n13">И# бhсть є3гдA ўкрэпи1шасz сhнове <nobr>ї}лєвы,</nobr> и3 сотвори1ша хананewвъ послyшныхъ, потреблeніемъ же не потреби1ша и4хъ.
+</p>
+<div class="num">14</div><p id="n14">Противорёша же сhнове їHсифwвы їисyсу, глаг0люще: почто2 наслёдствовалъ є3си2 нaсъ жрeбіемъ є3ди1нымъ и3 ќжемъ є3ди1нымъ; ѓзъ же лю1дъ мн0гъ є4смь, и3 блгcви1 мz бGъ (дaже досeлэ).
+</p>
+<div class="num">15</div><p id="n15">И# речE и5мъ їисyсъ: ѓще лю1дъ мн0гъ є3си2, взhди въ дубрaву и3 њтреби2 себЁ тaмw мёсто въ земли2 ферезeа и3 рафаjма, ѓще ўтэснsетъ тS горA є3фрeмлz.
+</p>
+<div class="num">16</div><p id="n16">И# рёша сhнове їHсифwвы: не дов0лно нaмъ горы2 є3фрeмли: и3 к0нь преизбрaнный и3 желёзо всемY хананeю живyщему въ земли2 є3мeкъ, въ веfсaнэ и3 въ вeсехъ є3S, и3 во ю3д0лэ їезраeль.
+</p>
+<div class="num">17</div><p id="n17">И# речE їисyсъ къ сынHмъ їHсифwвымъ, є3фрeму и3 манассjю, глаг0лz: ѓще лю1дъ мн0гъ є3си2 и3 си1лу вели1ку и4маши, не бyдетъ ти2 жрeбій є3ди1нъ:
+</p>
+<div class="num">18</div><p id="n18">занE дубрaва бyдетъ тебЁ, понeже дубрaва є4сть, и3 њтреби1ши ю5, и3 бyдетъ тебЁ, и3 концы2 є3S, є3гдA потреби1ши хананeа, ѓще к0нь преизбрaнный є3мY є4сть: (и3 сaмъ си1ленъ,) тh бо преси1лиши є3го2.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nav.18.cs.html">главA }i</a></div></div>
+
+</body>
+</html>

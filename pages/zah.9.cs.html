@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="zah.cs.html">Захaріа</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA f7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Прbр0чество словесE гDнz въ земли2 седрaха и3 дамaска жeртвы є3гw2: занE гDь призирaетъ на человёки и3 на <nobr>вс‰</nobr> кwлёна <nobr>ї}лєва,</nobr>
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и3 во и3мafэ въ предёлэхъ є3гw2 тЂръ и3 сідHнъ, ћкw ўмудрёша ѕэлw2.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И# создA тЂръ твєрдhни себЁ и3 собрA сребро2 ћкw пeрсть и3 злaто ћкw брeніе путjй.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Сегw2 рaди гDь наслёдитъ <nobr>|</nobr> и3 порази1тъ въ м0ре си1лу є3гw2, и3 т0й nгнeмъ поsстсz.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Ўви1дитъ ґскалHнъ и3 ўбои1тсz, и3 гaза и3 поболи1тъ ѕэлw2, и3 ґккарHнъ, ћкw постыдёсz њ ўповaніи своeмъ: и3 поги1бнетъ цaрь t гaзы, и3 ґскалHнъ не и4мать насели1тисz.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И# вселsтсz и3ноплемє1нницы во ґзHтэ, и3 разрушY досаждeніе и3ноплемeнникwвъ,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и3 и3змY кр0вь и4хъ и3з8 ќстъ и4хъ и3 мeрзwсти и4хъ и3з8 среди1ны зубHвъ и4хъ, и3 њстaвzтсz и3 сjи бGу нaшему и3 бyдутъ ћкw тhсzщникъ во їyдэ, и3 ґккарHнъ ћкоже їевусeй.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И# подстaвлю хрaму моемY воздвижeніе, є4же не сквозЁ ходи1ти, нижE возвращaтисz, и3 ктомY не и4мать пріити2 на нS и3згонszй: ћкw нн7э ви1дэхъ nчи1ма мои1ма.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Рaдуйсz ѕэлw2, дщи2 сіHнz, проповёдуй, дщи2 їеrли1млz: сE, цRь тв0й грzдeтъ тебЁ првdнъ и3 сп7сazй, т0й кр0токъ и3 всёдъ на под8zрeмника и3 жребцA ю4на.
+</p>
+<div class="num">10</div><p id="n10">И# потреби1тъ колєсни1цы t є3фрeма и3 к0ни t їеrли1ма, и3 потреби1тъ лyкъ брaнный, и3 мн0жество, и3 ми1ръ t kзhкwвъ: и3 њбладaетъ водaми t м0рz до м0рz и3 t рёкъ до и3сх0дищъ земли2.
+</p>
+<div class="num">11</div><p id="n11">И# ты2 въ кр0ви завёта твоегw2 и3спусти1лъ є3си2 ќзники <nobr>тво‰</nobr> t р0ва не и3мyща воды2.
+</p>
+<div class="num">12</div><p id="n12">Сsдите въ твердёлехъ, свsзани с0нмища, и3 за є3ди1нъдeнь пришeлствіz твоегw2 сугyбw воздaмъ ти2.
+</p>
+<div class="num">13</div><p id="n13">Занeже напрzг0хъ тS себЁ, їyдо, ћкw лyкъ, и3сп0лнихъ є3фрeма, и3 воздви1гну ч†да <nobr>тво‰,</nobr> сіHне, на ч†да є4ллинска, и3 њсzжY тS ћкw мeчь рaтника.
+</p>
+<div class="num">14</div><p id="n14">И# гDь на ни1хъ kви1тсz, и3 и3зhдетъ ћкw м0лніz стрэлA є3гw2: и3 гDь бGъ вседержи1тель въ трубY вострyбитъ и3 п0йдетъ въ шyмэ прещeніz своегw2.
+</p>
+<div class="num">15</div><p id="n15">ГDь вседержи1тель защи1титъ и5хъ, и3 поzдsтъ <nobr>|,</nobr> и3 посhплютъ и5хъ кaменіемъ прaщнымъ, и3 и3спію1тъ кр0вь и4хъ ћкw віно2, и3 и3сп0лнzтъ nкри1ны ћкw жeртвенникъ.
+</p>
+<div class="num">16</div><p id="n16">И# сп7сeтъ <nobr>|</nobr> гDь бGъ и4хъ въ дeнь w4нъ, ћкw џвцы лю1ди <nobr>сво‰:</nobr> занE кaменіе с™о валsетсz на земли2 є3гw2.
+</p>
+<div class="num">17</div><p id="n17">Ѓще что2 блaго є3гw2, и3 ѓще что2 добро2 є3гw2, пшени1ца ю4ношамъ и3 віно2 благоухaнно дёвамъ.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="zah.10.cs.html">главA ‹</a></div></div>
+
+</body>
+</html>

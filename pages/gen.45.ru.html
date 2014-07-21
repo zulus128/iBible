@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 45
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Иосиф не мог более удерживаться при всех стоявших около него и закричал: удалите от меня всех. И не оставалось при Иосифе никого, когда он открылся братьям своим.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И громко зарыдал он, и услышали Египтяне, и услышал дом фараонов.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И сказал Иосиф братьям своим: я - Иосиф, жив ли еще отец мой? Но братья его не могли отвечать ему, потому что они смутились пред ним.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И сказал Иосиф братьям своим: подойдите ко мне. Они подошли. Он сказал: я - Иосиф, брат ваш, которого вы продали в Египет;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">но теперь не печальтесь и не жалейте о том, что вы продали меня сюда, потому что Бог послал меня перед вами для сохранения вашей жизни;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">ибо теперь два года голода на земле: [остается] еще пять лет, в которые ни орать, ни жать не будут;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Бог послал меня перед вами, чтобы оставить вас на земле и сохранить вашу жизнь великим избавлением.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Итак не вы послали меня сюда, но Бог, Который и поставил меня отцом фараону и господином во всем доме его и владыкою во всей земле Египетской.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Идите скорее к отцу моему и скажите ему: так говорит сын твой Иосиф: Бог поставил меня господином над всем Египтом; приди ко мне, не медли;
+</p>
+<div class="num">10</div><p id="n10">ты будешь жить в земле Гесем; и будешь близ меня, ты, и сыны твои, и сыны сынов твоих, и мелкий и крупный скот твой, и все твое;
+</p>
+<div class="num">11</div><p id="n11">и прокормлю тебя там, ибо голод будет еще пять лет, чтобы не обнищал ты и дом твой и все твое.
+</p>
+<div class="num">12</div><p id="n12">И вот, очи ваши и очи брата моего Вениамина видят, что это мои уста говорят с вами;
+</p>
+<div class="num">13</div><p id="n13">скажите же отцу моему о всей славе моей в Египте и о всем, что вы видели, и приведите скорее отца моего сюда.
+</p>
+<div class="num">14</div><p id="n14">И пал он на шею Вениамину, брату своему, и плакал; и Вениамин плакал на шее его.
+</p>
+<div class="num">15</div><p id="n15">И целовал всех братьев своих и плакал, обнимая их. Потом говорили с ним братья его.
+</p>
+<div class="num">16</div><p id="n16">Дошел в дом фараона слух, что пришли братья Иосифа; и приятно было фараону и рабам его.
+</p>
+<div class="num">17</div><p id="n17">И сказал фараон Иосифу: скажи братьям твоим: вот что сделайте: навьючьте скот ваш [хлебом] и ступайте в землю Ханаанскую;
+</p>
+<div class="num">18</div><p id="n18">и возьмите отца вашего и семейства ваши и придите ко мне; я дам вам лучшее [место] в земле Египетской, и вы будете есть тук земли.
+</p>
+<div class="num">19</div><p id="n19">Тебе же повелеваю сказать им: сделайте сие: возьмите себе из земли Египетской колесниц для детей ваших и для жен ваших, и привезите отца вашего и придите;
+</p>
+<div class="num">20</div><p id="n20">и не жалейте вещей ваших, ибо лучшее из всей земли Египетской <i>дам</i> вам.
+</p>
+<div class="num">21</div><p id="n21">Так и сделали сыны Израилевы. И дал им Иосиф колесницы по приказанию фараона, и дал им путевой запас,
+</p>
+<div class="num">22</div><p id="n22">каждому из них он дал перемену одежд, а Вениамину дал триста сребреников и пять перемен одежд;
+</p>
+<div class="num">23</div><p id="n23">также и отцу своему послал десять ослов, навьюченных лучшими <i>произведениями</i> Египетскими, и десять ослиц, навьюченных зерном, хлебом и припасами отцу своему на путь.
+</p>
+<div class="num">24</div><p id="n24">И отпустил братьев своих, и они пошли. И сказал им: не ссорьтесь на дороге.
+</p>
+<div class="num">25</div><p id="n25">И пошли они из Египта, и пришли в землю Ханаанскую к Иакову, отцу своему,
+</p>
+<div class="num">26</div><p id="n26">и известили его, сказав: Иосиф [сын твой] жив и теперь владычествует над всею землею Египетскою. Но сердце его смутилось, ибо он не верил им.
+</p>
+<div class="num">27</div><p id="n27">Когда же они пересказали ему все слова Иосифа, которые он говорил им, и когда увидел колесницы, которые прислал Иосиф, чтобы везти его, тогда ожил дух Иакова, отца их,
+</p>
+<div class="num">28</div><p id="n28">и сказал Израиль: довольно [сего для меня], еще жив сын мой Иосиф; пойду и увижу его, пока не умру.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.46.ru.html">к главе 46</a></div></div>
+
+</body>
+</html>

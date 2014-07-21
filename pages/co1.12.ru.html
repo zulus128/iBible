@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="co1.ru.html">Первое послание к<br />Коринфянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Не хочу оставить вас, братия, в неведении и о <i>дарах</i> духовных.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Знаете, что когда вы были язычниками, то ходили к безгласным идолам, так, как бы вели вас.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Потому сказываю вам, что никто, говорящий Духом Божиим, не произнесет анафемы на Иисуса, и никто не может назвать Иисуса Господом, как только Духом Святым.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Дары различны, но Дух один и тот же;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и служения различны, а Господь один и тот же;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и действия различны, а Бог один и тот же, производящий все во всех.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Но каждому дается проявление Духа на пользу.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Одному дается Духом слово мудрости, другому слово знания, тем же Духом;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">иному вера, тем же Духом; иному дары исцелений, тем же Духом;
+</p>
+<div class="num">10</div><p id="n10">иному чудотворения, иному пророчество, иному различение духов, иному разные языки, иному истолкование языков.
+</p>
+<div class="num">11</div><p id="n11">Все же сие производит один и тот же Дух, разделяя каждому особо, как Ему угодно.
+</p>
+<div class="num">12</div><p id="n12">Ибо, как тело одно, но имеет многие члены, и все члены одного тела, хотя их и много, составляют одно тело,- так и Христос.
+</p>
+<div class="num">13</div><p id="n13">Ибо все мы одним Духом крестились в одно тело, Иудеи или Еллины, рабы или свободные, и все напоены одним Духом.
+</p>
+<div class="num">14</div><p id="n14">Тело же не из одного члена, но из многих.
+</p>
+<div class="num">15</div><p id="n15">Если нога скажет: я не принадлежу к телу, потому что я не рука, то неужели она потому не принадлежит к телу?
+</p>
+<div class="num">16</div><p id="n16">И если ухо скажет: я не принадлежу к телу, потому что я не глаз, то неужели оно потому не принадлежит к телу?
+</p>
+<div class="num">17</div><p id="n17">Если все тело глаз, то где слух? Если все слух, то где обоняние?
+</p>
+<div class="num">18</div><p id="n18">Но Бог расположил члены, каждый в <i>составе</i> тела, как Ему было угодно.
+</p>
+<div class="num">19</div><p id="n19">А если бы все были один член, то где <i>было</i> <i>бы</i> тело?
+</p>
+<div class="num">20</div><p id="n20">Но теперь членов много, а тело одно.
+</p>
+<div class="num">21</div><p id="n21">Не может глаз сказать руке: ты мне не надобна; или также голова ногам: вы мне не нужны.
+</p>
+<div class="num">22</div><p id="n22">Напротив, члены тела, которые кажутся слабейшими, гораздо нужнее,
+</p>
+<div class="num">23</div><p id="n23">и которые нам кажутся менее благородными в теле, о тех более прилагаем попечения;
+</p>
+<div class="num">24</div><p id="n24">и неблагообразные наши более благовидно покрываются, а благообразные наши не имеют <i>в</i> <i>том</i> нужды. Но Бог соразмерил тело, внушив о менее совершенном большее попечение,
+</p>
+<div class="num">25</div><p id="n25">дабы не было разделения в теле, а все члены одинаково заботились друг о друге.
+</p>
+<div class="num">26</div><p id="n26">Посему, страдает ли один член, страдают с ним все члены; славится ли один член, с ним радуются все члены.
+</p>
+<div class="num">27</div><p id="n27">И вы - тело Христово, а порознь - члены.
+</p>
+<div class="num">28</div><p id="n28">И иных Бог поставил в Церкви, во-первых, Апостолами, во-вторых, пророками, в-третьих, учителями; далее, <i>иным</i> <i>дал</i> силы <i>чудодейственные,</i> также дары исцелений, вспоможения, управления, разные языки.
+</p>
+<div class="num">29</div><p id="n29">Все ли Апостолы? Все ли пророки? Все ли учители? Все ли чудотворцы?
+</p>
+<div class="num">30</div><p id="n30">Все ли имеют дары исцелений? Все ли говорят языками? Все ли истолкователи?
+</p>
+<div class="num">31</div><p id="n31">Ревнуйте о дарах бо&#769;льших, и я покажу вам путь еще превосходнейший.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="co1.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

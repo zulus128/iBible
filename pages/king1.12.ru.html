@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king1.ru.html">Первая книга Царств</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Самуил всему Израилю: вот, я послушался голоса вашего во всем, что вы говорили мне, и поставил над вами царя,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и вот, царь ходит пред вами; а я состарился и поседел; и сыновья мои с вами; я же ходил пред вами от юности моей и до сего дня;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">вот я; свидетельствуйте на меня пред Господом и пред помазанником Его, у кого взял я вола, у кого взял осла, кого обидел и кого притеснил, у кого взял дар и закрыл в <i>деле</i> его глаза мои,- и я возвращу вам.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И отвечали: ты не обижал нас и не притеснял нас и ничего ни у кого не взял.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И сказал он им: свидетель на вас Господь, и свидетель помазанник Его в сей день, что вы не нашли ничего за мною. И сказали: свидетель.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Тогда Самуил сказал народу: [свидетель] Господь, Который поставил Моисея и Аарона и Который вывел отцов ваших из земли Египетской.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Теперь же предстаньте, и я буду судиться с вами пред Господом о всех благодеяниях, которые оказал Он вам и отцам вашим.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Когда пришел Иаков в Египет, и отцы ваши возопили к Господу, то Господь послал Моисея и Аарона, и они вывели отцов ваших из Египта и поселили их на месте сем.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Но они забыли Господа Бога своего, и Он предал их в руки Сисары, военачальника Асорского, и в руки Филистимлян и в руки царя Моавитского, <i>которые</i> воевали против них.
+</p>
+<div class="num">10</div><p id="n10">Но когда они возопили к Господу и сказали: "согрешили мы, ибо оставили Господа и стали служить Ваалам и Астартам, теперь избавь нас от руки врагов наших, и мы будем служить Тебе",
+</p>
+<div class="num">11</div><p id="n11">тогда Господь послал Иероваала, и Варака, и Иеффая, и Самуила, и избавил вас от руки врагов ваших, окружавших вас, и вы жили безопасно.
+</p>
+<div class="num">12</div><p id="n12">Но увидев, что Наас, царь Аммонитский, идет против вас, вы сказали мне: "нет, царь пусть царствует над нами", тогда как Господь Бог ваш - Царь ваш.
+</p>
+<div class="num">13</div><p id="n13">Итак, вот царь, которого вы избрали, которого вы требовали: вот, Господь поставил над вами царя.
+</p>
+<div class="num">14</div><p id="n14">Если будете бояться Господа и служить Ему и слушать гласа Его, и не станете противиться повелениям Господа, и будете и вы и царь ваш, который царствует над вами, <i>ходить</i> вслед Господа, Бога вашего, [то рука Господа не будет против вас];
+</p>
+<div class="num">15</div><p id="n15">а если не будете слушать гласа Господа и станете противиться повелениям Господа, то рука Господа будет против вас, <i>как</i> <i>была</i> против отцов ваших.
+</p>
+<div class="num">16</div><p id="n16">Теперь станьте и посмотрите на дело великое, которое Господь совершит пред глазами вашими:
+</p>
+<div class="num">17</div><p id="n17">не жатва ли пшеницы ныне? Но я воззову к Господу, и пошлет Он гром и дождь, и вы узнаете и увидите, как велик грех, который вы сделали пред очами Господа, прося себе царя.
+</p>
+<div class="num">18</div><p id="n18">И воззвал Самуил к Господу, и Господь послал гром и дождь в тот день; и пришел весь народ в большой страх от Господа и Самуила.
+</p>
+<div class="num">19</div><p id="n19">И сказал весь народ Самуилу: помолись о рабах твоих пред Господом Богом твоим, чтобы не умереть нам; ибо ко всем грехам нашим мы прибавили еще грех, когда просили себе царя.
+</p>
+<div class="num">20</div><p id="n20">И отвечал Самуил народу: не бойтесь, грех этот вами сделан, но вы не отступайте только от Господа и служите Господу всем сердцем вашим
+</p>
+<div class="num">21</div><p id="n21">и не обращайтесь вслед ничтожных <i>богов,</i> которые не принесут пользы и не избавят; ибо они - ничто;
+</p>
+<div class="num">22</div><p id="n22">Господь же не оставит народа Своего ради великого имени Своего, ибо Господу угодно было избрать вас народом Своим;
+</p>
+<div class="num">23</div><p id="n23">и я также не допущу себе греха пред Господом, чтобы перестать молиться за вас, и буду наставлять вас на путь добрый и прямой;
+</p>
+<div class="num">24</div><p id="n24">только бойтесь Господа и служите Ему истинно, от всего сердца вашего, ибо вы видели, какие великие дела Он сделал с вами;
+</p>
+<div class="num">25</div><p id="n25">если же вы будете делать зло, то и вы и царь ваш погибнете.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king1.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

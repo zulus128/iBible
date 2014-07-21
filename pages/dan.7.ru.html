@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="dan.ru.html">Книга Пророка Даниила</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В первый год Валтасара, царя Вавилонского, Даниил видел сон и пророческие видения головы своей на ложе своем. Тогда он записал этот сон, изложив сущность дела.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Начав речь, Даниил сказал: видел я в ночном видении моем, и вот, четыре ветра небесных боролись на великом море,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и четыре больших зверя вышли из моря, непохожие один на другого.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Первый - как лев, но у него крылья орлиные; я смотрел, доколе не вырваны были у него крылья, и он поднят был от земли, и стал на ноги, как человек, и сердце человеческое дано ему.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И вот еще зверь, второй, похожий на медведя, стоял с одной стороны, и три клыка во рту у него, между зубами его; ему сказано так: "встань, ешь мяса много!"
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Затем видел я, вот еще зверь, как барс; на спине у него четыре птичьих крыла, и четыре головы были у зверя сего, и власть дана была ему.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">После сего видел я в ночных видениях, и вот зверь четвертый, страшный и ужасный и весьма сильный; у него большие железные зубы; он пожирает и сокрушает, остатки же попирает ногами; он отличен был от всех прежних зверей, и десять рогов было у него.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Я смотрел на эти рога, и вот, вышел между ними еще небольшой рог, и три из прежних рогов с корнем исторгнуты были перед ним, и вот, в этом роге были глаза, как глаза человеческие, и уста, говорящие высокомерно.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Видел я, наконец, что поставлены были престолы, и воссел Ветхий днями; одеяние на Нем было бело, как снег, и волосы главы Его - как чистая во&#769;лна; престол Его - как пламя огня, колеса Его - пылающий огонь.
+</p>
+<div class="num">10</div><p id="n10">Огненная река выходила и проходила пред Ним; тысячи тысяч служили Ему и тьмы тем предстояли пред Ним; судьи сели, и раскрылись книги.
+</p>
+<div class="num">11</div><p id="n11">Видел я тогда, что за изречение высокомерных слов, какие говорил рог, зверь был убит в глазах моих, и тело его сокрушено и предано на сожжение огню.
+</p>
+<div class="num">12</div><p id="n12">И у прочих зверей отнята власть их, и продолжение жизни дано им только на время и на срок.
+</p>
+<div class="num">13</div><p id="n13">Видел я в ночных видениях, вот, с облаками небесными шел как бы Сын человеческий, дошел до Ветхого днями и подведен был к Нему.
+</p>
+<div class="num">14</div><p id="n14">И Ему дана власть, слава и царство, чтобы все народы, племена и языки служили Ему; владычество Его - владычество вечное, которое не прейдет, и царство Его не разрушится.
+</p>
+<div class="num">15</div><p id="n15">Вострепетал дух мой во мне, Данииле, в теле моем, и видения головы моей смутили меня.
+</p>
+<div class="num">16</div><p id="n16">Я подошел к одному из предстоящих и спросил у него об истинном значении всего этого, и он стал говорить со мною, и объяснил мне смысл сказанного:
+</p>
+<div class="num">17</div><p id="n17">"эти большие звери, которых четыре, <i>означают,</i> что четыре царя восстанут от земли.
+</p>
+<div class="num">18</div><p id="n18">Потом примут царство святые Всевышнего и будут владеть царством вовек и во веки веков".
+</p>
+<div class="num">19</div><p id="n19">Тогда пожелал я точного объяснения о четвертом звере, который был отличен от всех и очень страшен, с зубами железными и когтями медными, пожирал и сокрушал, а остатки попирал ногами,
+</p>
+<div class="num">20</div><p id="n20">и о десяти рогах, которые были на голове у него, и о другом, вновь вышедшем, перед которым выпали три, о том самом роге, у которого были глаза и уста, говорящие высокомерно, и который по виду стал больше прочих.
+</p>
+<div class="num">21</div><p id="n21">Я видел, как этот рог вел брань со святыми и превозмогал их,
+</p>
+<div class="num">22</div><p id="n22">доколе не пришел Ветхий днями, и суд дан был святым Всевышнего, и наступило время, чтобы царством овладели святые.
+</p>
+<div class="num">23</div><p id="n23">Об этом он сказал: зверь четвертый - четвертое царство будет на земле, отличное от всех царств, которое будет пожирать всю землю, попирать и сокрушать ее.
+</p>
+<div class="num">24</div><p id="n24">А десять рогов значат, что из этого царства восстанут десять царей, и после них восстанет иной, отличный от прежних, и уничижит трех царей,
+</p>
+<div class="num">25</div><p id="n25">и против Всевышнего будет произносить слова и угнетать святых Всевышнего; даже возмечтает отменить у них <i>праздничные</i> времена и закон, и они преданы будут в руку его до времени и времен и полувремени.
+</p>
+<div class="num">26</div><p id="n26">Затем воссядут судьи и отнимут у него власть губить и истреблять до конца.
+</p>
+<div class="num">27</div><p id="n27">Царство же и власть и величие царственное во всей поднебесной дано будет народу святых Всевышнего, Которого царство - царство вечное, и все властители будут служить и повиноваться Ему.
+</p>
+<div class="num">28</div><p id="n28">Здесь конец слова. Меня, Даниила, сильно смущали размышления мои, и лице мое изменилось на мне; но слово я сохранил в сердце моем.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="dan.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

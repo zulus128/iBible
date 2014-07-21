@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nee.ru.html">Книга Неемии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Вот священники и левиты, которые пришли с Зоровавелем, сыном Салафииловым, и с Иисусом: Сераия, Иеремия, Ездра,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Амария, Маллух, Хаттуш,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Шехания, Рехум, Меремоф,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Иддо, Гиннефой, Авия,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Миямин, Маадия, Вилга,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Шемаия, Иоиарив, Иедаия,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Саллу, Амок, Хелкия, Иедаия. Это главы священников и братья их во дни Иисуса.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">А левиты: Иисус, Биннуй, Кадмиил, Шеревия, Иуда, Матфания, <i>главный</i> при славословии, он и братья его,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и Бакбукия и Унний, братья их, наряду с ними <i>державшие</i> стражу.
+</p>
+<div class="num">10</div><p id="n10">Иисус родил Иоакима, Иоаким родил Елиашива, Елиашив родил Иоиаду,
+</p>
+<div class="num">11</div><p id="n11">Иоиада родил Ионафана, Ионафан родил Иаддуя.
+</p>
+<div class="num">12</div><p id="n12">Во дни Иоакима были священники, гла&#769;вы поколений: из <i>дома</i> Сераии Мераия, из <i>дома</i> Иеремии Ханания,
+</p>
+<div class="num">13</div><p id="n13">из <i>дома</i> Ездры Мешуллам, из <i>дома</i> Амарии Иоханан,
+</p>
+<div class="num">14</div><p id="n14">из <i>дома</i> Мелиху Ионафан, из <i>дома</i> Шевании Иосиф,
+</p>
+<div class="num">15</div><p id="n15">из <i>дома</i> Харима Адна, из <i>дома</i> Мераиофа Хелкия,
+</p>
+<div class="num">16</div><p id="n16">из <i>дома</i> Иддо Захария, из <i>дома</i> Гиннефона Мешуллам,
+</p>
+<div class="num">17</div><p id="n17">из <i>дома</i> Авии Зихрий, из <i>дома</i> Миниамина, из <i>дома</i> Моадии Пилтай,
+</p>
+<div class="num">18</div><p id="n18">из <i>дома</i> Вилги Шаммуй, из <i>дома</i> Шемаии Ионафан,
+</p>
+<div class="num">19</div><p id="n19">из <i>дома</i> Иоиарива Мафнай, из <i>дома</i> Иедаии Уззий,
+</p>
+<div class="num">20</div><p id="n20">из <i>дома</i> Саллая Каллай, из <i>дома</i> Амока Евер,
+</p>
+<div class="num">21</div><p id="n21">из <i>дома</i> Хелкии Хашавия, из <i>дома</i> Иедаии Нафанаил.
+</p>
+<div class="num">22</div><p id="n22">Левиты, гла&#769;вы поколений, внесены в запись во дни Елиашива, Иоиады, Иоханана и Иаддуя, и также священники в царствование Дария Персидского.
+</p>
+<div class="num">23</div><p id="n23">Сыновья Левия, гла&#769;вы поколений, вписаны в летописи до дней Иоханана, сына Елиашивова.
+</p>
+<div class="num">24</div><p id="n24">Гла&#769;вы левитов: Хашавия, Шеревия, и Иисус, сын Кадмиила, и братья их, при них <i>поставленные</i> для славословия при благодарениях, по установлению Давида, человека Божия - смена за сменою.
+</p>
+<div class="num">25</div><p id="n25">Матфания, Бакбукия, Овадия, Мешуллам, Талмон, Аккув - стражи, привратники на страже у порогов ворот.
+</p>
+<div class="num">26</div><p id="n26">Они были во дни Иоакима, сына Иисусова, сына Иоседекова, и во дни областеначальника Неемии и книжника Ездры, священника.
+</p>
+<div class="num">27</div><p id="n27">При освящении стены Иерусалимской потребовали левитов из всех мест их, приказывая им прийти в Иерусалим для совершения освящения и радостного празднества со славословиями и песнями при <i>звуке</i> кимвалов, псалтирей и гуслей.
+</p>
+<div class="num">28</div><p id="n28">И собрались сыновья певцов из округа Иерусалимского и из сел Нетофафских,
+</p>
+<div class="num">29</div><p id="n29">и из Беф-Гаггилгала, и с полей Гевы и Азмавета, потому что певцы выстроили себе села в окрестностях Иерусалима.
+</p>
+<div class="num">30</div><p id="n30">И очистились священники и левиты, и очистили народ и ворота, и стену.
+</p>
+<div class="num">31</div><p id="n31">Тогда я повел начальствующих в Иудее на стену и поставил два больших хора для шествия, и один из них шел по правой стороне стены к Навозным воротам.
+</p>
+<div class="num">32</div><p id="n32">За ними шел Гошаия и половина начальствующих в Иудее,
+</p>
+<div class="num">33</div><p id="n33">Азария, Ездра и Мешуллам,
+</p>
+<div class="num">34</div><p id="n34">Иуда и Вениамин, и Шемаия и Иеремия,
+</p>
+<div class="num">35</div><p id="n35">а из сыновей священнических с трубами: Захария, сын Ионафана, сын Шемаии, сын Матфании, сын Михея, сын Закхура, сын Асафа,
+</p>
+<div class="num">36</div><p id="n36">и братья его: Шемаия, Азариил, Милалай, Гилалай, Маай, Нафанаил, Иуда и Хананий с музыкальными орудиями Давида, человека Божия, и книжник Ездра впереди них.
+</p>
+<div class="num">37</div><p id="n37">Подле ворот Источника, против них, они взошли по ступеням города Давидова, по лестнице, ведущей на стену сверх дома Давидова до Водяных ворот к востоку.
+</p>
+<div class="num">38</div><p id="n38">Другой хор шел напротив них, и за ним я и половина народа, по стене от Печной башни и до широкой стены,
+</p>
+<div class="num">39</div><p id="n39">и от ворот Ефремовых, мимо старых ворот и ворот Рыбных, и башни Хананела, и башни Меа, к Овечьим воротам, и остановились у ворот Темничных.
+</p>
+<div class="num">40</div><p id="n40">Потом оба хора стали у дома Божия, и я и половина начальствующих со мною,
+</p>
+<div class="num">41</div><p id="n41">и священники: Елиаким, Маасея, Миниамин, Михей, Елиоенай, Захария, Ханания с трубами,
+</p>
+<div class="num">42</div><p id="n42">и Маасея и Шемаия, и Елеазар и Уззий, и Иоханан и Малхия, и Елам и Езер. И пели певцы громко; главным <i>у</i> <i>них</i> <i>был</i> Израхия.
+</p>
+<div class="num">43</div><p id="n43">И приносили в тот день большие жертвы и веселились, потому что Бог дал им великую радость. Веселились и жены и дети, и веселие Иерусалима далеко было слышно.
+</p>
+<div class="num">44</div><p id="n44">В тот же день приставлены были люди к кладовым комнатам для приношений начатков и десятин, чтобы собирать с полей при городах части, положенные законом для священников и левитов, потому что Иудеям радостно было <i>смотреть</i> на стоящих священников и левитов,
+</p>
+<div class="num">45</div><p id="n45">которые совершали службу Богу своему и дела очищения и были певцами и привратниками по установлению Давида и сына его Соломона.
+</p>
+<div class="num">46</div><p id="n46">Ибо издавна во дни Давида и Асафа были установлены главы певцов и песни Богу, хвалебные и благодарственные.
+</p>
+<div class="num">47</div><p id="n47">Все Израильтяне во дни Зоровавеля и во дни Неемии давали части певцам и привратникам на каждый день и отдавали святыни левитам, а левиты отдавали святыни сынам Аарона.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nee.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

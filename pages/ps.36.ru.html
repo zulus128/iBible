@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.ru.html">Псалтирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Псалом 36
+  </p>
+
+
+  <div class="main-text">
+<p id="a0">Псалом Давида.
+</p>
+<div class="num">&nbsp;1</div><p id="n1">Не ревнуй злодеям, не завидуй делающим беззаконие,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">ибо они, как трава, скоро будут подкошены и, как зеленеющий злак, увянут.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Уповай на Господа и делай добро; живи на земле и храни истину.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Утешайся Господом, и Он исполнит желания сердца твоего.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Предай Господу путь твой и уповай на Него, и Он совершит,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и выведет, как свет, правду твою и справедливость твою, как полдень.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Покорись Господу и надейся на Него. Не ревнуй успевающему в пути своем, человеку лукавствующему.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Перестань гневаться и оставь ярость; не ревнуй до того, чтобы делать зло,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">ибо делающие зло истребятся, уповающие же на Господа наследуют землю.
+</p>
+<div class="num">10</div><p id="n10">Еще немного, и не станет нечестивого; посмотришь на его место, и нет его.
+</p>
+<div class="num">11</div><p id="n11">А кроткие наследуют землю и насладятся множеством мира.
+</p>
+<div class="num">12</div><p id="n12">Нечестивый злоумышляет против праведника и скрежещет на него зубами своими:
+</p>
+<div class="num">13</div><p id="n13">Господь же посмевается над ним, ибо видит, что приходит день его.
+</p>
+<div class="num">14</div><p id="n14">Нечестивые обнажают меч и натягивают лук свой, чтобы низложить бедного и нищего, чтобы пронзить <i>идущих</i> прямым путем:
+</p>
+<div class="num">15</div><p id="n15">меч их войдет в их же сердце, и луки их сокрушатся.
+</p>
+<div class="num">16</div><p id="n16">Малое у праведника - лучше богатства многих нечестивых,
+</p>
+<div class="num">17</div><p id="n17">ибо мышцы нечестивых сокрушатся, а праведников подкрепляет Господь.
+</p>
+<div class="num">18</div><p id="n18">Господь знает дни непорочных, и достояние их пребудет вовек:
+</p>
+<div class="num">19</div><p id="n19">не будут они постыжены во время лютое и во дни голода будут сыты;
+</p>
+<div class="num">20</div><p id="n20">а нечестивые погибнут, и враги Господни, как тук агнцев, исчезнут, в дыме исчезнут.
+</p>
+<div class="num">21</div><p id="n21">Нечестивый берет взаймы и не отдает, а праведник милует и дает,
+</p>
+<div class="num">22</div><p id="n22">ибо благословенные Им наследуют землю, а проклятые Им истребятся.
+</p>
+<div class="num">23</div><p id="n23">Господом утверждаются стопы <i>такого</i> человека, и Он благоволит к пути его:
+</p>
+<div class="num">24</div><p id="n24">когда он будет падать, не упадет, ибо Господь поддерживает его за руку.
+</p>
+<div class="num">25</div><p id="n25">Я был молод и состарился, и не видал праведника оставленным и потомков его просящими хлеба:
+</p>
+<div class="num">26</div><p id="n26">он всякий день милует и взаймы дает, и потомство его в благословение будет.
+</p>
+<div class="num">27</div><p id="n27">Уклоняйся от зла, и делай добро, и будешь жить вовек:
+</p>
+<div class="num">28</div><p id="n28">ибо Господь любит правду и не оставляет святых Своих; вовек сохранятся они; [а беззаконные будут извержены] и потомство нечестивых истребится.
+</p>
+<div class="num">29</div><p id="n29">Праведники наследуют землю и будут жить на ней вовек.
+</p>
+<div class="num">30</div><p id="n30">Уста праведника изрекают премудрость, и язык его произносит правду.
+</p>
+<div class="num">31</div><p id="n31">Закон Бога его в сердце у него; не поколеблются стопы его.
+</p>
+<div class="num">32</div><p id="n32">Нечестивый подсматривает за праведником и ищет умертвить его;
+</p>
+<div class="num">33</div><p id="n33">но Господь не отдаст его в руки его и не допустит обвинить его, когда он будет судим.
+</p>
+<div class="num">34</div><p id="n34">Уповай на Господа и держись пути Его: и Он вознесет тебя, чтобы ты наследовал землю; и когда будут истребляемы нечестивые, ты увидишь.
+</p>
+<div class="num">35</div><p id="n35">Видел я нечестивца грозного, расширявшегося, подобно укоренившемуся многоветвистому дереву;
+</p>
+<div class="num">36</div><p id="n36">но он прошел, и вот нет его; ищу его и не нахожу.
+</p>
+<div class="num">37</div><p id="n37">Наблюдай за непорочным и смотри на праведного, ибо будущность <i>такого</i> человека есть мир;
+</p>
+<div class="num">38</div><p id="n38">а беззаконники все истребятся; будущность нечестивых погибнет.
+</p>
+<div class="num">39</div><p id="n39">От Господа спасение праведникам, Он - защита их во время скорби;
+</p>
+<div class="num">40</div><p id="n40">и поможет им Господь и избавит их; избавит их от нечестивых и спасет их, ибо они на Него уповают.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.37.ru.html">к псалму 37</a></div></div>
+
+</body>
+</html>

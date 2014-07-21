@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 17
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Аврам был девяноста девяти лет, и Господь явился Авраму и сказал ему: Я Бог Всемогущий; ходи предо Мною и будь непорочен;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и поставлю завет Мой между Мною и тобою, и весьма, весьма размножу тебя.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И пал Аврам на лице свое. Бог продолжал говорить с ним и сказал:
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Я - вот завет Мой с тобою: ты будешь отцом множества народов,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и не будешь ты больше называться Аврамом, но будет тебе имя: Авраам, ибо Я сделаю тебя отцом множества народов;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и весьма, весьма распложу тебя, и произведу от тебя народы, и цари произойдут от тебя;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и поставлю завет Мой между Мною и тобою и между потомками твоими после тебя в роды их, завет вечный в том, что Я буду Богом твоим и потомков твоих после тебя;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и дам тебе и потомкам твоим после тебя землю, по которой ты странствуешь, всю землю Ханаанскую, во владение вечное; и буду им Богом.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказал Бог Аврааму: ты же соблюди завет Мой, ты и потомки твои после тебя в роды их.
+</p>
+<div class="num">10</div><p id="n10">Сей есть завет Мой, который вы <i>должны</i> соблюдать между Мною и между вами и между потомками твоими после тебя [в роды их]: да будет у вас обрезан весь мужеский пол;
+</p>
+<div class="num">11</div><p id="n11">обрезывайте крайнюю плоть вашу: и сие будет знамением завета между Мною и вами.
+</p>
+<div class="num">12</div><p id="n12">Восьми дней от рождения да будет обрезан у вас в роды ваши всякий <i>младенец</i> мужеского пола, рожденный в доме и купленный за серебро у какого-нибудь иноплеменника, который не от твоего семени.
+</p>
+<div class="num">13</div><p id="n13">Непременно да будет обрезан рожденный в доме твоем и купленный за серебро твое, и будет завет Мой на теле вашем заветом вечным.
+</p>
+<div class="num">14</div><p id="n14">Необрезанный же мужеского пола, который не обрежет крайней плоти своей [в восьмой день], истребится душа та из народа своего, <i>ибо</i> он нарушил завет Мой.
+</p>
+<div class="num">15</div><p id="n15">И сказал Бог Аврааму: Сару, жену твою, не называй Сарою, но да будет имя ей: Сарра;
+</p>
+<div class="num">16</div><p id="n16">Я благословлю ее и дам тебе от нее сына; благословлю ее, и произойдут от нее народы, и цари народов произойдут от нее.
+</p>
+<div class="num">17</div><p id="n17">И пал Авраам на лице свое, и рассмеялся, и сказал сам в себе: неужели от столетнего будет сын? и Сарра, девяностолетняя, неужели родит?
+</p>
+<div class="num">18</div><p id="n18">И сказал Авраам Богу: о, хотя бы Измаил был жив пред лицем Твоим!
+</p>
+<div class="num">19</div><p id="n19">Бог же сказал [Аврааму]: именно Сарра, жена твоя, родит тебе сына, и ты наречешь ему имя: Исаак; и поставлю завет Мой с ним заветом вечным [в том, что Я буду Богом ему и] потомству его после него.
+</p>
+<div class="num">20</div><p id="n20">И о Измаиле Я услышал тебя: вот, Я благословлю его, и возращу его, и весьма, весьма размножу; двенадцать князей родятся от него; и Я произведу от него великий народ.
+</p>
+<div class="num">21</div><p id="n21">Но завет Мой поставлю с Исааком, которого родит тебе Сарра в сие самое время на другой год.
+</p>
+<div class="num">22</div><p id="n22">И Бог перестал говорить с Авраамом и восшел от него.
+</p>
+<div class="num">23</div><p id="n23">И взял Авраам Измаила, сына своего, и всех рожденных в доме своем и всех купленных за серебро свое, весь мужеский пол людей дома Авраамова; и обрезал крайнюю плоть их в тот самый день, как сказал ему Бог.
+</p>
+<div class="num">24</div><p id="n24">Авраам был девяноста девяти лет, когда была обрезана крайняя плоть его.
+</p>
+<div class="num">25</div><p id="n25">А Измаил, сын его, был тринадцати лет, когда была обрезана крайняя плоть его.
+</p>
+<div class="num">26</div><p id="n26">В тот же самый день обрезаны были Авраам и Измаил, сын его,
+</p>
+<div class="num">27</div><p id="n27">и с ним обрезан был весь мужеский пол дома его, рожденные в доме и купленные за серебро у иноплеменников.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.18.ru.html">к главе 18</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Но Господь сказал Моисею: смотри, Я поставил тебя Богом фараону, а Аарон, брат твой, будет твоим пророком:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">ты будешь говорить [ему] все, что Я повелю тебе, а Аарон, брат твой, будет говорить фараону, чтобы он отпустил сынов Израилевых из земли своей;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">но Я ожесточу сердце фараоново, и явлю множество знамений Моих и чудес Моих в земле Египетской;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">фараон не послушает вас, и Я наложу руку Мою на Египет и выведу воинство Мое, народ Мой, сынов Израилевых, из земли Египетской - судами великими;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">тогда узнают [все] Египтяне, что Я Господь, когда простру руку Мою на Египет и выведу сынов Израилевых из среды их.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сделали Моисей и Аарон, как повелел им Господь, так они и сделали.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Моисей <i>был</i> восьмидесяти, а Аарон [брат его] восьмидесяти трех лет, когда стали говорить они к фараону.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сказал Господь Моисею и Аарону, говоря:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">если фараон скажет вам: сделайте [знамение или] чудо, то ты скажи Аарону [брату твоему]: возьми жезл твой и брось [на землю] пред фараоном [и пред рабами его],- он сделается змеем.
+</p>
+<div class="num">10</div><p id="n10">Моисей и Аарон пришли к фараону [и к рабам его] и сделали так, как повелел [им] Господь. И бросил Аарон жезл свой пред фараоном и пред рабами его, и он сделался змеем.
+</p>
+<div class="num">11</div><p id="n11">И призвал фараон мудрецов [Египетских] и чародеев; и эти волхвы Египетские сделали то же своими чарами:
+</p>
+<div class="num">12</div><p id="n12">каждый из них бросил свой жезл, и они сделались змеями, но жезл Ааронов поглотил их жезлы.
+</p>
+<div class="num">13</div><p id="n13">Сердце фараоново ожесточилось, и он не послушал их, как и говорил [им] Господь.
+</p>
+<div class="num">14</div><p id="n14">И сказал Господь Моисею: упорно сердце фараоново: он не хочет отпустить народ.
+</p>
+<div class="num">15</div><p id="n15">Пойди к фараону завтра: вот, он выйдет к воде, ты стань на пути его, на берегу реки, и жезл, который превращался в змея, возьми в руку твою
+</p>
+<div class="num">16</div><p id="n16">и скажи ему: Господь, Бог Евреев, послал меня сказать тебе: отпусти народ Мой, чтобы он совершил Мне служение в пустыне; но вот, ты доселе не послушался.
+</p>
+<div class="num">17</div><p id="n17">Так говорит Господь: из сего узнаешь, что Я Господь: вот этим жезлом, который в руке моей, я ударю по воде, которая в реке, и она превратится в кровь,
+</p>
+<div class="num">18</div><p id="n18">и рыба в реке умрет, и река воссмердит, и Египтянам омерзительно будет пить воду из реки.
+</p>
+<div class="num">19</div><p id="n19">И сказал Господь Моисею: скажи Аарону [брату твоему]: возьми жезл твой [в руку твою] и простри руку твою на воды Египтян: на реки их, на потоки их, на озера их и на всякое вместилище вод их,- и превратятся в кровь, и будет кровь по всей земле Египетской и в деревянных и в каменных сосудах.
+</p>
+<div class="num">20</div><p id="n20">И сделали Моисей и Аарон, как повелел [им] Господь. И поднял [Аарон] жезл [свой] и ударил по воде речной пред глазами фараона и пред глазами рабов его, и вся вода в реке превратилась в кровь,
+</p>
+<div class="num">21</div><p id="n21">и рыба в реке вымерла, и река воссмердела, и Египтяне не могли пить воды из реки; и была кровь по всей земле Египетской.
+</p>
+<div class="num">22</div><p id="n22">И волхвы Египетские чарами своими сделали то же. И ожесточилось сердце фараона, и не послушал их, как и говорил Господь.
+</p>
+<div class="num">23</div><p id="n23">И оборотился фараон, и пошел в дом свой; и сердце его не тронулось и сим.
+</p>
+<div class="num">24</div><p id="n24">И стали копать все Египтяне около реки <i>чтобы</i> <i>найти</i> воду для питья, потому что не могли пить воды из реки.
+</p>
+<div class="num">25</div><p id="n25">И исполнилось семь дней после того, как Господь поразил реку.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

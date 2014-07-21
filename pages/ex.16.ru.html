@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 16
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И двинулись из Елима, и пришло всё общество сынов Израилевых в пустыню Син, что между Елимом и между Синаем, в пятнадцатый день второго месяца по выходе их из земли Египетской.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И возроптало все общество сынов Израилевых на Моисея и Аарона в пустыне,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и сказали им сыны Израилевы: о, если бы мы умерли от руки Господней в земле Египетской, когда мы сидели у котлов с мясом, когда мы ели хлеб досыта! ибо вывели вы нас в эту пустыню, чтобы всё собрание это уморить голодом.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И сказал Господь Моисею: вот, Я одождю вам хлеб с неба, и пусть народ выходит и собирает ежедневно, сколько нужно на день, чтобы Мне испытать его, будет ли он поступать по закону Моему, или нет;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">а в шестой день пусть заготовляют, что принесут, и будет вдвое против того, по скольку собирают в прочие дни.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказали Моисей и Аарон всему [обществу] сынов Израилевых: вечером узна&#769;ете вы, что Господь вывел вас из земли Египетской,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и утром увидите славу Господню, ибо услышал Он ропот ваш на Господа: а мы что&#769; такое, что ропщете на нас?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сказал Моисей: <i>узнаете,</i> когда Господь вечером даст вам мяса в пищу, а утром хлеба досыта, ибо Господь услышал ропот ваш, который вы подняли против Него: а мы что? не на нас ропот ваш, но на Господа.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказал Моисей Аарону: скажи всему обществу сынов Израилевых: предстаньте пред лице Господа, ибо Он услышал ропот ваш.
+</p>
+<div class="num">10</div><p id="n10">И когда говорил Аарон ко всему обществу сынов Израилевых, то они оглянулись к пустыне, и вот, слава Господня явилась в облаке.
+</p>
+<div class="num">11</div><p id="n11">И сказал Господь Моисею, говоря:
+</p>
+<div class="num">12</div><p id="n12">Я услышал ропот сынов Израилевых; скажи им: вечером будете есть мясо, а поутру насытитесь хлебом - и узнаете, что Я Господь, Бог ваш.
+</p>
+<div class="num">13</div><p id="n13">Вечером налетели перепелы и покрыли стан, а поутру лежала роса около стана;
+</p>
+<div class="num">14</div><p id="n14">роса поднялась, и вот, на поверхности пустыни <i>нечто</i> мелкое, круповидное, мелкое, как иней на земле.
+</p>
+<div class="num">15</div><p id="n15">И увидели сыны Израилевы и говорили друг другу: что это? Ибо не знали, что это. И Моисей сказал им: это хлеб, который Господь дал вам в пищу;
+</p>
+<div class="num">16</div><p id="n16">вот что повелел Господь: собирайте его каждый по стольку, сколько ему съесть; по гомору на человека, по числу душ, сколько у кого в шатре, собирайте.
+</p>
+<div class="num">17</div><p id="n17">И сделали так сыны Израилевы и собрали, кто много, кто мало;
+</p>
+<div class="num">18</div><p id="n18">и меряли гомором, и у того, кто собрал много, не было лишнего, и у того, кто мало, не было недостатка: каждый собрал, сколько ему съесть.
+</p>
+<div class="num">19</div><p id="n19">И сказал им Моисей: никто не оставляй сего до утра.
+</p>
+<div class="num">20</div><p id="n20">Но не послушали они Моисея, и оставили от сего некоторые до утра,- и завелись черви, и оно воссмердело. И разгневался на них Моисей.
+</p>
+<div class="num">21</div><p id="n21">И собирали его рано поутру, каждый сколько ему съесть; когда же обогревало солнце, оно таяло.
+</p>
+<div class="num">22</div><p id="n22">В шестой же день собрали хлеба вдвое, по два гомора на каждого. И пришли все начальники общества и донесли Моисею.
+</p>
+<div class="num">23</div><p id="n23">И [Моисей] сказал им: вот что сказал Господь: завтра покой, святая суббота Господня; что надобно печь, пеките, и что надобно варить, варите <i>сегодня,</i> а что останется, отложите и сберегите до утра.
+</p>
+<div class="num">24</div><p id="n24">И отложили то до утра, как повелел [им] Моисей, и оно не воссмердело, и червей не было в нем.
+</p>
+<div class="num">25</div><p id="n25">И сказал Моисей: ешьте его сегодня, ибо сегодня суббота Господня; сегодня не найдете его на поле;
+</p>
+<div class="num">26</div><p id="n26">шесть дней собирайте его, а в седьмой день - суббота: не будет его в <i>этот</i> <i>день.
+</p>
+<div class="num">27</div><p id="n27"><i>Но</i> <i>некоторые</i> из народа вышли в седьмой день собирать - и не нашли.
+</p>
+<div class="num">28</div><p id="n28">И сказал Господь Моисею: долго ли будете вы уклоняться от соблюдения заповедей Моих и законов Моих?
+</p>
+<div class="num">29</div><p id="n29">смотрите, Господь дал вам субботу, посему Он и дает в шестой день хлеба на два дня: оставайтесь каждый у себя [в доме своем], никто не выходи от места своего в седьмой день.
+</p>
+<div class="num">30</div><p id="n30">И покоился народ в седьмой день.
+</p>
+<div class="num">31</div><p id="n31">И нарек дом Израилев <i>хлебу</i> тому имя: манна; она была, как кориандровое семя, белая, вкусом же как лепешка с медом.
+</p>
+<div class="num">32</div><p id="n32">И сказал Моисей: вот что повелел Господь: наполните [манною] гомор для хранения в роды ваши, дабы видели хлеб, которым Я питал вас в пустыне, когда вывел вас из земли Египетской.
+</p>
+<div class="num">33</div><p id="n33">И сказал Моисей Аарону: возьми один сосуд [золотой], и положи в него полный гомор манны, и поставь его пред Господом, для хранения в роды ваши.
+</p>
+<div class="num">34</div><p id="n34">И поставил его Аарон пред ковчегом свидетельства для хранения, как повелел Господь Моисею.
+</p>
+<div class="num">35</div><p id="n35">Сыны Израилевы ели манну сорок лет, доколе не пришли в землю обитаемую; манну ели они, доколе не пришли к пределам земли Ханаанской.
+</p>
+<div class="num">36</div><p id="n36">А гомор есть десятая часть ефы.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.17.ru.html">к главе 17</a></div></div>
+
+</body>
+</html>

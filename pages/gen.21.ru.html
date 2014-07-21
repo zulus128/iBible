@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 21
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И призрел Господь на Сарру, как сказал; и сделал Господь Сарре, как говорил.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Сарра зачала и родила Аврааму сына в старости его во время, о котором говорил ему Бог;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и нарек Авраам имя сыну своему, родившемуся у него, которого родила ему Сарра, Исаак;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и обрезал Авраам Исаака, сына своего, в восьмой день, как заповедал ему Бог.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Авраам был ста лет, когда родился у него Исаак, сын его.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказала Сарра: смех сделал мне Бог; кто ни услышит обо мне, рассмеется.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И сказала: кто сказал бы Аврааму: Сарра будет кормить детей грудью? ибо в старости его я родила сына.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Дитя выросло и отнято от груди; и Авраам сделал большой пир в тот день, когда Исаак [сын его] отнят был от груди.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И увидела Сарра, что сын Агари Египтянки, которого она родила Аврааму, насмехается [над ее сыном, Исааком],
+</p>
+<div class="num">10</div><p id="n10">и сказала Аврааму: выгони эту рабыню и сына ее, ибо не наследует сын рабыни сей с сыном моим Исааком.
+</p>
+<div class="num">11</div><p id="n11">И показалось это Аврааму весьма неприятным ради сына его [Измаила].
+</p>
+<div class="num">12</div><p id="n12">Но Бог сказал Аврааму: не огорчайся ради отрока и рабыни твоей; во всем, что скажет тебе Сарра, слушайся голоса ее, ибо в Исааке наречется тебе семя;
+</p>
+<div class="num">13</div><p id="n13">и от сына рабыни Я произведу [великий] народ, потому что он семя твое.
+</p>
+<div class="num">14</div><p id="n14">Авраам встал рано утром, и взял хлеба и мех воды, и дал Агари, положив ей на плечи, и отрока, и отпустил ее. Она пошла, и заблудилась в пустыне Вирсавии;
+</p>
+<div class="num">15</div><p id="n15">и не стало воды в мехе, и она оставила отрока под одним кустом
+</p>
+<div class="num">16</div><p id="n16">и пошла, села вдали, в расстоянии на <i>один</i> выстрел из лука. Ибо она сказала: не <i>хочу</i> видеть смерти отрока. И она села [поодаль] против [него], и подняла вопль, и плакала;
+</p>
+<div class="num">17</div><p id="n17">и услышал Бог голос отрока [оттуда, где он был]; и Ангел Божий с неба воззвал к Агари и сказал ей: что с тобою, Агарь? не бойся; Бог услышал голос отрока оттуда, где он находится;
+</p>
+<div class="num">18</div><p id="n18">встань, подними отрока и возьми его за руку, ибо Я произведу от него великий народ.
+</p>
+<div class="num">19</div><p id="n19">И Бог открыл глаза ее, и она увидела колодезь с водою [живою], и пошла, наполнила мех водою и напоила отрока.
+</p>
+<div class="num">20</div><p id="n20">И Бог был с отроком; и он вырос, и стал жить в пустыне, и сделался стрелком из лука.
+</p>
+<div class="num">21</div><p id="n21">Он жил в пустыне Фаран; и мать его взяла ему жену из земли Египетской.
+</p>
+<div class="num">22</div><p id="n22">И было в то время, Авимелех с [Ахузафом невестоводителем и] Фихолом, военачальником своим, сказал Аврааму: с тобою Бог во всем, что ты ни делаешь;
+</p>
+<div class="num">23</div><p id="n23">и теперь поклянись мне здесь Богом, что ты не обидишь ни меня, ни сына моего, ни внука моего; и как я хорошо поступал с тобою, так и ты будешь поступать со мною и землею, в которой ты гостишь.
+</p>
+<div class="num">24</div><p id="n24">И сказал Авраам: я клянусь.
+</p>
+<div class="num">25</div><p id="n25">И Авраам упрекал Авимелеха за колодезь с водою, который отняли рабы Авимелеховы.
+</p>
+<div class="num">26</div><p id="n26">Авимелех же сказал [ему]: не знаю, кто это сделал, и ты не сказал мне; я даже и не слыхал <i>о</i> <i>том</i> доныне.
+</p>
+<div class="num">27</div><p id="n27">И взял Авраам мелкого и крупного скота и дал Авимелеху, и они оба заключили союз.
+</p>
+<div class="num">28</div><p id="n28">И поставил Авраам семь агниц из <i>стада</i> мелкого скота особо.
+</p>
+<div class="num">29</div><p id="n29">Авимелех же сказал Аврааму: на что здесь сии семь агниц [<i>из</i> <i>стада</i> овец], которых ты поставил особо?
+</p>
+<div class="num">30</div><p id="n30">[Авраам] сказал: семь агниц сих возьми от руки моей, чтобы они были мне свидетельством, что я выкопал этот колодезь.
+</p>
+<div class="num">31</div><p id="n31">Потому и назвал он сие место: Вирсавия, ибо тут оба они клялись
+</p>
+<div class="num">32</div><p id="n32">и заключили союз в Вирсавии. И встал Авимелех, и [Ахузаф, невестоводитель его, и] Фихол, военачальник его, и возвратились в землю Филистимскую.
+</p>
+<div class="num">33</div><p id="n33">И насадил [Авраам] при Вирсавии рощу и призвал там имя Господа, Бога вечного.
+</p>
+<div class="num">34</div><p id="n34">И жил Авраам в земле Филистимской, как странник, дни многие.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.22.ru.html">к главе 22</a></div></div>
+
+</body>
+</html>

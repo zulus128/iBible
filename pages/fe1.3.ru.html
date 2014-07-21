@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="fe1.ru.html">1-е послание к<br />Фессалоникийцам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И потому, не терпя более, мы восхотели остаться в Афинах одни,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и послали Тимофея, брата нашего и служителя Божия и сотрудника нашего в благовествовании Христовом, чтобы утвердить вас и утешить в вере вашей,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">чтобы никто не поколебался в скорбях сих: ибо вы сами знаете, что так нам суждено.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Ибо мы и тогда, как были у вас, предсказывали вам, что будем страдать, как и случилось, и вы знаете.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Посему и я, не терпя более, послал узнать о вере вашей, чтобы как не искусил вас искуситель и не сделался тщетным труд наш.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Теперь же, когда пришел к нам от вас Тимофей и принес нам добрую весть о вере и любви вашей, и что вы всегда имеете добрую память о нас, желая нас видеть, как и мы вас,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">то мы, при всей скорби и нужде нашей, утешились вами, братия, ради вашей веры;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">ибо теперь мы живы, когда вы стоите в Господе.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Какую благодарность можем мы воздать Богу за вас, за всю радость, которою радуемся о вас пред Богом нашим,
+</p>
+<div class="num">10</div><p id="n10">ночь и день всеусердно молясь о том, чтобы видеть лице ваше и дополнить, чего недоставало вере вашей?
+</p>
+<div class="num">11</div><p id="n11">Сам же Бог и Отец наш и Господь наш Иисус Христос да управит путь наш к вам.
+</p>
+<div class="num">12</div><p id="n12">А вас Господь да исполнит и преисполнит любовью друг к другу и ко всем, какою мы исполнены к вам,
+</p>
+<div class="num">13</div><p id="n13">чтобы утвердить сердца ваши непорочными во святыне пред Богом и Отцем нашим в пришествие Господа нашего Иисуса Христа со всеми святыми Его. Аминь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="fe1.4.ru.html">к главе 4</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mf.ru.html">Евангелие от Матфея</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 25
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Тогда подобно будет Царство Небесное десяти девам, которые, взяв светильники свои, вышли навстречу жениху.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Из них пять было мудрых и пять неразумных.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Неразумные, взяв светильники свои, не взяли с собою масла.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Мудрые же, вместе со светильниками своими, взяли масла в сосудах своих.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И как жених замедлил, то задремали все и уснули.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Но в полночь раздался крик: вот, жених идет, выходите навстречу ему.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Тогда встали все девы те и поправили светильники свои.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Неразумные же сказали мудрым: дайте нам вашего масла, потому что светильники наши гаснут.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">А мудрые отвечали: чтобы не случилось недостатка и у нас и у вас, пойдите лучше к продающим и купите себе.
+</p>
+<div class="num">10</div><p id="n10">Когда же пошли они покупать, пришел жених, и готовые вошли с ним на брачный пир, и двери затворились;
+</p>
+<div class="num">11</div><p id="n11">после приходят и прочие девы, и говорят: Господи! Господи! отвори нам.
+</p>
+<div class="num">12</div><p id="n12">Он же сказал им в ответ: истинно говорю вам: не знаю вас.
+</p>
+<div class="num">13</div><p id="n13">Итак, бодрствуйте, потому что не знаете ни дня, ни часа, в который приидет Сын Человеческий.
+</p>
+<div class="num">14</div><p id="n14">Ибо <i>Он</i> <i>поступит,</i> как человек, который, отправляясь в чужую страну, призвал рабов своих и поручил им имение свое:
+</p>
+<div class="num">15</div><p id="n15">и одному дал он пять талантов, другому два, иному один, каждому по его силе; и тотчас отправился.
+</p>
+<div class="num">16</div><p id="n16">Получивший пять талантов пошел, употребил их в дело и приобрел другие пять талантов;
+</p>
+<div class="num">17</div><p id="n17">точно так же и получивший два таланта приобрел другие два;
+</p>
+<div class="num">18</div><p id="n18">получивший же один талант пошел и закопал <i>его</i> в землю и скрыл серебро господина своего.
+</p>
+<div class="num">19</div><p id="n19">По долгом времени, приходит господин рабов тех и требует у них отчета.
+</p>
+<div class="num">20</div><p id="n20">И, подойдя, получивший пять талантов принес другие пять талантов и говорит: господин! пять талантов ты дал мне; вот, другие пять талантов я приобрел на них.
+</p>
+<div class="num">21</div><p id="n21">Господин его сказал ему: хорошо, добрый и верный раб! в малом ты был верен, над многим тебя поставлю; войди в радость господина твоего.
+</p>
+<div class="num">22</div><p id="n22">Подошел также и получивший два таланта и сказал: господин! два таланта ты дал мне; вот, другие два таланта я приобрел на них.
+</p>
+<div class="num">23</div><p id="n23">Господин его сказал ему: хорошо, добрый и верный раб! в малом ты был верен, над многим тебя поставлю; войди в радость господина твоего.
+</p>
+<div class="num">24</div><p id="n24">Подошел и получивший один талант и сказал: господин! я знал тебя, что ты человек жестокий, жнешь, где не сеял, и собираешь, где не рассыпа&#769;л,
+</p>
+<div class="num">25</div><p id="n25">и, убоявшись, пошел и скрыл талант твой в земле; вот тебе твое.
+</p>
+<div class="num">26</div><p id="n26">Господин же его сказал ему в ответ: лукавый раб и ленивый! ты знал, что я жну, где не сеял, и собираю, где не рассыпа&#769;л;
+</p>
+<div class="num">27</div><p id="n27">посему надлежало тебе отдать серебро мое торгующим, и я, придя, получил бы мое с прибылью;
+</p>
+<div class="num">28</div><p id="n28">итак, возьмите у него талант и дайте имеющему десять талантов,
+</p>
+<div class="num">29</div><p id="n29">ибо всякому имеющему дастся и приумножится, а у неимеющего отнимется и то&#769;, что&#769; имеет;
+</p>
+<div class="num">30</div><p id="n30">а негодного раба выбросьте во тьму внешнюю: там будет плач и скрежет зубов. Сказав сие, возгласил: кто имеет уши слышать, да слышит!
+</p>
+<div class="num">31</div><p id="n31">Когда же приидет Сын Человеческий во славе Своей и все святые Ангелы с Ним, тогда сядет на престоле славы Своей,
+</p>
+<div class="num">32</div><p id="n32">и соберутся пред Ним все народы; и отделит одних от других, как пастырь отделяет овец от козлов;
+</p>
+<div class="num">33</div><p id="n33">и поставит овец по правую Свою сторону, а козлов - по левую.
+</p>
+<div class="num">34</div><p id="n34">Тогда скажет Царь тем, которые по правую сторону Его: приидите, благословенные Отца Моего, наследуйте Царство, уготованное вам от создания мира:
+</p>
+<div class="num">35</div><p id="n35">ибо алкал Я, и вы дали Мне есть; жаждал, и вы напоили Меня; был странником, и вы приняли Меня;
+</p>
+<div class="num">36</div><p id="n36">был наг, и вы одели Меня; был болен, и вы посетили Меня; в темнице был, и вы пришли ко Мне.
+</p>
+<div class="num">37</div><p id="n37">Тогда праведники скажут Ему в ответ: Господи! когда мы видели Тебя алчущим, и накормили? или жаждущим, и напоили?
+</p>
+<div class="num">38</div><p id="n38">когда мы видели Тебя странником, и приняли? или нагим, и одели?
+</p>
+<div class="num">39</div><p id="n39">когда мы видели Тебя больным, или в темнице, и пришли к Тебе?
+</p>
+<div class="num">40</div><p id="n40">И Царь скажет им в ответ: истинно говорю вам: так как вы сделали это одному из сих братьев Моих меньших, то сделали Мне.
+</p>
+<div class="num">41</div><p id="n41">Тогда скажет и тем, которые по левую сторону: идите от Меня, проклятые, в огонь вечный, уготованный диаволу и ангелам его:
+</p>
+<div class="num">42</div><p id="n42">ибо алкал Я, и вы не дали Мне есть; жаждал, и вы не напоили Меня;
+</p>
+<div class="num">43</div><p id="n43">был странником, и не приняли Меня; был наг, и не одели Меня; болен и в темнице, и не посетили Меня.
+</p>
+<div class="num">44</div><p id="n44">Тогда и они скажут Ему в ответ: Господи! когда мы видели Тебя алчущим, или жаждущим, или странником, или нагим, или больным, или в темнице, и не послужили Тебе?
+</p>
+<div class="num">45</div><p id="n45">Тогда скажет им в ответ: истинно говорю вам: так как вы не сделали этого одному из сих меньших, то не сделали Мне.
+</p>
+<div class="num">46</div><p id="n46">И пойдут сии в му&#769;ку вечную, а праведники в жизнь вечную.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mf.26.ru.html">к главе 26</a></div></div>
+
+</body>
+</html>

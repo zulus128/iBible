@@ -68,11 +68,16 @@ enum {lngRu, lngCs};
 @property (weak, nonatomic) IBOutlet UIButton *buttonMenu;
 
 @property (assign, readwrite) int curLanguage;
+@property (weak, nonatomic) IBOutlet UIWebView *ruWebView;
+@property (weak, nonatomic) IBOutlet UIWebView *csWebView;
 
 @property (nonatomic, strong) NSDictionary* grsjson;
 @property (nonatomic, strong) NSDictionary* bookjson;
 @property (nonatomic, strong) UIView* innerView;
 @property (nonatomic, strong) NSArray* res;
 @property (nonatomic, strong) NSLayoutConstraint* scrollHeight;
+
+@property (nonatomic, retain) NSString * viewPath;
+@property (nonatomic, retain) NSString * viewPos;
 
 @end

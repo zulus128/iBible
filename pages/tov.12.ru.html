@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="tov.ru.html">Книга Товита</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И призвал Товит сына своего Товию и сказал ему: приготовь, сын <i>мой</i>, плату человеку, который ходил с тобою; ему надобно еще прибавить.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Он отвечал: отец <i>мой</i>, я не буду в убытке, если отдам ему половину всего, что принес;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">потому что он привел меня к тебе здоровым и жену мою уврачевал, и серебро мое принес, и тебя также исцелил.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Старец сказал: так и следует ему.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И призвал Ангела и сказал ему: возьми половину всего, что вы принесли, и иди с миром.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Тогда, отозвав обоих особо, <i>Ангел</i> сказал им: благословляйте Бога, прославляйте Его, признавайте величие Его и исповедуйте пред всеми живущими, что Он сделал для вас. Доброе <i>дело</i> - благословлять Бога, превозносить имя Его и благоговейно проповедовать о делах Божиих; и вы не ленитесь прославлять Его.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Тайну цареву прилично хранить, а о делах Божиих объявлять похвально. Делайте добро, и зло не постигнет вас.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Доброе <i>дело</i> - молитва с постом и милостынею и справедливостью. Лучше малое со справедливостью, нежели многое с неправдою; лучше творить милостыню, нежели собирать золото,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">ибо милостыня от смерти избавляет и может очищать всякий грех. Творящие милостыни и <i>дела</i> правды будут долгоденствовать.
+</p>
+<div class="num">10</div><p id="n10">Грешники же суть враги своей жизни.
+</p>
+<div class="num">11</div><p id="n11">Не скрою от вас ничего; я сказал уже: тайну цареву прилично хранить, а о делах Божиих объявлять похвально.
+</p>
+<div class="num">12</div><p id="n12">Когда молился ты и невестка твоя Сарра, я возносил память молитвы вашей пред Святаго, и когда ты хоронил мертвых, я также был с тобою.
+</p>
+<div class="num">13</div><p id="n13">И когда ты не обленился встать и оставить обед свой, чтобы пойти и убрать мертвого, твоя благотворительность не утаилась от меня, но я был с тобою.
+</p>
+<div class="num">14</div><p id="n14">И ныне Бог послал меня уврачевать тебя и невестку твою Сарру.
+</p>
+<div class="num">15</div><p id="n15">Я - Рафаил, один из семи святых Ангелов, которые возносят молитвы святых и восходят пред славу Святаго.
+</p>
+<div class="num">16</div><p id="n16">Тогда оба смутились и пали лицем <i>на землю</i>, потому что были в страхе.
+</p>
+<div class="num">17</div><p id="n17">Но он сказал им: не бойтесь, мир будет вам. Благословляйте Бога вовек.
+</p>
+<div class="num">18</div><p id="n18">Ибо я пришел не по своему произволению, а по воле Бога нашего; потому и благословляйте Его вовек.
+</p>
+<div class="num">19</div><p id="n19">Все дни я был видим вами, но я не ел и не пил,- только взорам вашим представлялось <i>это</i>.
+</p>
+<div class="num">20</div><p id="n20">Итак, прославляйте теперь Бога, потому что я восхожу к Пославшему меня, и напишите все совершившееся в книгу.
+</p>
+<div class="num">21</div><p id="n21">И встали они и более уже не видели его.
+</p>
+<div class="num">22</div><p id="n22">И стали рассказывать о великих и чудных делах Божиих, и как явился им Ангел Господень.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="tov.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

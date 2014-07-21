@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="co1.ru.html">Первое послание к<br />Коринфянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 5
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Есть верный слух, что у вас <i>появилось</i> блудодеяние, и притом такое блудодеяние, какого не слышно даже у язычников, что некто <i>вместо</i> <i>жены</i> имеет жену отца своего.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И вы возгордились, вместо того, чтобы лучше плакать, дабы изъят был из среды вас сделавший такое дело.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">А я, отсутствуя телом, но присутствуя <i>у</i> <i>вас</i> духом, уже решил, как бы находясь у вас: сделавшего такое дело,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">в собрании вашем во имя Господа нашего Иисуса Христа, обще с моим духом, силою Господа нашего Иисуса Христа,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">предать сатане во измождение плоти, чтобы дух был спасен в день Господа нашего Иисуса Христа.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Нечем вам хвалиться. <br /> Разве не знаете, что малая закваска квасит все тесто?
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Итак очистите старую закваску, чтобы быть вам новым тестом, так как вы бесквасны, ибо Пасха наша, Христос, заклан за нас.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Посему станем праздновать не со старою закваскою, не с закваскою порока и лукавства, но с опресноками чистоты и истины.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Я писал вам в послании - не сообщаться с блудниками;
+</p>
+<div class="num">10</div><p id="n10">впрочем не вообще с блудниками мира сего, или лихоимцами, или хищниками, или идолослужителями, ибо иначе надлежало бы вам выйти из мира <i>сего.</i>
+</p>
+<div class="num">11</div><p id="n11">Но я писал вам не сообщаться с тем, кто, называясь братом, остается блудником, или лихоимцем, или идолослужителем, или злоречивым, или пьяницею, или хищником; с таким даже и не есть вместе.
+</p>
+<div class="num">12</div><p id="n12">Ибо что&#769; мне судить и внешних? Не внутренних ли вы судите?
+</p>
+<div class="num">13</div><p id="n13">Внешних же судит Бог. Итак, извергните развращенного из среды вас.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="co1.6.ru.html">к главе 6</a></div></div>
+
+</body>
+</html>

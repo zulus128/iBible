@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 37
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Иаков жил в земле странствования отца своего [Исаака], в земле Ханаанской.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Вот житие Иакова. Иосиф, семнадцати лет, пас скот [отца своего] вместе с братьями своими, будучи отроком, с сыновьями Валлы и с сыновьями Зелфы, жен отца своего. И доводил Иосиф худые о них слухи до [Израиля] отца их.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Израиль любил Иосифа более всех сыновей своих, потому что он был сын старости его,- и сделал ему разноцветную одежду.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И увидели братья его, что отец их любит его более всех братьев его; и возненавидели его и не могли говорить с ним дружелюбно.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И видел Иосиф сон, и рассказал [его] братьям своим: и они возненавидели его еще более.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Он сказал им: выслушайте сон, который я видел:
+</p>
+<div class="num">&nbsp;7</div><p id="n7">вот, мы вяжем снопы посреди поля; и вот, мой сноп встал и стал прямо; и вот, ваши снопы стали кругом и поклонились моему снопу.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сказали ему братья его: неужели ты будешь царствовать над нами? неужели будешь владеть нами? И возненавидели его еще более за сны его и за слова его.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И видел он еще другой сон и рассказал его [отцу своему и] братьям своим, говоря: вот, я видел еще сон: вот, солнце и луна и одиннадцать звезд поклоняются мне.
+</p>
+<div class="num">10</div><p id="n10">И он рассказал отцу своему и братьям своим; и побранил его отец его и сказал ему: что это за сон, который ты видел? неужели я и твоя мать, и твои братья придем поклониться тебе до земли?
+</p>
+<div class="num">11</div><p id="n11">Братья его досадовали на него, а отец его заметил это слово.
+</p>
+<div class="num">12</div><p id="n12">Братья его пошли пасти скот отца своего в Сихем.
+</p>
+<div class="num">13</div><p id="n13">И сказал Израиль Иосифу: братья твои не пасут ли в Сихеме? пойди, я пошлю тебя к ним. Он отвечал ему: вот я.
+</p>
+<div class="num">14</div><p id="n14">[Израиль] сказал ему: пойди, посмотри, здоровы ли братья твои и цел ли скот, и принеси мне ответ. И послал его из долины Хевронской; и он пришел в Сихем.
+</p>
+<div class="num">15</div><p id="n15">И нашел его некто блуждающим в поле, и спросил его тот человек, говоря: чего ты ищешь?
+</p>
+<div class="num">16</div><p id="n16">Он сказал: я ищу братьев моих; скажи мне, где они пасут?
+</p>
+<div class="num">17</div><p id="n17">И сказал тот человек: они ушли отсюда, ибо я слышал, как они говорили: пойдем в Дофан. И пошел Иосиф за братьями своими и нашел их в Дофане.
+</p>
+<div class="num">18</div><p id="n18">И увидели они его издали, и прежде нежели он приблизился к ним, стали умышлять против него, чтобы убить его.
+</p>
+<div class="num">19</div><p id="n19">И сказали друг другу: вот, идет сновидец;
+</p>
+<div class="num">20</div><p id="n20">пойдем теперь, и убьем его, и бросим его в какой-нибудь ров, и скажем, что хищный зверь съел его; и увидим, что будет из его снов.
+</p>
+<div class="num">21</div><p id="n21">И услышал <i>сие</i> Рувим и избавил его от рук их, сказав: не убьем его.
+</p>
+<div class="num">22</div><p id="n22">И сказал им Рувим: не проливайте крови; бросьте его в ров, который в пустыне, а руки не налагайте на него. <i>Сие</i> <i>говорил</i> <i>он</i> [с тем намерением], чтобы избавить его от рук их и возвратить его к отцу его.
+</p>
+<div class="num">23</div><p id="n23">Когда Иосиф пришел к братьям своим, они сняли с Иосифа одежду его, одежду разноцветную, которая была на нем,
+</p>
+<div class="num">24</div><p id="n24">и взяли его и бросили его в ров; ров же тот был пуст; воды в нем не было.
+</p>
+<div class="num">25</div><p id="n25">И сели они есть хлеб, и, взглянув, увидели, вот, идет из Галаада караван Измаильтян, и верблюды их несут стираксу, бальзам и ладан: идут они отвезти это в Египет.
+</p>
+<div class="num">26</div><p id="n26">И сказал Иуда братьям своим: что пользы, если мы убьем брата нашего и скроем кровь его?
+</p>
+<div class="num">27</div><p id="n27">Пойдем, продадим его Измаильтянам, а руки наши да не будут на нем, ибо он брат наш, плоть наша. Братья его послушались
+</p>
+<div class="num">28</div><p id="n28">и, когда проходили купцы Мадиамские, вытащили Иосифа изо рва и продали Иосифа Измаильтянам за двадцать сребреников; а они отвели Иосифа в Египет.
+</p>
+<div class="num">29</div><p id="n29">Рувим же пришел опять ко рву; и вот, нет Иосифа во рве. И разодрал он одежды свои,
+</p>
+<div class="num">30</div><p id="n30">и возвратился к братьям своим, и сказал: отрока нет, а я, куда я денусь?
+</p>
+<div class="num">31</div><p id="n31">И взяли одежду Иосифа, и закололи козла, и вымарали одежду кровью;
+</p>
+<div class="num">32</div><p id="n32">и послали разноцветную одежду, и доставили к отцу своему, и сказали: мы это нашли; посмотри, сына ли твоего эта одежда, или нет.
+</p>
+<div class="num">33</div><p id="n33">Он узнал ее и сказал: <i>это</i> одежда сына моего; хищный зверь съел его; верно, растерзан Иосиф.
+</p>
+<div class="num">34</div><p id="n34">И разодрал Иаков одежды свои, и возложил вретище на чресла свои, и оплакивал сына своего многие дни.
+</p>
+<div class="num">35</div><p id="n35">И собрались все сыновья его и все дочери его, чтобы утешить его; но он не хотел утешиться и сказал: с печалью сойду к сыну моему в преисподнюю. Так оплакивал его отец его.
+</p>
+<div class="num">36</div><p id="n36">Мадианитяне же продали его в Египте Потифару, царедворцу фараонову, начальнику телохранителей.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.38.ru.html">к главе 38</a></div></div>
+
+</body>
+</html>

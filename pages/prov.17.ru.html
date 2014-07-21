@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="prov.ru.html">Книга Притчей<br />Соломоновых</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 17
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Лучше кусок сухого хлеба, и с ним мир, нежели дом, полный заколотого скота, с раздором.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Разумный раб господствует над беспутным сыном и между братьями разделит наследство.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Плавильня - для серебра, и горнило - для золота, а сердца испытывает Господь.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Злодей внимает устам беззаконным, лжец слушается языка пагубного.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Кто ругается над нищим, тот хулит Творца его; кто радуется несчастью, тот не останется ненаказанным [а милосердый помилован будет].
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Венец стариков - сыновья сыновей, и слава детей - родители их. [У верного целый мир богатства, а у неверного - ни обола.]
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Неприлична глупому важная речь, тем паче знатному - уста лживые.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Подарок - драгоценный камень в глазах владеющего им: куда ни обратится он, успеет.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Прикрывающий проступок ищет любви; а кто снова напоминает о нем, тот удаляет друга.
+</p>
+<div class="num">10</div><p id="n10">На разумного сильнее действует выговор, нежели на глупого сто ударов.
+</p>
+<div class="num">11</div><p id="n11">Возмутитель ищет только зла; поэтому жестокий ангел будет послан против него.
+</p>
+<div class="num">12</div><p id="n12">Лучше встретить человеку медведицу, лишенную детей, нежели глупца с его глупостью.
+</p>
+<div class="num">13</div><p id="n13">Кто за добро воздает злом, от дома того не отойдет зло.
+</p>
+<div class="num">14</div><p id="n14">Начало ссоры - как прорыв воды; оставь ссору прежде, нежели разгорелась она.
+</p>
+<div class="num">15</div><p id="n15">Оправдывающий нечестивого и обвиняющий праведного - оба мерзость пред Господом.
+</p>
+<div class="num">16</div><p id="n16">К чему сокровище в руках глупца? Для приобретения мудрости <i>у</i> <i>него</i> нет разума. [Кто высоким делает свой дом, тот ищет разбиться; а уклоняющийся от учения впадет в беды.]
+</p>
+<div class="num">17</div><p id="n17">Друг любит во всякое время и, как брат, явится во время несчастья.
+</p>
+<div class="num">18</div><p id="n18">Человек малоумный дает руку и ручается за ближнего своего.
+</p>
+<div class="num">19</div><p id="n19">Кто любит ссоры, любит грех, и кто высоко поднимает ворота свои, тот ищет падения.
+</p>
+<div class="num">20</div><p id="n20">Коварное сердце не найдет добра, и лукавый язык попадет в беду.
+</p>
+<div class="num">21</div><p id="n21">Родил кто глупого,- себе на го&#769;ре, и отец глупого не порадуется.
+</p>
+<div class="num">22</div><p id="n22">Веселое сердце благотворно, как врачевство, а унылый дух сушит кости.
+</p>
+<div class="num">23</div><p id="n23">Нечестивый берет подарок из пазухи, чтобы извратить пути правосудия.
+</p>
+<div class="num">24</div><p id="n24">Мудрость - пред лицем у разумного, а глаза глупца - на конце земли.
+</p>
+<div class="num">25</div><p id="n25">Глупый сын - досада отцу своему и огорчение для матери своей.
+</p>
+<div class="num">26</div><p id="n26">Нехорошо и обвинять правого, <i>и</i> бить вельмож за правду.
+</p>
+<div class="num">27</div><p id="n27">Разумный воздержан в словах своих, и благоразумный хладнокровен.
+</p>
+<div class="num">28</div><p id="n28">И глупец, когда молчит, может показаться мудрым, и затворяющий уста свои - благоразумным.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="prov.18.ru.html">к главе 18</a></div></div>
+
+</body>
+</html>

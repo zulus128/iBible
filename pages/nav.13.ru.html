@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nav.ru.html">Книга Иисуса Навина</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 13
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Когда Иисус состарился, вошел в лета <i>преклонные,</i> тогда Господь сказал ему: ты состарился, вошел в лета <i>преклонные,</i> а земли брать в наследие остается еще очень много.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Остается сия земля: все округи Филистимские и вся <i>земля</i> Гессурская [и Хананейская].
+</p>
+<div class="num">&nbsp;3</div><p id="n3">От Сихора, что пред Египтом, до пределов Екрона к северу, считаются Ханаанскими пять владельцев Филистимских: Газский, Азотский, Аскалонский, Гефский, Екронский и Аввейский;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">к югу же вся земля Ханаанская от Меары Сидонской до Афека, до пределов Аморрейских,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">также [Филистимская] земля Гевла и весь Ливан к востоку солнца от Ваал-Гада, <i>что</i> подле горы Ермона, до входа в Емаф.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Всех горных жителей от Ливана до Мисрефоф-Маима, всех Сидонян Я изгоню от лица сынов Израилевых. Раздели же ее в удел Израилю, как Я повелел тебе;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">раздели землю сию в удел девяти коленам и половине колена Манассиина [от Иордана до моря великого к западу отдай ее <i>им;</i> великое море будет пределом].
+</p>
+<div class="num">&nbsp;8</div><p id="n8">А <i>колено</i> Рувимово и Гадово с другою половиною колена Манассиина получили удел свой от Моисея за Иорданом к востоку [солнца], как дал им Моисей, раб Господень,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">от Ароера, который на берегу потока Арнона, и город, который среди потока, и всю равнину Медеву до Дивона;
+</p>
+<div class="num">10</div><p id="n10">также все города Сигона, царя Аморрейского, который царствовал в Есевоне, до пределов Аммонитских,
+</p>
+<div class="num">11</div><p id="n11">также Галаад и область Гессурскую и Маахскую, и всю гору Ермон и весь Васан до Салхи,
+</p>
+<div class="num">12</div><p id="n12">все царство Ога Васанского, который царствовал в Астарофе и в Едреи. Он оставался один из Рефаимов, которых Моисей поразил и прогнал.
+</p>
+<div class="num">13</div><p id="n13">Но сыны Израилевы не выгнали жителей Гессура и Маахи [и Хананеев], и живет Гессур и Мааха среди Израиля до сего дня.
+</p>
+<div class="num">14</div><p id="n14">Только колену Левиину не дал он удела: жертвы Господа Бога Израилева суть удел его, как сказал ему Господь. [Вот разделение, какое сделал Моисей сынам Израилевым по племенам их на равнинах Моавитских за Иорданом, напротив Иерихона:]
+</p>
+<div class="num">15</div><p id="n15">колену сынов Рувимовых по племенам их дал <i>удел</i> Моисей:
+</p>
+<div class="num">16</div><p id="n16">пределом их был Ароер, который на берегу потока Арнона, и город, который среди потока, и вся равнина при Медеве,
+</p>
+<div class="num">17</div><p id="n17">Есевон и все города его, которые на равнине, и Дивон, Вамоф-Ваали Беф-Ваал-Меон,
+</p>
+<div class="num">18</div><p id="n18">Иааца, Кедемоф и Мефааф,
+</p>
+<div class="num">19</div><p id="n19">Кириафаим, Сивма и Цереф-Шахар на горе Емек,
+</p>
+<div class="num">20</div><p id="n20">Беф-Фегор и места при подошве Фасги и Беф-Иешимоф,
+</p>
+<div class="num">21</div><p id="n21">и все города на равнине, и все царство Сигона, царя Аморрейского, который царствовал в Есевоне, которого убил Моисей, равно как и вождей Мадиамских: Евия, и Рекема, и Цура, и Хура, и Реву, князей Сигоновых, живших в земле [той];
+</p>
+<div class="num">22</div><p id="n22">также Валаама, сына Веорова, прорицателя, убили сыны Израилевы мечом в числе убитых ими.
+</p>
+<div class="num">23</div><p id="n23">Пределом сынов Рувимовых был Иордан. Вот удел сынов Рувимовых по племенам их, города и села их.
+</p>
+<div class="num">24</div><p id="n24">Моисей дал также <i>удел</i> колену Гадову, сынам Гадовым, по племенам их:
+</p>
+<div class="num">25</div><p id="n25">пределом их был Иазер и все города Галаадские, и половина земли сынов Аммоновых до Ароера, что пред Раввою,
+</p>
+<div class="num">26</div><p id="n26">и <i>земли</i> от Есевона до Рамаф-Мицфы и Ветонима и от Маханаима до пределов Давира,
+</p>
+<div class="num">27</div><p id="n27">и на долине Беф-Гарам и Беф-Нимра и Сокхоф и Цафон, остаток царства Сигона, царя Есевонского; пределом его был Иордан до моря Хиннерефского за Иорданом к востоку.
+</p>
+<div class="num">28</div><p id="n28">Вот удел сынов Гадовых по племенам их, города и села их.
+</p>
+<div class="num">29</div><p id="n29">Моисей дал <i>удел</i> и половине колена Манассиина, который <i>принадлежал</i> половине колена сынов Манассииных, по племенам их;
+</p>
+<div class="num">30</div><p id="n30">предел их был: от Маханаима весь Васан, все царство Ога, царя Васанского, и все селения Иаировы, что в Васане, шестьдесят городов;
+</p>
+<div class="num">31</div><p id="n31">а половина Галаада и Астароф и Едрея, царственные города Ога Васанского, [даны] сынам Махира, сына Манассиина, половине сынов Махировых, по племенам их.
+</p>
+<div class="num">32</div><p id="n32">Вот что Моисей дал в удел на равнинах Моавитских за Иорданом против Иерихона к востоку.
+</p>
+<div class="num">33</div><p id="n33">Но колену Левиину Моисей не дал удела: Господь Бог Израилев Сам есть удел их, как Он говорил им.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nav.14.ru.html">к главе 14</a></div></div>
+
+</body>
+</html>

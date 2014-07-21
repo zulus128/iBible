@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="prem.ru.html">Книга Премудрости<br />Соломона</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Неправо умствующие говорили сами в себе: "коротка и прискорбна наша жизнь, и нет человеку спасения от смерти, и не знают, чтобы кто освободил из ада.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Случайно мы рождены и после будем как небывшие: дыхание в ноздрях наших - дым, и слово - искра в движении нашего сердца.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Когда она угаснет, тело обратится в прах, и дух рассеется, как жидкий воздух;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и имя наше забудется со временем, и никто не вспомнит о делах наших; и жизнь наша пройдет, как след облака, и рассеется, как туман, разогнанный лучами солнца и отягченный теплотою его.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Ибо жизнь наша - прохождение тени, и нет нам возврата от смерти: ибо положена печать, и никто не возвращается.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Будем же наслаждаться настоящими благами и спешить пользоваться миром, как юностью;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">преисполнимся дорогим вином и благовониями, и да не пройдет мимо нас весенний цвет жизни;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">увенчаемся цветами роз прежде, нежели они увяли;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">никто из нас не лишай себя участия в нашем наслаждении; везде оставим следы веселья, ибо это наша доля и наш жребий.
+</p>
+<div class="num">10</div><p id="n10">Будем притеснять бедняка праведника, не пощадим вдовы и не постыдимся многолетних седин старца.
+</p>
+<div class="num">11</div><p id="n11">Сила наша да будет законом правды, ибо бессилие оказывается бесполезным.
+</p>
+<div class="num">12</div><p id="n12">Устроим ковы праведнику, ибо он в тягость нам и противится делам нашим, укоряет нас в грехах против закона и поносит нас за грехи нашего воспитания;
+</p>
+<div class="num">13</div><p id="n13">объявляет себя имеющим познание о Боге и называет себя сыном Господа;
+</p>
+<div class="num">14</div><p id="n14">он пред нами - обличение помыслов наших.
+</p>
+<div class="num">15</div><p id="n15">Тяжело нам и смотреть на него, ибо жизнь его не похожа на жизнь других, и отличны пути его:
+</p>
+<div class="num">16</div><p id="n16">он считает нас мерзостью и удаляется от путей наших, как от нечистот, ублажает кончину праведных и тщеславно называет отцом своим Бога.
+</p>
+<div class="num">17</div><p id="n17">Увидим, истинны ли слова его, и испытаем, какой будет исход его;
+</p>
+<div class="num">18</div><p id="n18">ибо если этот праведник есть сын Божий, то <i>Бог</i> защитит его и избавит его от руки врагов.
+</p>
+<div class="num">19</div><p id="n19">Испытаем его оскорблением и мучением, дабы узнать смирение его и видеть незлобие его;
+</p>
+<div class="num">20</div><p id="n20">осудим его на бесчестную смерть, ибо, по словам его, о нем попечение будет".
+</p>
+<div class="num">21</div><p id="n21">Так они умствовали, и ошиблись; ибо злоба их ослепила их,
+</p>
+<div class="num">22</div><p id="n22">и они не познали тайн Божиих, не ожидали воздаяния за святость и не считали достойными награды душ непорочных.
+</p>
+<div class="num">23</div><p id="n23">Бог создал человека для нетления и соделал его образом вечного бытия Своего;
+</p>
+<div class="num">24</div><p id="n24">но завистью диавола вошла в мир смерть, и испытывают ее принадлежащие к уделу его.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="prem.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

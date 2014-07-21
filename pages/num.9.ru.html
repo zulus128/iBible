@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="num.ru.html">Числа</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 9
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Господь Моисею в пустыне Синайской во второй год по исшествии их из земли Египетской, в первый месяц, говоря:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">пусть сыны Израилевы совершат Пасху в назначенное для нее время:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">в четырнадцатый день сего месяца вечером совершите ее в назначенное для нее время, по всем постановлениям и по всем обрядам ее совершите ее.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И сказал Моисей сынам Израилевым, чтобы совершили Пасху.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И совершили они Пасху в первый <i>месяц,</i> в четырнадцатый день месяца вечером, в пустыне Синайской: во всем, как повелел Господь Моисею, так и поступили сыны Израилевы.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Были люди, которые были нечисты от <i>прикосновения</i> к мертвым телам человеческим, и не могли совершить Пасхи в тот день; и пришли они к Моисею и Аарону в тот день,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и сказали ему те люди: мы нечисты от <i>прикосновения</i> к мертвым телам человеческим; для чего нас лишать того, чтобы мы принесли приношение Господу в назначенное время среди сынов Израилевых?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сказал им Моисей: постойте, я послушаю, что повелит о вас Господь.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказал Господь Моисею, говоря:
+</p>
+<div class="num">10</div><p id="n10">скажи сынам Израилевым: если кто из вас или из потомков ваших будет нечист от <i>прикосновения</i> к мертвому телу, или будет в дальней дороге, то и он должен совершить Пасху Господню;
+</p>
+<div class="num">11</div><p id="n11">в четырнадцатый день второго месяца вечером пусть таковые совершат ее и с опресноками и горькими травами пусть едят ее;
+</p>
+<div class="num">12</div><p id="n12">и пусть не оставляют от нее до утра и костей ее не сокрушают; пусть совершат ее по всем уставам о Пасхе;
+</p>
+<div class="num">13</div><p id="n13">а кто чист и не находится в [дальней] дороге и не совершит Пасхи,- истребится душа та из народа своего, ибо он не принес приношения Господу в свое время: понесет на себе грех человек тот;
+</p>
+<div class="num">14</div><p id="n14">если будет жить у вас пришелец, то и он должен совершать Пасху Господню: по уставу о Пасхе и по обряду ее он должен совершить ее; один устав пусть будет у вас и для пришельца и для туземца.
+</p>
+<div class="num">15</div><p id="n15">В тот день, когда поставлена была скиния, облако покрыло скинию откровения, и с вечера над скиниею как бы огонь виден был до самого утра.
+</p>
+<div class="num">16</div><p id="n16">Так было и всегда: облако покрывало ее [днем] и подобие огня ночью.
+</p>
+<div class="num">17</div><p id="n17">И когда облако поднималось от скинии, тогда сыны Израилевы отправлялись в путь, и на месте, где останавливалось облако, там останавливались станом сыны Израилевы.
+</p>
+<div class="num">18</div><p id="n18">По повелению Господню отправлялись сыны Израилевы в путь, и по повелению Господню останавливались: во все то время, когда облако стояло над скиниею, и они стояли;
+</p>
+<div class="num">19</div><p id="n19">и если облако долгое время было над скиниею, то и сыны Израилевы следовали этому указанию Господа и не отправлялись;
+</p>
+<div class="num">20</div><p id="n20">иногда же облако немного времени было над скиниею: они по указанию Господню останавливались, и по указанию Господню отправлялись в путь;
+</p>
+<div class="num">21</div><p id="n21">иногда облако стояло <i>только</i> от вечера до утра, и поутру поднималось облако, тогда и они отправлялись; или день и ночь стояло облако, и когда поднималось, и они тогда отправлялись;
+</p>
+<div class="num">22</div><p id="n22">или, если два дня, или месяц, или несколько дней стояло облако над скиниею, то и сыны Израилевы стояли и не отправлялись в путь; а когда оно поднималось, тогда отправлялись;
+</p>
+<div class="num">23</div><p id="n23">по указанию Господню останавливались, и по указанию Господню отправлялись в путь: следовали указанию Господню по повелению Господню, <i>данному</i> чрез Моисея.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="num.10.ru.html">к главе 10</a></div></div>
+
+</body>
+</html>

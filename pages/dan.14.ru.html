@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="dan.ru.html">Книга Пророка Даниила</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 14
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Царь Астиаг приложился к отцам своим, и Кир, Персиянин, принял царство его.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И Даниил жил вместе с царем и был славнее всех друзей его.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Был у Вавилонян идол, по имени Вил, и издерживали на него каждый день двадцать больших мер пшеничной муки, сорок овец и вина шесть мер.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Царь чтил его и ходил каждый день поклоняться ему; Даниил же поклонялся Богу своему. И сказал ему царь: почему ты не поклоняешься Вилу?
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Он отвечал: потому что я не поклоняюсь идолам, сделанным руками, но <i>поклоняюсь</i> живому Богу, сотворившему небо и землю и владычествующему над всякою плотью.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Царь сказал: не думаешь ли ты, что Вил неживой бог? не видишь ли, сколько он ест и пьет каждый день?
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Даниил, улыбнувшись, сказал: не обманывайся, царь; ибо он внутри глина, а снаружи медь, и никогда ни ел, ни пил.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Тогда царь, разгневавшись, призвал жрецов своих и сказал им: если вы не скажете мне, кто съедает все это, то умрете.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Если же вы докажете мне, что съедает это Вил, то умрет Даниил, потому что произнес хулу на Вила. И сказал Даниил царю: да будет по слову твоему.
+</p>
+<div class="num">10</div><p id="n10">Жрецов Вила было семьдесят, кроме жен и детей.
+</p>
+<div class="num">11</div><p id="n11">И пришел царь с Даниилом в храм Вила, и сказали жрецы Вила: вот, мы выйдем вон, а ты, царь, поставь пищу и, налив вина, запри двери и запечатай перстнем твоим.
+</p>
+<div class="num">12</div><p id="n12">И если завтра ты придешь и не найдешь, что все съедено Вилом, мы умрем, или Даниил, который солгал на нас.
+</p>
+<div class="num">13</div><p id="n13">Они не обращали на это внимания, потому что под столом сделали потаенный вход, и им всегда входили, и съедали это.
+</p>
+<div class="num">14</div><p id="n14">Когда они вышли, царь поставил пищу перед Вилом, а Даниил приказал слугам своим, и они принесли пепел, и посыпали весь храм в присутствии одного царя, и, выйдя, заперли двери, и запечатали царским перстнем, и отошли.
+</p>
+<div class="num">15</div><p id="n15">Жрецы же, по обычаю своему, пришли ночью с женами и детьми своими, и все съели и выпили.
+</p>
+<div class="num">16</div><p id="n16">На другой день царь встал рано и Даниил с ним,
+</p>
+<div class="num">17</div><p id="n17">и сказал: целы ли печати, Даниил? Он сказал: целы, царь.
+</p>
+<div class="num">18</div><p id="n18">И как скоро отворены были двери, царь, взглянув на стол, воскликнул громким голосом: велик ты, Вил, и нет никакого обмана в тебе!
+</p>
+<div class="num">19</div><p id="n19">Даниил, улыбнувшись, удержал царя, чтобы он не входил внутрь, и сказал: посмотри на пол и заметь, чьи это следы.
+</p>
+<div class="num">20</div><p id="n20">Царь сказал: вижу следы мужчин, женщин и детей.
+</p>
+<div class="num">21</div><p id="n21">И, разгневавшись, царь приказал схватить жрецов, жен их и детей и они показали потаенные двери, которыми они входили и съедали, что было на столе.
+</p>
+<div class="num">22</div><p id="n22">Тогда царь повелел умертвить их и отдал Вила Даниилу, и он разрушил его и храм его.
+</p>
+<div class="num">23</div><p id="n23">Был на том месте большой дракон, и Вавилоняне чтили его.
+</p>
+<div class="num">24</div><p id="n24">И сказал царь Даниилу: не скажешь ли и об этом, что он медь? вот, он живой, и ест и пьет; ты не можешь сказать, что этот бог неживой; итак поклонись ему.
+</p>
+<div class="num">25</div><p id="n25">Даниил сказал: Господу Богу моему поклоняюсь, потому что Он Бог живой.
+</p>
+<div class="num">26</div><p id="n26">Но ты, царь, дай мне позволение, и я умерщвлю дракона без меча и жезла. Царь сказал: даю тебе.
+</p>
+<div class="num">27</div><p id="n27">Тогда Даниил взял смолы, жира и воло&#769;с, сварил это вместе и, сделав из этого ком, бросил его в пасть дракону, и дракон расселся. И сказал <i>Даниил:</i> вот ваши святыни!
+</p>
+<div class="num">28</div><p id="n28">Когда же Вавилоняне услышали о том, сильно вознегодовали и восстали против царя, и сказали: царь сделался Иудеем, Вила разрушил и убил дракона, и предал смерти жрецов,
+</p>
+<div class="num">29</div><p id="n29">и, придя к царю, сказали: предай нам Даниила, иначе мы умертвим тебя и дом твой.
+</p>
+<div class="num">30</div><p id="n30">И когда царь увидел, что они сильно настаивают, принужден был предать им Даниила,
+</p>
+<div class="num">31</div><p id="n31">они же бросили его в ров львиный, и он пробыл там шесть дней.
+</p>
+<div class="num">32</div><p id="n32">Во рве было семь львов, и давалось им каждый день по два тела и по две овцы; в это время им не давали их, чтобы они съели Даниила.
+</p>
+<div class="num">33</div><p id="n33">Был в Иудее пророк Аввакум, который, сварив похлебку и накрошив хлеба в блюдо, шел на поле, чтобы отнести это жнецам.
+</p>
+<div class="num">34</div><p id="n34">Но Ангел Господень сказал Аввакуму: отнеси этот обед, который у тебя, в Вавилон к Даниилу, в ров львиный.
+</p>
+<div class="num">35</div><p id="n35">Аввакум сказал: господин! Вавилона я <i>никогда</i> не видал и рва не знаю.
+</p>
+<div class="num">36</div><p id="n36">Тогда Ангел Господень взял его за темя и, подняв его за волосы головы его, поставил его в Вавилоне над рвом силою духа своего.
+</p>
+<div class="num">37</div><p id="n37">И воззвал Аввакум и сказал: Даниил! Даниил! возьми обед, который Бог послал тебе.
+</p>
+<div class="num">38</div><p id="n38">Даниил сказал: вспомнил Ты обо мне, Боже, и не оставил любящих Тебя.
+</p>
+<div class="num">39</div><p id="n39">И встал Даниил и ел; Ангел же Божий мгновенно поставил Аввакума на его место.
+</p>
+<div class="num">40</div><p id="n40">В седьмой день пришел царь, чтобы поскорбеть о Данииле и, подойдя ко рву, взглянул в него, и вот, Даниил сидел.
+</p>
+<div class="num">41</div><p id="n41">И воскликнул царь громким голосом, и сказал: велик Ты, Господь Бог Даниилов, и нет иного кроме Тебя!
+</p>
+<div class="num">42</div><p id="n42">И приказал вынуть <i>Даниила,</i> а виновников его погубления бросить в ров,- и они тотчас были съедены в присутствии его.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="dan.ru.html">Книга Пророка Даниила</a>
+</div></div>
+
+</body>
+</html>

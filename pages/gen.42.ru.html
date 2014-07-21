@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 42
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И узнал Иаков, что в Египте есть хлеб, и сказал Иаков сыновьям своим: что вы смотрите?
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И сказал: вот, я слышал, что есть хлеб в Египте; пойдите туда и купите нам оттуда хлеба, чтобы нам жить и не умереть.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Десять братьев Иосифовых пошли купить хлеба в Египте,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">а Вениамина, брата Иосифова, не послал Иаков с братьями его, ибо сказал: не случилось бы с ним беды.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И пришли сыны Израилевы покупать хлеб, вместе с другими пришедшими, ибо в земле Ханаанской был голод.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Иосиф же был начальником в земле той; он и продавал хлеб всему народу земли. Братья Иосифа пришли и поклонились ему лицем до земли.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И увидел Иосиф братьев своих и узнал их; но показал, будто не знает их, и говорил с ними сурово и сказал им: откуда вы пришли? Они сказали: из земли Ханаанской, купить пищи.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Иосиф узнал братьев своих, но они не узнали его.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И вспомнил Иосиф сны, которые снились ему о них; и сказал им: вы соглядатаи, вы пришли высмотреть наготу<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;Слабые места.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p1"></a> земли сей.
+</p>
+<div class="num">10</div><p id="n10">Они сказали ему: нет, господин наш; рабы твои пришли купить пищи;
+</p>
+<div class="num">11</div><p id="n11">мы все дети одного человека; мы люди честные; рабы твои не бывали соглядатаями.
+</p>
+<div class="num">12</div><p id="n12">Он сказал им: нет, вы пришли высмотреть наготу земли сей.
+</p>
+<div class="num">13</div><p id="n13">Они сказали: нас, рабов твоих, двенадцать братьев; мы сыновья одного человека в земле Ханаанской, и вот, меньший теперь с отцом нашим, а одного не стало.
+</p>
+<div class="num">14</div><p id="n14">И сказал им Иосиф: это самое я и говорил вам, сказав: вы соглядатаи;
+</p>
+<div class="num">15</div><p id="n15">вот как вы будете испытаны: <i>клянусь</i> жизнью фараона, вы не выйдете отсюда, если не придет сюда меньший брат ваш;
+</p>
+<div class="num">16</div><p id="n16">пошлите одного из вас, и пусть он приведет брата вашего, а вы будете задержаны; и откроется, правда ли у вас; и если нет, <i>то</i> <i>клянусь</i> жизнью фараона, что вы соглядатаи.
+</p>
+<div class="num">17</div><p id="n17">И отдал их под стражу на три дня.
+</p>
+<div class="num">18</div><p id="n18">И сказал им Иосиф в третий день: вот что сделайте, и останетесь живы, ибо я боюсь Бога:
+</p>
+<div class="num">19</div><p id="n19">если вы люди честные, то один брат из вас пусть содержится в доме, где вы заключены; а вы пойдите, отвезите хлеб, ради голода семейств ваших;
+</p>
+<div class="num">20</div><p id="n20">брата же вашего меньшого приведите ко мне, чтобы оправдались слова ваши и чтобы не умереть вам. Так они и сделали.
+</p>
+<div class="num">21</div><p id="n21">И говорили они друг другу: точно мы наказываемся за грех против брата нашего; мы видели страдание души его, когда он умолял нас, но не послушали [его]; за то и постигло нас горе сие.
+</p>
+<div class="num">22</div><p id="n22">Рувим отвечал им и сказал: не говорил ли я вам: не грешите против отрока? но вы не послушались; вот, кровь его взыскивается.
+</p>
+<div class="num">23</div><p id="n23">А того не знали они, что Иосиф понимает; ибо между ними был переводчик.
+</p>
+<div class="num">24</div><p id="n24">И отошел от них [Иосиф] и заплакал. И возвратился к ним, и говорил с ними, и, взяв из них Симеона, связал его пред глазами их.
+</p>
+<div class="num">25</div><p id="n25">И приказал Иосиф наполнить мешки их хлебом, а серебро их возвратить каждому в мешок его, и дать им запасов на дорогу. Так и сделано с ними.
+</p>
+<div class="num">26</div><p id="n26">Они положили хлеб свой на ослов своих, и пошли оттуда.
+</p>
+<div class="num">27</div><p id="n27">И открыл один <i>из</i> <i>них</i> мешок свой, чтобы дать корму ослу своему на ночлеге, и увидел серебро свое в отверстии мешка его,
+</p>
+<div class="num">28</div><p id="n28">и сказал своим братьям: серебро мое возвращено; вот оно в мешке у меня. И смутилось сердце их, и они с трепетом друг другу говорили: что это Бог сделал с нами?
+</p>
+<div class="num">29</div><p id="n29">И пришли к Иакову, отцу своему, в землю Ханаанскую и рассказали ему всё случившееся с ними, говоря:
+</p>
+<div class="num">30</div><p id="n30">начальствующий над тою землею говорил с нами сурово и принял нас за соглядатаев земли той.
+</p>
+<div class="num">31</div><p id="n31">И сказали мы ему: мы люди честные; мы не бывали соглядатаями;
+</p>
+<div class="num">32</div><p id="n32">нас двенадцать братьев, сыновей у отца нашего; одного не стало, а меньший теперь с отцом нашим в земле Ханаанской.
+</p>
+<div class="num">33</div><p id="n33">И сказал нам начальствующий над тою землею: вот как узнаю я, честные ли вы люди: оставьте у меня одного брата из вас, а вы возьмите хлеб ради голода семейств ваших и пойдите,
+</p>
+<div class="num">34</div><p id="n34">и приведите ко мне меньшого брата вашего; и узнаю я, что вы не соглядатаи, но люди честные; отдам вам брата вашего, и вы можете промышлять в этой земле.
+</p>
+<div class="num">35</div><p id="n35">Когда же они опорожняли мешки свои, вот, у каждого узел серебра его в мешке его. И увидели они узлы серебра своего, они и отец их, и испугались.
+</p>
+<div class="num">36</div><p id="n36">И сказал им Иаков, отец их: вы лишили меня детей: Иосифа нет, и Симеона нет, и Вениамина взять хотите,- все это на меня!
+</p>
+<div class="num">37</div><p id="n37">И сказал Рувим отцу своему, говоря: убей двух моих сыновей, если я не приведу его к тебе; отдай его на мои руки; я возвращу его тебе.
+</p>
+<div class="num">38</div><p id="n38">Он сказал: не пойдет сын мой с вами; потому что брат его умер, и он один остался; если случится с ним несчастье на пути, в который вы пойдете, то сведете вы седину мою с печалью во гроб.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.43.ru.html">к главе 43</a></div></div>
+
+</body>
+</html>

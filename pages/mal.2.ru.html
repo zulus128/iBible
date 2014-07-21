@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mal.ru.html">Книга Пророка Малахии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Итак для вас, священники, эта заповедь:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">если вы не послушаетесь и если не примете к сердцу, чтобы воздавать славу имени Моему, говорит Господь Саваоф, то Я пошлю на вас проклятие и прокляну ваши благословения, и уже проклинаю, потому что вы не хотите приложить к тому сердца.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Вот, Я отниму у вас плечо, и помет раскидаю на лица ваши, помет праздничных жертв ваших, и выбросят вас вместе с ним.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И вы узнаете, что Я дал эту заповедь для сохранения завета Моего с Левием, говорит Господь Саваоф.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Завет Мой с ним был <i>завет</i> жизни и мира, и Я дал его ему для страха, и он боялся Меня и благоговел пред именем Моим.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Закон истины был в устах его, и неправды не обреталось на языке его; в мире и правде он ходил со Мною и многих отвратил от греха.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Ибо уста священника должны хранить ведение, и закона ищут от уст его, потому что он вестник Господа Саваофа.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Но вы уклонились от пути сего, для многих послужили соблазном в законе, разрушили завет Левия, говорит Господь Саваоф.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">За то и Я сделаю вас презренными и униженными перед всем народом, так как вы не соблюдаете путей Моих, лицеприятствуете в делах закона.
+</p>
+<div class="num">10</div><p id="n10">Не один ли у всех нас Отец? Не один ли Бог сотворил нас? Почему же мы вероломно поступаем друг против друга, нарушая тем завет отцов наших?
+</p>
+<div class="num">11</div><p id="n11">Вероломно поступает Иуда, и мерзость совершается в Израиле и в Иерусалиме; ибо унизил Иуда святыню Господню, которую любил, и женился на дочери чужого бога.
+</p>
+<div class="num">12</div><p id="n12">У того, кто делает это, истребит Господь из шатров Иаковлевых бдящего на страже и отвечающего, и приносящего жертву Господу Саваофу.
+</p>
+<div class="num">13</div><p id="n13">И вот еще что вы делаете: вы заставляете обливать слезами жертвенник Господа с рыданием и воплем, так что Он уже не призирает более на приношение и не принимает умилостивительной жертвы из рук ваших.
+</p>
+<div class="num">14</div><p id="n14">Вы скажете: "за что?" За то, что Господь был свидетелем между тобою и женою юности твоей, против которой ты поступил вероломно, между тем как она подруга твоя и законная жена твоя.
+</p>
+<div class="num">15</div><p id="n15">Но не сделал ли того же один, и в нем пребывал превосходный дух? что же сделал этот один? он желал получить от Бога потомство. Итак берегите дух ваш, и никто не поступай вероломно против жены юности своей.
+</p>
+<div class="num">16</div><p id="n16">Если ты ненавидишь ее, отпусти, говорит Господь Бог Израилев; обида покроет одежду его, говорит Господь Саваоф; посему наблюдайте за духом вашим и не поступайте вероломно.
+</p>
+<div class="num">17</div><p id="n17">Вы прогневляете Господа словами вашими и говорите: "чем прогневляем мы Его?" Тем, что говорите: "всякий, делающий зло, хорош пред очами Господа, и к таким Он благоволит", или: "где Бог правосудия?"
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mal.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="act.ru.html">Деяния Апостолов</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 24
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Через пять дней пришел первосвященник Анания со старейшинами и с некоторым ритором Тертуллом, которые жаловались правителю на Павла.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Когда же он был призван, то Тертулл начал обвинять его, говоря:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">всегда и везде со всякою благодарностью признаём мы, что тебе, достопочтенный Феликс, обязаны мы многим миром, и твоему попечению благоустроением сего народа.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Но, чтобы много не утруждать тебя, прошу тебя выслушать нас кратко, со свойственным тебе снисхождением.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Найдя сего человека язвою <i>общества,</i> возбудителем мятежа между Иудеями, живущими по вселенной, и представителем Назорейской ереси,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">который отважился даже осквернить храм, мы взяли его и хотели судить его по нашему закону.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Но тысяченачальник Лисий, придя, с великим насилием взял его из рук наших и послал к тебе,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">повелев и нам, обвинителям его, идти к тебе. Ты можешь сам, разобрав, узнать от него о всем том, в чем мы обвиняем его.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И Иудеи подтвердили, сказав, что это так.
+</p>
+<div class="num">10</div><p id="n10">Павел же, когда правитель дал ему знак говорить, отвечал: зная, что ты многие годы справедливо судишь народ сей, я тем свободнее буду защищать мое дело.
+</p>
+<div class="num">11</div><p id="n11">Ты можешь узнать, что не более двенадцати дней тому, как я пришел в Иерусалим для поклонения.
+</p>
+<div class="num">12</div><p id="n12">И ни в святилище, ни в синагогах, ни по городу они не находили меня с кем-либо спорящим или производящим народное возмущение,
+</p>
+<div class="num">13</div><p id="n13">и не могут доказать того, в чем теперь обвиняют меня.
+</p>
+<div class="num">14</div><p id="n14">Но в том признаюсь тебе, что по учению, которое они называют ересью, я действительно служу Богу отцов <i>моих,</i> веруя всему, написанному в законе и пророках,
+</p>
+<div class="num">15</div><p id="n15">имея надежду на Бога, что будет воскресение мертвых, праведных и неправедных, чего и сами они ожидают.
+</p>
+<div class="num">16</div><p id="n16">Посему и сам подвизаюсь всегда иметь непорочную совесть пред Богом и людьми.
+</p>
+<div class="num">17</div><p id="n17">После многих лет я пришел, чтобы доставить милостыню народу моему и приношения.
+</p>
+<div class="num">18</div><p id="n18">При сем нашли меня, очистившегося в храме не с народом и не с шумом.
+</p>
+<div class="num">19</div><p id="n19"><i>Это</i> <i>были</i> некоторые Асийские Иудеи, которым надлежало бы предстать пред тебя и обвинять меня, если что имеют против меня.
+</p>
+<div class="num">20</div><p id="n20">Или пусть сии самые скажут, какую нашли они во мне неправду, когда я стоял перед синедрионом,
+</p>
+<div class="num">21</div><p id="n21">разве только то&#769; одно слово, которое громко произнес я, стоя между ними, что за <i>учение</i> <i>о</i> воскресении мертвых я ныне судим вами.
+</p>
+<div class="num">22</div><p id="n22">Выслушав это, Феликс отсрочил <i>дело</i> их, сказав: рассмотрю ваше дело, когда придет тысяченачальник Лисий, и я обстоятельно узнаю об этом учении.
+</p>
+<div class="num">23</div><p id="n23">А Павла приказал сотнику стеречь, но не стеснять его и не запрещать никому из его близких служить ему или приходить к нему.
+</p>
+<div class="num">24</div><p id="n24">Через несколько дней Феликс, придя с Друзиллою, женою своею, Иудеянкою, призвал Павла, и слушал его о вере во Христа Иисуса.
+</p>
+<div class="num">25</div><p id="n25">И как он говорил о правде, о воздержании и о будущем суде, то Феликс пришел в страх и отвечал: теперь пойди, а когда найду время, позову тебя.
+</p>
+<div class="num">26</div><p id="n26">Притом же надеялся он, что Павел даст ему денег, чтобы отпустил его: посему часто призывал его и беседовал с ним.
+</p>
+<div class="num">27</div><p id="n27">Но по прошествии двух лет на место Феликса поступил Порций Фест. Желая доставить удовольствие Иудеям, Феликс оставил Павла в узах.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="act.25.ru.html">к главе 25</a></div></div>
+
+</body>
+</html>

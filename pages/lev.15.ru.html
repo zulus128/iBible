@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lev.ru.html">Левит</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 15
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Господь Моисею и Аарону, говоря:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">объявите сынам Израилевым и скажите им: если у кого будет истечение из тела его, то от истечения своего он нечист.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И вот [закон] о нечистоте его от истечения его: когда течет из тела его истечение его, и когда задерживается в теле его истечение его, это нечистота его;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">всякая постель, на которой ляжет имеющий истечение, нечиста, и всякая вещь, на которую сядет [имеющий истечение семени], нечиста;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и кто прикоснется к постели его, тот должен вымыть одежды свои и омыться водою и нечист будет до вечера;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">кто сядет на какую-либо вещь, на которой сидел имеющий истечение, тот должен вымыть одежды свои и омыться водою и нечист будет до вечера;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и кто прикоснется к телу имеющего истечение, тот должен вымыть одежды свои и омыться водою и нечист будет до вечера;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">если имеющий истечение плюнет на чистого, то сей должен вымыть одежды свои и омыться водою, и нечист будет до вечера;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и всякая повозка, в которой ехал имеющий истечение, нечиста [будет до вечера];
+</p>
+<div class="num">10</div><p id="n10">и всякий, кто прикоснется к чему-нибудь, что было под ним, нечист будет до вечера; и кто понесет это, должен вымыть одежды свои и омыться водою, и нечист будет до вечера;
+</p>
+<div class="num">11</div><p id="n11">и всякий, к кому прикоснется имеющий истечение, не омыв рук своих водою, должен вымыть одежды свои и омыться водою, и нечист будет до вечера;
+</p>
+<div class="num">12</div><p id="n12">глиняный сосуд, к которому прикоснется имеющий истечение, должно разбить, а всякий деревянный сосуд должно вымыть водою [и будет чист].
+</p>
+<div class="num">13</div><p id="n13">А когда имеющий истечение освободится от истечения своего, тогда должен он отсчитать себе семь дней для очищения своего и вымыть одежды свои, и омыть тело свое живою водою, и будет чист;
+</p>
+<div class="num">14</div><p id="n14">и в восьмой день возьмет он себе двух горлиц или двух молодых голубей, и придет пред лице Господне ко входу скинии собрания, и отдаст их священнику;
+</p>
+<div class="num">15</div><p id="n15">и принесет священник из сих <i>птиц</i> одну в жертву за грех, а другую во всесожжение, и очистит его священник пред Господом от истечения его.
+</p>
+<div class="num">16</div><p id="n16">Если у кого случится излияние семени, то он должен омыть водою все тело свое, и нечист будет до вечера;
+</p>
+<div class="num">17</div><p id="n17">и всякая одежда и всякая кожа, на которую попадет семя, должна быть вымыта водою, и нечиста будет до вечера;
+</p>
+<div class="num">18</div><p id="n18">если мужчина ляжет с женщиной и <i>будет</i> у него излияние семени, то они должны омыться водою, и нечисты будут до вечера.
+</p>
+<div class="num">19</div><p id="n19">Если женщина имеет истечение крови, текущей из тела ее, то она должна сидеть семь дней во время очищения своего, и всякий, кто прикоснется к ней, нечист будет до вечера;
+</p>
+<div class="num">20</div><p id="n20">и всё, на чем она ляжет в продолжение очищения своего, нечисто; и всё, на чем сядет, нечисто;
+</p>
+<div class="num">21</div><p id="n21">и всякий, кто прикоснется к постели ее, должен вымыть одежды свои и омыться водою и нечист будет до вечера;
+</p>
+<div class="num">22</div><p id="n22">и всякий, кто прикоснется к какой-нибудь вещи, на которой она сидела, должен вымыть одежды свои и омыться водою, и нечист будет до вечера;
+</p>
+<div class="num">23</div><p id="n23">и если кто прикоснется к чему-нибудь на постели или на той вещи, на которой она сидела, нечист будет до вечера;
+</p>
+<div class="num">24</div><p id="n24">если переспит с нею муж, то нечистота ее будет на нем; он нечист будет семь дней, и всякая постель, на которой он ляжет, будет нечиста.
+</p>
+<div class="num">25</div><p id="n25">Если у женщины течет кровь многие дни не во время очищения ее, или если она имеет истечение долее <i>обыкновенного</i> очищения ее, то во все время истечения нечистоты ее, подобно как в продолжение очищения своего, она нечиста;
+</p>
+<div class="num">26</div><p id="n26">всякая постель, на которой она ляжет во все время истечения своего, будет <i>нечиста,</i> подобно как постель в продолжение очищения ее; и всякая вещь, на которую она сядет, будет нечиста, как нечисто это во время очищения ее;
+</p>
+<div class="num">27</div><p id="n27">и всякий, кто прикоснется к ним, будет нечист, и должен вымыть одежды свои и омыться водою, и нечист будет до вечера.
+</p>
+<div class="num">28</div><p id="n28">А когда она освободится от истечения своего, тогда должна отсчитать себе семь дней, и потом будет чиста;
+</p>
+<div class="num">29</div><p id="n29">в восьмой день возьмет она себе двух горлиц или двух молодых голубей и принесет их к священнику ко входу скинии собрания;
+</p>
+<div class="num">30</div><p id="n30">и принесет священник одну <i>из</i> <i>птиц</i> в жертву за грех, а другую во всесожжение, и очистит ее священник пред Господом от истечения нечистоты ее.
+</p>
+<div class="num">31</div><p id="n31">Так предохраняйте сынов Израилевых от нечистоты их, чтоб они не умерли в нечистоте своей, оскверняя жилище Мое, которое среди них:
+</p>
+<div class="num">32</div><p id="n32">вот закон об имеющем истечение и о том, у кого случится излияние семени, делающее его нечистым,
+</p>
+<div class="num">33</div><p id="n33">и о страдающей очищением своим, и о имеющих истечение, мужчине или женщине, и о муже, который переспит с нечистою.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lev.16.ru.html">к главе 16</a></div></div>
+
+</body>
+</html>

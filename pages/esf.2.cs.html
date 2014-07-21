@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="esf.cs.html">Е#сfи1рь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA в7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# по словесёхъ си1хъ ўтоли1сz цaрь t гнёва, и3 не воспомzнY ктомY ґстjни, воспоминaz, є3ли6ка глаг0ла и3 кaкw њсуди2 є3S.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И# рёша слуги6 царє1вы: да и3зhщутсz царю2 дэви6цы нерастлBнны, красны6 зрaкомъ, и3 да постaвитъ цaрь взыскaтєли во всёхъ странaхъ цaрствіz своегw2,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и3 да и3зберyтъ nтрокови1цъ дёвственныхъ доброзрaчныхъ въ сyсы грaдъ, въ черт0гъ жeнскій, и3 да tдадyтсz є3vнyхови царeву стрaжу жeнъ, и3 да дадyтсz м†сти и3 пр0чыz потрє1бы:
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и3 женA, ю4же возлю1битъ цaрь, да бyдетъ цари1цею вмёстw ґстjни. И# ўг0дно бЁ царю2 сл0во, и3 сотвори2 тaкw.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И# мyжъ бЁ їудeанинъ во грaдэ сyсэхъ, и3 и4мz є3мY мардохeй сhнъ їаjровъ, сhна семeина, сhна кісeова, t плeмене веніамjнz,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и4же бsше плэнeнъ t їеcрли1ма навуходон0соромъ царeмъ вавmлHнскимъ:
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и3 бsше є3мY nтрокови1ца воспитaна, дщeрь ґмінадaва брaта nтцY є3гw2, и3 и4мz є4й є3сfи1рь. По преставлeніи же роди1телей є3S, пріS ю5 мардохeй во дщeре мёсто: и3 бsше дэви1ца краснA и3 доброзрaчна.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И# є3гдA ўслhшано бhсть повелёніе царeво, сHбраны бhша дэви6цы мнHги во грaдъ сyсы, под8 рyку гaіеву, и3 приведенA бhсть є3сfи1рь ко гaію храни1телю жeнъ:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и3 ўг0дна бhсть є3мY nтрокови1ца и3 њкрёте благодaть пред8 ни1мъ: и3 потщaсz дaти є4й м†сти и3 ўчaстіе, и3 сeдмь дэви1цъ пристaви къ нeй и3з8 д0му царeва, и3 снабдэвaше ю5 и3 рабhнь є3S д0брэ въ домY жeнстэмъ.
+</p>
+<div class="num">10</div><p id="n10">И# не повёда є3сfи1рь р0да своегw2, нижE nтeчества, мардохeй бо заповёда є4й не возвэщaти.
+</p>
+<div class="num">11</div><p id="n11">На всsкъ же дeнь хождaше мардохeй по дворY жeнскому, назирaz, что2 є3сfи1ри случи1тсz.
+</p>
+<div class="num">12</div><p id="n12">Сіe же бЁ врeмz дэви1цъ входи1ти ко царю2, є3гдA и3сп0лнzтсz дванaдесzть мцcей: тaкw бо наполнsхусz днjе ўкрашeніz, шeсть мцcъ во ґрwмaтэхъ и3 въ мaстехъ жeнскихъ, и3 шeсть мцcъ намазyющzсz смЂрновымъ є3лeемъ,
+</p>
+<div class="num">13</div><p id="n13">и3 тогдA вхождaху ко царeви: и3 є3мyже ѓще речeтъ привести2 ю5, вх0дитъ съ ни1мъ кyпнw и3з8 д0му жeнскагw дaже до д0му царeва:
+</p>
+<div class="num">14</div><p id="n14">на вeчеръ вхождaше и3 заyтра возвращaшесz въ д0мъ жeнскій вторhй, и3дёже гaй є3vнyхъ царeвъ храни1тель жeнъ, и3 не вхождaше пaки ко царю2, ѓще не бyдетъ позванA и4менемъ.
+</p>
+<div class="num">15</div><p id="n15">Е#гдa же и3сп0лнисz врeмz є3сfи1ри дщeри ґмінадaва, брaта nтцA мардохeова, (и4же поsлъ ю5 себЁ въ дщeре мёсто,) вни1ти ко царeви, ничт0же преступи2 t си1хъ, ±же заповёда є4й є3vнyхъ храни1тель жeнъ: бё бо є3сfи1рь њбрэтaющаz благодaть пред8 всёми зрsщими ю5.
+</p>
+<div class="num">16</div><p id="n16">И# вни1де є3сfи1рь ко царю2 ґртаxeрxу во вторыйнaдесzть мцcъ, и4же є4сть ґдaръ, въ лёто седм0е цaрства є3гw2.
+</p>
+<div class="num">17</div><p id="n17">И# возлюби2 цaрь є3сfи1рь, и3 њбрёте благодaть пaче всёхъ дэви1цъ, и3 возложи2 вэнeцъ жeнскій на главY є3S.
+</p>
+<div class="num">18</div><p id="n18">И# сотвори2 цaрь пи1ръ всBмъ другHмъ свои6мъ и3 си1ламъ сeдмь днjй, и3 вознесE брaкъ є3сfи1ринъ, и3 сотвори2 tрaду сyщымъ во цaрствіи є3гw2.
+</p>
+<div class="num">19</div><p id="n19">Мардохeй же служaше во дворЁ (царeвэ).
+</p>
+<div class="num">20</div><p id="n20">Е#сfи1рь же не повёда р0да своегw2, (ни людjй свои1хъ): си1це бо заповёда є4й мардохeй боsтисz бGа и3 твори1ти зaпwвэди є3гw2, ћкоже бЁ съ ни1мъ, є3сfи1рь же не и3змэни2 њбhчаz своегw2.
+</p>
+<div class="num">21</div><p id="n21">И# њпечaлистасz двA є3vн{ха царє1ва начaлнэйшіи стрaжы тёла є3гw2, ћкw предпочтeнъ бhсть мардохeй, и3 и3скaста ўби1ти ґртаxeрxа царS.
+</p>
+<div class="num">22</div><p id="n22">И# возвэсти1сz сл0во мардохeю, и3 сказA є3сfи1ри: nнa же повёда царю2, ±же навётуютъ.
+</p>
+<div class="num">23</div><p id="n23">Цaрь же и3спытA двY є3vн{ху, (и3 и3сповёдаста,) и3 њбёси и5хъ. И# повелЁ цaрь вписaти на пaмzть въ цaрстэй книгохрани1телницэ њ благодэsніи мардохeовэ въ похвалY.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="esf.3.cs.html">главA G</a></div></div>
+
+</body>
+</html>

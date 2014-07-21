@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="joe.ru.html">Книга Пророка Иоиля</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Ибо вот, в те дни и в то самое время, когда Я возвращу плен Иуды и Иерусалима,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Я соберу все народы, и приведу их в долину Иосафата, и там произведу над ними суд за народ Мой и за наследие Мое, Израиля, который они рассеяли между народами, и землю Мою разделили.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И о народе Моем они бросали жребий, и отдавали отрока за блудницу, и продавали отроковицу за вино, и пили.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И что вы Мне, Тир и Сидон и все округи Филистимские? Хотите ли воздать Мне возмездие? хотите ли воздать Мне? Легко и скоро Я обращу возмездие ваше на головы ваши,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">потому что вы взяли серебро Мое и золото Мое, и наилучшие драгоценности Мои внесли в капища ваши,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и сынов Иуды и сынов Иерусалима продавали сынам Еллинов, чтобы удалить их от пределов их.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Вот, Я подниму их из того места, куда вы продали их, и обращу мзду вашу на голову вашу.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И предам сыновей ваших и дочерей ваших в руки сынов Иуды, и они продадут их Савеям, народу отдаленному; так Господь сказал.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Провозгласите об этом между народами, приготовьтесь к войне, возбудите храбрых; пусть выступят, поднимутся все ратоборцы.
+</p>
+<div class="num">10</div><p id="n10">Перекуйте орала ваши на мечи и серпы ваши на копья; слабый пусть говорит: "я силен".
+</p>
+<div class="num">11</div><p id="n11">Спешите и сходитесь, все народы окрестные, и соберитесь; туда, Господи, веди Твоих героев.
+</p>
+<div class="num">12</div><p id="n12">Пусть воспрянут народы и низойдут в долину Иосафата; ибо там Я воссяду, чтобы судить все народы отовсюду.
+</p>
+<div class="num">13</div><p id="n13">Пустите в дело серпы, ибо жатва созрела; идите, спуститесь, ибо точило полно и подточилия переливаются, потому что злоба их велика.
+</p>
+<div class="num">14</div><p id="n14">Толпы, толпы в долине суда! ибо близок день Господень к долине суда!
+</p>
+<div class="num">15</div><p id="n15">Солнце и луна померкнут и звезды потеряют блеск свой.
+</p>
+<div class="num">16</div><p id="n16">И возгремит Господь с Сиона, и даст глас Свой из Иерусалима; содрогнутся небо и земля; но Господь будет защитою для народа Своего и обороною для сынов Израилевых.
+</p>
+<div class="num">17</div><p id="n17">Тогда узнаете, что Я Господь Бог ваш, обитающий на Сионе, на святой горе Моей; и будет Иерусалим святынею, и не будут уже иноплеменники проходить через него.
+</p>
+<div class="num">18</div><p id="n18">И будет в тот день: горы будут капать вином и холмы потекут молоком, и все русла Иудейские наполнятся водою, а из дома Господня выйдет источник, и будет напоять долину Ситтим.
+</p>
+<div class="num">19</div><p id="n19">Египет сделается пустынею и Едом будет пустою степью - за то, что они притесняли сынов Иудиных и проливали невинную кровь в земле их.
+</p>
+<div class="num">20</div><p id="n20">А Иуда будет жить вечно и Иерусалим - в роды родов.
+</p>
+<div class="num">21</div><p id="n21">Я смою кровь их, которую не смыл еще, и Господь будет обитать на Сионе
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="joe.ru.html">Книга Пророка Иоиля</a>
+</div></div>
+
+</body>
+</html>

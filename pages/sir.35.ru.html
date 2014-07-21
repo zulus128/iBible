@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 35
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Кто соблюдает закон, тот умножает приношения; кто держится заповедей, тот приносит жертву спасения.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Кто воздает благодарность, тот приносит семидал; а подающий милостыню приносит жертву хвалы.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Благоугождение Господу - отступление от зла, и умилостивление <i>Его</i> - уклонение от неправды.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Не являйся пред лице Господа с пустыми руками, ибо всё это - по заповеди.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Приношение праведного утучняет алтарь, и благоухание его - пред Всевышним;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">жертва праведного мужа благоприятна, и память о ней незабвенна будет.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">С веселым оком прославляй Господа и не умаляй начатков трудов твоих;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">при всяком даре имей лице веселое и в радости посвящай десятину.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Давай Всевышнему по даянию Его, и с веселым оком - по мере приобретения рукою твоею,
+</p>
+<div class="num">10</div><p id="n10">ибо Господь есть воздаятель и воздаст тебе всемеро.
+</p>
+<div class="num">11</div><p id="n11">Не уменьшай даров, ибо Он не примет их: и не надейся на неправедную жертву,
+</p>
+<div class="num">12</div><p id="n12">ибо Господь есть судия, и нет у Него лицеприятия:
+</p>
+<div class="num">13</div><p id="n13">Он не уважит лица пред бедным и молитву обиженного услышит;
+</p>
+<div class="num">14</div><p id="n14">Он не презрит моления сироты, ни вдовы, когда она будет изливать прошение <i>свое</i>.
+</p>
+<div class="num">15</div><p id="n15">Не слезы ли вдовы льются по щекам, и не вопиет ли она против того, кто вынуждает их?
+</p>
+<div class="num">16</div><p id="n16">Служащий <i>Богу</i> будет принят с благоволением, и молитва его дойдет до облаков.
+</p>
+<div class="num">17</div><p id="n17">Молитва смиренного проникнет сквозь облака, и он не утешится, доколе она не приблизится <i>к Богу</i>,
+</p>
+<div class="num">18</div><p id="n18">и не отступит, доколе Всевышний не призрит и не рассудит справедливо и не произнесет решения.
+</p>
+<div class="num">19</div><p id="n19">И Господь не замедлит и не потерпит, доколе не сокрушит чресл немилосердых;
+</p>
+<div class="num">20</div><p id="n20">Он будет воздавать отмщение и народам, доколе не истребит сонма притеснителей и не сокрушит скипетров неправедных,
+</p>
+<div class="num">21</div><p id="n21">доколе не воздаст человеку по делам его, и за дела людей - по намерениям их,
+</p>
+<div class="num">22</div><p id="n22">доколе не совершит суда над народом Своим и не обрадует их Своею милостью.
+</p>
+<div class="num">23</div><p id="n23">Благовременна милость во время скорби, как дождевые облака во время засухи.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.36.ru.html">к главе 36</a></div></div>
+
+</body>
+</html>

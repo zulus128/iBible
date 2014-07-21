@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eze.ru.html">Книга Пророка Иезекииля</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И было ко мне слово Господне:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">сын человеческий! ты живешь среди дома мятежного; у них есть глаза, чтобы видеть, а не видят; у них есть уши, чтобы слышать, а не слышат; потому что они - мятежный дом.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ты же, сын человеческий, изготовь себе нужное для переселения, и среди дня переселяйся перед глазами их, и переселяйся с места твоего в другое место перед глазами их; может быть, они уразумеют, хотя они - дом мятежный;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и вещи твои вынеси, как вещи нужные при переселении, днем, перед глазами их, и сам выйди вечером перед глазами их, как выходят для переселения.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Перед глазами их проломай себе отверстие в стене, и вынеси через него.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Перед глазами их возьми ношу на плечо, впотьмах вынеси ее, лице твое закрой, чтобы не видеть земли; ибо Я поставил тебя знамением дому Израилеву.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И сделал я, как повелено было мне; вещи мои, как вещи нужные при переселении, вынес днем, а вечером проломал себе рукою отверстие в стене, впотьмах вынес ношу и поднял на плечо перед глазами их.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И было ко мне слово Господне поутру:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">сын человеческий! не говорил ли тебе дом Израилев, дом мятежный: "что ты делаешь?"
+</p>
+<div class="num">10</div><p id="n10">Скажи им: так говорит Господь Бог: это - предвещание для начальствующего в Иерусалиме и для всего дома Израилева, который находится там.
+</p>
+<div class="num">11</div><p id="n11">Скажи: я знамение для вас; что делаю я, то будет с ними,- в переселение, в плен пойдут они.
+</p>
+<div class="num">12</div><p id="n12">И начальствующий, который среди них, впотьмах поднимет <i>ношу</i> на плечо и выйдет. Стену проломают, чтобы отправить <i>его</i> через нее; он закроет лице свое, так что не увидит глазами земли сей.
+</p>
+<div class="num">13</div><p id="n13">И раскину на него сеть Мою, и будет пойман в тенета Мои, и отведу его в Вавилон, в землю Халдейскую, но он не увидит ее, и там умрет.
+</p>
+<div class="num">14</div><p id="n14">А всех, которые вокруг него, споборников его и все войско его развею по всем ветрам, и обнажу вслед их меч.
+</p>
+<div class="num">15</div><p id="n15">И узнают, что Я Господь, когда рассею их по народам и развею их по землям.
+</p>
+<div class="num">16</div><p id="n16">Но небольшое число их Я сохраню от меча, голода и язвы, чтобы они рассказали у народов, к которым пойдут, о всех своих мерзостях; и узнают, что Я Господь.
+</p>
+<div class="num">17</div><p id="n17">И было ко мне слово Господне:
+</p>
+<div class="num">18</div><p id="n18">сын человеческий! хлеб твой ешь с трепетом, и воду твою пей с дрожанием и печалью.
+</p>
+<div class="num">19</div><p id="n19">И скажи народу земли: так говорит Господь Бог о жителях Иерусалима, о земле Израилевой: они хлеб свой будут есть с печалью и воду свою будут пить в унынии, потому что земля его будет лишена всего изобилия своего за неправды всех живущих на ней.
+</p>
+<div class="num">20</div><p id="n20">И будут разорены населенные города, и земля сделается пустою, и узнаете, что Я Господь.
+</p>
+<div class="num">21</div><p id="n21">И было ко мне слово Господне:
+</p>
+<div class="num">22</div><p id="n22">сын человеческий! что за поговорка у вас, в земле Израилевой: "много дней пройдет, и всякое пророческое видение исчезнет"?
+</p>
+<div class="num">23</div><p id="n23">Посему скажи им: так говорит Господь Бог: уничтожу эту поговорку, и не будут уже употреблять такой поговорки у Израиля; но скажи им: близки дни и исполнение всякого видения пророческого.
+</p>
+<div class="num">24</div><p id="n24">Ибо уже не останется втуне никакое видение пророческое, и ни одно предвещание не будет ложным в доме Израилевом.
+</p>
+<div class="num">25</div><p id="n25">Ибо Я Господь, Я говорю; и слово, которое Я говорю, исполнится, и не будет отложено; в ваши дни, мятежный дом, Я изрек слово, и исполню его, говорит Господь Бог.
+</p>
+<div class="num">26</div><p id="n26">И было ко мне слово Господне:
+</p>
+<div class="num">27</div><p id="n27">сын человеческий! вот, дом Израилев говорит: "пророческое видение, которое видел он, <i>сбудется</i> после многих дней, и он пророчествует об отдаленных временах".
+</p>
+<div class="num">28</div><p id="n28">Посему скажи им: так говорит Господь Бог: ни одно из слов Моих уже не будет отсрочено, но слово, которое Я скажу, сбудется, говорит Господь Бог.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eze.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

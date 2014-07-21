@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nav.ru.html">Книга Иисуса Навина</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 18
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Все общество сынов Израилевых собралось в Силом, и поставили там скинию собрания, ибо земля была покорена ими.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Из сынов же Израилевых оставалось семь колен, которые еще не получили удела своего.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И сказал Иисус сынам Израилевым: долго ли вы будете нерадеть о том, чтобы пойти <i>и</i> взять в наследие землю, которую дал вам Господь Бог отцов ваших?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">дайте от себя по три человека из колена; я пошлю их, и они встав пройдут по земле и опишут ее, как надобно разделить им на уделы, и придут ко мне;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">пусть разделят ее на семь уделов; Иуда пусть остается в пределе своем на юге, а дом Иосифов пусть остается в пределе своем на севере;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">а вы распишите землю на семь уделов и представьте мне сюда: я брошу вам жребий здесь пред лицем Господа Бога нашего;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">а левитам нет части между вами, ибо священство Господне есть удел их; Гад же, Рувим и половина колена Манассиина получили удел свой за Иорданом к востоку, который дал им Моисей, раб Господень.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Эти люди встали и пошли. Иисус же пошедшим описывать землю дал такое приказание: пойдите, обойдите землю, опишите ее и возвратитесь ко мне; а я здесь брошу вам жребий пред лицем Господним, в Силоме.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Они пошли, прошли по земле, [осмотрели ее] и описали ее, по городам ее, на семь уделов, в книге, и пришли к Иисусу в стан, в Силом.
+</p>
+<div class="num">10</div><p id="n10">Иисус бросил им жребий в Силоме пред Господом, и разделил там Иисус землю сынам Израилевым по участкам их.
+</p>
+<div class="num">11</div><p id="n11">[Первый] жребий вышел колену сынов Вениаминовых, по племенам их. Предел их по жребию шел между сынами Иуды и между сынами Иосифа;
+</p>
+<div class="num">12</div><p id="n12">предел их на северной стороне начинается у Иордана, и проходит предел сей подле Иерихона с севера, и восходит на гору к западу, и оканчивается в пустыне Бефавен;
+</p>
+<div class="num">13</div><p id="n13">оттуда предел идет к Лузу, к южной стороне Луза, иначе Вефиля, и нисходит предел к Атароф-Адару, к горе, которая на южной стороне Беф-Орона нижнего;
+</p>
+<div class="num">14</div><p id="n14">потом предел поворачивает и склоняется к морской стороне на юг от горы, которая на юге пред Беф-Ороном, и оканчивается у Кириаф-Ваала, иначе Кириаф-Иарима, города сынов Иудиных. Это западная сторона.
+</p>
+<div class="num">15</div><p id="n15">Южною же стороною от Кириаф-Иарима идет предел к морю и доходит до источника вод Нефтоаха;
+</p>
+<div class="num">16</div><p id="n16">потом предел нисходит к концу горы, которая пред долиною сына Енномова, на долине Рефаимов, к северу, и нисходит долиною Еннома к южной стороне Иевуса, и идет к Ен-Рогелу;
+</p>
+<div class="num">17</div><p id="n17">потом поворачивает от севера и идет к Ен-Шемешу, и идет к Гелилофу, который против возвышенности Адуммима, и нисходит к камню Богана, сына Рувимова;
+</p>
+<div class="num">18</div><p id="n18">потом проходит близ равнины к северу и нисходит на равнину;
+</p>
+<div class="num">19</div><p id="n19">отсюда проходит предел подле Беф-Хоглы к северу, и оканчивается предел у северного залива моря Соленого, у южного конца Иордана. Вот предел южный. С восточной же стороны пределом служит Иордан.
+</p>
+<div class="num">20</div><p id="n20">Вот удел сынов Вениаминовых, с пределами его со всех сторон, по племенам их.
+</p>
+<div class="num">21</div><p id="n21">Города колену сынов Вениаминовых, по племенам их, принадлежали сии: Иерихон, Беф-Хогла и Емек-Кециц,
+</p>
+<div class="num">22</div><p id="n22">Беф-Арава, Цемараим и Вефиль,
+</p>
+<div class="num">23</div><p id="n23">Аввим, Фара и Офра,
+</p>
+<div class="num">24</div><p id="n24">Кефар-Аммонай, Афни и Гева: двенадцать городов с их селами.
+</p>
+<div class="num">25</div><p id="n25">Гаваон, Рама и Бероф,
+</p>
+<div class="num">26</div><p id="n26">Мицфе, Кефира и Моца,
+</p>
+<div class="num">27</div><p id="n27">Рекем, Ирфеил и Фарала,
+</p>
+<div class="num">28</div><p id="n28">Цела, Елеф и Иевус, иначе Иерусалим, Гивеаф и Кириаф: четырнадцать городов с их селами. Вот удел сынов Вениаминовых, по племенам их.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nav.19.ru.html">к главе 19</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nee.cs.html">Неемjи</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA G
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# востA є3ліасyвъ свzщeнникъ вели1кій и3 брaтіz є3гw2 свzщeнницы, и3 создaша вратA w4вчаz: сjи њсвzти1ша и5хъ и3 постaвиша двє1ри и4хъ и3 дaже до столпA стA лакHтъ њсвzти1ша и5хъ, дaже до столпA ґнамеи1лz.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И# бли1з8 є3гw2 созидaша мyжіе їеріхHнстіи, и3 бли1з8 и4хъ созидA закхyръ сhнъ ґманjинъ.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Вратa же ры6бнаz созидaша сhнове ґсанaєвы: сjи покрhша и5хъ и3 постaвиша двє1ри и4хъ и3 завHры и4хъ и3 верєи2 и4хъ.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И# бли1з8 и4хъ созидaше и3з8 рамHfы сhнъ ўрjинъ, сhна ґккHсова: и3 бли1з8 є3гw2 созидaше мосоллaмъ сhнъ варахjинъ, сhна мазеви1лz: и3 бли1зъ и4хъ созидaше садHкъ сhнъ ваанaевъ:
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и3 бли1з8 и4хъ созидaша fекwjми, си1льніи же и4хъ не положи1ша вhи своеS въ дёло гDа бGа своегw2.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И# вратA ст†раz созидaше їwідA сhнъ фасeковъ и3 месуллaмъ сhнъ васwдjевъ: тjи покрhста и5хъ и3 постaвиста двє1ри и4хъ и3 завHры и3 верєи2 и4хъ.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И# бли1з8 и4хъ созидaша малтjа гаваwнjтинъ и3 є3vарHнъ мирwнwfjтъ, мyжіе t гаваHна и3 мaсфы, дaже до прест0ла кнsзz (и4же бhсть) њб8 w4нъ п0лъ рэки2.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И# бли1з8 є3гw2 созидA nзіи1лъ сhнъ ґрахjевъ златaрь: и3 бли1з8 є3гw2 созидA ґнанjа сhнъ рwкеjма, и3 возстaвиша їеrли1мъ дaже до стэны2 шир0кіz.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И# бли1з8 и4хъ созидaше рафаjа сhнъ сyринъ, начaлникъ полови1ны њкрeстныz страны2 їеrли1мли.
+</p>
+<div class="num">10</div><p id="n10">И# бли1з8 и4хъ созидaше їедeа сhнъ є3рwмaфовъ, и3 проти1ву д0му є3гw2: и3 бли1з8 є3гw2 созидA ґттyfъ сhнъ ґсаванjинъ.
+</p>
+<div class="num">11</div><p id="n11">И# вторyю чaсть созидaше мелхjа сhнъ и3рaмовъ и3 ґсyвъ сhнъ фаafъ-мwaвль, и3 дaже до столпA пeщнагw.
+</p>
+<div class="num">12</div><p id="n12">И# бли1з8 є3гw2 созидaше саллyмъ сhнъ ґллwи1совъ, начaлникъ полови1ны страны2 њкрeстныz їеrли1мли, т0й и3 дщє1ри є3гw2.
+</p>
+<div class="num">13</div><p id="n13">ВратA ю3д0ли созидaша ґнyнъ и3 њбитaющіи въ занHнэ: тjи создaша и5хъ и3 постaвиша двє1ри и4хъ и3 завHры и4хъ и3 верєи2 и4хъ, и3 тhсzща лакHтъ въ стэнЁ дaже до врaтъ гн0йныхъ.
+</p>
+<div class="num">14</div><p id="n14">И# вратA гнHйнаz созидaше мелхjа сhнъ рихaвль, начaлникъ њкрeстныz страны2 виfакрaмскіz, т0й и3 сhнове є3гw2, и3 покрhша и5хъ и3 постaвиша двє1ри и4хъ и3 завHры и4хъ и3 верєи2 и4хъ.
+</p>
+<div class="num">15</div><p id="n15">И# вратA и3ст0чника созидaше соломHнъ сhнъ халезeовъ, начaлникъ страны2 масфы2: т0й создA и5хъ и3 покры2 и5хъ, и3 постaви двє1ри и4хъ и3 завHры и4хъ и3 верєи2 и4хъ, и3 стёну купёли сілwaмли ко вертогрaду царeву и3 дaже до степeней низходsщихъ t грaда давjдова.
+</p>
+<div class="num">16</div><p id="n16">По нeмже созидaше неемjа сhнъ завyховъ, начaлникъ полови1ны страны2 виfсyровы, дaже до вертогрaда гр0ба давjдова и3 дaже до купёли ўстр0еныz и3 дaже до д0му си1льныхъ.
+</p>
+<div class="num">17</div><p id="n17">По нeмъ созидaша леvjти, раyмъ сhнъ ванаи1мль: по нeмъ созидaше ґсавjа, начaлникъ полови1ны страны2 кеілы2 на странЁ своeй,
+</p>
+<div class="num">18</div><p id="n18">и3 по нeмъ созидaша брaтіz и4хъ, венeй сhнъ и3надaдовъ, начaлникъ полови1ны њкрeстныz страны2 кеілы2.
+</p>
+<div class="num">19</div><p id="n19">И# созидaше бли1з8 є3гw2 ґзyръ сhнъ їисyсовъ, начaлникъ масфы2, мёру вторyю столпA восх0да касaющагwсz ќглу.
+</p>
+<div class="num">20</div><p id="n20">И# по нeмъ созидaше варyхъ, сhнъ завyевъ, мёру вторyю t ќгла дaже до врaтъ д0му є3ліасyва свzщeнника вели1кагw.
+</p>
+<div class="num">21</div><p id="n21">По нeмъ созидaше мерамHfъ сhнъ ўрjи, сhна ґккHсова, мёру вторyю t врaтъ д0му є3ліасyвова дaже до концA д0му є3ліасyвова.
+</p>
+<div class="num">22</div><p id="n22">И# по нeмъ созидaша свzщeнницы, мyжіе t п0лz (їoрдaнска).
+</p>
+<div class="num">23</div><p id="n23">И# по нeмъ созидaста веніамjнъ и3 ґсyвъ проти1ву домHвъ свои1хъ: и3 по нeмъ созидaше ґзарjа сhнъ маасjевъ, сhна ґнанjина, бли1з8 д0му своегw2.
+</p>
+<div class="num">24</div><p id="n24">По нeмъ созидaше ванeй сhнъ ґдaдовъ мёру вторyю t д0му ґзарjи дaже до ќгла и3 дaже до ўклонeніz.
+</p>
+<div class="num">25</div><p id="n25">Фалaхъ сhнъ ўзaинъ проти1ву ќгла и3 столпA возвышeнагw и3з8 д0му царeва выс0кw, и4же во дворЁ темни1чнэмъ: и3 по нeмъ фадаjа сhнъ фор0совъ.
+</p>
+<div class="num">26</div><p id="n26">И# наfінjми њбитaша во њфaлэ, дaже до вертогрaда врaтъ в0дныхъ ко вост0кwмъ и3 дaже до столпA, и4же бЁ возвышeнъ.
+</p>
+<div class="num">27</div><p id="n27">И# по ни1хъ созидaша fекwjми мёру вторyю t страны2 столпA вели1кагw и3 выс0кагw дaже до стэны2 nфлы2.
+</p>
+<div class="num">28</div><p id="n28">Вhшше врaтъ к0нскихъ созидaша свzщeнницы, є3ди1нъ кjйждо проти1ву д0му своегw2.
+</p>
+<div class="num">29</div><p id="n29">И# по нeмъ созидaше саддyкъ сhнъ є3мми1рь проти1ву д0му своегw2: и3 по нeмъ созидaше самаjа сhнъ сехенjевъ, стрaжъ врaтъ вост0чныхъ.
+</p>
+<div class="num">30</div><p id="n30">По нeмъ созидaше ґнанjа сhнъ селемjевъ и3 ґнHмъ сhнъ селeфовъ шестhй мёру вторyю: по нeмъ созидaше месуллaмъ сhнъ варахjевъ проти1ву сокр0вищницы своеS.
+</p>
+<div class="num">31</div><p id="n31">По нeмъ созидaше мелхjа сhнъ сарефjевъ дaже до д0му наfінjмлz и3 щиты2 продаю1щихъ, проти1ву врaтъ сyдныхъ, и3 дaже до г0рницы ќгла.
+</p>
+<div class="num">32</div><p id="n32">И# посредЁ врaтъ џвчихъ созидaша кwвачи2 и3 щитопродaвцы.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nee.4.cs.html">главA д7</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king1.ru.html">Первая книга Царств</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 23
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И известили Давида, говоря: вот, Филистимляне напали на Кеиль и расхищают гумна.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И вопросил Давид Господа, говоря: идти ли мне, и поражу ли я этих Филистимлян? И отвечал Господь Давиду: иди, ты поразишь Филистимлян и спасешь Кеиль.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Но бывшие с Давидом сказали ему: вот, мы боимся здесь в Иудее, как же нам идти в Кеиль против ополчений Филистимских? [мы попадем в плен к Филистимлянам.]
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Тогда снова вопросил Давид Господа, и отвечал ему Господь и сказал: встань и иди в Кеиль, ибо Я предам Филистимлян в руки твои.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И пошел Давид с людьми своими в Кеиль, и воевал с Филистимлянами, и угнал скот их, и нанес им великое поражение, и спас Давид жителей Кеиля.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Когда Авиафар, сын Ахимелеха, прибежал к Давиду [и пошел с ним] в Кеиль, то принес с собою и ефод.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И донесли Саулу, что Давид пришел в Кеиль, и Саул сказал: Бог предал его в руки мои, ибо он запер себя, войдя в город с воротами и запорами.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И созвал Саул весь народ на войну, чтоб идти к Кеилю, осадить Давида и людей его.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Когда узнал Давид, что Саул задумал против него злое, сказал священнику Авиафару: принеси ефод [Господень].
+</p>
+<div class="num">10</div><p id="n10">И сказал Давид: Господи Боже Израилев! раб Твой услышал, что Саул хочет прийти в Кеиль, разорить город ради меня.
+</p>
+<div class="num">11</div><p id="n11">Предадут ли меня жители Кеиля в руки его? И придет ли сюда Саул, как слышал раб Твой? Господи Боже Израилев! открой рабу Твоему. И сказал Господь: придет.
+</p>
+<div class="num">12</div><p id="n12">И сказал Давид: предадут ли жители Кеиля меня и людей моих в руки Саула? И сказал Господь: предадут.
+</p>
+<div class="num">13</div><p id="n13">Тогда поднялся Давид и люди его, около шестисот человек, и вышли из Кеиля и ходили, где могли. Саулу же было донесено, что Давид убежал из Кеиля, и тогда он отменил поход.
+</p>
+<div class="num">14</div><p id="n14">Давид же пребывал в пустыне в неприступных местах и потом на горе в пустыне Зиф. Саул искал его всякий день; но Бог не предал <i>Давида</i> в руки его.
+</p>
+<div class="num">15</div><p id="n15">И видел Давид, что Саул вышел искать души его; Давид же был в пустыне Зиф в лесу.
+</p>
+<div class="num">16</div><p id="n16">И встал Ионафан, сын Саула, и пришел к Давиду в лес, и укрепил его упованием на Бога,
+</p>
+<div class="num">17</div><p id="n17">и сказал ему: не бойся, ибо не найдет тебя рука отца моего Саула, и ты будешь царствовать над Израилем, а я буду вторым по тебе; и Саул, отец мой, знает это.
+</p>
+<div class="num">18</div><p id="n18">И заключили они между собою завет пред лицем Господа; и Давид остался в лесу, а Ионафан пошел в дом свой.
+</p>
+<div class="num">19</div><p id="n19">И пришли Зифеи к Саулу в Гиву, говоря: вот, Давид скрывается у нас в неприступных местах, в лесу, на холме Гахила, что направо от Иесимона;
+</p>
+<div class="num">20</div><p id="n20">итак по желанию души твоей, царь, иди; а наше дело будет предать его в руки царя.
+</p>
+<div class="num">21</div><p id="n21">И сказал им Саул: благословенны вы у Господа за то, что пожалели о мне;
+</p>
+<div class="num">22</div><p id="n22">идите, удостоверьтесь еще, разведайте <i>и</i> высмотрите место его, где будет нога его, <i>и</i> кто видел его там, ибо мне говорят, что он очень хитер;
+</p>
+<div class="num">23</div><p id="n23">и высмотрите, и разведайте о всех убежищах, в которых он скрывается, и возвратитесь ко мне с верным известием, и я пойду с вами; и если он в этой земле, я буду искать его во всех тысячах Иудиных.
+</p>
+<div class="num">24</div><p id="n24">И встали они и пошли в Зиф прежде Саула. Давид же и люди его были в пустыне Маон, на равнине, направо от Иесимона.
+</p>
+<div class="num">25</div><p id="n25">И пошел Саул с людьми своими искать <i>его.</i> Но Давида известили об этом, и он перешел к скале и оставался в пустыне Маон. И услышал Саул, и погнался за Давидом в пустыню Маон.
+</p>
+<div class="num">26</div><p id="n26">И шел Саул по одной стороне горы, а Давид с людьми своими был на другой стороне горы. И когда Давид спешил уйти от Саула, а Саул с людьми своими шел в обход Давиду и людям его, чтобы захватить их;
+</p>
+<div class="num">27</div><p id="n27">тогда пришел к Саулу вестник, говоря: поспешай и приходи, ибо Филистимляне напали на землю.
+</p>
+<div class="num">28</div><p id="n28">И возвратился Саул от преследования Давида и пошел навстречу Филистимлянам; посему и назвали это место: Села-Гаммахлекоф<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;Скала разделений.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p1"></a>.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king1.24.ru.html">к главе 24</a></div></div>
+
+</body>
+</html>

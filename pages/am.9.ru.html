@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="am.ru.html">Книга Пророка Амоса</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 9
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Видел я Господа стоящим над жертвенником, и Он сказал: ударь в притолоку над воротами, чтобы потряслись косяки, и обрушь их на головы всех их, остальных же из них Я поражу мечом: не убежит у них никто бегущий и не спасется из них никто, желающий спастись.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Хотя бы они зарылись в преисподнюю, и оттуда рука Моя возьмет их; хотя бы взошли на небо, и оттуда свергну их.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И хотя бы они скрылись на вершине Кармила, и там отыщу и возьму их; хотя бы сокрылись от очей Моих на дне моря, и там повелю морскому змею уязвить их.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И если пойдут в плен впереди врагов своих, то повелю мечу и там убить их. Обращу на них очи Мои на беду им, а не во благо.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Ибо Господь Бог Саваоф коснется земли,- и она растает, и восплачут все живущие на ней; и поднимется вся она как река, и опустится как река Египетская.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Он устроил горние чертоги Свои на небесах и свод Свой утвердил на земле, призывает воды морские, и изливает их по лицу земли; Господь имя Ему.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Не таковы ли, как сыны Ефиоплян, и вы для Меня, сыны Израилевы? говорит Господь. Не Я ли вывел Израиля из земли Египетской и Филистимлян - из Кафтора, и Арамлян - из Кира?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Вот, очи Господа Бога - на грешное царство, и Я истреблю его с лица земли; но дом Иакова не совсем истреблю, говорит Господь.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ибо вот, Я повелю и рассыплю дом Израилев по всем народам, как рассыпают зерна в решете, и ни одно не падает на землю.
+</p>
+<div class="num">10</div><p id="n10">От меча умрут все грешники из народа Моего, которые говорят: "не постигнет нас и не придет к нам это бедствие!"
+</p>
+<div class="num">11</div><p id="n11">В тот день Я восстановлю скинию Давидову падшую, заделаю трещины в ней и разрушенное восстановлю, и устрою ее, как в дни древние,
+</p>
+<div class="num">12</div><p id="n12">чтобы они овладели остатком Едома и всеми народами, между которыми возвестится имя Мое, говорит Господь, творящий все сие.
+</p>
+<div class="num">13</div><p id="n13">Вот, наступят дни, говорит Господь, когда пахарь застанет еще жнеца, а топчущий виноград - сеятеля; и горы источать будут виноградный сок, и все холмы потекут.
+</p>
+<div class="num">14</div><p id="n14">И возвращу из плена народ Мой, Израиля, и застроят опустевшие города и поселятся в них, насадят виноградники и будут пить вино из них, разведут сады и станут есть плоды из них.
+</p>
+<div class="num">15</div><p id="n15">И водворю их на земле их, и они не будут более исторгаемы из земли своей, которую Я дал им, говорит Господь Бог твой
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="am.ru.html">Книга Пророка Амоса</a>
+</div></div>
+
+</body>
+</html>

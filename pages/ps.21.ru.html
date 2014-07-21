@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.ru.html">Псалтирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Псалом 21
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Начальнику хора. При появлении зари. Псалом Давида.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Боже мой! Боже мой! [внемли мне] для чего Ты оставил меня? Далеки от спасения моего слова вопля моего.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Боже мой! я вопию днем,- и Ты не внемлешь мне, ночью,- и нет мне успокоения.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Но Ты, Святый, живешь среди славословий Израиля.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">На Тебя уповали отцы наши; уповали, и Ты избавлял их;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">к Тебе взывали они, и были спасаемы; на Тебя уповали, и не оставались в стыде.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Я же червь, а не человек, поношение у людей и презрение в народе.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Все, видящие меня, ругаются надо мною, говорят устами, кивая головою:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">"он уповал на Господа; пусть избавит его, пусть спасет, если он угоден Ему".
+</p>
+<div class="num">10</div><p id="n10">Но Ты извел меня из чрева, вложил в меня упование у грудей матери моей.
+</p>
+<div class="num">11</div><p id="n11">На Тебя оставлен я от утробы; от чрева матери моей Ты - Бог мой.
+</p>
+<div class="num">12</div><p id="n12">Не удаляйся от меня, ибо скорбь близка, а помощника нет.
+</p>
+<div class="num">13</div><p id="n13">Множество тельцов обступили меня; тучные Васанские окружили меня,
+</p>
+<div class="num">14</div><p id="n14">раскрыли на меня пасть свою, <i>как</i> лев, алчущий добычи и рыкающий.
+</p>
+<div class="num">15</div><p id="n15">Я пролился, как вода; все кости мои рассыпались; сердце мое сделалось, как воск, растаяло посреди внутренности моей.
+</p>
+<div class="num">16</div><p id="n16">Сила моя иссохла, как черепок; язык мой прильпнул к гортани моей, и Ты свел меня к персти смертной.
+</p>
+<div class="num">17</div><p id="n17">Ибо псы окружили меня, скопище злых обступило меня, пронзили руки мои и ноги мои.
+</p>
+<div class="num">18</div><p id="n18">Можно было бы перечесть все кости мои; а они смотрят и делают из меня зрелище;
+</p>
+<div class="num">19</div><p id="n19">делят ризы мои между собою и об одежде моей бросают жребий.
+</p>
+<div class="num">20</div><p id="n20">Но Ты, Господи, не удаляйся от меня; сила моя! поспеши на помощь мне;
+</p>
+<div class="num">21</div><p id="n21">избавь от меча душу мою и от псов одинокую мою;
+</p>
+<div class="num">22</div><p id="n22">спаси меня от пасти льва и от рогов единорогов, услышав, <i>избавь</i> меня.
+</p>
+<div class="num">23</div><p id="n23">Буду возвещать имя Твое братьям моим, посреди собрания восхвалять Тебя.
+</p>
+<div class="num">24</div><p id="n24">Боящиеся Господа! восхвалите Его. Все семя Иакова! прославь Его. Да благоговеет пред Ним все семя Израиля,
+</p>
+<div class="num">25</div><p id="n25">ибо Он не презрел и не пренебрег скорби страждущего, не скрыл от него лица Своего, но услышал его, когда сей воззвал к Нему.
+</p>
+<div class="num">26</div><p id="n26">О Тебе хвала моя в собрании великом; воздам обеты мои пред боящимися Его.
+</p>
+<div class="num">27</div><p id="n27">Да едят бедные и насыщаются; да восхвалят Господа ищущие Его; да живут сердца ваши во веки!
+</p>
+<div class="num">28</div><p id="n28">Вспомнят, и обратятся к Господу все концы земли, и поклонятся пред Тобою все племена язычников,
+</p>
+<div class="num">29</div><p id="n29">ибо Господне есть царство, и Он - Владыка над народами.
+</p>
+<div class="num">30</div><p id="n30">Будут есть и поклоняться все тучные земли; преклонятся пред Ним все нисходящие в персть и не могущие сохранить жизни своей.
+</p>
+<div class="num">31</div><p id="n31">Потомство [мое] будет служить Ему, и будет называться Господним вовек:
+</p>
+<div class="num">32</div><p id="n32">придут и будут возвещать правду Его людям, которые родятся, что&#769; сотворил Господь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.22.ru.html">к псалму 22</a></div></div>
+
+</body>
+</html>

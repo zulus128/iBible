@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.cs.html">Кни1га вторaz мwmсeова. И#сх0дъ</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA lѕ
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# сотвори2 веселеи1лъ и3 є3ліaвъ, и3 всsкъ мyдрый ўм0мъ, є3мyже данA є4сть премyдрость и3 хи1трость въ ни1хъ, разумёти твори1ти <nobr>вс‰</nobr> дэлA, ±же ко с™hни надлеж†щаz, по всBмъ, є3ли6ка заповёда гDь.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И# призвA мwmсeй веселеи1ла и3 є3ліaва и3 <nobr>вс‰</nobr> и3мyщыz премyдрость, и4мже дадE бGъ рaзумъ въ сeрдцы, и3 <nobr>вс‰</nobr> в0лею хотsщыz приходи1ти къ дэлaмъ, є4же совершaти <nobr>|:</nobr>
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и3 взsша t мwmсeа <nobr>вс‰</nobr> ўч†стіz, ±же принес0ша сhнове <nobr>ї}лєвы</nobr> на <nobr>вс‰</nobr> дэлA с™hни твори1ти <nobr>|:</nobr> и3 тjи пріимaху є3щE приноси6маz t приносsщихъ заyтра заyтра.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И# прихождaху вси2 мyдріи, и5же творsху дэлA с™hни, кjйждо по своемY дёлу, є4же сaми дёлаху:
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и3 рек0ша мwmсeю, ћкw мн0гw прин0сzтъ лю1діе свhше дёлъ, є3ли6ка заповёда гDь сотвори1ти.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И# повелЁ мwmсeй, и3 проповёда въ полцЁ, глаг0лz: мyжъ и3 женA ктомY да не дёлаютъ на начaтки с™hни. И# возбранeни бhша лю1діе ктомY приноси1ти.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И# дэлA бhша и5мъ довHлна на строeніе твори1ти, и3 преизбhша.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И# сотвори2 всsкъ премyдрый въ дёлающихъ ри6зы с™hни, ±же сyть ґарHну їерeю, ћкоже заповёда гDь мwmсeю. [t здЁ и3 по грeчєскимъ числA стіхaмъ не положен0жъ]
+</p>
+<p id="p0">И# сотвори1ша ри1зу вeрхнюю [Грeч.: є3пwмjсъ, є3вр.: є3фyдъ.] t злaта и3 синеты2, и3 багрzни1цы и3 червлени1цы прsдены и3 вmсс0на скaнагw: и3 и3зрёзаша дщи6цы зл†ты ѓки власы2, є4же соткaти съ синет0ю и3 съ багрzни1цею, и3 съ червлени1цею прsденою и3 съ вmсс0номъ скaнымъ: дёло ткaное сотвори1ша є5. Ри6зы вє1рхніz придержaщыzсz t nбои1хъ стрaнъ, дёло ткaнно, междY соб0ю сплетeно: t негw2 сотвори1ша є5 по є3гw2 творeнію, t злaта и3 синеты2, и3 багрzни1цы и3 червлени1цы спрsдены и3 вmсс0на скaнагw, ћкоже заповёда гDь мwmсeю. И# сотвори1ша џба кaмєни смарaгдwвы состє1ганы вeрвію и3 њбложєны2 злaтомъ, и3зв†zны и3 вы6рэзаны ваsніемъ печaти, t и3мeнъ сынHвъ <nobr>ї}левыхъ:</nobr> и3 возложи1ша <nobr>|</nobr> на рaмена ри1зы вeрхніz кaменіе въ пaмzть сынHвъ <nobr>ї}левыхъ,</nobr> ћкоже заповёда гDь мwmсeю. И# сотвори1ша сл0во [Грeч.: логjонъ.], дёло ткaнно пестрот0ю, по дёлу ри1зы вeрхніz, t злaта и3 синеты2, и3 багрzни1цы и3 червлени1цы спрsдены и3 вmсс0на скaнагw, четвероуг0лно сугyбо сотвори1ша логjонъ [Славeн.: сл0во.] пsди въ долготY, и3 пsди въ широтY, сугyбо: и3 сши1ста на нeмъ швeніемъ по три2 кaмєни четhрьми рzды6: рsдъ кaменій: сардjй и3 топaзій и3 смарaгдъ, рsдъ є3ди1нъ: и3 рsдъ вторhй, ѓнfраxъ и3 сапфjръ и3 їaспісъ: и3 рsдъ трeтій, лігЂрій и3 ґхaтъ и3 ґмеfЂстъ: и3 рsдъ четвeртый, хрmсолjfъ и3 вирЂллій и3 nнЂхій, њкHваны w4колw злaтомъ и3 всаждeни въ злaтэ: и3 кaменіе бsху t и3мeнъ сынHвъ <nobr>ї}левыхъ</nobr> дванaдесzть, по и3менaмъ и4хъ и3звazно въ печ†ти, кjйждо свои1мъ и4менемъ въ дванaдесzть племeнъ. И# сотвори1ша над8 логjономъ трeсны сплетє1ны, дёло плетeное t злaта чи1ста: и3 сотвори1ша двA щитц† зл†та и3 двA кwлцA зл†та, и3 возложи1ша двA кwлцA зл†та на џба кwнцA логjона: и3 вложи1ша плетени6цы зл†ты въ к0лца, со nбои1хъ стрaнъ логjона, и3 въ двA сложє1ніz двЁ плетени6цы, и3 возложи1ша на двA щитц†: и3 возложи1ша на рaмена ри1зы вeрхніz, проти1ву лицeмъ къ лицY. И# сотвори1ша двA кwлцA зл†та, и3 возложи1ша на двA кри1ла на крaй логjона, и3 на крaй созади2 вeрхніz ри1зы, внутрьyду: и3 сотвори1ша двA кwлцA зл†та, и3 положи1ша на џба рaмена ри1зы вeрхніz съ ни1зу є3гw2 на лицЁ по согбeнію свhше состaва ри1зы вeрхніz: и3 стzгнyша логjонъ к0лцами, ±же на нeмъ, съ к0лцами вeрхніz ри1зы сложeными, и3з8 синеты2 сплетeнными, во ткaніе ри1зы вeрхніz [Грeч.: є3пwмjсъ, є3вр.: є3фyдъ.], да не низпускaетсz логjонъ t ри1зы вeрхніz, ћкоже заповёда гDь мwmсeю. И# сотвори1ша и3сп0днюю ри1зу [Грeч.: v3подЂтисъ.], ћже под8 вeрхнюю, дёло ткaнно, всE си1нее: њжерeліе же во внyтреннэй ри1зэ [Грeч.: v3подЂтисъ.], на средЁ швeнно, сплетено2, nмeты и3мyщо w4колw њжерeліе неразлучeно. И# сотвори1ша на nмeтэ ри1зы внyтренніz д0лу ћкw процвэтaющагw ши1пка п{гвицы t синеты2 и3 багрzни1цы, и3 червлени1цы прsдены и3 вmсс0на скaнагw. И# сотвори1ша звонцы2 зл†ты, и3 возложи1ша звонцы2 на nмeты ри1зы внyтренніz w4крестъ междY пyгвицами: звонeцъ злaтъ и3 пyгвица на nмeтэ внyтренніz ри1зы w4крестъ, къ служeнію, ћкоже повелЁ гDь мwmсeю. И# сотвори1ша ри6зы вmссHнныz дёло ткaнно, ґарHну и3 сынHмъ є3гw2, и3 клобуки2 [Грeч.: кjдарісъ.] и3з8 вmсс0на, и3 ўвsсло [Грeч.: мjтра.] и3з8 вmсс0на, и3 надр†ги и3з8 вmсс0на скaнагw, и3 п0zсы и4хъ и3з8 вmсс0на и3 синеты2, и3 багрzни1цы и3 червлени1цы прsдены, дёло пестрsщагw, ћкоже заповёда гDь мwmсeю. И# сотвори1ша дщи1цу злaту, tдэлeніе с™hни t злaта чи1ста, и3 написaша на нeй пи1смена и3зв†zна печaтію: њсщ7eніе гDу: и3 возложи1ша ю5 на nмeтъ си1нь, є4же бы лежaти на ўвsслэ свhше, ћкоже заповёда гDь мwmсeю.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.37.cs.html">главA lз</a></div></div>
+
+</body>
+</html>

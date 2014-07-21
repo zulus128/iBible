@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.cs.html">Кни1га вторaz мwmсeова. И#сх0дъ</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA lз
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# сотвори1ша ски1ніи дeсzть nп0нъ: двaдесzть и3 џсмь лакHтъ долготA є3ди1ныz nп0ны, тazжде бsше всBмъ, и3 четhрехъ лакHтъ широтA nп0ны є3ди1ныz. И# сотвори1ша завёсу t синеты2 и3 багрzни1цы, и3 червлени1цы спрsдены и3 вmсс0на скaнагw, дёло швeнно херувjмы: и3 возложи1ша ю5 на четhри столпы2 негнію1щыz позлащє1ны злaтомъ, и3 верхи2 и4хъ зл†ты, и3 стwsла и4хъ четhри срє1брzна. И# сотвори1ша завёсу двeремъ ски1ніи свидёніz t синеты2 и3 багрzни1цы, и3 червлени1цы спрsдены и3 вmсс0на скaнагw, дёло швeнно херувjмы, и3 столпы2 и4хъ пsть и3 крючки2 и4хъ: и3 глави6цы и4хъ и3 верхи2 и4хъ позлати1ша злaтомъ, и3 стwsла и4хъ пsть мBдzна. И# сотвори1ша дв0ръ къ ю4гу, nпHны дворA и3з8 вmсс0на скaнагw, сто2 на сто2: и3 столпы2 и4хъ двaдесzть, и3 стwsла и4хъ двaдесzть мBдzна: и3 странA къ сёверу, сто2 на сто2: и3 странA къ ю4гу, сто2 на сто2, и3 столпы2 и4хъ двaдесzть, и3 стwsла и4хъ двaдесzть мBдzна: и3 странA къ м0рю, nпHны пzти1десzтъ лaктей, столпы2 и4хъ дeсzть, и3 стwsла и4хъ дeсzть: и3 странA къ вост0ку пzти1десzтъ лaктей, nпHны пzтинaдесzти лaктей, ±же созади2, и3 столпы2 и4хъ три2, и3 стwsла и4хъ три2. И# на вторёй зaдней странЁ сю1ду и3 сю1ду ў двeрій дворA, nпHны пzтинaдесzти лaктей: столпы2 и4хъ три2, и3 стwsла и4хъ три2. <nobr>Вс‰</nobr> nпHны ски1ніи и3з8 вmсс0на скaнагw, и3 стwsла столпHвъ и4хъ мBдzна, и3 пє1тли и4хъ срє1брzны, и3 глави6цы и4хъ посрeбрєны сребр0мъ, и3 столпы2 и4хъ посрeбрєны сребр0мъ, вси2 столпи2 дворA. И# завёса двeрій дворA дёло пестрsщагw, и3з8 синеты2 и3 багрzни1цы, и3 червлени1цы прsдены и3 вmсс0на скaнагw: двaдесzти лaктей долготA, и3 высотA и3 широтA пzти2 лaктей, р†вны nп0намъ дворA: и3 столпы2 и4хъ четhри, и3 стwsла и4хъ четhри мBдzна, и3 пє1тли и4хъ срє1брzны, и3 глави6цы и4хъ посрeбрєны сребр0мъ: и3 вси2 колки2 дворA w4колw мBдzны, и3 тjи посрeбрєны сребр0мъ. И# сіE сочинeніе ски1ніи свидёніz, ћкоже заповёдано бhсть мwmсeю, служeнію бhти леvjтwвъ чрез8 їfaмара сhна ґарHнz їерeа: и3 веселеи1лъ, сhнъ ўрjевъ, t плeмене їyдина, сотвори2, ћкоже заповёда гDь мwmсeю, и3 є3ліaвъ, сhнъ ґхісамaховъ, t плeмене дaнова, и4же созидaше тк†ныz вє1щи и3 швє1ныz и3 пє1стрыz, є4же ткaти и3з8 червлени1цы и3 вmсс0на. И# сотвори2 веселеи1лъ ківHтъ и3 позлати2 є3го2 злaтомъ чи1стымъ внутрьyду и3 внэyду, и3 сотвори2 є3мY злaтъ њбв0дъ nбою1ду: и3 сліS є3мY четhри кwлцA зл†та на четhри страны6 є3гw2: двA на странЁ є3ди1нэй, и3 двA на странЁ друзёй, широки2 носи1ламъ, ћкw носи1ти є3го2 и4ми. И# сотвори2 њчисти1лище над8 ківHтомъ t злaта чи1ста, и3 двA херув‡ма зл†ты: херувjма є3ди1наго на странЁ њчисти1лища, и3 херувjма вторaго на странЁ вторёй њчисти1лища, њсэнsющыz кри1лами свои1ми над8 њчисти1лищемъ. И# сотвори2 трапeзу предложeніz t злaта чи1ста, и3 сліS є4й четhри кwлцA зл†та: двA кwлцA на странЁ є3ди1нэй, и3 двA кwлцA на странЁ вторёй, широки2 ћкw носи1ти носи1лами въ ни1хъ. И# нwси1ла ківHту и3 трапeзэ сотвори2, и3 позлати2 и5хъ злaтомъ. И# сотвори2 сосyды трапeзэ, блю6да и3 fmміaмники, и3 чaшы зл†ты и3 возливaлники, и4миже возливaти бyдетъ, t злaта. И# сотвори2 свэти1лникъ, є4же свэти1ти, златhй, крёпокъ стебл0мъ, и3 вBтви t nбои1хъ стрaнъ є3гw2: и3 t вётвій є3гw2 tр†сли и3сходsщыz, три2 t є3ди1ныz и3 три2 t вторhz страны2, р†вны дрyгъ дрyгу: и3 свэти6ла и4хъ, ±же на верхY и4хъ, во w4бразъ nрёха, t ни1хъ: и3 цвэтцы2 t ни1хъ, (и3 крyзи и4хъ,) да бyдутъ свэти6ла на ни1хъ: и3 цвэтeцъ седмhй, и4же на краю2 свэти1ла, на верхY свhше, крёпкій вeсь злaтъ: и3 сeдмь свэти6лъ на нeмъ златhхъ, и3 щипцы2 є3гw2 златы6z, и3 подстaвы и4хъ зл†ты. Сeй посребри2 столпы2 и3 сліS столпHмъ к0лца зл†та, и3 позлати2 верєи2 злaтомъ, и3 позлати2 столпы2 завёсэ злaтомъ, и3 сотвори2 пє1тли зл†ты: сeй сотвори2 и3 крючки2 ски1ніи зл†ты, и3 крючки2 дворA, и3 крючки2 на распрострeніе завёсы свeрху мBдzны: сeй сліS глави6цы срє1брzны ски1ніи, и3 глави6цы мBдzны двeрій ски1ніи, и3 двє1ри дворA, и3 пє1тли сотвори2 срє1брzны на столпaхъ: сeй посребри2 и5хъ: сeй сотвори2 колки2 ски1ніи и3 колки2 дворA мBдzны.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.38.cs.html">главA lи</a></div></div>
+
+</body>
+</html>

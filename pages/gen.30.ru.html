@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 30
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И увидела Рахиль, что она не рождает детей Иакову, и позавидовала Рахиль сестре своей, и сказала Иакову: дай мне детей, а если не так, я умираю.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Иаков разгневался на Рахиль и сказал [ей]: разве я Бог, Который не дал тебе плода чрева?
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Она сказала: вот служанка моя Валла; войди к ней; пусть она родит на колени мои, чтобы и я имела детей от нее.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И дала она Валлу, служанку свою, в жену ему; и вошел к ней Иаков.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Валла [служанка Рахилина] зачала и родила Иакову сына.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказала Рахиль: судил мне Бог, и услышал голос мой, и дал мне сына. Посему нарекла ему имя: Дан.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И еще зачала и родила Валла, служанка Рахилина, другого сына Иакову.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сказала Рахиль: борьбою сильною боролась я с сестрою моею и превозмогла. И нарекла ему имя: Неффалим.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Лия увидела, что перестала рождать, и взяла служанку свою Зелфу, и дала ее Иакову в жену, [и он вошел к ней].
+</p>
+<div class="num">10</div><p id="n10">И Зелфа, служанка Лиина, [зачала и] родила Иакову сына.
+</p>
+<div class="num">11</div><p id="n11">И сказала Лия: прибавилось. И нарекла ему имя: Гад.
+</p>
+<div class="num">12</div><p id="n12">И [еще зачала] Зелфа, служанка Лии, [и] родила другого сына Иакову.
+</p>
+<div class="num">13</div><p id="n13">И сказала Лия: к благу моему, ибо блаженною будут называть меня женщины. И нарекла ему имя: Асир.
+</p>
+<div class="num">14</div><p id="n14">Рувим пошел во время жатвы пшеницы, и нашел мандрагоровые яблоки в поле, и принес их Лии, матери своей. И Рахиль сказала Лии [сестре своей]: дай мне мандрагоров сына твоего.
+</p>
+<div class="num">15</div><p id="n15">Но [Лия] сказала ей: неужели мало тебе завладеть мужем моим, что ты домогаешься и мандрагоров сына моего? Рахиль сказала: так пусть он ляжет с тобою эту ночь, за мандрагоры сына твоего.
+</p>
+<div class="num">16</div><p id="n16">Иаков пришел с поля вечером, и Лия вышла ему навстречу и сказала: войди ко мне [сегодня], ибо я купила тебя за мандрагоры сына моего. И лег он с нею в ту ночь.
+</p>
+<div class="num">17</div><p id="n17">И услышал Бог Лию, и она зачала и родила Иакову пятого сына.
+</p>
+<div class="num">18</div><p id="n18">И сказала Лия: Бог дал возмездие мне за то, что я отдала служанку мою мужу моему. И нарекла ему имя: Иссахар [что значит возмездие].
+</p>
+<div class="num">19</div><p id="n19">И еще зачала Лия и родила Иакову шестого сына.
+</p>
+<div class="num">20</div><p id="n20">И сказала Лия: Бог дал мне прекрасный дар; теперь будет жить у меня муж мой, ибо я родила ему шесть сынов. И нарекла ему имя: Завулон.
+</p>
+<div class="num">21</div><p id="n21">Потом родила дочь и нарекла ей имя: Дина.
+</p>
+<div class="num">22</div><p id="n22">И вспомнил Бог о Рахили, и услышал ее Бог, и отверз утробу ее.
+</p>
+<div class="num">23</div><p id="n23">Она зачала и родила [Иакову] сына, и сказала [Рахиль]: снял Бог позор мой.
+</p>
+<div class="num">24</div><p id="n24">И нарекла ему имя: Иосиф, сказав: Господь даст мне и другого сына.
+</p>
+<div class="num">25</div><p id="n25">После того, как Рахиль родила Иосифа, Иаков сказал Лавану: отпусти меня, и пойду я в свое место, и в свою землю;
+</p>
+<div class="num">26</div><p id="n26">отдай [мне] жен моих и детей моих, за которых я служил тебе, и я пойду, ибо ты знаешь службу мою, какую я служил тебе.
+</p>
+<div class="num">27</div><p id="n27">И сказал ему Лаван: о, если бы я нашел благоволение пред очами твоими! я примечаю, что за тебя Господь благословил меня.
+</p>
+<div class="num">28</div><p id="n28">И сказал: назначь себе награду от меня, и я дам [тебе].
+</p>
+<div class="num">29</div><p id="n29">И сказал ему [Иаков]: ты знаешь, как я служил тебе, и каков стал скот твой при мне;
+</p>
+<div class="num">30</div><p id="n30">ибо мало было у тебя до меня, а стало много; Господь благословил тебя с приходом моим; когда же я буду работать для своего дома?
+</p>
+<div class="num">31</div><p id="n31">И сказал [ему Лаван]: что дать тебе? Иаков сказал [ему]: не давай мне ничего. Если только сделаешь мне, что&#769; я скажу, то я опять буду пасти и стеречь овец твоих.
+</p>
+<div class="num">32</div><p id="n32">Я пройду сегодня по всему <i>стаду</i> овец твоих; отдели из него всякий скот с крапинами и с пятнами, всякую скотину черную из овец, также с пятнами и с крапинами из коз. <i>Такой</i> <i>скот</i> будет наградою мне [и будет мой].
+</p>
+<div class="num">33</div><p id="n33">И будет говорить за меня пред тобою справедливость моя в следующее время, когда придешь посмотреть награду мою. Всякая из коз не с крапинами и не с пятнами, и из овец не черная, краденое это у меня.
+</p>
+<div class="num">34</div><p id="n34">Лаван сказал [ему]: хорошо, пусть будет по твоему слову.
+</p>
+<div class="num">35</div><p id="n35">И отделил в тот день козлов пестрых и с пятнами, и всех коз с крапинами и с пятнами, всех, на которых было <i>несколько</i> белого, и всех черных овец, и отдал на руки сыновьям своим;
+</p>
+<div class="num">36</div><p id="n36">и назначил расстояние между собою и между Иаковом на три дня пути. Иаков же пас остальной мелкий скот Лаванов.
+</p>
+<div class="num">37</div><p id="n37">И взял Иаков свежих прутьев тополевых, миндальных и яворовых, и вырезал на них [Иаков] белые полосы, сняв кору до белизны, которая на прутьях,
+</p>
+<div class="num">38</div><p id="n38">и положил прутья с нарезкою перед скотом в водопойных корытах, куда скот приходил пить, и где, приходя пить, зачинал пред прутьями.
+</p>
+<div class="num">39</div><p id="n39">И зачинал скот пред прутьями, и рождался скот пестрый, и с крапинами, и с пятнами.
+</p>
+<div class="num">40</div><p id="n40">И отделял Иаков ягнят и ставил скот лицем к пестрому и всему черному скоту Лаванову; и держал свои стада особо и не ставил их вместе со скотом Лавана.
+</p>
+<div class="num">41</div><p id="n41">Каждый раз, когда зачинал скот крепкий, Иаков клал прутья в корытах пред глазами скота, чтобы он зачинал пред прутьями.
+</p>
+<div class="num">42</div><p id="n42">А когда зачинал скот слабый, тогда он не клал. И доставался слабый <i>скот</i> Лавану, а крепкий Иакову.
+</p>
+<div class="num">43</div><p id="n43">И сделался этот человек весьма, весьма богатым, и было у него множество мелкого скота [и крупного скота], и рабынь, и рабов, и верблюдов, и ослов.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.31.ru.html">к главе 31</a></div></div>
+
+</body>
+</html>

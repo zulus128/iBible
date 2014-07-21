@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="prem.ru.html">Книга Премудрости<br />Соломона</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 18
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">А для святых Твоих был величайший свет. И те, слыша голос их, а образа не видя, называли их блаженными, потому что они не страдали.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">А за то, что, быв прежде обижаемы ими, не мстили им, благодарили и просили прощения в том, что заставляли переносить их,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">вместо того, Ты дал им указателем на незнакомом пути огнесветлый столп, а для благополучного странствования - безвредное солнце.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Ибо те достойны были лишения света и заключения во тьме, потому что держали в заключении сынов Твоих, чрез которых имел быть дан миру нетленный свет закона.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Когда определили они избить детей святых, хотя одного сына покинутого и спасли, в наказание за то Ты отнял множество их детей и самих всех погубил в сильной воде.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Та ночь была предвозвещена отцам нашим, дабы они, твердо зная обетования, каким верили, были благодушны.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И народ Твой ожидал как спасения праведных, так и погибели врагов,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">ибо, чем Ты наказывал врагов, тем самым возвеличил нас, которых Ты призвал.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Святые дети добрых тайно совершали жертвоприношение и единомысленно постановили божественным законом, чтобы святые равно участвовали в одних и тех же благах и опасностях, когда отцы уже воспевали хвалы.
+</p>
+<div class="num">10</div><p id="n10">С противной же стороны отдавался нестройный крик врагов, и разносился жалобный вопль над оплакиваемыми детьми.
+</p>
+<div class="num">11</div><p id="n11">Одинаковым судом был наказан раб с господином, и простолюдин терпел одно и то же с царем:
+</p>
+<div class="num">12</div><p id="n12">все вообще имели бесчисленных мертвецов, <i>умерших</i> одинаковою смертью; и живых недоставало для погребения, так как в одно мгновение погублено было <i>все</i> драгоценнейшее их поколение.
+</p>
+<div class="num">13</div><p id="n13">И не верившие ничему ради чародейства, при погублении первенцев, признали, что <i>этот </i>народ есть сын Божий,
+</p>
+<div class="num">14</div><p id="n14">ибо, когда все окружало тихое безмолвие и ночь в своем течении достигла средины,
+</p>
+<div class="num">15</div><p id="n15">сошло с небес от царственных престолов на средину погибельной земли всемогущее слово Твое, как грозный воин.
+</p>
+<div class="num">16</div><p id="n16">Оно несло острый меч - неизменное Твое повеление и, став, наполнило все смертью: оно касалось неба и ходило по земле.
+</p>
+<div class="num">17</div><p id="n17">Тогда вдруг сильно встревожили их мечты сновидений, и наступили неожиданные ужасы;
+</p>
+<div class="num">18</div><p id="n18">и, будучи поражаем - один там, другой тут, полумертвый объявлял причину, по которой он умирал:
+</p>
+<div class="num">19</div><p id="n19">ибо встревожившие их сновидения предварительно показали <i>им</i> это, чтобы они не погибли, не зная того, за что терпят зло.
+</p>
+<div class="num">20</div><p id="n20">Хотя искушение смерти коснулось и праведных, и много их погибло в пустыне, но недолго продолжался этот гнев,
+</p>
+<div class="num">21</div><p id="n21">ибо непорочный муж поспешил защитить их; принеся оружие своего служения, молитву и умилостивление кадильное, он противостал гневу и положил конец бедствию, показав тем, что он слуга Твой.
+</p>
+<div class="num">22</div><p id="n22">Он победил истребителя не силою телесною и не действием оружия, но словом покорил наказывавшего, воспомянув клятвы и заветы отцов.
+</p>
+<div class="num">23</div><p id="n23">Ибо, когда уже грудами лежали мертвые одни на других, он, став в средине, остановил гнев и пресек <i>ему</i> путь к живым.
+</p>
+<div class="num">24</div><p id="n24">На подире его был целый мир, и славные <i>имена</i> отцов были вырезаны на камнях в четыре ряда, и величие Твое - на диадиме головы его.
+</p>
+<div class="num">25</div><p id="n25">Этому уступил истребитель, и этого убоялся: ибо довольно было одного этого испытания гневного.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="prem.19.ru.html">к главе 19</a></div></div>
+
+</body>
+</html>

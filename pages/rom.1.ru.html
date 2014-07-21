@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="rom.ru.html">Послание к Римлянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Павел, раб Иисуса Христа, призванный Апостол, избранный к благовестию Божию,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">которое Бог прежде обещал через пророков Своих, в святых писаниях,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">о Сыне Своем, Который родился от семени Давидова по плоти
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и открылся Сыном Божиим в силе, по духу святыни, через воскресение из мертвых, о Иисусе Христе Господе нашем,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">через Которого мы получили благодать и апостольство, чтобы во имя Его покорять вере все народы,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">между которыми находитесь и вы, призванные Иисусом Христом,-
+</p>
+<div class="num">&nbsp;7</div><p id="n7">всем находящимся в Риме возлюбленным Божиим, призванным святым: благодать вам и мир от Бога Отца нашего и Господа Иисуса Христа.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Прежде всего благодарю Бога моего через Иисуса Христа за всех вас, что вера ваша возвещается во всем мире.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Свидетель мне Бог, Которому служу духом моим в благовествовании Сына Его, что непрестанно воспоминаю о вас,
+</p>
+<div class="num">10</div><p id="n10">всегда прося в молитвах моих, чтобы воля Божия когда-нибудь благопоспешила мне прийти к вам,
+</p>
+<div class="num">11</div><p id="n11">ибо я весьма желаю увидеть вас, чтобы преподать вам некое дарование духовное к утверждению вашему,
+</p>
+<div class="num">12</div><p id="n12">то есть утешиться с вами верою общею, вашею и моею.
+</p>
+<div class="num">13</div><p id="n13">Не хочу, братия, <i>оставить</i> вас в неведении, что я многократно намеревался прийти к вам (но встречал препятствия даже доныне), чтобы иметь некий плод и у вас, как и у прочих народов.
+</p>
+<div class="num">14</div><p id="n14">Я должен и Еллинам и варварам, мудрецам и невеждам.
+</p>
+<div class="num">15</div><p id="n15">Итак, что до меня, я готов благовествовать и вам, находящимся в Риме.
+</p>
+<div class="num">16</div><p id="n16">Ибо я не стыжусь благовествования Христова, потому что <i>оно</i> есть сила Божия ко спасению всякому верующему, во-первых, Иудею, <i>потом</i> и Еллину.
+</p>
+<div class="num">17</div><p id="n17">В нем открывается правда Божия от веры в веру, как написано: праведный верою жив будет.
+</p>
+<div class="num">18</div><p id="n18">Ибо открывается гнев Божий с неба на всякое нечестие и неправду человеков, подавляющих истину неправдою.
+</p>
+<div class="num">19</div><p id="n19">Ибо, что&#769; можно знать о Боге, явно для них, потому что Бог явил им.
+</p>
+<div class="num">20</div><p id="n20">Ибо невидимое Его, вечная сила Его и Божество, от создания мира через рассматривание творений видимы, так что они безответны.
+</p>
+<div class="num">21</div><p id="n21">Но как они, познав Бога, не прославили Его, как Бога, и не возблагодарили, но осуетились в умствованиях своих, и омрачилось несмысленное их сердце;
+</p>
+<div class="num">22</div><p id="n22">называя себя мудрыми, обезумели,
+</p>
+<div class="num">23</div><p id="n23">и славу нетленного Бога изменили в образ, подобный тленному человеку, и птицам, и четвероногим, и пресмыкающимся,-
+</p>
+<div class="num">24</div><p id="n24">то и предал их Бог в похотях сердец их нечистоте, так что они сквернили сами свои тела.
+</p>
+<div class="num">25</div><p id="n25">Они заменили истину Божию ложью, и поклонялись, и служили твари вместо Творца, Который благословен во веки, аминь.
+</p>
+<div class="num">26</div><p id="n26">Потому предал их Бог постыдным страстям: женщины их заменили естественное употребление противоестественным;
+</p>
+<div class="num">27</div><p id="n27">подобно и мужчины, оставив естественное употребление женского пола, разжигались похотью друг на друга, мужчины на мужчинах делая срам и получая в самих себе должное возмездие за свое заблуждение.
+</p>
+<div class="num">28</div><p id="n28">И как они не заботились иметь Бога в разуме, то предал их Бог превратному уму - делать непотребства,
+</p>
+<div class="num">29</div><p id="n29">так что они исполнены всякой неправды, блуда, лукавства, корыстолюбия, злобы, исполнены зависти, убийства, распрей, обмана, злонравия,
+</p>
+<div class="num">30</div><p id="n30">злоречивы, клеветники, богоненавистники, обидчики, самохвалы, горды, изобретательны на зло, непослушны родителям,
+</p>
+<div class="num">31</div><p id="n31">безрассудны, вероломны, нелюбовны, непримиримы, немилостивы.
+</p>
+<div class="num">32</div><p id="n32">Они знают праведный <i>суд</i> Божий, что делающие такие <i>дела</i> достойны смерти; однако не только <i>их</i> делают, но и делающих одобряют.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="rom.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

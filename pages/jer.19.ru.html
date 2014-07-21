@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jer.ru.html">Книга Пророка Иеремии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 19
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Так сказал Господь: пойди и купи глиняный кувшин у горшечника; и возьми с собою старейших из народа и из старейшин священнических,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и выйди в долину сыновей Енномовых, которая у ворот Харшиф, и провозгласи там слова, которые скажу тебе,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и скажи: слушайте слово Господне, цари Иудейские и жители Иерусалима! так говорит Господь Саваоф, Бог Израилев: вот, Я наведу бедствие на место сие,- о котором кто услышит, у того зазвенит в ушах,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">за то, что они оставили Меня и чужим сделали место сие и кадят на нем иным богам, которых не знали ни они, ни отцы их, ни цари Иудейские; наполнили место сие кровью невинных
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и устроили высоты Ваалу, чтобы сожигать сыновей своих огнем во всесожжение Ваалу, чего Я не повелевал и не говорил, и что на мысль не приходило Мне;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">за то вот, приходят дни, говорит Господь, когда место сие не будет более называться Тофетом или долиною сыновей Енномовых, но долиною убиения.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И уничтожу совет Иуды и Иерусалима на месте сем и сражу их мечом пред лицем врагов их и рукою ищущих души их, и отдам трупы их в пищу птицам небесным и зверям земным.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сделаю город сей ужасом и посмеянием; каждый, проходящий через него, изумится и посвищет, смотря на все язвы его.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И накормлю их плотью сыновей их и плотью дочерей их; и будет каждый есть плоть своего ближнего, находясь в осаде и тесноте, когда стеснят их враги их и ищущие души их.
+</p>
+<div class="num">10</div><p id="n10">И разбей кувшин пред глазами тех мужей, которые придут с тобою,
+</p>
+<div class="num">11</div><p id="n11">и скажи им: так говорит Господь Саваоф: так сокрушу Я народ сей и город сей, как сокрушен горшечников сосуд, который уже не может быть восстановлен, и будут хоронить их в Тофете, по недостатку места для погребения.
+</p>
+<div class="num">12</div><p id="n12">Так поступлю с местом сим, говорит Господь, и с жителями его; и город сей сделаю подобным Тофету.
+</p>
+<div class="num">13</div><p id="n13">И домы Иерусалима и домы царей Иудейских будут, как место Тофет, нечистыми, потому что на кровлях всех домов кадят всему воинству небесному и совершают возлияния богам чужим.
+</p>
+<div class="num">14</div><p id="n14">И пришел Иеремия с Тофета, куда Господь посылал его пророчествовать, и стал на дворе дома Господня и сказал всему народу:
+</p>
+<div class="num">15</div><p id="n15">так говорит Господь Саваоф, Бог Израилев: вот, Я наведу на город сей и на все города его все то бедствие, которое изрек на него, потому что они жестоковыйны и не слушают слов Моих.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jer.20.ru.html">к главе 20</a></div></div>
+
+</body>
+</html>

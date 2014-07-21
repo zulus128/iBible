@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para1.ru.html">Первая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Адам, Сиф, Енос,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Каинан, Малелеил, Иаред,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Енох, Мафусал, Ламех,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Ной, Сим, Хам и Иафет.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Сыновья Иафета: Гомер, Магог, Мадай, Иаван, [Елиса,] Фувал, Мешех и Фирас.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Сыновья Гомера: Аскеназ, Рифат и Фогарма.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Сыновья Иавана: Елиса, Фарсис, Киттим и Доданим.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Сыновья Хама: Хуш, Мицраим, Фут и Ханаан.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Сыновья Хуша: Сева, Хавила, Савта, Раама и Савтеха. Сыновья Раамы: Шева и Дедан.
+</p>
+<div class="num">10</div><p id="n10">Хуш родил <i>также</i> Нимрода: сей начал быть сильным на земле.
+</p>
+<div class="num">11</div><p id="n11">Мицраим родил: Лудима, Анамима, Легавима, Нафтухима,
+</p>
+<div class="num">12</div><p id="n12">Патрусима, Каслухима, от которого произошли Филистимляне, и Кафторима.
+</p>
+<div class="num">13</div><p id="n13">Ханаан родил Сидона, первенца своего, Хета,
+</p>
+<div class="num">14</div><p id="n14">Иевусея, Аморрея, Гергесея,
+</p>
+<div class="num">15</div><p id="n15">Евея, Аркея, Синея,
+</p>
+<div class="num">16</div><p id="n16">Арвадея, Цемарея и Хамафея.
+</p>
+<div class="num">17</div><p id="n17">Сыновья Сима: Елам, Ассур, Арфаксад, Луд и Арам. [Сыновья Арама:] Уц, Хул, Гефер и Мешех.
+</p>
+<div class="num">18</div><p id="n18">Арфаксад [родил Каинана, Каинан же] родил Салу, Сала же родил Евера.
+</p>
+<div class="num">19</div><p id="n19">У Евера родились два сына: имя одному Фалек, потому что во дни его разделилась земля; имя брату его Иоктан.
+</p>
+<div class="num">20</div><p id="n20">Иоктан родил Алмодада, Шалефа, Хацармавета, Иераха,
+</p>
+<div class="num">21</div><p id="n21">Гадорама, Узала, Диклу,
+</p>
+<div class="num">22</div><p id="n22">Евала, Авимаила, Шеву,
+</p>
+<div class="num">23</div><p id="n23">Офира, Хавилу и Иовава. Все эти сыновья Иоктана.
+</p>
+<div class="num">24</div><p id="n24">[Сыновья же] Симовы: Арфаксад, [Каинан,] Сала,
+</p>
+<div class="num">25</div><p id="n25">Евер, Фалек, Рагав,
+</p>
+<div class="num">26</div><p id="n26">Серух, Нахор, Фарра,
+</p>
+<div class="num">27</div><p id="n27">Аврам, он же Авраам.
+</p>
+<div class="num">28</div><p id="n28">Сыновья Авраама: Исаак и Измаил.
+</p>
+<div class="num">29</div><p id="n29">Вот родословие их: первенец Измаилов Наваиоф, <i>за</i> <i>ним</i> Кедар, Адбеел, Мивсам,
+</p>
+<div class="num">30</div><p id="n30">Мишма, Дума, Масса, Хадад, Фема,
+</p>
+<div class="num">31</div><p id="n31">Иетур, Нафиш и Кедма. Это сыновья Измаиловы.
+</p>
+<div class="num">32</div><p id="n32">Сыновья Хеттуры, наложницы Авраамовой: она родила Зимрана, Иокшана, Медана, Мадиана, Ишбака и Шуаха. Сыновья Иокшана: Шева и Дедан. [Сыновья Дедановы: Рагуил, Навдеил, Ассуриим, Астусиим и Асомин.]
+</p>
+<div class="num">33</div><p id="n33">Сыновья Мадиана: Ефа, Ефер, Ханох, Авида и Елдага. Все эти сыновья Хеттуры.
+</p>
+<div class="num">34</div><p id="n34">И родил Авраам Исаака. Сыновья Исаака: Исав и Израиль.
+</p>
+<div class="num">35</div><p id="n35">Сыновья Исава: Елифаз, Рагуил, Иеус, Иеглом и Корей.
+</p>
+<div class="num">36</div><p id="n36">Сыновья Елифаза: Феман, Омар, Цефо, Гафам, Кеназ; [Фимна же, наложница Елифазова, родила ему] Амалика.
+</p>
+<div class="num">37</div><p id="n37">Сыновья Рагуила: Нахаф, Зерах, Шамма и Миза.
+</p>
+<div class="num">38</div><p id="n38">Сыновья Сеира: Лотан, Шовал, Цивеон, Ана, Дишон, Ецер и Дишан.
+</p>
+<div class="num">39</div><p id="n39">Сыновья Лотана: Хори и Гемам; а сестра у Лотана: Фимна.
+</p>
+<div class="num">40</div><p id="n40">Сыновья Шовала: Алеан, Манахаф, Евал, Шефо и Онам. Сыновья Цивеона: Аиа и Ана.
+</p>
+<div class="num">41</div><p id="n41">Дети Аны: Дишон [и Оливема дочь Аны]. Сыновья Дишона: Хемдан, Ешбан, Ифран и Херан.
+</p>
+<div class="num">42</div><p id="n42">Сыновья Ецера: Билган, Зааван и Акан. Сыновья Дишана: Уц и Аран.
+</p>
+<div class="num">43</div><p id="n43">Сии суть цари, царствовавшие в земле Едома, прежде нежели воцарился царь над сынами Израилевыми: Бела, сын Веора, и имя городу его - Дингава;
+</p>
+<div class="num">44</div><p id="n44">и умер Бела, и воцарился по нем Иовав, сын Зераха, из Восоры.
+</p>
+<div class="num">45</div><p id="n45">И умер Иовав, и воцарился по нем Хушам, из земли Феманитян.
+</p>
+<div class="num">46</div><p id="n46">И умер Хушам, и воцарился по нем Гадад, сын Бедадов, который поразил Мадианитян на поле Моава; имя городу его: Авив.
+</p>
+<div class="num">47</div><p id="n47">И умер Гадад, и воцарился по нем Самла, из Масреки.
+</p>
+<div class="num">48</div><p id="n48">И умер Самла, и воцарился по нем Саул из Реховофа, <i>что</i> при реке.
+</p>
+<div class="num">49</div><p id="n49">И умер Саул, и воцарился по нем Баал-Ханан, сын Ахбора.
+</p>
+<div class="num">50</div><p id="n50">И умер Баал-Ханан, и воцарился по нем Гадар; имя городу его Пау; имя жене его Мегетавеель, дочь Матреда, дочь Мезагава.
+</p>
+<div class="num">51</div><p id="n51">И умер Гадар. И были старейшины у Едома: старейшина Фимна, старейшина Алва, старейшина Иетеф,
+</p>
+<div class="num">52</div><p id="n52">старейшина Оливема, старейшина Эла, старейшина Пинон,
+</p>
+<div class="num">53</div><p id="n53">старейшина Кеназ, старейшина Феман, старейшина Мивцар,
+</p>
+<div class="num">54</div><p id="n54">старейшина Магдиил, старейшина Ирам. Вот старейшины Идумейские.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para1.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

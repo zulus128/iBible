@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eccl.cs.html">Е#кклесіaст</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA ѕ7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1"><nobr>Е$сть</nobr> лукaвствіе, є4же ви1дэхъ под8 с0лнцемъ, и3 мн0го є4сть над8 человёкомъ:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">мyжъ, є3мyже дaстъ бGъ богaтство и3 и3мёніе и3 слaву, и3 нёсть лишazй души2 своeй t всёхъ, и4хже вожделёетъ, и3 не дaстъ є3мY бGъ влaсти t негw2 ћсти, ћкw чyждь мyжъ ћсти и4мать t негw2. И# сіE суетA и3 недyгъ ѕ0лъ є4сть.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ѓще роди1тъ мyжъ сто2 (ч†дъ) и3 лBта мнHга поживeтъ, и3 мн0зи бyдутъ днjе лётъ є3гw2, и3 душA є3гw2 не насhтитсz t благостhни, и3 погребeніz не бhсть є3мY, рёхъ: блaгъ пaче є3гw2 и4звергъ,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">ћкw въ суетЁ пріи1де и3 во тмY и4детъ, и3 во тмЁ и4мz є3гw2 покрhетсz:
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и3 с0лнца не ви1дэ, нижE разумЁ, пок0й семY пaче тогw2:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и3 поживE тhсzщу лётъ сугyбw, и3 благостhни не ви1дэ: є3дA не во є3ди1но мёсто <nobr>вс‰</nobr> и4дутъ;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Вeсь трyдъ человёчь во ўстA є3гw2, и3 душA є3гw2 не и3сп0лнитсz.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ћкw к0е и3з8oби1ліе (человёку) мyдрому пaче безyмнагw; понeже ни1щь познA ходи1ти проти1ву животA.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Блaго видёніе џчію пaче ходsщагw душeю. И# сE сyетствіе и3 произволeніе дyха.
+</p>
+<div class="num">10</div><p id="n10">Ѓще что2 бhсть, ўжE и3меновaсz и4мz є3гw2, и3 познaсz, є4же є4сть человёкъ и3 не возм0жетъ суди1тисz съ крэпчaйшимъ пaче себє2:
+</p>
+<div class="num">11</div><p id="n11">ћкw сyть словесA мнHга ўмнож†ющаz суетY.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eccl.7.cs.html">главA з7</a></div></div>
+
+</body>
+</html>

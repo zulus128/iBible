@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.cs.html">Pалти1рь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  pал0мъ р}i
+  </p>
+
+
+  <div class="main-text">
+<p id="a0">Ґллилyіа, <nobr>R}‹.</nobr>
+</p>
+<div class="num">&nbsp;1</div><p id="n1">Бlжeни непор0чніи въ пyть [въ пути2], ходsщіи въ зак0нэ гDни.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Бlжeни и3спытaющіи свидBніz є3гw2, всёмъ с®цемъ взhщутъ є3го2.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Не дёлающіи бо беззак0ніz въ путeхъ є3гw2 ходи1ша.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Ты2 заповёдалъ є3си2 зaпwвэди <nobr>тво‰</nobr> сохрани1ти ѕэлw2:
+</p>
+<div class="num">&nbsp;5</div><p id="n5">дабы2 и3спрaвилисz путіE мои2, сохрани1ти њправд†ніz <nobr>тво‰.</nobr>
+</p>
+<div class="num">&nbsp;6</div><p id="n6">ТогдA не постыжyсz, внегдA призрёти ми2 на <nobr>вс‰</nobr> зaпwвэди <nobr>тво‰.</nobr>
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И#сповёмсz тебЁ въ прaвости сeрдца, внегдA научи1тимисz судбaмъ прaвды твоеS.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Њправд†ніz <nobr>тво‰</nobr> сохраню2: не њстaви менE до ѕэлA.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Въ чес0мъ и3спрaвитъ ю3нёйшій пyть св0й; внегдA сохрани1ти словесA <nobr>тво‰.</nobr>
+</p>
+<div class="num">10</div><p id="n10">Всёмъ сeрдцемъ мои1мъ взыскaхъ тебE: не tри1ни менE t зaповэдій твои1хъ.
+</p>
+<div class="num">11</div><p id="n11">Въ сeрдцы моeмъ скрhхъ словесA <nobr>тво‰,</nobr> ћкw да не согрэшY тебЁ.
+</p>
+<div class="num">12</div><p id="n12">Блгcвeнъ є3си2, гDи: научи1 мz њправдaніємъ твои6мъ.
+</p>
+<div class="num">13</div><p id="n13">Ўстнaма мои1ма возвэсти1хъ <nobr>вс‰</nobr> судбы6 ќстъ твои1хъ.
+</p>
+<div class="num">14</div><p id="n14">На пути2 свидёній твои1хъ наслади1хсz, ћкw њ всsкомъ богaтствэ.
+</p>
+<div class="num">15</div><p id="n15">Въ зaповэдехъ твои1хъ поглумлю1сz, и3 ўразумёю пути6 <nobr>тво‰.</nobr>
+</p>
+<div class="num">16</div><p id="n16">Во њправдaніихъ твои1хъ поучyсz: не забyду словeсъ твои1хъ.
+</p>
+<div class="num">17</div><p id="n17">Воздaждь рабY твоемY: живи1 мz, и3 сохраню2 словесA <nobr>тво‰.</nobr>
+</p>
+<div class="num">18</div><p id="n18">Tкрhй џчи мои2, и3 ўразумёю чудесA t зак0на твоегw2.
+</p>
+<div class="num">19</div><p id="n19">Пришлeцъ ѓзъ є4смь на земли2: не скрhй t менє2 зaпwвэди <nobr>тво‰.</nobr>
+</p>
+<div class="num">20</div><p id="n20">Возлюби2 душA моS возжелaти судбы6 <nobr>тво‰</nobr> на всsкое врeмz.
+</p>
+<div class="num">21</div><p id="n21">Запрети1лъ є3си2 гHрдымъ: пр0клzти ўклонsющіисz t зaповэдій твои1хъ.
+</p>
+<div class="num">22</div><p id="n22">Tими2 t менє2 пон0съ [поношeніе] и3 ўничижeніе, ћкw свидёній твои1хъ взыскaхъ.
+</p>
+<div class="num">23</div><p id="n23"><nobr>И$бо</nobr> сэд0ша <nobr>кн‰зи</nobr> и3 на мS клеветaху, рaбъ же тв0й глумлsшесz во њправдaніихъ твои1хъ:
+</p>
+<div class="num">24</div><p id="n24">и4бо свидBніz <nobr>тво‰</nobr> поучeніе моE є4сть, и3 совёти мои2 њправд†ніz <nobr>тво‰.</nobr>
+</p>
+<div class="num">25</div><p id="n25">ПрильпE земли2 душA моS: живи1 мz по словеси2 твоемY.
+</p>
+<div class="num">26</div><p id="n26">Пути6 <nobr>мо‰</nobr> возвэсти1хъ, и3 ўслhшалъ мS є3си2: научи1 мz њправдaніємъ твои6мъ.
+</p>
+<div class="num">27</div><p id="n27">Пyть њправдaній твои1хъ вразуми1 ми, и3 поглумлю1сz въ чудесёхъ твои1хъ.
+</p>
+<div class="num">28</div><p id="n28">ВоздремA душA моS t ўнhніz: ўтверди1 мz въ словесёхъ твои1хъ.
+</p>
+<div class="num">29</div><p id="n29">Пyть непрaвды tстaви t менє2 и3 зак0номъ твои1мъ поми1луй мS.
+</p>
+<div class="num">30</div><p id="n30">Пyть и4стины и3зв0лихъ и3 судбы6 <nobr>тво‰</nobr> не забhхъ.
+</p>
+<div class="num">31</div><p id="n31">Прилэпи1хсz свидёніємъ твои6мъ, гDи, не посрами2 менE.
+</p>
+<div class="num">32</div><p id="n32">Пyть зaповэдій твои1хъ тек0хъ, є3гдA разшири1лъ є3си2 сeрдце моE.
+</p>
+<div class="num">33</div><p id="n33">Законоположи2 мнЁ, гDи, пyть њправдaній твои1хъ, и3 взыщY и5 вhну:
+</p>
+<div class="num">34</div><p id="n34">вразуми1 мz, и3 и3спытaю зак0нъ тв0й и3 сохраню2 и5 всёмъ сeрдцемъ мои1мъ.
+</p>
+<div class="num">35</div><p id="n35">Настaви мS на стезю2 зaповэдій твои1хъ, ћкw тyю восхотёхъ.
+</p>
+<div class="num">36</div><p id="n36">Приклони2 сeрдце моE во свидBніz <nobr>тво‰,</nobr> ґ не въ лихои1мство.
+</p>
+<div class="num">37</div><p id="n37">Tврати2 џчи мои2 є4же не ви1дэти суеты2: въ пути2 твоeмъ живи1 мz.
+</p>
+<div class="num">38</div><p id="n38">Постaви рабY твоемY сл0во твоE въ стрaхъ тв0й.
+</p>
+<div class="num">39</div><p id="n39">Tими2 поношeніе моE, є4же непщевaхъ: ћкw судбы6 <nobr>тво‰</nobr> бlги.
+</p>
+<div class="num">40</div><p id="n40">СE, возжелaхъ зaпwвэди <nobr>тво‰:</nobr> въ прaвдэ твоeй живи1 мz.
+</p>
+<div class="num">41</div><p id="n41">И# да пріи1детъ на мS млcть твоS, гDи, спcніе твоE по словеси2 твоемY:
+</p>
+<div class="num">42</div><p id="n42">и3 tвэщaю поношaющымъ ми2 сл0во, ћкw ўповaхъ на словесA <nobr>тво‰.</nobr>
+</p>
+<div class="num">43</div><p id="n43">И# не tими2 t ќстъ мои1хъ словесE и4стинна до ѕэлA, ћкw на судбы6 <nobr>тво‰</nobr> ўповaхъ:
+</p>
+<div class="num">44</div><p id="n44">и3 сохраню2 зак0нъ тв0й вhну, въ вёкъ и3 въ вёкъ вёка.
+</p>
+<div class="num">45</div><p id="n45">И# хождaхъ въ широтЁ, ћкw зaпwвэди <nobr>тво‰</nobr> взыскaхъ:
+</p>
+<div class="num">46</div><p id="n46">и3 глаг0лахъ њ свидёніихъ твои1хъ пред8 цари6 и3 не стыдsхсz:
+</p>
+<div class="num">47</div><p id="n47">и3 поучaхсz въ зaповэдехъ твои1хъ, ±же возлюби1хъ ѕэлw2:
+</p>
+<div class="num">48</div><p id="n48">и3 воздвиг0хъ рyцэ мои2 къ зaповэдемъ твои6мъ, ±же возлюби1хъ, и3 глумлsхсz во њправдaніихъ твои1хъ.
+</p>
+<div class="num">49</div><p id="n49">Помzни2 словесA <nobr>тво‰</nobr> рабY твоемY, и4хже ўповaніе дaлъ ми2 є3си2.
+</p>
+<div class="num">50</div><p id="n50">Т0 мz ўтёши во смирeніи моeмъ, ћкw сл0во твоE живи1 мz.
+</p>
+<div class="num">51</div><p id="n51">Г0рдіи законопреступовaху до ѕэлA: t зак0на же твоегw2 не ўклони1хсz.
+</p>
+<div class="num">52</div><p id="n52">Помzнyхъ судбы6 <nobr>тво‰</nobr> t вёка, гDи, и3 ўтёшихсz.
+</p>
+<div class="num">53</div><p id="n53">Печaль пріsтъ мS t грBшникъ, њставлsющихъ зак0нъ тв0й.
+</p>
+<div class="num">54</div><p id="n54">ПBта бsху мнЁ њправд†ніz <nobr>тво‰</nobr> на мёстэ пришeлствіz моегw2.
+</p>
+<div class="num">55</div><p id="n55">Помzнyхъ въ нощи2 и4мz твоE, гDи, и3 сохрани1хъ зак0нъ тв0й.
+</p>
+<div class="num">56</div><p id="n56">Сeй бhсть мнЁ, ћкw њправдaній твои1хъ взыскaхъ.
+</p>
+<div class="num">57</div><p id="n57">Чaсть моS є3си2, гDи: рёхъ сохрани1ти зак0нъ тв0й.
+</p>
+<div class="num">58</div><p id="n58">Помоли1хсz лицY твоемY всёмъ сeрдцемъ мои1мъ: поми1луй мS по словеси2 твоемY.
+</p>
+<div class="num">59</div><p id="n59">Помhслихъ пути6 <nobr>тво‰</nobr> и3 возврати1хъ н0зэ мои2 во свидBніz <nobr>тво‰.</nobr>
+</p>
+<div class="num">60</div><p id="n60">Ўгот0вихсz и3 не смути1хсz сохрани1ти зaпwвэди <nobr>тво‰.</nobr>
+</p>
+<div class="num">61</div><p id="n61">Ќжz грBшникъ њбzзaшасz мнЁ, и3 зак0на твоегw2 не забhхъ.
+</p>
+<div class="num">62</div><p id="n62">Полyнощи востaхъ и3сповёдатисz тебЁ њ судбaхъ прaвды твоеS.
+</p>
+<div class="num">63</div><p id="n63">Причaстникъ ѓзъ є4смь всBмъ боsщымсz тебє2 и3 хранsщымъ зaпwвэди <nobr>тво‰.</nobr>
+</p>
+<div class="num">64</div><p id="n64">Млcти твоеS, гDи, и3сп0лнь землS: њправдaніємъ твои6мъ научи1 мz.
+</p>
+<div class="num">65</div><p id="n65">Бlгость сотвори1лъ є3си2 съ раб0мъ твои1мъ, гDи, по словеси2 твоемY:
+</p>
+<div class="num">66</div><p id="n66">бlгости и3 наказaнію и3 рaзуму научи1 мz, ћкw зaповэдемъ твои6мъ вёровахъ.
+</p>
+<div class="num">67</div><p id="n67">Прeжде дaже не смири1тимисz, ѓзъ прегрэши1хъ: сегw2 рaди сл0во твоE сохрани1хъ.
+</p>
+<div class="num">68</div><p id="n68">Бlгъ є3си2 ты2, гDи: и3 бlгостію твоeю научи1 мz њправдaніємъ твои6мъ.
+</p>
+<div class="num">69</div><p id="n69">Ўмн0жисz на мS непрaвда г0рдыхъ: ѓзъ же всёмъ сeрдцемъ мои1мъ и3спытaю зaпwвэди <nobr>тво‰.</nobr>
+</p>
+<div class="num">70</div><p id="n70">Ўсыри1сz ћкw млеко2 сeрдце и4хъ: ѓзъ же зак0ну твоемY поучи1хсz.
+</p>
+<div class="num">71</div><p id="n71">Бlго мнЁ, ћкw смири1лъ мS є3си2, ћкw да научyсz њправдaніємъ твои6мъ.
+</p>
+<div class="num">72</div><p id="n72">Бlгъ мнЁ зак0нъ ќстъ твои1хъ пaче тhсzщъ злaта и3 сребрA.
+</p>
+<div class="num">73</div><p id="n73">Рyце твои2 сотвори1стэ мS и3 создaстэ мS: вразуми1 мz, и3 научyсz зaповэдемъ твои6мъ.
+</p>
+<div class="num">74</div><p id="n74">Боsщіисz тебє2 ќзрzтъ мS и3 возвеселsтсz, ћкw на словесA <nobr>тво‰</nobr> ўповaхъ.
+</p>
+<div class="num">75</div><p id="n75">Разумёхъ, гDи, ћкw прaвда судбы6 <nobr>тво‰,</nobr> и3 вои1стинну смири1лъ мS є3си2.
+</p>
+<div class="num">76</div><p id="n76">Бyди же млcть твоS, да ўтёшитъ мS, по словеси2 твоемY рабY твоемY:
+</p>
+<div class="num">77</div><p id="n77">да пріи1дутъ мнЁ щедрHты <nobr>тво‰,</nobr> и3 жи1въ бyду, ћкw зак0нъ тв0й поучeніе моE є4сть.
+</p>
+<div class="num">78</div><p id="n78">Да постыдsтсz г0рдіи, ћкw непрaведнw беззак0нноваша на мS: ѓзъ же поглумлю1сz [размышлsти бyду] въ зaповэдехъ твои1хъ.
+</p>
+<div class="num">79</div><p id="n79">Да њбратsтъ мS боsщіисz тебє2 и3 вёдzщіи свидBніz <nobr>тво‰.</nobr>
+</p>
+<div class="num">80</div><p id="n80">Бyди сeрдце моE непор0чно во њправдaніихъ твои1хъ, ћкw да не постыжyсz.
+</p>
+<div class="num">81</div><p id="n81">И#зчезaетъ во спcніе твоE душA моS, на словесA <nobr>тво‰</nobr> ўповaхъ:
+</p>
+<div class="num">82</div><p id="n82">и3зчез0ша џчи мои2 въ сл0во твоE, глаг0люще: когдA ўтёшиши мS;
+</p>
+<div class="num">83</div><p id="n83">занE бhхъ ћкw мёхъ на слaнэ: њправдaній твои1хъ не забhхъ.
+</p>
+<div class="num">84</div><p id="n84">Коли1кw є4сть днjй рабA твоегw2; когдA сотвори1ши ми2 t гонsщихъ мS сyдъ;
+</p>
+<div class="num">85</div><p id="n85">Повёдаша мнЁ законопрест{пницы глумлє1ніz, но не ћкw зак0нъ тв0й, гDи.
+</p>
+<div class="num">86</div><p id="n86"><nobr>Вс‰</nobr> зaпwвэди <nobr>тво‰</nobr> и4стина: непрaведнw погнaша мS, помози1 ми.
+</p>
+<div class="num">87</div><p id="n87">Вмaлэ не скончaша менE на земли2: ѓзъ же не њстaвихъ зaповэдій твои1хъ.
+</p>
+<div class="num">88</div><p id="n88">По млcти твоeй живи1 мz, и3 сохраню2 свидBніz ќстъ твои1хъ.
+</p>
+<div class="num">89</div><p id="n89">Во вёкъ, гDи, сл0во твоE пребывaетъ на нб7си2.
+</p>
+<div class="num">90</div><p id="n90">Въ р0дъ и3 р0дъ и4стина твоS: њсновaлъ є3си2 зeмлю, и3 пребывaетъ.
+</p>
+<div class="num">91</div><p id="n91">Ўчинeніемъ твои1мъ пребывaетъ дeнь: ћкw всsчєскаz рабHтна тебЁ.
+</p>
+<div class="num">92</div><p id="n92">Ћкw ѓще бы не зак0нъ тв0й поучeніе моE бhлъ, тогдA ќбw поги1блъ бhхъ во смирeніи моeмъ:
+</p>
+<div class="num">93</div><p id="n93">во вёкъ не забyду њправдaній твои1хъ, ћкw въ ни1хъ њживи1лъ мS є3си2.
+</p>
+<div class="num">94</div><p id="n94">Тв0й є4смь ѓзъ, сп7си1 мz: ћкw њправдaній твои1хъ взыскaхъ.
+</p>
+<div class="num">95</div><p id="n95">МенE ждaша грBшницы погуби1ти мS: свидBніz <nobr>тво‰</nobr> разумёхъ.
+</p>
+<div class="num">96</div><p id="n96">Всsкіz кончи1ны ви1дэхъ конeцъ: широкA зaповэдь твоS ѕэлw2.
+</p>
+<div class="num">97</div><p id="n97">К0ль возлюби1хъ зак0нъ тв0й, гDи: вeсь дeнь поучeніе моE є4сть.
+</p>
+<div class="num">98</div><p id="n98">Пaче вр†гъ мои1хъ ўмудри1лъ мS є3си2 зaповэдію твоeю, ћкw въ вёкъ моS є4сть.
+</p>
+<div class="num">99</div><p id="n99">Пaче всёхъ ўчaщихъ мS разумёхъ, ћкw свидBніz <nobr>тво‰</nobr> поучeніе моE є4сть.
+</p>
+<div class="num">100</div><p id="n100">Пaче стaрєцъ разумёхъ, ћкw зaпwвэди <nobr>тво‰</nobr> взыскaхъ.
+</p>
+<div class="num">101</div><p id="n101">T всsкагw пути2 лукaва возбрани1хъ ногaмъ мои6мъ, ћкw да сохраню2 словесA <nobr>тво‰:</nobr>
+</p>
+<div class="num">102</div><p id="n102">t судeбъ твои1хъ не ўклони1хсz, ћкw ты2 законоположи1лъ ми2 є3си2.
+</p>
+<div class="num">103</div><p id="n103">К0ль сладк† гортaни моемY словесA <nobr>тво‰:</nobr> пaче мeда ўстHмъ мои6мъ.
+</p>
+<div class="num">104</div><p id="n104">T зaповэдій твои1хъ разумёхъ: сегw2 рaди возненави1дэхъ всsкъ пyть непрaвды.
+</p>
+<div class="num">105</div><p id="n105">Свэти1лникъ ногaма мои1ма зак0нъ тв0й, и3 свётъ стезsмъ мои6мъ.
+</p>
+<div class="num">106</div><p id="n106">Клsхсz и3 постaвихъ сохрани1ти судбы6 прaвды твоеS.
+</p>
+<div class="num">107</div><p id="n107">Смири1хсz до ѕэлA: гDи, живи1 мz по словеси2 твоемY.
+</p>
+<div class="num">108</div><p id="n108">ВHльнаz ќстъ мои1хъ бlговоли1 же, гDи, и3 судбaмъ твои6мъ научи1 мz.
+</p>
+<div class="num">109</div><p id="n109">ДушA моS въ рукY твоє1ю [Ґлеx.: моє1ю] вhну, и3 зак0на твоегw2 не забhхъ.
+</p>
+<div class="num">110</div><p id="n110">Положи1ша грBшницы сёть мнЁ: и3 t зaповэдій твои1хъ не заблуди1хъ.
+</p>
+<div class="num">111</div><p id="n111">Наслёдовахъ свидBніz <nobr>тво‰</nobr> во вёкъ, ћкw рaдованіе сeрдца моегw2 сyть:
+</p>
+<div class="num">112</div><p id="n112">приклони1хъ сeрдце моE сотвори1ти њправд†ніz <nobr>тво‰</nobr> въ вёкъ за воздаsніе.
+</p>
+<div class="num">113</div><p id="n113">Законопрест{пныz возненави1дэхъ, зак0нъ же тв0й возлюби1хъ.
+</p>
+<div class="num">114</div><p id="n114">Пом0щникъ м0й и3 застyпникъ м0й є3си2 ты2: на словесA <nobr>тво‰</nobr> ўповaхъ.
+</p>
+<div class="num">115</div><p id="n115">Ўклони1тесz t менє2, лукaвнующіи, и3 и3спытaю зaпwвэди бGа моегw2.
+</p>
+<div class="num">116</div><p id="n116">Заступи1 мz по словеси2 твоемY, и3 жи1въ бyду: и3 не посрами2 менE t чazніz моегw2:
+</p>
+<div class="num">117</div><p id="n117">помози1 ми, и3 сп7сyсz, и3 поучyсz во њправдaніихъ твои1хъ вhну.
+</p>
+<div class="num">118</div><p id="n118">Ўничижи1лъ є3си2 <nobr>вс‰</nobr> tступaющыz t њправдaній твои1хъ: ћкw непрaведно помышлeніе и4хъ.
+</p>
+<div class="num">119</div><p id="n119">Преступaющыz непщевaхъ <nobr>вс‰</nobr> грBшныz земли2: сегw2 рaди возлюби1хъ свидBніz <nobr>тво‰.</nobr>
+</p>
+<div class="num">120</div><p id="n120">Пригвозди2 стрaху твоемY плHти <nobr>мо‰:</nobr> t судeбъ бо твои1хъ ўбоsхсz.
+</p>
+<div class="num">121</div><p id="n121">Сотвори1хъ сyдъ и3 прaвду: не предaждь менE њби1дzщымъ мS.
+</p>
+<div class="num">122</div><p id="n122">Воспріими2 рабA твоего2 во бlго, да не њклеветaютъ менE г0рдіи.
+</p>
+<div class="num">123</div><p id="n123">Џчи мои2 и3зчез0стэ во спcніе твоE и3 въ сл0во прaвды твоеS:
+</p>
+<div class="num">124</div><p id="n124">сотвори2 съ раб0мъ твои1мъ по млcти твоeй, и3 њправдaніємъ твои6мъ научи1 мz.
+</p>
+<div class="num">125</div><p id="n125">Рaбъ тв0й є4смь ѓзъ: вразуми1 мz, и3 ўвёмъ свидBніz <nobr>тво‰.</nobr>
+</p>
+<div class="num">126</div><p id="n126">Врeмz сотвори1ти гDеви: разори1ша зак0нъ тв0й.
+</p>
+<div class="num">127</div><p id="n127">Сегw2 рaди возлюби1хъ зaпwвэди <nobr>тво‰</nobr> пaче злaта и3 топaзіа.
+</p>
+<div class="num">128</div><p id="n128">Сегw2 рaди ко всBмъ зaповэдемъ твои6мъ направлsхсz, всsкъ пyть непрaвды возненави1дэхъ.
+</p>
+<div class="num">129</div><p id="n129">Ди6вна свидBніz <nobr>тво‰:</nobr> сегw2 рaди и3спытA <nobr>|</nobr> душA моS.
+</p>
+<div class="num">130</div><p id="n130">Kвлeніе словeсъ твои1хъ просвэщaетъ и3 вразумлsетъ младeнцы.
+</p>
+<div class="num">131</div><p id="n131">ЎстA <nobr>мо‰</nobr> tверз0хъ и3 привлек0хъ дyхъ, ћкw зaповэдій твои1хъ желaхъ.
+</p>
+<div class="num">132</div><p id="n132">При1зри на мS и3 поми1луй мS, по судY лю1бzщихъ и4мz твоE.
+</p>
+<div class="num">133</div><p id="n133">Стwпы2 <nobr>мо‰</nobr> напрaви по словеси2 твоемY, и3 да не њбладaетъ мн0ю всsкое беззак0ніе:
+</p>
+<div class="num">134</div><p id="n134">и3збaви мS t клеветы2 человёческіz, и3 сохраню2 зaпwвэди <nobr>тво‰.</nobr>
+</p>
+<div class="num">135</div><p id="n135">ЛицE твоE просвэти2 на рабA твоего2 и3 научи1 мz њправдaніємъ твои6мъ.
+</p>
+<div class="num">136</div><p id="n136">И#схHдища водн†z и3звед0стэ џчи мои2, понeже не сохрани1хъ зак0на твоегw2.
+</p>
+<div class="num">137</div><p id="n137">Првdнъ є3си2, гDи, и3 прaви суди2 твои2:
+</p>
+<div class="num">138</div><p id="n138">заповёдалъ є3си2 прaвду свидBніz <nobr>тво‰,</nobr> и3 и4стину ѕэлw2.
+</p>
+<div class="num">139</div><p id="n139">И#стazла мS є4сть рeвность твоS: ћкw забhша словесA <nobr>тво‰</nobr> врази2 мои2.
+</p>
+<div class="num">140</div><p id="n140">Разжжeно сл0во твоE ѕэлw2, и3 рaбъ тв0й возлюби2 є5.
+</p>
+<div class="num">141</div><p id="n141">Ю#нёйшій ѓзъ є4смь и3 ўничижeнъ: њправдaній твои1хъ не забhхъ.
+</p>
+<div class="num">142</div><p id="n142">Прaвда твоS прaвда во вёкъ, и3 зак0нъ тв0й и4стина.
+</p>
+<div class="num">143</div><p id="n143">СкHрби и3 нyжди њбрэт0ша мS: зaпwвэди <nobr>тво‰</nobr> поучeніе моE.
+</p>
+<div class="num">144</div><p id="n144">Прaвда свидBніz <nobr>тво‰</nobr> въ вёкъ: вразуми1 мz, и3 жи1въ бyду.
+</p>
+<div class="num">145</div><p id="n145">Воззвaхъ всёмъ сeрдцемъ мои1мъ, ўслhши мS, гDи: њправд†ніz <nobr>тво‰</nobr> взыщY.
+</p>
+<div class="num">146</div><p id="n146">Воззвaхъ ти2, сп7си1 мz, и3 сохраню2 свидBніz <nobr>тво‰.</nobr>
+</p>
+<div class="num">147</div><p id="n147">Предвари1хъ въ безг0діи и3 воззвaхъ: на словесA <nobr>тво‰</nobr> ўповaхъ.
+</p>
+<div class="num">148</div><p id="n148">Предвари1стэ џчи мои2 ко ќтру, поучи1тисz словесє1мъ твои6мъ.
+</p>
+<div class="num">149</div><p id="n149">Глaсъ м0й ўслhши, гDи, по млcти твоeй: по судбЁ твоeй живи1 мz.
+</p>
+<div class="num">150</div><p id="n150">Прибли1жишасz гонsщіи мS беззак0ніемъ: t зак0на же твоегw2 ўдали1шасz.
+</p>
+<div class="num">151</div><p id="n151">Бли1з8 є3си2 ты2, гDи, и3 вси2 путіE твои2 и4стина.
+</p>
+<div class="num">152</div><p id="n152">И#спeрва познaхъ t свидёній твои1хъ, ћкw въ вёкъ њсновaлъ <nobr>|</nobr> є3си2.
+</p>
+<div class="num">153</div><p id="n153">Ви1ждь смирeніе моE и3 и3зми1 мz: ћкw зак0на твоегw2 не забhхъ.
+</p>
+<div class="num">154</div><p id="n154">Суди2 сyдъ м0й и3 и3збaви мS: словесE рaди твоегw2 живи1 мz.
+</p>
+<div class="num">155</div><p id="n155">Далeче t грBшникъ спcніе, ћкw њправдaній твои1хъ не взыскaша.
+</p>
+<div class="num">156</div><p id="n156">ЩедрHты <nobr>тво‰</nobr> мнHги, гDи: по судбЁ твоeй живи1 мz.
+</p>
+<div class="num">157</div><p id="n157">Мн0зи и3згонsщіи мS и3 стужaющіи ми2: t свидёній твои1хъ не ўклони1хсz.
+</p>
+<div class="num">158</div><p id="n158">Ви1дэхъ неразумэвaющыz и3 и3стazхъ: ћкw словeсъ твои1хъ не сохрани1ша.
+</p>
+<div class="num">159</div><p id="n159">Ви1ждь, ћкw зaпwвэди <nobr>тво‰</nobr> возлюби1хъ: гDи, по млcти твоeй живи1 мz.
+</p>
+<div class="num">160</div><p id="n160">Начaло словeсъ твои1хъ и4стина, и3 во вёкъ <nobr>вс‰</nobr> судбы6 прaвды твоеS.
+</p>
+<div class="num">161</div><p id="n161"><nobr>Кн‰зи</nobr> погнaша мS тyне: и3 t словeсъ твои1хъ ўбоsсz сeрдце моE.
+</p>
+<div class="num">162</div><p id="n162">Возрaдуюсz ѓзъ њ словесёхъ твои1хъ, ћкw њбрэтazй корhсть мн0гу.
+</p>
+<div class="num">163</div><p id="n163">Непрaвду возненави1дэхъ и3 њмерзи1хъ: зак0нъ же тв0й возлюби1хъ.
+</p>
+<div class="num">164</div><p id="n164">Седмери1цею днeмъ хвали1хъ тS њ судбaхъ прaвды твоеS.
+</p>
+<div class="num">165</div><p id="n165">Ми1ръ мн0гъ лю1бzщымъ зак0нъ тв0й, и3 нёсть и5мъ соблaзна.
+</p>
+<div class="num">166</div><p id="n166">Чazхъ спcніz твоегw2, гDи, и3 зaпwвэди <nobr>тво‰</nobr> возлюби1хъ.
+</p>
+<div class="num">167</div><p id="n167">Сохрани2 душA моS свидBніz <nobr>тво‰</nobr> и3 возлюби2 <nobr>|</nobr> ѕэлw2.
+</p>
+<div class="num">168</div><p id="n168">Сохрани1хъ зaпwвэди <nobr>тво‰</nobr> и3 свидBніz <nobr>тво‰,</nobr> ћкw вси2 путіE мои2 пред8 тоб0ю, гDи.
+</p>
+<div class="num">169</div><p id="n169">Да прибли1житсz молeніе моE пред8 тS, гDи: по словеси2 твоемY вразуми1 мz.
+</p>
+<div class="num">170</div><p id="n170">Да вни1детъ прошeніе моE пред8 тS: гDи, по словеси2 твоемY и3збaви мS.
+</p>
+<div class="num">171</div><p id="n171">Tрhгнутъ ўстнЁ мои2 пёніе, є3гдA научи1ши мS њправдaніємъ твои6мъ.
+</p>
+<div class="num">172</div><p id="n172">Провэщaетъ љзhкъ м0й словесA <nobr>тво‰,</nobr> ћкw <nobr>вс‰</nobr> зaпwвэди <nobr>тво‰</nobr> прaвда.
+</p>
+<div class="num">173</div><p id="n173">Да бyдетъ рукA твоS є4же спcти1 мz, ћкw зaпwвэди <nobr>тво‰</nobr> и3зв0лихъ.
+</p>
+<div class="num">174</div><p id="n174">Возжелaхъ спcніе твоE, гDи, и3 зак0нъ тв0й поучeніе моE є4сть.
+</p>
+<div class="num">175</div><p id="n175">ЖивA бyдетъ душA моS и3 восхвaлитъ тS: и3 судбы6 <nobr>тво‰</nobr> пом0гутъ мнЁ.
+</p>
+<div class="num">176</div><p id="n176">Заблуди1хъ ћкw nвчA поги1бшее: взыщи2 рабA твоего2, ћкw зaповэдій твои1хъ не забhхъ.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.119.cs.html">pал0мъ рf7i</a></div></div>
+
+</body>
+</html>

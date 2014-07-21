@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jn.ru.html">Евангелие от Иоанна</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 20
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В первый же <i>день</i> недели Мария Магдалина приходит ко гробу рано, когда было еще темно, и видит, что камень отвален от гроба.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Итак, бежит и приходит к Симону Петру и к другому ученику, которого любил Иисус, и говорит им: унесли Господа из гроба, и не знаем, где положили Его.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Тотчас вышел Петр и другой ученик, и пошли ко гробу.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Они побежали оба вместе; но другой ученик бежал скорее Петра, и пришел ко гробу первый.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И, наклонившись, увидел лежащие пелены; но не вошел <i>во</i> <i>гроб.</i>
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Вслед за ним приходит Симон Петр, и входит во гроб, и видит одни пелены лежащие,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и плат, который был на главе Его, не с пеленами лежащий, но особо свитый на другом месте.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Тогда вошел и другой ученик, прежде пришедший ко гробу, и увидел, и уверовал.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ибо они еще не знали из Писания, что Ему надлежало воскреснуть из мертвых.
+</p>
+<div class="num">10</div><p id="n10">Итак ученики опять возвратились к себе.
+</p>
+<div class="num">11</div><p id="n11">А Мария стояла у гроба и плакала. И, когда плакала, наклонилась во гроб,
+</p>
+<div class="num">12</div><p id="n12">и видит двух Ангелов, в белом одеянии сидящих, одного у главы и другого у ног, где лежало тело Иисуса.
+</p>
+<div class="num">13</div><p id="n13">И они говорят ей: жена! что ты плачешь? Говорит им: унесли Господа моего, и не знаю, где положили Его.
+</p>
+<div class="num">14</div><p id="n14">Сказав сие, обратилась назад и увидела Иисуса стоящего; но не узнала, что это Иисус.
+</p>
+<div class="num">15</div><p id="n15">Иисус говорит ей: жена! что ты плачешь? кого ищешь? Она, думая, что это садовник, говорит Ему: господин! если ты вынес Его, скажи мне, где ты положил Его, и я возьму Его.
+</p>
+<div class="num">16</div><p id="n16">Иисус говорит ей: Мария! Она, обратившись, говорит Ему: Раввуни&#769;! - что значит: Учитель!
+</p>
+<div class="num">17</div><p id="n17">Иисус говорит ей: не прикасайся ко Мне, ибо Я еще не восшел к Отцу Моему; а иди к братьям Моим и скажи им: восхожу к Отцу Моему и Отцу вашему, и к Богу Моему и Богу вашему.
+</p>
+<div class="num">18</div><p id="n18">Мария Магдалина идет и возвещает ученикам, что видела Господа и <i>что</i> Он это сказал ей.
+</p>
+<div class="num">19</div><p id="n19">В тот же первый день недели вечером, когда двери <i>дома,</i> где собирались ученики Его, были заперты из опасения от Иудеев, пришел Иисус, и стал посреди, и говорит им: мир вам!
+</p>
+<div class="num">20</div><p id="n20">Сказав это, Он показал им руки и ноги и ребра Свои. Ученики обрадовались, увидев Господа.
+</p>
+<div class="num">21</div><p id="n21">Иисус же сказал им вторично: мир вам! как послал Меня Отец, <i>так</i> и Я посылаю вас.
+</p>
+<div class="num">22</div><p id="n22">Сказав это, дунул, и говорит им: примите Духа Святаго.
+</p>
+<div class="num">23</div><p id="n23">Кому простите грехи, тому простятся; на ком оставите, на том останутся.
+</p>
+<div class="num">24</div><p id="n24">Фома же, один из двенадцати, называемый Близнец, не был тут с ними, когда приходил Иисус.
+</p>
+<div class="num">25</div><p id="n25">Другие ученики сказали ему: мы видели Господа. Но он сказал им: если не увижу на руках Его ран от гвоздей, и не вложу перста моего в раны от гвоздей, и не вложу руки моей в ребра Его, не поверю.
+</p>
+<div class="num">26</div><p id="n26">После восьми дней опять были в доме ученики Его, и Фома с ними. Пришел Иисус, когда двери были заперты, стал посреди них и сказал: мир вам!
+</p>
+<div class="num">27</div><p id="n27">Потом говорит Фоме: подай перст твой сюда и посмотри руки Мои; подай руку твою и вложи в ребра Мои; и не будь неверующим, но верующим.
+</p>
+<div class="num">28</div><p id="n28">Фома сказал Ему в ответ: Господь мой и Бог мой!
+</p>
+<div class="num">29</div><p id="n29">Иисус говорит ему: ты поверил, потому что увидел Меня; блаженны невидевшие и уверовавшие.
+</p>
+<div class="num">30</div><p id="n30">Много сотворил Иисус пред учениками Своими и других чудес, о которых не писано в книге сей.
+</p>
+<div class="num">31</div><p id="n31">Сие же написано, дабы вы уверовали, что Иисус есть Христос, Сын Божий, и, веруя, имели жизнь во имя Его.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jn.21.ru.html">к главе 21</a></div></div>
+
+</body>
+</html>

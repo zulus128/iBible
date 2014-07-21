@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="varuh.ru.html">Книга Пророка Варуха</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Слова книги, которые написал Варух, сын Нирии, сына Маасея, сына Седекии, сына Асадия, сына Хелкии, в Вавилоне,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">в пятый год, в седьмой день месяца, в то время, когда Халдеи взяли Иерусалим и сожгли его огнем.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И прочитал Варух слова сей книги вслух Иехонии, сына Иоакимова, царя Иудейского, и вслух всего народа, пришедшего к слушанию книги,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и вслух вельмож и сыновей царских, и вслух старейшин, и вслух всего народа, от малого до большого, всех, живших в Вавилоне при реке Суд.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И они плакали, и постились, и молились пред Господом,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и собрали серебра, сколько было по силам каждого,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и послали в Иерусалим к Иоакиму, сыну Хелкии, сына Саломова, первосвященнику, и к священникам и ко всему народу, находившемуся с ним в Иерусалиме,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">когда <i>Варух</i> унесенные из храма сосуды дома Господня принял для возвращения их в землю Иудейскую, в десятый день месяца Сиуала, сосуды серебряные, которые сделал Седекия, сын Иосии, царь Иудейский,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">после того, как Навуходоносор, царь Вавилонский, переселил из Иерусалима Иехонию и князей, и узников и вельмож, и народ земли и привел его в Вавилон.
+</p>
+<div class="num">10</div><p id="n10">И говорили они: вот, мы посылаем вам серебро, и купите на это серебро всесожжения и <i>жертву</i> за грех и ладан, и приготовьте дар, и вознесите на жертвенник Господа Бога нашего,
+</p>
+<div class="num">11</div><p id="n11">и молитесь о жизни Навуходоносора, царя Вавилонского, и о жизни Валтасара, сына его, чтобы дни их были, как дни неба, на земле.
+</p>
+<div class="num">12</div><p id="n12">И даст нам Господь силу и просветит глаза наши, и мы будем жить под покровом Навуходоносора, царя Вавилонского, и под покровом Валтасара, сына его, и будем служить им много дней, и найдем милость у них.
+</p>
+<div class="num">13</div><p id="n13">Молитесь и о нас Господу Богу нашему, так как мы согрешили пред Господом, Богом нашим, и не отвратилась от нас ярость Господа и гнев Его до сего дня;
+</p>
+<div class="num">14</div><p id="n14">и прочитайте сию книгу, которую мы посылаем вам, чтобы обнародовать в доме Господнем в день праздничный и в дни нарочитые;
+</p>
+<div class="num">15</div><p id="n15">и скажите: у Господа Бога нашего - правда, а у нас - стыд на лицех, как сегодня, у всякого Иудея и у живущих в Иерусалиме,
+</p>
+<div class="num">16</div><p id="n16">и у царей наших, и у князей наших, и у священников наших, и у пророков наших, и у отцов наших,
+</p>
+<div class="num">17</div><p id="n17">оттого, что мы согрешили пред Господом,
+</p>
+<div class="num">18</div><p id="n18">и не покорялись Ему, и не слушали гласа Господа Бога нашего, чтобы ходить в повелениях Господа, которые Он дал пред лицем нашим.
+</p>
+<div class="num">19</div><p id="n19">С того дня, в который Господь вывел отцов наших из земли Египетской, и до сего дня мы были непокорны пред Господом Богом нашим и небрегли о том, что не слушали гласа Его.
+</p>
+<div class="num">20</div><p id="n20">Посему и постигли нас бедствия и клятва,- как сегодня,- которую определил Господь пред рабом Своим Моисеем в тот день, в который вывел отцов наших из земли Египетской, чтобы дать нам землю, текущую молоком и медом.
+</p>
+<div class="num">21</div><p id="n21">И не слушали мы гласа Господа Бога нашего во всех словах пророков, которых Он посылал к нам,
+</p>
+<div class="num">22</div><p id="n22">и ходили каждый по мыслям злого сердца своего, служа иным богам, совершая злые дела пред очами Господа Бога нашего.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="varuh.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

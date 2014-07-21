@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sud.ru.html">Книга Судей</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Вот те народы, которых оставил Господь, чтобы искушать ими Израильтян, всех, которые не знали о всех войнах Ханаанских,-
+</p>
+<div class="num">&nbsp;2</div><p id="n2">для того только, чтобы знали и учились войне последующие роды сынов Израилевых, которые прежде не знали ее:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">пять владельцев Филистимских, все Хананеи, Сидоняне и Евеи, живущие на горе Ливане, от горы Ваал-Ермона до входа в Емаф.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Они были <i>оставлены,</i> чтобы искушать ими Израильтян и узнать, повинуются ли они заповедям Господним, которые Он заповедал отцам их чрез Моисея.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И жили сыны Израилевы среди Хананеев, Хеттеев, Аморреев, Ферезеев, Евеев, [Гергесеев] и Иевусеев,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и брали дочерей их себе в жены, и своих дочерей отдавали за сыновей их, и служили богам их.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И сделали сыны Израилевы злое пред очами Господа, и забыли Господа Бога своего, и служили Ваалам и Астартам.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И воспылал гнев Господень на Израиля, и предал их в руки Хусарсафема, царя Месопотамского, и служили сыны Израилевы Хусарсафему восемь лет.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Тогда возопили сыны Израилевы к Господу, и воздвигнул Господь спасителя сынам Израилевым, который спас их, Гофониила, сына Кеназа, младшего брата Халевова.
+</p>
+<div class="num">10</div><p id="n10">На нем был Дух Господень, и был он судьею Израиля. Он вышел на войну [против Хусарсафема], и предал Господь в руки его Хусарсафема, царя Месопотамского, и преодолела рука его Хусарсафема.
+</p>
+<div class="num">11</div><p id="n11">И покоилась земля сорок лет. И умер Гофониил, сын Кеназа.
+</p>
+<div class="num">12</div><p id="n12">Сыны Израилевы опять стали делать злое пред очами Господа, и укрепил Господь Еглона, царя Моавитского, против Израильтян, за то, что они делали злое пред очами Господа.
+</p>
+<div class="num">13</div><p id="n13">Он собрал к себе [всех] Аммонитян и Амаликитян, и пошел и поразил Израиля, и овладели они городом Пальм.
+</p>
+<div class="num">14</div><p id="n14">И служили сыны Израилевы Еглону, царю Моавитскому, восемнадцать лет.
+</p>
+<div class="num">15</div><p id="n15">Тогда возопили сыны Израилевы к Господу, и Господь воздвигнул им спасителя Аода, сына Геры, сына Иеминиева, который был левша. И послали сыны Израилевы с ним дары Еглону, царю Моавитскому.
+</p>
+<div class="num">16</div><p id="n16">Аод сделал себе меч с двумя остриями, длиною в локоть, и припоясал его под плащом своим к правому бедру,
+</p>
+<div class="num">17</div><p id="n17">[и пришел,] и поднес дары Еглону, царю Моавитскому; Еглон же был человек очень тучный.
+</p>
+<div class="num">18</div><p id="n18">Когда поднес <i>Аод</i> все дары и проводил людей, принесших дары,
+</p>
+<div class="num">19</div><p id="n19">то сам возвратился от истуканов, которые в Галгале, и сказал: у меня есть тайное слово до тебя, царь. Он сказал: тише! И вышли от него все стоявшие при нем.
+</p>
+<div class="num">20</div><p id="n20">Аод вошел к нему: он сидел в прохладной горнице, которая была у него отдельно. И сказал Аод: у меня есть до тебя, [царь,] слово Божие. [Еглон] встал со стула [пред ним].
+</p>
+<div class="num">21</div><p id="n21">[Когда он встал,] Аод простер левую руку свою и взял меч с правого бедра своего и вонзил его в чрево его,
+</p>
+<div class="num">22</div><p id="n22">так что вошла за острием и рукоять, и тук закрыл острие, ибо <i>Аод</i> не вынул меча из чрева его, и он прошел в задние части.
+</p>
+<div class="num">23</div><p id="n23">И вышел Аод в преддверие, и затворил за собою двери горницы, и замкнул.
+</p>
+<div class="num">24</div><p id="n24">Когда он вышел, рабы <i>Еглона</i> пришли и видят, вот, двери горницы замкнуты, и говорят: верно он для нужды в прохладной комнате.
+</p>
+<div class="num">25</div><p id="n25">Ждали довольно долго, но видя, что никто не отпирает дверей горницы, взяли ключ и отперли, и вот, господин их лежит на земле мертвый.
+</p>
+<div class="num">26</div><p id="n26">Пока они недоумевали, Аод между тем ушел, [и никто о нем не думал,] прошел мимо истуканов и спасся в Сеираф.
+</p>
+<div class="num">27</div><p id="n27">Придя же [в землю Израилеву, Аод] вострубил трубою на горе Ефремовой, и сошли с ним сыны Израилевы с горы, и он <i>шел</i> впереди их.
+</p>
+<div class="num">28</div><p id="n28">И сказал им: идите за мною, ибо предал Господь [Бог] врагов ваших Моавитян в руки ваши. И пошли за ним, и перехватили переправу через Иордан к Моаву, и не давали никому переходить.
+</p>
+<div class="num">29</div><p id="n29">И побили в то время Моавитян около десяти тысяч человек, всё здоровых и сильных, и никто не убежал.
+</p>
+<div class="num">30</div><p id="n30">Так смирились в тот день Моавитяне пред Израилем, и покоилась земля восемьдесят лет. [И был Аод судьею их до самой смерти.]
+</p>
+<div class="num">31</div><p id="n31">После него был Самегар, сын Анафов, который шестьсот человек Филистимлян побил воловьим рожном; и он также спас Израиля.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sud.4.ru.html">к главе 4</a></div></div>
+
+</body>
+</html>

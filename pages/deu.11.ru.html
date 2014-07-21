@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="deu.ru.html">Второзаконие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 11
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Итак люби Господа, Бога твоего, и соблюдай, что повелено Им соблюдать, и постановления Его и законы Его и заповеди Его во все дни.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И вспомните ныне,- ибо <i>я</i> <i>говорю</i> не с сынами вашими, которые не знают и не видели наказания Господа Бога вашего,- Его величие [и] Его крепкую руку и высокую мышцу его,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">знамения Его и дела Его, которые Он сделал среди Египта с фараоном, царем Египетским, и со всею землею его,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и что Он сделал с войском Египетским, с конями его и колесницами его, которых Он потопил в водах Чермного моря, когда они гнались за вами,- и погубил их Господь [Бог] даже до сего дня;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и что Он делал для вас в пустыне, доколе вы не дошли до места сего,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и что Он сделал с Дафаном и Авироном, сынами Елиава, сына Рувимова, когда земля разверзла уста свои и среди всего Израиля поглотила их и семейства их, и шатры их, и все имущество их, которое было у них;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">ибо глаза ваши видели все великие дела Господа, которые Он сделал.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Итак соблюдайте все заповеди [Его], которые я заповедую вам сегодня, дабы вы [были живы,] укрепились и пошли и овладели землею, в которую вы переходите [за Иордан], чтоб овладеть ею;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и дабы вы жили много времени на той земле, которую клялся Господь отцам вашим дать им и семени их, на земле, в которой течет молоко и мед.
+</p>
+<div class="num">10</div><p id="n10">Ибо земля, в которую ты идешь, чтоб овладеть ею, не такова, как земля Египетская, из которой вышли вы, где ты, посеяв семя твое, поливал [ее] при помощи ног твоих, как масличный сад;
+</p>
+<div class="num">11</div><p id="n11">но земля, в которую вы переходите, чтоб овладеть ею, есть земля с горами и долинами, и от дождя небесного напояется водою,-
+</p>
+<div class="num">12</div><p id="n12">земля, о которой Господь, Бог твой, печется: очи Господа, Бога твоего, непрестанно на ней, от начала года и до конца года.
+</p>
+<div class="num">13</div><p id="n13">Если вы будете слушать заповеди Мои, которые заповедую вам сегодня, любить Господа, Бога вашего, и служить Ему от всего сердца вашего и от всей души вашей,
+</p>
+<div class="num">14</div><p id="n14">то дам земле вашей дождь в свое время, ранний и поздний; и ты соберешь хлеб твой и вино твое и елей твой;
+</p>
+<div class="num">15</div><p id="n15">и дам траву на поле твоем для скота твоего, и будешь есть и насыщаться.
+</p>
+<div class="num">16</div><p id="n16">Берегитесь, чтобы не обольстилось сердце ваше, и вы не уклонились и не стали служить иным богам и не поклонились им;
+</p>
+<div class="num">17</div><p id="n17">и тогда воспламенится гнев Господа на вас, и заключит Он небо, и не будет дождя, и земля не принесет произведений своих, и вы скоро погибнете с доброй земли, которую Господь дает вам.
+</p>
+<div class="num">18</div><p id="n18">Итак положите сии слова Мои в сердце ваше и в душу вашу, и навяжите их в знак на руку свою, и да будут они повязкою над глазами вашими;
+</p>
+<div class="num">19</div><p id="n19">и учите им сыновей своих, говоря о них, когда ты сидишь в доме твоем, и когда идешь дорогою, и когда ложишься, и когда встаешь;
+</p>
+<div class="num">20</div><p id="n20">и напиши их на косяках дома твоего и на воротах твоих,
+</p>
+<div class="num">21</div><p id="n21">дабы столько же много было дней ваших и дней детей ваших на той земле, которую Господь клялся дать отцам вашим, сколько дней небо будет над землею.
+</p>
+<div class="num">22</div><p id="n22">Ибо если вы будете соблюдать все заповеди сии, которые заповедую вам исполнять, будете любить Господа, Бога вашего, ходить всеми путями Его и прилепляться к Нему,
+</p>
+<div class="num">23</div><p id="n23">то изгонит Господь все народы сии от лица вашего, и вы овладеете народами, которые больше и сильнее вас;
+</p>
+<div class="num">24</div><p id="n24">всякое место, на которое ступит нога ваша, будет ваше; от пустыни и Ливана, от реки, реки Евфрата, даже до моря западного будут пределы ваши;
+</p>
+<div class="num">25</div><p id="n25">никто не устоит против вас: Господь, Бог ваш, наведет страх и трепет пред вами на всякую землю, на которую вы ступите, как Он говорил вам.
+</p>
+<div class="num">26</div><p id="n26">Вот, я предлагаю вам сегодня благословение и проклятие:
+</p>
+<div class="num">27</div><p id="n27">благословение, если послушаете заповедей Господа, Бога вашего, которые я заповедую вам сегодня,
+</p>
+<div class="num">28</div><p id="n28">а проклятие, если не послушаете заповедей Господа, Бога вашего, и уклонитесь от пути, который заповедую вам сегодня, и пойдете вслед богов иных, которых вы не знаете.
+</p>
+<div class="num">29</div><p id="n29">Когда введет тебя Господь, Бог твой, в ту землю, в которую ты идешь, чтоб овладеть ею, тогда произнеси благословение на горе Гаризим, а проклятие на горе Гевал:
+</p>
+<div class="num">30</div><p id="n30">вот они за Иорданом, по дороге к захождению солнца, в земле Хананеев, живущих на равнине, против Галгала, близ дубравы Море&#769;.
+</p>
+<div class="num">31</div><p id="n31">Ибо вы переходите Иордан, чтобы пойти овладеть землею, которую Господь, Бог ваш, дает вам [в удел навсегда], и овладеете ею и будете жить на ней.
+</p>
+<div class="num">32</div><p id="n32">Итак старайтесь соблюдать все постановления и законы [Его], которые предлагаю я вам сегодня.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="deu.12.ru.html">к главе 12</a></div></div>
+
+</body>
+</html>

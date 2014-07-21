@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king4.ru.html">Четвертая книга Царств</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В седьмой год Ииуя воцарился Иоас и сорок лет царствовал в Иерусалиме. Имя матери его Цивья, из Вирсавии.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И делал Иоас угодное в очах Господних во все дни свои, доколе наставлял его священник Иодай;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">только высоты не были отменены; народ еще приносил жертвы и курения на высотах.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И сказал Иоас священникам: все серебро посвящаемое, которое приносят в дом Господень, серебро от приходящих, серебро, <i>вносимое</i> за каждую душу по оценке, все серебро, сколько кому приходит на сердце принести в дом Господень,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">пусть берут священники себе, каждый от своего знакомого, и пусть исправляют они поврежденное в храме, везде, где найдется повреждение.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Но как до двадцать третьего года царя Иоаса священники не исправляли повреждений в храме,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">то царь Иоас позвал священника Иодая и священников и сказал им: почему вы не исправляете повреждений в храме? Не берите же отныне серебра у знакомых своих, а на <i>починку</i> повреждений в храме отдайте его.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И согласились священники не брать серебра у народа на исправление повреждений в храме.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И взял священник Иодай один ящик, и сделал отверстие сверху его, и поставил его подле жертвенника на правой стороне, где входили в дом Господень. И полагали туда священники, стоящие на страже у порога, все серебро, приносимое в дом Господень.
+</p>
+<div class="num">10</div><p id="n10">И когда видели, что много серебра в ящике, приходили писец царский и первосвященник, и завязывали <i>в</i> <i>мешки,</i> и пересчитывали серебро, найденное в доме Господнем;
+</p>
+<div class="num">11</div><p id="n11">и отдавали сосчитанное серебро в руки производителям работ, приставленным к дому Господню, а сии издерживали его на плотников и строителей, работавших в доме Господнем,
+</p>
+<div class="num">12</div><p id="n12">и на делателей стен и на каменотесов, также на покупку дерев и тесаных камней, для починки повреждений в доме Господнем, и на все, что расходовалось для поддержания храма.
+</p>
+<div class="num">13</div><p id="n13">Но не сделано было для дома Господня серебряных блюд, ножей, чаш <i>для</i> <i>окропления,</i> труб, всяких сосудов золотых и сосудов серебряных из серебра, приносимого в дом Господень,
+</p>
+<div class="num">14</div><p id="n14">а производителям работ отдавали его, и починивали им дом Господень.
+</p>
+<div class="num">15</div><p id="n15">И не требовали отчета от тех людей, которым поручали серебро для раздачи производителям работ, ибо они действовали честно.
+</p>
+<div class="num">16</div><p id="n16">Серебро за жертву о преступлении и серебро за жертву о грехе не вносилось в дом Господень: священникам оно принадлежало.
+</p>
+<div class="num">17</div><p id="n17">Тогда выступил в поход Азаил, царь Сирийский, и пошел войною на Геф, и взял его; и вознамерился Азаил идти на Иерусалим.
+</p>
+<div class="num">18</div><p id="n18">Но Иоас, царь Иудейский, взял все пожертвованное, что пожертвовали <i>храму</i> Иосафат, и Иорам и Охозия, отцы его, цари Иудейские, и что он сам пожертвовал, и все золото, найденное в сокровищницах дома Господня и дома царского, и послал Азаилу, царю Сирийскому; и он отступил от Иерусалима.
+</p>
+<div class="num">19</div><p id="n19">Прочее об Иоасе и обо всем, что он сделал, написано в летописи царей Иудейских.
+</p>
+<div class="num">20</div><p id="n20">И восстали слуги его, и составили заговор, и убили Иоаса в доме Милло, на дороге к Силле.
+</p>
+<div class="num">21</div><p id="n21">Его убили слуги его: Иозакар, сын Шимеаты, и Иегозавад, сын Шомеры; и он умер, и похоронили его с отцами его в городе Давидовом. И воцарился Амасия, сын его, вместо него.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king4.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

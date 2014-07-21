@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="tov.ru.html">Книга Товита</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В тот день вспомнил Товит о серебре, которое отдал на сохранение Гаваилу в Рагах Мидийских,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и сказал сам себе: я просил смерти; что же не позову сына моего Товии, чтобы объявить ему об этом, пока я не умер?
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И, призвав его, сказал: сын <i>мой</i>! когда я умру, похорони меня и не покидай матери своей; почитай ее во все дни жизни твоей, делай угодное ей и не причиняй ей огорчения.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Помни, сын мой, что она много имела скорбей из-за тебя <i>еще</i> во время чревоношения. Когда она умрет, похорони ее подле меня в одном гробе.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Во все дни помни, сын <i>мой</i>, Господа Бога нашего и не желай грешить и преступать заповеди Его. Во все дни жизни твоей делай правду и не ходи путями беззакония,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">ибо, если ты будешь поступать по истине, в делах твоих будет успех, как у всех поступающих по правде.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Из имения твоего подавай милостыню, и да не жалеет глаз твой, когда будешь творить милостыню. Ни от какого нищего не отвращай лица твоего, тогда и от тебя не отвратится лице Божие.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Когда у тебя будет много, твори из того милостыню, и когда у тебя будет мало, не бойся творить милостыню и понемногу;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">ты запасешь себе богатое сокровище на день нужды,
+</p>
+<div class="num">10</div><p id="n10">ибо милостыня избавляет от смерти и не попускает сойти во тьму.
+</p>
+<div class="num">11</div><p id="n11">Милостыня есть богатый дар для всех, кто творит ее пред Всевышним.
+</p>
+<div class="num">12</div><p id="n12">Берегись, сын <i>мой</i>, всякого <i>вида</i> распутства. Возьми себе жену из племени отцов твоих, но не бери жены иноземной, которая не из колена отца твоего, ибо мы сыны пророков. Издревле отцы наши - Ной, Авраам, Исаак и Иаков. Помни, сын <i>мой</i>, что все он брали жен из <i>среды</i> братьев своих и были благословенны в детях своих, и потомство их наследует землю.
+</p>
+<div class="num">13</div><p id="n13">Итак, сын <i>мой</i>, люби братьев твоих и не превозносись сердцем пред братьями твоими и пред сынами и дочерями народа твоего, чтобы не от них взять тебе жену, потому что от гордости - погибель и великое неустройство, а от непотребства - оскудение и разорение: непотребство есть мать голода.
+</p>
+<div class="num">14</div><p id="n14">Плата наемника, который будет работать у тебя, да не переночует у тебя, а отдавай ее тотчас: и тебе воздастся, если будешь служить Богу. Будь осторожен, сын <i>мой</i>, во всех поступках твоих и будь благоразумен во всем поведении твоем.
+</p>
+<div class="num">15</div><p id="n15">Что ненавистно тебе самому, того не делай никому. Вина до опьянения не пей, и пьянство да не ходит с тобою в пути твоем.
+</p>
+<div class="num">16</div><p id="n16">Давай алчущему от хлеба твоего и нагим от одежд твоих; от всего, в чем у тебя избыток, твори милостыни, и да не жалеет глаз твой, когда будешь творить милостыню.
+</p>
+<div class="num">17</div><p id="n17">Раздавай хлебы твои при гробе праведных, но не давай грешникам.
+</p>
+<div class="num">18</div><p id="n18">У всякого благоразумного проси совета, и не пренебрегай советом полезным.
+</p>
+<div class="num">19</div><p id="n19">Благословляй Господа Бога во всякое время и проси у Него, чтобы пути твои были правы и все дела и намерения твои благоуспешны, ибо ни один народ не властен в <i>успехе</i> начинаний, но Сам Господь ниспосылает все благое и, кого хочет, уничижает по Своей воле. Помни же, сын <i>мой</i>, заповеди мои, и да не изгладятся они из сердца твоего!
+</p>
+<div class="num">20</div><p id="n20">Теперь я открою тебе, что я отдал десять талантов серебра на сохранение Гаваилу, сыну Гавриеву, в Рагах Мидийских.
+</p>
+<div class="num">21</div><p id="n21">Не бойся, сын <i>мой</i>, что мы обнищали: у тебя много, если ты будешь бояться Господа и, удаляясь от всякого греха, делать угодное пред Ним.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="tov.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

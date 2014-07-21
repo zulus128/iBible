@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gal.ru.html">Послание к Галатам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Еще скажу: наследник, доколе в детстве, ничем не отличается от раба, хотя и господин всего:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">он подчинен попечителям и домоправителям до срока, отцом <i>назначенного.</i>
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Так и мы, доколе были в детстве, были порабощены вещественным началам мира;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">но когда пришла полнота времени, Бог послал Сына Своего (Единородного), Который родился от жены, подчинился закону,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">чтобы искупить подзаконных, дабы нам получить усыновление.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">А как вы - сыны, то Бог послал в сердца ваши Духа Сына Своего, вопиющего: "Авва, Отче!"
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Посему ты уже не раб, но сын; а если сын, то и наследник Божий через Иисуса Христа.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Но тогда, не знав Бога, вы служили <i>богам,</i> которые в существе не боги.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ныне же, познав Бога, или, лучше, получив познание от Бога, для чего возвращаетесь опять к немощным и бедным вещественным началам и хотите еще снова поработить себя им?
+</p>
+<div class="num">10</div><p id="n10">Наблюдаете дни, месяцы, времена и годы.
+</p>
+<div class="num">11</div><p id="n11">Боюсь за вас, не напрасно ли я трудился у вас.
+</p>
+<div class="num">12</div><p id="n12">Прошу вас, братия, будьте, как я, потому что и я, как вы. Вы ничем не обидели меня:
+</p>
+<div class="num">13</div><p id="n13">знаете, что, <i>хотя</i> я в немощи плоти благовествовал вам в первый раз,
+</p>
+<div class="num">14</div><p id="n14">но вы не презрели искушения моего во плоти моей и не возгнушались <i>им,</i> а приняли меня, как Ангела Божия, как Христа Иисуса.
+</p>
+<div class="num">15</div><p id="n15">Как вы были блаженны! Свидетельствую о вас, что, если бы возможно было, вы исторгли бы очи свои и отдали мне.
+</p>
+<div class="num">16</div><p id="n16">Итак, неужели я сделался врагом вашим, говоря вам истину?
+</p>
+<div class="num">17</div><p id="n17">Ревнуют по вас нечисто, а хотят вас отлучить, чтобы вы ревновали по них.
+</p>
+<div class="num">18</div><p id="n18">Хорошо ревновать в добром всегда, а не в моем только присутствии у вас.
+</p>
+<div class="num">19</div><p id="n19">Дети мои, для которых я снова в му&#769;ках рождения, доколе не изобразится в вас Христос!
+</p>
+<div class="num">20</div><p id="n20">Хотел бы я теперь быть у вас и изменить голос мой, потому что я в недоумении о вас.
+</p>
+<div class="num">21</div><p id="n21">Скажите мне вы, желающие быть под законом: разве вы не слушаете закона?
+</p>
+<div class="num">22</div><p id="n22">Ибо написано: <br /> Авраам имел двух сынов, одного от рабы, а другого от свободной.
+</p>
+<div class="num">23</div><p id="n23">Но который от рабы, тот рожден по плоти; а который от свободной, тот по обетованию.
+</p>
+<div class="num">24</div><p id="n24">В этом есть иносказание. Это два завета: один от горы Синайской, рождающий в рабство, который есть Агарь,
+</p>
+<div class="num">25</div><p id="n25">ибо Агарь означает гору Синай в Аравии и соответствует нынешнему Иерусалиму, потому что он с детьми своими в рабстве;
+</p>
+<div class="num">26</div><p id="n26">а вышний Иерусалим свободен: он - матерь всем нам.
+</p>
+<div class="num">27</div><p id="n27">Ибо написано: возвеселись, неплодная, нерождающая; воскликни и возгласи, не мучившаяся родами; потому что у оставленной гораздо более детей, нежели у имеющей мужа.
+</p>
+<div class="num">28</div><p id="n28">Мы, братия, дети обетования по Исааку.
+</p>
+<div class="num">29</div><p id="n29">Но, как тогда рожденный по плоти гнал <i>рожденного</i> по духу, так и ныне.
+</p>
+<div class="num">30</div><p id="n30">Что же говорит Писание? Изгони рабу и сына ее, ибо сын рабы не будет наследником вместе с сыном свободной.
+</p>
+<div class="num">31</div><p id="n31">Итак, братия, мы дети не рабы, но свободной.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gal.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

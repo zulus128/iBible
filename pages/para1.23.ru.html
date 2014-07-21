@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para1.ru.html">Первая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 23
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Давид, состарившись и насытившись <i>жизнью,</i> воцарил над Израилем сына своего Соломона.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И собрал всех князей Израилевых и священников и левитов,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и исчислены были левиты, от тридцати лет и выше, и было число их, считая поголовно, тридцать восемь тысяч человек.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Из них <i>назначены</i> для дела в доме Господнем двадцать четыре тысячи, писцов же и судей шесть тысяч,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и четыре тысячи привратников, и четыре тысячи прославляющих Господа на <i>музыкальных</i> орудиях, которые он сделал для прославления.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И разделил их Давид на череды по сынам Левия - Гирсону, Каафу и Мерари.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Из Гирсонян - Лаедан и Шимей.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Сыновья Лаедана: первый Иехиил, Зефам и Иоиль, трое.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Сыновья Шимея: Шеломиф, Хазиил и Гаран, трое. Они главы поколений Лаедановых.
+</p>
+<div class="num">10</div><p id="n10">Еще сыновья Шимея: Иахаф, Зиза, Иеуш и Берия. Это сыновья Шимея, четверо.
+</p>
+<div class="num">11</div><p id="n11">Иахаф был главным, Зиза вторым; Иеуш и Берия имели детей немного, и потому они были в одном счете при доме отца.
+</p>
+<div class="num">12</div><p id="n12">Сыновья Каафа: Амрам, Ицгар, Хеврон и Озиил, четверо.
+</p>
+<div class="num">13</div><p id="n13">Сыновья Амрама: Аарон и Моисей. Аарон отделен был на посвящение ко Святому Святых, он и сыновья его, на веки, чтобы совершать курение пред лицем Господа, чтобы служить Ему и благословлять именем Его на веки.
+</p>
+<div class="num">14</div><p id="n14">А Моисей, человек Божий, <i>и</i> сыновья его причтены к колену Левиину.
+</p>
+<div class="num">15</div><p id="n15">Сыновья Моисея: Гирсон и Елиезер.
+</p>
+<div class="num">16</div><p id="n16">Сыновья Гирсона: первый был Шевуил.
+</p>
+<div class="num">17</div><p id="n17">Сыновья Елиезера были: первый Рехавия. И не было у Елиезера других сыновей; у Рехавии же было очень много сыновей.
+</p>
+<div class="num">18</div><p id="n18">Сыновья Ицгара: первый Шеломиф.
+</p>
+<div class="num">19</div><p id="n19">Сыновья Хеврона: первый Иерия и второй Амария, третий Иахазиил и четвертый Иекамам.
+</p>
+<div class="num">20</div><p id="n20">Сыновья Озиила: первый Миха и второй Ишшия.
+</p>
+<div class="num">21</div><p id="n21">Сыновья Мерарины: Махли и Муши. Сыновья Махлия: Елеазар и Кис.
+</p>
+<div class="num">22</div><p id="n22">И умер Елеазар, и не было у него сыновей, а только дочери; и взяли их за себя сыновья Киса, братья их.
+</p>
+<div class="num">23</div><p id="n23">Сыновья Мушия: Махли, Едер и Иремоф - трое.
+</p>
+<div class="num">24</div><p id="n24">Вот сыновья Левиины, по домам отцов их, главы семейств, по именному счислению их поголовно, которые отправляли дела служения в доме Господнем, от двадцати лет и выше.
+</p>
+<div class="num">25</div><p id="n25">Ибо Давид сказал: Господь, Бог Израилев, дал покой народу Своему и водворил его в Иерусалиме на веки,
+</p>
+<div class="num">26</div><p id="n26">и левитам не нужно носить скинию и всякие вещи ее для служения в ней.
+</p>
+<div class="num">27</div><p id="n27">Посему, по последним повелениям Давида, исчислены левиты от двадцати лет и выше,
+</p>
+<div class="num">28</div><p id="n28">чтоб они были при сынах Аароновых, для служения дому Господню, во дворе и в пристройках, для соблюдения чистоты всего святилища и для исполнения всякой службы при доме Божием,
+</p>
+<div class="num">29</div><p id="n29">для наблюдения за хлебами предложения и пшеничною мукою для хлебного приношения и пресными лепешками, за печеным, жареным и за всякою мерою и весом,
+</p>
+<div class="num">30</div><p id="n30">и чтобы становились каждое утро благодарить и славословить Господа, также и вечером,
+</p>
+<div class="num">31</div><p id="n31">и при всех всесожжениях, возносимых Господу в субботы, в новомесячия и в праздники по числу, как предписано о них,- постоянно пред лицем Господа,
+</p>
+<div class="num">32</div><p id="n32">и чтобы охраняли скинию откровения и святилище и сынов Аароновых, братьев своих, при службах дому Господню.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para1.24.ru.html">к главе 24</a></div></div>
+
+</body>
+</html>

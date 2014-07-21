@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="esf.cs.html">Е#сfи1рь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA №
+  </p>
+
+
+  <div class="main-text">
+<p id="a0">Въ лёто втор0е цaрства ґртаxeрxа вели1кагw, въ пeрвый дeнь мцcа нісaна, с0нъ ви1дЁ мардохeй сhнъ їаjровъ, семeевъ, кісeевъ, t плeмене веніамjнz, человёкъ їудeанинъ, њбитazй въ сyсэхъ грaдэ, человёкъ вели1къ, служA во дворЁ царeвэ: бё же t плэнeнныхъ, и5хже плэни2 навуходон0соръ цaрь вавmлHнскій t їеrли1ма, со їехонjею царeмъ їудeйскимъ. И# сицево2 є3гw2 с0ніе: и3 сE, глaсъ ўжaсный, гр0ми и3 трyсъ и3 смzтeніе на земли2: и3 сE, двA ѕм‡а вели6ка произыд0ста, готHва џба междY соб0ю брaтисz, и3 бhсть глaсъ и4хъ вели1къ, и3 глaсомъ и4хъ ўгот0васz всsкъ kзhкъ на брaнь, да и3стребsтъ kзhкъ првdныхъ: и3 сE, дeнь тмh и3 мрaка, ск0рбь и3 тэснотA, и3 њѕлоблeніе и3 смzтeніе вeліе на земли2, и3 возмути1сz всsкъ kзhкъ првdнъ, боsщесz ѕл0бы и4хъ, и3 ўгот0вашасz на поги1бель, и3 возопи1ша ко гDу: t в0плz же и4хъ бhсть ѓки t мaлагw и3ст0чника рэкA вeліz, водA мн0га: и3 свётъ и3 с0лнце возсіS, и3 смирeнніи вознес0шасz и3 поzд0ша слaвныхъ. И# возбнyвъ мардохeй ви1дэвый с0ніе сіE, и3 є4же бGъ восхотЁ сотвори1ти, содержaше с0ніе сіE въ сeрдцы, и3 во всsцэмъ словеси2 хотsше разумэти є5 дaже до н0щи. И# пребывaше мардохeй во дворЁ со гавafомъ и3 faрромъ двэмA є3vнyхома царeвыма, и5же стрежaста дв0ръ: и3 слhша разглагHлствіz и4хъ, и3 совёты и4хъ и3сиытA, и3 разумЁ, ћкw гот0вzтъ рyцэ свои2 возложи1ти на царS ґртаxeрxа: и3 сказA царю2 њ ни1хъ. И# и3спытA цaрь двY є3vн{ху своє1ю, и3 и3сповBдавша повBшена бhста. И# написA цaрь словесA <nobr>сі‰</nobr> на пaмzть, и3 мардохeй написA њ словесёхъ си1хъ. И# повелЁ цaрь мардохeю служи1ти во дворЁ и3 дадE є3мY дaры за сіE. И# бЁ ґмaнъ ґмадafовъ вугeанинъ слaвенъ пред8 царeмъ и3 восхотЁ њѕл0бити мардохeа и3 людjй є3гw2 двY рaди є3vн{ху царє1ву.
+</p>
+<div class="num">&nbsp;1</div><p id="n1">И# бhсть по словесёхъ си1хъ во днeхъ ґртаxeрxа: сeй ґртаxрxъ t їндjи њбладaше сто2 двaдесzть седмію2 странaми (дaже до є3fі0піи):
+</p>
+<div class="num">&nbsp;2</div><p id="n2">во дни6 же ты6z, є3гдA сёде на прест0лэ цaрь ґртаxeрxъ въ сyсэхъ грaдэ,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">въ трeтіе лёто цaрства своегw2, сотвори2 пи1ръ другHмъ и3 пр0чымъ kзhкwмъ, и3 пє1рсскимъ и3 ми6дскимъ сл†внымъ, и3 нач†лнымъ сатрaиwмъ,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и3 по си1хъ, є3гдA показA и5мъ богaтство цaрства своегw2 и3 слaву весeліz своегw2, во сто2 џсмьдесzтъ днjй.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И# є3гдA и3сп0лнишасz днjе пи1ра, сотвори2 цaрь пи1ршество kзhкwмъ њбрётшымсz во грaдэ (сyсэхъ) на днjй шeсть во дворЁ д0му царeва,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">ўкрaшеннэмъ вmсс0нными и3 зелeиыми завёсами, простeртыми на ќжахъ вmсс0нныхъ и3 червлени1чныхъ, на к0лцахъ златhхъ и3 срeбрzныхъ, на столпёхъ мрaморныхъ и3 кaменныхъ:
+</p>
+<div class="num">&nbsp;7</div><p id="n7">лHжа зл†та и3 срє1брzна, на пом0стэ кaмене смарaгдова, и3 піннjнска и3 парjнска мрaмора, и3 плащани6цы пестротaми разли1чными разцвёчєны, w4крестъ шипцы2 разсёzни:
+</p>
+<div class="num">&nbsp;8</div><p id="n8">сосyди злaти и3 срeбрzни, и3 чaша ґнfрaxа (кaмене) предложeннаz, цэн0ю тал†нтъ три1десzть тhсzщъ: віно2 мн0го и3 слaдко, є4же сaмъ цaрь піsше: питіe же сіE не по ўстaвленному зак0ну бhсть, тaкw бо восхотЁ цaрь и3 заповёда їкон0мwмъ сотвори1ти в0лю свою2 и3 мужeй.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И# ґстjнь цари1ца сотвори2 пи1ръ женaмъ въ домY царeвэ, и3дёже цaрь ґртаxeрxъ.
+</p>
+<div class="num">10</div><p id="n10">Въ дeнь же седмhй развесели1всz цaрь, речE ґмaну и3 вазaну, и3 faррэ и3 варaзу, и3 заfолfaну и3 ґватaзу и3 fарaву, седми1мъ є3vнyхwмъ, и5же служaху пред8 царeмъ ґртаxeрxомъ,
+</p>
+<div class="num">11</div><p id="n11">привести2 (ґстjнь) цари1цу пред8 нег0, є4же воцари1ти ю5 и3 возложи1ти на ню2 вэнeцъ цaрскій и3 показaти ю5 всBмъ начaлствующымъ и3 kзhкwмъ красотY є3S, занE прекрaсна бЁ.
+</p>
+<div class="num">12</div><p id="n12">И# не послyша є3гw2 ґстjнь цари1ца пріити2 со є3vн{хи.
+</p>
+<div class="num">13</div><p id="n13">И# њпечaлисz цaрь, и3 разгнёвасz, и3 речE бли6жнимъ свои6мъ: си1це речE ґстjнь: сотвори1те u5бо њ сeмъ зак0нъ и3 сyдъ.
+</p>
+<div class="num">14</div><p id="n14">И# приступи1ша къ немY ґркесeй и3 сарсоfeй и3 малисеaръ, нач†лницы пeрсстіи и3 ми1дстіи, и5же бли1з8 царS, пeрвіи сэдsщіи при цари2,
+</p>
+<div class="num">15</div><p id="n15">и3 возвэсти1ша є3мY по зак0нwмъ, кaкw подобaетъ сотвори1ти цари1цэ ґстjни, ћкw не сотвори2 повелённыхъ t царS чрез8 є3vнyхи.
+</p>
+<div class="num">16</div><p id="n16">И# речE мухeй ко царю2 и3 къ болsрwмъ: не царS є3ди1наго њби1дэ ґстjнь цари1ца, но и3 <nobr>вс‰</nobr> кн‰зи и3 начaлники царє1вы,
+</p>
+<div class="num">17</div><p id="n17">и4бо повёда и3мъ словесA цари1цы, и3 кaкw противоречE царю2:
+</p>
+<div class="num">18</div><p id="n18">ћкоже ўбw проти1внw речE царю2 ґртаxeрxу, си1це и3 днeсь госпwжи2 жєны2 пр0чыz кнzзeй пeрсскихъ и3 ми1дскихъ, ўслhшавшz царю2 речє1ннаz t неS, дерзнyтъ тaкожде безчeствовати мужeи свои1хъ:
+</p>
+<div class="num">19</div><p id="n19">ѓще u5бо ўг0дно царю2, да повели1тъ цaрскимъ повелёніемъ, и3 да напи1шетсz по зак0нwмъ ми6дскимъ и3 пє1рсскимъ, и3 и4накw да не бyдетъ, нижE да вни1детъ ктомY цари1ца къ немY, и3 цaрство є3S да предaстъ цaрь женЁ лyчшей є3S:
+</p>
+<div class="num">20</div><p id="n20">и3 да бyдетъ ўслышанъ зак0нъ, и4же t царS, є3г0же сотвори1тъ во цaрствіи своeмъ, и3 си1це <nobr>вс‰</nobr> жєны2 возложaтъ чeсть на мyжы <nobr>сво‰</nobr> t богaта дaже до ўб0га.
+</p>
+<div class="num">21</div><p id="n21">И# ўг0дно бhсть сл0во пред8 царeмъ и3 нач†лники, и3 сотвори2 цaрь, ћкоже речE є3мY мухeй,
+</p>
+<div class="num">22</div><p id="n22">и3 послA цaрь кни6ги во всE цaрство по странaмъ по љзhку и4хъ, да бyдетъ стрaхъ и5мъ въ жили1щихъ и4хъ.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="esf.2.cs.html">главA в7</a></div></div>
+
+</body>
+</html>

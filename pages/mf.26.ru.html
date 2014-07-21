@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mf.ru.html">Евангелие от Матфея</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 26
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Когда Иисус окончил все слова сии, то сказал ученикам Своим:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">вы знаете, что через два дня будет Пасха, и Сын Человеческий предан будет на распятие.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Тогда собрались первосвященники и книжники и старейшины народа во двор первосвященника, по имени Каиафы,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и положили в совете взять Иисуса хитростью и убить;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">но говорили: только не в праздник, чтобы не сделалось возмущения в народе.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Когда же Иисус был в Вифании, в доме Симона прокаженного,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">приступила к Нему женщина с алавастровым сосудом мира драгоценного и возливала Ему возлежащему на голову.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Увидев это, ученики Его вознегодовали и говорили: к чему такая трата?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ибо можно было бы продать это миро за большую цену и дать нищим.
+</p>
+<div class="num">10</div><p id="n10">Но Иисус, уразумев сие, сказал им: что смущаете женщину? она доброе дело сделала для Меня:
+</p>
+<div class="num">11</div><p id="n11">ибо нищих всегда имеете с собою, а Меня не всегда имеете;
+</p>
+<div class="num">12</div><p id="n12">возлив миро сие на тело Мое, она приготовила Меня к погребению;
+</p>
+<div class="num">13</div><p id="n13">истинно говорю вам: где ни будет проповедано Евангелие сие в целом мире, сказано будет в память ее и о том, что она сделала.
+</p>
+<div class="num">14</div><p id="n14">Тогда один из двенадцати, называемый Иуда Искариот, пошел к первосвященникам
+</p>
+<div class="num">15</div><p id="n15">и сказал: что вы дадите мне, и я вам предам Его? Они предложили ему тридцать сребреников;
+</p>
+<div class="num">16</div><p id="n16">и с того времени он искал удобного случая предать Его.
+</p>
+<div class="num">17</div><p id="n17">В первый же день опресночный приступили ученики к Иисусу и сказали Ему: где велишь нам приготовить Тебе пасху?
+</p>
+<div class="num">18</div><p id="n18">Он сказал: пойдите в город к такому-то и скажите ему: Учитель говорит: время Мое близко; у тебя совершу пасху с учениками Моими.
+</p>
+<div class="num">19</div><p id="n19">Ученики сделали, как повелел им Иисус, и приготовили пасху.
+</p>
+<div class="num">20</div><p id="n20">Когда же настал вечер, Он возлег с двенадцатью учениками;
+</p>
+<div class="num">21</div><p id="n21">и когда они ели, сказал: истинно говорю вам, что один из вас предаст Меня.
+</p>
+<div class="num">22</div><p id="n22">Они весьма опечалились, и начали говорить Ему, каждый из них: не я ли, Господи?
+</p>
+<div class="num">23</div><p id="n23">Он же сказал в ответ: опустивший со Мною руку в блюдо, этот предаст Меня;
+</p>
+<div class="num">24</div><p id="n24">впрочем Сын Человеческий идет, как писано о Нем, но горе тому человеку, которым Сын Человеческий предается: лучше было бы этому человеку не родиться.
+</p>
+<div class="num">25</div><p id="n25">При сем и Иуда, предающий Его, сказал: не я ли, Равви&#769;? <i>Иисус</i> говорит ему: ты сказал.
+</p>
+<div class="num">26</div><p id="n26">И когда они ели, Иисус взял хлеб и, благословив, преломил и, раздавая ученикам, сказал: приимите, ядите: сие есть Тело Мое.
+</p>
+<div class="num">27</div><p id="n27">И, взяв чашу и благодарив, подал им и сказал: пейте из нее все,
+</p>
+<div class="num">28</div><p id="n28">ибо сие есть Кровь Моя Нового Завета, за многих изливаемая во оставление грехов.
+</p>
+<div class="num">29</div><p id="n29">Сказываю же вам, что отныне не буду пить от плода сего виноградного до того дня, когда буду пить с вами новое <i>вино</i> в Царстве Отца Моего.
+</p>
+<div class="num">30</div><p id="n30">И, воспев, пошли на гору Елеонскую.
+</p>
+<div class="num">31</div><p id="n31">Тогда говорит им Иисус: все вы соблазнитесь о Мне в эту ночь, ибо написано: поражу пастыря, и рассеются овцы стада;
+</p>
+<div class="num">32</div><p id="n32">по воскресении же Моем предварю вас в Галилее.
+</p>
+<div class="num">33</div><p id="n33">Петр сказал Ему в ответ: если и все соблазнятся о Тебе, я никогда не соблазнюсь.
+</p>
+<div class="num">34</div><p id="n34">Иисус сказал ему: истинно говорю тебе, что в эту ночь, прежде нежели пропоет петух, трижды отречешься от Меня.
+</p>
+<div class="num">35</div><p id="n35">Говорит Ему Петр: хотя бы надлежало мне и умереть с Тобою, не отрекусь от Тебя. Подобное говорили и все ученики.
+</p>
+<div class="num">36</div><p id="n36">Потом приходит с ними Иисус на место, называемое Гефсимания, и говорит ученикам: посидите тут, пока Я пойду, помолюсь там.
+</p>
+<div class="num">37</div><p id="n37">И, взяв с Собою Петра и обоих сыновей Зеведеевых, начал скорбеть и тосковать.
+</p>
+<div class="num">38</div><p id="n38">Тогда говорит им Иисус: душа Моя скорбит смертельно; побудьте здесь и бодрствуйте со Мною.
+</p>
+<div class="num">39</div><p id="n39">И, отойдя немного, пал на лице Свое, молился и говорил: Отче Мой! если возможно, да минует Меня чаша сия; впрочем не как Я хочу, но как Ты.
+</p>
+<div class="num">40</div><p id="n40">И приходит к ученикам и находит их спящими, и говорит Петру: та&#769;к ли не могли вы один час бодрствовать со Мною?
+</p>
+<div class="num">41</div><p id="n41">бодрствуйте и молитесь, чтобы не впасть в искушение: дух бодр, плоть же немощна.
+</p>
+<div class="num">42</div><p id="n42">Еще, отойдя в другой раз, молился, говоря: Отче Мой! если не может чаша сия миновать Меня, чтобы Мне не пить ее, да будет воля Твоя.
+</p>
+<div class="num">43</div><p id="n43">И, придя, находит их опять спящими, ибо у них глаза отяжелели.
+</p>
+<div class="num">44</div><p id="n44">И, оставив их, отошел опять и помолился в третий раз, сказав то же слово.
+</p>
+<div class="num">45</div><p id="n45">Тогда приходит к ученикам Своим и говорит им: вы всё еще спите и почиваете? вот, приблизился час, и Сын Человеческий предается в руки грешников;
+</p>
+<div class="num">46</div><p id="n46">встаньте, пойдем: вот, приблизился предающий Меня.
+</p>
+<div class="num">47</div><p id="n47">И, когда еще говорил Он, вот Иуда, один из двенадцати, пришел, и с ним множество народа с мечами и кольями, от первосвященников и старейшин народных.
+</p>
+<div class="num">48</div><p id="n48">Предающий же Его дал им знак, сказав: Кого я поцелую, Тот и есть, возьмите Его.
+</p>
+<div class="num">49</div><p id="n49">И, тотчас подойдя к Иисусу, сказал: радуйся, Равви&#769;! И поцеловал Его.
+</p>
+<div class="num">50</div><p id="n50">Иисус же сказал ему: друг, для чего ты пришел? Тогда подошли и возложили руки на Иисуса, и взяли Его.
+</p>
+<div class="num">51</div><p id="n51">И вот, один из бывших с Иисусом, простерши руку, извлек меч свой и, ударив раба первосвященникова, отсек ему ухо.
+</p>
+<div class="num">52</div><p id="n52">Тогда говорит ему Иисус: возврати меч твой в его место, ибо все, взявшие меч, мечом погибнут;
+</p>
+<div class="num">53</div><p id="n53">или думаешь, что Я не могу теперь умолить Отца Моего, и Он представит Мне более, нежели двенадцать легионов Ангелов?
+</p>
+<div class="num">54</div><p id="n54">как же сбудутся Писания, что та&#769;к должно быть?
+</p>
+<div class="num">55</div><p id="n55">В тот час сказал Иисус народу: как будто на разбойника вышли вы с мечами и кольями взять Меня; каждый день с вами сидел Я, уча в храме, и вы не брали Меня.
+</p>
+<div class="num">56</div><p id="n56">Сие же всё было, да сбудутся писания пророков. Тогда все ученики, оставив Его, бежали.
+</p>
+<div class="num">57</div><p id="n57">А взявшие Иисуса отвели Его к Каиафе первосвященнику, куда собрались книжники и старейшины.
+</p>
+<div class="num">58</div><p id="n58">Петр же следовал за Ним издали, до двора первосвященникова; и, войдя внутрь, сел со служителями, чтобы видеть конец.
+</p>
+<div class="num">59</div><p id="n59">Первосвященники и старейшины и весь синедрион<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;Верховное судилище.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p1"></a> искали лжесвидетельства против Иисуса, чтобы предать Его смерти,
+</p>
+<div class="num">60</div><p id="n60">и не находили; и, хотя много лжесвидетелей приходило, не нашли. Но наконец пришли два лжесвидетеля
+</p>
+<div class="num">61</div><p id="n61">и сказали: Он говорил: могу разрушить храм Божий и в три дня создать его.
+</p>
+<div class="num">62</div><p id="n62">И, встав, первосвященник сказал Ему: <i>что</i> <i>же</i> ничего не отвечаешь? что&#769; они против Тебя свидетельствуют?
+</p>
+<div class="num">63</div><p id="n63">Иисус молчал. И первосвященник сказал Ему: заклинаю Тебя Богом живым, скажи нам, Ты ли Христос, Сын Божий?
+</p>
+<div class="num">64</div><p id="n64">Иисус говорит ему: ты сказал; даже сказываю вам: отныне у&#769;зрите Сына Человеческого, сидящего одесную силы и грядущего на облаках небесных.
+</p>
+<div class="num">65</div><p id="n65">Тогда первосвященник разодрал одежды свои и сказал: Он богохульствует! на что&#769; еще нам свидетелей? вот, теперь вы слышали богохульство Его!
+</p>
+<div class="num">66</div><p id="n66">как вам кажется? Они же сказали в ответ: повинен смерти.
+</p>
+<div class="num">67</div><p id="n67">Тогда плевали Ему в лице и заушали Его; другие же ударяли Его по ланитам
+</p>
+<div class="num">68</div><p id="n68">и говорили: прореки нам, Христос, кто ударил Тебя?
+</p>
+<div class="num">69</div><p id="n69">Петр же сидел вне на дворе. И подошла к нему одна служанка и сказала: и ты был с Иисусом Галилеянином.
+</p>
+<div class="num">70</div><p id="n70">Но он отрекся перед всеми, сказав: не знаю, что ты говоришь.
+</p>
+<div class="num">71</div><p id="n71">Когда же он выходил за ворота, увидела его другая, и говорит бывшим там: и этот был с Иисусом Назореем.
+</p>
+<div class="num">72</div><p id="n72">И он опять отрекся с клятвою, что не знает Сего Человека.
+</p>
+<div class="num">73</div><p id="n73">Немного спустя подошли стоявшие там и сказали Петру: точно и ты из них, ибо и речь твоя обличает тебя.
+</p>
+<div class="num">74</div><p id="n74">Тогда он начал клясться и божиться, что не знает Сего Человека. И вдруг запел петух.
+</p>
+<div class="num">75</div><p id="n75">И вспомнил Петр слово, сказанное ему Иисусом: прежде нежели пропоет петух, трижды отречешься от Меня. И выйдя вон, плакал горько.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mf.27.ru.html">к главе 27</a></div></div>
+
+</body>
+</html>

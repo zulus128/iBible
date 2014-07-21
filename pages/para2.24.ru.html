@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para2.ru.html">Вторая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 24
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Семи лет <i>был</i> Иоас, когда воцарился, и сорок лет царствовал в Иерусалиме; имя матери его Цивья из Вирсавии.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И делал Иоас угодное в очах Господних во все дни Иодая священника.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И взял ему Иодай двух жен, и он имел <i>от</i> <i>них</i> сыновей и дочерей.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И после сего пришло на сердце Иоасу обновить дом Господень,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и собрал он священников и левитов и сказал им: пойдите по городам Иудеи и собирайте со всех Израильтян серебро для поддержания дома Бога вашего из года в год, и поспешите в этом деле. Но не поспешили левиты.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И призвал царь Иодая, главу <i>их,</i> и сказал ему: почему ты не требуешь от левитов, чтобы они доставляли с Иудеи и Иерусалима дань, <i>установленную</i> Моисеем, рабом Господним, и собранием Израильтян для скинии собрания?
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Ибо нечестивая Гофолия и сыновья ее разорили дом Божий и все посвященное для дома Господня употребили для Ваалов.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И приказал царь, и сделали один ящик, и поставили его у входа в дом Господень извне.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И провозгласили по Иудее и Иерусалиму, чтобы приносили Господу дань, <i>наложенную</i> Моисеем, рабом Божиим, на Израильтян в пустыне.
+</p>
+<div class="num">10</div><p id="n10">И обрадовались все начальствующие и весь народ, и приносили и клали в ящик дотоле, доколе он не наполнился.
+</p>
+<div class="num">11</div><p id="n11">В то время, когда приносили ящик к царским чиновникам чрез левитов, и когда они видели, что серебра много, приходил писец царя и поверенный первосвященника, и высыпали из ящика, и относили его и ставили его на свое место. Так делали они изо дня в день, и собрали множество серебра.
+</p>
+<div class="num">12</div><p id="n12">И отдавали его царь и Иодай производителям работ по дому Господню, и они нанимали каменотесов и плотников для подновления дома Господня, также кузнецов и медников для укрепления дома Господня.
+</p>
+<div class="num">13</div><p id="n13">И работали производители работ, и совершилось исправление руками их, и привели дом Божий в надлежащее состояние его, и укрепили его.
+</p>
+<div class="num">14</div><p id="n14">И кончив <i>все,</i> они представили царю и Иодаю остаток серебра. И сделали из него сосуды для дома Господня, сосуды служебные и <i>для</i> всесожжений, чаши и <i>другие</i> сосуды золотые и серебряные. И приносили всесожжения в доме Господнем постоянно во все дни Иодая.
+</p>
+<div class="num">15</div><p id="n15">И состарился Иодай и, насытившись днями <i>жизни,</i> умер: сто тридцать лет <i>было</i> ему, когда он умер.
+</p>
+<div class="num">16</div><p id="n16">И похоронили его в городе Давидовом с царями, потому что он делал доброе в Израиле и для Бога, и для дома Его.
+</p>
+<div class="num">17</div><p id="n17">Но по смерти Иодая пришли князья Иудейские и поклонились царю; тогда царь стал слушаться их.
+</p>
+<div class="num">18</div><p id="n18">И оставили дом Господа Бога отцов своих и стали служить деревам <i>посвященным</i> и идолам,- и был гнев <i>Господень</i> на Иуду и Иерусалим за сию вину их.
+</p>
+<div class="num">19</div><p id="n19">И он посылал к ним пророков для обращения их к Господу, и они увещевали их, но те не слушали.
+</p>
+<div class="num">20</div><p id="n20">И Дух Божий облек Захарию, сына Иодая священника, и он стал на возвышении пред народом и сказал им: так говорит Господь: для чего вы преступаете повеления Господни? не будет успеха вам; и как вы оставили Господа, то и Он оставит вас.
+</p>
+<div class="num">21</div><p id="n21">И сговорились против него, и побили его камнями, по приказанию царя [Иоаса], на дворе дома Господня.
+</p>
+<div class="num">22</div><p id="n22">И не вспомнил царь Иоас благодеяния, какое сделал ему Иодай, отец его, и убил сына его. И он умирая говорил: да видит Господь и да взыщет!
+</p>
+<div class="num">23</div><p id="n23">И по истечении года выступило против него войско Сирийское, и вошли в Иудею и в Иерусалим, и истребили из народа всех князей народа, и всю добычу, <i>взятую</i> у них, отослали к царю в Дамаск.
+</p>
+<div class="num">24</div><p id="n24">Хотя в небольшом числе людей приходило войско Сирийское, но Господь предал в руку их весьма многочисленную силу за то, что оставили Господа Бога отцов своих. И над Иоасом совершили они суд,
+</p>
+<div class="num">25</div><p id="n25">и когда они ушли от него, оставив его в тяжкой болезни, то составили против него заговор рабы его, за кровь сына Иодая священника, и убили его на постели его, и он умер. И похоронили его в городе Давидовом, но не похоронили его в царских гробницах.
+</p>
+<div class="num">26</div><p id="n26">Заговорщиками же против него были: Завад, сын Шимеафы Аммонитянки, и Иегозавад, сын Шимрифы Моавитянки.
+</p>
+<div class="num">27</div><p id="n27">О сыновьях его и о множестве пророчеств против него и об устроении дома Божия написано в книге царей. И воцарился Амасия, сын его, вместо него.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para2.25.ru.html">к главе 25</a></div></div>
+
+</body>
+</html>

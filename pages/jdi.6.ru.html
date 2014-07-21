@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jdi.ru.html">Книга Иудифь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 6
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Когда утих шум вокруг собрания, Олоферн, военачальник войска Ассирийского, сказал Ахиору пред всем народом иноплеменных и всем сынам Моава:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">кто ты такой, Ахиор, с наемниками Ефрема, что напророчил нам сегодня и сказал, чтобы мы не воевали с родом Израильским, потому что Бог их защищает? Кто же Бог, как не Навуходоносор? Он пошлет свою силу и сотрет их с лица земли,- и Бог их не избавит их.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Но мы, рабы его, поразим их, как одного человека, и не устоять им против силы наших коней.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Мы растопчем их; горы их упьются их кровью, равнины их наполнятся их трупами, и не станет стопа ног их против нашего лица, но гибелью погибнут они, говорит царь Навуходоносор, господин всей земли. Ибо он сказал,- и не напрасны будут слова повелений его.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">А ты, Ахиор, наемник Аммона, высказавший слова эти в день неправды твоей, от сего дня не увидишь больше лица моего, доколе я не отомщу этому народу, <i>пришедшему</i> из Египта.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Когда же я возвращусь, меч войска моего и толпа слуг моих пройдет по ребрам твоим,- и ты падешь между ранеными их.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Рабы мои отведут тебя в нагорную страну и оставят в одном из городов на высотах,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и ты не умрешь там, доколе не будешь с ними истреблен.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Если же ты надеешься в сердце твоем, что они не будут взяты, то да не спадает лице твое. Я сказал, и ни одно из слов моих не пропадет.
+</p>
+<div class="num">10</div><p id="n10">И приказал Олоферн рабам своим, предстоявшим в шатре его, взять Ахиора, отвести его в Ветилую и предать в руки сынов Израиля.
+</p>
+<div class="num">11</div><p id="n11">Рабы его схватили и вывели его за стан на поле, а со среды равнины поднялись в нагорную страну и пришли к источникам, бывшим под Ветилуею.
+</p>
+<div class="num">12</div><p id="n12">Когда увидели их жители города на вершине горы, то взялись за оружия свои и, выйдя за город на вершину горы, все мужи-пращники охраняли восход свой и бросали в них каменьями.
+</p>
+<div class="num">13</div><p id="n13">А они, подойдя под гору, связали Ахиора и, оставив его брошенным при подошве горы, ушли к своему господину.
+</p>
+<div class="num">14</div><p id="n14">Сыны же Израиля, вышедшие из своего города, остановились над ним и, развязав его, привели в Ветилую, и представили его начальникам своего города,
+</p>
+<div class="num">15</div><p id="n15">которыми были в те дни Озия, сын Михи из колена Симеонова, Хаврий, сын Гофониила, и Хармий, сын Мелхиила.
+</p>
+<div class="num">16</div><p id="n16">Они созвали всех старейшин города, и сбежались в собрание все юноши их и жены, и поставили Ахиора среди всего народа своего, и Озия спросил его о случившемся.
+</p>
+<div class="num">17</div><p id="n17">Он в ответ пересказал им слова собрания Олофернова и все слова, которые он высказал среди начальников сынов Ассура, и все высокомерные речи Олоферна о доме Израиля.
+</p>
+<div class="num">18</div><p id="n18"><i>Тогда</i> народ пал, поклонился Богу и воззвал:
+</p>
+<div class="num">19</div><p id="n19">Господи, Боже Небесный! воззри на их гордыню и помилуй смирение рода нашего, и призри на лице освященных Тебе в этот день.
+</p>
+<div class="num">20</div><p id="n20">И утешили Ахиора и расхвалили его.
+</p>
+<div class="num">21</div><p id="n21">Потом Озия взял его из собрания в свой дом и сделал пир для старейшин,- и целую ночь ту они призывали Бога Израилева на помощь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jdi.7.ru.html">к главе 7</a></div></div>
+
+</body>
+</html>

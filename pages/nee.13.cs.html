@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nee.cs.html">Неемjи</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA Gi
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Въ дeнь т0й чтeно бhсть въ кни1зэ мwmсeовэ во слhшаніе лю1демъ, и3 њбрётесz напи1сано въ нeй: да не и4мутъ вни1ти ґмманjтzне и3 мwавjтzне въ цeрковь б9ію дaже до вёка,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">понeже не срэт0ша сынHвъ <nobr>ї}левыхъ</nobr> со хлёбомъ и3 вод0ю и3 наsша на ни1хъ валаaма на проклsтіе и4хъ: и3 њбрати2 бGъ нaшъ проклsтство на благословeніе.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И# бhсть є3гдA слhшаху зак0нъ, и3 tлучи1ша всёхъ чужди1хъ t <nobr>ї}лz.</nobr>
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И# прeжде сегw2 є3ліасjвъ свzщeнникъ живsше въ сокр0вищнэмъ домY бGа нaшегw, ср0дникъ тwвjинъ,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и3 сотвори2 є3мY сокр0вищный д0мъ вели1къ: тaможе бsху прeжде приносsще жeртву и3 лівaнъ, и3 сосyды и3 десzти1ну пшени1цы и3 вінA и3 є3лeа, ўстaвлєнаz леvjтwмъ и3 пэвцє1мъ и3 двeрникwмъ, и3 начaтки свzщeнничєскіz.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Во всёхъ же си1хъ не бhхъ во їеrли1мэ, понeже въ лёто три1десzть втор0е ґртаxeрxа царS вавmлHнскагw пріид0хъ ко царю2: и3 по скончaніи днjй и3спроси1хъ t царS
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и3 пріид0хъ во їеrли1мъ, и3 ўразумёхъ ѕло2, є4же сотвори2 є3ліасjвъ тwвjи, сотвори1ти є3мY сокр0вищный д0мъ во дворЁ д0му б9іz,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и3 ѕло2 kви1сz ми2 ѕэлw2: и3 и3зверг0хъ <nobr>вс‰</nobr> сосyды д0му тwвjева в0нъ и3з8 д0му сокр0вищнагw,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и3 рек0хъ, и3 њчи1стиша сокр0вищный д0мъ: и3 возврати1хъ nнaмw сосyды д0му б9іz, жeртву и3 лівaнъ.
+</p>
+<div class="num">10</div><p id="n10">И# познaхъ, ћкw ч†сти леv‡тскіz не бhша даны2, и3 побэг0ша кjйждо на село2 своE леvjти и3 пэвцы2 творsщіи дёло.
+</p>
+<div class="num">11</div><p id="n11">И# прsхсz со страти1гами и3 рек0хъ: чесw2 рaди њстaвленъ бhсть д0мъ б9ій; И# собрaхъ и5хъ и3 постaвихъ џныхъ во стоsніихъ свои1хъ.
+</p>
+<div class="num">12</div><p id="n12">И# вeсь їyда принес0ша десzти1ну пшени1цы и3 вінA и3 є3лeа въ сокрHвища под8 рyку селемjи свzщeнника и3 садHка писцA и3 фадаjи t леv‡тъ,
+</p>
+<div class="num">13</div><p id="n13">и3 при ни1хъ ґнaнъ сhнъ закхyровъ, сhнъ матfанjевъ, ћкw вёрни и3скушeни сyть над8 ни1ми раздэлsти брaтіzмъ свои6мъ.
+</p>
+<div class="num">14</div><p id="n14">Помzни1 мz, б9е, тогw2 рaди, и3 да не поги1бнетъ ми1лость моS, ю4же сотвори1хъ въ домY гDа бGа моегw2 и3 въ чинёхъ є3гw2.
+</p>
+<div class="num">15</div><p id="n15">Во днeхъ тёхъ ви1дэхъ во їyдэ т0пчущихъ точи1ло въ суббHту, и3 носsщихъ снопы2, и3 возлагaющихъ на nслы2 и3 віно2, и3 гр0здіе, и3 смHквы, и3 всsкое брeмz, и3 носsщихъ во їеrли1мъ во дни6 суббw6тныz: и3 засвидётелствовахъ и5мъ въ дeнь продаsніz и4хъ.
+</p>
+<div class="num">16</div><p id="n16">И# тЂрzне њбитaша въ нeмъ приносsще ры6бы, и3 <nobr>вс‰</nobr> продає1маz продаю1ще въ суббw6ты сыновHмъ їyдинымъ и3 во їеrли1мэ.
+</p>
+<div class="num">17</div><p id="n17">И# њбличи1хъ сынHвъ їyдиныхъ своб0дныхъ и3 рек0хъ и5мъ: что2 сіS вeщь ѕлaz, ю4же вы2 творитE, и3 сквернитE дeнь суббHтный;
+</p>
+<div class="num">18</div><p id="n18">не <nobr>сі‰</nobr> ли сотвори1ша nтцы2 вaши, и3 наведE на ни1хъ бGъ нaшъ и3 на нaсъ <nobr>вс‰</nobr> ѕл†z <nobr>сі‰,</nobr> и3 на грaдъ сeй, и3 вы2 прилагaете гнёвъ на <nobr>ї}лz,</nobr> сквернsще суббHту;
+</p>
+<div class="num">19</div><p id="n19">Бhсть же є3гдA постaвишасz вратA во їеrли1мэ прeжде суббHты, и3 рек0хъ, и3 запр0ша двє1ри и3 повелёхъ, да не tверзaютъ и5хъ дaже по суббHтэ: и3 t џтрwкъ мои1хъ постaвихъ над8 враты2, да ни є3ди1нъ вн0ситъ брeмz въ дeнь суббHтный.
+</p>
+<div class="num">20</div><p id="n20">И# стaша вси2 и3 творsху кyплю внЁ їеrли1ма є3ди1нощи и3 двaщи.
+</p>
+<div class="num">21</div><p id="n21">И# засвидётелствовахъ њ ни1хъ и3 рек0хъ и5мъ: что2 вы2 пребывaете пред8 стэн0ю; ѓще втори1цею сіE сотворитE, прострY рyку мою2 на вaсъ. И# t врeмене тогw2 не пріид0ша въ суббHту.
+</p>
+<div class="num">22</div><p id="n22">И# рек0хъ леvjтwмъ, и5же бsху њчищeни, дабы2 приходи1ли храни1ти врaтъ и3 свzти1ти дeнь суббHтный. И# си1хъ рaди помzни1 мz, б9е, и3 прости1 ми по мн0жеству млcти твоеS.
+</p>
+<div class="num">23</div><p id="n23">И# во днeхъ џнэхъ ви1дэхъ їудeєвъ поeмшихъ жєны2 ґзw6тскіz, ґмманjтzны, мwав‡тскіz,
+</p>
+<div class="num">24</div><p id="n24">и3 сhнове и4хъ t полY глаг0лаху ґзHтскимъ љзhкомъ и3 не ўмёzху глаг0лати їудeйски:
+</p>
+<div class="num">25</div><p id="n25">и3 запрети1хъ и5мъ, и3 проклsхъ и5хъ, и3 порази1хъ t ни1хъ мужeй, и3 њплэши1хъ и5хъ, и3 заклsхъ и5хъ бGомъ, ѓще дади1те дщє1ри вaшz сыновHмъ и4хъ и3 ѓще п0ймете t дщeрей и4хъ сыновHмъ вaшымъ и3 себЁ:
+</p>
+<div class="num">26</div><p id="n26">не тaкw ли согрэши2 соломHнъ цaрь <nobr>ї}левъ;</nobr> и3 во kзhцэхъ мн0зэхъ не бhсть цaрь под0бенъ є3мY, и3 возлю1бленъ бGу бЁ, и3 постaви є3го2 бGъ царeмъ над8 всёмъ <nobr>ї}лемъ,</nobr> и3 того2 прельсти1ша жєны2 чужд‡z:
+</p>
+<div class="num">27</div><p id="n27">и3 мы2 послyшаемъ ли вaсъ твори1ти всsко ѕло2 сіE, согрэши1ти бGу нaшему, є4же поsти жєны2 и3ноплемє1нничи;
+</p>
+<div class="num">28</div><p id="n28">И# t сынHвъ їwaда сhна є3льтyва свzщeнника вели1кагw, зsтz санаваллaтова ўранjтина, и3 и3згнaхъ є3го2 t менє2.
+</p>
+<div class="num">29</div><p id="n29">Помzни2 и5мъ, б9е, за њсквернeніе свzщeнства и3 завёта свzщeнническа и3 леvjтска.
+</p>
+<div class="num">30</div><p id="n30">И# њчи1стихъ и5хъ t всsкіz чуждjz нечистоты2, и3 постaвихъ чрєды2 свzщeнникwмъ и3 леvjтwмъ, комyждо по дёлу є3гw2,
+</p>
+<div class="num">31</div><p id="n31">и3 даsніе древeсъ во временёхъ ўстaвленыхъ и3 первор0дныхъ. Помzни1 мz, б9е нaшъ, во бlг0е.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nee.cs.html">Неемjи</a>
+</div></div>
+
+</body>
+</html>

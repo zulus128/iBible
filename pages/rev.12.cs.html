@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="rev.cs.html">Ґпокaлmpісъ с™aгw їwaнна fєол0га [бGосл0ва]</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA в7i
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# знaменіе вeліе kви1сz на небеси2: женA њблечeна въ с0лнце, и3 лунA под8 ногaма є3S, и3 на главЁ є3S вэнeцъ t ѕвёздъ двоюнaдесzте:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и3 во чрeвэ и3мyщи, вопіeтъ болsщи и3 стрaждущи роди1ти.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И# kви1сz и4но знaменіе на небеси2: и3 сE, ѕмjй вели1къ чeрменъ, и3мёz глaвъ сeдмь и3 рогHвъ дeсzть, и3 на главaхъ є3гw2 сeдмь вэнє1цъ:
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и3 х0ботъ є3гw2 tт0рже трeтію чaсть ѕвёздъ небeсныхъ и3 положи2 <nobr>|</nobr> въ зeмлю [повeрже <nobr>|</nobr> на зeмлю]. И# ѕмjй стоsше пред8 жен0ю хотsщею роди1ти, да, є3гдA роди1тъ, снёсть чaдо є3S.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И# роди2 сhна мyжеска, и4же и4мать ўпасти2 <nobr>вс‰</nobr> kзhки жезл0мъ желёзнымъ: и3 восхищeно бhсть чaдо є3S къ бGу и3 пrт0лу є3гw2.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Ґ женA бэжA въ пустhню, и3дёже и3мЁ мёсто ўгот0вано t бGа, да тaмw питaетсz днjй тhсzщу двёстэ шестьдесsтъ.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И# бhсть брaнь на нб7си2: міхаи1лъ и3 ѓгGли є3гw2 брaнь сотвори1ша со ѕмjемъ, и3 ѕмjй брaсz и3 ѓггели є3гw2,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и3 не возмог0ша, и3 мёста не њбрётесz и5мъ ктомY на нб7си2.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И# вложeнъ [повeрженъ] бhсть ѕмjй вели1кій, ѕмjй дрeвній, нарицaемый діaволъ и3 сатанA, льстsй вселeнную всю2, и3 вложeнъ [повeрженъ] бhсть на зeмлю, и3 ѓггели є3гw2 съ ни1мъ низвeржени бhша.
+</p>
+<div class="num">10</div><p id="n10">И# слhшахъ глaсъ вeлій на нб7си2, гlющь: нн7э бhсть спcніе и3 си1ла и3 цrтво бGа нaшегw и3 w4бласть хrтA є3гw2, ћкw низложeнъ бhсть клеветни1къ брaтіи нaшеz, њклевещaz и5хъ пред8 бGомъ нaшимъ дeнь и3 н0щь.
+</p>
+<div class="num">11</div><p id="n11">И# тjи побэди1ша є3го2 кр0вію ѓгнчею и3 сл0вомъ свидётелства своегw2, и3 не возлюби1ша дyшъ свои1хъ дaже до смeрти.
+</p>
+<div class="num">12</div><p id="n12">Сегw2 рaди весели1тесz, нб7сA и3 живyщіи на ни1хъ. Г0ре живyщымъ на земли2 и3 м0ри, ћкw сни1де діaволъ къ вaмъ, и3мёz ћрость вели1кую, вёдый, ћкw врeмz мaло и4мать.
+</p>
+<div class="num">13</div><p id="n13">И# є3гдA ви1дэ ѕмjй, ћкw низложeнъ бhсть на зeмлю, гонsше женY, ћже роди2 мyжеска.
+</p>
+<div class="num">14</div><p id="n14">И# дан† бhша женЁ двA крил† nрлA вели1кагw, да пари1тъ въ пустhню въ мёсто своE, и3дёже препитaна бsше тY врeмz и3 времeнъ и3 п0лъ врeмене, t лицA ѕміи1на.
+</p>
+<div class="num">15</div><p id="n15">И# и3спусти2 ѕмjй за жен0ю и3з8 ќстъ свои1хъ в0ду ћкw рэкY, да ю5 въ рэцЁ потопи1тъ.
+</p>
+<div class="num">16</div><p id="n16">И# пом0же землS женЁ, и3 tвeрзе землS ўстA <nobr>сво‰,</nobr> и3 пожрE рэкY, ю4же и3зведE ѕмjй t ќстъ свои1хъ.
+</p>
+<div class="num">17</div><p id="n17">И# разгнёвасz ѕмjй на женY и3 и4де сотвори1ти брaнь со њстaвшимъ сёменемъ є3S, и5же соблюдaютъ зaпwвэди б9іz и3 и3мёютъ свидётелство <nobr>ї}съ</nobr> хrт0во.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="rev.13.cs.html">главA Gi</a></div></div>
+
+</body>
+</html>

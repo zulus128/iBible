@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 9
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Господь Моисею: пойди к фараону и скажи ему: так говорит Господь, Бог Евреев: отпусти народ Мой, чтобы он совершил Мне служение;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">ибо если ты не захочешь отпустить [народ Мой] и еще будешь удерживать его,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">то вот, рука Господня будет на скоте твоем, который в поле, на конях, на ослах, на верблюдах, на волах и овцах: будет моровая язва весьма тяжкая;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и разделит Господь [в то время] между скотом Израильским и скотом Египетским, и из всего [скота] сынов Израилевых не умрет ничего.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И назначил Господь время, сказав: завтра сделает это Господь в земле сей.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сделал это Господь на другой день, и вымер весь скот Египетский; из скота же сынов Израилевых не умерло ничего.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Фараон послал <i>узнать,</i> и вот, из [всего] скота [сынов] Израилевых не умерло ничего. Но сердце фараоново ожесточилось, и он не отпустил народа.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сказал Господь Моисею и Аарону: возьмите по полной горсти пепла из печи, и пусть бросит его Моисей к небу в глазах фараона [и рабов его];
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и поднимется пыль по всей земле Египетской, и будет на людях и на скоте воспаление с нарывами, во всей земле Египетской.
+</p>
+<div class="num">10</div><p id="n10">Они взяли пепла из печи и предстали пред лице фараона. Моисей бросил его к небу, и сделалось воспаление с нарывами на людях и на скоте.
+</p>
+<div class="num">11</div><p id="n11">И не могли волхвы устоять пред Моисеем по причине воспаления, потому что воспаление было на волхвах и на всех Египтянах.
+</p>
+<div class="num">12</div><p id="n12">Но Господь ожесточил сердце фараона, и он не послушал их, как и говорил Господь Моисею.
+</p>
+<div class="num">13</div><p id="n13">И сказал Господь Моисею: завтра встань рано и явись пред лице фараона, и скажи ему: так говорит Господь, Бог Евреев: отпусти народ Мой, чтобы он совершил Мне служение;
+</p>
+<div class="num">14</div><p id="n14">ибо в этот раз Я пошлю все язвы Мои в сердце твое, и на рабов твоих, и на народ твой, дабы ты узнал, что нет подобного Мне на всей земле;
+</p>
+<div class="num">15</div><p id="n15">так как Я простер руку Мою, то поразил бы тебя и народ твой язвою, и ты истреблен был бы с земли:
+</p>
+<div class="num">16</div><p id="n16">но для того Я сохранил тебя, чтобы показать на тебе силу Мою, и чтобы возвещено было имя Мое по всей земле;
+</p>
+<div class="num">17</div><p id="n17">ты еще противостоишь народу Моему, чтобы не отпускать его,-
+</p>
+<div class="num">18</div><p id="n18">вот, Я пошлю завтра, в это самое время, град весьма сильный, которому подобного не было в Египте со дня основания его доныне;
+</p>
+<div class="num">19</div><p id="n19">итак пошли собрать стада твои и все, что есть у тебя в поле: на всех людей и скот, которые останутся в поле и не соберутся в домы, падет град, и они умрут.
+</p>
+<div class="num">20</div><p id="n20">Те из рабов фараоновых, которые убоялись слова Господня, поспешно собрали рабов своих и стада свои в домы;
+</p>
+<div class="num">21</div><p id="n21">а кто не обратил сердца своего к слову Господню, тот оставил рабов своих и стада свои в поле.
+</p>
+<div class="num">22</div><p id="n22">И сказал Господь Моисею: простри руку твою к небу, и падет град на всю землю Египетскую, на людей, на скот и на всю траву полевую в земле Египетской.
+</p>
+<div class="num">23</div><p id="n23">И простер Моисей жезл свой к небу, и Господь произвел гром и град, и огонь разливался по земле; и послал Господь град на [всю] землю Египетскую;
+</p>
+<div class="num">24</div><p id="n24">и был град и огонь между градом, [град] весьма сильный, какого не было во всей земле Египетской со времени населения ее.
+</p>
+<div class="num">25</div><p id="n25">И побил град по всей земле Египетской все, что было в поле, от человека до скота, и всю траву полевую побил град, и все деревья в поле поломал [град];
+</p>
+<div class="num">26</div><p id="n26">только в земле Гесем, где жили сыны Израилевы, не было града.
+</p>
+<div class="num">27</div><p id="n27">И послал фараон, и призвал Моисея и Аарона, и сказал им: на этот раз я согрешил; Господь праведен, а я и народ мой виновны;
+</p>
+<div class="num">28</div><p id="n28">помолитесь [обо мне] Господу: пусть перестанут громы Божии и град [и огонь на земле], и отпущу вас и не буду более удерживать.
+</p>
+<div class="num">29</div><p id="n29">Моисей сказал ему: как скоро я выйду из города, простру руки мои к Господу [на небо], громы перестанут, и града [и дождя] более не будет, дабы ты узнал, что Господня земля;
+</p>
+<div class="num">30</div><p id="n30">но я знаю, что ты и рабы твои еще не убоитесь Господа Бога.
+</p>
+<div class="num">31</div><p id="n31">Лен и ячмень были побиты, потому что ячмень выколосился, а лен осеменился;
+</p>
+<div class="num">32</div><p id="n32">а пшеница и полба не побиты, потому что они были поздние.
+</p>
+<div class="num">33</div><p id="n33">И вышел Моисей от фараона из города и простер руки свои к Господу, и прекратились гром и град, и дождь перестал литься на землю.
+</p>
+<div class="num">34</div><p id="n34">И увидел фараон, что перестал дождь и град и гром, и продолжал грешить, и отягчил сердце свое сам и рабы его.
+</p>
+<div class="num">35</div><p id="n35">И ожесточилось сердце фараона [и рабов его], и он не отпустил сынов Израилевых, как и говорил Господь чрез Моисея.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.10.ru.html">к главе 10</a></div></div>
+
+</body>
+</html>

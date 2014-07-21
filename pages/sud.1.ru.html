@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sud.ru.html">Книга Судей</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">По смерти Иисуса вопрошали сыны Израилевы Господа, говоря: кто из нас прежде пойдет на Хананеев - воевать с ними?
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И сказал Господь: Иуда пойдет; вот, Я предаю землю в руки его.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Иуда же сказал Симеону, брату своему: войди со мною в жребий мой, и будем воевать с Хананеями; и я войду с тобою в твой жребий. И пошел с ним Симеон.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И пошел Иуда, и предал Господь Хананеев и Ферезеев в руки их, и побили они из них в Везеке десять тысяч человек.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">В Везеке встретились они с Адони-Везеком, сразились с ним и разбили Хананеев и Ферезеев.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Адони-Везек побежал, но они погнались за ним и поймали его и отсекли большие пальцы на руках его и на ногах его.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Тогда сказал Адони-Везек: семьдесят царей с отсеченными на руках и на ногах их большими пальцами собирали [крохи] под столом моим; как делал я, так и мне воздал Бог. И привели его в Иерусалим, и он умер там.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И воевали сыны Иудины против Иерусалима и взяли его, и поразили его мечом и город предали огню.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Потом пошли сыны Иудины воевать с Хананеями, которые жили на горах и на полуденной земле и на низменных местах.
+</p>
+<div class="num">10</div><p id="n10">И пошел Иуда на Хананеев, которые жили в Хевроне [имя же Хеврону <i>было</i> прежде Кириаф-Арбы], и поразили Шешая, Ахимана и Фалмая [от рода Енакова].
+</p>
+<div class="num">11</div><p id="n11">Оттуда пошел он против жителей Давира; имя Давиру <i>было</i> прежде Кириаф-Сефер.
+</p>
+<div class="num">12</div><p id="n12">И сказал Халев: кто поразит Кириаф-Сефер и возьмет его, тому отдам Ахсу, дочь мою, в жену.
+</p>
+<div class="num">13</div><p id="n13">И взял его Гофониил, сын Кеназа, младшего брата Халевова, и <i>Халев</i> отдал в жену ему Ахсу, дочь свою.
+</p>
+<div class="num">14</div><p id="n14">Когда надлежало ей идти, <i>Гофониил</i> научил ее просить у отца ее поле, и она сошла с осла. Халев сказал ей: что тебе?
+</p>
+<div class="num">15</div><p id="n15">[Ахса] сказала ему: дай мне благословение; ты дал мне землю полуденную, дай мне и источники воды. И дал ей [Халев по желанию ее] источники верхние и источники нижние.
+</p>
+<div class="num">16</div><p id="n16">И сыны [Иофора] Кенеянина, тестя Моисеева, пошли из города Пальм с сынами Иудиными в пустыню Иудину, которая на юг от Арада, и пришли и поселились среди народа.
+</p>
+<div class="num">17</div><p id="n17">И пошел Иуда с Симеоном, братом своим, и поразили Хананеев, живших в Цефафе, и предали его заклятию, и <i>оттого</i> называется город сей Хорма.
+</p>
+<div class="num">18</div><p id="n18">Иуда взял также Газу с пределами ее, Аскалон с пределами его, и Екрон с пределами его [и Азот с окрестностями его].
+</p>
+<div class="num">19</div><p id="n19">Господь был с Иудою, и он овладел горою; но жителей долины не мог прогнать, потому что у них были железные колесницы.
+</p>
+<div class="num">20</div><p id="n20">И отдали Халеву Хеврон, как говорил Моисей, [и получил он там в наследие три города сынов Енаковых] и изгнал оттуда трех сынов Енаковых.
+</p>
+<div class="num">21</div><p id="n21">Но Иевусеев, которые жили в Иерусалиме, не изгнали сыны Вениаминовы, и живут Иевусеи с сынами Вениамина в Иерусалиме до сего дня.
+</p>
+<div class="num">22</div><p id="n22">И сыны Иосифа пошли также на Вефиль, и Господь был с ними.
+</p>
+<div class="num">23</div><p id="n23">[И остановились] и высматривали сыны Иосифовы Вефиль [имя же городу <i>было</i> прежде Луз].
+</p>
+<div class="num">24</div><p id="n24">И увидели стражи человека, идущего из города, [и взяли его] и сказали ему: покажи нам вход в город, и сделаем с тобою милость.
+</p>
+<div class="num">25</div><p id="n25">Он показал им вход в город, и поразили они город мечом, а человека сего и все родство его отпустили.
+</p>
+<div class="num">26</div><p id="n26">Человек сей пошел в землю Хеттеев, и построил [там] город и нарек имя ему Луз. Это имя его до сего дня.
+</p>
+<div class="num">27</div><p id="n27">И Манассия не выгнал <i>жителей</i> Бефсана [который есть Скифополь] и зависящих от него городов, Фаанаха и зависящих от него городов, жителей Дора и зависящих от него городов, жителей Ивлеама и зависящих от него городов, жителей Мегиддона и зависящих от него городов; и остались Хананеи жить в земле сей.
+</p>
+<div class="num">28</div><p id="n28">Когда Израиль пришел в силу, тогда сделал он Хананеев данниками, но изгнать не изгнал их.
+</p>
+<div class="num">29</div><p id="n29">И Ефрем не изгнал Хананеев, живущих в Газере; и жили Хананеи среди их в Газере [и платили им дань].
+</p>
+<div class="num">30</div><p id="n30">И Завулон не изгнал жителей Китрона и жителей Наглола, и жили Хананеи среди их и платили им дань.
+</p>
+<div class="num">31</div><p id="n31">И Асир не изгнал жителей Акко [которые платили ему дань, и жителей Дора] и жителей Сидона и Ахлава, Ахзива, Хелвы, Афека и Рехова.
+</p>
+<div class="num">32</div><p id="n32">И жил Асир среди Хананеев, жителей земли той, ибо не изгнал их.
+</p>
+<div class="num">33</div><p id="n33">И Неффалим не изгнал жителей Вефсамиса и жителей Бефанафа и жил среди Хананеев, жителей земли той; жители же Вефсамиса и Бефанафа были его данниками.
+</p>
+<div class="num">34</div><p id="n34">И стеснили Аморреи сынов Дановых в горах, ибо не давали им сходить на долину.
+</p>
+<div class="num">35</div><p id="n35">И остались Аморреи жить на горе Херес [где медведи и лисицы], в Аиалоне и Шаалвиме; но рука сынов Иосифовых одолела [Аморреев], и сделались они данниками им.
+</p>
+<div class="num">36</div><p id="n36">Пределы Аморреев от возвышенности Акравим и от Селы простирались и далее.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sud.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

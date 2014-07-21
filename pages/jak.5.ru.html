@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jak.ru.html">Послание Иакова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 5
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Послушайте вы, богатые: плачьте и рыдайте о бедствиях ваших, находящих на вас.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Богатство ваше сгнило, и одежды ваши изъедены молью.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Золото ваше и серебро изоржавело, и ржавчина их будет свидетельством против вас и съест плоть вашу, как огонь: вы собрали себе сокровище на последние дни.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Вот, плата, удержанная вами у работников, пожавших поля ваши, вопиет, и вопли жнецов дошли до слуха Господа Саваофа.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Вы роскошествовали на земле и наслаждались; напитали сердца ваши, как бы на день заклания.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Вы осудили, убили Праведника; Он не противился вам.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Итак, братия, будьте долготерпеливы до пришествия Господня. Вот, земледелец ждет драгоценного плода от земли и для него терпит долго, пока получит дождь ранний и поздний.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Долготерпи&#769;те и вы, укрепите сердца ваши, потому что пришествие Господне приближается.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Не сетуйте, братия, друг на друга, чтобы не быть осужденными: вот, Судия стоит у дверей.
+</p>
+<div class="num">10</div><p id="n10">В пример злострадания и долготерпения возьмите, братия мои, пророков, которые говорили именем Господним.
+</p>
+<div class="num">11</div><p id="n11">Вот, мы ублажаем тех, которые терпели. Вы слышали о терпении Иова и видели конец <i>оного</i> от Господа, ибо Господь весьма милосерд и сострадателен.
+</p>
+<div class="num">12</div><p id="n12">Прежде же всего, братия мои, не клянитесь ни небом, ни землею, и никакою другою клятвою, но да будет у вас: "да, да" и "нет, нет", дабы вам не подпасть осуждению.
+</p>
+<div class="num">13</div><p id="n13">Злостраждет ли кто из вас, пусть молится. Весел ли кто, пусть поет псалмы.
+</p>
+<div class="num">14</div><p id="n14">Болен ли кто из вас, пусть призовет пресвитеров Церкви, и пусть помолятся над ним, помазав его елеем во имя Господне.
+</p>
+<div class="num">15</div><p id="n15">И молитва веры исцелит болящего, и восставит его Господь; и если он соделал грехи, простятся ему.
+</p>
+<div class="num">16</div><p id="n16">Признавайтесь друг пред другом в проступках и молитесь друг за друга, чтобы исцелиться: много может усиленная молитва праведного.
+</p>
+<div class="num">17</div><p id="n17">Илия был человек, подобный нам, и молитвою помолился, чтобы не было дождя: и не было дождя на землю три года и шесть месяцев.
+</p>
+<div class="num">18</div><p id="n18">И опять помолился: и небо дало дождь, и земля произрастила плод свой.
+</p>
+<div class="num">19</div><p id="n19">Братия! если кто из вас уклонится от истины, и обратит кто его,
+</p>
+<div class="num">20</div><p id="n20">пусть тот знает, что обративший грешника от ложного пути его спасет душу от смерти и покроет множество грехов.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jak.ru.html">Послание Иакова</a>
+</div></div>
+
+</body>
+</html>

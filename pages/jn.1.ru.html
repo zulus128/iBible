@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jn.ru.html">Евангелие от Иоанна</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В начале было Слово, и Слово было у Бога, и Слово было Бог.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Оно было в начале у Бога.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Все чрез Него на&#769;чало быть, и без Него ничто не на&#769;чало быть, что на&#769;чало быть.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">В Нем была жизнь, и жизнь была свет человеков.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И свет во тьме светит, и тьма не объяла его.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Был человек, посланный от Бога; имя ему Иоанн.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Он пришел для свидетельства, чтобы свидетельствовать о Свете, дабы все уверовали чрез него.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Он не был свет, но <i>был</i> <i>послан,</i> чтобы свидетельствовать о Свете.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Был Свет истинный, Который просвещает всякого человека, приходящего в мир.
+</p>
+<div class="num">10</div><p id="n10">В мире был, и мир чрез Него на&#769;чал быть, и мир Его не познал.
+</p>
+<div class="num">11</div><p id="n11">Пришел к своим, и свои Его не приняли.
+</p>
+<div class="num">12</div><p id="n12">А тем, которые приняли Его, верующим во имя Его, дал власть быть чадами Божиими,
+</p>
+<div class="num">13</div><p id="n13">которые ни от крови, ни от хотения плоти, ни от хотения мужа, но от Бога родились.
+</p>
+<div class="num">14</div><p id="n14">И Слово стало плотию, и обитало с нами, полное благодати и истины; и мы видели славу Его, славу, как Единородного от Отца.
+</p>
+<div class="num">15</div><p id="n15">Иоанн свидетельствует о Нем и, восклицая, говорит: Сей был Тот, о Котором я сказал, что Идущий за мною стал впереди меня, потому что был прежде меня.
+</p>
+<div class="num">16</div><p id="n16">И от полноты Его все мы приняли и благодать на благодать,
+</p>
+<div class="num">17</div><p id="n17">ибо закон дан чрез Моисея; благодать же и истина произошли чрез Иисуса Христа.
+</p>
+<div class="num">18</div><p id="n18">Бога не видел никто никогда; Единородный Сын, сущий в недре Отчем, Он явил.
+</p>
+<div class="num">19</div><p id="n19">И вот свидетельство Иоанна, когда Иудеи прислали из Иерусалима священников и левитов спросить его: кто ты?
+</p>
+<div class="num">20</div><p id="n20">Он объявил, и не отрекся, и объявил, что я не Христос.
+</p>
+<div class="num">21</div><p id="n21">И спросили его: что же? ты Илия? Он сказал: нет. Пророк? Он отвечал: нет.
+</p>
+<div class="num">22</div><p id="n22">Сказали ему: кто же ты? чтобы нам дать ответ пославшим нас: что ты скажешь о себе самом?
+</p>
+<div class="num">23</div><p id="n23">Он сказал: я глас вопиющего в пустыне: исправьте путь Господу, как сказал пророк Исаия.
+</p>
+<div class="num">24</div><p id="n24">А посланные были из фарисеев;
+</p>
+<div class="num">25</div><p id="n25">И они спросили его: что же ты крестишь, если ты ни Христос, ни Илия, ни пророк?
+</p>
+<div class="num">26</div><p id="n26">Иоанн сказал им в ответ: я крещу в воде; но стоит среди вас <i>Некто,</i> Которого вы не знаете.
+</p>
+<div class="num">27</div><p id="n27">Он-то Идущий за мною, но Который стал впереди меня. Я недостоин развязать ремень у обуви Его.
+</p>
+<div class="num">28</div><p id="n28">Это происходило в Вифаваре при Иордане, где крестил Иоанн.
+</p>
+<div class="num">29</div><p id="n29">На другой день видит Иоанн идущего к нему Иисуса и говорит: вот Агнец Божий, Который берет <i>на</i> <i>Себя</i> грех мира.
+</p>
+<div class="num">30</div><p id="n30">Сей есть, о Котором я сказал: за мною идет Муж, Который стал впереди меня, потому что Он был прежде меня.
+</p>
+<div class="num">31</div><p id="n31">Я не знал Его; но для того пришел крестить в воде, чтобы Он явлен был Израилю.
+</p>
+<div class="num">32</div><p id="n32">И свидетельствовал Иоанн, говоря: я видел Духа, сходящего с неба, как голубя, и пребывающего на Нем.
+</p>
+<div class="num">33</div><p id="n33">Я не знал Его; но Пославший меня крестить в воде сказал мне: на Кого увидишь Духа сходящего и пребывающего на Нем, Тот есть крестящий Духом Святым.
+</p>
+<div class="num">34</div><p id="n34">И я видел и засвидетельствовал, что Сей есть Сын Божий.
+</p>
+<div class="num">35</div><p id="n35">На другой день опять стоял Иоанн и двое из учеников его.
+</p>
+<div class="num">36</div><p id="n36">И, увидев идущего Иисуса, сказал: вот Агнец Божий.
+</p>
+<div class="num">37</div><p id="n37">Услышав от него сии слова, оба ученика пошли за Иисусом.
+</p>
+<div class="num">38</div><p id="n38">Иисус же, обратившись и увидев их идущих, говорит им: что вам надобно? Они сказали Ему: Равви&#769;,- что значит: учитель,- где живешь?
+</p>
+<div class="num">39</div><p id="n39">Говорит им: пойдите и увидите. Они пошли и увидели, где Он живет; и пробыли у Него день тот. Было около десятого часа.
+</p>
+<div class="num">40</div><p id="n40">Один из двух, слышавших от Иоанна <i>об</i> <i>Иисусе</i> и последовавших за Ним, был Андрей, брат Симона Петра.
+</p>
+<div class="num">41</div><p id="n41">Он первый находит брата своего Симона и говорит ему: мы нашли Мессию, что значит: Христос;
+</p>
+<div class="num">42</div><p id="n42">и привел его к Иисусу. Иисус же, взглянув на него, сказал: ты - Симон, сын Ионин; ты наречешься Кифа, что значит: камень (Петр).
+</p>
+<div class="num">43</div><p id="n43">На другой день <i>Иисус</i> восхотел идти в Галилею, и находит Филиппа и говорит ему: иди за Мною.
+</p>
+<div class="num">44</div><p id="n44">Филипп же был из Вифсаиды, из <i>одного</i> города с Андреем и Петром.
+</p>
+<div class="num">45</div><p id="n45">Филипп находит Нафанаила и говорит ему: мы нашли Того, о Котором писали Моисей в законе и пророки, Иисуса, сына Иосифова, из Назарета.
+</p>
+<div class="num">46</div><p id="n46">Но Нафанаил сказал ему: из Назарета может ли быть что доброе? Филипп говорит ему: пойди и посмотри.
+</p>
+<div class="num">47</div><p id="n47">Иисус, увидев идущего к Нему Нафанаила, говорит о нем: вот подлинно Израильтянин, в котором нет лукавства.
+</p>
+<div class="num">48</div><p id="n48">Нафанаил говорит Ему: почему Ты знаешь меня? Иисус сказал ему в ответ: прежде нежели позвал тебя Филипп, когда ты был под смоковницею, Я видел тебя.
+</p>
+<div class="num">49</div><p id="n49">Нафанаил отвечал Ему: Равви&#769;! Ты Сын Божий, Ты Царь Израилев.
+</p>
+<div class="num">50</div><p id="n50">Иисус сказал ему в ответ: ты веришь, потому что Я тебе сказал: Я видел тебя под смоковницею; увидишь больше сего.
+</p>
+<div class="num">51</div><p id="n51">И говорит ему: истинно, истинно говорю вам: отныне будете видеть небо отверстым и Ангелов Божиих восходящих и нисходящих к Сыну Человеческому.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jn.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

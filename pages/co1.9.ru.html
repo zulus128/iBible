@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="co1.ru.html">Первое послание к<br />Коринфянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 9
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Не Апостол ли я? Не свободен ли я? Не видел ли я Иисуса Христа, Господа нашего? Не мое ли дело вы в Господе?
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Если для других я не Апостол, то для вас <i>Апостол;</i> <br /> ибо печать моего апостольства - вы в Господе.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Вот мое защищение против осуждающих меня.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Или мы не имеем власти есть и пить?
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Или не имеем власти иметь спутницею сестру жену, как и прочие Апостолы, и братья Господни, и Кифа?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Или один я и Варнава не имеем власти не работать?
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Какой воин служит когда-либо на своем содержании? Кто, насадив виноград, не ест плодов его? Кто, пася стадо, не ест молока от стада?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">По человеческому ли только <i>рассуждению</i> я это говорю? Не то же ли говорит и закон?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ибо в Моисеевом законе написано: не заграждай рта у вола молотящего. О волах ли печется Бог?
+</p>
+<div class="num">10</div><p id="n10">Или, конечно, для нас говорится? Так, для нас это написано; ибо, кто пашет, должен пахать с надеждою, и кто молотит, <i>должен</i> <i>молотить</i> с надеждою получить ожидаемое.
+</p>
+<div class="num">11</div><p id="n11">Если мы посеяли в вас духовное, велико ли то, если пожнем у вас телесное?
+</p>
+<div class="num">12</div><p id="n12">Если другие имеют у вас власть, не паче ли мы? Однако мы не пользовались сею властью, но все переносим, дабы не поставить какой преграды благовествованию Христову.
+</p>
+<div class="num">13</div><p id="n13">Разве не знаете, что священнодействующие питаются от святилища? что служащие жертвеннику берут долю от жертвенника?
+</p>
+<div class="num">14</div><p id="n14">Та&#769;к и Господь повелел проповедующим Евангелие жить от благовествования.
+</p>
+<div class="num">15</div><p id="n15">Но я не пользовался ничем таковым. И написал это не для того, чтобы та&#769;к было для меня. Ибо для меня лучше умереть, нежели чтобы кто уничтожил похвалу мою.
+</p>
+<div class="num">16</div><p id="n16">Ибо если я благовествую, то нечем мне хвалиться, потому что это необходимая <i>обязанность</i> моя, и горе мне, если не благовествую!
+</p>
+<div class="num">17</div><p id="n17">Ибо если делаю это добровольно, то <i>буду</i> иметь награду; а если недобровольно, то <i>исполняю</i> <i>только</i> вверенное мне служение.
+</p>
+<div class="num">18</div><p id="n18">За что&#769; же мне награда? За то&#769;, что, проповедуя Евангелие, благовествую о Христе безмездно, не пользуясь моею властью в благовествовании.
+</p>
+<div class="num">19</div><p id="n19">Ибо, будучи свободен от всех, я всем поработил себя, дабы больше приобрести:
+</p>
+<div class="num">20</div><p id="n20">для Иудеев я был как Иудей, чтобы приобрести Иудеев; для подзаконных был как подзаконный, чтобы приобрести подзаконных;
+</p>
+<div class="num">21</div><p id="n21">для чуждых закона - как чуждый закона,- не будучи чужд закона пред Богом, но подзаконен Христу,- чтобы приобрести чуждых закона;
+</p>
+<div class="num">22</div><p id="n22">для немощных был как немощный, чтобы приобрести немощных. Для всех я сделался всем, чтобы спасти по крайней мере некоторых.
+</p>
+<div class="num">23</div><p id="n23">Сие же делаю для Евангелия, чтобы быть соучастником его.
+</p>
+<div class="num">24</div><p id="n24">Не знаете ли, что бегущие на ристалище бегут все, но один получает награду? Так бегите, чтобы получить.
+</p>
+<div class="num">25</div><p id="n25">Все подвижники воздерживаются от всего: те для получения венца тленного, а мы - нетленного.
+</p>
+<div class="num">26</div><p id="n26">И потому я бегу не так, как на неверное, бьюсь не так, чтобы только бить воздух;
+</p>
+<div class="num">27</div><p id="n27">но усмиряю и порабощаю тело мое, дабы, проповедуя другим, самому не остаться недостойным.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="co1.10.ru.html">к главе 10</a></div></div>
+
+</body>
+</html>

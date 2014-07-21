@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="co2.ru.html">Второе послание к<br />Коринфянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Итак я рассудил сам в себе не приходить к вам опять с огорчением.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Ибо если я огорчаю вас, то кто обрадует меня, как не тот, кто огорчен мною?
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Это самое и писал я вам, дабы, придя, не иметь огорчения от тех, о которых мне надлежало радоваться: ибо я во всех вас уверен, что <br /> моя радость есть <i>радость</i> и для всех вас.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">От великой скорби и стесненного сердца я писал вам со многими слезами, не для того, чтобы огорчить вас, но чтобы вы познали любовь, какую я в избытке имею к вам.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Если же кто огорчил, то не меня огорчил, но частью,- чтобы не сказать много,- и всех вас.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Для такого довольно сего наказания от многих,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">так что вам лучше уже простить его и утешить, дабы он не был поглощен чрезмерною печалью.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И потому прошу вас оказать ему любовь.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ибо я для того и писал, чтобы узнать на опыте, во всем ли вы послушны.
+</p>
+<div class="num">10</div><p id="n10">А кого вы в чем прощаете, того и я; ибо и я, если в чем простил кого, простил для вас от лица Христова,
+</p>
+<div class="num">11</div><p id="n11">чтобы не сделал нам ущерба сатана, ибо нам не безызвестны его умыслы.
+</p>
+<div class="num">12</div><p id="n12">Придя в Троаду для благовествования о Христе, хотя мне и отверста была дверь Господом,
+</p>
+<div class="num">13</div><p id="n13">я не имел покоя духу моему, потому что не нашел <i>там</i> брата моего Тита; но, простившись с ними, я пошел в Македонию.
+</p>
+<div class="num">14</div><p id="n14">Но благодарение Богу, Который всегда дает нам торжествовать во Христе и благоухание познания о Себе распространяет нами во всяком месте.
+</p>
+<div class="num">15</div><p id="n15">Ибо мы Христово благоухание Богу в спасаемых и в погибающих:
+</p>
+<div class="num">16</div><p id="n16">для одних запах смертоносный на смерть, а для других запах живительный на жизнь. И кто способен к сему?
+</p>
+<div class="num">17</div><p id="n17">Ибо мы не повреждаем слова Божия, как многие, но проповедуем искренно, как от Бога, пред Богом, во Христе.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="co2.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

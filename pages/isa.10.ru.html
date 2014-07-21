@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="isa.ru.html">Книга Пророка Исаии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 10
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Горе тем, которые постановляют несправедливые законы и пишут жестокие решения,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">чтобы устранить бедных от правосудия и похитить права у малосильных из народа Моего, чтобы вдов сделать добычею своею и ограбить сирот.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И что вы будете делать в день посещения, когда придет гибель издалека? К кому прибегнете за помощью? И где оставите богатство ваше?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Без Меня согнутся между узниками и падут между убитыми. При всем этом не отвратится гнев Его, и рука Его еще простерта.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">О, Ассур, жезл гнева Моего! и бич в руке его - Мое негодование!
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Я пошлю его против народа нечестивого и против народа гнева Моего, дам ему повеление ограбить грабежом и добыть добычу и попирать его, как грязь на улицах.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Но он не так подумает и не так помыслит сердце его; у него будет на сердце - разорить и истребить немало народов.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ибо он скажет: "не все ли цари князья мои?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Халне не то же ли, что Кархемис? Емаф не то же ли, что Арпад? Самария не то же ли, что Дамаск?
+</p>
+<div class="num">10</div><p id="n10">Так как рука моя овладела царствами идольскими, в которых кумиров более, нежели в Иерусалиме и Самарии,-
+</p>
+<div class="num">11</div><p id="n11">то не сделаю ли того же с Иерусалимом и изваяниями его, что сделал с Самариею и идолами ее?"
+</p>
+<div class="num">12</div><p id="n12">И будет, когда Господь совершит все Свое дело на горе Сионе и в Иерусалиме, скажет: посмотрю на успех надменного сердца царя Ассирийского и на тщеславие высоко поднятых глаз его.
+</p>
+<div class="num">13</div><p id="n13">Он говорит: "силою руки моей и моею мудростью я сделал это, потому что я умен: и переставляю пределы народов, и расхищаю сокровища их, и низвергаю с престолов, как исполин;
+</p>
+<div class="num">14</div><p id="n14">и рука моя захватила богатство народов, как гнезда; и как забирают оставленные в них яйца, так забрал я всю землю, и никто не пошевелил крылом, и не открыл рта, и не пискнул".
+</p>
+<div class="num">15</div><p id="n15">Величается ли секира пред тем, кто рубит ею? Пила гордится ли пред тем, кто двигает ее? Как будто жезл восстает против того, кто поднимает его; как будто палка поднимается на того, кто не дерево!
+</p>
+<div class="num">16</div><p id="n16">За то Господь, Господь Саваоф, пошлет чахлость на тучных его, и между знаменитыми его возжет пламя, как пламя огня.
+</p>
+<div class="num">17</div><p id="n17">Свет Израиля будет огнем, и Святый его - пламенем, которое сожжет и пожрет терны его и волчцы его в один день;
+</p>
+<div class="num">18</div><p id="n18">и славный лес его и сад его, от души до тела, истребит; и он будет, как чахлый умирающий.
+</p>
+<div class="num">19</div><p id="n19">И остаток дерев леса его так будет малочислен, что дитя в состоянии будет сделать опись.
+</p>
+<div class="num">20</div><p id="n20">И будет в тот день: остаток Израиля и спасшиеся из дома Иакова не будут более полагаться на того, кто поразил их, но возложат упование на Господа, Святаго Израилева, чистосердечно.
+</p>
+<div class="num">21</div><p id="n21">Остаток обратится, остаток Иакова - к Богу сильному.
+</p>
+<div class="num">22</div><p id="n22">Ибо, хотя бы народа у тебя, Израиль, <i>было</i> столько, сколько песку морского, только остаток его обратится; истребление определено изобилующею правдою;
+</p>
+<div class="num">23</div><p id="n23">ибо определенное истребление совершит Господь, Господь Саваоф, во всей земле.
+</p>
+<div class="num">24</div><p id="n24">Посему так говорит Господь, Господь Саваоф: народ Мой, живущий на Сионе! не бойся Ассура. Он поразит тебя жезлом и трость свою поднимет на тебя, как Египет.
+</p>
+<div class="num">25</div><p id="n25">Еще немного, очень немного, и пройдет Мое негодование, и ярость Моя <i>обратится</i> на истребление их.
+</p>
+<div class="num">26</div><p id="n26">И поднимет Господь Саваоф бич на него, как во время поражения Мадиама у скалы Орива, или как <i>простер</i> на море жезл, и поднимет его, как на Египет.
+</p>
+<div class="num">27</div><p id="n27">И будет в тот день: снимется с рамен твоих бремя его, и ярмо его - с шеи твоей; и распадется ярмо от тука.
+</p>
+<div class="num">28</div><p id="n28">Он идет на Аиаф, проходит Мигрон, в Михмасе складывает свои запасы.
+</p>
+<div class="num">29</div><p id="n29">Проходят теснины; в Геве ночлег их; Рама трясется; Гива Саулова разбежалась.
+</p>
+<div class="num">30</div><p id="n30">Вой голосом твоим, дочь Галима; пусть услышит тебя Лаис, бедный Анафоф!
+</p>
+<div class="num">31</div><p id="n31">Мадмена разбежалась, жители Гевима спешат уходить.
+</p>
+<div class="num">32</div><p id="n32">Еще день простоит он в Нове; грозит рукою своею горе Сиону, холму Иерусалимскому.
+</p>
+<div class="num">33</div><p id="n33">Вот, Господь, Господь Саваоф, страшною силою сорвет ветви дерев, и величающиеся ростом будут срублены, высокие - повержены на землю.
+</p>
+<div class="num">34</div><p id="n34">И посечет чащу леса железом, и Ливан падет от Всемогущего.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="isa.11.ru.html">к главе 11</a></div></div>
+
+</body>
+</html>

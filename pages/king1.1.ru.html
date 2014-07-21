@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king1.ru.html">Первая книга Царств</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Был один человек из Рамафаим-Цофима, с горы Ефремовой, имя ему Елкана, сын Иерохама, сына Илия, сына Тоху, сына Цуфа,- Ефрафянин;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">у него были две жены: имя одной Анна, а имя другой Феннана; у Феннаны были дети, у Анны же не было детей.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И ходил этот человек из города своего в положенные дни поклоняться и приносить жертву Господу Саваофу в Силом; там <i>были</i> [Илий и] два сына его, Офни и Финеес, священниками Господа.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">В тот день, когда Елкана приносил жертву, давал Феннане, жене своей, и всем сыновьям ее и дочерям ее части;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Анне же давал часть особую, [так как у нее не было детей], ибо любил Анну [более, нежели Феннану], хотя Господь заключил чрево ее.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Соперница ее сильно огорчала ее, побуждая ее к ропоту на то, что Господь заключил чрево ее.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Так бывало каждый год, когда ходила она в дом Господень; та огорчала ее, а эта плакала [и сетовала] и не ела.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сказал ей Елкана, муж ее: Анна! [Она отвечала ему: вот я. И сказал ей:] что ты плачешь и почему не ешь, и отчего скорбит сердце твое? не лучше ли я для тебя десяти сыновей?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И встала Анна после того, как они ели и пили в Силоме, [и стала пред Господом]. Илий же священник сидел тогда на седалище у входа в храм Господень.
+</p>
+<div class="num">10</div><p id="n10">И была она в скорби души, и молилась Господу, и горько плакала,
+</p>
+<div class="num">11</div><p id="n11">и дала обет, говоря: Господи [Всемогущий Боже] Саваоф! если Ты призришь на скорбь рабы Твоей и вспомнишь обо мне, и не забудешь рабы Твоей и дашь рабе Твоей дитя мужеского пола, то я отдам его Господу [в дар] на все дни жизни его, [и вина и сикера не будет он пить,] и бритва не коснется головы его.
+</p>
+<div class="num">12</div><p id="n12">Между тем как она долго молилась пред Господом, Илий смотрел на уста ее;
+</p>
+<div class="num">13</div><p id="n13">и как Анна говорила в сердце своем, а уста ее только двигались, и не было слышно голоса ее, то Илий счел ее пьяною.
+</p>
+<div class="num">14</div><p id="n14">И сказал ей Илий: доколе ты будешь пьяною? вытрезвись от вина твоего [и иди от лица Господня].
+</p>
+<div class="num">15</div><p id="n15">И отвечала Анна, и сказала: нет, господин мой; я - жена, скорбящая духом, вина и сикера я не пила, но изливаю душу мою пред Господом;
+</p>
+<div class="num">16</div><p id="n16">не считай рабы твоей негодною женщиною, ибо от великой печали моей и от скорби моей я говорила доселе.
+</p>
+<div class="num">17</div><p id="n17">И отвечал Илий и сказал: иди с миром, и Бог Израилев исполнит прошение твое, чего ты просила у Него.
+</p>
+<div class="num">18</div><p id="n18">Она же сказала: да найдет раба твоя милость в очах твоих! И пошла она в путь свой, и ела, и лице ее не было уже <i>печально,</i> как прежде.
+</p>
+<div class="num">19</div><p id="n19">И встали они поутру, и поклонились пред Господом, и возвратились, и пришли в дом свой в Раму. И познал Елкана Анну, жену свою, и вспомнил о ней Господь.
+</p>
+<div class="num">20</div><p id="n20">Чрез несколько времени зачала Анна и родила сына и дала ему имя: Самуил, ибо, [говорила она], от Господа [Бога Саваофа] я испросила его.
+</p>
+<div class="num">21</div><p id="n21">И пошел муж ее Елкана и все семейство его [в Силом] совершить годичную жертву Господу и обеты свои [и все десятины от земли своей].
+</p>
+<div class="num">22</div><p id="n22">Анна же не пошла [с ним], сказав мужу своему: когда младенец отнят будет от груди и подрастет, тогда я отведу его, и он явится пред Господом и останется там навсегда.
+</p>
+<div class="num">23</div><p id="n23">И сказал ей Елкана, муж ее: делай, что тебе угодно; оставайся, доколе не вскормишь его грудью; только да утвердит Господь слово, [вышедшее из уст твоих]. И осталась жена <i>его,</i> и кормила грудью сына своего, доколе не вскормила.
+</p>
+<div class="num">24</div><p id="n24">Когда же вскормила его, пошла с ним в Силом, <i>взяв</i> три тельца [и хлебы] и одну ефу муки и мех вина, и пришла в дом Господа в Силом, [и отрок с ними]; отрок же был еще дитя.
+</p>
+<div class="num">25</div><p id="n25">[И привели его пред лице Господа; и принес отец его жертву, какую в установленные дни приносил Господу. И привели отрока] и закололи тельца; и привела отрока [Анна мать] к Илию
+</p>
+<div class="num">26</div><p id="n26">и сказала: о, господин мой! да живет душа твоя, господин мой! я - та самая женщина, которая здесь при тебе стояла и молилась Господу;
+</p>
+<div class="num">27</div><p id="n27">о сем дитяти молилась я, и исполнил мне Господь прошение мое, чего я просила у Него;
+</p>
+<div class="num">28</div><p id="n28">и я отдаю его Господу на все дни жизни его, служить Господу. И поклонилась там Господу.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king1.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

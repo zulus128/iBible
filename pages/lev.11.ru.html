@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lev.ru.html">Левит</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 11
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Господь Моисею и Аарону, говоря им:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">скажите сынам Израилевым: вот животные, которые можно вам есть из всего скота на земле:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">всякий скот, у которого раздвоены копыта и на копытах глубокий разрез, и который жует жвачку, ешьте;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">только сих не ешьте из жующих жвачку и имеющих раздвоенные копыта: верблюда, потому что он жует жвачку, но копыта у него не раздвоены, нечист он для вас;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и тушканчика, потому что он жует жвачку, но копыта у него не раздвоены, нечист он для вас,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и зайца, потому что он жует жвачку, но копыта у него не раздвоены, нечист он для вас;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и свиньи, потому что копыта у нее раздвоены и на копытах разрез глубокий, но она не жует жвачки, нечиста она для вас;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">мяса их не ешьте и к трупам их не прикасайтесь; нечисты они для вас.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Из всех <i>животных,</i> которые в воде, ешьте сих: у которых есть перья и чешуя в воде, в морях ли, или реках, тех ешьте;
+</p>
+<div class="num">10</div><p id="n10">а все те, у которых нет перьев и чешуи, в морях ли, или реках, из всех плавающих в водах и из всего живущего в водах, скверны для вас;
+</p>
+<div class="num">11</div><p id="n11">они должны быть скверны для вас: мяса их не ешьте и трупов их гнушайтесь;
+</p>
+<div class="num">12</div><p id="n12">все <i>животные,</i> у которых нет перьев и чешуи в воде, скверны для вас.
+</p>
+<div class="num">13</div><p id="n13">Из птиц же гнушайтесь сих [не должно их есть, скверны они]: орла, грифа и морского орла,
+</p>
+<div class="num">14</div><p id="n14">коршуна и сокола с породою его,
+</p>
+<div class="num">15</div><p id="n15">всякого ворона с породою его,
+</p>
+<div class="num">16</div><p id="n16">страуса, совы, чайки и ястреба с породою его,
+</p>
+<div class="num">17</div><p id="n17">филина, рыболова и ибиса,
+</p>
+<div class="num">18</div><p id="n18">лебедя, пеликана и сипа,
+</p>
+<div class="num">19</div><p id="n19">цапли, зуя с породою его, удода и нетопыря.
+</p>
+<div class="num">20</div><p id="n20">Все <i>животные</i> пресмыкающиеся, крылатые, ходящие на четырех <i>ногах,</i> скверны для вас;
+</p>
+<div class="num">21</div><p id="n21">из всех пресмыкающихся, крылатых, ходящих на четырех <i>ногах,</i> тех только ешьте, у которых есть голени выше ног, чтобы скакать ими по земле;
+</p>
+<div class="num">22</div><p id="n22">сих ешьте из них: саранчу с ее породою, солам с ее породою, харгол с ее породою и хагаб с ее породою.
+</p>
+<div class="num">23</div><p id="n23">Всякое <i>другое</i> пресмыкающееся, крылатое, у которого четыре ноги, скверно для вас;
+</p>
+<div class="num">24</div><p id="n24">от них вы будете нечисты: всякий, кто прикоснется к трупу их, нечист будет до вечера;
+</p>
+<div class="num">25</div><p id="n25">и всякий, кто возьмет труп их, должен омыть одежду свою и нечист будет до вечера.
+</p>
+<div class="num">26</div><p id="n26">Всякий скот, у которого копыта раздвоены, но нет глубокого разреза, и который не жует жвачки, нечист для вас: всякий, кто прикоснется к нему, будет нечист [до вечера].
+</p>
+<div class="num">27</div><p id="n27">Из всех зверей четвероногих те, которые ходят на лапах, нечисты для вас: всякий, кто прикоснется к трупу их, нечист будет до вечера;
+</p>
+<div class="num">28</div><p id="n28">кто возьмет труп их, тот должен омыть одежды свои и нечист будет до вечера: нечисты они для вас.
+</p>
+<div class="num">29</div><p id="n29">Вот что нечисто для вас из животных, пресмыкающихся по земле: крот, мышь, ящерица с ее породою,
+</p>
+<div class="num">30</div><p id="n30">анака, хамелеон, летаа, хомет и тиншемет,-
+</p>
+<div class="num">31</div><p id="n31">сии нечисты для вас из всех пресмыкающихся: всякий, кто прикоснется к ним мертвым, нечист будет до вечера.
+</p>
+<div class="num">32</div><p id="n32">И всё, на что упадет которое-нибудь из них мертвое, всякий деревянный сосуд, или одежда, или кожа, или мешок, и всякая вещь, которая употребляется на дело, будут нечисты: в воду должно положить их, и нечисты будут до вечера, потом будут чисты;
+</p>
+<div class="num">33</div><p id="n33">если же которое-нибудь из них упадет в какой-нибудь глиняный сосуд, то находящееся в нем будет нечисто, и самый [сосуд] разбейте.
+</p>
+<div class="num">34</div><p id="n34">Всякая пища, которую едят, на которой была вода <i>из</i> <i>такого</i> <i>сосуда,</i> нечиста будет [для вас], и всякое питье, которое пьют, во всяком <i>таком</i> сосуде нечисто будет.
+</p>
+<div class="num">35</div><p id="n35">Всё, на что упадет что-нибудь от трупа их, нечисто будет: печь и очаг должно разломать, они нечисты; и они должны быть нечисты для вас;
+</p>
+<div class="num">36</div><p id="n36">только источник и колодезь, вмещающий воду, остаются чистыми; а кто прикоснется к трупу их, тот нечист.
+</p>
+<div class="num">37</div><p id="n37">И если что-нибудь от трупа их упадет на какое-либо семя, которое сеют, то оно чисто;
+</p>
+<div class="num">38</div><p id="n38">если же тогда, как вода налита на семя, упадет на него что-нибудь от трупа их, то оно нечисто для вас.
+</p>
+<div class="num">39</div><p id="n39">И когда умрет какой-либо скот, который употребляется вами в пищу, то прикоснувшийся к трупу его нечист будет до вечера;
+</p>
+<div class="num">40</div><p id="n40">и тот, кто будет есть мертвечину его, должен омыть одежды свои и нечист будет до вечера; и тот, кто понесет труп его, должен омыть одежды свои и нечист будет до вечера.
+</p>
+<div class="num">41</div><p id="n41">Всякое животное, пресмыкающееся по земле, скверно для вас, не должно есть <i>его;</i><i></i>
+</p>
+<div class="num">42</div><p id="n42">всего ползающего на чреве и всего ходящего на четырех ногах, и многоножных из животных пресмыкающихся по земле, не ешьте, ибо они скверны;
+</p>
+<div class="num">43</div><p id="n43">не оскверняйте душ ваших каким-либо животным пресмыкающимся и не делайте себя чрез них нечистыми, чтоб быть чрез них нечистыми,
+</p>
+<div class="num">44</div><p id="n44">ибо Я - Господь Бог ваш: освящайтесь и будьте святы, ибо Я [Господь, Бог ваш] свят; и не оскверняйте душ ваших каким-либо животным, ползающим по земле,
+</p>
+<div class="num">45</div><p id="n45">ибо Я - Господь, выведший вас из земли Египетской, чтобы быть вашим Богом. Итак будьте святы, потому что Я свят.
+</p>
+<div class="num">46</div><p id="n46">Вот закон о скоте, о птицах, о всех животных, живущих в водах, и о всех животных, пресмыкающихся по земле,
+</p>
+<div class="num">47</div><p id="n47">чтобы отличать нечистое от чистого, и животных, которых можно есть, от животных, которых есть не должно.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lev.12.ru.html">к главе 12</a></div></div>
+
+</body>
+</html>

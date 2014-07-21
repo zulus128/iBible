@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jn.ru.html">Евангелие от Иоанна</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">За шесть дней до Пасхи пришел Иисус в Вифанию, где был Лазарь умерший, которого Он воскресил из мертвых.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Там приготовили Ему вечерю, и Марфа служила, и Лазарь был одним из возлежавших с Ним.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Мария же, взяв фунт нардового чистого драгоценного мира, помазала ноги Иисуса и отерла волосами своими ноги Его; и дом наполнился благоуханием от мира.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Тогда один из учеников Его, Иуда Симонов Искариот, который хотел предать Его, сказал:
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Для чего бы не продать это миро за триста динариев и не раздать нищим?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Сказал же он это не потому, чтобы заботился о нищих, но потому что был вор. Он имел <i>при</i> <i>себе</i> <i>денежный</i> ящик и носил, что туда опускали.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Иисус же сказал: оставьте ее; она сберегла это на день погребения Моего.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ибо нищих всегда имеете с собою, а Меня не всегда.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Многие из Иудеев узнали, что Он там, и пришли не только для Иисуса, но чтобы видеть и Лазаря, которого Он воскресил из мертвых.
+</p>
+<div class="num">10</div><p id="n10">Первосвященники же положили убить и Лазаря,
+</p>
+<div class="num">11</div><p id="n11">потому что ради него многие из Иудеев приходили и веровали в Иисуса.
+</p>
+<div class="num">12</div><p id="n12">На другой день множество народа, пришедшего на праздник, услышав, что Иисус идет в Иерусалим,
+</p>
+<div class="num">13</div><p id="n13">взяли пальмовые ветви, вышли навстречу Ему и восклицали: осанна! благословен грядущий во имя Господне, Царь Израилев!
+</p>
+<div class="num">14</div><p id="n14">Иисус же, найдя молодого осла, сел на него, как написано:
+</p>
+<div class="num">15</div><p id="n15">Не бойся, дщерь Сионова! се, Царь твой грядет, сидя на молодом осле.
+</p>
+<div class="num">16</div><p id="n16">Ученики Его сперва не поняли этого; но когда прославился Иисус, тогда вспомнили, что та&#769;к было о Нем написано, и это сделали Ему.
+</p>
+<div class="num">17</div><p id="n17">Народ, бывший с Ним прежде, свидетельствовал, что Он вызвал из гроба Лазаря и воскресил его из мертвых.
+</p>
+<div class="num">18</div><p id="n18">Потому и встретил Его народ, ибо слышал, что Он сотворил это чудо.
+</p>
+<div class="num">19</div><p id="n19">Фарисеи же говорили между собою: видите ли, что не успеваете ничего? весь мир идет за Ним.
+</p>
+<div class="num">20</div><p id="n20">Из пришедших на поклонение в праздник были некоторые Еллины.
+</p>
+<div class="num">21</div><p id="n21">Они подошли к Филиппу, который был из Вифсаиды Галилейской, и просили его, говоря: господин! нам хочется видеть Иисуса.
+</p>
+<div class="num">22</div><p id="n22">Филипп идет и говорит о том Андрею; и потом Андрей и Филипп сказывают о том Иисусу.
+</p>
+<div class="num">23</div><p id="n23">Иисус же сказал им в ответ: пришел час прославиться Сыну Человеческому.
+</p>
+<div class="num">24</div><p id="n24">Истинно, истинно говорю вам: если пшеничное зерно, пав в землю, не умрет, то останется одно; а если умрет, то принесет много плода.
+</p>
+<div class="num">25</div><p id="n25">Любящий душу свою погубит ее; а ненавидящий душу свою в мире сем сохранит ее в жизнь вечную.
+</p>
+<div class="num">26</div><p id="n26">Кто Мне служит, Мне да последует; и где Я, там и слуга Мой будет. И кто Мне служит, того почтит Отец Мой.
+</p>
+<div class="num">27</div><p id="n27">Душа Моя теперь возмутилась; и что Мне сказать? Отче! избавь Меня от часа сего! Но на сей час Я и пришел.
+</p>
+<div class="num">28</div><p id="n28">Отче! прославь имя Твое. Тогда пришел с неба глас: и прославил и еще прославлю.
+</p>
+<div class="num">29</div><p id="n29">Народ, стоявший и слышавший <i>то,</i> говорил: это гром; а другие говорили: Ангел говорил Ему.
+</p>
+<div class="num">30</div><p id="n30">Иисус на это сказал: не для Меня был глас сей, но для народа.
+</p>
+<div class="num">31</div><p id="n31">Ныне суд миру сему; ныне князь мира сего изгнан будет вон.
+</p>
+<div class="num">32</div><p id="n32">И когда Я вознесен буду от земли, всех привлеку к Себе.
+</p>
+<div class="num">33</div><p id="n33">Сие говорил Он, давая разуметь, какою смертью Он умрет.
+</p>
+<div class="num">34</div><p id="n34">Народ отвечал Ему: мы слышали из закона, что Христос пребывает вовек; как же Ты говоришь, что должно вознесену быть Сыну Человеческому? кто Этот Сын Человеческий?
+</p>
+<div class="num">35</div><p id="n35">Тогда Иисус сказал им: еще на малое время свет есть с вами; ходите, пока есть свет, чтобы не объяла вас тьма: а ходящий во тьме не знает, куда идет.
+</p>
+<div class="num">36</div><p id="n36">Доколе свет с вами, веруйте в свет, да будете сынами света. Сказав это, Иисус отошел и скрылся от них.
+</p>
+<div class="num">37</div><p id="n37">Столько чудес сотворил Он пред ними, и они не веровали в Него,
+</p>
+<div class="num">38</div><p id="n38">да сбудется слово Исаии пророка: Господи! кто поверил слышанному от нас? и кому открылась мышца Господня?
+</p>
+<div class="num">39</div><p id="n39">Потому не могли они веровать, что, как еще сказал Исаия,
+</p>
+<div class="num">40</div><p id="n40">народ сей ослепил глаза свои и окаменил сердце свое, да не видят глазами, и не уразумеют сердцем, и не обратятся, чтобы Я исцелил их.
+</p>
+<div class="num">41</div><p id="n41">Сие сказал Исаия, когда видел славу Его и говорил о Нем.
+</p>
+<div class="num">42</div><p id="n42">Впрочем и из начальников многие уверовали в Него; но ради фарисеев не исповедовали, чтобы не быть отлученными от синагоги,
+</p>
+<div class="num">43</div><p id="n43">ибо возлюбили больше славу человеческую, нежели славу Божию.
+</p>
+<div class="num">44</div><p id="n44">Иисус же возгласил и сказал: верующий в Меня не в Меня верует, но в Пославшего Меня.
+</p>
+<div class="num">45</div><p id="n45">И видящий Меня видит Пославшего Меня.
+</p>
+<div class="num">46</div><p id="n46">Я свет пришел в мир, чтобы всякий верующий в Меня не оставался во тьме.
+</p>
+<div class="num">47</div><p id="n47">И если кто услышит Мои слова и не поверит, Я не сужу его, ибо Я пришел не судить мир, но спасти мир.
+</p>
+<div class="num">48</div><p id="n48">Отвергающий Меня и не принимающий слов Моих имеет судью себе: слово, которое Я говорил, оно будет судить его в последний день.
+</p>
+<div class="num">49</div><p id="n49">Ибо Я говорил не от Себя; но пославший Меня Отец, Он дал Мне заповедь, что сказать и что говорить.
+</p>
+<div class="num">50</div><p id="n50">И Я знаю, что заповедь Его есть жизнь вечная. Итак, что Я говорю, говорю, как сказал Мне Отец.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jn.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

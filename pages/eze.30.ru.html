@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eze.ru.html">Книга Пророка Иезекииля</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 30
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И было ко мне слово Господне:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">сын человеческий! изреки пророчество и скажи: так говорит Господь Бог: рыдайте! о, злосчастный день!
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ибо близок день, так! близок день Господа, день мрачный; година народов наступает.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И пойдет меч на Египет, и ужас распространится в Ефиопии, когда в Египте будут падать пораженные, когда возьмут богатство его, и основания его будут разрушены;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Ефиопия и Ливия, и Лидия, и весь смешанный народ, и Хуб, и сыны земли завета вместе с ними падут от меча.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Так говорит Господь: падут подпоры Египта, и упадет гордыня могущества его; от Мигдола до Сиены будут падать в нем от меча, сказал Господь Бог.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И опустеет он среди опустошенных земель, и города его будут среди опустошенных городов.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И узнают, что Я Господь, когда пошлю огонь на Египет, и все подпоры его будут сокрушены.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">В тот день пойдут от Меня вестники на кораблях, чтобы устрашить беспечных Ефиоплян, и распространится у них ужас, как в день Египта; ибо вот, он идет.
+</p>
+<div class="num">10</div><p id="n10">Так говорит Господь Бог: положу конец многолюдству Египта рукою Навуходоносора, царя Вавилонского.
+</p>
+<div class="num">11</div><p id="n11">Он и с ним народ его, лютейший из народов, приведены будут на погибель сей земли, и обнажат мечи свои на Египет, и наполнят землю пораженными.
+</p>
+<div class="num">12</div><p id="n12">И реки сделаю сушею и предам землю в руки злым, и рукою иноземцев опустошу землю и все, наполняющее ее. Я, Господь, сказал это.
+</p>
+<div class="num">13</div><p id="n13">Так говорит Господь Бог: истреблю идолов и уничтожу лжебогов в Мемфисе, и из земли Египетской не будет уже властителя, и наведу страх на землю Египетскую.
+</p>
+<div class="num">14</div><p id="n14">И опустошу Пафрос и пошлю огонь на Цоан, и произведу суд над Но.
+</p>
+<div class="num">15</div><p id="n15">И изолью ярость Мою на Син, крепость Египта, и истреблю многолюдие в Но.
+</p>
+<div class="num">16</div><p id="n16">И пошлю огонь на Египет; вострепещет Син, и Но рушится, и на Мемфис нападут враги среди дня.
+</p>
+<div class="num">17</div><p id="n17">Молодые люди Она и Бубаста падут от меча, а прочие пойдут в плен.
+</p>
+<div class="num">18</div><p id="n18">И в Тафнисе померкнет день, когда Я сокрушу там ярмо Египта, и прекратится в нем гордое могущество его. Облако закроет его, и дочери его пойдут в плен.
+</p>
+<div class="num">19</div><p id="n19">Так произведу Я суд над Египтом, и узнают, что Я Господь.
+</p>
+<div class="num">20</div><p id="n20">В одиннадцатом году, в первом месяце, в седьмой день <i>месяца</i>, было ко мне слово Господне:
+</p>
+<div class="num">21</div><p id="n21">сын человеческий! Я уже сокрушил мышцу фараону, царю Египетскому; и вот, она еще не обвязана для излечения ее и не обвита врачебными перевязками, от которых она получила бы силу держать меч.
+</p>
+<div class="num">22</div><p id="n22">Посему так говорит Господь Бог: вот, Я - на фараона, царя Египетского, и сокрушу мышцы его, здоровую и переломленную, так что меч выпадет из руки его.
+</p>
+<div class="num">23</div><p id="n23">И рассею Египтян по народам, и развею их по землям.
+</p>
+<div class="num">24</div><p id="n24">А мышцы царя Вавилонского сделаю крепкими и дам ему меч Мой в руку, мышцы же фараона сокрушу, и он изъязвленный будет сильно стонать перед ним.
+</p>
+<div class="num">25</div><p id="n25">Укреплю мышцы царя Вавилонского, а мышцы у фараона опустятся; и узнают, что Я Господь, когда меч Мой дам в руку царю Вавилонскому, и он прострет его на землю Египетскую.
+</p>
+<div class="num">26</div><p id="n26">И рассею Египтян по народам, и развею их по землям, и узнают, что Я Господь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eze.31.ru.html">к главе 31</a></div></div>
+
+</body>
+</html>

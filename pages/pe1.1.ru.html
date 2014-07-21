@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="pe1.ru.html">Первое послание Петра</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Петр, Апостол Иисуса Христа, пришельцам, рассеянным в Понте, Галатии, Каппадокии, Асии и Вифинии, избранным,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">по предведению Бога Отца, при освящении от Духа, к послушанию и окроплению Кровию Иисуса Христа: благодать вам и мир да умножится.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Благословен Бог и Отец Господа нашего Иисуса Христа, по великой Своей милости возродивший нас воскресением Иисуса Христа из мертвых к упованию живому,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">к наследству нетленному, чистому, неувядаемому, хранящемуся на небесах для вас,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">силою Божиею через веру соблюдаемых ко спасению, готовому открыться в последнее время.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">О сем радуйтесь, поскорбев теперь немного, если нужно, от различных искушений,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">дабы испытанная вера ваша оказалась драгоценнее гибнущего, хотя и огнем испытываемого золота, к похвале и чести и славе в явление Иисуса Христа,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Которого, не видев, любите, и Которого доселе не видя, но веруя в Него, радуетесь радостью неизреченною и преславною,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">достигая наконец верою вашею спасения душ.
+</p>
+<div class="num">10</div><p id="n10">К сему-то спасению относились изыскания и исследования пророков, которые предсказывали о назначенной вам благодати,
+</p>
+<div class="num">11</div><p id="n11">исследуя, на которое и на какое время указывал сущий в них Дух Христов, когда Он предвозвещал Христовы страдания и последующую за ними славу.
+</p>
+<div class="num">12</div><p id="n12">Им открыто было, что не им самим, а нам служило то, что ныне проповедано вам благовествовавшими Духом Святым, посланным с небес, во что желают проникнуть Ангелы.
+</p>
+<div class="num">13</div><p id="n13">Посему, (возлюбленные,) препоясав чресла ума вашего, бодрствуя, совершенно уповайте на подаваемую вам благодать в явлении Иисуса Христа.
+</p>
+<div class="num">14</div><p id="n14">Как послушные дети, не сообразуйтесь с прежними похотями, бывшими в неведении вашем,
+</p>
+<div class="num">15</div><p id="n15">но, по примеру призвавшего вас Святаго, и сами будьте святы во всех поступках.
+</p>
+<div class="num">16</div><p id="n16">Ибо написано: будьте святы, потому что Я свят.
+</p>
+<div class="num">17</div><p id="n17">И если вы называете Отцем Того, Который нелицеприятно судит каждого по делам, то со страхом проводи&#769;те время странствования вашего,
+</p>
+<div class="num">18</div><p id="n18">зная, что не тленным серебром или золотом искуплены вы от суетной жизни, преданной вам от отцов,
+</p>
+<div class="num">19</div><p id="n19">но драгоценною Кровию Христа, как непорочного и чистого Агнца,
+</p>
+<div class="num">20</div><p id="n20">предназначенного еще прежде создания мира, но явившегося в последние времена для вас,
+</p>
+<div class="num">21</div><p id="n21">уверовавших чрез Него в Бога, Который воскресил Его из мертвых и дал Ему славу, чтобы вы имели веру и упование на Бога.
+</p>
+<div class="num">22</div><p id="n22">Послушанием истине чрез Духа, очистив души ваши к нелицемерному братолюбию, постоянно люби&#769;те друг друга от чистого сердца,
+</p>
+<div class="num">23</div><p id="n23"><i>как</i> возрожденные не от тленного семени, но от нетленного, от слова Божия, живаго и пребывающего вовек.
+</p>
+<div class="num">24</div><p id="n24">Ибо всякая плоть - как трава, и всякая слава человеческая - как цвет на траве: засохла трава, и цвет ее опал;
+</p>
+<div class="num">25</div><p id="n25">но слово Господне пребывает вовек; а это есть то слово, которое вам проповедано.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="pe1.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

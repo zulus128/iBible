@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="tov.ru.html">Книга Товита</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 8
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Когда окончили ужин, ввели к ней Товию.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Он же, идя, вспомнил слова Рафаила, и взял курильницу, и положил сердце и печень рыбы, и курил.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Демон, ощутив этот запах, убежал в верхние страны Египта, и связал его Ангел.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Когда они остались в комнате вдвоем, Товия встал с постели и сказал: встань, сестра, и помолимся, чтобы Господь помиловал нас.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И начал Товия говорить: благословен Ты, Боже отцов наших, и благословенно имя Твое святое и славное вовеки! Да благословляют Тебя небеса и все творения Твои!
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Ты сотворил Адама и дал ему помощницею Еву, подпорою - жену его. От них произошел род человеческий. Ты сказал: нехорошо быть человеку одному, сотворим помощника, подобного ему.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И ныне, Господи, я беру сию сестру мою не для удовлетворения похоти, но поистине <i>как жену</i>: благоволи же помиловать меня и <i>дай</i> мне состариться с нею!
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И она сказала с ним: аминь.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И оба спокойно спали в эту ночь. Между тем Рагуил, встав, пошел и выкопал могилу,
+</p>
+<div class="num">10</div><p id="n10">говоря: не умер ли и этот?
+</p>
+<div class="num">11</div><p id="n11">И пришел Рагуил в дом свой
+</p>
+<div class="num">12</div><p id="n12">и сказал Едне, жене своей: пошли одну из служанок посмотреть, жив ли он; если нет, похороним его, и никто не будет знать.
+</p>
+<div class="num">13</div><p id="n13">Служанка, отворив дверь, вошла и увидела, что оба они спят.
+</p>
+<div class="num">14</div><p id="n14">И, выйдя, объявила им, что он жив.
+</p>
+<div class="num">15</div><p id="n15">И благословил Рагуил Бога, говоря: благословен Ты, Боже, всяким благословением чистым и святым! Да благословляют Тебя святые Твои, и все создания Твои, и все Ангелы Твои, и все избранные Твои, да благословляют Тебя вовеки!
+</p>
+<div class="num">16</div><p id="n16">Благословен Ты, что возвеселил меня, и не случилось со мною так, как я думал, но сотворил с нами по великой Твоей милости!
+</p>
+<div class="num">17</div><p id="n17">Благословен Ты, что помиловал двух единородных! Доверши, Владыка, милость над ними: дай им окончить жизнь во здравии, с весельем и милостью!
+</p>
+<div class="num">18</div><p id="n18">И приказал рабам своим зарыть могилу.
+</p>
+<div class="num">19</div><p id="n19">И сделал для них брачный пир на четырнадцать дней.
+</p>
+<div class="num">20</div><p id="n20">И сказал ему Рагуил с клятвою прежде исполнения дней брачного пира: не уходи, доколе не исполнятся эти четырнадцать дней брачного пира;
+</p>
+<div class="num">21</div><p id="n21">а тогда, взяв половину имения, благополучно отправляйся к отцу твоему: остальное же <i>получишь</i>, когда умру я и жена моя.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="tov.9.ru.html">к главе 9</a></div></div>
+
+</body>
+</html>

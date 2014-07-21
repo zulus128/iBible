@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mak1.cs.html">№ маккавей1скаz</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA №i
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# цaрь є3гЂпетскій собрA си1лу мн0гу ѓки пес0къ, и4же вскрaй м0рz, и3 корабли6 мнHги: и3 и3скaше њбладaти цaрство ґлеxaндрово лeстію и3 приложи1ти є5 къ цaрству своемY.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И# и3зhде въ сmрjю словесы2 ми1рными, и3 tверзaху є3мY и5же t градHвъ и3 срэтaху є3го2, ћкw зaповэдь бЁ ґлеxaндра царS срэтaти є3го2, занE бsше тeсть є3гw2.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Е#гдa же вхождaше во грaды, птоломeй поставлsше си6лы на стрaжу въ к0емждо грaдэ.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Е#гдa же прибли1жисz ко ґзHту, показaша є3мY кaпище дагHново сожжeно, и3 ґзHтъ и3 њкрє1стныz грaды є3гw2 разорє1ны, и3 тэлесA повeржєна, и3 побіeныхъ, и5хже поби2 во брaни: сметaша бо <nobr>|</nobr> въ к{пы и4хъ при пути2 є3гw2.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И# повёдаша царю2, ±же сотвори2 їwнаfaнъ, є4же бы возненави1дэти є3го2. и3 ўмолчA цaрь.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И# срёте їwнаfaнъ царS во їoппjи со слaвою, и3 цэловaста дрyгъ дрyга и3 почи1ста тY.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И# и4де їwнаfaнъ со царeмъ дaже до рэки2 нарицaемыz є3леvfeра, и3 возврати1сz во їеrли1мъ.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Цaрь же птоломeй њгосп0дствова гр†ды прим0рскими дaже до селеvкjи прим0рскіz и3 размышлsше на ґлеxaндра совёты лук†вы.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И# послA старёйшинъ къ дими1трію царю2, глаг0лz: пріиди2, состaвимъ междY нaма завётъ, и3 дaмъ тебЁ дщeрь мою2, ю4же и4мать ґлеxaндръ, и3 цaрствовати и4маши во цaрствіи nтцA твоегw2:
+</p>
+<div class="num">10</div><p id="n10">раскazхсz бо дaвъ є3мY дщeрь мою2, и3скaше бо мS ўби1ти.
+</p>
+<div class="num">11</div><p id="n11">И# похyли є3го2 рaди похотёніz цaрства є3гw2.
+</p>
+<div class="num">12</div><p id="n12">И# tsвъ дщeрь свою2, дадE ю5 дими1трію и3 tчужди1сz t ґлеxaндра, и3 kви1сz враждA и4хъ.
+</p>
+<div class="num">13</div><p id="n13">И# вни1де птоломeй во ґнтіохjю и3 возложи2 двЁ діади6мы на главY свою2, ґсjйскую и3 є3гЂпетскую.
+</p>
+<div class="num">14</div><p id="n14">Ґлеxaндръ же цaрь бЁ въ кілікjи во временA џна, понeже tметaхусz и5же t мёстъ џныхъ.
+</p>
+<div class="num">15</div><p id="n15">И# слhша ґлеxaндръ и3 пріи1де нaнь брaнію: и3 и3зведE птоломeй си1лу, и3 срёте є3го2 рук0ю крёпкою, и3 прогнA є3го2.
+</p>
+<div class="num">16</div><p id="n16">И# побэжE ґлеxaндръ во ґравjю защи1титисz тaмw: цaрь же птоломeй вознесeсz.
+</p>
+<div class="num">17</div><p id="n17">И# ўсёкну завдіи1ль ґравjтинъ главY ґлеxaндрову и3 послA птоломeю.
+</p>
+<div class="num">18</div><p id="n18">И# цaрь птоломeй ќмре въ трeтій дeнь, и3 сyщіи въ твердhнехъ погиб0ша t сyщихъ въ твердhнехъ.
+</p>
+<div class="num">19</div><p id="n19">И# воцари1сz дими1трій въ лёто сто2 шестьдесsтъ седм0е.
+</p>
+<div class="num">20</div><p id="n20">Во дни6 w4ны собрA їwнаfaнъ сyщихъ t їудeи, да вою1ютъ краегрaдіе, є4же во їеrли1мэ, и3 сотвори2 на џное мих†ны мнHги.
+</p>
+<div class="num">21</div><p id="n21">И# и3д0ша нёцыи ненави1дzщіи kзhка и4хъ, мyжіе беззакHнницы, ко царю2 дими1трію и3 возвэсти1ша є3мY, ћкw їwнаfaнъ њбстои1тъ краегрaдіе.
+</p>
+<div class="num">22</div><p id="n22">И# слhшавъ разгнёвасz: є3гдa же слhша, ск0рw пріи1де во птолемаjду и3 написA ко їwнаfaну, да не њбстои1тъ краегрaдіz, но да и4детъ во срётеніе є3мY тщaтелнw во птолемаjду, є4же бесёдовати съ ни1мъ.
+</p>
+<div class="num">23</div><p id="n23">Е#гдa же ўслhша їwнаfaнъ, повелЁ њбстоsти, и3 и3збрA t старёйшинъ <nobr>ї}левыхъ</nobr> и3 їерeєвъ, и3 вдадeсz въ бёдство:
+</p>
+<div class="num">24</div><p id="n24">и3 взsвъ злaто и3 сребро2 и3 ри6зы и3 и4ны дaры мнHги, и4де ко царю2 во птолемаjду и3 њбрёте благодaть пред8 ни1мъ.
+</p>
+<div class="num">25</div><p id="n25">И# клеветaху на него2 нёцыи беззак0нніи t kзhка (є3гw2).
+</p>
+<div class="num">26</div><p id="n26">И# сотвори2 є3мY цaрь, ћкоже сотвори1ша є3мY, и5же прeжде є3гw2 бhша, и3 возвhси є3го2 пред8 всёми др{ги свои1ми,
+</p>
+<div class="num">27</div><p id="n27">и3 постaви є3го2 начaлника свzщeнству, и3 є3ли6ка и4на и3мёzше прeжде честн†z, и3 сотвори2 є3го2 въ пeрвыхъ друзёхъ бhти.
+</p>
+<div class="num">28</div><p id="n28">И# моли2 їwнаfaнъ царS сотвори1ти їудeю бездaнну, и3 три2 топ†рхіи, и3 самарjю, и3 њбэщA є3мY три1ста тал†нтъ.
+</p>
+<div class="num">29</div><p id="n29">И# ўг0дно бhсть царю2, и3 написA їwнаfaну є3пістHліи њ всёхъ си1хъ, и3мёющыz w4бразъ сицевhй:
+</p>
+<div class="num">30</div><p id="n30">цaрь дими1трій брaту їwнаfaну рaдоватисz и3 kзhку їудeйскому:
+</p>
+<div class="num">31</div><p id="n31">списaніе є3піст0ліи, ю4же писaхомъ ласfeну ср0днику нaшему њ вaсъ, писaхомъ и3 къ вaмъ, да вёсте:
+</p>
+<div class="num">32</div><p id="n32">цaрь дими1трій ласfeну nтцY рaдоватисz:
+</p>
+<div class="num">33</div><p id="n33">kзhку їудeйску другHмъ нaшымъ и3 сохранsющымъ ±же къ нaмъ прaвєднаz суди1хомъ благосотвори1ти, рaди благопріsтства и4хъ къ нaмъ:
+</p>
+<div class="num">34</div><p id="n34">ўстaвихомъ u5бо и5мъ предёлы їудє1йскіz и3 три2 страны6, ґферeму, лЂдду и3 рамаfeмъ, и5же приложи1шасz їудeи t самарjи, и3 <nobr>вс‰</nobr> надлєжaщаz къ ни6мъ, всBмъ жрyщымъ во їеrли1мэ, вмёстw цaрскихъ, и5хже взимaше цaрь t ни1хъ пeрвэе на всsко лёто t жи6тъ земли2 и3 t nвощeй древeсныхъ,
+</p>
+<div class="num">35</div><p id="n35">и3 и4на надлєжaщаz нaмъ tнн7э десzти1нъ и3 дaней надлежaщихъ нaмъ, и3 с0ли точи6ла, и3 принадлежaщихъ нaмъ вэнцє1въ,
+</p>
+<div class="num">36</div><p id="n36"><nobr>вс‰</nobr> щeдрw њставлsемъ и5мъ, и3 ничт0же t си1хъ tи1метсz tнн7э и3 въ вёчное врeмz:
+</p>
+<div class="num">37</div><p id="n37">нн7э u5бо прилэжи1те сотвори1ти си1хъ списaніе, и3 да дaстсz їwнаfaну и3 да положи1тсz въ горЁ с™ёй въ мёстэ чeстнэ.
+</p>
+<div class="num">38</div><p id="n38">И# ви1дэ дими1трій цaрь, ћкw ўтиши1сz землS пред8 ни1мъ, и3 ничто2 є3мY проти1витсz, и3 tпусти2 <nobr>вс‰</nobr> вHи <nobr>сво‰</nobr> коег0ждо въ мёсто своE, кромЁ чужди1хъ си1лъ, и5хже собрA t nстровHвъ kзhческихъ, и3 враждовaху є3мY <nobr>вс‰</nobr> си6лы nтцє1въ є3гw2.
+</p>
+<div class="num">39</div><p id="n39">ТрЂфwнъ же бЁ t ґлеxaндровыхъ пeрвэе, и3 ви1дэ, ћкw <nobr>вс‰</nobr> си1лы р0пщутъ на дими1тріа, и3 и4де ко є3малкyю ґравjтину, и4же воспитA ґнті0ха дётище ґлеxaндрово:
+</p>
+<div class="num">40</div><p id="n40">и3 прилэжaше є3мY, ћкw да дaстъ є3мY є5, да воцари1тъ вмёстw nтцA є3гw2: и3 возвэсти2 є3мY, є3ли6ка сотвори2 дими1трій, и3 враждY, є4юже враждyютъ нaнь си6лы є3гw2, и3 пребhсть тY дни6 мнHги.
+</p>
+<div class="num">41</div><p id="n41">И# послA їwнаfaнъ ко дими1трію царю2, да и3жденeтъ сyщихъ во краегрaдіи и3з8 їеrли1ма и3 и5же въ твердhнехъ: бsху бо вою1юще <nobr>ї}лz.</nobr>
+</p>
+<div class="num">42</div><p id="n42">И# послA дими1трій ко їwнаfaну глаг0лz: не т0кмw <nobr>сі‰</nobr> сотворю2 тебЁ и3 kзhку твоемY, но и3 слaвою прослaвлю тS и3 kзhкъ тв0й, ѓще благоврeменство получY:
+</p>
+<div class="num">43</div><p id="n43">нн7э u5бо прaвw сотвори1ши, ѓще п0слеши ми2 мужeй споборaющихъ, ћкw tступи1ша вси2 вHи мои2.
+</p>
+<div class="num">44</div><p id="n44">И# послA є3мY їwнаfaнъ три2 тhсzщы мужeй си1льныхъ крёпостію во ґнтіохjю, и3 пріид0ша ко царю2, и3 возвесели1сz цaрь њ пришeствіи и4хъ.
+</p>
+<div class="num">45</div><p id="n45">И# собрaшасz и5же t грaда въ среди1ну грaда сто2 двaдесzть тhсzщъ мужeй и3 совэщaхусz ўби1ти царS.
+</p>
+<div class="num">46</div><p id="n46">И# бэжA цaрь во дв0ръ, и3 њб8sша и5же бёху t грaда пути6 гр†дскіz, и3 начaша би1тисz.
+</p>
+<div class="num">47</div><p id="n47">И# призвA цaрь їудеHвъ на п0мощь, и3 собрaшасz вси2 вкyпэ къ немY: и3 расточи1шасz вси2 по грaду,
+</p>
+<div class="num">48</div><p id="n48">и3 ўби1ша во грaдэ въ т0й дeнь сто2 тhсzщъ мужeй, и3 сожг0ша грaдъ, и3 взsша коры6сти мнHги во w4нъ дeнь и3 и3збaвиша царS.
+</p>
+<div class="num">49</div><p id="n49">И# ви1дэша и5же бsху t грaда, ћкw њдержaша їудeє грaдъ, ћкоже хотёша, и3 и3знемог0ша мhсльми свои1ми, и3 возопи1ша ко царю2 съ молeніемъ, глаг0люще:
+</p>
+<div class="num">50</div><p id="n50">дaждь нaмъ десни1цу, и3 да престaнутъ їудeє рaтовати нaсъ и3 грaдъ.
+</p>
+<div class="num">51</div><p id="n51">И# поверг0ша nр{жіz <nobr>сво‰</nobr> и3 сотвори1ша ми1ръ. И# прослaвишасz їудeє пред8 царeмъ и3 пред8 всёми и5же во цaрствіи є3гw2, и3 возврати1шасz во їеrли1мъ и3мёюще коры6сти мнHги.
+</p>
+<div class="num">52</div><p id="n52">И# сёде дими1трій цaрь на прест0лэ цaрства своегw2, и3 ўпок0исz землS пред8 ни1мъ.
+</p>
+<div class="num">53</div><p id="n53">И# солгA <nobr>вс‰</nobr> є3ли6ка речE, и3 tчужди1сz їwнаfaна, и3 не воздадE є3мY по благотворeніємъ, ±же воздадE є3мY, и3 њскорби2 є3го2 ѕэлw2.
+</p>
+<div class="num">54</div><p id="n54">По си1хъ же возврати1сz трЂфwнъ и3 ґнті0хъ съ ни1мъ џтрочищь ю4ный: и3 воцари1сz и3 возложи2 діади1му.
+</p>
+<div class="num">55</div><p id="n55">И# собрaшасz къ немY вси2 вHи, и5хже расточи2 дими1трій, и3 рaтоваша проти1ву є3гw2, и3 побэжE и3 побэждeнъ бhсть.
+</p>
+<div class="num">56</div><p id="n56">И# взS трЂфwнъ ѕвBри и3 њдержA ґнтіохjю.
+</p>
+<div class="num">57</div><p id="n57">И# писA ґнті0хъ ю4ный їwнаfaну, глаг0лz: ўставлsю тебЁ ґрхіерeйство и3 поставлsю тебE над8 четhрми странaми, и3 бyдеши въ друзёхъ цaрскихъ.
+</p>
+<div class="num">58</div><p id="n58">И# послA є3мY сосyды златы6z и3 служeніе, и3 дадE є3мY влaсть пи1ти и3з8 злaта и3 бhти въ порфЂрэ и3 и3мёти гри1вну злaту.
+</p>
+<div class="num">59</div><p id="n59">И# сjмwна брaта є3гw2 постaви воев0дою t страны2 тЂра дaже до предBлъ є3гЂпта.
+</p>
+<div class="num">60</div><p id="n60">И# и3зhде їwнаfaнъ и3 прохождaше њб8 nнY странY рэки2 и3 во градёхъ, и3 собрaшасz къ немY <nobr>вс‰</nobr> си6лы с›рскіz въ п0мощь, и3 пріи1де во ґскалHнъ, и3 срэт0ша є3го2 чeстнw t грaда.
+</p>
+<div class="num">61</div><p id="n61">И# и4де tтyду въ гaзу, и3 заключи1шасz и5же въ гaзэ, и3 њбстоsше ю5, и3 пожжE њкрє1стныz грaды є3S nгнeмъ, и3 плэни2 <nobr>|.</nobr>
+</p>
+<div class="num">62</div><p id="n62">И# моли1ша їwнаfaна и5же t гaзы, и3 дадE и5мъ десни1цу, и3 взS сhны начaлникwвъ и4хъ въ зал0гъ, и3 послA и5хъ во їеrли1мъ, и3 пр0йде странY дaже до дамaска.
+</p>
+<div class="num">63</div><p id="n63">И# слhша їwнаfaнъ, ћкw сyть нач†лницы дими1трієвы въ кaдисэ, и4же въ галілeи, съ си1лою мн0гою, хотsще и3зри1нути є3го2 t страны2.
+</p>
+<div class="num">64</div><p id="n64">И# срётесz съ ни1ми, брaта же своего2 сjмwна њстaви во странЁ.
+</p>
+<div class="num">65</div><p id="n65">И# њполчи1сz сjмwнъ на веfсyру, и3 рaтоваша ю5 дни6 мнHги, и3 заключи2 ю5.
+</p>
+<div class="num">66</div><p id="n66">И# проси1ша ў негw2 десни1цу пріsти, и3 дадE и5мъ, и3 и3згнA и5хъ tтyду, и3 взS грaдъ, и3 постaви въ нeмъстрaжу.
+</p>
+<div class="num">67</div><p id="n67">Їwнаfaнъ же и3 п0лкъ є3гw2 пріид0ша къ водЁ геннисaръ:
+</p>
+<div class="num">68</div><p id="n68">и3 и3д0ша ќтрw рaнw на п0ле насHръ, и3 сE, п0лкъ и3ноплемeнникwвъ срёте є3го2 на п0ли, и3 постaвиша нaнь лови1телство въ горaхъ, сaми же срэт0ша tсупроти1ву.
+</p>
+<div class="num">69</div><p id="n69">Лови1телє же востaша t мёстъ свои1хъ и3 состaвиша рaть,
+</p>
+<div class="num">70</div><p id="n70">и3 побэг0ша и5же со їwнаfaномъ вси2, и3 ни є3ди1нъ њстaсz t ни1хъ, т0кмw маттаfjа сhнъ ґвессалHмовъ, и3 їyда сhнъ халфjевъ, нач†лницы вои1нскихъ си1лъ.
+</p>
+<div class="num">71</div><p id="n71">И# растерзA їwнаfaнъ ри6зы <nobr>сво‰,</nobr> и3 возложи2 зeмлю на главY свою2, и3 помоли1сz:
+</p>
+<div class="num">72</div><p id="n72">и3 њбрати1сz на ни1хъ брaнію и3 побэди2 и5хъ, и3 бэг0ша.
+</p>
+<div class="num">73</div><p id="n73">И# ви1дэша свои2 бэжaвшіи t негw2, и3 њбрати1шасz къ немY, и3 гнaша съ ни1мъ дaже до кaдиса, дaже до полкA и4хъ, и3 њполчи1шасz тaмw.
+</p>
+<div class="num">74</div><p id="n74">И# пад0ша t и3ноплемє1нникъ въ дeнь т0й три2 тhсzщы мужeй. и3 возврати1сz їwнаfaнъ во їеrли1мъ.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mak1.12.cs.html">главA в7i</a></div></div>
+
+</body>
+</html>

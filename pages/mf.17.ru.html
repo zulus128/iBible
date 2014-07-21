@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mf.ru.html">Евангелие от Матфея</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 17
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">По прошествии дней шести, взял Иисус Петра, Иакова и Иоанна, брата его, и возвел их на гору высокую одних,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и преобразился пред ними: и просияло лице Его, как солнце, одежды же Его сделались белыми, как свет.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И вот, явились им Моисей и Илия, с Ним беседующие.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">При сем Петр сказал Иисусу: Господи! хорошо нам здесь быть; если хочешь, сделаем здесь три кущи: Тебе одну, и Моисею одну, и одну Илии.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Когда он еще говорил, се, облако светлое осенило их; и се, глас из облака глаголющий: Сей есть Сын Мой Возлюбленный, в Котором Мое благоволение; Его слушайте.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И, услышав, ученики пали на лица свои и очень испугались.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Но Иисус, приступив, коснулся их и сказал: встаньте и не бойтесь.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Возведя же очи свои, они никого не увидели, кроме одного Иисуса.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И когда сходили они с горы, Иисус запретил им, говоря: никому не сказывайте о сем видении, доколе Сын Человеческий не воскреснет из мертвых.
+</p>
+<div class="num">10</div><p id="n10">И спросили Его ученики Его: как же книжники говорят, что Илии надлежит прийти прежде?
+</p>
+<div class="num">11</div><p id="n11">Иисус сказал им в ответ: правда, Илия <i>должен</i> прийти прежде и устроить всё;
+</p>
+<div class="num">12</div><p id="n12">но говорю вам, что Илия уже пришел, и не узнали его, а поступили с ним, как хотели; та&#769;к и Сын Человеческий пострадает от них.
+</p>
+<div class="num">13</div><p id="n13">Тогда ученики поняли, что Он говорил им об Иоанне Крестителе.
+</p>
+<div class="num">14</div><p id="n14">Когда они пришли к народу, то подошел к Нему человек и, преклоняя пред Ним колени,
+</p>
+<div class="num">15</div><p id="n15">сказал: Господи! помилуй сына моего; он в новолуния <i>беснуется</i> и тяжко страдает, ибо часто бросается в огонь и часто в воду,
+</p>
+<div class="num">16</div><p id="n16">я приводил его к ученикам Твоим, и они не могли исцелить его.
+</p>
+<div class="num">17</div><p id="n17">Иисус же, отвечая, сказал: о, род неверный и развращенный! доколе буду с вами? доколе буду терпеть вас? приведите его ко Мне сюда.
+</p>
+<div class="num">18</div><p id="n18">И запретил ему Иисус, и бес вышел из него; и отрок исцелился в тот час.
+</p>
+<div class="num">19</div><p id="n19">Тогда ученики, приступив к Иисусу наедине, сказали: почему мы не могли изгнать его?
+</p>
+<div class="num">20</div><p id="n20">Иисус же сказал им: по неверию вашему; ибо истинно говорю вам: если вы будете иметь веру с горчичное зерно и скажете горе сей: "перейди отсюда туда", и она перейдет; и ничего не будет невозможного для вас;
+</p>
+<div class="num">21</div><p id="n21">сей же род изгоняется только молитвою и постом.
+</p>
+<div class="num">22</div><p id="n22">Во время пребывания их в Галилее, Иисус сказал им: Сын Человеческий предан будет в руки человеческие,
+</p>
+<div class="num">23</div><p id="n23">и убьют Его, и в третий день воскреснет. И они весьма опечалились.
+</p>
+<div class="num">24</div><p id="n24">Когда же пришли они в Капернаум, то подошли к Петру собиратели дидрахм<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;Две драхмы - определенная дань на храм.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p1"></a> и сказали: Учитель ваш не даст ли дидрахмы?
+</p>
+<div class="num">25</div><p id="n25">Он говорит: да. И когда вошел он в дом, то Иисус, предупредив его, сказал: как тебе кажется, Симон? цари земные с кого берут пошлины или подати? с сынов ли своих, или с посторонних?
+</p>
+<div class="num">26</div><p id="n26">Петр говорит Ему: с посторонних. Иисус сказал ему: итак сыны свободны;
+</p>
+<div class="num">27</div><p id="n27">но, чтобы нам не соблазнить их, пойди на море, брось уду, и первую рыбу, которая попадется, возьми, и, открыв у ней рот, найдешь статир<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;Четыре драхмы.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p2"></a>; возьми его и отдай им за Меня и за себя.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mf.18.ru.html">к главе 18</a></div></div>
+
+</body>
+</html>

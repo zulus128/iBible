@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 35
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Бог сказал Иакову: встань, пойди в Вефиль и живи там, и устрой там жертвенник Богу, явившемуся тебе, когда ты бежал от лица Исава, брата твоего.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И сказал Иаков дому своему и всем бывшим с ним: бросьте богов чужих, находящихся у вас, и очиститесь, и перемените одежды ваши;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">встанем и пойдем в Вефиль; там устрою я жертвенник Богу, Который услышал меня в день бедствия моего и был со мною [и хранил меня] в пути, которым я ходил.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И отдали Иакову всех богов чужих, бывших в руках их, и серьги, бывшие в ушах у них, и закопал их Иаков под дубом, который близ Сихема. [И оставил их безвестными даже до нынешнего дня.]
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И отправились они [от Сихема]. И был ужас Божий на окрестных городах, и не преследовали сынов Иаковлевых.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И пришел Иаков в Луз, что в земле Ханаанской, то есть в Вефиль, сам и все люди, бывшие с ним,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и устроил там жертвенник, и назвал сие место: Эл-Вефиль, ибо тут явился ему Бог, когда он бежал от лица [Исава] брата своего.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И умерла Девора, кормилица Ревеккина, и погребена ниже Вефиля под дубом, который и назвал <i>Иаков</i> дубом плача.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И явился Бог Иакову [в Лузе] по возвращении его из Месопотамии, и благословил его,
+</p>
+<div class="num">10</div><p id="n10">и сказал ему Бог: имя твое Иаков; отныне ты не будешь называться Иаковом, но будет имя тебе: Израиль. И нарек ему имя: Израиль.
+</p>
+<div class="num">11</div><p id="n11">И сказал ему Бог: Я Бог Всемогущий; плодись и умножайся; народ и множество народов будет от тебя, и цари произойдут из чресл твоих;
+</p>
+<div class="num">12</div><p id="n12">землю, которую Я дал Аврааму и Исааку, Я дам тебе, и потомству твоему по тебе дам землю сию.
+</p>
+<div class="num">13</div><p id="n13">И восшел от него Бог с места, на котором говорил ему.
+</p>
+<div class="num">14</div><p id="n14">И поставил Иаков памятник на месте, на котором говорил ему [Бог], памятник каменный, и возлил на него возлияние, и возлил на него елей;
+</p>
+<div class="num">15</div><p id="n15">и нарек Иаков имя месту, на котором Бог говорил ему: Вефиль.
+</p>
+<div class="num">16</div><p id="n16">И отправились из Вефиля. [И раскинул он шатер свой за башнею Гадер.] И когда еще оставалось некоторое расстояние земли до Ефрафы, Рахиль родила, и роды ее были трудны.
+</p>
+<div class="num">17</div><p id="n17">Когда же она страдала в родах, повивальная бабка сказала ей: не бойся, ибо и это тебе сын.
+</p>
+<div class="num">18</div><p id="n18">И когда выходила из нее душа, ибо она умирала, то нарекла ему имя: Бенони. Но отец его назвал его Вениамином.
+</p>
+<div class="num">19</div><p id="n19">И умерла Рахиль, и погребена на дороге в Ефрафу, то есть Вифлеем.
+</p>
+<div class="num">20</div><p id="n20">Иаков поставил над гробом ее памятник. Это надгробный памятник Рахили до сего дня.
+</p>
+<div class="num">21</div><p id="n21">И отправился [оттуда] Израиль и раскинул шатер свой за башнею Гадер.
+</p>
+<div class="num">22</div><p id="n22">Во время пребывания Израиля в той стране, Рувим пошел и переспал с Валлою, наложницею отца своего [Иакова]. И услышал Израиль [и принял то с огорчением]. Сынов же у Иакова было двенадцать.
+</p>
+<div class="num">23</div><p id="n23">Сыновья Лии: первенец Иакова Рувим, <i>по</i> <i>нем</i> Симеон, Левий, Иуда, Иссахар и Завулон.
+</p>
+<div class="num">24</div><p id="n24">Сыновья Рахили: Иосиф и Вениамин.
+</p>
+<div class="num">25</div><p id="n25">Сыновья Валлы, служанки Рахилиной: Дан и Неффалим.
+</p>
+<div class="num">26</div><p id="n26">Сыновья Зелфы, служанки Лииной: Гад и Асир. Сии сыновья Иакова, родившиеся ему в Месопотамии.
+</p>
+<div class="num">27</div><p id="n27">И пришел Иаков к Исааку, отцу своему, [ибо он был еще жив,] в Мамре, в Кириаф-Арбу, то есть Хеврон [в земле Ханаанской,] где странствовал Авраам и Исаак.
+</p>
+<div class="num">28</div><p id="n28">И было дней [жизни] Исааковой сто восемьдесят лет.
+</p>
+<div class="num">29</div><p id="n29">И испустил Исаак дух и умер, и приложился к народу своему, будучи стар и насыщен жизнью; и погребли его Исав и Иаков, сыновья его.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.36.ru.html">к главе 36</a></div></div>
+
+</body>
+</html>

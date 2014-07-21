@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.ru.html">Псалтирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Псалом 48
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Начальнику хора. Сынов Кореевых. Псалом.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Слушайте сие, все народы; внимайте сему, все живущие во вселенной,-
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и простые и знатные, богатый, равно как бедный.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Уста мои изрекут премудрость, и размышления сердца моего - знание.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Приклоню ухо мое к притче, на гуслях открою загадку мою:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">"для чего бояться мне во дни бедствия, <i>когда</i> беззаконие путей моих окружит меня?"
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Надеющиеся на силы свои и хвалящиеся множеством богатства своего!
+</p>
+<div class="num">&nbsp;8</div><p id="n8">человек никак не искупит брата своего и не даст Богу выкупа за него:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">дорога&#769; цена искупления души их, и не будет того вовек,
+</p>
+<div class="num">10</div><p id="n10">чтобы остался <i>кто</i> жить навсегда и не увидел могилы.
+</p>
+<div class="num">11</div><p id="n11">Каждый видит, что и мудрые умирают, равно как и невежды и бессмысленные погибают и оставляют имущество свое другим.
+</p>
+<div class="num">12</div><p id="n12">В мыслях у них, что домы их вечны, и что жилища их в род и род, и земли свои они называют своими именами.
+</p>
+<div class="num">13</div><p id="n13">Но человек в чести не пребудет; он уподобится животным, которые погибают.
+</p>
+<div class="num">14</div><p id="n14">Этот путь их есть безумие их, хотя последующие за ними одобряют мнение их.
+</p>
+<div class="num">15</div><p id="n15">Как овец, заключат их в преисподнюю; смерть будет пасти их, и наутро праведники будут владычествовать над ними; сила их истощится; могила - жилище их.
+</p>
+<div class="num">16</div><p id="n16">Но Бог избавит душу мою от власти преисподней, когда примет меня.
+</p>
+<div class="num">17</div><p id="n17">Не бойся, когда богатеет человек, когда слава дома его умножается:
+</p>
+<div class="num">18</div><p id="n18">ибо умирая не возьмет ничего; не пойдет за ним слава его;
+</p>
+<div class="num">19</div><p id="n19">хотя при жизни он ублажает душу свою, и прославляют тебя, что ты удовлетворяешь себе,
+</p>
+<div class="num">20</div><p id="n20">но он пойдет к роду отцов своих, которые никогда не увидят света.
+</p>
+<div class="num">21</div><p id="n21">Человек, который в чести и неразумен, подобен животным, которые погибают.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.49.ru.html">к псалму 49</a></div></div>
+
+</body>
+</html>

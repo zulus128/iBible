@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lk.ru.html">Евангелие от Луки</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 17
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Сказал также <i>Иисус</i> ученикам: невозможно не прийти соблазнам, но горе тому, через кого они приходят;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">лучше было бы ему, если бы мельничный жернов повесили ему на шею и бросили его в море, нежели чтобы он соблазнил одного из малых сих.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Наблюдайте за собою. Если же согрешит против тебя брат твой, выговори ему; и если покается, прости ему;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и если семь раз в день согрешит против тебя и семь раз в день обратится, и скажет: каюсь,- прости ему.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И сказали Апостолы Господу: умножь в нас веру.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Господь сказал: если бы вы имели веру с зерно горчичное и сказали смоковнице сей: исторгнись и пересадись в море, то она послушалась бы вас.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Кто из вас, имея раба па&#769;шущего или пасущего, по возвращении его с поля, скажет ему: пойди скорее, садись за стол?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Напротив, не скажет ли ему: приготовь мне поужинать и, подпоясавшись, служи мне, пока буду есть и пить, и потом ешь и пей сам?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Станет ли он благодарить раба сего за то, что он исполнил приказание? Не думаю.
+</p>
+<div class="num">10</div><p id="n10">Так и вы, когда исполните всё повеленное вам, говорите: мы рабы ничего не стоящие, потому что сделали, что&#769; должны были сделать.
+</p>
+<div class="num">11</div><p id="n11">Идя в Иерусалим, Он проходил между Самариею и Галилеею.
+</p>
+<div class="num">12</div><p id="n12">И когда входил Он в одно селение, встретили Его десять человек прокаженных, которые остановились вдали
+</p>
+<div class="num">13</div><p id="n13">и громким голосом говорили: Иисус Наставник! помилуй нас.
+</p>
+<div class="num">14</div><p id="n14">Увидев <i>их,</i> Он сказал им: пойдите, покажитесь священникам. И когда они шли, очистились.
+</p>
+<div class="num">15</div><p id="n15">Один же из них, видя, что исцелен, возвратился, громким голосом прославляя Бога,
+</p>
+<div class="num">16</div><p id="n16">и пал ниц к ногам Его, благодаря Его; и это был Самарянин.
+</p>
+<div class="num">17</div><p id="n17">Тогда Иисус сказал: не десять ли очистились? где же девять?
+</p>
+<div class="num">18</div><p id="n18">как они не возвратились воздать славу Богу, кроме сего иноплеменника?
+</p>
+<div class="num">19</div><p id="n19">И сказал ему: встань, иди; вера твоя спасла тебя.
+</p>
+<div class="num">20</div><p id="n20">Быв же спрошен фарисеями, когда придет Царствие Божие, отвечал им: не придет Царствие Божие приметным образом,
+</p>
+<div class="num">21</div><p id="n21">и не скажут: вот, оно здесь, или: вот, там. Ибо вот, Царствие Божие внутрь вас есть.
+</p>
+<div class="num">22</div><p id="n22">Сказал также ученикам: придут дни, когда пожелаете видеть хотя один из дней Сына Человеческого, и не увидите;
+</p>
+<div class="num">23</div><p id="n23">и скажут вам: вот, здесь, или: вот, там,- не ходите и не гоняйтесь,
+</p>
+<div class="num">24</div><p id="n24">ибо, как молния, сверкнувшая от одного края неба, блистает до другого края неба, так будет Сын Человеческий в день Свой.
+</p>
+<div class="num">25</div><p id="n25">Но прежде надлежит Ему много пострадать и быть отвержену родом сим.
+</p>
+<div class="num">26</div><p id="n26">И как было во дни Ноя, так будет и во дни Сына Человеческого:
+</p>
+<div class="num">27</div><p id="n27">ели, пили, женились, выходили замуж, до того дня, как вошел Ной в ковчег, и пришел потоп и погубил всех.
+</p>
+<div class="num">28</div><p id="n28">Та&#769;к же, ка&#769;к было и во дни Лота: ели, пили, покупали, продавали, садили, строили;
+</p>
+<div class="num">29</div><p id="n29">но в день, в который Лот вышел из Содома, пролился с неба дождь огненный и серный и истребил всех;
+</p>
+<div class="num">30</div><p id="n30">так будет и в тот день, когда Сын Человеческий явится.
+</p>
+<div class="num">31</div><p id="n31">В тот день, кто будет на кровле, а вещи его в доме, тот не сходи взять их; и кто будет на поле, также не обращайся назад.
+</p>
+<div class="num">32</div><p id="n32">Вспоминайте жену Лотову.
+</p>
+<div class="num">33</div><p id="n33">Кто станет сберегать душу свою, тот погубит ее; а кто погубит ее, тот оживит ее.
+</p>
+<div class="num">34</div><p id="n34">Сказываю вам: в ту ночь будут двое на одной постели: один возьмется, а другой оставится;
+</p>
+<div class="num">35</div><p id="n35">две будут молоть вместе: одна возьмется, а другая оставится;
+</p>
+<div class="num">36</div><p id="n36">двое будут на поле: один возьмется, а другой оставится.
+</p>
+<div class="num">37</div><p id="n37">На это сказали Ему: где, Господи? Он же сказал им: где труп, там соберутся и орлы.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lk.18.ru.html">к главе 18</a></div></div>
+
+</body>
+</html>

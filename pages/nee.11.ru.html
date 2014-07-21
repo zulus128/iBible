@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nee.ru.html">Книга Неемии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 11
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И жили начальники народа в Иерусалиме, а прочие из народа бросили жребии, чтоб одна из десяти частей их шла на жительство в святой город Иерусалим, а девять <i>оставались</i> в <i>прочих</i> городах.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И благословил народ всех, которые добровольно согласились жить в Иерусалиме.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Вот главы страны, которые жили в Иерусалиме,- а в городах Иудеи жили, всякий в своем владении, по городам своим: Израильтяне, священники, левиты и нефинеи и сыновья рабов Соломоновых; -
+</p>
+<div class="num">&nbsp;4</div><p id="n4">в Иерусалиме жили из сыновей Иуды и из сыновей Вениамина. Из сыновей Иуды: Афаия, сын Уззии, сын Захарии, сын Амарии, сын Сафатии, сын Малелеила, из сыновей Фареса,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и Маасея, сын Варуха, сын Колхозея, сын Хазаии, сын Адаии, сын Иоиарива, сын Захарии, сын Шилония.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Всех сыновей Фареса, живших в Иерусалиме, четыреста шестьдесят восемь, люди отличные.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И вот сыновья Вениамина: Саллу, сын Мешуллама, сын Иоеда, сын Федаии, сын Колаии, сын Маасеи, сын Ифиила, сын Исаии,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и за ним Габбай, Саллай - девятьсот двадцать восемь.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Иоиль, сын Зихри, был начальником над ними, а Иуда, сын Сенуи, был вторым над городом.
+</p>
+<div class="num">10</div><p id="n10">Из священников: Иедаия, сын Иоиарива, Иахин,
+</p>
+<div class="num">11</div><p id="n11">Сераия, сын Хелкии, сын Мешуллама, сын Садока, сын Мераиофа, сын Ахитува, начальствующий в доме Божием,
+</p>
+<div class="num">12</div><p id="n12">и братья их, отправлявшие службу в доме <i>Божием</i> - восемьсот двадцать два; и Адаия, сын Иерохама, сын Фелалии, сын Амция, сын Захарии, сын Пашхура, сын Малхии,
+</p>
+<div class="num">13</div><p id="n13">и братья его, гла&#769;вы поколений - двести сорок два; и Амашсай, сын Азариила, сын Ахзая, сын Мешиллемофа, сын Иммера,
+</p>
+<div class="num">14</div><p id="n14">и братья его, люди отличные - сто двадцать восемь. Начальником над ними был Завдиил, сын Гагедолима.
+</p>
+<div class="num">15</div><p id="n15">А из левитов: Шемаия, сын Хашшува, сын Азрикама, сын Хашавии, сын Вунния,
+</p>
+<div class="num">16</div><p id="n16">и Шавфай, и Иозавад из глав левитов по внешним делам дома Божия,
+</p>
+<div class="num">17</div><p id="n17">и Матфания, сын Михи, сын Завдия, сын Асафа, главный начинатель славословия при молитве, и Бакбукия, второй <i>по</i> <i>нем</i> из братьев его, и Авда, сын Шаммуя, сын Галала, сын Идифуна.
+</p>
+<div class="num">18</div><p id="n18">Всех левитов во святом городе двести восемьдесят четыре.
+</p>
+<div class="num">19</div><p id="n19">А привратники: Аккув, Талмон и братья их, содержавшие стражу у ворот - сто семьдесят два.
+</p>
+<div class="num">20</div><p id="n20">Прочие Израильтяне, священники, левиты <i>жили</i> по всем городам Иудеи, каждый в своем уделе.
+</p>
+<div class="num">21</div><p id="n21">А нефинеи жили в Офеле; над нефинеями Циха и Гишфа.
+</p>
+<div class="num">22</div><p id="n22">Начальником над левитами в Иерусалиме был Уззий, сын Вания, сын Хашавии, сын Матфании, сын Михи, из сыновей Асафовых, которые были певцами при служении в доме Божием,
+</p>
+<div class="num">23</div><p id="n23">потому что от царя <i>было</i> о них <i>особое</i> повеление, и назначено было на каждый день для певцов определенное содержание.
+</p>
+<div class="num">24</div><p id="n24">И Петахия, сын Мешезавела, из сыновей Зары, сына Иуды, был доверенным от царя по всяким делам, <i>касающимся</i> до народа.
+</p>
+<div class="num">25</div><p id="n25">Из <i>живших</i> же в селах, на полях своих, сыновья Иуды жили в Кириаф-Арбе и зависящих от нее городах, в Дивоне и зависящих от него городах, в Иекавцеиле и селах его,
+</p>
+<div class="num">26</div><p id="n26">в Иешуе, в Моладе и в Беф-Палете,
+</p>
+<div class="num">27</div><p id="n27">в Хацар-Шуале, в Вирсавии и зависящих от нее городах,
+</p>
+<div class="num">28</div><p id="n28">в Секелаге, в Мехоне и зависящих от нее городах,
+</p>
+<div class="num">29</div><p id="n29">в Ен-Риммоне, в Цоре и в Иармуфе,
+</p>
+<div class="num">30</div><p id="n30">в Заноахе, Одолламе и селах их, в Лахисе и на полях его, в Азеке и зависящих от нее городах. Они расположились от Вирсавии и до долины Енномовой.
+</p>
+<div class="num">31</div><p id="n31">Сыновья Вениаминовы, <i>начиная</i> от Гевы, в Михмасе, Гае, в Вефиле и зависящих от него городах,
+</p>
+<div class="num">32</div><p id="n32">в Анафофе, Нове, Анании,
+</p>
+<div class="num">33</div><p id="n33">Гацоре, Раме, Гиффаиме,
+</p>
+<div class="num">34</div><p id="n34">Хадиде, Цевоиме, Неваллате,
+</p>
+<div class="num">35</div><p id="n35">Лоде, Оно, в долине Харашиме.
+</p>
+<div class="num">36</div><p id="n36">И левиты имели жилища свои в участках Иуды и Вениамина.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nee.12.ru.html">к главе 12</a></div></div>
+
+</body>
+</html>

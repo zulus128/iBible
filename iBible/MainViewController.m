@@ -38,7 +38,7 @@
     [self performSelector:@selector(refreshUnderline) withObject:nil afterDelay:0.2f];
 
  
-    statusBarVisible = YES;
+    statusBarVisible = NO;
     
     [self parseJsons];
     
@@ -52,6 +52,8 @@
                                                  name:UIKeyboardDidHideNotification
                                                object:nil];
     openedChapts = -1;
+    [self myNavigate:self.viewPath ? self.viewPath : @"nz.cs.html"];
+
 }
 
 - (void) saveLastOpenChapter:(int)chap forBook:(int)book {
@@ -137,7 +139,7 @@
     } else {
         
         NSLog(@"Parsing books: OK!");
-//        NSLog(@"Parsing books: OK! %@", self.bookjson);
+        NSLog(@"Parsing books: OK! %@", self.bookjson);
     }
     
 }
@@ -205,18 +207,28 @@
 //    float x, w;
     UIView* but;
     switch (((UIButton*)sender).tag) {
-        default:
+        default: {
 //            x = self.buttonRus.frame.origin.x;
 //            w = self.buttonRus.frame.size.width;
             but = self.buttonRus;
             self.curLanguage = lngRu;
+            self.ruWebView.hidden = NO;
+            self.csWebView.hidden = YES;
+            NSString* div = [self getVisibleDivCs];
+            [self scrollToDivRu:div];
             break;
-        case lngCs:
+        }
+        case lngCs: {
 //            x = self.buttonCs.frame.origin.x;
 //            w = self.buttonCs.frame.size.width;
             but = self.buttonCs;
             self.curLanguage = lngCs;
+            self.csWebView.hidden = NO;
+            self.ruWebView.hidden = YES;
+            NSString* div = [self getVisibleDivRu];
+            [self scrollToDivCs:div];
             break;
+        }
     }
 
 //    float y = [self getScreenHeight] - 3.5f;
@@ -844,6 +856,95 @@
     
         [self hideMenu];
     }
+}
+
+- (void)myNavigate:(NSString *)path
+{
+    bool original = false;
+    
+    if (([path length] > 8) && ([[path substringFromIndex:[path length] - 5] isEqualToString:@".html"]))
+    {
+        path = [path substringToIndex:[path length] - 8];
+        original = true;
+    }
+    
+    self.viewPath = path;
+    
+    //NSLog(@"myNavigate: to %@ (%@) # original=%d", path, [self langCode], original);
+    
+    NSURL * url = [[NSURL alloc] initFileURLWithPath:
+                   [[NSBundle mainBundle] pathForResource:
+                    [NSString stringWithFormat:@"%@.%@", path, @"ru"] ofType:@"html"]];
+    NSURL * url1 = [[NSURL alloc] initFileURLWithPath:
+                   [[NSBundle mainBundle] pathForResource:
+                    [NSString stringWithFormat:@"%@.%@", path, @"cs"] ofType:@"html"]];
+    
+    NSError * err = nil;
+    NSString * text = [[NSString alloc] initWithContentsOfURL:url
+                                                     encoding:NSUTF8StringEncoding
+                                                        error:&err];
+    NSString * text1 = [[NSString alloc] initWithContentsOfURL:url1
+                                                     encoding:NSUTF8StringEncoding
+                                                        error:&err];
+    [self.ruWebView loadHTMLString:text baseURL:nil];
+    [self.csWebView loadHTMLString:text1 baseURL:nil];
+    
+//    if (original)
+//        [self navigateOthers:path];
+}
+
+//- (void)navigateOthers:(NSString *)path
+//{
+//    if ([other isViewLoaded])
+//        [self.other myNavigate:path];
+//    else
+//    {
+//        [other loadView];
+//        [other viewDidLoad];
+//        [self performSelector:@selector(navigateOthers:) withObject:path afterDelay:0.1];
+//    }
+//}
+
+#pragma mark - Custom user functions
+
+- (NSString *)getVisibleDivRu
+{
+    return [self.ruWebView stringByEvaluatingJavaScriptFromString:@"getVisibleDiv();"];
+}
+
+- (void)scrollToDivCs:(NSString *)div
+{
+    NSString * js = [NSString stringWithFormat:@"scrollToDiv('%@');",div];
+    [self.csWebView stringByEvaluatingJavaScriptFromString:js];
+}
+
+- (NSString *)getVisibleDivCs
+{
+    return [self.csWebView stringByEvaluatingJavaScriptFromString:@"getVisibleDiv();"];
+}
+
+- (void)scrollToDivRu:(NSString *)div
+{
+    NSString * js = [NSString stringWithFormat:@"scrollToDiv('%@');",div];
+    [self.ruWebView stringByEvaluatingJavaScriptFromString:js];
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    //NSLog(@"nav %d", navigationType);
+    
+    if (navigationType == UIWebViewNavigationTypeLinkClicked)
+    {
+        NSString * path = [[request URL] path];
+        //NSLog(@"Link %@", path);
+        if ([[path substringToIndex:1] isEqualToString:@"/"])
+            path = [path substringFromIndex:1];
+        
+        [self myNavigate:path];
+        return NO;
+    }
+    
+    return YES;
 }
 
 @end

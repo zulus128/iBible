@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 22
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И было, после сих происшествий Бог искушал Авраама и сказал ему: Авраам! Он сказал: вот я.
+</p>
+<div class="num">&nbsp;2</div><p id="n2"><i>Бог</i> сказал: возьми сына твоего, единственного твоего, которого ты любишь, Исаака; и пойди в землю Мориа и там принеси его во всесожжение на одной из гор, о которой Я скажу тебе.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Авраам встал рано утром, оседлал осла своего, взял с собою двоих из отроков своих и Исаака, сына своего; наколол дров для всесожжения, и встав пошел на место, о котором сказал ему Бог.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">На третий день Авраам возвел очи свои, и увидел то место издалека.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И сказал Авраам отрокам своим: останьтесь вы здесь с ослом, а я и сын пойдем туда и поклонимся, и возвратимся к вам.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И взял Авраам дрова для всесожжения, и возложил на Исаака, сына своего; взял в руки огонь и нож, и пошли оба вместе.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И начал Исаак говорить Аврааму, отцу своему, и сказал: отец мой! Он отвечал: вот я, сын мой. Он сказал: вот огонь и дрова, где же агнец для всесожжения?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Авраам сказал: Бог усмотрит Себе агнца для всесожжения, сын мой. И шли <i>далее</i> оба вместе.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И пришли на место, о котором сказал ему Бог; и устроил там Авраам жертвенник, разложил дрова и, связав сына своего Исаака, положил его на жертвенник поверх дров.
+</p>
+<div class="num">10</div><p id="n10">И простер Авраам руку свою и взял нож, чтобы заколоть сына своего.
+</p>
+<div class="num">11</div><p id="n11">Но Ангел Господень воззвал к нему с неба и сказал: Авраам! Авраам! Он сказал: вот я.
+</p>
+<div class="num">12</div><p id="n12"><i>Ангел</i> сказал: не поднимай руки твоей на отрока и не делай над ним ничего, ибо теперь Я знаю, что боишься ты Бога и не пожалел сына твоего, единственного твоего, для Меня.
+</p>
+<div class="num">13</div><p id="n13">И возвел Авраам очи свои и увидел: и вот, позади овен, запутавшийся в чаще рогами своими. Авраам пошел, взял овна и принес его во всесожжение вместо [Исаака], сына своего.
+</p>
+<div class="num">14</div><p id="n14">И нарек Авраам имя месту тому: Иегова-ире<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;Господь усмотрит.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p1"></a>. Посему <i>и</i> ныне говорится: на горе Иеговы усмотрится.
+</p>
+<div class="num">15</div><p id="n15">И вторично воззвал к Аврааму Ангел Господень с неба
+</p>
+<div class="num">16</div><p id="n16">и сказал: Мною клянусь, говорит Господь, что, так как ты сделал сие дело, и не пожалел сына твоего, единственного твоего, [для Меня,]
+</p>
+<div class="num">17</div><p id="n17">то Я благословляя благословлю тебя и умножая умножу семя твое, как звезды небесные и как песок на берегу моря; и овладеет семя твое городами врагов своих;
+</p>
+<div class="num">18</div><p id="n18">и благословятся в семени твоем все народы земли за то, что ты послушался гласа Моего.
+</p>
+<div class="num">19</div><p id="n19">И возвратился Авраам к отрокам своим, и встали и пошли вместе в Вирсавию; и жил Авраам в Вирсавии.
+</p>
+<div class="num">20</div><p id="n20">После сих происшествий Аврааму возвестили, сказав: вот, и Милка родила Нахору, брату твоему, сынов:
+</p>
+<div class="num">21</div><p id="n21">Уца, первенца его, Вуза, брата сему, Кемуила, отца Арамова,
+</p>
+<div class="num">22</div><p id="n22">Кеседа, Хазо, Пилдаша, Идлафа и Вафуила;
+</p>
+<div class="num">23</div><p id="n23">от Вафуила родилась Ревекка. Восьмерых сих [сынов] родила Милка Нахору, брату Авраамову;
+</p>
+<div class="num">24</div><p id="n24">и наложница его, именем Реума, также родила Теваха, Гахама, Тахаша и Мааху.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.23.ru.html">к главе 23</a></div></div>
+
+</body>
+</html>

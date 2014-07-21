@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 23
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Не внимай пустому слуху, не давай руки твоей нечестивому, чтоб быть свидетелем неправды.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Не следуй за большинством на зло, и не решай тяжбы, отступая по большинству от правды;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и бедному не потворствуй в тяжбе его.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Если найдешь вола врага твоего, или осла его заблудившегося, приведи его к нему;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">если увидишь осла врага твоего упавшим под ношею своею, то не оставляй его; развьючь вместе с ним.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Не суди превратно тяжбы бедного твоего.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Удаляйся от неправды и не умерщвляй невинного и правого, ибо Я не оправдаю беззаконника.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Даров не принимай, ибо дары слепыми делают зрячих и превращают дело правых.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Пришельца не обижай [и не притесняй его]: вы знаете душу пришельца, потому что сами были пришельцами в земле Египетской.
+</p>
+<div class="num">10</div><p id="n10">Шесть лет засевай землю твою и собирай произведения ее,
+</p>
+<div class="num">11</div><p id="n11">а в седьмой оставляй ее в покое, чтобы питались убогие из твоего народа, а остатками после них питались звери полевые; так же поступай с виноградником твоим и с маслиною твоею.
+</p>
+<div class="num">12</div><p id="n12">Шесть дней делай дела твои, а в седьмой день покойся, чтобы отдохнул вол твой и осел твой и успокоился сын рабы твоей и пришлец.
+</p>
+<div class="num">13</div><p id="n13">Соблюдайте всё, что Я сказал вам, и имени других богов не упоминайте; да не слышится оно из уст твоих.
+</p>
+<div class="num">14</div><p id="n14">Три раза в году празднуй Мне:
+</p>
+<div class="num">15</div><p id="n15">наблюдай праздник опресноков: семь дней ешь пресный хлеб, как Я повелел тебе, в назначенное время месяца Авива, ибо в оном ты вышел из Египта; и пусть не являются пред лице Мое с пустыми <i>руками;</i>
+</p>
+<div class="num">16</div><p id="n16"><i>наблюдай</i> и праздник жатвы первых плодов труда твоего, какие ты сеял на поле, и праздник собирания плодов в конце года, когда уберешь с поля работу твою.
+</p>
+<div class="num">17</div><p id="n17">Три раза в году должен являться весь мужеский пол твой пред лице Владыки, Господа [твоего].
+</p>
+<div class="num">18</div><p id="n18">[Когда изгоню язычников от лица твоего и распространю пределы твои], не изливай крови жертвы Моей на квасное, и тук от праздничной жертвы Моей не должен оставаться до утра.
+</p>
+<div class="num">19</div><p id="n19">Начатки плодов земли твоей приноси в дом Господа, Бога твоего. Не вари козленка в молоке матери его.
+</p>
+<div class="num">20</div><p id="n20">Вот, Я посылаю пред тобою Ангела [Моего] хранить тебя на пути и ввести тебя в то место, которое Я приготовил [тебе];
+</p>
+<div class="num">21</div><p id="n21">блюди себя пред лицем Его и слушай гласа Его; не упорствуй против Него, потому что Он не простит греха вашего, ибо имя Мое в Нем.
+</p>
+<div class="num">22</div><p id="n22">[Если будешь слушать гласа Моего, и будешь исполнять все, что скажу тебе, и сохранишь завет Мой, то вы будете у Меня народом избранным из всех племен, ибо вся земля Моя; вы будете у Меня царственным священством и народом святым. Сии слова скажи сынам Израилевым.] Если ты будешь слушать гласа Его и исполнять все, что скажу [тебе], то врагом буду врагов твоих и противником противников твоих.
+</p>
+<div class="num">23</div><p id="n23">Когда пойдет пред тобою Ангел Мой и поведет тебя к Аморреям, Хеттеям, Ферезеям, Хананеям, [Гергесеям,] Евеям и Иевусеям, и истреблю их [от лица вашего],
+</p>
+<div class="num">24</div><p id="n24">то не поклоняйся богам их, и не служи им, и не подражай делам их, но сокруши их и разрушь столбы их:
+</p>
+<div class="num">25</div><p id="n25">служите Господу, Богу вашему, и Он благословит хлеб твой [и вино твое] и воду твою; и отвращу от вас болезни.
+</p>
+<div class="num">26</div><p id="n26">Не будет преждевременно рождающих и бесплодных в земле твоей; число дней твоих сделаю полным.
+</p>
+<div class="num">27</div><p id="n27">Ужас Мой пошлю пред тобою, и в смущение приведу всякий народ, к которому ты придешь, и буду обращать к тебе тыл всех врагов твоих;
+</p>
+<div class="num">28</div><p id="n28">пошлю пред тобою шершней, и они погонят от лица твоего [Аморреев,] Евеев, [Иевусеев,] Хананеев и Хеттеев;
+</p>
+<div class="num">29</div><p id="n29">не выгоню их от лица твоего в один год, чтобы земля не сделалась пуста и не умножились против тебя звери полевые:
+</p>
+<div class="num">30</div><p id="n30">мало-помалу буду прогонять их от тебя, доколе ты не размножишься и не возьмешь во владение земли сей.
+</p>
+<div class="num">31</div><p id="n31">Проведу пределы твои от моря Чермного до моря Филистимского и от пустыни до реки [великой Евфрата], ибо предам в руки ваши жителей сей земли, и прогонишь их от лица твоего;
+</p>
+<div class="num">32</div><p id="n32">[не смешивайся и] не заключай союза ни с ними, ни с богами их;
+</p>
+<div class="num">33</div><p id="n33">не должны они жить в земле твоей, чтобы они не ввели тебя в грех против Меня; ибо если ты будешь служить богам их, то это будет тебе сетью.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.24.ru.html">к главе 24</a></div></div>
+
+</body>
+</html>

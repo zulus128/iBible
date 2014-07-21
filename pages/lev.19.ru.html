@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lev.ru.html">Левит</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 19
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Господь Моисею, говоря:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">объяви всему обществу сынов Израилевых и скажи им: святы будьте, ибо свят Я Господь, Бог ваш.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Бойтесь каждый матери своей и отца своего и субботы Мои храните. Я Господь, Бог ваш.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Не обращайтесь к идолам и богов литых не делайте себе. Я Господь, Бог ваш.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Когда будете приносить Господу жертву мирную, то приносите ее, чтобы приобрести себе благоволение:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">в день жертвоприношения вашего и на другой день должно есть ее, а оставшееся к третьему дню должно сжечь на огне;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">если же кто станет есть ее на третий день, это гнусно, это не будет благоприятно;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">кто станет есть ее, тот понесет на себе грех, ибо он осквернил святыню Господню, и истребится душа та из народа своего.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Когда будете жать жатву на земле вашей, не дожинай до края поля твоего, и оставшегося от жатвы твоей не подбирай,
+</p>
+<div class="num">10</div><p id="n10">и виноградника твоего не обирай дочиста, и попа&#769;давших ягод в винограднике не подбирай; оставь это бедному и пришельцу. Я Господь, Бог ваш.
+</p>
+<div class="num">11</div><p id="n11">Не крадите, не лгите и не обманывайте друг друга.
+</p>
+<div class="num">12</div><p id="n12">Не клянитесь именем Моим во лжи, и не бесчести имени Бога твоего. Я Господь [Бог ваш].
+</p>
+<div class="num">13</div><p id="n13">Не обижай ближнего твоего и не грабительствуй. Плата наемнику не должна оставаться у тебя до утра.
+</p>
+<div class="num">14</div><p id="n14">Не злословь глухого и пред слепым не клади ничего, чтобы преткнуться ему; бойся [Господа] Бога твоего. Я Господь [Бог ваш].
+</p>
+<div class="num">15</div><p id="n15">Не делайте неправды на суде; не будь лицеприятен к нищему и не угождай лицу великого; по правде суди ближнего твоего.
+</p>
+<div class="num">16</div><p id="n16">Не ходи переносчиком в народе твоем и не восставай на жизнь ближнего твоего. Я Господь [Бог ваш].
+</p>
+<div class="num">17</div><p id="n17">Не враждуй на брата твоего в сердце твоем; обличи ближнего твоего, и не понесешь за него греха.
+</p>
+<div class="num">18</div><p id="n18">Не мсти и не имей злобы на сынов народа твоего, но люби ближнего твоего, как самого себя. Я Господь [Бог ваш].
+</p>
+<div class="num">19</div><p id="n19">Уставы Мои соблюдайте; скота твоего не своди с иною породою; поля твоего не засевай двумя родами <i>семян;</i> в одежду из разнородных нитей, из шерсти и льна, не одевайся.
+</p>
+<div class="num">20</div><p id="n20">Если кто переспит с женщиною, а она раба, обрученная мужу, но еще не выкупленная, или свобода еще не дана ей, то должно наказать их, но не смертью, потому что она несвободная:
+</p>
+<div class="num">21</div><p id="n21">пусть приведет он Господу ко входу скинии собрания жертву повинности, овна в жертву повинности своей;
+</p>
+<div class="num">22</div><p id="n22">и очистит его священник овном повинности пред Господом от греха, которым он согрешил, и прощен будет ему грех, которым он согрешил.
+</p>
+<div class="num">23</div><p id="n23">Когда придете в землю, [которую Господь Бог даст вам,] и посадите какое-либо плодовое дерево, то плоды его почитайте за необрезанные: три года должно почитать их за необрезанные, не должно есть их;
+</p>
+<div class="num">24</div><p id="n24">а в четвертый год все плоды его должны быть посвящены для празднеств Господних;
+</p>
+<div class="num">25</div><p id="n25">в пятый же год вы можете есть плоды его и собирать себе все произведения его. Я Господь, Бог ваш.
+</p>
+<div class="num">26</div><p id="n26">Не ешьте с кровью; не ворожите и не гадайте.
+</p>
+<div class="num">27</div><p id="n27">Не стригите головы вашей кругом, и не порти края бороды твоей.
+</p>
+<div class="num">28</div><p id="n28">Ради умершего не делайте нарезов на теле вашем и не накалывайте на себе письмен. Я Господь [Бог ваш].
+</p>
+<div class="num">29</div><p id="n29">Не оскверняй дочери твоей, допуская ее до блуда, чтобы не блудодействовала земля и не наполнилась земля развратом.
+</p>
+<div class="num">30</div><p id="n30">Субботы Мои храните и святилище Мое чтите. Я Господь.
+</p>
+<div class="num">31</div><p id="n31">Не обращайтесь к вызывающим мертвых, и к волшебникам не ходите, и не доводите себя до осквернения от них. Я Господь, Бог ваш.
+</p>
+<div class="num">32</div><p id="n32">Пред лицем седого вставай и почитай лице старца, и бойся [Господа] Бога твоего. Я Господь [Бог ваш].
+</p>
+<div class="num">33</div><p id="n33">Когда поселится пришлец в земле вашей, не притесняйте его:
+</p>
+<div class="num">34</div><p id="n34">пришлец, поселившийся у вас, да будет для вас то же, что туземец ваш; люби его, как себя; ибо и вы были пришельцами в земле Египетской. Я Господь, Бог ваш.
+</p>
+<div class="num">35</div><p id="n35">Не делайте неправды в суде, в мере, в весе и в измерении:
+</p>
+<div class="num">36</div><p id="n36">да будут у вас весы верные, гири верные, ефа верная и гин верный. Я Господь, Бог ваш, Который вывел вас из земли Египетской.
+</p>
+<div class="num">37</div><p id="n37">Соблюдайте все уставы Мои и все законы Мои и исполняйте их. Я Господь [Бог ваш].
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lev.20.ru.html">к главе 20</a></div></div>
+
+</body>
+</html>

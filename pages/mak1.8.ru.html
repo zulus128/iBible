@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mak1.ru.html">Первая книга<br />Маккавейская</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 8
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Иуда услышал о славе Римлян, что они могущественны и сильны и благосклонно принимают всех, обращающихся к ним, и кто ни приходил к ним, со всеми заключали они дружбу.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">А что они могущественны и сильны,- рассказывали ему о войнах их, о мужественных подвигах, которые они показали над Галатами, как они покорили их и сделали данниками;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">также о том, что сделали они в стране Испанской, чтобы овладеть находящимися там серебряными и золотыми рудниками,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и своим благоразумием и твердостью овладели всем краем, хотя тот край весьма далеко отстоял от них, равно о царях, которые приходили против них от конца земли, и они сокрушили их и поразили великим поражением, а прочие платят им ежегодно дань;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">они также сокрушили на войне и покорили себе Филиппа и Персея, царя Китийского, и других, восставших против них,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и Антиоха, великого царя Азии, который вышел против них на войну со ста двадцатью слонами, и с конницею, и колесницами, и весьма многочисленным войском и был разбит ими;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">они взяли его живого и заставили платить им великую дань,- как его, так и следующих после него царей,- дать заложников и допустить раздел,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">а страну Индийскую и Мидию, и Лидию, и другие из лучших областей его, взяв от него, отдали царю Евмению;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и о том, как Еллины вознамерились прийти и истребить их,
+</p>
+<div class="num">10</div><p id="n10">но это намерение сделалось им известным, и они послали против них одного военачальника и воевали против них,- и много из них пало пораженных, и взяли в плен жен их и детей их и разграбили их, и овладели их землею, и разорили крепости их, и поработили их до сего дня;
+</p>
+<div class="num">11</div><p id="n11">и другие царства и острова, которые когда-либо восставали против них, они разорили и поработили.
+</p>
+<div class="num">12</div><p id="n12">А с друзьями своими и с доверявшимися им они сохраняли дружбу; и овладели царствами ближними и дальними, и все, слышавшие имя их, боялись их.
+</p>
+<div class="num">13</div><p id="n13">Если захотят кому помочь и кого воцарить, те царствуют, и кого хотят, сменяют, и они весьма возвысились;
+</p>
+<div class="num">14</div><p id="n14">но при всем том никто из них не возлагал на себя венца и не облекался в порфиру, чтобы величаться ею.
+</p>
+<div class="num">15</div><p id="n15">Они составили у себя совет, и постоянно каждый день триста двадцать человек совещаются обо всем, что относится до народа и благоустроения его;
+</p>
+<div class="num">16</div><p id="n16">и каждый год одному человеку вверяют они начальство над собою и господство над всею землею их, и все слушают одного, и не бывает ни зависти, ни ревности между ними.
+</p>
+<div class="num">17</div><p id="n17">Тогда избрал Иуда Евполема, сына Иоаннова, сына Аккосова, и Иасона, сына Елеазарова, и послал их в Рим, чтобы заключить с ними дружбу и союз
+</p>
+<div class="num">18</div><p id="n18">и чтобы они сняли с них иго, ибо они видят, что Еллинское царство хочет поработить Израиля.
+</p>
+<div class="num">19</div><p id="n19">Итак, они отправились в Рим, хотя путь был очень долгий, и вошли в собрание совета и, приступив, сказали:
+</p>
+<div class="num">20</div><p id="n20">Иуда Маккавей и братья его и весь народ Иудейский послали нас к вам, чтобы заключить с вами союз и мир и чтобы вы вписали нас в число соратников и друзей ваших.
+</p>
+<div class="num">21</div><p id="n21">И угодно было это слово перед ними.
+</p>
+<div class="num">22</div><p id="n22">И вот список того послания, которое написали они в ответ на медных досках и послали в Иерусалим, чтобы оно служило для них там памятником мира и союза:
+</p>
+<div class="num">23</div><p id="n23">"благо да будет Римлянам и народу Иудейскому на море и на суше навеки, и меч и враг да будут далеко от них!
+</p>
+<div class="num">24</div><p id="n24">Если же настанет война прежде у Римлян или у всех союзников их во всем владении их,
+</p>
+<div class="num">25</div><p id="n25">то народ Иудейский должен оказать им всем сердцем помощь в войне, как потребует того время;
+</p>
+<div class="num">26</div><p id="n26">и воюющим они не будут ни давать, ни доставлять ни хлеба, ни оружия, ни денег, ни кораблей, ибо так угодно Римлянам; они должны исполнять обязанность свою, ничего не получая.
+</p>
+<div class="num">27</div><p id="n27">Точно так же, если прежде случится война у народа Иудейского, Римляне от души будут помогать им в войне, как потребует того время,
+</p>
+<div class="num">28</div><p id="n28">и помогающим в войне не будут давать ни хлеба, ни оружия, ни денег, ни кораблей: так угодно Риму; они должны исполнять свои обязанности - и без обмана".
+</p>
+<div class="num">29</div><p id="n29">На таких условиях заключили Римляне союз с народом Иудейским.
+</p>
+<div class="num">30</div><p id="n30">Если же после сих условий те и другие вздумают что-нибудь прибавить или убавить, пусть сделают это по их общему произволению, и то, что они прибавят или убавят, будет иметь силу.
+</p>
+<div class="num">31</div><p id="n31">А о том зле, какое делает <i>Иудеям</i> царь Димитрий, мы написали ему так: "для чего ты наложил тяжкое твое иго на друзей наших и союзников - Иудеев?
+</p>
+<div class="num">32</div><p id="n32">Если они еще обратятся к нам с жалобою на тебя, то мы окажем им справедливость и будем воевать против тебя на море и на суше".
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mak1.9.ru.html">к главе 9</a></div></div>
+
+</body>
+</html>

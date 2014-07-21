@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jn.ru.html">Евангелие от Иоанна</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Между фарисеями был некто, именем Никодим, <i>один</i> из начальников Иудейских.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Он пришел к Иисусу ночью и сказал Ему: Равви&#769;! мы знаем, что Ты учитель, пришедший от Бога; ибо таких чудес, какие Ты творишь, никто не может творить, если не будет с ним Бог.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Иисус сказал ему в ответ: истинно, истинно говорю тебе, если кто не родится свыше, не может увидеть Царствия Божия.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Никодим говорит Ему: как может человек родиться, будучи стар? неужели может он в другой раз войти в утробу матери своей и родиться?
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Иисус отвечал: истинно, истинно говорю тебе, если кто не родится от воды и Духа, не может войти в Царствие Божие.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Рожденное от плоти есть плоть, а рожденное от Духа есть дух.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Не удивляйся тому, что Я сказал тебе: должно вам родиться свыше.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Дух дышит, где хочет, и голос его слышишь, а не знаешь, откуда приходит и куда уходит: так бывает со всяким, рожденным от Духа.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Никодим сказал Ему в ответ: как это может быть?
+</p>
+<div class="num">10</div><p id="n10">Иисус отвечал и сказал ему: ты - учитель Израилев, и этого ли не знаешь?
+</p>
+<div class="num">11</div><p id="n11">Истинно, истинно говорю тебе: Мы говорим о том, что знаем, и свидетельствуем о том, что видели, а вы свидетельства Нашего не принимаете.
+</p>
+<div class="num">12</div><p id="n12">Если Я сказал вам о земном, и вы не верите,- как поверите, если буду говорить вам о небесном?
+</p>
+<div class="num">13</div><p id="n13">Никто не восходил на небо, как только сшедший с небес Сын Человеческий, сущий на небесах.
+</p>
+<div class="num">14</div><p id="n14">И как Моисей вознес змию в пустыне, так должно вознесену быть Сыну Человеческому,
+</p>
+<div class="num">15</div><p id="n15">дабы всякий, верующий в Него, не погиб, но имел жизнь вечную.
+</p>
+<div class="num">16</div><p id="n16">Ибо так возлюбил Бог мир, что отдал Сына Своего Единородного, дабы всякий верующий в Него, не погиб, но имел жизнь вечную.
+</p>
+<div class="num">17</div><p id="n17">Ибо не послал Бог Сына Своего в мир, чтобы судить мир, но чтобы мир спасен был чрез Него.
+</p>
+<div class="num">18</div><p id="n18">Верующий в Него не судится, а неверующий уже осужден, потому что не уверовал во имя Единородного Сына Божия.
+</p>
+<div class="num">19</div><p id="n19">Суд же состоит в том, что свет пришел в мир; но люди более возлюбили тьму, нежели свет, потому что дела их были злы;
+</p>
+<div class="num">20</div><p id="n20">ибо всякий, делающий злое, ненавидит свет и не идет к свету, чтобы не обличились дела его, потому что они злы,
+</p>
+<div class="num">21</div><p id="n21">а поступающий по правде идет к свету, дабы явны были дела его, потому что они в Боге соделаны.
+</p>
+<div class="num">22</div><p id="n22">После сего пришел Иисус с учениками Своими в землю Иудейскую и там жил с ними и крестил.
+</p>
+<div class="num">23</div><p id="n23">А Иоанн также крестил в Еноне, близ Салима, потому что там было много воды; и приходили <i>туда</i> и крестились,
+</p>
+<div class="num">24</div><p id="n24">ибо Иоанн еще не был заключен в темницу.
+</p>
+<div class="num">25</div><p id="n25">Тогда у Иоанновых учеников произошел спор с Иудеями об очищении.
+</p>
+<div class="num">26</div><p id="n26">И пришли к Иоанну и сказали ему: равви&#769;! Тот, Который был с тобою при Иордане и о Котором ты свидетельствовал, вот Он крестит, и все идут к Нему.
+</p>
+<div class="num">27</div><p id="n27">Иоанн сказал в ответ: не может человек ничего принимать <i>на</i> <i>себя,</i> если не будет дано ему с неба.
+</p>
+<div class="num">28</div><p id="n28">Вы сами мне свидетели в том, что я сказал: не я Христос, но я послан пред Ним.
+</p>
+<div class="num">29</div><p id="n29">Имеющий невесту есть жених, а друг жениха, стоящий и внимающий ему, радостью радуется, слыша голос жениха. Сия-то радость моя исполнилась.
+</p>
+<div class="num">30</div><p id="n30">Ему должно расти, а мне умаляться.
+</p>
+<div class="num">31</div><p id="n31">Приходящий свыше и есть выше всех; а сущий от земли земной и есть и говорит, как сущий от земли; Приходящий с небес есть выше всех,
+</p>
+<div class="num">32</div><p id="n32">и что Он видел и слышал, о том и свидетельствует; и никто не принимает свидетельства Его.
+</p>
+<div class="num">33</div><p id="n33">Принявший Его свидетельство сим запечатлел, что Бог истинен,
+</p>
+<div class="num">34</div><p id="n34">ибо Тот, Которого послал Бог, говорит слова Божии; ибо не мерою дает Бог Духа.
+</p>
+<div class="num">35</div><p id="n35">Отец любит Сына и все дал в руку Его.
+</p>
+<div class="num">36</div><p id="n36">Верующий в Сына имеет жизнь вечную, а не верующий в Сына не увидит жизни, но гнев Божий пребывает на нем.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jn.4.ru.html">к главе 4</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jdi.ru.html">Книга Иудифь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 13
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Когда поздно стало, рабы его поспешили удалиться, а Вагой, отпустив предстоявших пред лицем его господина, затворил шатер снаружи, и они пошли к постелям своим, так как все были утомлены продолжительностью пира.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">В шатре осталась одна Иудифь с Олоферном, упавшим на ложе свое, потому что был переполнен вином.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Иудифь велела служанке своей стать вне спальни ее и ожидать ее выхода, как было каждый день, сказав, что она выйдет на молитву. То же самое сказала она и Вагою.
+</p>
+<div class="num">&nbsp;4</div><p id="n4"><i>Когда</i> все от нее ушли и никого в спальне не осталось, ни малого, ни большого, Иудифь, став у постели <i>Олоферна</i>, сказала в сердце своем: Господи, Боже всякой силы! призри в час сей на дела рук моих к возвышению Иерусалима,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">ибо теперь время защитить наследие Твое и исполнить мое намерение, поразить врагов, восставших на нас.
+</p>
+<div class="num">&nbsp;6</div><p id="n6"><i>Потом</i>, подойдя к столбику постели, стоявшему в головах у Олоферна, она сняла с него меч его
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и, приблизившись к постели, схватила волосы головы его и сказала: Господи, Боже Израиля! укрепи меня в этот день.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И изо всей силы дважды ударила по шее <i>Олоферна</i> и сняла с него голову
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и, сбросив с постели тело его, взяла со столбов занавес. Спустя немного она вышла и отдала служанке своей голову Олоферна,
+</p>
+<div class="num">10</div><p id="n10">а эта положила ее в мешок со съестными припасами, и обе вместе вышли, по обычаю своему, на молитву. Пройдя стан, они обошли кругом ущелье, поднялись на гору Ветилуи и пошли к воротам ее.
+</p>
+<div class="num">11</div><p id="n11">Иудифь издали кричала сторожившим при воротах: отворите, отворите ворота! с нами Бог, Бог наш, чтобы даровать еще силу Израилю и победу над врагами, как даровал Он и сегодня.
+</p>
+<div class="num">12</div><p id="n12">Как только услышали городские мужи голос ее, поспешили прийти к городским воротам и созвали старейшин города.
+</p>
+<div class="num">13</div><p id="n13">И сбежались все, от малого до большого, так как приход ее был для них сверх ожидания, и, отворив ворота, приняли их, и, зажегши для освещения огонь, окружили их.
+</p>
+<div class="num">14</div><p id="n14">Она же сказала им громким голосом: хвалите Господа, хвалите, хвалите Господа, что Он не удалил милости Своей от дома Израилева, но в эту ночь сокрушил врагов наших моею рукою.
+</p>
+<div class="num">15</div><p id="n15">И, вынув голову из мешка, показала ее и сказала им: вот голова Олоферна, вождя Ассирийского войска, и вот занавес его, за которым он лежал от опьянения,- и Господь поразил его рукою женщины.
+</p>
+<div class="num">16</div><p id="n16">Жив Господь, сохранивший меня в пути, которым я шла! ибо лице мое прельстило <i>Олоферна</i> на погибель его, но он не сделал со мною скверного и постыдного греха.
+</p>
+<div class="num">17</div><p id="n17">Весь народ чрезвычайно изумился; пали, поклонились Богу и единодушно сказали: благословен Ты, Боже наш, уничиживший сегодня врагов народа Твоего!
+</p>
+<div class="num">18</div><p id="n18">А Озия сказал ей: благословенна ты, дочь, Всевышним Богом более всех жен на земле, и благословен Господь Бог, создавший небеса и землю и наставивший тебя на поражение головы начальника наших врагов;
+</p>
+<div class="num">19</div><p id="n19">ибо надежда твоя не отступит от сердца людей, помнящих силу Божию, до века.
+</p>
+<div class="num">20</div><p id="n20">Да вменит тебе это Бог в вечную славу и да наградит тебя благами за то, что ты жизни твоей не пощадила при унижении рода нашего, но выступила вперед, когда мы падали, ты, право ходившая пред Богом нашим. И весь народ сказал: да будет, да будет!
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jdi.14.ru.html">к главе 14</a></div></div>
+
+</body>
+</html>

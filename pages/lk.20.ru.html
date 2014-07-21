@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lk.ru.html">Евангелие от Луки</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 20
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В один из тех дней, когда Он учил народ в храме и благовествовал, приступили первосвященники и книжники со старейшинами,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и сказали Ему: скажи нам, какою властью Ты это делаешь, или кто дал Тебе власть сию?
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Он сказал им в ответ: спрошу и Я вас об одном, и скажите Мне:
+</p>
+<div class="num">&nbsp;4</div><p id="n4">крещение Иоанново с небес было, или от человеков?
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Они же, рассуждая между собою, говорили: если скажем: с небес, то скажет: почему же вы не поверили ему?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">а если скажем: от человеков, то весь народ побьет нас камнями, ибо он уверен, что Иоанн есть пророк.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И отвечали: не знаем откуда.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Иисус сказал им: и Я не скажу вам, какою властью это делаю.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И начал Он говорить к народу притчу сию: один человек насадил виноградник и отдал его виноградарям, и отлучился на долгое время;
+</p>
+<div class="num">10</div><p id="n10">и в свое время послал к виноградарям раба, чтобы они дали ему плодов из виноградника; но виноградари, прибив его, отослали ни с чем.
+</p>
+<div class="num">11</div><p id="n11">Еще послал другого раба; но они и этого, прибив и обругав, отослали ни с чем.
+</p>
+<div class="num">12</div><p id="n12">И еще послал третьего; но они и того, изранив, выгнали.
+</p>
+<div class="num">13</div><p id="n13">Тогда сказал господин виноградника: что мне делать? Пошлю сына моего возлюбленного; может быть, увидев его, постыдятся.
+</p>
+<div class="num">14</div><p id="n14">Но виноградари, увидев его, рассуждали между собою, говоря: это наследник; пойдем, убьем его, и наследство его будет наше.
+</p>
+<div class="num">15</div><p id="n15">И, выведя его вон из виноградника, убили. Что же сделает с ними господин виноградника?
+</p>
+<div class="num">16</div><p id="n16">Придет и погубит виноградарей тех, и отдаст виноградник другим. Слышавшие же это сказали: да не будет!
+</p>
+<div class="num">17</div><p id="n17">Но Он, взглянув на них, сказал: что значит сие написанное: камень, который отвергли строители, тот самый сделался главою угла?
+</p>
+<div class="num">18</div><p id="n18">Всякий, кто упадет на тот камень, разобьется, а на кого он упадет, того раздавит.
+</p>
+<div class="num">19</div><p id="n19">И искали в это время первосвященники и книжники, чтобы наложить на Него руки, но побоялись народа, ибо поняли, что о них сказал Он эту притчу.
+</p>
+<div class="num">20</div><p id="n20">И, наблюдая за Ним, подослали лукавых людей, которые, притворившись благочестивыми, уловили бы Его в каком-либо слове, чтобы предать Его начальству и власти правителя.
+</p>
+<div class="num">21</div><p id="n21">И они спросили Его: Учитель! мы знаем, что Ты правдиво говоришь и учишь и не смотришь на лице, но истинно пути Божию учишь;
+</p>
+<div class="num">22</div><p id="n22">позволительно ли нам давать подать кесарю, или нет?
+</p>
+<div class="num">23</div><p id="n23">Он же, уразумев лукавство их, сказал им: что вы Меня искушаете?
+</p>
+<div class="num">24</div><p id="n24">Покажите Мне динарий: чье на нем изображение и надпись? Они отвечали: кесаревы.
+</p>
+<div class="num">25</div><p id="n25">Он сказал им: итак, отдавайте кесарево кесарю, а Божие Богу.
+</p>
+<div class="num">26</div><p id="n26">И не могли уловить Его в слове перед народом, и, удивившись ответу Его, замолчали.
+</p>
+<div class="num">27</div><p id="n27">Тогда пришли некоторые из саддукеев, отвергающих воскресение, и спросили Его:
+</p>
+<div class="num">28</div><p id="n28">Учитель! Моисей написал нам, что если у кого умрет брат, имевший жену, и умрет бездетным, то брат его должен взять его жену и восставить семя брату своему.
+</p>
+<div class="num">29</div><p id="n29">Было семь братьев, первый, взяв жену, умер бездетным;
+</p>
+<div class="num">30</div><p id="n30">взял ту жену второй, и тот умер бездетным;
+</p>
+<div class="num">31</div><p id="n31">взял ее третий; также и все семеро, и умерли, не оставив детей;
+</p>
+<div class="num">32</div><p id="n32">после всех умерла и жена;
+</p>
+<div class="num">33</div><p id="n33">итак, в воскресение которого из них будет она женою, ибо семеро имели ее женою?
+</p>
+<div class="num">34</div><p id="n34">Иисус сказал им в ответ: чада века сего женятся и выходят замуж;
+</p>
+<div class="num">35</div><p id="n35">а сподобившиеся достигнуть того века и воскресения из мертвых ни женятся, ни замуж не выходят,
+</p>
+<div class="num">36</div><p id="n36">и умереть уже не могут, ибо они равны Ангелам и суть сыны Божии, будучи сынами воскресения.
+</p>
+<div class="num">37</div><p id="n37">А что мертвые воскреснут, и Моисей показал при купине, когда назвал Господа Богом Авраама и Богом Исаака и Богом Иакова.
+</p>
+<div class="num">38</div><p id="n38">Бог же не есть <i>Бог</i> мертвых, но живых, ибо у Него все живы.
+</p>
+<div class="num">39</div><p id="n39">На это некоторые из книжников сказали: Учитель! Ты хорошо сказал.
+</p>
+<div class="num">40</div><p id="n40">И уже не смели спрашивать Его ни о чем. Он же сказал им:
+</p>
+<div class="num">41</div><p id="n41">ка&#769;к говорят, что Христос есть Сын Давидов,
+</p>
+<div class="num">42</div><p id="n42">а сам Давид говорит в книге псалмов: сказал Господь Господу моему: седи одесную Меня,
+</p>
+<div class="num">43</div><p id="n43">доколе положу врагов Твоих в подножие ног Твоих?
+</p>
+<div class="num">44</div><p id="n44">Итак, Давид Господом называет Его; как же Он Сын ему?
+</p>
+<div class="num">45</div><p id="n45">И когда слушал весь народ, Он сказал ученикам Своим:
+</p>
+<div class="num">46</div><p id="n46">остерегайтесь книжников, которые любят ходить в длинных одеждах и любят приветствия в народных собраниях, председания в синагогах и предвозлежания на пиршествах,
+</p>
+<div class="num">47</div><p id="n47">которые поедают до&#769;мы вдов и лицемерно долго молятся; они примут тем большее осуждение.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lk.21.ru.html">к главе 21</a></div></div>
+
+</body>
+</html>

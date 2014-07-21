@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king4.ru.html">Четвертая книга Царств</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И отложился Моав от Израиля по смерти Ахава.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Охозия же упал чрез решетку с горницы своей, что в Самарии, и занемог. И послал послов, и сказал им: пойдите, спросите у Веельзевула, божества Аккаронского: выздоровею ли я от сей болезни? [И пошли они спрашивать.]
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Тогда Ангел Господень сказал Илии Фесвитянину: встань, пойди навстречу посланным от царя Самарийского и скажи им: разве нет Бога в Израиле, что вы идете вопрошать Веельзевула, божество Аккаронское?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">За это так говорит Господь: с постели, на которую ты лег, не сойдешь с нее, но умрешь. И пошел Илия, [и сказал им].
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И возвратились к <i>Охозии</i> посланные. И он сказал им: что это вы возвратились?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказали ему: навстречу нам вышел человек и сказал нам: пойдите, возвратитесь к царю, который послал вас, и скажите ему: так говорит Господь: разве нет Бога в Израиле, что ты посылаешь вопрошать Веельзевула, божество Аккаронское? За то с постели, на которую ты лег, не сойдешь с нее, но умрешь.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И сказал им: каков видом тот человек, который вышел навстречу вам и говорил вам слова сии?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Они сказали ему: человек тот весь в волосах и кожаным поясом подпоясан по чреслам своим. И сказал он: это Илия Фесвитянин.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И послал к нему пятидесятника с его пятидесятком. И он взошел к нему, когда Илия сидел на верху горы, и сказал ему: человек Божий! царь говорит: сойди.
+</p>
+<div class="num">10</div><p id="n10">И отвечал Илия, и сказал пятидесятнику: если я человек Божий, то пусть сойдет огонь с неба и попалит тебя и твой пятидесяток. И сошел огонь с неба и попалил его и пятидесяток его.
+</p>
+<div class="num">11</div><p id="n11">И послал к нему царь другого пятидесятника с его пятидесятком. И он стал говорить ему: человек Божий! так сказал царь: сойди скорее.
+</p>
+<div class="num">12</div><p id="n12">И отвечал Илия и сказал ему: если я человек Божий, то пусть сойдет огонь с неба и попалит тебя и твой пятидесяток. И сошел огонь Божий с неба, и попалил его и пятидесяток его.
+</p>
+<div class="num">13</div><p id="n13">И еще послал в третий раз пятидесятника с его пятидесятком. И поднялся, и пришел пятидесятник третий, и пал на колена свои пред Илиею, и умолял его, и говорил ему: человек Божий! да не будет презрена душа моя и душа рабов твоих - сих пятидесяти - пред очами твоими;
+</p>
+<div class="num">14</div><p id="n14">вот, сошел огонь с неба, и попалил двух пятидесятников прежних с их пятидесятками; но теперь да не будет презрена душа моя пред очами твоими!
+</p>
+<div class="num">15</div><p id="n15">И сказал Ангел Господень Илии: пойди с ним, не бойся его. И он встал, и пошел с ним к царю.
+</p>
+<div class="num">16</div><p id="n16">И сказал ему: так говорит Господь: за то, что ты посылал послов вопрошать Веельзевула, божество Аккаронское, как будто в Израиле нет Бога, чтобы вопрошать о слове Его,- с постели, на которую ты лег, не сойдешь с нее, но умрешь.
+</p>
+<div class="num">17</div><p id="n17">И умер он по слову Господню, которое изрек Илия. И воцарился Иорам [брат Охозии], вместо него, во второй год Иорама, сына Иосафатова, царя Иудейского, так как сына у того не было.
+</p>
+<div class="num">18</div><p id="n18">Прочее об Охозии, что он сделал, написано в летописи царей Израильских.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king4.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

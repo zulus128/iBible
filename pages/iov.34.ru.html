@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="iov.ru.html">Книга Иова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 34
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И продолжал Елиуй и сказал:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">выслушайте, мудрые, речь мою, и приклоните ко мне ухо, рассудительные!
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ибо ухо разбирает слова, как гортань различает вкус в пище.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Установим между собою рассуждение и распознаем, что хорошо.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Вот, Иов сказал: я прав, но Бог лишил меня суда.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Должен ли я лгать на правду мою? Моя рана неисцелима без вины.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Есть ли такой человек, как Иов, который пьет глумление, как воду,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">вступает в сообщество с делающими беззаконие и ходит с людьми нечестивыми?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Потому что он сказал: нет пользы для человека в благоугождении Богу.
+</p>
+<div class="num">10</div><p id="n10">Итак послушайте меня, мужи мудрые! Не может быть у Бога неправда или у Вседержителя неправосудие,
+</p>
+<div class="num">11</div><p id="n11">ибо Он по делам человека поступает с ним и по путям мужа воздает ему.
+</p>
+<div class="num">12</div><p id="n12">Истинно, Бог не делает неправды и Вседержитель не извращает суда.
+</p>
+<div class="num">13</div><p id="n13">Кто кроме Его промышляет о земле? И кто управляет всею вселенною?
+</p>
+<div class="num">14</div><p id="n14">Если бы Он обратил сердце Свое к Себе и взял к Себе дух ее и дыхание ее,-
+</p>
+<div class="num">15</div><p id="n15">вдруг погибла бы всякая плоть, и человек возвратился бы в прах.
+</p>
+<div class="num">16</div><p id="n16">Итак, если ты имеешь разум, то слушай это и внимай словам моим.
+</p>
+<div class="num">17</div><p id="n17">Ненавидящий правду может ли владычествовать? И можешь ли ты обвинить Всеправедного?
+</p>
+<div class="num">18</div><p id="n18">Можно ли сказать царю: ты - нечестивец, и князьям: вы - беззаконники?
+</p>
+<div class="num">19</div><p id="n19">Но Он не смотрит и на лица князей и не предпочитает богатого бедному, потому что все они дело рук Его.
+</p>
+<div class="num">20</div><p id="n20">Внезапно они умирают; среди ночи народ возмутится, и они исчезают; и сильных изгоняют не силою.
+</p>
+<div class="num">21</div><p id="n21">Ибо очи Его над путями человека, и Он видит все шаги его.
+</p>
+<div class="num">22</div><p id="n22">Нет тьмы, ни тени смертной, где могли бы укрыться делающие беззаконие.
+</p>
+<div class="num">23</div><p id="n23">Потому Он уже не требует от человека, чтобы шел на суд с Богом.
+</p>
+<div class="num">24</div><p id="n24">Он сокрушает сильных без исследования и поставляет других на их места;
+</p>
+<div class="num">25</div><p id="n25">потому что Он делает известными дела их и низлагает их ночью, и они истребляются.
+</p>
+<div class="num">26</div><p id="n26">Он поражает их, как беззаконных людей, пред глазами других,
+</p>
+<div class="num">27</div><p id="n27">за то, что они отвратились от Него и не уразумели всех путей Его,
+</p>
+<div class="num">28</div><p id="n28">так что дошел до Него вопль бедных, и Он услышал стенание угнетенных.
+</p>
+<div class="num">29</div><p id="n29">Дарует ли Он тишину, кто может возмутить? скрывает ли Он лице Свое, кто может увидеть Его? Будет ли это для народа, или для одного человека,
+</p>
+<div class="num">30</div><p id="n30">чтобы не царствовал лицемер к соблазну народа.
+</p>
+<div class="num">31</div><p id="n31">К Богу должно говорить: я потерпел, больше не буду грешить.
+</p>
+<div class="num">32</div><p id="n32">А чего я не знаю, Ты научи меня; и если я сделал беззаконие, больше не буду.
+</p>
+<div class="num">33</div><p id="n33">По твоему ли <i>рассуждению</i> Он должен воздавать? И как ты отвергаешь, то тебе следует избирать, а не мне; говори, что знаешь.
+</p>
+<div class="num">34</div><p id="n34">Люди разумные скажут мне, и муж мудрый, слушающий меня:
+</p>
+<div class="num">35</div><p id="n35">Иов не умно говорит, и слова его не со смыслом.
+</p>
+<div class="num">36</div><p id="n36">Я желал бы, чтобы Иов вполне был испытан, по ответам его, свойственным людям нечестивым.
+</p>
+<div class="num">37</div><p id="n37">Иначе он ко греху своему прибавит отступление, будет рукоплескать между нами и еще больше наговорит против Бога.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="iov.35.ru.html">к главе 35</a></div></div>
+
+</body>
+</html>

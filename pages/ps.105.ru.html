@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.ru.html">Псалтирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Псалом 105
+  </p>
+
+
+  <div class="main-text">
+<p id="a0">Аллилуия.
+</p>
+<div class="num">&nbsp;1</div><p id="n1">Славьте Господа, ибо Он благ, ибо вовек милость Его.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Кто изречет могущество Господа, возвестит все хвалы Его?
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Блаженны хранящие суд и творящие правду во всякое время!
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Вспомни о мне, Господи, в благоволении к народу Твоему; посети меня спасением Твоим,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">дабы мне видеть благоденствие избранных Твоих, веселиться веселием народа Твоего, хвалиться с наследием Твоим.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Согрешили мы с отцами нашими, совершили беззаконие, соделали неправду.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Отцы наши в Египте не уразумели чудес Твоих, не помнили множества милостей Твоих, и возмутились у моря, у Чермного моря.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Но Он спас их ради имени Своего, дабы показать могущество Свое.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Грозно рек морю Чермному, и оно иссохло; и провел их по безднам, как по суше;
+</p>
+<div class="num">10</div><p id="n10">и спас их от руки ненавидящего и избавил их от руки врага.
+</p>
+<div class="num">11</div><p id="n11">Воды покрыли врагов их, ни одного из них не осталось.
+</p>
+<div class="num">12</div><p id="n12">И поверили они словам Его, [и] воспели хвалу Ему.
+</p>
+<div class="num">13</div><p id="n13"><i>Но</i> скоро забыли дела Его, не дождались Его изволения;
+</p>
+<div class="num">14</div><p id="n14">увлеклись похотением в пустыне, и искусили Бога в необитаемой.
+</p>
+<div class="num">15</div><p id="n15">И Он исполнил прошение их, <i>но</i> послал язву на души их.
+</p>
+<div class="num">16</div><p id="n16">И позавидовали в стане Моисею <i>и</i> Аарону, святому Господню.
+</p>
+<div class="num">17</div><p id="n17">Разверзлась земля, и поглотила Дафана и покрыла скопище Авирона.
+</p>
+<div class="num">18</div><p id="n18">И возгорелся огонь в скопище их, пламень попалил нечестивых.
+</p>
+<div class="num">19</div><p id="n19">Сделали тельца у Хорива и поклонились истукану;
+</p>
+<div class="num">20</div><p id="n20">и променяли славу свою на изображение вола, ядущего траву.
+</p>
+<div class="num">21</div><p id="n21">Забыли Бога, Спасителя своего, совершившего великое в Египте,
+</p>
+<div class="num">22</div><p id="n22">дивное в земле Хамовой, страшное у Чермного моря.
+</p>
+<div class="num">23</div><p id="n23">И хотел истребить их, если бы Моисей, избранный Его, не стал пред Ним в расселине, чтобы отвратить ярость Его, да не погубит [их].
+</p>
+<div class="num">24</div><p id="n24">И презрели они землю желанную, не верили слову Его;
+</p>
+<div class="num">25</div><p id="n25">и роптали в шатрах своих, не слушались гласа Господня.
+</p>
+<div class="num">26</div><p id="n26">И поднял Он руку Свою на них, чтобы низложить их в пустыне,
+</p>
+<div class="num">27</div><p id="n27">низложить племя их в народах и рассеять их по землям.
+</p>
+<div class="num">28</div><p id="n28">Они прилепились к Ваалфегору и ели жертвы бездушным,
+</p>
+<div class="num">29</div><p id="n29">и раздражали <i>Бога</i> делами своими, и вторглась к ним язва.
+</p>
+<div class="num">30</div><p id="n30">И восстал Финеес и произвел суд,- и остановилась язва.
+</p>
+<div class="num">31</div><p id="n31">И <i>это</i> вменено ему в праведность в роды и роды во веки.
+</p>
+<div class="num">32</div><p id="n32">И прогневали <i>Бога</i> у вод Меривы, и Моисей потерпел за них,
+</p>
+<div class="num">33</div><p id="n33">ибо они огорчили дух его, и он погрешил устами своими.
+</p>
+<div class="num">34</div><p id="n34">Не истребили народов, о которых сказал им Господь,
+</p>
+<div class="num">35</div><p id="n35">но смешались с язычниками и научились делам их;
+</p>
+<div class="num">36</div><p id="n36">служили истуканам их, <i>которые</i> были для них сетью,
+</p>
+<div class="num">37</div><p id="n37">и приносили сыновей своих и дочерей своих в жертву бесам;
+</p>
+<div class="num">38</div><p id="n38">проливали кровь невинную, кровь сыновей своих и дочерей своих, которых приносили в жертву идолам Ханаанским,- и осквернилась земля кровью;
+</p>
+<div class="num">39</div><p id="n39">оскверняли себя делами своими, блудодействовали поступками своими.
+</p>
+<div class="num">40</div><p id="n40">И воспылал гнев Господа на народ Его, и возгнушался Он наследием Своим
+</p>
+<div class="num">41</div><p id="n41">и предал их в руки язычников, и ненавидящие их стали обладать ими.
+</p>
+<div class="num">42</div><p id="n42">Враги их утесняли их, и они смирялись под рукою их.
+</p>
+<div class="num">43</div><p id="n43">Много раз Он избавлял их; они же раздражали [Его] упорством своим, и были уничижаемы за беззаконие свое.
+</p>
+<div class="num">44</div><p id="n44">Но Он призирал на скорбь их, когда слышал вопль их,
+</p>
+<div class="num">45</div><p id="n45">и вспоминал завет Свой с ними и раскаивался по множеству милости Своей;
+</p>
+<div class="num">46</div><p id="n46">и возбуждал к ним сострадание во всех, пленявших их.
+</p>
+<div class="num">47</div><p id="n47">Спаси нас, Господи, Боже наш, и собери нас от народов, дабы славить святое имя Твое, хвалиться Твоею славою.
+</p>
+<div class="num">48</div><p id="n48">Благословен Господь, Бог Израилев, от века и до века! И да скажет весь народ: аминь! Аллилуия!
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.106.ru.html">к псалму 106</a></div></div>
+
+</body>
+</html>

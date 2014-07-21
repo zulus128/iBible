@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eph.ru.html">Послание к Ефесянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 5
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Итак, подражайте Богу, как чада возлюбленные,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и живите в любви, как и Христос возлюбил нас и предал Себя за нас в приношение и жертву Богу, в благоухание приятное.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">А блуд и всякая нечистота и любостяжание не должны даже именоваться у вас, как прилично святым.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Также сквернословие и пустословие и смехотворство не приличны <i>вам,</i> а, напротив, благодарение;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">ибо знайте, что никакой блудник, или нечистый, или любостяжатель, который есть идолослужитель, не имеет наследия в Царстве Христа и Бога.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Никто да не обольщает вас пустыми словами, ибо за это приходит гнев Божий на сынов противления;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">итак, не будьте сообщниками их.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Вы были некогда тьма, а теперь - свет в Господе: поступайте, как чада света,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">потому что плод Духа состоит во всякой благости, праведности и истине.
+</p>
+<div class="num">10</div><p id="n10">Испытывайте, что&#769; благоугодно Богу,
+</p>
+<div class="num">11</div><p id="n11">и не участвуйте в бесплодных делах тьмы, но и обличайте.
+</p>
+<div class="num">12</div><p id="n12">Ибо о том, что&#769; они делают тайно, стыдно и говорить.
+</p>
+<div class="num">13</div><p id="n13">Все же обнаруживаемое делается явным от света, ибо все, делающееся явным, свет есть.
+</p>
+<div class="num">14</div><p id="n14">Посему сказано: "встань, спящий, и воскресни из мертвых, и осветит тебя Христос".
+</p>
+<div class="num">15</div><p id="n15">Итак, смотри&#769;те, поступайте осторожно, не как неразумные, но как мудрые,
+</p>
+<div class="num">16</div><p id="n16">дорожа временем, потому что дни лукавы.
+</p>
+<div class="num">17</div><p id="n17">Итак, не будьте нерассудительны, но познавайте, что&#769; есть воля Божия.
+</p>
+<div class="num">18</div><p id="n18">И не упивайтесь вином, от которого бывает распутство; но исполняйтесь Духом,
+</p>
+<div class="num">19</div><p id="n19">назидая самих себя псалмами и славословиями и песнопениями духовными, поя и воспевая в сердцах ваших Господу,
+</p>
+<div class="num">20</div><p id="n20">благодаря всегда за все Бога и Отца, во имя Господа нашего Иисуса Христа,
+</p>
+<div class="num">21</div><p id="n21">повинуясь друг другу в страхе Божием.
+</p>
+<div class="num">22</div><p id="n22">Жены, повинуйтесь своим мужьям, как Господу,
+</p>
+<div class="num">23</div><p id="n23">потому что муж есть глава жены, как и Христос глава Церкви, и Он же Спаситель тела.
+</p>
+<div class="num">24</div><p id="n24">Но как Церковь повинуется Христу, так и жены своим мужьям во всем.
+</p>
+<div class="num">25</div><p id="n25">Мужья, любите своих жен, как и Христос возлюбил Церковь и предал Себя за нее,
+</p>
+<div class="num">26</div><p id="n26">чтобы освятить ее, очистив банею водною посредством слова;
+</p>
+<div class="num">27</div><p id="n27">чтобы представить ее Себе славною Церковью, не имеющею пятна, или порока, или чего-либо подобного, но дабы она была свята и непорочна.
+</p>
+<div class="num">28</div><p id="n28">Так должны мужья любить своих жен, как свои тела: любящий свою жену любит самого себя.
+</p>
+<div class="num">29</div><p id="n29">Ибо никто никогда не имел ненависти к своей плоти, но питает и греет ее, как и Господь Церковь,
+</p>
+<div class="num">30</div><p id="n30">потому что мы члены тела Его, от плоти Его и от костей Его.
+</p>
+<div class="num">31</div><p id="n31">Посему оставит человек отца своего и мать и прилепится к жене своей, и будут двое одна плоть.
+</p>
+<div class="num">32</div><p id="n32">Тайна сия велика; я говорю по отношению ко Христу и к Церкви.
+</p>
+<div class="num">33</div><p id="n33">Так каждый из вас да любит свою жену, как самого себя; а жена да боится своего мужа.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eph.6.ru.html">к главе 6</a></div></div>
+
+</body>
+</html>

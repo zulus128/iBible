@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="num.ru.html">Числа</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Господь Моисею и Аарону, говоря:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">сыны Израилевы должны каждый ставить стан свой при знамени своем, при знаках семейств своих; пред скиниею собрания вокруг должны ставить стан свой.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">С передней стороны к востоку ставят стан: знамя стана Иудина по ополчениям их, и начальник сынов Иуды Наассон, сын Аминадава,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и воинства его, вошедших в исчисление его, семьдесят четыре тысячи шестьсот;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">после него ставит стан колено Иссахарово, и начальник сынов Иссахара Нафанаил, сын Цуара,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и воинства его, вошедших в исчисление его, пятьдесят четыре тысячи четыреста;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">[далее ставит стан] колено Завулона, и начальник сынов Завулона Елиав, сын Хелона,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и воинства его, вошедших в исчисление его, пятьдесят семь тысяч четыреста;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">всех вошедших в исчисление к стану Иуды сто восемьдесят шесть тысяч четыреста, по ополчениям их; первыми они должны отправляться.
+</p>
+<div class="num">10</div><p id="n10">Знамя стана Рувимова к югу, по ополчениям их, и начальник сынов Рувимовых Елицур, сын Шедеура,
+</p>
+<div class="num">11</div><p id="n11">и воинства его, вошедших в исчисление его, сорок шесть тысяч пятьсот;
+</p>
+<div class="num">12</div><p id="n12">подле него ставит стан колено Симеоново, и начальник сынов Симеона Шелумиил, сын Цуришаддая,
+</p>
+<div class="num">13</div><p id="n13">и воинства его, вошедших в исчисление его, пятьдесят девять тысяч триста;
+</p>
+<div class="num">14</div><p id="n14">потом колено Гада, и начальник сынов Гада Елиасаф, сын Регуила,
+</p>
+<div class="num">15</div><p id="n15">и воинства его, вошедших в исчисление его, сорок пять тысяч шестьсот пятьдесят;
+</p>
+<div class="num">16</div><p id="n16">всех вошедших в исчисление к стану Рувима сто пятьдесят одна тысяча четыреста пятьдесят, по ополчениям их; вторыми они должны отправляться.
+</p>
+<div class="num">17</div><p id="n17">Когда пойдет скиния собрания, стан левитов будет в середине станов. Как стоят, так и должны идти, каждый на своем месте при знаменах своих.
+</p>
+<div class="num">18</div><p id="n18">Знамя стана Ефремова по ополчениям их к западу, и начальник сынов Ефрема Елишама, сын Аммиуда,
+</p>
+<div class="num">19</div><p id="n19">и воинства его, вошедших в исчисление его, сорок тысяч пятьсот;
+</p>
+<div class="num">20</div><p id="n20">подле него колено Манассиино, и начальник сынов Манассии Гамалиил, сын Педацура,
+</p>
+<div class="num">21</div><p id="n21">и воинства его, вошедших в исчисление его, тридцать две тысячи двести;
+</p>
+<div class="num">22</div><p id="n22">потом колено Вениамина, и начальник сынов Вениамина Авидан, сын Гидеония,
+</p>
+<div class="num">23</div><p id="n23">и воинства его, вошедших в исчисление его, тридцать пять тысяч четыреста;
+</p>
+<div class="num">24</div><p id="n24">всех вошедших в исчисление к стану Ефрема сто восемь тысяч сто, по ополчениям их; третьими они должны отправляться.
+</p>
+<div class="num">25</div><p id="n25">Знамя стана Данова к северу, по ополчениям их, и начальник сынов Дана Ахиезер, сын Аммишаддая,
+</p>
+<div class="num">26</div><p id="n26">и воинства его, вошедших в исчисление его, шестьдесят две тысячи семьсот;
+</p>
+<div class="num">27</div><p id="n27">подле него ставит стан колено Асирово, и начальник сынов Асира Пагиил, сын Охрана,
+</p>
+<div class="num">28</div><p id="n28">и воинства его, вошедших в исчисление его, сорок одна тысяча пятьсот;
+</p>
+<div class="num">29</div><p id="n29">далее [ставит стан] колено Неффалима, и начальник сынов Неффалима Ахира, сын Енана,
+</p>
+<div class="num">30</div><p id="n30">и воинства его, вошедших в исчисление его, пятьдесят три тысячи четыреста;
+</p>
+<div class="num">31</div><p id="n31">всех вошедших в исчисление к стану Дана сто пятьдесят семь тысяч шестьсот; они должны идти последними при знаменах своих.
+</p>
+<div class="num">32</div><p id="n32">Вот вошедшие в исчисление сыны Израиля по семействам их. Всех вошедших в исчисление в станах, по ополчениям их, шестьсот три тысячи пятьсот пятьдесят.
+</p>
+<div class="num">33</div><p id="n33">А левиты не вошли в исчисление вместе с сынами Израиля, как повелел Господь Моисею.
+</p>
+<div class="num">34</div><p id="n34">И сделали сыны Израилевы всё, что повелел Господь Моисею: так становились станами при знаменах своих и так шли каждый по племенам своим, по семействам своим.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="num.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

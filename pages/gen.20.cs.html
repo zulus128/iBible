@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.cs.html">Кни1га пeрваz мwmсeова. БытіE</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA к7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# п0йде tтyду ґвраaмъ на зeмлю полyденную и3 всели1сz междY кaдисомъ и3 междY сyромъ: и3 њбитA въ герaрэхъ.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Речe же ґвраaмъ њ сaррэ женЁ своeй, ћкw сестрa ми є4сть: ўбоsсz бо рещи2, ћкw женa ми є4сть, да не когдA ўбію1тъ є3го2 мyжіе грaдстіи є3S рaди. Послa же ґвімелeхъ цaрь герaрскій и3 взS сaрру.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И# пріи1де бGъ ко ґвімелeху н0щію во снЁ и3 речE є3мY: сE, ты2 ўмирaеши жены2 рaди сеS, ю4же поsлъ є3си2: сіs же є4сть сожи1телствующаz мyжу.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Ґвімелeхъ же не прикоснyсz є4й и3 речE: гDи, kзhкъ невёдущій и3 првdнъ погуби1ши ли;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">не сaмъ ли ми2 речE: сестрa ми є4сть; и3 сіs ми речE: брaтъ ми2 є4сть; чи1стымъ сeрдцемъ и3 въ прaвдэ рyкъ сотвори1хъ сіE.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Речe же є3мY бGъ во снЁ: и3 ѓзъ познaхъ, ћкw чи1стымъ сeрдцемъ сотвори1лъ є3си2 сіE, и3 пощадёхъ тS, да не согрэши1ши ко мнЁ: сегw2 рaди не попусти1хъ ти2 коснyтисz є3S:
+</p>
+<div class="num">&nbsp;7</div><p id="n7">нн7э же tдaждь женY мyжу, ћкw прbр0къ є4сть, и3 пом0литсz њ тебЁ, и3 жи1въ бyдеши: ѓще же не tдaси, вёждь, ћкw ќмреши ты2 и3 <nobr>вс‰</nobr> тво‰.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И# востA рaнw ґвімелeхъ, и3 призвA <nobr>вс‰</nobr> џтроки <nobr>сво‰,</nobr> и3 глаг0ла словесA <nobr>сі‰</nobr> вс‰ во ќшы и4хъ: ўбоsшасz же вси2 человёцы ѕэлw2.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И# призвA ґвімелeхъ ґвраaма и3 речE є3мY: что2 сіE сотвори1лъ є3си2 нaмъ; є3дA что2 согрэши1хомъ тебЁ, ћкw навeлъ є3си2 на мS и3 на цaрство моE грёхъ вели1къ; дёло, є4же никт0же сотвори2, сотвори1лъ є3си2 мнЁ.
+</p>
+<div class="num">10</div><p id="n10">И# речE ґвімелeхъ ґвраaму: что2 ўмhсливъ, сотвори1лъ є3си2 сіE;
+</p>
+<div class="num">11</div><p id="n11">Речe же ґвраaмъ: рек0хъ бо: нeгли нёсть бlгочcтіz на мёстэ сeмъ: и3 ўбію1тъ мS жены2 рaди моеS:
+</p>
+<div class="num">12</div><p id="n12">и4бо и4стиннw сестрa ми є4сть по nтцY, ґ не по мaтери: бhсть же ми2 въ женY:
+</p>
+<div class="num">13</div><p id="n13">и3 бhсть є3гдA и3зведe мz бGъ t д0му nтцA моегw2, и3 рёхъ є4й: прaвду сію2 сотвори1ши ми2: во всsко мёсто, и3дёже ѓще пріи1демъ, тaмw рцы2 њ мнЁ, ћкw брaтъ ми2 є4сть.
+</p>
+<div class="num">14</div><p id="n14">Взs же ґвімелeхъ тhсzщу дідрaхмъ (сребрA), и3 џвцы, и3 телцы2, и3 рабы6, и3 рабы6ни, и3 дадE ґвраaму: и3 tдадE є3мY сaрру женY є3гw2.
+</p>
+<div class="num">15</div><p id="n15">И# речE ґвімелeхъ ґвраaму: сE, землS моS пред8 тоб0ю: и3дёже ѓще тебЁ ўг0дно є4сть, всели1сz.
+</p>
+<div class="num">16</div><p id="n16">Сaррэ же речE: сE, дaхъ тhсzщу дідрaхмъ брaту твоемY: <nobr>сі‰</nobr> бyдутъ тебЁ въ чeсть лицA твоегw2, и3 всBмъ, ±же сyть съ тоб0ю, и3 во всeмъ и4стинствуй.
+</p>
+<div class="num">17</div><p id="n17">Помоли1сz же ґвраaмъ бGу, и3 и3сцэли2 бGъ ґвімелeха и3 женY є3гw2 и3 рабы6ни є3гw2, и3 начaша раждaти:
+</p>
+<div class="num">18</div><p id="n18">ћкw заключaz заключи2 гDь t внэyду <nobr>вс‰ка</nobr> ложеснA въ домY ґвімелeха, сaрры рaди жены2 ґвраaмли.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.21.cs.html">главA к7а</a></div></div>
+
+</body>
+</html>

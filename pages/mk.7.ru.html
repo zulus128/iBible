@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mk.ru.html">Евангелие от Марка</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Собрались к Нему фарисеи и некоторые из книжников, пришедшие из Иерусалима,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и, увидев некоторых из учеников Его, евших хлеб нечистыми, то есть неумытыми, руками, укоряли.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ибо фарисеи и все Иудеи, держась предания старцев, не едят, не умыв тщательно рук;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и, <i>придя</i> с торга, не едят не омывшись. Есть и многое другое, чего они приняли держаться: наблюдать омовение чаш, кружек, котлов и скамей.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Потом спрашивают Его фарисеи и книжники: зачем ученики Твои не поступают по преданию старцев, но неумытыми руками едят хлеб?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Он сказал им в ответ: хорошо пророчествовал о вас, лицемерах, Исаия, как написано: люди сии чтут Меня устами, сердце же их далеко отстоит от Меня,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">но тщетно чтут Меня, уча учениям, заповедям человеческим.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ибо вы, оставив заповедь Божию, держитесь предания человеческого, омовения кружек и чаш, и делаете многое другое, сему подобное.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказал им: хорошо ли, <i>что</i> вы отменяете заповедь Божию, чтобы соблюсти свое предание?
+</p>
+<div class="num">10</div><p id="n10">Ибо Моисей сказал: почитай отца своего и мать свою; и: злословящий отца или мать смертью да умрет.
+</p>
+<div class="num">11</div><p id="n11">А вы говорите: кто скажет отцу или матери: корван, то есть дар <i>Богу</i> то&#769;, чем бы ты от меня пользовался,
+</p>
+<div class="num">12</div><p id="n12">тому вы уже попускаете ничего не делать для отца своего или матери своей,
+</p>
+<div class="num">13</div><p id="n13">устраняя слово Божие преданием вашим, которое вы установили; и делаете многое сему подобное.
+</p>
+<div class="num">14</div><p id="n14">И, призвав весь народ, говорил им: слушайте Меня все и разумейте:
+</p>
+<div class="num">15</div><p id="n15">ничто, входящее в человека извне, не может осквернить его; но что исходит из него, то оскверняет человека.
+</p>
+<div class="num">16</div><p id="n16">Если кто имеет уши слышать, да слышит!
+</p>
+<div class="num">17</div><p id="n17">И когда Он от народа вошел в дом, ученики Его спросили Его о притче.
+</p>
+<div class="num">18</div><p id="n18">Он сказал им: неужели и вы так непонятливы? Неужели не разумеете, что ничто, извне входящее в человека, не может осквернить его?
+</p>
+<div class="num">19</div><p id="n19">Потому что не в сердце его входит, а в чрево, и выходит вон, <i>чем</i> очищается всякая пища.
+</p>
+<div class="num">20</div><p id="n20">Далее сказал: исходящее из человека оскверняет человека.
+</p>
+<div class="num">21</div><p id="n21">Ибо извнутрь, из сердца человеческого, исходят злые помыслы, прелюбодеяния, любодеяния, убийства,
+</p>
+<div class="num">22</div><p id="n22">кражи, лихоимство, злоба, коварство, непотребство, завистливое око, богохульство, гордость, безумство,-
+</p>
+<div class="num">23</div><p id="n23">всё это зло извнутрь исходит и оскверняет человека.
+</p>
+<div class="num">24</div><p id="n24">И, отправившись оттуда, пришел в пределы Тирские и Сидонские; и, войдя в дом, не хотел, чтобы кто узнал; но не мог утаиться.
+</p>
+<div class="num">25</div><p id="n25">Ибо услышала о Нем женщина, у которой дочь одержима была нечистым духом, и, придя, припала к ногам Его;
+</p>
+<div class="num">26</div><p id="n26">а женщина та была язычница, родом сирофиникиянка; и просила Его, чтобы изгнал беса из ее дочери.
+</p>
+<div class="num">27</div><p id="n27">Но Иисус сказал ей: дай прежде насытиться детям, ибо нехорошо взять хлеб у детей и бросить псам.
+</p>
+<div class="num">28</div><p id="n28">Она же сказала Ему в ответ: так, Господи; но и псы под столом едят крохи у детей.
+</p>
+<div class="num">29</div><p id="n29">И сказал ей: за это слово, пойди; бес вышел из твоей дочери.
+</p>
+<div class="num">30</div><p id="n30">И, придя в свой дом, она нашла, что бес вышел и дочь лежит на постели.
+</p>
+<div class="num">31</div><p id="n31">Выйдя из пределов Тирских и Сидонских, <i>Иисус</i> опять пошел к морю Галилейскому через пределы Десятиградия.
+</p>
+<div class="num">32</div><p id="n32">Привели к Нему глухого косноязычного и просили Его возложить на него руку.
+</p>
+<div class="num">33</div><p id="n33"><i>Иисус,</i> отведя его в сторону от народа, вложил персты Свои в уши ему и, плюнув, коснулся языка его;
+</p>
+<div class="num">34</div><p id="n34">и, воззрев на небо, вздохнул и сказал ему: "еффафа&#769;", то есть: отверзись.
+</p>
+<div class="num">35</div><p id="n35">И тотчас отверзся у него слух и разрешились узы его языка, и стал говорить чисто.
+</p>
+<div class="num">36</div><p id="n36">И повелел им не сказывать никому. Но сколько Он ни запрещал им, они еще более разглашали.
+</p>
+<div class="num">37</div><p id="n37">И чрезвычайно дивились, и говорили: всё хорошо делает,- и глухих делает слышащими, и немых - говорящими.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mk.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

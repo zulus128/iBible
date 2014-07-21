@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eccl.ru.html">Книга Екклесиаста</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Сказал я в сердце моем: "дай, испытаю я тебя весельем, и насладись добром"; но и это - суета!
+</p>
+<div class="num">&nbsp;2</div><p id="n2">О смехе сказал я: "глупость!", а о веселье: "что оно делает?"
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Вздумал я в сердце моем услаждать вином тело мое и, между тем, как сердце мое руководилось мудростью, придержаться и глупости, доколе не увижу, что хорошо для сынов человеческих, что должны были бы они делать под небом в немногие дни жизни своей.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Я предпринял большие дела: построил себе домы, посадил себе виноградники,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">устроил себе сады и рощи и насадил в них всякие плодовитые дерева;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">сделал себе водоемы для орошения из них рощей, произращающих деревья;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">приобрел себе слуг и служанок, и домочадцы были у меня; также крупного и мелкого скота было у меня больше, нежели у всех, бывших прежде меня в Иерусалиме;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">собрал себе серебра и золота и драгоценностей от царей и областей; завел у себя певцов и певиц и услаждения сынов человеческих - разные музыкальные орудия.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сделался я великим и богатым больше всех, бывших прежде меня в Иерусалиме; и мудрость моя пребыла со мною.
+</p>
+<div class="num">10</div><p id="n10">Чего бы глаза мои ни пожелали, я не отказывал им, не возбранял сердцу моему никакого веселья, потому что сердце мое радовалось во всех трудах моих, и это было моею долею от всех трудов моих.
+</p>
+<div class="num">11</div><p id="n11">И оглянулся я на все дела мои, которые сделали руки мои, и на труд, которым трудился я, делая <i>их:</i> и вот, всё - суета и томление духа, и нет <i>от</i> <i>них</i> пользы под солнцем!
+</p>
+<div class="num">12</div><p id="n12">И обратился я, чтобы взглянуть на мудрость и безумие и глупость: ибо что <i>может</i> <i>сделать</i> человек после царя <i>сверх</i> <i>того,</i> что уже сделано?
+</p>
+<div class="num">13</div><p id="n13">И увидел я, что преимущество мудрости перед глупостью такое же, как преимущество света перед тьмою:
+</p>
+<div class="num">14</div><p id="n14">у мудрого глаза его - в голове его, а глупый ходит во тьме; но узнал я, что одна участь постигает их всех.
+</p>
+<div class="num">15</div><p id="n15">И сказал я в сердце моем: "и меня постигнет та же участь, как и глупого: к чему же я сделался очень мудрым?" И сказал я в сердце моем, что и это - суета;
+</p>
+<div class="num">16</div><p id="n16">потому что мудрого не будут помнить вечно, как и глупого; в грядущие дни все будет забыто, и увы! мудрый умирает наравне с глупым.
+</p>
+<div class="num">17</div><p id="n17">И возненавидел я жизнь, потому что противны стали мне дела, которые делаются под солнцем; ибо всё - суета и томление духа!
+</p>
+<div class="num">18</div><p id="n18">И возненавидел я весь труд мой, которым трудился под солнцем, потому что должен оставить его человеку, который будет после меня.
+</p>
+<div class="num">19</div><p id="n19">И кто знает: мудрый ли будет он, или глупый? А он будет распоряжаться всем трудом моим, которым я трудился и которым показал себя мудрым под солнцем. И это - суета!
+</p>
+<div class="num">20</div><p id="n20">И обратился я, чтобы внушить сердцу моему отречься от всего труда, которым я трудился под солнцем,
+</p>
+<div class="num">21</div><p id="n21">потому что иной человек трудится мудро, с знанием и успехом, и должен отдать всё человеку, не трудившемуся в том, как бы часть его. И это - суета и зло великое!
+</p>
+<div class="num">22</div><p id="n22">Ибо что будет иметь человек от всего труда своего и заботы сердца своего, что трудится он под солнцем?
+</p>
+<div class="num">23</div><p id="n23">Потому что все дни его - скорби, и его труды - беспокойство; даже и ночью сердце его не знает покоя. И это - суета!
+</p>
+<div class="num">24</div><p id="n24">Не во власти человека и то благо, чтобы есть и пить и услаждать душу свою от труда своего. Я увидел, что и это - от руки Божией;
+</p>
+<div class="num">25</div><p id="n25">потому что кто может есть и кто может наслаждаться без Него?
+</p>
+<div class="num">26</div><p id="n26">Ибо человеку, который добр пред лицем Его, Он дает мудрость и знание и радость; а грешнику дает заботу собирать и копить, чтобы <i>после</i> отдать доброму пред лицем Божиим. И это - суета и томление духа!
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eccl.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

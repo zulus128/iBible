@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king4.ru.html">Четвертая книга Царств</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 21
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Двенадцати лет был Манассия, когда воцарился, и пятьдесят лет царствовал в Иерусалиме; имя матери его Хефциба.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И делал он неугодное в очах Господних, <i>подражая</i> мерзостям народов, которых прогнал Господь от лица сынов Израилевых.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И снова устроил высоты, которые уничтожил отец его Езекия, и поставил жертвенники Ваалу, и сделал дубраву, как сделал Ахав, царь Израильский; и поклонялся всему воинству небесному, и служил ему.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И соорудил жертвенники в доме Господнем, о котором сказал Господь: "в Иерусалиме положу имя Мое".
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И соорудил жертвенники всему воинству небесному на обоих дворах дома Господня,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и провел сына своего чрез огонь, и гадал, и ворожил, и завел вызывателей мертвецов и волшебников; много сделал неугодного в очах Господа, чтобы прогневать Его.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И поставил истукан Астарты, который сделал в доме, о котором говорил Господь Давиду и Соломону, сыну его: "в доме сем и в Иерусалиме, который Я избрал из всех колен Израилевых, Я полагаю имя Мое на век;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и не дам впредь выступить ноге Израильтянина из земли, которую Я дал отцам их, если только они будут стараться поступать согласно со всем тем, что Я повелел им, и со всем законом, который заповедал им раб Мой Моисей".
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Но они не послушались; и совратил их Манассия до того, что они поступали хуже тех народов, которых истребил Господь от лица сынов Израилевых.
+</p>
+<div class="num">10</div><p id="n10">И говорил Господь чрез рабов Своих пророков и сказал:
+</p>
+<div class="num">11</div><p id="n11">за то, что сделал Манассия, царь Иудейский, такие мерзости, хуже всего того, что делали Аморреи, которые были прежде его, и ввел Иуду в грех идолами своими,
+</p>
+<div class="num">12</div><p id="n12">за то, так говорит Господь, Бог Израилев, вот, Я наведу такое зло на Иерусалим и на Иуду, о котором кто услышит, зазвенит в обоих ушах у того;
+</p>
+<div class="num">13</div><p id="n13">и протяну на Иерусалим мерную вервь Самарии и отвес дома Ахавова, и вытру Иерусалим так, как вытирают чашу,- вытрут и опрокинут ее;
+</p>
+<div class="num">14</div><p id="n14">и отвергну остаток удела Моего, и отдам их в руку врагов их, и будут на расхищение и разграбление всем неприятелям своим,
+</p>
+<div class="num">15</div><p id="n15">за то, что они делали неугодное в очах Моих и прогневляли Меня с того дня, как вышли отцы их из Египта, и до сего дня.
+</p>
+<div class="num">16</div><p id="n16">Еще же пролил Манассия и весьма много невинной крови, так что наполнил <i>ею</i> Иерусалим от края до края, сверх своего греха, что он завлек Иуду в грех - делать неугодное в очах Господних.
+</p>
+<div class="num">17</div><p id="n17">Прочее о Манассии и обо всем, что он сделал, и о грехах его, в чем он согрешил, написано в летописи царей Иудейских.
+</p>
+<div class="num">18</div><p id="n18">И почил Манассия с отцами своими, и погребен в саду при доме его, в саду Уззы. И воцарился Аммон, сын его, вместо него.
+</p>
+<div class="num">19</div><p id="n19">Двадцати двух лет был Аммон, когда воцарился, и два года царствовал в Иерусалиме; имя матери его Мешуллемеф, дочь Харуца, из Ятбы.
+</p>
+<div class="num">20</div><p id="n20">И делал он неугодное в очах Господних так, как делал Манассия, отец его;
+</p>
+<div class="num">21</div><p id="n21">и ходил тою же точно дорогою, которою ходил отец его, и служил идолам, которым служил отец его, и поклонялся им,
+</p>
+<div class="num">22</div><p id="n22">и оставил Господа Бога отцов своих, не ходил путем Господним.
+</p>
+<div class="num">23</div><p id="n23">И составили заговор слуги Аммоновы против него, и умертвили царя в доме его.
+</p>
+<div class="num">24</div><p id="n24">Но народ земли перебил всех, бывших в заговоре против царя Аммона; и воцарил народ земли Иосию, сына его, вместо него.
+</p>
+<div class="num">25</div><p id="n25">Прочее об Аммоне, что он сделал, написано в летописи царей Иудейских.
+</p>
+<div class="num">26</div><p id="n26">И похоронили его в гробнице его, в саду Уззы. И воцарился Иосия, сын его, вместо него.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king4.22.ru.html">к главе 22</a></div></div>
+
+</body>
+</html>

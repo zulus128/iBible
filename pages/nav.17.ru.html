@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nav.ru.html">Книга Иисуса Навина</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 17
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И выпал жребий колену Манассии, так как он был первенец Иосифа. Махиру, первенцу Манассии, отцу Галаада, который <i>был</i> храбр на войне, достался Галаад и Васан.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Достались <i>уделы</i> и прочим сынам Манассии, по племенам их, и сынам Авиезера, и сынам Хелека, и сынам Асриила, и сынам Шехема, и сынам Хефера, и сынам Шемиды. Вот дети Манассии, сына Иосифова, мужеского пола, по племенам их.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">У Салпаада же, сына Хеферова, сына Галаадова, сына Махирова, сына Манассиина, не было сыновей, а [только] дочери. Вот имена дочерей его: Махла, Ноа, Хогла, Милка и Фирца.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Они пришли к священнику Елеазару и к Иисусу, сыну Навину, и к начальникам, и сказали: Господь повелел Моисею дать нам удел между братьями нашими. И дан им удел, по повелению Господню, между братьями отца их.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И выпало Манассии десять участков, кроме земли Галаадской и Васанской, которая за Иорданом;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">ибо дочери [сынов] Манассии получили удел среди сыновей его, а земля Галаадская досталась прочим сыновьям Манассии.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Предел [сынов] Манассии идет от Асира к Михмефафу, который против Сихема; отсюда предел идет направо к жителям Ен-Таппуаха.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Земля Таппуах досталась Манассии, а <i>город</i> Таппуах у предела Манассиина - сынам Ефремовым.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Отсюда предел нисходит к потоку Кане, с южной стороны потока. Города сии <i>принадлежат</i> Ефрему, <i>хотя</i> <i>находятся</i> среди городов Манассии. Предел Манассии - на северной стороне потока и оканчивается морем.
+</p>
+<div class="num">10</div><p id="n10">Что к югу, то Ефремово, а что к северу, то Манассиино; море же было пределом их; к Асиру примыкали они с северной стороны и к Иссахару с восточной.
+</p>
+<div class="num">11</div><p id="n11">У Иссахара и Асира <i>принадлежат</i> Манассии Беф-Сан и зависящие от него места, Ивлеам и зависящие от него места, жители Дора и зависящие от него места, жители Ен-Дора и зависящие от него места, жители Фаанаха и зависящие от него места, жители Мегиддона и зависящие от него места, и третья часть Нафефа [с селами его].
+</p>
+<div class="num">12</div><p id="n12">Сыны Манассиины не могли выгнать <i>жителей</i> городов сих, и Хананеи остались жить в земле сей.
+</p>
+<div class="num">13</div><p id="n13">Когда же сыны Израилевы пришли в силу, тогда Хананеев сделали они данниками, но изгнать не изгнали их.
+</p>
+<div class="num">14</div><p id="n14">Сыны Иосифа говорили Иисусу и сказали: почему ты дал мне в удел один жребий и один участок, тогда как я многолюден, потому что так благословил меня Господь?
+</p>
+<div class="num">15</div><p id="n15">Иисус сказал им: если ты многолюден, то пойди в леса и там, в земле Ферезеев и Рефаимов, расчисти себе [место], если гора Ефремова для тебя тесна.
+</p>
+<div class="num">16</div><p id="n16">Сыны Иосифа сказали: не останется за нами гора, потому что железные колесницы у всех Хананеев, живущих на долине, как у тех, которые в Беф-Сане и в зависящих от него местах, так и у тех, которые на долине Изреельской.
+</p>
+<div class="num">17</div><p id="n17">Но Иисус сказал дому Иосифову, Ефрему и Манассии: ты многолюден и сила у тебя велика; не один жребий будет у тебя:
+</p>
+<div class="num">18</div><p id="n18">и гора будет твоею, и лес сей; ты расчистишь его, и он будет твой до самого конца его; ибо ты изгонишь Хананеев, хотя у них колесницы железные, и хотя они сильны, [ты одолеешь их].
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nav.18.ru.html">к главе 18</a></div></div>
+
+</body>
+</html>

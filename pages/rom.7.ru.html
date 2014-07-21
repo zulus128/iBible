@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="rom.ru.html">Послание к Римлянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Разве вы не знаете, братия (ибо говорю знающим закон), что закон имеет власть над человеком, пока он жив?
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Замужняя женщина привязана законом к живому мужу; а если умрет муж, она освобождается от закона замужества.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Посему, если при живом муже выйдет за другого, называется прелюбодейцею; если же умрет муж, она свободна от закона, и не будет прелюбодейцею, выйдя за другого мужа.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Так и вы, братия мои, умерли для закона телом Христовым, чтобы принадлежать другому, Воскресшему из мертвых, да приносим плод Богу.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Ибо, когда мы жили по плоти, тогда страсти греховные, <i>обнаруживаемые</i> законом, действовали в членах наших, чтобы приносить плод смерти;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">но ныне, умерши для закона, которым были связаны, мы освободились от него, чтобы нам служить Богу в обновлении духа, а не по ветхой букве.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Что же скажем? Неужели <i>от</i> закона грех? Никак. Но я не иначе узнал грех, как посредством закона. Ибо я не понимал бы и пожелания, если бы закон не говорил: не пожелай.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Но грех, взяв повод от заповеди, произвел во мне всякое пожелание: ибо без закона грех мертв.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Я жил некогда без закона; но когда пришла заповедь, то грех ожил,
+</p>
+<div class="num">10</div><p id="n10">а я умер; и таким образом заповедь, <i>данная</i> для жизни, послужила мне к смерти,
+</p>
+<div class="num">11</div><p id="n11">потому что грех, взяв повод от заповеди, обольстил меня и умертвил ею.
+</p>
+<div class="num">12</div><p id="n12">Посему закон свят, и заповедь свята и праведна и добра.
+</p>
+<div class="num">13</div><p id="n13">Итак, неужели доброе сделалось мне смертоносным? Никак; но грех, оказывающийся грехом потому, что посредством доброго причиняет мне смерть, так что грех становится крайне грешен посредством заповеди.
+</p>
+<div class="num">14</div><p id="n14">Ибо мы знаем, что закон духовен, а я плотян, продан греху.
+</p>
+<div class="num">15</div><p id="n15">Ибо не понимаю, что делаю: потому что не то делаю, что хочу, а что ненавижу, то делаю.
+</p>
+<div class="num">16</div><p id="n16">Если же делаю то, чего не хочу, то соглашаюсь с законом, что он добр,
+</p>
+<div class="num">17</div><p id="n17">а потому уже не я делаю то, но живущий во мне грех.
+</p>
+<div class="num">18</div><p id="n18">Ибо знаю, что не живет во мне, то есть в плоти моей, доброе; потому что желание добра есть во мне, но чтобы сделать оное, того не нахожу.
+</p>
+<div class="num">19</div><p id="n19">Доброго, которого хочу, не делаю, а злое, которого не хочу, делаю.
+</p>
+<div class="num">20</div><p id="n20">Если же делаю то&#769;, чего не хочу, уже не я делаю то, но живущий во мне грех.
+</p>
+<div class="num">21</div><p id="n21">Итак я нахожу закон, что, когда хочу делать доброе, прилежит мне злое.
+</p>
+<div class="num">22</div><p id="n22">Ибо по внутреннему человеку нахожу удовольствие в законе Божием;
+</p>
+<div class="num">23</div><p id="n23">но в членах моих вижу иной закон, противоборствующий закону ума моего и делающий меня пленником закона греховного, находящегося в членах моих.
+</p>
+<div class="num">24</div><p id="n24">Бедный я человек! кто избавит меня от сего тела смерти?
+</p>
+<div class="num">25</div><p id="n25">Благодарю Бога моего Иисусом Христом, Господом нашим. Итак тот же самый я умом моим служу закону Божию, а плотию закону греха.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="rom.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

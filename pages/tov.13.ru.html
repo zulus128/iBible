@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="tov.ru.html">Книга Товита</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 13
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В радости Товит написал молитву <i>в сих</i> словах: благословен Бог, вечно живущий, и <i>благословенно</i> царство Его!
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Ибо Он наказует и милует, низводит до ада и возводит, и нет никого, кто избежал бы от руки Его.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Сыны Израилевы! прославляйте Его пред язычниками, ибо Он рассеял нас между ними.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Там возвещайте величие Его, превозносите Его пред всем живущим, ибо Он Господь наш и Бог, Отец наш во все веки:
+</p>
+<div class="num">&nbsp;5</div><p id="n5">накажет нас за неправды наши, и опять помилует и соберет нас из всех народов, где бы вы ни были рассеяны между ними.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Если вы будете обращаться к Нему всем сердцем вашим и всею душею вашею, чтобы поступать пред Ним по истине, тогда Он обратится к вам и не скроет от вас лица Своего. Увидите, что&#769; Он сделает с вами. Прославляйте Его всеми <i>глаголами</i> уст ваших и благословляйте Господа правды и превозносите Царя веков. В земле плена моего я прославляю Его и проповедую силу и величие Его народу грешников. Обратитесь, грешники, и делайте правду пред Ним. Кто знает, может быть, Он возблаговолит о вас и окажет вам милость?
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Превозношу я Бога моего, и душа моя - Небесного Царя, и радуется о величии Его.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Пусть все возвещают о Нем и прославляют Его в Иерусалиме.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Иерусалим, город святый! Он накажет <i>тебя</i> за дела сынов твоих и опять помилует сынов праведных.
+</p>
+<div class="num">10</div><p id="n10">Славь Господа усердно и благословляй Царя веков, чтобы снова сооружена была скиния Его в тебе с радостью, чтобы Он возвеселил среди тебя пленных и возлюбил в тебе несчастных во все роды века.
+</p>
+<div class="num">11</div><p id="n11">Многие народы издалека придут к имени Господа Бога с дарами в руках, с дарами Царю Небесному; роды родов восхвалят тебя с восклицаниями радостными.
+</p>
+<div class="num">12</div><p id="n12">Прокляты все ненавидящие тебя, благословенны будут вовек все любящие тебя!
+</p>
+<div class="num">13</div><p id="n13">Радуйся и веселись о сынах праведных, ибо они соберутся и будут благословлять Господа праведных.
+</p>
+<div class="num">14</div><p id="n14">О, блаженны любящие тебя! они возрадуются о мире твоем. Блаженны скорбевшие о всех бедствиях твоих, ибо они возрадуются о тебе, когда увидят всю славу твою, и будут веселиться вечно.
+</p>
+<div class="num">15</div><p id="n15">Да благословляет душа моя Бога, Царя великого,
+</p>
+<div class="num">16</div><p id="n16">ибо Иерусалим отстроен будет из сапфира и смарагда и из дорогих камней; стены твои, башни и укрепления - из чистого золота;
+</p>
+<div class="num">17</div><p id="n17">и площади Иерусалимские выстланы будут бериллом, анфраксом и камнем из Офира.
+</p>
+<div class="num">18</div><p id="n18">На всех улицах его будет раздаваться: аллилуия,- и будут славословить, говоря: благословен Бог, Который превознес <i>Иерусалим</i>, на все веки!
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="tov.14.ru.html">к главе 14</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para1.ru.html">Первая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 17
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Когда Давид жил в доме своем, то сказал Давид Нафану пророку: вот, я живу в доме кедровом, а ковчег завета Господня под шатром.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И сказал Нафан Давиду: все, что у тебя на сердце, делай, ибо с тобою Бог.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Но в ту же ночь было слово Божие к Нафану:
+</p>
+<div class="num">&nbsp;4</div><p id="n4">пойди и скажи рабу Моему Давиду: так говорит Господь: не ты построишь Мне дом для обитания,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">ибо Я не жил в доме с того дня, как вывел сынов Израиля, и до сего дня, а <i>ходил</i> из скинии в скинию и из жилища <i>в</i> <i>жилище.</i>
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Где ни ходил Я со всем Израилем, сказал ли Я хотя слово которому-либо из судей Израильских, которым Я повелел пасти народ Мой: зачем вы не построите Мне дома кедрового?
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И теперь так скажи рабу Моему Давиду: так говорит Господь Саваоф: Я взял тебя от стада овец, чтобы ты был вождем народа Моего Израиля;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и был с тобою везде, куда ты ни ходил, и истребил всех врагов твоих пред лицем твоим, и сделал имя твое, как имя великих на земле;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и Я устроил место для народа Моего Израиля, и укоренил его, и будет он спокойно жить на месте своем, и не будет более тревожим, и нечестивые не станут больше теснить его, как прежде,
+</p>
+<div class="num">10</div><p id="n10">в те дни, когда Я поставил судей над народом Моим Израилем, и Я смирил всех врагов твоих, и возвещаю тебе, что Господь устроит тебе дом.
+</p>
+<div class="num">11</div><p id="n11">Когда исполнятся дни твои, и ты отойдешь к отцам твоим, тогда Я восставлю семя твое после тебя, которое будет из сынов твоих, и утвержу царство его.
+</p>
+<div class="num">12</div><p id="n12">Он построит Мне дом, и утвержу престол его на веки.
+</p>
+<div class="num">13</div><p id="n13">Я буду ему отцом, и он будет Мне сыном,- и милости Моей не отниму от него, как Я отнял от того, который был прежде тебя.
+</p>
+<div class="num">14</div><p id="n14">Я поставлю его в доме Моем и в царстве Моем на веки, и престол его будет тверд вечно.
+</p>
+<div class="num">15</div><p id="n15">Все эти слова и все видение точно пересказал Нафан Давиду.
+</p>
+<div class="num">16</div><p id="n16">И пришел царь Давид, и стал пред лицем Господним, и сказал: кто я, Господи Боже, и что такое дом мой, что Ты так возвысил меня?
+</p>
+<div class="num">17</div><p id="n17">Но и этого еще мало показалось в очах Твоих, Боже; Ты возвещаешь о доме раба Твоего вдаль, и взираешь на меня, как на человека великого, Господи Боже!
+</p>
+<div class="num">18</div><p id="n18">Что еще может прибавить пред Тобою Давид для возвеличения раба Твоего? Ты знаешь раба Твоего!
+</p>
+<div class="num">19</div><p id="n19">Господи! для раба Твоего, по сердцу Твоему, Ты делаешь все это великое, чтобы явить всякое величие.
+</p>
+<div class="num">20</div><p id="n20">Господи! Нет подобного Тебе, и нет Бога, кроме Тебя, по всему, что слышали мы своими ушами.
+</p>
+<div class="num">21</div><p id="n21">И кто подобен народу Твоему Израилю, единственному народу на земле, к которому приходил Бог, <i>чтоб</i> искупить его Себе в народ, сделать Себе имя великим и страшным делом - прогнанием народов от лица народа Твоего, который Ты избавил из Египта.
+</p>
+<div class="num">22</div><p id="n22">Ты соделал народ Твой Израиля Своим собственным народом навек, и Ты, Господи, стал Богом его.
+</p>
+<div class="num">23</div><p id="n23">Итак теперь, о, Господи, слово, которое Ты сказал о рабе Твоем и о доме его, утверди навек, и сделай, как Ты сказал.
+</p>
+<div class="num">24</div><p id="n24">И да пребудет и возвеличится имя Твое во веки, чтобы говорили: Господь Саваоф, Бог Израилев, есть Бог над Израилем, и дом раба Твоего Давида да будет тверд пред лицем Твоим.
+</p>
+<div class="num">25</div><p id="n25">Ибо Ты, Боже мой, открыл рабу Твоему, что Ты устроишь ему дом, поэтому раб Твой и дерзнул молиться пред Тобою.
+</p>
+<div class="num">26</div><p id="n26">И ныне, Господи, Ты Бог, и Ты сказал о рабе Твоем такое благо.
+</p>
+<div class="num">27</div><p id="n27">Начни же благословлять дом раба Твоего, чтоб он был вечно пред лицем Твоим. Ибо если Ты, Господи, благословишь, то будет он благословен вовек.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para1.18.ru.html">к главе 18</a></div></div>
+
+</body>
+</html>

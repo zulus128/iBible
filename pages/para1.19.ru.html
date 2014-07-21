@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para1.ru.html">Первая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 19
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">После сего умер Наас, царь Аммонитский, и воцарился сын его вместо него.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И сказал Давид: окажу я милость Аннону, сыну Наасову, за благодеяние, которое отец его оказал мне. И послал Давид послов утешить его об отце его; и пришли слуги Давидовы в землю Аммонитскую, к Аннону, чтобы утешить его.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Но князья Аммонитские сказали Аннону: неужели ты думаешь, что Давид из уважения к отцу твоему прислал к тебе утешителей? Не для того ли пришли слуги его к тебе, чтобы разведать и высмотреть землю и разорить ее?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И взял Аннон слуг Давидовых и обрил их, и обрезал одежды их наполовину до чресл и отпустил их.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И пошли они. И донесено было Давиду о людях сих, и он послал им навстречу, так как они были очень обесчещены; и сказал царь: останьтесь в Иерихоне, пока отрастут бороды ваши, и тогда возвратитесь.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Когда Аммонитяне увидели, что они сделались ненавистными Давиду, тогда послал Аннон и Аммонитяне тысячу талантов серебра, чтобы нанять себе колесниц и всадников из Сирии Месопотамской и из Сирии Мааха и из Сувы.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И наняли себе тридцать две тысячи колесниц и царя Мааха с народом его, которые пришли и расположились станом пред Медевою. И Аммонитяне собрались из городов своих и выступили на войну.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Когда услышал об этом Давид, то послал Иоава со всем войском храбрых.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И выступили Аммонитяне и выстроились к сражению у ворот города, а цари, которые пришли, отдельно в поле.
+</p>
+<div class="num">10</div><p id="n10">Иоав, видя, что предстоит ему сражение спереди и сзади, избрал воинов из всех отборных в Израиле и выстроил <i>их</i> против Сириян.
+</p>
+<div class="num">11</div><p id="n11">А остальную часть народа поручил Авессе, брату своему, чтоб они выстроились против Аммонитян.
+</p>
+<div class="num">12</div><p id="n12">И сказал он: если Сирияне будут одолевать меня, то ты поможешь мне, а если Аммонитяне будут одолевать тебя, то я помогу тебе.
+</p>
+<div class="num">13</div><p id="n13">Будь мужествен, и будем твердо стоять за народ наш и за города Бога нашего,- и Господь пусть сделает, что ему угодно.
+</p>
+<div class="num">14</div><p id="n14">И вступил Иоав и люди, которые были у него, в сражение с Сириянами, и они побежали от него.
+</p>
+<div class="num">15</div><p id="n15">Аммонитяне же, увидев, что Сирияне бегут, и сами побежали от Авессы, брата его, и ушли в город. И пришел Иоав в Иерусалим.
+</p>
+<div class="num">16</div><p id="n16">Сирияне, видя, что они поражены Израильтянами, отправили послов и вывели Сириян, которые были по ту сторону реки, и Совак, военачальник Адраазаров, предводительствовал ими.
+</p>
+<div class="num">17</div><p id="n17">Когда донесли об этом Давиду, он собрал всех Израильтян, перешел Иордан и, придя к ним, выстроился против них; и вступил Давид в сражение с Сириянами, и они сразились с ним.
+</p>
+<div class="num">18</div><p id="n18">И Сирияне побежали от Израильтян, и истребил Давид у Сириян семь тысяч колесниц и сорок тысяч пеших, и Совака военачальника умертвил.
+</p>
+<div class="num">19</div><p id="n19">Когда увидели слуги Адраазара, что они поражены Израильтянами, заключили с Давидом мир и подчинились ему. И не хотели Сирияне помогать более Аммонитянам.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para1.20.ru.html">к главе 20</a></div></div>
+
+</body>
+</html>

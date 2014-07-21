@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="num.ru.html">Числа</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 20
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И пришли сыны Израилевы, все общество, в пустыню Син в первый месяц, и остановился народ в Кадесе, и умерла там Мариам и погребена там.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И не было воды для общества, и собрались они против Моисея и Аарона;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и возроптал народ на Моисея и сказал: о, если бы умерли тогда и мы, когда умерли братья наши пред Господом!
+</p>
+<div class="num">&nbsp;4</div><p id="n4">зачем вы привели общество Господне в эту пустыню, чтобы умереть здесь нам и скоту нашему?
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и для чего вывели вы нас из Египта, чтобы привести нас на это негодное место, где нельзя сеять, нет ни смоковниц, ни винограда, ни гранатовых яблок, ни даже воды для питья?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И пошел Моисей и Аарон от народа ко входу скинии собрания, и пали на лица свои, и явилась им слава Господня.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И сказал Господь Моисею, говоря:
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Возьми жезл и собери общество, ты и Аарон, брат твой, и скажите в глазах их скале, и она даст из себя воду: и так ты изведешь им воду из скалы, и напоишь общество и скот его.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И взял Моисей жезл от лица Господа, как Он повелел ему.
+</p>
+<div class="num">10</div><p id="n10">И собрали Моисей и Аарон народ к скале, и сказал он им: послушайте, непокорные, разве нам из этой скалы извести для вас воду?
+</p>
+<div class="num">11</div><p id="n11">И поднял Моисей руку свою и ударил в скалу жезлом своим дважды, и потекло много воды, и пило общество и скот его.
+</p>
+<div class="num">12</div><p id="n12">И сказал Господь Моисею и Аарону: за то, что вы не поверили Мне, чтоб явить святость Мою пред очами сынов Израилевых, не введете вы народа сего в землю, которую Я даю ему.
+</p>
+<div class="num">13</div><p id="n13">Это вода Меривы, у которой вошли в распрю сыны Израилевы с Господом, и Он явил им святость Свою.
+</p>
+<div class="num">14</div><p id="n14">И послал Моисей из Кадеса послов к царю Едомскому [сказать]: так говорит брат твой Израиль: ты знаешь все трудности, которые постигли нас;
+</p>
+<div class="num">15</div><p id="n15">отцы наши перешли в Египет, и мы жили в Египте много времени, и худо поступали Египтяне с нами и отцами нашими;
+</p>
+<div class="num">16</div><p id="n16">и воззвали мы к Господу, и услышал Он голос наш, и послал Ангела, и вывел нас из Египта; и вот, мы в Кадесе, городе у самого предела твоего;
+</p>
+<div class="num">17</div><p id="n17">позволь нам пройти землею твоею: мы не пойдем по полям и по виноградникам и не будем пить воды из колодезей [твоих]; но пойдем дорогою царскою, не своротим ни направо ни налево, доколе не перейдем пределов твоих.
+</p>
+<div class="num">18</div><p id="n18">Но Едом сказал ему: не проходи через меня, иначе я с мечом выступлю против тебя.
+</p>
+<div class="num">19</div><p id="n19">И сказали ему сыны Израилевы: мы пойдем большою дорогою, и если будем пить твою воду, я и скот мой, то буду платить за нее; только ногами моими пройду, что ничего не сто&#769;ит.
+</p>
+<div class="num">20</div><p id="n20">Но он сказал: не проходи [через меня]. И выступил против него Едом с многочисленным народом и с сильною рукою.
+</p>
+<div class="num">21</div><p id="n21">Итак не согласился Едом позволить Израилю пройти чрез его пределы, и Израиль пошел в сторону от него.
+</p>
+<div class="num">22</div><p id="n22">И отправились сыны Израилевы из Кадеса, и пришло все общество к горе Ор.
+</p>
+<div class="num">23</div><p id="n23">И сказал Господь Моисею и Аарону на горе Ор, у пределов земли Едомской, говоря:
+</p>
+<div class="num">24</div><p id="n24">пусть приложится Аарон к народу своему; ибо он не войдет в землю, которую Я даю сынам Израилевым, за то, что вы непокорны были повелению Моему у вод Меривы;
+</p>
+<div class="num">25</div><p id="n25">и возьми Аарона [брата твоего] и Елеазара, сына его, и возведи их на гору Ор [пред всем обществом];
+</p>
+<div class="num">26</div><p id="n26">и сними с Аарона одежды его, и облеки в них Елеазара, сына его, и пусть Аарон отойдет и умрет там.
+</p>
+<div class="num">27</div><p id="n27">И сделал Моисей так, как повелел Господь. Пошли они на гору Ор в глазах всего общества,
+</p>
+<div class="num">28</div><p id="n28">и снял Моисей с Аарона одежды его, и облек в них Елеазара, сына его; и умер там Аарон на вершине горы. А Моисей и Елеазар сошли с горы.
+</p>
+<div class="num">29</div><p id="n29">И увидело все общество, что Аарон умер, и оплакивал Аарона весь дом Израилев тридцать дней.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="num.21.ru.html">к главе 21</a></div></div>
+
+</body>
+</html>

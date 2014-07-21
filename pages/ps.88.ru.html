@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.ru.html">Псалтирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Псалом 88
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Учение Ефама Езрахита.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Милости [Твои], Господи, буду петь вечно, в род и род возвещать истину Твою устами моими.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ибо говорю: навек основана милость, на небесах утвердил Ты истину Твою, <i>когда</i> <i>сказал:</i><i></i>
+</p>
+<div class="num">&nbsp;4</div><p id="n4">"Я поставил завет с избранным Моим, клялся Давиду, рабу Моему:
+</p>
+<div class="num">&nbsp;5</div><p id="n5">навек утвержу семя твое, в род и род устрою престол твой".
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И небеса прославят чудные дела Твои, Господи, и истину Твою в собрании святых.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Ибо кто на небесах сравнится с Господом? кто между сынами Божиими уподобится Господу?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Страшен Бог в великом сонме святых, страшен Он для всех окружающих Его.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Господи, Боже сил! кто силен, как Ты, Господи? И истина Твоя окрест Тебя.
+</p>
+<div class="num">10</div><p id="n10">Ты владычествуешь над яростью моря: когда воздымаются волны его, Ты укрощаешь их.
+</p>
+<div class="num">11</div><p id="n11">Ты низложил Раава, как пораженного; крепкою мышцею Твоею рассеял врагов Твоих.
+</p>
+<div class="num">12</div><p id="n12">Твои небеса и Твоя земля; вселенную и что наполняет ее, Ты основал.
+</p>
+<div class="num">13</div><p id="n13">Север и юг Ты сотворил; Фавор и Ермон о имени Твоем радуются.
+</p>
+<div class="num">14</div><p id="n14">Крепка мышца Твоя, сильна рука Твоя, высока десница Твоя!
+</p>
+<div class="num">15</div><p id="n15">Правосудие и правота - основание престола Твоего; милость и истина предходят пред лицем Твоим.
+</p>
+<div class="num">16</div><p id="n16">Блажен народ, знающий трубный зов! Они ходят во свете лица Твоего, Господи,
+</p>
+<div class="num">17</div><p id="n17">о имени Твоем радуются весь день и правдою Твоею возносятся,
+</p>
+<div class="num">18</div><p id="n18">ибо Ты украшение силы их, и благоволением Твоим возвышается рог наш.
+</p>
+<div class="num">19</div><p id="n19">От Господа - щит наш, и от Святаго Израилева - царь наш.
+</p>
+<div class="num">20</div><p id="n20">Некогда говорил Ты в видении святому Твоему, и сказал: "Я оказал помощь мужественному, вознес избранного из народа.
+</p>
+<div class="num">21</div><p id="n21">Я обрел Давида, раба Моего, святым елеем Моим помазал его.
+</p>
+<div class="num">22</div><p id="n22">Рука Моя пребудет с ним, и мышца Моя укрепит его.
+</p>
+<div class="num">23</div><p id="n23">Враг не превозможет его, и сын беззакония не притеснит его.
+</p>
+<div class="num">24</div><p id="n24">Сокрушу пред ним врагов его и поражу ненавидящих его.
+</p>
+<div class="num">25</div><p id="n25">И истина Моя и милость Моя с ним, и Моим именем возвысится рог его.
+</p>
+<div class="num">26</div><p id="n26">И положу на море руку его, и на реки - десницу его.
+</p>
+<div class="num">27</div><p id="n27">Он будет звать Меня: Ты отец мой, Бог мой и твердыня спасения моего.
+</p>
+<div class="num">28</div><p id="n28">И Я сделаю его первенцем, превыше царей земли,
+</p>
+<div class="num">29</div><p id="n29">вовек сохраню ему милость Мою, и завет Мой с ним будет верен.
+</p>
+<div class="num">30</div><p id="n30">И продолжу вовек семя его, и престол его - как дни неба.
+</p>
+<div class="num">31</div><p id="n31">Если сыновья его оставят закон Мой и не будут ходить по заповедям Моим;
+</p>
+<div class="num">32</div><p id="n32">если нарушат уставы Мои и повелений Моих не сохранят:
+</p>
+<div class="num">33</div><p id="n33">посещу жезлом беззаконие их, и ударами - неправду их;
+</p>
+<div class="num">34</div><p id="n34">милости же Моей не отниму от него, и не изменю истины Моей.
+</p>
+<div class="num">35</div><p id="n35">Не нарушу завета Моего, и не переменю того, что вышло из уст Моих.
+</p>
+<div class="num">36</div><p id="n36">Однажды Я поклялся святостью Моею: солгу ли Давиду?
+</p>
+<div class="num">37</div><p id="n37">Семя его пребудет вечно, и престол его, как солнце, предо Мною,
+</p>
+<div class="num">38</div><p id="n38">вовек будет тверд, как луна, и верный свидетель на небесах".
+</p>
+<div class="num">39</div><p id="n39">Но <i>ныне</i> Ты отринул и презрел, прогневался на помазанника Твоего;
+</p>
+<div class="num">40</div><p id="n40">пренебрег завет с рабом Твоим, поверг на землю венец его;
+</p>
+<div class="num">41</div><p id="n41">разрушил все ограды его, превратил в развалины крепости его.
+</p>
+<div class="num">42</div><p id="n42">Расхищают его все проходящие путем; он сделался посмешищем у соседей своих.
+</p>
+<div class="num">43</div><p id="n43">Ты возвысил десницу противников его, обрадовал всех врагов его;
+</p>
+<div class="num">44</div><p id="n44">Ты обратил назад острие меча его и не укрепил его на брани;
+</p>
+<div class="num">45</div><p id="n45">отнял у него блеск и престол его поверг на землю;
+</p>
+<div class="num">46</div><p id="n46">сократил дни юности его и покрыл его стыдом.
+</p>
+<div class="num">47</div><p id="n47">Доколе, Господи, будешь скрываться непрестанно, будет пылать ярость Твоя, как огонь?
+</p>
+<div class="num">48</div><p id="n48">Вспомни, какой мой век: на какую суету сотворил Ты всех сынов человеческих?
+</p>
+<div class="num">49</div><p id="n49">Кто из людей жил - и не видел смерти, избавил душу свою от руки преисподней?
+</p>
+<div class="num">50</div><p id="n50">Где прежние милости Твои, Господи? Ты клялся Давиду истиною Твоею.
+</p>
+<div class="num">51</div><p id="n51">Вспомни, Господи, поругание рабов Твоих, которое я ношу в недре моем от всех сильных народов;
+</p>
+<div class="num">52</div><p id="n52">как поносят враги Твои, Господи, как бесславят следы помазанника Твоего.
+</p>
+<div class="num">53</div><p id="n53">Благословен Господь вовек! Аминь, аминь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.89.ru.html">к псалму 89</a></div></div>
+
+</body>
+</html>

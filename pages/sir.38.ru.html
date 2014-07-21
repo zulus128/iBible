@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 38
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Почитай врача честью по надобности в нем, ибо Господь создал его,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и от Вышнего - врачевание, и от царя получает он дар.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Знание врача возвысит его голову, и между вельможами он будет в почете.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Господь создал из земли врачевства, и благоразумный человек не будет пренебрегать ими.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Не от дерева ли вода сделалась сладкою, чтобы познана была сила Его?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Для того Он и дал людям знание, чтобы прославляли Его в чудных делах Его:
+</p>
+<div class="num">&nbsp;7</div><p id="n7">ими он врачует <i>человека</i> и уничтожает болезнь его.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Приготовляющий лекарства делает из них смесь, и занятия его не оканчиваются, и чрез него бывает благо на лице земли.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Сын мой! в болезни твоей не будь небрежен, но молись Господу, и Он исцелит тебя.
+</p>
+<div class="num">10</div><p id="n10">Оставь греховную жизнь и исправь руки твои, и от всякого греха очисти сердце.
+</p>
+<div class="num">11</div><p id="n11">Вознеси благоухание и из семидала памятную жертву и сделай приношение тучное, как бы уже умирающий;
+</p>
+<div class="num">12</div><p id="n12">и дай место врачу, ибо и его создал Господь, и да не удаляется он от тебя, ибо он нужен.
+</p>
+<div class="num">13</div><p id="n13">В иное время и в их руках бывает успех;
+</p>
+<div class="num">14</div><p id="n14">ибо и они молятся Господу, чтобы Он помог им подать <i>больному</i> облегчение и исцеление к продолжению жизни.
+</p>
+<div class="num">15</div><p id="n15">Но кто согрешает пред Сотворившим его, да впадет в руки врача!
+</p>
+<div class="num">16</div><p id="n16">Сын мой! над умершим пролей слезы и, как бы подвергшийся жестокому несчастию, начни плач; прилично облеки тело его и не пренебреги погребением его;
+</p>
+<div class="num">17</div><p id="n17">горький да будет плач и рыдание теплое, и продолжи сетование о нем, по достоинству его, день или два, для избежания осуждения, и тогда утешься от печали;
+</p>
+<div class="num">18</div><p id="n18">ибо от печали бывает смерть, и печаль сердечная истощит силу.
+</p>
+<div class="num">19</div><p id="n19">С несчастьем пребывает и печаль, и жизнь нищего тяжела для сердца.
+</p>
+<div class="num">20</div><p id="n20">Не предавай сердца твоего печали; отдаляй ее <i>от себя</i>, вспоминая о конце.
+</p>
+<div class="num">21</div><p id="n21">Не забывай о сем, ибо нет возвращения; и ему ты не принесешь пользы, а себе повредишь.
+</p>
+<div class="num">22</div><p id="n22">"Вспоминай о приговоре надо мною, потому что он также и над тобою; мне вчера, а тебе сегодня".
+</p>
+<div class="num">23</div><p id="n23">С упокоением умершего успокой и память о нем, и утешься о нем по исходе души его.
+</p>
+<div class="num">24</div><p id="n24">Мудрость книжная приобретается в благоприятное время досуга, и кто мало имеет своих занятий, может приобрести мудрость.
+</p>
+<div class="num">25</div><p id="n25">Как может сделаться мудрым тот, кто правит плугом и хвалится бичом, гоняет волов и занят работами их, и которого разговор <i>только</i> о молодых волах?
+</p>
+<div class="num">26</div><p id="n26">Сердце его занято тем, чтобы проводить борозды, и забота его - о корме для телиц.
+</p>
+<div class="num">27</div><p id="n27">Так и всякий плотник и зодчий, который проводит ночь, как день: кто занимается резьбою, того прилежание в том, чтобы оразнообразить форму;
+</p>
+<div class="num">28</div><p id="n28">сердце свое он устремляет на то, чтобы изображение было похоже, и забота его - о том, чтоб окончить дело в совершенстве.
+</p>
+<div class="num">29</div><p id="n29">Так и ковач, который сидит у наковальни и думает об изделии из железа: дым от огня изнуряет его тело, и с жаром от печи борется он;
+</p>
+<div class="num">30</div><p id="n30">звук молота оглушает его слух, и глаза его устремлены на модель сосуда;
+</p>
+<div class="num">31</div><p id="n31">сердце его устремлено на окончание дела, и попечение его - о том, чтобы отделать его в совершенстве.
+</p>
+<div class="num">32</div><p id="n32">Так и горшечник, который сидит над своим делом и ногами своими вертит колесо,
+</p>
+<div class="num">33</div><p id="n33">который постоянно в заботе о деле своем и у которого исчислена вся работа его:
+</p>
+<div class="num">34</div><p id="n34">рукою своею он дает форму глине, а ногами умягчает ее жесткость;
+</p>
+<div class="num">35</div><p id="n35">он устремляет сердце к тому, чтобы хорошо окончить сосуд, и забота его - о том, чтоб очистить печь.
+</p>
+<div class="num">36</div><p id="n36">Все они надеются на свои руки, и каждый умудряется в своем деле;
+</p>
+<div class="num">37</div><p id="n37">без них ни город не построится, ни жители не населятся и не будут жить в нем;
+</p>
+<div class="num">38</div><p id="n38">и однако ж они в собрание не приглашаются, на судейском седалище не сидят и не рассуждают о судебных постановлениях, не произносят оправдания и осуждения и не занимаются притчами;
+</p>
+<div class="num">39</div><p id="n39">но поддерживают быт житейский, и молитва их - об успехе художества их.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.39.ru.html">к главе 39</a></div></div>
+
+</body>
+</html>

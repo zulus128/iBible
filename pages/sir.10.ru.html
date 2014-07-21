@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 10
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Мудрый правитель научит народ свой, и правление разумного будет благоустроено.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Каков правитель народа, таковы и служащие при нем; и каков начальствующий над городом, таковы и все живущие в нем.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Царь ненаученный погубит народ свой, а при благоразумии сильных устроится город.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">В руке Господа власть над землею, и <i>человека</i> потребного Он вовремя воздвигнет на ней.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">В руке Господа благоуспешность человека, и на лице книжника Он отпечатлеет славу Свою.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Не гневайся за всякое оскорбление на ближнего, и никого не оскорбляй делом.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Гордость ненавистна и Господу и людям и преступна против обоих.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Владычество переходит от народа к народу по причине несправедливости, обид и любостяжания.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Что гордится земля и пепел?
+</p>
+<div class="num">10</div><p id="n10">И при жизни извергаются внутренности его.
+</p>
+<div class="num">11</div><p id="n11">Продолжительною болезнью врач пренебрегает:
+</p>
+<div class="num">12</div><p id="n12">и вот, ныне царь, а завтра умирает.
+</p>
+<div class="num">13</div><p id="n13">Когда же человек умрет, то наследием его становятся пресмыкающиеся, звери и черви.
+</p>
+<div class="num">14</div><p id="n14">Начало гордости - удаление человека от Господа и отступление сердца его от Творца его;
+</p>
+<div class="num">15</div><p id="n15">ибо начало греха - гордость, и обладаемый ею изрыгает мерзость;
+</p>
+<div class="num">16</div><p id="n16">и за это Господь посылает на него страшные наказания и вконец низлагает его.
+</p>
+<div class="num">17</div><p id="n17">Господь низвергает престолы властителей и посаждает кротких на место их.
+</p>
+<div class="num">18</div><p id="n18">Господь вырывает с корнем народы и насаждает вместо них смиренных.
+</p>
+<div class="num">19</div><p id="n19">Господь опустошает страны народов и разрушает их до оснований земли.
+</p>
+<div class="num">20</div><p id="n20">Он иссушает их, и погубляет <i>людей</i> и истребляет от земли память их.
+</p>
+<div class="num">21</div><p id="n21">Гордость не сотворена для людей, ни ярость гнева - для рождающихся от жен.
+</p>
+<div class="num">22</div><p id="n22">Семя почтенное какое? - Семя человеческое. Семя почтенное какое? - Боящиеся Господа.
+</p>
+<div class="num">23</div><p id="n23">Семя бесчестное какое? - Семя человеческое. Семя бесчестное какое? - Преступающие заповеди.
+</p>
+<div class="num">24</div><p id="n24">Старший между братьями - в почтении у них, так и боящиеся Господа - в очах Его.
+</p>
+<div class="num">25</div><p id="n25">Богат ли кто и славен, или беден, похвала их - страх Господень.
+</p>
+<div class="num">26</div><p id="n26">Несправедливо - бесчестить разумного бедного, и не должно прославлять мужа грешного.
+</p>
+<div class="num">27</div><p id="n27">Почтенны вельможа, судья и властелин, но нет из них больше боящегося Господа.
+</p>
+<div class="num">28</div><p id="n28">Рабу мудрому будут служить свободные, и разумный человек, будучи наставляем им, не будет роптать.
+</p>
+<div class="num">29</div><p id="n29">Не умничай много, чтобы делать дело твое, и не хвались во время нужды.
+</p>
+<div class="num">30</div><p id="n30">Лучше тот, кто трудится и имеет во всем достаток, нежели кто праздно ходит и хвалится, но нуждается в хлебе.
+</p>
+<div class="num">31</div><p id="n31">Сын мой! кротостью прославляй душу твою и воздавай ей честь по ее достоинству.
+</p>
+<div class="num">32</div><p id="n32">Кто будет оправдывать согрешающего против души своей? И кто будет хвалить позорящего жизнь свою?
+</p>
+<div class="num">33</div><p id="n33">Бедного почитают за познания его, а богатого - за его богатство:
+</p>
+<div class="num">34</div><p id="n34">уважаемый же в бедности насколько больше будет уважаем в богатстве? А бесславный в богатстве насколько будет бесславнее в бедности?
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.11.ru.html">к главе 11</a></div></div>
+
+</body>
+</html>

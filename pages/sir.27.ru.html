@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 27
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Многие погрешали ради маловажных вещей, и ищущий богатства отвращает глаза.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Посреди скреплений камней вбивается гвоздь: так посреди продажи и купли вторгается грех.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Если кто не удерживается тщательно в страхе Господнем, то скоро разорится дом его.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">При трясении решета остается сор: так нечистота человека - при рассуждении его.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Глиняные сосуды испытываются в печи, а испытание человека - в разговоре его.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Уход за деревом открывается в плоде его: та&#769;к в слове - помышления сердца человеческого.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Прежде беседы не хвали человека, ибо она есть испытание людей.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Если ты усердно будешь искать правды, то найдешь ее и облечешься ею, как подиром славы.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Птицы слетаются к подобным себе, и истина обращается к тем, которые упражняются в ней.
+</p>
+<div class="num">10</div><p id="n10">Как лев подстерегает добычу, так и грехи - делающих неправду.
+</p>
+<div class="num">11</div><p id="n11">Беседа благочестивого - всегда мудрость, а безумный изменяется, как луна.
+</p>
+<div class="num">12</div><p id="n12">Среди неразумных не трать времени, а проводи его постоянно среди благоразумных.
+</p>
+<div class="num">13</div><p id="n13">Беседа глупых отвратительна, и смех их - в забаве грехом.
+</p>
+<div class="num">14</div><p id="n14">Пустословие много клянущихся поднимет дыбом волосы, а спор их заткнет уши.
+</p>
+<div class="num">15</div><p id="n15">Ссора надменных - кровопролитие, и брань их несносна для слуха.
+</p>
+<div class="num">16</div><p id="n16">Открывающий тайны потерял доверие и не найдет друга по душе своей.
+</p>
+<div class="num">17</div><p id="n17">Люби друга и будь верен ему;
+</p>
+<div class="num">18</div><p id="n18">а если откроешь тайны его, не гонись больше за ним:
+</p>
+<div class="num">19</div><p id="n19">ибо как человек убивает своего врага, так ты убил дружбу ближнего;
+</p>
+<div class="num">20</div><p id="n20">и как ты выпустил бы из рук своих птицу, так ты упустил друга и не поймаешь его;
+</p>
+<div class="num">21</div><p id="n21">не гонись за ним, ибо он далеко ушел и убежал, как серна из сети.
+</p>
+<div class="num">22</div><p id="n22">Рану можно перевязать, и после ссоры возможно примирение;
+</p>
+<div class="num">23</div><p id="n23">но кто открыл тайны, тот потерял надежду <i>на примирение</i>.
+</p>
+<div class="num">24</div><p id="n24">Кто мигает глазом, тот строит козни, и никто не удержит его от того;
+</p>
+<div class="num">25</div><p id="n25">пред глазами твоими он будет говорить сладко и будет удивляться словам твоим,
+</p>
+<div class="num">26</div><p id="n26">а после извратит уста свои и в словах твоих откроет соблазн;
+</p>
+<div class="num">27</div><p id="n27">многое я ненавижу, но не столько, как его; и Господь возненавидит его.
+</p>
+<div class="num">28</div><p id="n28">Кто бросает камень вверх, бросает его на свою голову, и коварный удар разделит раны.
+</p>
+<div class="num">29</div><p id="n29">Кто роет яму, сам упадет в нее, и кто ставит сеть, сам будет уловлен ею.
+</p>
+<div class="num">30</div><p id="n30">Кто делает зло, на того обратится оно, и он не узна&#769;ет, откуда оно пришло к нему;
+</p>
+<div class="num">31</div><p id="n31">посмеяние и поношение от гордых и мщение, как лев, подстерегут его.
+</p>
+<div class="num">32</div><p id="n32">Уловлены будут сетью радующиеся о падении благочестивых, и скорбь измождит их прежде смерти их.
+</p>
+<div class="num">33</div><p id="n33">Злоба и гнев - тоже мерзости, и муж грешный будет обладаем ими.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.28.ru.html">к главе 28</a></div></div>
+
+</body>
+</html>

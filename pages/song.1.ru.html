@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="song.ru.html">Песнь Песней</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Да лобзает он меня лобзанием уст своих! Ибо ласки твои лучше вина.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">От благовония мастей твоих имя твое - как разлитое миро; поэтому девицы любят тебя.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Влеки меня, мы побежим за тобою; - царь ввел меня в чертоги свои,- будем восхищаться и радоваться тобою, превозносить ласки твои больше, нежели вино; достойно любят тебя!
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Дщери Иерусалимские! черна я, но красива, как шатры Кидарские, как завесы Соломоновы.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Не смотрите на меня, что я смугла, ибо солнце опалило меня: сыновья матери моей разгневались на меня, поставили меня стеречь виноградники,- моего собственного виноградника я не стерегла.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Скажи мне, ты, которого любит душа моя: где пасешь ты? где отдыхаешь в полдень? к чему мне быть скиталицею возле стад товарищей твоих?
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Если ты не знаешь этого, прекраснейшая из женщин, то иди себе по следам овец и паси козлят твоих подле шатров пастушеских.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Кобылице моей в колеснице фараоновой я уподобил тебя, возлюбленная моя.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Прекрасны ланиты твои под подвесками, шея твоя в ожерельях;
+</p>
+<div class="num">10</div><p id="n10">золотые подвески мы сделаем тебе с серебряными блестками.
+</p>
+<div class="num">11</div><p id="n11">Доколе царь был за столом своим, нард мой издавал благовоние свое.
+</p>
+<div class="num">12</div><p id="n12">Мирровый пучок - возлюбленный мой у меня, у грудей моих пребывает.
+</p>
+<div class="num">13</div><p id="n13">Как кисть кипера, возлюбленный мой у меня в виноградниках Енгедских.
+</p>
+<div class="num">14</div><p id="n14">О, ты прекрасна, возлюбленная моя, ты прекрасна! глаза твои голубиные.
+</p>
+<div class="num">15</div><p id="n15">О, ты прекрасен, возлюбленный мой, и любезен! и ложе у нас - зелень;
+</p>
+<div class="num">16</div><p id="n16">кровли домов наших - кедры, потолки наши - кипарисы.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="song.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

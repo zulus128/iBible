@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="rev.ru.html">Откровение<br />Иоанна Богослова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 20
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И увидел я Ангела, сходящего с неба, который имел ключ от бездны и большую цепь в руке своей.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Он взял дракона, змия древнего, который есть диавол и сатана, и сковал его на тысячу лет,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и низверг его в бездну, и заключил его, и положил над ним печать, дабы не прельщал уже народы, доколе не окончится тысяча лет; после же сего ему должно быть освобожденным на малое время.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И увидел я престолы и сидящих на них, которым дано было судить, и души обезглавленных за свидетельство Иисуса и за слово Божие, которые не поклонились зверю, ни образу его, и не приняли начертания на чело свое и на руку свою. Они ожили и царствовали со Христом тысячу лет.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Прочие же из умерших не ожили, доколе не окончится тысяча лет. Это - первое воскресение.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Блажен и свят имеющий участие в воскресении первом: над ними смерть вторая не имеет власти, но они будут священниками Бога и Христа и будут царствовать с Ним тысячу лет.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Когда же окончится тысяча лет, сатана будет освобожден из темницы своей и выйдет обольщать народы, находящиеся на четырех углах земли, Гога и Магога, и собирать их на брань; число их как песок морской.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И вышли на широту земли, и окружили стан святых и город возлюбленный.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И ниспал огонь с неба от Бога и пожрал их;
+</p>
+<div class="num">10</div><p id="n10">а диавол, прельщавший их, ввержен в озеро огненное и серное, где зверь и лжепророк, и будут мучиться день и ночь во веки веков.
+</p>
+<div class="num">11</div><p id="n11">И увидел я великий белый престол и Сидящего на нем, от лица Которого бежало небо и земля, и не нашлось им места.
+</p>
+<div class="num">12</div><p id="n12">И увидел я мертвых, малых и великих, стоящих пред Богом, и книги раскрыты были, и иная книга раскрыта, которая есть книга жизни; и судимы были мертвые по написанному в книгах, сообразно с делами своими.
+</p>
+<div class="num">13</div><p id="n13">Тогда отдало море мертвых, бывших в нем, и смерть и ад отдали мертвых, которые были в них; и судим был каждый по делам своим.
+</p>
+<div class="num">14</div><p id="n14">И смерть и ад повержены в озеро огненное. Это смерть вторая.
+</p>
+<div class="num">15</div><p id="n15">И кто не был записан в книге жизни, тот был брошен в озеро огненное.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="rev.21.ru.html">к главе 21</a></div></div>
+
+</body>
+</html>

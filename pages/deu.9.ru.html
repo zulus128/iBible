@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="deu.ru.html">Второзаконие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 9
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Слушай, Израиль: ты теперь идешь за Иордан, чтобы пойти овладеть народами, которые больше и сильнее тебя, городами большими, с укреплениями до небес,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">народом [великим,] многочисленным и великорослым, сынами Енаковыми, о которых ты знаешь и слышал: "кто устоит против сынов Енаковых?"
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Знай же ныне, что Господь, Бог твой, идет пред тобою, <i>как</i> огнь поядающий; Он будет истреблять их и низлагать их пред тобою, и ты изгонишь их, и погубишь их скоро, как говорил тебе Господь.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Когда будет изгонять их Господь, Бог твой, от лица твоего, не говори в сердце твоем, что за праведность мою привел меня Господь овладеть сею [доброю] землею, и что за нечестие народов сих Господь изгоняет их от лица твоего;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">не за праведность твою и не за правоту сердца твоего идешь ты наследовать землю их, но за нечестие [и беззакония] народов сих Господь, Бог твой, изгоняет их от лица твоего, и дабы исполнить слово, которым клялся Господь отцам твоим Аврааму, Исааку и Иакову;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">посему знай [ныне], что не за праведность твою Господь, Бог твой, дает тебе овладеть сею доброю землею, ибо ты народ жестоковыйный.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Помни, не забудь, сколько ты раздражал Господа, Бога твоего, в пустыне: с самого того дня, как вышел ты из земли Египетской, и до самого прихода вашего на место сие вы противились Господу.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И при Хориве вы раздражали Господа, и прогневался на вас Господь, так что <i>хотел</i> истребить вас,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">когда я взошел на гору, чтобы принять скрижали каменные, скрижали завета, который поставил Господь с вами, и пробыл на горе сорок дней и сорок ночей, хлеба не ел и воды не пил,
+</p>
+<div class="num">10</div><p id="n10">и дал мне Господь две скрижали каменные, написанные перстом Божиим, а на них [написаны были] все слова, которые изрек вам Господь на горе из среды огня в день собрания.
+</p>
+<div class="num">11</div><p id="n11">По окончании же сорока дней и сорока ночей дал мне Господь две скрижали каменные, скрижали завета,
+</p>
+<div class="num">12</div><p id="n12">и сказал мне Господь: встань, пойди скорее отсюда, ибо развратился народ твой, который ты вывел из Египта; скоро уклонились они от пути, который Я заповедал им; они сделали себе литой истукан.
+</p>
+<div class="num">13</div><p id="n13">И сказал мне Господь: [Я говорил тебе один и другой раз:] вижу Я народ сей, вот он народ жестоковыйный;
+</p>
+<div class="num">14</div><p id="n14">не удерживай Меня, и Я истреблю их, и изглажу имя их из поднебесной, а от тебя произведу народ, <i>который</i> <i>будет</i> [больше,] сильнее и многочисленнее их.
+</p>
+<div class="num">15</div><p id="n15">Я обратился и пошел с горы, гора же горела огнем; две скрижали завета <i>были</i> в обеих руках моих;
+</p>
+<div class="num">16</div><p id="n16">и видел я, что вы согрешили против Господа, Бога вашего, сделали себе литого тельца, скоро уклонились от пути, которого [держаться] заповедал вам Господь;
+</p>
+<div class="num">17</div><p id="n17">и взял я обе скрижали, и бросил их из обеих рук своих, и разбил их пред глазами вашими.
+</p>
+<div class="num">18</div><p id="n18">И [вторично] повергшись пред Господом, молился я, как прежде, сорок дней и сорок ночей, хлеба не ел и воды не пил, за все грехи ваши, которыми вы согрешили, сделав зло в очах Господа [Бога вашего] и раздражив Его;
+</p>
+<div class="num">19</div><p id="n19">ибо я страшился гнева и ярости, которыми Господь прогневался на вас <i>и</i> <i>хотел</i> погубить вас. И послушал меня Господь и на сей раз.
+</p>
+<div class="num">20</div><p id="n20">И на Аарона весьма прогневался Господь <i>и</i> <i>хотел</i> погубить его; но я молился и за Аарона в то время.
+</p>
+<div class="num">21</div><p id="n21">Грех же ваш, который вы сделали,- тельца я взял, сожег его в огне, разбил его и всего истер до того, что он стал мелок, как прах, и я бросил прах сей в поток, текущий с горы.
+</p>
+<div class="num">22</div><p id="n22">И в Тавере, в Массе и в Киброт-Гаттааве вы раздражили Господа [Бога вашего].
+</p>
+<div class="num">23</div><p id="n23">И когда посылал вас Господь из Кадес-Варни, говоря: пойдите, овладейте землею, которую Я даю вам,- то вы воспротивились повелению Господа Бога вашего, и не поверили Ему, и не послушали гласа Его.
+</p>
+<div class="num">24</div><p id="n24">Вы были непокорны Господу с того самого дня, как я стал знать вас.
+</p>
+<div class="num">25</div><p id="n25">И повергшись пред Господом, умолял я сорок дней и сорок ночей, в которые я молился, ибо Господь хотел погубить вас;
+</p>
+<div class="num">26</div><p id="n26">и молился я Господу и сказал: Владыка Господи, [Царь богов,] не погубляй народа Твоего и удела Твоего, который Ты избавил величием [крепости] Твоей, который вывел Ты из Египта рукою сильною [и мышцею Твоею высокою];
+</p>
+<div class="num">27</div><p id="n27">вспомни рабов Твоих, Авраама, Исаака и Иакова, [которым Ты клялся Собою]; не смотри на ожесточение народа сего и на нечестие его и на грехи его,
+</p>
+<div class="num">28</div><p id="n28">дабы [живущие] в той земле, откуда Ты вывел нас, не сказали: "Господь не мог ввести их в землю, которую обещал им, и, ненавидя их, вывел Он их, чтоб умертвить их в пустыне".
+</p>
+<div class="num">29</div><p id="n29">А они Твой народ и Твой удел, который Ты вывел [из земли Египетской] силою Твоею великою и мышцею Твоею высокою.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="deu.10.ru.html">к главе 10</a></div></div>
+
+</body>
+</html>

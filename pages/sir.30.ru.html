@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 30
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Кто любит своего сына, тот пусть чаще наказывает его, чтобы впоследствии утешаться им.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Кто наставляет своего сына, тот будет иметь помощь от него и среди знакомых будет хвалиться им.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Кто учит своего сына, тот возбуждает зависть во враге, а пред друзьями будет радоваться о нем.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Умер отец его - и как будто не умирал, ибо оставил по себе подобного себе;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">при жизни своей он смотрел на него и утешался, и при смерти своей не опечалился;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">для врагов он оставил в нем мстителя, а для друзей - воздающего благодарность.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Поблажающий сыну будет перевязывать раны его, и при всяком крике его будет тревожиться сердце его.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Необъезженный конь бывает упрям, а сын, оставленный на свою волю, делается дерзким.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Лелей дитя, и оно устрашит тебя; играй с ним, и оно опечалит тебя.
+</p>
+<div class="num">10</div><p id="n10">Не смейся с ним, чтобы не горевать с ним и после не скрежетать зубами своими.
+</p>
+<div class="num">11</div><p id="n11">Не давай ему воли в юности и не потворствуй неразумию его.
+</p>
+<div class="num">12</div><p id="n12">Нагибай выю его в юности и сокрушай рёбра его, доколе оно молодо, дабы, сделавшись упорным, оно не вышло из повиновения тебе.
+</p>
+<div class="num">13</div><p id="n13">Учи сына твоего и трудись над ним, чтобы не иметь тебе огорчения от непристойных поступков его.
+</p>
+<div class="num">14</div><p id="n14">Лучше бедняк здоровый и крепкий силами, нежели богач с изможденным телом;
+</p>
+<div class="num">15</div><p id="n15">здоровье и благосостояние тела дороже всякого золота, и крепкое тело лучше несметного богатства;
+</p>
+<div class="num">16</div><p id="n16">нет богатства лучше телесного здоровья, и нет радости выше радости сердечной;
+</p>
+<div class="num">17</div><p id="n17">лучше смерть, нежели горестная жизнь или постоянно продолжающаяся болезнь.
+</p>
+<div class="num">18</div><p id="n18">Сласти, поднесенные к сомкнутым устам, то же, что снеди, поставленные на могиле.
+</p>
+<div class="num">19</div><p id="n19">Какая польза идолу от жертвы? он ни есть, ни обонять не может:
+</p>
+<div class="num">20</div><p id="n20">так преследуемый от Господа,
+</p>
+<div class="num">21</div><p id="n21">смотря глазами и стеная, подобен евнуху, который обнимает девицу и вздыхает.
+</p>
+<div class="num">22</div><p id="n22">Не предавайся печали душею твоею и не мучь себя своею мнительностью;
+</p>
+<div class="num">23</div><p id="n23">веселье сердца - жизнь человека, и радость мужа - долгоденствие;
+</p>
+<div class="num">24</div><p id="n24">люби душу твою и утешай сердце твое и удаляй от себя печаль,
+</p>
+<div class="num">25</div><p id="n25">ибо печаль многих убила, а пользы в ней нет.
+</p>
+<div class="num">26</div><p id="n26">Ревность и гнев сокращают дни, а забота - прежде времени приводит старость.
+</p>
+<div class="num">27</div><p id="n27">Открытое и доброе сердце заботится и о снедях своих.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.31.ru.html">к главе 31</a></div></div>
+
+</body>
+</html>

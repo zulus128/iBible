@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.ru.html">Псалтирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Псалом 29
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Псалом Давида; песнь при обновлении дома.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Превознесу Тебя, Господи, что Ты поднял меня и не дал моим врагам восторжествовать надо мною.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Господи, Боже мой! я воззвал к Тебе, и Ты исцелил меня.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Господи! Ты вывел из ада душу мою и оживил меня, чтобы я не сошел в могилу.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Пойте Господу, святые Его, славьте память святыни Его,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">ибо на мгновение гнев Его, на <i>всю</i> жизнь благоволение Его: вечером водворяется плач, а на утро радость.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И я говорил в благоденствии моем: "не поколеблюсь вовек".
+</p>
+<div class="num">&nbsp;8</div><p id="n8">По благоволению Твоему, Господи, Ты укрепил гору мою; но Ты сокрыл лице Твое, <i>и</i> я смутился.
+</p>
+<div class="num">&nbsp;9</div><p id="n9"><i>Тогда</i> к Тебе, Господи, взывал я, и Господа [моего] умолял:
+</p>
+<div class="num">10</div><p id="n10">"что пользы в крови моей, когда я сойду в могилу? будет ли прах славить Тебя? будет ли возвещать истину Твою?
+</p>
+<div class="num">11</div><p id="n11">услышь, Господи, и помилуй меня; Господи! будь мне помощником".
+</p>
+<div class="num">12</div><p id="n12">И Ты обратил сетование мое в ликование, снял с меня вретище и препоясал меня веселием,
+</p>
+<div class="num">13</div><p id="n13">да славит Тебя душа моя и да не умолкает. Господи, Боже мой! буду славить Тебя вечно.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.30.ru.html">к псалму 30</a></div></div>
+
+</body>
+</html>

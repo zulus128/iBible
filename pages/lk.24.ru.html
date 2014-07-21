@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lk.ru.html">Евангелие от Луки</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 24
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В первый же день недели, очень рано, неся приготовленные ароматы, пришли они ко гробу, и вместе с ними некоторые другие;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">но нашли камень отваленным от гроба.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И, войдя, не нашли тела Господа Иисуса.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Когда же недоумевали они о сем, вдруг предстали перед ними два мужа в одеждах блистающих.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И когда они были в страхе и наклонили лица <i>свои</i> к земле, сказали им: что вы ищете живого между мертвыми?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Его нет здесь: Он воскрес; вспомните, как Он говорил вам, когда был еще в Галилее,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">сказывая, что Сыну Человеческому надлежит быть предану в руки человеков грешников, и быть распяту, и в третий день воскреснуть.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И вспомнили они слова Его;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и, возвратившись от гроба, возвестили всё это одиннадцати и всем прочим.
+</p>
+<div class="num">10</div><p id="n10">То были Магдалина Мария, и Иоанна, и Мария, <i>мать</i> Иакова, и другие с ними, которые сказали о сем Апостолам.
+</p>
+<div class="num">11</div><p id="n11">И показались им слова их пустыми, и не поверили им.
+</p>
+<div class="num">12</div><p id="n12">Но Петр, встав, побежал ко гробу и, наклонившись, увидел только пелены лежащие, и пошел назад, дивясь сам в себе происшедшему.
+</p>
+<div class="num">13</div><p id="n13">В тот же день двое из них шли в селение, отстоящее стадий на шестьдесят от Иерусалима, называемое Эммаус;
+</p>
+<div class="num">14</div><p id="n14">и разговаривали между собою о всех сих событиях.
+</p>
+<div class="num">15</div><p id="n15">И когда они разговаривали и рассуждали между собою, и Сам Иисус, приблизившись, пошел с ними.
+</p>
+<div class="num">16</div><p id="n16">Но глаза их были удержаны, так что они не узнали Его.
+</p>
+<div class="num">17</div><p id="n17">Он же сказал им: о чем это вы, идя, рассуждаете между собою, и отчего вы печальны?
+</p>
+<div class="num">18</div><p id="n18">Один из них, именем Клеопа, сказал Ему в ответ: неужели Ты один из пришедших в Иерусалим не знаешь о происшедшем в нем в эти дни?
+</p>
+<div class="num">19</div><p id="n19">И сказал им: о чем? Они сказали Ему: что было с Иисусом Назарянином, Который был пророк, сильный в деле и слове пред Богом и всем народом;
+</p>
+<div class="num">20</div><p id="n20">как предали Его первосвященники и начальники наши для осуждения на смерть и распяли Его.
+</p>
+<div class="num">21</div><p id="n21">А мы надеялись было, что Он есть Тот, Который должен избавить Израиля; но со всем тем, уже третий день ныне, как это произошло.
+</p>
+<div class="num">22</div><p id="n22">Но и некоторые женщины из наших изумили нас: они были рано у гроба
+</p>
+<div class="num">23</div><p id="n23">и не нашли тела Его и, придя, сказывали, что они видели и явление Ангелов, которые говорят, что Он жив.
+</p>
+<div class="num">24</div><p id="n24">И пошли некоторые из наших ко гробу и нашли так, как и женщины говорили, но Его не видели.
+</p>
+<div class="num">25</div><p id="n25">Тогда Он сказал им: о, несмысленные и медлительные сердцем, чтобы веровать всему, что предсказывали пророки!
+</p>
+<div class="num">26</div><p id="n26">Не так ли надлежало пострадать Христу и войти в славу Свою?
+</p>
+<div class="num">27</div><p id="n27">И, начав от Моисея, из всех пророков изъяснял им сказанное о Нем во всем Писании.
+</p>
+<div class="num">28</div><p id="n28">И приблизились они к тому селению, в которое шли; и Он показывал им вид, что хочет идти далее.
+</p>
+<div class="num">29</div><p id="n29">Но они удерживали Его, говоря: останься с нами, потому что день уже склонился к вечеру. И Он вошел и остался с ними.
+</p>
+<div class="num">30</div><p id="n30">И когда Он возлежал с ними, то, взяв хлеб, благословил, преломил и подал им.
+</p>
+<div class="num">31</div><p id="n31">Тогда открылись у них глаза, и они узнали Его. Но Он стал невидим для них.
+</p>
+<div class="num">32</div><p id="n32">И они сказали друг другу: не горело ли в нас сердце наше, когда Он говорил нам на дороге и когда изъяснял нам Писание?
+</p>
+<div class="num">33</div><p id="n33">И, встав в тот же час, возвратились в Иерусалим и нашли вместе одиннадцать <i>Апостолов</i> и бывших с ними,
+</p>
+<div class="num">34</div><p id="n34">которые говорили, что Господь истинно воскрес и явился Симону.
+</p>
+<div class="num">35</div><p id="n35">И они рассказывали о происшедшем на пути, и как Он был узнан ими в преломлении хлеба.
+</p>
+<div class="num">36</div><p id="n36">Когда они говорили о сем, Сам Иисус стал посреди них и сказал им: мир вам.
+</p>
+<div class="num">37</div><p id="n37">Они, смутившись и испугавшись, подумали, что видят духа.
+</p>
+<div class="num">38</div><p id="n38">Но Он сказал им: что смущаетесь, и для чего такие мысли входят в сердца ваши?
+</p>
+<div class="num">39</div><p id="n39">Посмотрите на руки Мои и на ноги Мои; это Я Сам; осяжите Меня и рассмотри&#769;те; ибо дух плоти и костей не имеет, как видите у Меня.
+</p>
+<div class="num">40</div><p id="n40">И, сказав это, показал им руки и ноги.
+</p>
+<div class="num">41</div><p id="n41">Когда же они от радости еще не верили и дивились, Он сказал им: есть ли у вас здесь какая пища?
+</p>
+<div class="num">42</div><p id="n42">Они подали Ему часть печеной рыбы и сотового меда.
+</p>
+<div class="num">43</div><p id="n43">И, взяв, ел пред ними.
+</p>
+<div class="num">44</div><p id="n44">И сказал им: вот то, о чем Я вам говорил, еще быв с вами, что надлежит исполниться всему, написанному о Мне в законе Моисеевом и в пророках и псалмах.
+</p>
+<div class="num">45</div><p id="n45">Тогда отверз им ум к уразумению Писаний.
+</p>
+<div class="num">46</div><p id="n46">И сказал им: так написано, и так надлежало пострадать Христу, и воскреснуть из мертвых в третий день,
+</p>
+<div class="num">47</div><p id="n47">и проповедану быть во имя Его покаянию и прощению грехов во всех народах, начиная с Иерусалима.
+</p>
+<div class="num">48</div><p id="n48">Вы же свидетели сему.
+</p>
+<div class="num">49</div><p id="n49">И Я пошлю обетование Отца Моего на вас; вы же оставайтесь в городе Иерусалиме, доколе не облечетесь силою свыше.
+</p>
+<div class="num">50</div><p id="n50">И вывел их вон <i>из</i> <i>города</i> до Вифании и, подняв руки Свои, благословил их.
+</p>
+<div class="num">51</div><p id="n51">И, когда благословлял их, стал отдаляться от них и возноситься на небо.
+</p>
+<div class="num">52</div><p id="n52">Они поклонились Ему и возвратились в Иерусалим с великою радостью.
+</p>
+<div class="num">53</div><p id="n53">И пребывали всегда в храме, прославляя и благословляя Бога. Аминь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lk.ru.html">Евангелие от Луки</a>
+</div></div>
+
+</body>
+</html>

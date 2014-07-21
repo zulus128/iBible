@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="rom.ru.html">Послание к Римлянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 5
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Итак, оправдавшись верою, мы имеем мир с Богом через Господа нашего Иисуса Христа,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">через Которого верою и получили мы доступ к той благодати, в которой стоим и хвалимся надеждою славы Божией.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И не сим только, но хвалимся и скорбями, зная, что от скорби происходит терпение,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">от терпения опытность, от опытности надежда,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">а надежда не постыжает, потому что любовь Божия излилась в сердца наши Духом Святым, данным нам.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Ибо Христос, когда еще мы были немощны, в определенное время умер за нечестивых.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Ибо едва ли кто умрет за праведника; разве за благодетеля, может быть, кто и решится умереть.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Но Бог Свою любовь к нам доказывает тем, что Христос умер за нас, когда мы были еще грешниками.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Посему тем более ныне, будучи оправданы Кровию Его, спасемся Им от гнева.
+</p>
+<div class="num">10</div><p id="n10">Ибо если, будучи врагами, мы примирились с Богом смертью Сына Его, то тем более, примирившись, спасемся жизнью Его.
+</p>
+<div class="num">11</div><p id="n11">И не довольно сего, но и хвалимся Богом чрез Господа нашего Иисуса Христа, посредством Которого мы получили ныне примирение.
+</p>
+<div class="num">12</div><p id="n12">Посему, как одним человеком грех вошел в мир, и грехом смерть, так и смерть перешла во всех человеков, <i>потому</i> <i>что</i> в нем все согрешили.
+</p>
+<div class="num">13</div><p id="n13">Ибо <i>и</i> до закона грех был в мире; но грех не вменяется, когда нет закона.
+</p>
+<div class="num">14</div><p id="n14">Однако же смерть царствовала от Адама до Моисея и над несогрешившими подобно преступлению Адама, который есть образ будущего.
+</p>
+<div class="num">15</div><p id="n15">Но дар благодати не как преступление. Ибо если преступлением одного подверглись смерти многие, то тем более благодать Божия и дар по благодати одного Человека, Иисуса Христа, преизбыточествуют для многих.
+</p>
+<div class="num">16</div><p id="n16">И дар не как <i>суд</i> за одного согрешившего; ибо суд за одно <i>преступление</i> - к осуждению; а дар благодати - к оправданию от многих преступлений.
+</p>
+<div class="num">17</div><p id="n17">Ибо если преступлением одного смерть царствовала посредством одного, то тем более приемлющие обилие благодати и дар праведности будут царствовать в жизни посредством единого Иисуса Христа.
+</p>
+<div class="num">18</div><p id="n18">Посему, как преступлением одного всем человекам осуждение, так правдою одного всем человекам оправдание к жизни.
+</p>
+<div class="num">19</div><p id="n19">Ибо, как непослушанием одного человека сделались многие грешными, так и послушанием одного сделаются праведными многие.
+</p>
+<div class="num">20</div><p id="n20">Закон же пришел после, и таким образом умножилось преступление. А когда умножился грех, стала преизобиловать благодать,
+</p>
+<div class="num">21</div><p id="n21">дабы, как грех царствовал к смерти, так и благодать воцарилась через праведность к жизни вечной Иисусом Христом, Господом нашим.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="rom.6.ru.html">к главе 6</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mf.ru.html">Евангелие от Матфея</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Тогда Иисус возведен был Духом в пустыню, для искушения от диавола,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и, постившись сорок дней и сорок ночей, напоследок взалкал.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И приступил к Нему искуситель и сказал: если Ты Сын Божий, скажи, чтобы камни сии сделались хлебами.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Он же сказал ему в ответ: написано: не хлебом одним будет жить человек, но всяким словом, исходящим из уст Божиих.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Потом берет Его диавол в святой город и поставляет Его на крыле храма,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и говорит Ему: если Ты Сын Божий, бросься вниз, ибо написано: Ангелам Своим заповедает о Тебе, и на руках понесут Тебя, да не преткнешься о камень ногою Твоею.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Иисус сказал ему: написано также: не искушай Господа Бога твоего.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Опять берет Его диавол на весьма высокую гору и показывает Ему все царства мира и славу их,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и говорит Ему: всё это дам Тебе, если, пав, поклонишься мне.
+</p>
+<div class="num">10</div><p id="n10">Тогда Иисус говорит ему: отойди от Меня, сатана, ибо написано: Господу Богу твоему поклоняйся и Ему одному служи.
+</p>
+<div class="num">11</div><p id="n11">Тогда оставляет Его диавол, и се, Ангелы приступили и служили Ему.
+</p>
+<div class="num">12</div><p id="n12">Услышав же Иисус, что Иоанн отдан <i>под</i> <i>стражу,</i> удалился в Галилею
+</p>
+<div class="num">13</div><p id="n13">и, оставив Назарет, пришел и поселился в Капернауме приморском, в пределах Завулоновых и Неффалимовых,
+</p>
+<div class="num">14</div><p id="n14">да сбудется реченное через пророка Исаию, который говорит:
+</p>
+<div class="num">15</div><p id="n15">земля Завулонова и земля Неффалимова, на пути приморском, за Иорданом, Галилея языческая,
+</p>
+<div class="num">16</div><p id="n16">народ, сидящий во тьме, увидел свет великий, и сидящим в стране и тени смертной воссиял свет.
+</p>
+<div class="num">17</div><p id="n17">С того времени Иисус начал проповедовать и говорить: покайтесь, ибо приблизилось Царство Небесное.
+</p>
+<div class="num">18</div><p id="n18">Проходя же близ моря Галилейского, Он увидел двух братьев: Симона, называемого Петром, и Андрея, брата его, закидывающих сети в море, ибо они были рыболовы,
+</p>
+<div class="num">19</div><p id="n19">и говорит им: идите за Мною, и Я сделаю вас ловцами человеков.
+</p>
+<div class="num">20</div><p id="n20">И они тотчас, оставив сети, последовали за Ним.
+</p>
+<div class="num">21</div><p id="n21">Оттуда, идя далее, увидел Он других двух братьев, Иакова Зеведеева и Иоанна, брата его, в лодке с Зеведеем, отцом их, починивающих сети свои, и призвал их.
+</p>
+<div class="num">22</div><p id="n22">И они тотчас, оставив лодку и отца своего, последовали за Ним.
+</p>
+<div class="num">23</div><p id="n23">И ходил Иисус по всей Галилее, уча в синагогах их и проповедуя Евангелие Царствия, и исцеляя всякую болезнь и всякую немощь в людях.
+</p>
+<div class="num">24</div><p id="n24">И прошел о Нем слух по всей Сирии; и приводили к Нему всех немощных, одержимых различными болезнями и припадками, и бесноватых, и лунатиков, и расслабленных, и Он исцелял их.
+</p>
+<div class="num">25</div><p id="n25">И следовало за Ним множество народа из Галилеи и Десятиградия, и Иерусалима, и Иудеи, и из-за Иордана.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mf.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jn.ru.html">Евангелие от Иоанна</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 11
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Был болен некто Лазарь из Вифании, из селения, <i>где</i> <i>жили</i> Мария и Марфа, сестра ее.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Мария же, которой брат Лазарь был болен, была <i>та,</i> которая помазала Господа миром и отерла ноги Его волосами своими.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Сестры послали сказать Ему: Господи! вот, кого Ты любишь, болен.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Иисус, услышав <i>то,</i> сказал: эта болезнь не к смерти, но к славе Божией, да прославится через нее Сын Божий.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Иисус же любил Марфу и сестру ее и Лазаря.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Когда же услышал, что он болен, то пробыл два дня на том месте, где находился.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">После этого сказал ученикам: пойдем опять в Иудею.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ученики сказали Ему: Равви&#769;! давно ли Иудеи искали побить Тебя камнями, и Ты опять идешь туда?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Иисус отвечал: не двенадцать ли часов во дне? кто ходит днем, тот не спотыкается, потому что видит свет мира сего;
+</p>
+<div class="num">10</div><p id="n10">а кто ходит ночью, спотыкается, потому что нет света с ним.
+</p>
+<div class="num">11</div><p id="n11">Сказав это, говорит им потом: Лазарь, друг наш, уснул; но Я иду разбудить его.
+</p>
+<div class="num">12</div><p id="n12">Ученики Его сказали: Господи! если уснул, то выздоровеет.
+</p>
+<div class="num">13</div><p id="n13">Иисус говорил о смерти его, а они думали, что Он говорит о сне обыкновенном.
+</p>
+<div class="num">14</div><p id="n14">Тогда Иисус сказал им прямо: Лазарь умер;
+</p>
+<div class="num">15</div><p id="n15">и радуюсь за вас, что Меня не было там, дабы вы уверовали; но пойдем к нему.
+</p>
+<div class="num">16</div><p id="n16">Тогда Фома, иначе называемый Близнец, сказал ученикам: пойдем и мы умрем с ним.
+</p>
+<div class="num">17</div><p id="n17">Иисус, придя, нашел, что он уже четыре дня в гробе.
+</p>
+<div class="num">18</div><p id="n18">Вифания же была близ Иерусалима, стадиях в пятнадцати;
+</p>
+<div class="num">19</div><p id="n19">и многие из Иудеев пришли к Марфе и Марии утешать их <i>в</i> <i>печали</i> о брате их.
+</p>
+<div class="num">20</div><p id="n20">Марфа, услышав, что идет Иисус, пошла навстречу Ему; Мария же сидела дома.
+</p>
+<div class="num">21</div><p id="n21">Тогда Марфа сказала Иисусу: Господи! если бы Ты был здесь, не умер бы брат мой.
+</p>
+<div class="num">22</div><p id="n22">Но и теперь знаю, что чего Ты попросишь у Бога, даст Тебе Бог.
+</p>
+<div class="num">23</div><p id="n23">Иисус говорит ей: воскреснет брат твой.
+</p>
+<div class="num">24</div><p id="n24">Марфа сказала Ему: знаю, что воскреснет в воскресение, в последний день.
+</p>
+<div class="num">25</div><p id="n25">Иисус сказал ей: Я есмь воскресение и жизнь; верующий в Меня, если и умрет, оживет.
+</p>
+<div class="num">26</div><p id="n26">И всякий, живущий и верующий в Меня, не умрет вовек. Веришь ли сему?
+</p>
+<div class="num">27</div><p id="n27">Она говорит Ему: так, Господи! я верую, что Ты Христос, Сын Божий, грядущий в мир.
+</p>
+<div class="num">28</div><p id="n28">Сказав это, пошла и позвала тайно Марию, сестру свою, говоря: Учитель здесь и зовет тебя.
+</p>
+<div class="num">29</div><p id="n29">Она, как скоро услышала, поспешно встала и пошла к Нему.
+</p>
+<div class="num">30</div><p id="n30">Иисус еще не входил в селение, но был на том месте, где встретила Его Марфа.
+</p>
+<div class="num">31</div><p id="n31">Иудеи, которые были с нею в доме и утешали ее, видя, что Мария поспешно встала и вышла, пошли за нею, полагая, что она пошла на гроб - плакать там.
+</p>
+<div class="num">32</div><p id="n32">Мария же, придя туда, где был Иисус, и увидев Его, пала к ногам Его и сказала Ему: Господи! если бы Ты был здесь, не умер бы брат мой.
+</p>
+<div class="num">33</div><p id="n33">Иисус, когда увидел ее плачущую и пришедших с нею Иудеев плачущих, Сам восскорбел духом и возмутился
+</p>
+<div class="num">34</div><p id="n34">и сказал: где вы положили его? Говорят Ему: Господи! пойди и посмотри.
+</p>
+<div class="num">35</div><p id="n35">Иисус прослезился.
+</p>
+<div class="num">36</div><p id="n36">Тогда Иудеи говорили: смотри, как Он любил его.
+</p>
+<div class="num">37</div><p id="n37">А некоторые из них сказали: не мог ли Сей, отверзший очи слепому, сделать, чтобы и этот не умер?
+</p>
+<div class="num">38</div><p id="n38">Иисус же, опять скорбя внутренно, приходит ко гробу. То была пещера, и камень лежал на ней.
+</p>
+<div class="num">39</div><p id="n39">Иисус говорит: отнимите камень. Сестра умершего, Марфа, говорит Ему: Господи! уже смердит; ибо четыре дня, как он во гробе.
+</p>
+<div class="num">40</div><p id="n40">Иисус говорит ей: не сказал ли Я тебе, что, если будешь веровать, увидишь славу Божию?
+</p>
+<div class="num">41</div><p id="n41">Итак отняли камень <i>от</i> <i>пещеры,</i> где лежал умерший. Иисус же возвел очи к небу и сказал: Отче! благодарю Тебя, что Ты услышал Меня.
+</p>
+<div class="num">42</div><p id="n42">Я и знал, что Ты всегда услышишь Меня; но сказал <i>сие</i> для народа, здесь стоящего, чтобы поверили, что Ты послал Меня.
+</p>
+<div class="num">43</div><p id="n43">Сказав это, Он воззвал громким голосом: Лазарь! иди вон.
+</p>
+<div class="num">44</div><p id="n44">И вышел умерший, обвитый по рукам и ногам погребальными пеленами, и лице его обвязано было платком. Иисус говорит им: развяжите его, пусть идет.
+</p>
+<div class="num">45</div><p id="n45">Тогда многие из Иудеев, пришедших к Марии и видевших, что сотворил Иисус, уверовали в Него.
+</p>
+<div class="num">46</div><p id="n46">А некоторые из них пошли к фарисеям и сказали им, что сделал Иисус.
+</p>
+<div class="num">47</div><p id="n47">Тогда первосвященники и фарисеи собрали совет и говорили: что нам делать? Этот Человек много чудес творит.
+</p>
+<div class="num">48</div><p id="n48">Если оставим Его так, то все уверуют в Него, и придут Римляне и овладеют и местом нашим и народом.
+</p>
+<div class="num">49</div><p id="n49">Один же из них, некто Каиафа, будучи на тот год первосвященником, сказал им: вы ничего не знаете,
+</p>
+<div class="num">50</div><p id="n50">и не подумаете, что лучше нам, чтобы один человек умер за людей, нежели чтобы весь народ погиб.
+</p>
+<div class="num">51</div><p id="n51">Сие же он сказал не от себя, но, будучи на тот год первосвященником, предсказал, что Иисус умрет за народ,
+</p>
+<div class="num">52</div><p id="n52">и не только за народ, но чтобы и рассеянных чад Божиих собрать воедино.
+</p>
+<div class="num">53</div><p id="n53">С этого дня положили убить Его.
+</p>
+<div class="num">54</div><p id="n54">Посему Иисус уже не ходил явно между Иудеями, а пошел оттуда в страну близ пустыни, в город, называемый Ефраим, и там оставался с учениками Своими.
+</p>
+<div class="num">55</div><p id="n55">Приближалась Пасха Иудейская, и многие из всей страны пришли в Иерусалим перед Пасхою, чтобы очиститься.
+</p>
+<div class="num">56</div><p id="n56">Тогда искали Иисуса и, стоя в храме, говорили друг другу: как вы думаете? не придет ли Он на праздник?
+</p>
+<div class="num">57</div><p id="n57">Первосвященники же и фарисеи дали приказание, что если кто узнает, где Он будет, то объявил бы, дабы взять Его.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jn.12.ru.html">к главе 12</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.ru.html">Псалтирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Псалом 68
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Начальнику хора. На Шошанниме. Псалом Давида.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Спаси меня, Боже, ибо воды дошли до души [моей].
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Я погряз в глубоком болоте, и не на чем стать; вошел во глубину вод, и быстрое течение их увлекает меня.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Я изнемог от вопля, засохла гортань моя, истомились глаза мои от ожидания Бога [моего].
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Ненавидящих меня без вины больше, нежели волос на голове моей; враги мои, преследующие меня несправедливо, усилились; чего я не отнимал, то должен отдать.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Боже! Ты знаешь безумие мое, и грехи мои не сокрыты от Тебя.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Да не постыдятся во мне все, надеющиеся на Тебя, Господи, Боже сил. Да не посрамятся во мне ищущие Тебя, Боже Израилев,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">ибо ради Тебя несу я поношение, и бесчестием покрывают лице мое.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Чужим стал я для братьев моих и посторонним для сынов матери моей,
+</p>
+<div class="num">10</div><p id="n10">ибо ревность по доме Твоем снедает меня, и злословия злословящих Тебя падают на меня;
+</p>
+<div class="num">11</div><p id="n11">и пла&#769;чу, постясь душею моею, и это ставят в поношение мне;
+</p>
+<div class="num">12</div><p id="n12">и возлагаю на себя вместо одежды вретище,- и делаюсь для них притчею;
+</p>
+<div class="num">13</div><p id="n13">о мне толкуют сидящие у ворот, и поют в песнях пьющие вино.
+</p>
+<div class="num">14</div><p id="n14">А я с молитвою моею к Тебе, Господи; во время благоугодное, Боже, по великой благости Твоей услышь меня в истине спасения Твоего;
+</p>
+<div class="num">15</div><p id="n15">извлеки меня из тины, чтобы не погрязнуть мне; да избавлюсь от ненавидящих меня и от глубоких вод;
+</p>
+<div class="num">16</div><p id="n16">да не увлечет меня стремление вод, да не поглотит меня пучина, да не затворит надо мною пропасть зева своего.
+</p>
+<div class="num">17</div><p id="n17">Услышь меня, Господи, ибо блага милость Твоя; по множеству щедрот Твоих призри на меня;
+</p>
+<div class="num">18</div><p id="n18">не скрывай лица Твоего от раба Твоего, ибо я скорблю; скоро услышь меня;
+</p>
+<div class="num">19</div><p id="n19">приблизься к душе моей, избавь ее; ради врагов моих спаси меня.
+</p>
+<div class="num">20</div><p id="n20">Ты знаешь поношение мое, стыд мой и посрамление мое: враги мои все пред Тобою.
+</p>
+<div class="num">21</div><p id="n21">Поношение сокрушило сердце мое, и я изнемог, ждал сострадания, но нет его,- утешителей, но не нахожу.
+</p>
+<div class="num">22</div><p id="n22">И дали мне в пищу желчь, и в жажде моей напоили меня уксусом.
+</p>
+<div class="num">23</div><p id="n23">Да будет трапеза их сетью им, и мирное пиршество их - западнею;
+</p>
+<div class="num">24</div><p id="n24">да помрачатся глаза их, чтоб им не видеть, и чресла их расслабь навсегда;
+</p>
+<div class="num">25</div><p id="n25">излей на них ярость Твою, и пламень гнева Твоего да обымет их;
+</p>
+<div class="num">26</div><p id="n26">жилище их да будет пусто, и в шатрах их да не будет живущих,
+</p>
+<div class="num">27</div><p id="n27">ибо, кого Ты поразил, они <i>еще</i> преследуют, и страдания уязвленных Тобою умножают.
+</p>
+<div class="num">28</div><p id="n28">Приложи беззаконие к беззаконию их, и да не войдут они в правду Твою;
+</p>
+<div class="num">29</div><p id="n29">да изгладятся они из книги живых и с праведниками да не напишутся.
+</p>
+<div class="num">30</div><p id="n30">А я беден и страдаю; помощь Твоя, Боже, да восставит меня.
+</p>
+<div class="num">31</div><p id="n31">Я буду славить имя Бога [моего] в песни, буду превозносить Его в славословии,
+</p>
+<div class="num">32</div><p id="n32">и будет это благоугоднее Господу, нежели вол, нежели телец с рогами и с копытами.
+</p>
+<div class="num">33</div><p id="n33">Увидят <i>это</i> страждущие и возрадуются. И оживет сердце ваше, ищущие Бога,
+</p>
+<div class="num">34</div><p id="n34">ибо Господь внемлет нищим и не пренебрегает узников Своих.
+</p>
+<div class="num">35</div><p id="n35">Да восхвалят Его небеса и земля, моря и все движущееся в них;
+</p>
+<div class="num">36</div><p id="n36">ибо спасет Бог Сион, создаст города Иудины, и поселятся там и наследуют его,
+</p>
+<div class="num">37</div><p id="n37">и потомство рабов Его утвердится в нем, и любящие имя Его будут поселяться на нем.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.69.ru.html">к псалму 69</a></div></div>
+
+</body>
+</html>

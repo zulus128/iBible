@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="act.ru.html">Деяния Апостолов</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 19
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Во время пребывания Аполлоса в Коринфе Павел, пройдя верхние страны, прибыл в Ефес и, найдя <i>там</i> некоторых учеников,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">сказал им: приняли ли вы Святаго Духа, уверовав? Они же сказали ему: мы даже и не слыхали, есть ли Дух Святый.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Он сказал им: во что же вы крестились? Они отвечали: во Иоанново крещение.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Павел сказал: Иоанн крестил крещением покаяния, говоря людям, чтобы веровали в Грядущего по нем, то есть во Христа Иисуса.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Услышав это, они крестились во имя Господа Иисуса,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и, когда Павел возложил на них руки, нисшел на них Дух Святый, и они стали говорить <i>иными</i> языками и пророчествовать.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Всех их было человек около двенадцати.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Придя в синагогу, он небоязненно проповедовал три месяца, беседуя и удостоверяя о Царствии Божием.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Но как некоторые ожесточились и не верили, злословя путь Господень перед народом, то он, оставив их, отделил учеников, и ежедневно проповедовал в училище некоего Тиранна.
+</p>
+<div class="num">10</div><p id="n10">Это продолжалось до двух лет, так что все жители Асии слышали проповедь о Господе Иисусе, как Иудеи, так и Еллины.
+</p>
+<div class="num">11</div><p id="n11">Бог же творил немало чудес руками Павла,
+</p>
+<div class="num">12</div><p id="n12">так что на больных возлагали платки и опоясания с тела его, и у них прекращались болезни, и злые духи выходили из них.
+</p>
+<div class="num">13</div><p id="n13">Даже некоторые из скитающихся Иудейских заклинателей стали употреблять над имеющими злых духов имя Господа Иисуса, говоря: заклинаем вас Иисусом, Которого Павел проповедует.
+</p>
+<div class="num">14</div><p id="n14">Это делали какие-то семь сынов Иудейского первосвященника Скевы.
+</p>
+<div class="num">15</div><p id="n15">Но злой дух сказал в ответ: Иисуса знаю, и Павел мне известен, а вы кто?
+</p>
+<div class="num">16</div><p id="n16">И бросился на них человек, в котором был злой дух, и, одолев их, взял над ними такую силу, что они, нагие и избитые, выбежали из того дома.
+</p>
+<div class="num">17</div><p id="n17">Это сделалось известно всем живущим в Ефесе Иудеям и Еллинам, и напал страх на всех их, и величаемо было имя Господа Иисуса.
+</p>
+<div class="num">18</div><p id="n18">Многие же из уверовавших приходили, исповедуя и открывая дела свои.
+</p>
+<div class="num">19</div><p id="n19">А из занимавшихся чародейством довольно многие, собрав книги свои, сожгли перед всеми, и сложили цены их, и оказалось их на пятьдесят тысяч <i>драхм.</i>
+</p>
+<div class="num">20</div><p id="n20">С такою силою возрастало и возмогало слово Господне.
+</p>
+<div class="num">21</div><p id="n21">Когда же это совершилось, Павел положил в духе, пройдя Македонию и Ахаию, идти в Иерусалим, сказав: побывав там, я должен видеть и Рим.
+</p>
+<div class="num">22</div><p id="n22">И, послав в Македонию двоих из служивших ему, Тимофея и Ераста, сам остался на время в Асии.
+</p>
+<div class="num">23</div><p id="n23">В то время произошел немалый мятеж против пути Господня,
+</p>
+<div class="num">24</div><p id="n24">ибо некто серебряник, именем Димитрий, делавший серебряные храмы Артемиды и доставлявший художникам немалую прибыль,
+</p>
+<div class="num">25</div><p id="n25">собрав их и других подобных ремесленников, сказал: друзья! вы знаете, что от этого ремесла зависит благосостояние наше;
+</p>
+<div class="num">26</div><p id="n26">между тем вы видите и слышите, что не только в Ефесе, но почти во всей Асии этот Павел своими убеждениями совратил немалое число людей, говоря, что делаемые руками человеческими не суть боги.
+</p>
+<div class="num">27</div><p id="n27">А это нам угрожает тем, что не только ремесло наше придет в презрение, но и храм великой богини Артемиды ничего не будет значить, и испровергнется величие той, которую почитает вся Асия и вселенная.
+</p>
+<div class="num">28</div><p id="n28">Выслушав это, они исполнились ярости и стали кричать, говоря: велика Артемида Ефесская!
+</p>
+<div class="num">29</div><p id="n29">И весь город наполнился смятением. Схватив Македонян Гаия и Аристарха, спутников Павловых, они единодушно устремились на зрелище.
+</p>
+<div class="num">30</div><p id="n30">Когда же Павел хотел войти в народ, ученики не допустили его.
+</p>
+<div class="num">31</div><p id="n31">Также и некоторые из Асийских начальников, будучи друзьями его, послав к нему, просили не показываться на зрелище.
+</p>
+<div class="num">32</div><p id="n32">Между тем одни кричали одно, а другие другое, ибо собрание было беспорядочное, и большая часть <i>собравшихся</i> не знали, зачем собрались.
+</p>
+<div class="num">33</div><p id="n33">По предложению Иудеев, из народа вызван был Александр. Дав знак рукою, Александр хотел говорить к народу.
+</p>
+<div class="num">34</div><p id="n34">Когда же узнали, что он Иудей, то закричали все в один голос, и около двух часов кричали: велика Артемида Ефесская!
+</p>
+<div class="num">35</div><p id="n35">Блюститель же порядка, утишив народ, сказал: мужи Ефесские! какой человек не знает, что город Ефес есть служитель великой богини Артемиды и Диопета?
+</p>
+<div class="num">36</div><p id="n36">Если же в этом нет спора, то надобно вам быть спокойными и не поступать опрометчиво.
+</p>
+<div class="num">37</div><p id="n37">А вы привели этих мужей, которые ни храма Артемидина не обокрали, ни богини вашей не хулили.
+</p>
+<div class="num">38</div><p id="n38">Если же Димитрий и другие с ним художники имеют жалобу на кого-нибудь, то есть судебные собрания и есть проконсулы: пусть жалуются друг на друга.
+</p>
+<div class="num">39</div><p id="n39">А если вы ищете чего-нибудь другого, то это будет решено в законном собрании.
+</p>
+<div class="num">40</div><p id="n40">Ибо мы находимся в опасности - за происшедшее ныне быть обвиненными в возмущении, так как нет никакой причины, которою мы могли бы оправдать такое сборище. Сказав это, он распустил собрание.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="act.20.ru.html">к главе 20</a></div></div>
+
+</body>
+</html>

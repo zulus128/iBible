@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="act.ru.html">Деяния Апостолов</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 5
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Некоторый же муж, именем Анания, с женою своею Сапфирою, продав имение,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">утаил из цены, с ведома и жены своей, а некоторую часть принес и положил к ногам Апостолов.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Но Петр сказал: Анания! Для чего <i>ты</i> <i>допустил</i> сатане вложить в сердце твое <i>мысль</i> солгать Духу Святому и утаить из цены земли?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Чем ты владел, не твое ли было, и приобретенное продажею не в твоей ли власти находилось? Для чего ты положил это в сердце твоем? Ты солгал не человекам, а Богу.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Услышав сии слова, Анания пал бездыханен; и великий страх объял всех, слышавших это.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И встав, юноши приготовили его к погребению и, вынеся, похоронили.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Часа через три после сего пришла и жена его, не зная о случившемся.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Петр же спросил ее: скажи мне, за столько ли продали вы землю? Она сказала: да, за столько.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Но Петр сказал ей: что это согласились вы искусить Духа Господня? вот, входят в двери погребавшие мужа твоего; и тебя вынесут.
+</p>
+<div class="num">10</div><p id="n10">Вдруг она упала у ног его и испустила дух. И юноши, войдя, нашли ее мертвою и, вынеся, похоронили подле мужа ее.
+</p>
+<div class="num">11</div><p id="n11">И великий страх объял всю церковь и всех слышавших это.
+</p>
+<div class="num">12</div><p id="n12">Руками же Апостолов совершались в народе многие знамения и чудеса; и все единодушно пребывали в притворе Соломоновом.
+</p>
+<div class="num">13</div><p id="n13">Из посторонних же никто не смел пристать к ним, а народ прославлял их.
+</p>
+<div class="num">14</div><p id="n14">Верующих же более и более присоединялось к Господу, множество мужчин и женщин,
+</p>
+<div class="num">15</div><p id="n15">так что выносили больных на улицы и полагали на постелях и кроватях, дабы хотя тень проходящего Петра осенила кого из них.
+</p>
+<div class="num">16</div><p id="n16">Сходились также в Иерусалим многие из окрестных городов, неся больных и нечистыми духами одержимых, которые и исцелялись все.
+</p>
+<div class="num">17</div><p id="n17">Первосвященник же и с ним все, принадлежавшие к ереси саддукейской, исполнились зависти,
+</p>
+<div class="num">18</div><p id="n18">и наложили руки свои на Апостолов, и заключили их в народную темницу.
+</p>
+<div class="num">19</div><p id="n19">Но Ангел Господень ночью отворил двери темницы и, выведя их, сказал:
+</p>
+<div class="num">20</div><p id="n20">идите и, став в храме, говорите народу все сии слова жизни.
+</p>
+<div class="num">21</div><p id="n21">Они, выслушав, вошли утром в храм и учили. Между тем первосвященник и которые с ним, придя, созвали синедрион и всех старейшин из сынов Израилевых и послали в темницу привести <i>Апостолов.</i>
+</p>
+<div class="num">22</div><p id="n22">Но служители, придя, не нашли их в темнице и, возвратившись, донесли,
+</p>
+<div class="num">23</div><p id="n23">говоря: темницу мы нашли запертою со всею предосторожностью и стражей стоящими перед дверями; но, отворив, не нашли в ней никого.
+</p>
+<div class="num">24</div><p id="n24">Когда услышали эти слова первосвященник, начальник стражи и <i>прочие</i> первосвященники, недоумевали, что бы это значило.
+</p>
+<div class="num">25</div><p id="n25">Пришел же некто и донес им, говоря: вот, мужи, которых вы заключили в темницу, стоят в храме и учат народ.
+</p>
+<div class="num">26</div><p id="n26">Тогда начальник стражи пошел со служителями и привел их без принуждения, потому что боялись народа, чтобы не побили их камнями.
+</p>
+<div class="num">27</div><p id="n27">Приведя же их, поставили в синедрионе; и спросил их первосвященник, говоря:
+</p>
+<div class="num">28</div><p id="n28">не запретили ли мы вам накрепко учить о имени сем? и вот, вы наполнили Иерусалим учением вашим и хотите навести на нас кровь Того Человека.
+</p>
+<div class="num">29</div><p id="n29">Петр же и Апостолы в ответ сказали: должно повиноваться больше Богу, нежели человекам.
+</p>
+<div class="num">30</div><p id="n30">Бог отцов наших воскресил Иисуса, Которого вы умертвили, повесив на древе.
+</p>
+<div class="num">31</div><p id="n31">Его возвысил Бог десницею Своею в Начальника и Спасителя, дабы дать Израилю покаяние и прощение грехов.
+</p>
+<div class="num">32</div><p id="n32">Свидетели Ему в сем мы и Дух Святый, Которого Бог дал повинующимся Ему.
+</p>
+<div class="num">33</div><p id="n33">Слышав это, они разрывались от гнева и умышляли умертвить их.
+</p>
+<div class="num">34</div><p id="n34">Встав же в синедрионе, некто фарисей, именем Гамалиил, законоучитель, уважаемый всем народом, приказал вывести Апостолов на короткое время,
+</p>
+<div class="num">35</div><p id="n35">а им сказал: мужи Израильские! подумайте сами с собою о людях сих, что&#769; вам с ними делать.
+</p>
+<div class="num">36</div><p id="n36">Ибо незадолго перед сим явился Февда, выдавая себя за кого-то великого, и к нему пристало около четырехсот человек; но он был убит, и все, которые слушались его, рассеялись и исчезли.
+</p>
+<div class="num">37</div><p id="n37">После него во время переписи явился Иуда Галилеянин и увлек за собою довольно народа; но он погиб, и все, которые слушались его, рассыпались.
+</p>
+<div class="num">38</div><p id="n38">И ныне, говорю вам, отстаньте от людей сих и оставьте их; ибо если это предприятие и это дело - от человеков, то оно разрушится,
+</p>
+<div class="num">39</div><p id="n39">а если от Бога, то вы не можете разрушить его; <i>берегитесь,</i> чтобы вам не оказаться и богопротивниками.
+</p>
+<div class="num">40</div><p id="n40">Они послушались его; и, призвав Апостолов, били <i>их</i> и, запретив им говорить о имени Иисуса, отпустили их.
+</p>
+<div class="num">41</div><p id="n41">Они же пошли из синедриона, радуясь, что за имя Господа Иисуса удостоились принять бесчестие.
+</p>
+<div class="num">42</div><p id="n42">И всякий день в храме и по домам не переставали учить и благовествовать об Иисусе Христе.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="act.6.ru.html">к главе 6</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para2.ru.html">Вторая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 15
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Тогда на Азарию, сына Одедова, сошел Дух Божий,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и вышел он навстречу Асе и сказал ему: послушайте меня, Аса и весь Иуда и Вениамин: Господь с вами, когда вы с Ним; и если будете искать Его, Он будет найден вами; если же оставите Его, Он оставит вас.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Многие дни Израиль <i>будет</i> без Бога истинного, и без священника учащего, и без закона.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Но когда он обратится в тесноте своей к Господу Богу Израилеву и взыщет Его, Он даст им найти Себя.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">В те времена не будет мира ни выходящему, ни входящему, ибо великие волнения будут у всех жителей земель;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">народ будет сражаться с народом, и город с городом, потому что Бог приведет их в смятение всякими бедствиями.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Но вы укрепитесь, и пусть не ослабевают руки ваши, потому что есть возмездие за дела ваши.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Когда услышал Аса слова сии и пророчество [Азарии], <i>сына</i> Одеда пророка, то ободрился и изверг мерзости <i>языческие</i> из всей земли Иудиной и Вениаминовой и из городов, которые он взял на горе Ефремовой, и обновил жертвенник Господень, который пред притвором Господним.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И собрал всего Иуду и Вениамина и живущих с ними переселенцев от Ефрема и Манассии и Симеона; ибо многие от Израиля перешли к нему, когда увидели, что Господь, Бог его, с ним.
+</p>
+<div class="num">10</div><p id="n10">И собрались в Иерусалим в третий месяц, в пятнадцатый год царствования Асы;
+</p>
+<div class="num">11</div><p id="n11">и принесли в день тот жертву Господу из добычи, которую привели, из крупного скота семьсот и из мелкого семь тысяч;
+</p>
+<div class="num">12</div><p id="n12">и вступили в завет, чтобы взыскать Господа Бога отцов своих от всего сердца своего и от всей души своей;
+</p>
+<div class="num">13</div><p id="n13">а всякий, кто не станет искать Господа Бога Израилева, должен умереть, малый ли он или большой, мужчина ли или женщина.
+</p>
+<div class="num">14</div><p id="n14">И клялись Господу громогласно и с восклицанием и при <i>звуке</i> труб и рогов.
+</p>
+<div class="num">15</div><p id="n15">И радовались все Иудеи сей клятве, потому что от всего сердца своего клялись и со всем усердием взыскали Его, и Он дал им найти Себя. И дал им Господь покой со всех сторон.
+</p>
+<div class="num">16</div><p id="n16">И Мааху, мать свою, царь Аса лишил царского достоинства за то, что она сделала истукан для дубравы. И ниспроверг Аса истукан ее, и изрубил в куски, и сжег на долине Кедрона.
+</p>
+<div class="num">17</div><p id="n17">Хотя высоты не были отменены у Израиля, но сердце Асы было вполне предано <i>Господу</i> во все дни его.
+</p>
+<div class="num">18</div><p id="n18">И внес он посвященное отцом его и свое посвящение в дом Божий, серебро и золото и сосуды.
+</p>
+<div class="num">19</div><p id="n19">И не было войны до тридцать пятого года царствования Асы.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para2.16.ru.html">к главе 16</a></div></div>
+
+</body>
+</html>

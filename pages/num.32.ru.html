@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="num.ru.html">Числа</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 32
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">У сынов Рувимовых и у сынов Гадовых стад было весьма много; и увидели они, что земля Иазер и земля Галаад есть место <i>годное</i> для стад;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и пришли сыны Гадовы и сыны Рувимовы и сказали Моисею и Елеазару священнику и князьям общества, говоря:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Атароф и Дивон, и Иазер, и Нимра, и Есевон, и Елеале, и Севам, и Нево, и Веон,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">земля, которую Господь поразил пред обществом Израилевым, есть земля <i>годная</i> для стад, а у рабов твоих есть стада.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И сказали: если мы нашли благоволение в глазах твоих, отдай землю сию рабам твоим во владение; не переводи нас чрез Иордан.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказал Моисей сынам Гадовым и сынам Рувимовым: братья ваши пойдут на войну, а вы останетесь здесь?
+</p>
+<div class="num">&nbsp;7</div><p id="n7">для чего вы отвращаете сердце сынов Израилевых от перехода в землю, которую дает им Господь?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">так поступили отцы ваши, когда я посылал их из Кадес-Варни для обозрения земли:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">они доходили до долины Есхол, и видели землю, и отвратили сердце сынов Израилевых, чтобы не шли они в землю, которую Господь дает им;
+</p>
+<div class="num">10</div><p id="n10">и воспылал в тот день гнев Господа, и поклялся Он, говоря:
+</p>
+<div class="num">11</div><p id="n11">люди сии, вышедшие из Египта, от двадцати лет и выше [знающие добро и зло,] не увидят земли, о которой Я клялся Аврааму, Исааку и Иакову, потому что они не повиновались Мне,
+</p>
+<div class="num">12</div><p id="n12">кроме Халева, сына Иефонниина, Кенезеянина, и Иисуса, сына Навина, потому что они повиновались Господу.
+</p>
+<div class="num">13</div><p id="n13">И воспылал гнев Господа на Израиля, и водил Он их по пустыне сорок лет, доколе не кончился весь род, сделавший зло в очах Господних.
+</p>
+<div class="num">14</div><p id="n14">И вот, вместо отцов ваших восстали вы, отродье грешников, чтоб усилить еще ярость гнева Господня на Израиля.
+</p>
+<div class="num">15</div><p id="n15">Если вы отвратитесь от Него, то Он опять оставит его в пустыне, и вы погубите весь народ сей.
+</p>
+<div class="num">16</div><p id="n16">И подошли они к нему и сказали: мы построим здесь овчие дворы для стад наших и города для детей наших;
+</p>
+<div class="num">17</div><p id="n17">сами же мы первые вооружимся и пойдем пред сынами Израилевыми, доколе не приведем их в места их; а дети наши пусть останутся в укрепленных городах, <i>для</i> <i>безопасности</i> от жителей земли;
+</p>
+<div class="num">18</div><p id="n18">не возвратимся в домы наши, доколе не вступят сыны Израилевы каждый в удел свой;
+</p>
+<div class="num">19</div><p id="n19">ибо мы не возьмем с ними удела по ту сторону Иордана и далее, если удел нам достанется по эту сторону Иордана, к востоку.
+</p>
+<div class="num">20</div><p id="n20">И сказал им Моисей: если вы это сделаете, если вооруженные пойдете на войну пред Господом,
+</p>
+<div class="num">21</div><p id="n21">и пойдет каждый из вас вооруженный за Иордан пред Господом, доколе не истребит Он врагов Своих пред Собою,
+</p>
+<div class="num">22</div><p id="n22">и покорена будет земля пред Господом, то после возвратитесь и будете неповинны пред Господом и пред Израилем, и будет земля сия у вас во владении пред Господом;
+</p>
+<div class="num">23</div><p id="n23">если же не сделаете так, то согрешите пред Господом, и испытаете <i>наказание</i> за грех ваш, которое постигнет вас;
+</p>
+<div class="num">24</div><p id="n24">стройте себе города для детей ваших и дворы для овец ваших и делайте, что произнесено устами вашими.
+</p>
+<div class="num">25</div><p id="n25">И сказали сыны Гадовы и сыны Рувимовы Моисею: рабы твои сделают, как повелевает господин наш;
+</p>
+<div class="num">26</div><p id="n26">дети наши, жены наши, стада наши и весь скот наш останутся тут в городах Галаада,
+</p>
+<div class="num">27</div><p id="n27">а рабы твои, все, вооружившись, как воины, пойдут пред Господом на войну, как говорит господин наш.
+</p>
+<div class="num">28</div><p id="n28">И дал Моисей о них повеление Елеазару священнику и Иисусу, сыну Навину, и начальникам племен сынов Израилевых,
+</p>
+<div class="num">29</div><p id="n29">и сказал им Моисей: если сыны Гадовы и сыны Рувимовы перейдут с вами за Иордан, все вооружившись на войну пред Господом, и покорена будет пред вами земля, то отдайте им землю Галаад во владение;
+</p>
+<div class="num">30</div><p id="n30">если же не пойдут они с вами вооруженные [на войну пред Господом, то пошлите пред собою имение их, жен их и скот их в землю Ханаанскую], и они получат владение вместе с вами в земле Ханаанской.
+</p>
+<div class="num">31</div><p id="n31">И отвечали сыны Гадовы и сыны Рувимовы и сказали: как сказал Господь рабам твоим, так и сделаем;
+</p>
+<div class="num">32</div><p id="n32">мы пойдем вооруженные пред Господом в землю Ханаанскую, а удел владения нашего пусть будет по эту сторону Иордана.
+</p>
+<div class="num">33</div><p id="n33">И отдал Моисей им, сынам Гадовым и сынам Рувимовым, и половине колена Манассии, сына Иосифова, царство Сигона, царя Аморрейского, и царство Ога, царя Васанского, землю с городами ее и окрестностями,- города земли во все стороны.
+</p>
+<div class="num">34</div><p id="n34">И построили сыны Гадовы Дивон и Атароф, и Ароер,
+</p>
+<div class="num">35</div><p id="n35">и Атароф-Шофан, и Иазер, и Иогбегу,
+</p>
+<div class="num">36</div><p id="n36">и Беф-Нимру и Беф-Гаран, города укрепленные и дворы для овец.
+</p>
+<div class="num">37</div><p id="n37">И сыны Рувимовы построили Есевон, Елеале, Кириафаим,
+</p>
+<div class="num">38</div><p id="n38">и Нево, и Ваал-Меон, которых имена переменены, и Сивму, и дали имена городам, которые они построили.
+</p>
+<div class="num">39</div><p id="n39">И пошли сыны Махира, сына Манассиина, в Галаад, и взяли его, и выгнали Аморреев, которые были в нем;
+</p>
+<div class="num">40</div><p id="n40">и отдал Моисей Галаад Махиру, сыну Манассии, и он поселился в нем.
+</p>
+<div class="num">41</div><p id="n41">И Иаир, сын Манассии, пошел и взял селения их, и назвал их: селения Иаировы.
+</p>
+<div class="num">42</div><p id="n42">И Новах пошел и взял Кенаф и зависящие от него города, и назвал его своим именем: Новах.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="num.33.ru.html">к главе 33</a></div></div>
+
+</body>
+</html>

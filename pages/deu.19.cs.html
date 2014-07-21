@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="deu.cs.html">Кни1га пsтаz мwmсeова. Второзак0ніе</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA f7i
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Е#гдa же погуби1тъ гDь бGъ тв0й kзhки, и4хже гDь бGъ тв0й даeтъ тебЁ зeмлю, и3 наслёдиши и5хъ и3 всели1шисz во градёхъ и4хъ и3 въ домёхъ и4хъ,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">три2 грaды да tлучи1ши себЁ среди2 земли2 твоеS, ю4же гDь бGъ тв0й даeтъ тебЁ въ наслёдіе.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ўгот0ви себЁ пyть, и3 на тр0е раздэли2 предёлы земли2 твоеS, ю4же раздэлsетъ тебЁ гDь бGъ тв0й: и3 да бyдетъ ўбёжище тaмw всsкому ўбjйцэ.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Сіe же да бyдетъ заповёданіе ўбjйцэ, и4же ѓще ўбэжи1тъ тaмw, и3 жи1въ бyдетъ: и4же ѓще ўбіeтъ бли1жнzго своего2 не вёдz, и3 сeй не ненави1дэ є3го2 прeжде вчерaшнzгw днE и3 трeтіzгw,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и3 и4же ѓще п0йдетъ съ п0другомъ свои1мъ въ лёсъ собирaти дровA, и3 поползнeтсz рукA є3гw2 съ сэки1рою сэкyщагw дровA, и3 спaдши сэки1ра съ топори1ща ўлучи1тъ п0друга є3гw2, и3 ќмретъ, сeй да ўбэжи1тъ во є3ди1нъ t градHвъ си1хъ, и3 жи1въ да бyдетъ:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">да не погнaвъ ќжикъ кр0ве в8слёдъ ўби1вшагw, ћкw разгори1тсz сeрдце є3мY, и3 пости1гнетъ є3го2, ѓще должaйшій бyдетъ пyть, и3 ўбіeтъ дyшу є3гw2, и3 ќмретъ: и3 семY нёсть сyдъ смeртный, понeже не бЁ ненави1дz є3го2 прeжде вчерaшнzгw и3 трeтіzгw днE:
+</p>
+<div class="num">&nbsp;7</div><p id="n7">сегw2 рaди заповёдаю ѓзъ тебЁ сл0во сіE, глаг0лz: три2 грaды да tлучи1ши себЁ.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ѓще же разшири1тъ гDь бGъ тв0й предёлы <nobr>тво‰,</nobr> ћкоже клsтсz nтцє1мъ твои6мъ, и3 дaстъ тебЁ гDь всю2 зeмлю, ю4же речE дaти nтцє1мъ твои6мъ,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">ѓще послyшаеши твори1ти <nobr>вс‰</nobr> зaпwвэди <nobr>сі‰,</nobr> ±же ѓзъ заповёдаю тебЁ днeсь, люби1ти гDа бGа твоего2, ходи1ти во всёхъ путeхъ є3гw2 <nobr>вс‰</nobr> дни6: и3 да приложи1ши себЁ є3щE три2 грaды къ си6мъ тріeмъ градHмъ,
+</p>
+<div class="num">10</div><p id="n10">и3 да не проліeтсz кр0вь безви1нна въ земли2 твоeй, ю4же гDь бGъ тв0й даeтъ тебЁ въ жрeбій, и3 да не бyдетъ въ тебЁ кр0ви пови1ненъ.
+</p>
+<div class="num">11</div><p id="n11">Ѓще же бyдетъ ў тебє2 человёкъ ненави1дzй бли1жнzго своего2, и3 навётъ сотвори1тъ нaнь, и3 востaнетъ нaнь, и3 порази1тъ дyшу є3гw2, и3 ќмретъ, и3 вбёгнетъ во є3ди1нъ t градHвъ си1хъ,
+</p>
+<div class="num">12</div><p id="n12">да п0слютъ старBйшины грaда тогw2, и3 в0змутъ є3го2 tтyду, и3 да предадsтъ є3го2 въ рyцэ ќжикwвъ кр0ве, и3 да ќмретъ:
+</p>
+<div class="num">13</div><p id="n13">да не пощади1тъ є3гw2 џко твоE, и3 да њчи1стиши кр0вь непови1нную t <nobr>ї}лz,</nobr> и3 блaго бyдетъ тебЁ.
+</p>
+<div class="num">14</div><p id="n14">Да не предви1жеши предёлwвъ бли1жнzгw своегw2, ±же постaвиша nтцы2 твои2 въ наслёдіи твоeмъ, є4же наслёдовалъ є3си2 въ земли2, ю4же гDь бGъ тв0й даeтъ тебЁ во жрeбій.
+</p>
+<div class="num">15</div><p id="n15">Да не пребyдетъ свидётель є3ди1нъ во свидётелство на человёка по всsкой њби1дэ и3 по всsкому преступлeнію и3 по всsкому грэхY, и4мже ѓще согрэши1тъ: при ўстёхъ двою2 свидётелей и3 при ўстёхъ тріeхъ свидётелей да стaнетъ всsкъ глаг0лъ.
+</p>
+<div class="num">16</div><p id="n16">Ѓще же востaнетъ свидётель непрaведенъ на человёка, глаг0лz на него2 нечeстіе,
+</p>
+<div class="num">17</div><p id="n17">да стaнутъ џба человBка, и5мже є4сть прS, пред8 гDемъ и3 пред8 жєрцы2 и3 пред8 судіsми, и5же бyдутъ въ ты6z дни6,
+</p>
+<div class="num">18</div><p id="n18">и3 да и3спытaютъ и5хъ судіи6 прилёжнw, и3 сE, свидётель непрaведенъ свидётелствова непрaвду, востA на брaта своего2:
+</p>
+<div class="num">19</div><p id="n19">да сотвори1те є3мY, ћкоже и3 џнъ ўмhсли сотвори1ти супроти1въ брaта своегw2, и3 и3зми1те ѕл0е t вaсъ самёхъ:
+</p>
+<div class="num">20</div><p id="n20">да и3 пр0чіи ўслhшавше ўбоsтсz, и3 не приложaтъ ктомY твори1ти словесE ѕлaгw сегw2 въ вaсъ:
+</p>
+<div class="num">21</div><p id="n21">да не пощади1тъ є3гw2 џко твоE: дyшу за дyшу, џко за џко, зyбъ за зyбъ, рyку за рyку, н0гу за н0гу, ћкоже ѓще кто2 дaстъ пор0къ на бли1жнzго своего2, си1це воздaстсz є3мY.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="deu.20.cs.html">главA к7</a></div></div>
+
+</body>
+</html>

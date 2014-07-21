@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="deu.ru.html">Второзаконие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 17
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Не приноси в жертву Господу, Богу твоему, вола, или овцы, на которой будет порок, <i>или</i> что-нибудь худое, ибо это мерзость для Господа, Бога твоего.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Если найдется среди тебя в каком-либо из жилищ твоих, которые Господь, Бог твой, дает тебе, мужчина или женщина, кто сделает зло пред очами Господа, Бога твоего, преступив завет Его,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и пойдет и станет служить иным богам, и поклонится им, или солнцу, или луне, или всему воинству небесному, чего я не повелел,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и тебе возвещено будет, и ты услышишь, то ты хорошо разыщи; и если это точная правда, если сделана мерзость сия в Израиле,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">то выведи мужчину того, или женщину ту, которые сделали зло сие, к воротам твоим и побей их камнями до смерти.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">По словам двух свидетелей, или трех свидетелей, должен умереть осуждаемый на смерть: не должно предавать смерти по словам одного свидетеля;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">рука свидетелей должна быть на нем прежде <i>всех,</i> чтоб убить его, потом рука всего народа; и <i>так</i> истреби зло из среды себя.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Если по какому делу затруднительным будет для тебя рассудить между кровью и кровью, между судом и судом, между побоями и побоями, <i>и</i> <i>будут</i> несогласные мнения в воротах твоих, то встань и пойди на место, которое изберет Господь, Бог твой, [чтобы призываемо было там имя Его,]
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и приди к священникам левитам и к судье, который будет в те дни, и спроси их, и они скажут тебе, как рассудить;
+</p>
+<div class="num">10</div><p id="n10">и поступи по слову, какое они скажут тебе, на том месте, которое изберет Господь [Бог твой, чтобы призываемо было там имя Его,] и постарайся исполнить все, чему они научат тебя;
+</p>
+<div class="num">11</div><p id="n11">по закону, которому научат они тебя, и по определению, какое они скажут тебе, поступи, и не уклоняйся ни направо, ни налево от того, что они скажут тебе.
+</p>
+<div class="num">12</div><p id="n12">А кто поступит так дерзко, что не послушает священника, стоящего там на служении пред Господом, Богом твоим, или судьи, [который будет в те дни], тот должен умереть,- и <i>так</i> истреби зло от Израиля;
+</p>
+<div class="num">13</div><p id="n13">и весь народ услышит и убоится, и не будут впредь поступать дерзко.
+</p>
+<div class="num">14</div><p id="n14">Когда ты придешь в землю, которую Господь, Бог твой, дает тебе, и овладеешь ею, и поселишься на ней, и скажешь: "поставлю я над собою царя, подобно прочим народам, которые вокруг меня",
+</p>
+<div class="num">15</div><p id="n15">то поставь над собою царя, которого изберет Господь, Бог твой; из среды братьев твоих поставь над собою царя; не можешь поставить над собою [царем] иноземца, который не брат тебе.
+</p>
+<div class="num">16</div><p id="n16">Только чтоб он не умножал себе коней и не возвращал народа в Египет для умножения себе коней, ибо Господь сказал вам: "не возвращайтесь более путем сим";
+</p>
+<div class="num">17</div><p id="n17">и чтобы не умножал себе жен, дабы не развратилось сердце его, и чтобы серебра и золота не умножал себе чрезмерно.
+</p>
+<div class="num">18</div><p id="n18">Но когда он сядет на престоле царства своего, должен списать для себя список закона сего с книги, <i>находящейся</i> у священников левитов,
+</p>
+<div class="num">19</div><p id="n19">и пусть он будет у него, и пусть он читает его во все дни жизни своей, дабы научался бояться Господа, Бога своего, и старался исполнять все слова закона сего и постановления сии;
+</p>
+<div class="num">20</div><p id="n20">чтобы не надмевалось сердце его пред братьями его, и чтобы не уклонялся он от закона ни направо, ни налево, дабы долгие дни пребыл на царстве своем он и сыновья его посреди Израиля.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="deu.18.ru.html">к главе 18</a></div></div>
+
+</body>
+</html>

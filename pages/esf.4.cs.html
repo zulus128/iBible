@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="esf.cs.html">Е#сfи1рь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA д7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Мардохeй же разумёвъ замышлsемое, раздрA ри6зы <nobr>сво‰</nobr> и3 њблечeсz во врeтище и3 посhпасz пeпеломъ: и3 скочи1въ въ прострaнную ќлицу грaда, возопи2 в0племъ вели1кимъ и3 г0рькимъ: взимaетсz р0дъ ничт0же преступи1вый.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И# пріи1де дaже до врaтъ царeвыхъ и3 стA: не лёть бо бЁ є3мY вни1ти во дв0ръ во врeтище њблечeну и3 пeпеломъ њсhпану сyщу.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И# во всsцэй странЁ, и3дёже покaзовахусz пис†ніz (царє1ва), в0пль бЁ и3 плaчь и3 рыдaніе превeліе їудewмъ, врeтище и3 пeпелъ постилaху себЁ.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И# внид0ща рабы6ни и3 є3vнyси цари6цыны и3 возвэсти1ша є4й. И# смzтeсz ўслhшавши бhвшее: и3 послA ри6зы њблещи2 мардохeа и3 снsти врeтище є3гw2. И# не послyша.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Е#сfи1рь же призвA ґхраfeа скопцA своего2, предстоsщаго є4й,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и3 послA є3го2 ўвёдати t мардохeа и4стину.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Мардохeй же сказA є3мY бhвшее, и3 њбэщaніе, є4же њбэшA ґмaнъ царю2 въ сокр0вищный д0мъ (положи1ти) десsть тысsщъ тал†нтъ сребрA, да погуби1тъ їудє1й:
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и3 списaніе (повелёніz) и3здaннагw въ сyсэхъ (грaдэ) на погублeніе и4хъ дадE є3мY, да покaжетъ є3сfи1ри: и3 речE є3мY, заповёдати є4й и3ти2 моли1ти царS и3 проси1ти є3го2 њ лю1дехъ, поминaюши дни6 смирeніz твоегw2, кaкw воспитaна є3си2 въ руцЁ моeй, занE ґмaнъ вторhй по цари2 глаг0ла проти1ву нaмъ на смeрть: призови2 гDа и3 глаг0ли царю2 њ нaсъ, да и3збaвитъ нaсъ t смeрти.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Вшeдъ же ґхраfeй, повёда є3сfи1ри <nobr>вс‰</nobr> глаг0лы <nobr>сі‰.</nobr>
+</p>
+<div class="num">10</div><p id="n10">И# речE є3сfи1рь ко ґхраfeю: и3ди2 къ мардохeю и3 рцы2:
+</p>
+<div class="num">11</div><p id="n11">понeже вси2 kзhцы цaрствіz вёдzтъ, ћкw всsкъ мyжъ и3ли2 женA, и4же ѓще вни1детъ ко царвeи во внyтренній д0мъ не при1званъ, нёсть є3мY спасeніz, т0чію къ немyже ѓще прострeтъ цaрь златhй жeзлъ, сей спасeнъ бyдетъ: ѓзъ же нёсмь званA внити ко царю2 сE ўжE три1десzть днjй.
+</p>
+<div class="num">12</div><p id="n12">И# возвэсти2 ґхраfeй мардохeю <nobr>вс‰</nobr> глаг0лы є3сfи6рины.
+</p>
+<div class="num">13</div><p id="n13">И# речE мардохeй ко ґхраfeю: и3ди2 и3 рцы2 є4й: є3сfи1ре, да не речeши въ себЁ, ћкw ты2 є3ди1на спасeшисz во цaрствіи пaче всёхъ їудє1й:
+</p>
+<div class="num">14</div><p id="n14">занE ѓще преслyшаеши въ сіE врeмz, tи1нуду п0мощь и3 покр0въ бyдетъ їудewмъ, тh же и3 д0мъ nтцA твоегw2 поги1бнете: и3 кто2 вёсть, ѓще на сіE врeмz воцари1ласz є3си2;
+</p>
+<div class="num">15</div><p id="n15">И# послA є3сfи1рь пришeдшаго къ нeй ко мардохeю, глаг0лющи:
+</p>
+<div class="num">16</div><p id="n16">Шeдъ собери2 їудє1и и5же въ сyсэхъ, и3 пости1тесz њ мнЁ, и3 не kди1те нижE пjйте три2 дни6 дeнь и3 н0щь: ѓзъ же и3 служє1бницы <nobr>мо‰</nobr> (тaкожде) не и4мамы ћсти: и3 тогдA вни1ду ко царю2 кромЁ зак0на, ѓще и3 поги1бнути ми2 приключи1тсz.
+</p>
+<div class="num">17</div><p id="n17">И# шeдъ мардохeй сотвори2, є3ли6ка заповёда є3мY є3сfи1рь, и3 помоли1сz гDеви поминaz <nobr>вс‰</nobr> дэлA гDнz и3 речE: гDи, гDи цRю2 вседержи1телю, ћкw во влaсти твоeй сіE всE є4сть, и3 нёсть противомyдрствуzй тебЁ, внегдA восх0щеши спcти2 <nobr>ї}лz:</nobr> ћкw ты2 сотвори1лъ є3си2 нeбо и3 зeмлю и3 всE ўдивлsемое въ поднебeснэй и3 гDь є3си2 всёхъ, и3 нёсть, и4же воспроти1витсz тебЁ гDеви: ты2 <nobr>вс‰</nobr> вёси, ты2 знaеши, гDи, ћкw не въ ўкори1знэ ни въ г0рдости, нижE во тщелaвіи сотвори1хъ сіE, є4же не покланsтисz прег0рдому ґмaну, понeже благоволи1мъ бhхъ лобзaти и3 слэды2 н0гъ є3гw2 спасeніz рaди <nobr>ї}лева,</nobr> но сіE сотвори1хъ, да не воздaмъ слaвы человёку пaче слaвы б9z, и3 не поклоню1сz ни комyже, кромЁ тебє2 гDа моегw2, и3 не сотворю2 <nobr>сі‰</nobr> въ гордости: и3 нн7э, гDи б9е, цRю2, б9е ґвраaмовъ, пощади2 лю1ди <nobr>тво‰,</nobr> ћкw назирaютъ нaмъ въ поги1бель и3 вожделёша погуби1ти є4же и3з8 начaла наслёбдіе твоE: не прeзри <nobr>досто‰ніz</nobr> твоегw2, є4же и3збaвилъ є3си2 тебЁ t земли2 є3гЂпетскіz: ўслhши моли1тву мою2, и3 ўмлcрдисz над8 жрeбіемъ твои1мъ, и3 њбрати2 рыдaніе нaше въ весeліе, да живyще восхвали1мъ и4мz твоe, гDи, и3 не погуби2 ќстъ восхвалsющихъ тS, гDи. И# вeсь <nobr>ї}ль</nobr> возопи2 t крёпости своеS, ћкw смeрть и4хъ пред8 nчи1ма и4хъ: и3 є3сfи1рь цари1ца притечE ко гDу въ п0двизэ смeрти њбдержи1ма, и3 снeмши ри6зы слaвы своеS, њблечeсz въ ри6зы тэсноты2 и3 плaча, и3 вмёстw многоцённыхъ мaстей и3 благов0нныхъ пeпеломъ и3 гн0емъ посhпа главY свою2, и3 пл0ть свою2 смири2 ѕэлw2, и3 к0ждо мёсто ўкрашeніz весeліz своегw2 и3сп0лни растeрзанными власы6 свои1ми, и3 молsшесz гDу бGу їилеву и3 речE: гDи м0й, цRю2 нaшъ, ты2 є3си2 є3ди1нъ, помози2 ми2 є3ди1ный и3 не и3мёющей п0мощи рaзвэ тебє2, ћкw бэдA моS въ руцЁ моeй: ѓзъ слhшахъ, гDи, t nтцA моегw2 въ плeмени nтeчества моегw2, ћкw ты2 гDи, пріsлъ є3си2 <nobr>ї}лz</nobr> t всёхъ kзы6къ и3 nтцы2 нaшz t всёхъ прaoтєцъ и4хъ въ наслёдме вёчное, и3 сотвори1лъ є3си2 и5мъ, є3ли6ка гlалъ є3си2: и3 нн7э согрэши1хомъ пред8 тоб0ю, и3 прeдалъ є3си2 нaсъ въ рyки вр†гъ нaшихъ, занeже слaвихомъ б0ги и4хъ: првdнъ є3си2, гDи: и3 нн7э не дов0лни бhша горeстію раб0ты нaшеz, но положи1ша рyки <nobr>сво‰</nobr> на рyки јдwлъ свои1хъ, и3ст0ргнути зaповэдь ўстъ твои1хъ и3 погуби1ти наслёдіе твоE, и3 загради1ти ўстA хвaлzщихъ тS и3 ўгаси1ти слaву хрaма твоегw2 и3 nлтарS твоегw2, и3 tвeрзти ўстA kзhкwмъ во ўгождє1ніz сyетныхъ и3 ўдиви1тисz царeви плотск0му во вёки: не предaждь, гDи, ски1птра твоегw2 си6мъ, и5же не сyть, и3 да не посмэю1тсz въ падeніи нaшемъ, но њбрати2 совётъ и4хъ на нS, начeншаго же на нaсъ въ при1тчу положи2: помzни2, гDи, познaнъ бyди во времz ск0рби нaшеz и3 менE спод0би дерзновeніz: цRю2 богHвъ и3 всsкагw начaлства содержи1телю, дaждь сл0во благоуг0дно во ўстA <nobr>мо‰</nobr> пред8 льв0мъ, и3 премэни2 сeрдце є3гw2 въ ненави1дэніе вою1ющагw ны2, во и3стреблeніе є3гw2 и3 съ ни1мъ совётующихъ: нaсъ же и3зми2 рук0ю твоeю и3 помози1 ми є3ди1нэй и3 не и3мёющей ни когHже, т0кмw тебE, гDи: всёхъ рaзумъ и4маши и3 вёси, ћкw возненави1дэхъ слaву беззак0нныхъ и3 гнушaюсz л0жа неwбрёзанныхъ и3 всsкагw и3ноплемeнника: ты2 вёси нyжду мою2, ћкw гнушaюсz знaменіz г0рдости моеS, є4же є4сть на главЁ моeй во днeхъ видёніz моегw2, гнушaюсz є3гw2, ћкw рyбищъ њсквернeнныхъ, и3 не ношY є3гw2 въ дeнь молчaніz моегw2: и3 не kдE рабA твоS t трапeзы ґмaновы, и3 не прославлsхъ пи1ра царeва, нижE піsхъ віно2 трeбищъ (јдwлскихъ): и3 не возвесели1сz рабA твоS t днE премёненіz моегw2 дaже донн7э, т0чію њ тебЁ, гDи б9е ґвраaмовъ: б9е, могjй над8 всёми, ўслhши глaсъ безнадeжныхъ, и3 и3збaви нaсъ t руки2 лукaвнующихъ и3 и3зми1 мz t стрaха моегw2.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="esf.5.cs.html">главA є7</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lk.ru.html">Евангелие от Луки</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Иисус, исполненный Духа Святаго, возвратился от Иордана и поведен был Духом в пустыню.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Там сорок дней Он был искушаем от диавола и ничего не ел в эти дни, а по прошествии их напоследок взалкал.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И сказал Ему диавол: если Ты Сын Божий, то вели этому камню сделаться хлебом.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Иисус сказал ему в ответ: написано, что не хлебом одним будет жить человек, но всяким словом Божиим.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И, возведя Его на высокую гору, диавол показал Ему все царства вселенной во мгновение времени,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и сказал Ему диавол: Тебе дам власть над всеми сими <i>царствами</i> и славу их, ибо она предана мне, и я, кому хочу, даю ее;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">итак, если Ты поклонишься мне, то всё будет Твое.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Иисус сказал ему в ответ: отойди от Меня, сатана; написано: Господу Богу твоему поклоняйся, и Ему одному служи.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И повел Его в Иерусалим, и поставил Его на крыле храма, и сказал Ему: если Ты Сын Божий, бросься отсюда вниз,
+</p>
+<div class="num">10</div><p id="n10">ибо написано: Ангелам Своим заповедает о Тебе сохранить Тебя;
+</p>
+<div class="num">11</div><p id="n11">и на руках понесут Тебя, да не преткнешься о камень ногою Твоею.
+</p>
+<div class="num">12</div><p id="n12">Иисус сказал ему в ответ: сказано: не искушай Господа Бога твоего.
+</p>
+<div class="num">13</div><p id="n13">И, окончив всё искушение, диавол отошел от Него до времени.
+</p>
+<div class="num">14</div><p id="n14">И возвратился Иисус в силе духа в Галилею; и разнеслась молва о Нем по всей окрестной стране.
+</p>
+<div class="num">15</div><p id="n15">Он учил в синагогах их, и от всех был прославляем.
+</p>
+<div class="num">16</div><p id="n16">И пришел в Назарет, где был воспитан, и вошел, по обыкновению Своему, в день субботний в синагогу, и встал читать.
+</p>
+<div class="num">17</div><p id="n17">Ему подали книгу пророка Исаии; и Он, раскрыв книгу, нашел место, где было написано:
+</p>
+<div class="num">18</div><p id="n18">Дух Господень на Мне; ибо Он помазал Меня благовествовать нищим, и послал Меня исцелять сокрушенных сердцем, проповедовать пленным освобождение, слепым прозрение, отпустить измученных на свободу,
+</p>
+<div class="num">19</div><p id="n19">проповедовать лето Господне благоприятное.
+</p>
+<div class="num">20</div><p id="n20">И, закрыв книгу и отдав служителю, сел; и глаза всех в синагоге были устремлены на Него.
+</p>
+<div class="num">21</div><p id="n21">И Он начал говорить им: ныне исполнилось писание сие, слышанное вами.
+</p>
+<div class="num">22</div><p id="n22">И все засвидетельствовали Ему это, и дивились словам благодати, исходившим из уст Его, и говорили: не Иосифов ли это сын?
+</p>
+<div class="num">23</div><p id="n23">Он сказал им: конечно, вы скажете Мне присловие: врач! исцели Самого Себя; сделай и здесь, в Твоем отечестве, то&#769;, что&#769;, мы слышали, было в Капернауме.
+</p>
+<div class="num">24</div><p id="n24">И сказал: истинно говорю вам: никакой пророк не принимается в своем отечестве.
+</p>
+<div class="num">25</div><p id="n25">Поистине говорю вам: много вдов было в Израиле во дни Илии, когда заключено было небо три года и шесть месяцев, так что сделался большой голод по всей земле,
+</p>
+<div class="num">26</div><p id="n26">и ни к одной из них не был послан Илия, а только ко вдове в Сарепту Сидонскую;
+</p>
+<div class="num">27</div><p id="n27">много также было прокаженных в Израиле при пророке Елисее, и ни один из них не очистился, кроме Неемана Сириянина.
+</p>
+<div class="num">28</div><p id="n28">Услышав это, все в синагоге исполнились ярости
+</p>
+<div class="num">29</div><p id="n29">и, встав, выгнали Его вон из города и повели на вершину горы, на которой город их был построен, чтобы свергнуть Его;
+</p>
+<div class="num">30</div><p id="n30">но Он, пройдя посреди них, удалился.
+</p>
+<div class="num">31</div><p id="n31">И пришел в Капернаум, город Галилейский, и учил их в дни субботние.
+</p>
+<div class="num">32</div><p id="n32">И дивились учению Его, ибо слово Его было со властью.
+</p>
+<div class="num">33</div><p id="n33">Был в синагоге человек, имевший нечистого духа бесовского, и он закричал громким голосом:
+</p>
+<div class="num">34</div><p id="n34">оставь; что&#769; Тебе до нас, Иисус Назарянин? Ты пришел погубить нас; знаю Тебя, кто Ты, Святый Божий.
+</p>
+<div class="num">35</div><p id="n35">Иисус запретил ему, сказав: замолчи и выйди из него. И бес, повергнув его посреди <i>синагоги,</i> вышел из него, нимало не повредив ему.
+</p>
+<div class="num">36</div><p id="n36">И напал на всех ужас, и рассуждали между собою: что это значит, что Он со властью и силою повелевает нечистым духам, и они выходят?
+</p>
+<div class="num">37</div><p id="n37">И разнесся слух о Нем по всем окрестным местам.
+</p>
+<div class="num">38</div><p id="n38">Выйдя из синагоги, Он вошел в дом Симона; тёща же Симонова была одержима сильною горячкою; и просили Его о ней.
+</p>
+<div class="num">39</div><p id="n39">Подойдя к ней, Он запретил горячке; и оставила ее. Она тотчас встала и служила им.
+</p>
+<div class="num">40</div><p id="n40">При захождении же солнца все, имевшие больных различными болезнями, приводили их к Нему и Он, возлагая на каждого из них руки, исцелял их.
+</p>
+<div class="num">41</div><p id="n41">Выходили также и бесы из многих с криком и говорили: Ты Христос, Сын Божий. А Он запрещал им сказывать, что они знают, что Он Христос.
+</p>
+<div class="num">42</div><p id="n42">Когда же настал день, Он, выйдя <i>из</i> <i>дома,</i> пошел в пустынное место, и народ искал Его и, придя к Нему, удерживал Его, чтобы не уходил от них.
+</p>
+<div class="num">43</div><p id="n43">Но Он сказал им: и другим городам благовествовать Я должен Царствие Божие, ибо на то Я послан.
+</p>
+<div class="num">44</div><p id="n44">И проповедовал в синагогах галилейских.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lk.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ezr2.ru.html">Вторая книга Ездры</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сделал царь Дарий большой пир своим подданным и домашним своим и всем вельможам Мидии и Персии,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и всем сатрапам и военачальникам, и начальникам подвластных ему стран от Индии и до Ефиопии в ста двадцати семи сатрапиях.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И ели и пили и, насытившись, разошлись; царь же Дарий отправился в спальню свою и спал, и потом пробудился.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Между тем трое юношей телохранителей, охранявших тело царя, сказали друг другу:
+</p>
+<div class="num">&nbsp;5</div><p id="n5">пусть каждый из нас скажет одно слово о том, что всего сильнее? И чье слово окажется разумнее другого, даст тому царь Дарий великие дары и великую награду.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И будет тот одеваться багряницею и пить из золотых сосудов, и спать на золоте, и ездить на колеснице с конями в золотых уздах, носить на голове повязку из виссона и ожерелье на шее,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и сядет он вторым по Дарии за мудрость свою, и будет называться родственником Дария.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И тотчас, написав каждый свое слово, запечатали и положили под изголовье царя Дария и сказали:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">когда царь встанет, подадут ему это писание, и за кем признает царь и трое вельмож Персидских, что слово его мудрее, тому дастся преимущество, как написано.
+</p>
+<div class="num">10</div><p id="n10">Один написал: сильнее всего вино.
+</p>
+<div class="num">11</div><p id="n11">Другой написал: сильнее царь.
+</p>
+<div class="num">12</div><p id="n12">Третий написал: сильнее женщины, а над всем одерживает победу истина.
+</p>
+<div class="num">13</div><p id="n13">И вот, когда царь встал, подали ему это писание, и он прочитал.
+</p>
+<div class="num">14</div><p id="n14">И, послав, призвал всех вельмож Персии и Мидии, и сатрапов и военачальников, и начальников областей и советников,
+</p>
+<div class="num">15</div><p id="n15">и сел в совещательной палате, и прочитано было пред ними писание.
+</p>
+<div class="num">16</div><p id="n16">И сказал: призовите этих юношей, пусть они объяснят слова свои. И были призваны и вошли.
+</p>
+<div class="num">17</div><p id="n17">И сказал им: объясните нам написанное. И начал первый, сказавший о силе вина, и говорил так:
+</p>
+<div class="num">18</div><p id="n18">О, мужи! Как сильно вино! Оно приводит в омрачение ум всех людей, пьющих его;
+</p>
+<div class="num">19</div><p id="n19">оно делает ум царя и сироты, раба и свободного, бедного и богатого, одним умом;
+</p>
+<div class="num">20</div><p id="n20">и всякий ум превращает в веселие и радость, так что <i>человек</i> не помнит никакой печали и никакого долга,
+</p>
+<div class="num">21</div><p id="n21">и все сердца делает оно богатыми, так что <i>никто</i> не думает ни о царе, ни о сатрапе, и всякого заставляет оно говорить о <i>своих</i> талантах.
+</p>
+<div class="num">22</div><p id="n22">И когда опьянеют, не помнят о приязни к друзьям и братьям и скоро обнажают мечи,
+</p>
+<div class="num">23</div><p id="n23">а когда истрезвятся от вина, не помнят, что делали.
+</p>
+<div class="num">24</div><p id="n24">О, мужи! Не сильнее ли всего вино, когда заставляет так поступать? И, сказав это, замолчал.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ezr2.4.ru.html">к главе 4</a></div></div>
+
+</body>
+</html>

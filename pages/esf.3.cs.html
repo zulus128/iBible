@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="esf.cs.html">Е#сfи1рь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA G
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# по си1хъ прослaви цaрь ґртаxeрxъ ґмaна сhна ґмадаfyина вугeанина и3 вознесE є3го2, и3 предсэдsше вhшше всёхъ другHвъ є3гw2:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и3 вси2, и5же во дворЁ (царeвэ), покланsхусz ґмaну: си1це бо повелЁ цaрь твори1ти. Мардохeй же не клaнzшесz є3мY.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И# глаг0лаша сyщіи во дворЁ царeвэ мардохeю: мардохeе, чесw2 рaди не слyшаеши глаг0лемыхъ t царS;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">По <nobr>вс‰</nobr> же дни6 глаг0лаху є3мY, и3 не послyшаше и4хъ. И# возвэсти1ша ґмaну, ћкw мардохeй сопротивлsетсz повелёнію царeву, и3 повёда и5мъ мардохeй, ћкw їудeанинъ є4сть.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И# ўвёдавъ ґмaнъ, ћкw не клaнzетсz є3мY мардохeи, разгнёвасz ѕэлw2
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и3 ўмhсли погуби1ти <nobr>вс‰</nobr> їудє1и, и5же въ цaрствэ ґртаxeрxовэ:
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и3 сотвори2 совётъ въ лёто второенaдесzть цaрства ґртаxeрxова, и3 метaше жрє1біz дeнь t днE и3 мцcъ t мцcа, ћкw погуби1ти во є3ди1нъ дeнь р0дъ мардохeевъ: и3 падE жрeбій на четвертыйнaдесzть дeнь мцcа, и4же є4сть ґдаръ.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И# речE (ґмaнъ) ко царю2 ґртаxeрxу, глаг0лz: є4сть kзhкъ разсёzнный во kзhцэхъ во всeмъ цaрствэ твоeмъ: зак0ны же и4хъ стрaнни пaче всёхъ kзы6къ, и3 зак0нwвъ цaрскихъ не слyшаютъ, и3 не п0льзуетъ царю2 њстaвити и5хъ:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и3 ѓще г0дэ є4сть царeви, да повели1тъ погуби1ти <nobr>|:</nobr> ѓзъ же запишY въ сокр0вище царeво дeсzть ты2сzщъ тал†нтъ сребрA.
+</p>
+<div class="num">10</div><p id="n10">И# снeмъ цaрь пeрстень (съ руки2 своеS), дадE въ рyцэ ґмaну, да запечaтаетъ пис†ніz напи6саннаz на їудє1й.
+</p>
+<div class="num">11</div><p id="n11">И# речE цaрь ґмaну: сребро2 ќбw и3мёй ты2 себЁ, лю1демъ же твори2, ћкоже х0щеши.
+</p>
+<div class="num">12</div><p id="n12">И# при1звани бhша писцы2 царє1вы въ третійнaдесzть дeнь мцcа пeрвагw, и3 написaша, ћкоже повелЁ ґмaнъ, къ воев0дамъ и3 начaлникwмъ по всBмъ странaмъ, t їндjйскіz w4бласти дaже и3 до є3fі0піи, сто2 двaдесzти седми2 странaмъ, начaлствующымъ над8 kзы6ки по и4хъ љзhку, и4менемъ ґртаxeрxа царS.
+</p>
+<div class="num">13</div><p id="n13">И# послA съ писмонHсцы пис†ніz въ цaрство ґртаxeрxово, да побію1тъ р0дъ жид0вскій въ дeнь є3ди1нъ мцcа вторагwнaдесzть, и4же є4сть ґдaръ, и3 да расхи1тzтъ и3мBніz и4хъ.
+</p>
+<p id="p0">[Списaніе же є3піст0ліи сицево2 бЁ: цaрь вели1кій ґртаxерxъ начaлствующымъ t їндjи дaже до є3fі0піи над8 сто2 двaдесzть седмію2 странaми и3 мэстоначaлникwмъ пHдданнымъ.
+</p>
+<p id="p1">Над8 мн0гими цaрствующь kзы6ки и3 њбдержaвъ всю2 вселeнную, восхотёхъ, не дeрзостію w4бласти возноси1мь, но кр0тостію и3 ти1хостію всегдA прaвz, безмzтeжно житіE всегдA ўстроsти подрyчныхъ (нaшихъ), и3 цaрствіе (своE) безм0лвно и3 проходи1мо дaже до конє1цъ соблюдaz, њбнови1ти желaемый всBмъ человёкwмъ ми1ръ.
+</p>
+<p id="p2">Вопроси1вшу же ми2 совётники <nobr>мо‰,</nobr> кaкw бы возм0жно сіE соверши1ти, и4же ў нaсъ цэломyдріемъ пресловyтый и3 во благоволeніи неизмённый и3 твeрдою вёрностію ўтверждeнный и3 вторyю чeсть по цари2 получи1вый ґмaнъ сказA нaмъ, ћкw во всёхъ по вселeннэй колёнэхъ смэси1сz враждeбный нёкій нар0дъ, зак0нами сопроти1вный ко всsкому kзhку и3 повелBніz ц†рскаz всегдA небрегyщь, дабы2 не ўстроsлосz t нaсъ благоуправлsемое непор0чнw соwбладaніе.
+</p>
+<p id="p3">Ўразумёвше ўбо, ћкw сeй kзыкъ є3ди1нъ сопротивлsетсz всегдA всsкому человёку, ўставлeніе зак0нwвъ и3ностранное и3змэнsетъ, и3 проти1вzсz нaшымъ дэлHмъ, гHршаz совершaетъ ѕл†z, дабы2 цaрствіе нaше не получи1ло благостоsніz: повелёхомъ u5бо напи1санными къ вaмъ грaмотами t ґмaна ўчинeнагw над8 вещьми2 (цaрскими) и3 вторaгw nтцA нaшегw, всёхъ со женaми и3 чaды погуби1ти всекорeннэ врaжіими мечьми2 без8 всsкіz ми1лости и3 пощадёніz, въ четвертыйнaдесzть дeнь вторагwнaдесzть мцcа ґдaра, настоsщагw лёта, ћкw да бывшіи дрeвле и3 нн7э врази2 во є3ди1нэмъ дни2 г0рькw во ѓдъ сошeдше, въ пр0чее врeмz ти1хо и3 безм0лвно житіE дадsтъ нaмъ до концA проходи1ти.]
+</p>
+<div class="num">14</div><p id="n14">Спис†ніz же є3піст0ліи посылaхусz по странaмъ, и3 повелёно бhсть всBмъ kзhкwмъ готHвымъ бhти въ нарэчeнный дeнь.
+</p>
+<div class="num">15</div><p id="n15">Приспё же дёло и3 въ сyсы: и3 цaрь ќбw и3 ґмaнъ пир{юща наслаждaстасz, грaдъ же (сyсы) мzтsшесz.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="esf.4.cs.html">главA д7</a></div></div>
+
+</body>
+</html>

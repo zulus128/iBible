@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jn.ru.html">Евангелие от Иоанна</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 15
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Я есмь истинная виноградная лоза, а Отец Мой - виноградарь.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Всякую у Меня ветвь, не приносящую плода, Он отсекает; и всякую, приносящую плод, очищает, чтобы более принесла плода.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Вы уже очищены через слово, которое Я проповедал вам.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Пребудьте во Мне, и Я в вас. Как ветвь не может приносить плода сама собою, если не будет на лозе: так и вы, если не будете во Мне.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Я есмь лоза, а вы ветви; кто пребывает во Мне, и Я в нем, тот приносит много плода; ибо без Меня не можете делать ничего.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Кто не пребудет во Мне, извергнется вон, как ветвь, и засохнет; а такие <i>ветви</i> собирают и бросают в огонь, и они сгорают.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Если пребудете во Мне и слова Мои в вас пребудут, то, чего ни пожелаете, проси&#769;те, и будет вам.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Тем прославится Отец Мой, если вы принесете много плода и будете Моими учениками.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Как возлюбил Меня Отец, и Я возлюбил вас; пребудьте в любви Моей.
+</p>
+<div class="num">10</div><p id="n10">Если заповеди Мои соблюдете, пребудете в любви Моей, как и Я соблюл заповеди Отца Моего и пребываю в Его любви.
+</p>
+<div class="num">11</div><p id="n11">Сие сказал Я вам, да радость Моя в вас пребудет и радость ваша будет совершенна.
+</p>
+<div class="num">12</div><p id="n12">Сия есть заповедь Моя, да любите друг друга, как Я возлюбил вас.
+</p>
+<div class="num">13</div><p id="n13">Нет больше той любви, как если кто положит душу свою за друзей своих.
+</p>
+<div class="num">14</div><p id="n14">Вы друзья Мои, если исполняете то, что Я заповедую вам.
+</p>
+<div class="num">15</div><p id="n15">Я уже не называю вас рабами, ибо раб не знает, что делает господин его; но Я назвал вас друзьями, потому что сказал вам все, что слышал от Отца Моего.
+</p>
+<div class="num">16</div><p id="n16">Не вы Меня избрали, а Я вас избрал и поставил вас, чтобы вы шли и приносили плод, и чтобы плод ваш пребывал, дабы, чего ни попросите от Отца во имя Мое, Он дал вам.
+</p>
+<div class="num">17</div><p id="n17">Сие заповедаю вам, да любите друг друга.
+</p>
+<div class="num">18</div><p id="n18">Если мир вас ненавидит, знайте, что Меня прежде вас возненавидел.
+</p>
+<div class="num">19</div><p id="n19">Если бы вы были от мира, то мир любил бы свое; а как вы не от мира, но Я избрал вас от мира, потому ненавидит вас мир.
+</p>
+<div class="num">20</div><p id="n20">Помните слово, которое Я сказал вам: раб не больше господина своего. Если Меня гнали, будут гнать и вас; если Мое слово соблюдали, будут соблюдать и ваше.
+</p>
+<div class="num">21</div><p id="n21">Но все то сделают вам за имя Мое, потому что не знают Пославшего Меня.
+</p>
+<div class="num">22</div><p id="n22">Если бы Я не пришел и не говорил им, то не имели бы греха; а теперь не имеют извинения во грехе своем.
+</p>
+<div class="num">23</div><p id="n23">Ненавидящий Меня ненавидит и Отца Моего.
+</p>
+<div class="num">24</div><p id="n24">Если бы Я не сотворил между ними дел, каких никто другой не делал, то не имели бы греха; а теперь и видели, и возненавидели и Меня и Отца Моего.
+</p>
+<div class="num">25</div><p id="n25">Но да сбудется слово, написанное в законе их: возненавидели Меня напрасно.
+</p>
+<div class="num">26</div><p id="n26">Когда же приидет Утешитель, Которого Я пошлю вам от Отца, Дух истины, Который от Отца исходит, Он будет свидетельствовать о Мне;
+</p>
+<div class="num">27</div><p id="n27">а также и вы будете свидетельствовать, потому что вы сначала со Мною.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jn.16.ru.html">к главе 16</a></div></div>
+
+</body>
+</html>

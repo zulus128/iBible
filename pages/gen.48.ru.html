@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 48
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">После того Иосифу сказали: вот, отец твой болен. И он взял с собою двух сынов своих, Манассию и Ефрема [и пошел к Иакову].
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Иакова известили и сказали: вот, сын твой Иосиф идет к тебе. Израиль собрал силы свои и сел на постели.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И сказал Иаков Иосифу: Бог Всемогущий явился мне в Лузе, в земле Ханаанской, и благословил меня,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и сказал мне: вот, Я распложу тебя, и размножу тебя, и произведу от тебя множество народов, и дам землю сию потомству твоему после тебя, в вечное владение.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И ныне два сына твои, родившиеся тебе в земле Египетской, до моего прибытия к тебе в Египет, мои они; Ефрем и Манассия, как Рувим и Симеон, будут мои;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">дети же твои, которые родятся от тебя после них, будут твои; они под именем братьев своих будут именоваться в их уделе.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Когда я шел из Месопотамии, умерла у меня Рахиль [мать твоя] в земле Ханаанской, по дороге, не доходя несколько до Ефрафы, и я похоронил ее там на дороге к Ефрафе, что <i>ныне</i> Вифлеем.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И увидел Израиль сыновей Иосифа и сказал: кто это?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказал Иосиф отцу своему: это сыновья мои, которых Бог дал мне здесь. [Иаков] сказал: подведи их ко мне, и я благословлю их.
+</p>
+<div class="num">10</div><p id="n10">Глаза же Израилевы притупились от старости; не мог он видеть <i>ясно.</i> <i>Иосиф</i> подвел их к нему, и он поцеловал их и обнял их.
+</p>
+<div class="num">11</div><p id="n11">И сказал Израиль Иосифу: не надеялся я видеть твое лице; но вот, Бог показал мне и детей твоих.
+</p>
+<div class="num">12</div><p id="n12">И отвел их Иосиф от колен его и поклонился ему лицем своим до земли.
+</p>
+<div class="num">13</div><p id="n13">И взял Иосиф обоих [сыновей своих], Ефрема в правую свою руку против левой Израиля, а Манассию в левую против правой Израиля, и подвел к нему.
+</p>
+<div class="num">14</div><p id="n14">Но Израиль простер правую руку свою и положил на голову Ефрему, хотя сей был меньший, а левую на голову Манассии. С намерением положил он так руки свои, хотя Манассия был первенец.
+</p>
+<div class="num">15</div><p id="n15">И благословил Иосифа и сказал: Бог, пред Которым ходили отцы мои Авраам и Исаак, Бог, пасущий меня с тех пор, как я существую, до сего дня,
+</p>
+<div class="num">16</div><p id="n16">Ангел, избавляющий меня от всякого зла, да благословит отроков сих; да будет на них наречено имя мое и имя отцов моих Авраама и Исаака, и да возрастут они во множество посреди земли.
+</p>
+<div class="num">17</div><p id="n17">И увидел Иосиф, что отец его положил правую руку свою на голову Ефрема; и прискорбно было ему это. И взял он руку отца своего, чтобы переложить ее с головы Ефрема на голову Манассии,
+</p>
+<div class="num">18</div><p id="n18">и сказал Иосиф отцу своему: не так, отец мой, ибо это - первенец; положи на его голову правую руку твою.
+</p>
+<div class="num">19</div><p id="n19">Но отец его не согласился и сказал: знаю, сын мой, знаю; и от него произойдет народ, и он будет велик; но меньший его брат будет больше его, и от семени его произойдет многочисленный народ.
+</p>
+<div class="num">20</div><p id="n20">И благословил их в тот день, говоря: тобою будет благословлять Израиль, говоря: Бог да сотворит тебе, как Ефрему и Манассии. И поставил Ефрема выше Манассии.
+</p>
+<div class="num">21</div><p id="n21">И сказал Израиль Иосифу: вот, я умираю; и Бог будет с вами и возвратит вас в землю отцов ваших;
+</p>
+<div class="num">22</div><p id="n22">я даю тебе, преимущественно пред братьями твоими, один участок, который я взял из рук Аморреев мечом моим и луком моим.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.49.ru.html">к главе 49</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king3.cs.html">G цaрствъ</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA є7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# послA хірaмъ цaрь тЂрскій џтроки <nobr>сво‰</nobr> къ соломHну: ўслhша бо, ћкw помaзаша є3го2 на цaрство вмёстw давjда nтцA є3гw2, ћкw любsше хірaмъ давjда во <nobr>вс‰</nobr> дни6.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И# послA соломHнъ къ хірaму, глаг0лz:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">ты2 вёси nтцA моего2 давjда, ћкw не возм0же создaти д0му и4мени гDа бGа моегw2, t лицA проти1вныхъ, њкружи1вшихъ є3го2, д0ндеже дадE <nobr>|</nobr> гDь под8 стwпы2 н0гъ є3гw2:
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и3 нн7э ўпок0и гDь бGъ м0й мнЁ w4крестъ, нёсть навётника, нижE сопроти1вника лукaвагw:
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и3 сE, ѓзъ глаг0лю создaти д0мъ и4мени гDа бGа моегw2, ћкоже гlа гDь бGъ къ давjду nтцY моемY, гlz: сhнъ тв0й, є3г0же дaмъ вмёстw тебє2 на прест0лъ тв0й, т0й сози1ждетъ д0мъ и4мени моемY:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и3 нн7э заповёждь, да насэкyтъ ми2 дрeвъ t лівaна, и3 сE, раби2 мои2 съ рабы6 твои1ми, и3 мздY трудHвъ твои1хъ дaмъ ти2 по всемY є3ли6ка речeши, понeже ты2 вёси, ћкw нёсть нaмъ вёдущагw древA сэщи2, ћкоже сідHнzне.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И# бhсть є3гдA ўслhша хірaмъ словесA соломw6нz, возрaдовасz ѕэлw2 и3 речE: блгcвeнъ бGъ днeсь, и4же дадE давjду сhна разyмна над8 людьми2 си1ми мн0гими.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И# послA хірaмъ къ соломHну, глаг0лz: слhшахъ њ всёхъ, и4хже рaди послaлъ є3си2 ко мнЁ: ѓзъ сотворю2 всE хотёніе твоE њ древaхъ кeдровыхъ и3 пevговыхъ:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">слуги6 мои2 и3знесyтъ <nobr>|</nobr> t лівaна къ м0рю, и3 ѓзъ положY <nobr>|</nobr> въ складє1ніz на мёсто, и3дёже возвэсти1ши мнЁ, и3 довезY <nobr>|</nobr> тaмw: и3 ты2 в0змеши, и3 сотвори1ши хотёніе моE, є4же дaти хлёбы д0му моемY.
+</p>
+<div class="num">10</div><p id="n10">И# бЁ хірaмъ даS соломHну кeдры и3 пevги и3 всю2 в0лю є3гw2.
+</p>
+<div class="num">11</div><p id="n11">И# дадE соломHнъ хірaму двaдесzть тhсzщъ мёръ пшени1цы, и3 пи1щу д0му є3гw2, и3 двaдесzть тhсzщъ мёръ є3лeа чи1стагw: по семY давaше соломHнъ хірaму на всsко лёто.
+</p>
+<div class="num">12</div><p id="n12">И# гDь дадE соломHну премyдрость, ћкоже гlа є3мY. И# бЁ ми1ръ междY хірaмомъ и3 междY соломHномъ, и3 положи1ша завётъ междY соб0ю.
+</p>
+<div class="num">13</div><p id="n13">И# взS цaрь дaнь t всегw2 <nobr>ї}лz,</nobr> и3 бЁ дaнь три1десzть тhсzщъ мужeй.
+</p>
+<div class="num">14</div><p id="n14">И# послA <nobr>|</nobr> въ лівaнъ, дeсzть тhсzщъ на мцcъ въ премёну: мцcъ бhша въ лівaнэ и3 двA мцcа въ домY своeмъ: и3 бsше ґдwнірaмъ над8 дaнію.
+</p>
+<div class="num">15</div><p id="n15">И# бsше соломHну сeдмьдесzтъ тhсzщъ носsщихъ бременA и3 џсмьдесzтъ тhсzщъ сэкyщихъ кaменіе въ горЁ,
+</p>
+<div class="num">16</div><p id="n16">кромЁ старёйшинъ пристaвленыхъ над8 дэлaми соломHними, три2 тhсzщы и3 шeсть сHтъ прист†вникъ дёлающихъ дэлA.
+</p>
+<div class="num">17</div><p id="n17">И# заповёда цaрь, и3 взsша кaменіе вели1кое, кaменіе честн0е на њсновaніе хрaма, и3 кaменіе нетeсаное.
+</p>
+<div class="num">18</div><p id="n18">И# и3стесaша сhнове соломw6ни и3 сhнове хір†мли и3 каменосёчцы гевaлстіи: и3 и3згот0виша кaмєніz и3 древA въ три2 лBта.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king3.6.cs.html">главA ѕ7</a></div></div>
+
+</body>
+</html>

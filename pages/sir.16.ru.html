@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 16
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Не желай множества негодных детей и не радуйся о сыновьях нечестивых. Когда они умножаются, не радуйся о них, если нет в них страха Господня.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Не надейся на их жизнь и не опирайся на их множество.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Лучше один праведник, нежели тысяча <i>грешников</i>,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и лучше умереть бездетным, нежели иметь детей нечестивых,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">ибо от одного разумного населится город, а племя беззаконных опустеет.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Много такого видело око мое, и еще более того слышало ухо мое.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">В сборище грешников возгорится огонь, как и в народе непокорном возгорался гнев.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Не умилостивился Он над древними исполинами, которые в надежде на силу свою сделались отступниками;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">не пощадил и живших в одном месте с Лотом, которыми возгнушался за их гордость;
+</p>
+<div class="num">10</div><p id="n10">не помиловал народа погибельного, который надмевался грехами своими,
+</p>
+<div class="num">11</div><p id="n11">равно как и шестисот тысяч человек, соединившихся в жестокосердии своем. И хотя бы и один был непокорный, было бы удивительно, если б он остался ненаказанным;
+</p>
+<div class="num">12</div><p id="n12">ибо и милость и гнев - во власти Его: силен Он помиловать и излить гнев.
+</p>
+<div class="num">13</div><p id="n13">Как велика милость Его, так велико и обличение Его. Он судит человека по делам его.
+</p>
+<div class="num">14</div><p id="n14">Не убежит от Него грешник с хищением, и терпение благочестивого не останется тщетным.
+</p>
+<div class="num">15</div><p id="n15">Всякой милостыне Он даст место, каждый получит по делам своим.
+</p>
+<div class="num">16</div><p id="n16">Не говори: "я скроюсь от Господа; неужели с высоты кто вспомнит обо мне?
+</p>
+<div class="num">17</div><p id="n17">Во множестве народа меня не заметят; ибо что душа моя в неизмеримом создании?
+</p>
+<div class="num">18</div><p id="n18">Вот, небо и небо небес - Божие, бездна и земля колеблются от посещения Его.
+</p>
+<div class="num">19</div><p id="n19">Равно сотрясаются от страха горы и основания земли, когда Он взирает.
+</p>
+<div class="num">20</div><p id="n20">И этого не может понять сердце;
+</p>
+<div class="num">21</div><p id="n21">а пути Его кто постигнет? Как ветер, которого человек не может видеть, так и большая часть дел Его сокрыты.
+</p>
+<div class="num">22</div><p id="n22">Кто возвестит о делах правосудия Его? или кто будет ожидать их? ибо далеко это определение".
+</p>
+<div class="num">23</div><p id="n23">Скудный умом думает так, и человек неразумный и заблуждающийся размышляет так глупо.
+</p>
+<div class="num">24</div><p id="n24">Слушай меня, сын мой, и учись знанию, и внимай сердцем твоим словам моим.
+</p>
+<div class="num">25</div><p id="n25">Я показываю тебе учение обдуманное и передаю знание точное.
+</p>
+<div class="num">26</div><p id="n26">По определению Господа дела Его от начала, и от сотворения их Он разделил части их.
+</p>
+<div class="num">27</div><p id="n27">Навек устроил Он дела Свои, и начала их - в роды их. Они не алчут, не утомляются и не прекращают своих действий.
+</p>
+<div class="num">28</div><p id="n28">Ни одно не стесняет близкого ему,
+</p>
+<div class="num">29</div><p id="n29">и до века не воспротивятся они слову Его.
+</p>
+<div class="num">30</div><p id="n30">И потом воззрел Господь на землю и наполнил ее Своими благами.
+</p>
+<div class="num">31</div><p id="n31">Душа всего живущего покрыла лице ее, и в нее все возвратится.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.17.ru.html">к главе 17</a></div></div>
+
+</body>
+</html>

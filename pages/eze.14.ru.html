@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eze.ru.html">Книга Пророка Иезекииля</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 14
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И пришли ко мне несколько человек из старейшин Израилевых и сели перед лицем моим.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И было ко мне слово Господне:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">сын человеческий! Сии люди допустили идолов своих в сердце свое и поставили соблазн нечестия своего перед лицем своим: могу ли Я отвечать им?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Посему говори с ними и скажи им: так говорит Господь Бог: если кто из дома Израилева допустит идолов своих в сердце свое и поставит соблазн нечестия своего перед лицем своим, и придет к пророку,- то Я, Господь, могу ли, при множестве идолов его, дать ему ответ?
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Пусть дом Израилев поймет в сердце своем, что все они через своих идолов сделались чужими для Меня.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Посему скажи дому Израилеву: так говорит Господь Бог: обратитесь и отвратитесь от идолов ваших, и от всех мерзостей ваших отвратите лице ваше.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Ибо если кто из дома Израилева и из пришельцев, которые живут у Израиля, отложится от Меня и допустит идолов своих в сердце свое, и поставит соблазн нечестия своего перед лицем своим, и придет к пророку вопросить Меня через него,- то Я, Господь, дам ли ему ответ от Себя?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Я обращу лице Мое против того человека и сокрушу его в знамение и притчу, и истреблю его из народа Моего, и узнаете, что Я Господь.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">А если пророк допустит обольстить себя и скажет слово так, как бы Я, Господь, научил этого пророка, то Я простру на него руку Мою и истреблю его из народа Моего, Израиля.
+</p>
+<div class="num">10</div><p id="n10">И понесут вину беззакония своего: какова вина вопрошающего, такова будет вина и пророка,
+</p>
+<div class="num">11</div><p id="n11">чтобы впредь дом Израилев не уклонялся от Меня и чтобы более не оскверняли себя всякими беззакониями своими, но чтобы были Моим народом, и Я был их Богом, говорит Господь Бог.
+</p>
+<div class="num">12</div><p id="n12">И было ко мне слово Господне:
+</p>
+<div class="num">13</div><p id="n13">сын человеческий! если бы какая земля согрешила предо Мною, вероломно отступив от Меня, и Я простер на нее руку Мою, и истребил в ней хлебную опору, и послал на нее голод, и стал губить на ней людей и скот;
+</p>
+<div class="num">14</div><p id="n14">и если бы нашлись в ней сии три мужа: Ной, Даниил и Иов,- то они праведностью своею спасли бы только свои души, говорит Господь Бог.
+</p>
+<div class="num">15</div><p id="n15">Или, если бы Я послал на эту землю лютых зверей, которые осиротили бы ее, и она по причине зверей сделалась пустою и непроходимою:
+</p>
+<div class="num">16</div><p id="n16">то сии три мужа среди нее,- живу Я, говорит Господь Бог,- не спасли бы ни сыновей, ни дочерей, а они, только они спаслись бы, земля же сделалась бы пустынею.
+</p>
+<div class="num">17</div><p id="n17">Или, если бы Я навел на ту землю меч и сказал: "меч, пройди по земле!", и стал истреблять на ней людей и скот,
+</p>
+<div class="num">18</div><p id="n18">то сии три мужа среди нее,- живу Я, говорит Господь Бог,- не спасли бы ни сыновей, ни дочерей, а они только спаслись бы.
+</p>
+<div class="num">19</div><p id="n19">Или, если бы Я послал на ту землю моровую язву и излил на нее ярость Мою в кровопролитии, чтобы истребить на ней людей и скот:
+</p>
+<div class="num">20</div><p id="n20">то Ной, Даниил и Иов среди нее,- живу Я, говорит Господь Бог,- не спасли бы ни сыновей, ни дочерей; праведностью своею они спасли бы только свои души.
+</p>
+<div class="num">21</div><p id="n21">Ибо так говорит Господь Бог: если и четыре тяжкие казни Мои: меч, и голод, и лютых зверей, и моровую язву пошлю на Иерусалим, чтобы истребить в нем людей и скот,
+</p>
+<div class="num">22</div><p id="n22">и тогда останется в нем остаток, сыновья и дочери, которые будут выведены оттуда; вот, они выйдут к вам, и вы увидите поведение их и дела их, и утешитесь о том бедствии, которое Я навел на Иерусалим, о всем, что Я навел на него.
+</p>
+<div class="num">23</div><p id="n23">Они утешат вас, когда вы увидите поведение их и дела их; и узнаете, что Я не напрасно сделал все то, что сделал в нем, говорит Господь Бог.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eze.15.ru.html">к главе 15</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="act.ru.html">Деяния Апостолов</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 17
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Пройдя через Амфиполь и Аполлонию, они пришли в Фессалонику, где была Иудейская синагога.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Павел, по своему обыкновению, вошел к ним и три субботы говорил с ними из Писаний,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">открывая и доказывая им, что Христу надлежало пострадать и воскреснуть из мертвых и что Сей Христос есть Иисус, Которого я проповедую вам.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И некоторые из них уверовали и присоединились к Павлу и Силе, как из Еллинов, чтущих <i>Бога,</i> великое множество, так и из знатных женщин немало.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Но неуверовавшие Иудеи, возревновав и взяв с площади некоторых негодных людей, собрались толпою и возмущали город и, приступив к дому Иасона, домогались вывести их к народу.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Не найдя же их, повлекли Иасона и некоторых братьев к городским начальникам, крича, что эти всесветные возмутители пришли и сюда,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">а Иасон принял их, и все они поступают против повелений кесаря, почитая другого царем, Иисуса.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И встревожили народ и городских начальников, слушавших это.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Но <i>сии,</i> получив удостоверение от Иасона и прочих, отпустили их.
+</p>
+<div class="num">10</div><p id="n10">Братия же немедленно ночью отправили Павла и Силу в Верию, куда они прибыв, пошли в синагогу Иудейскую.
+</p>
+<div class="num">11</div><p id="n11">Здешние были благомысленнее Фессалоникских: они приняли слово со всем усердием, ежедневно разбирая Писания, точно ли это так.
+</p>
+<div class="num">12</div><p id="n12">И многие из них уверовали, и из Еллинских почетных женщин и из мужчин немало.
+</p>
+<div class="num">13</div><p id="n13">Но когда Фессалоникские Иудеи узнали, что и в Верии проповедано Павлом слово Божие, то пришли и туда, возбуждая и возмущая народ.
+</p>
+<div class="num">14</div><p id="n14">Тогда братия тотчас отпустили Павла, как будто идущего к морю; а Сила и Тимофей остались там.
+</p>
+<div class="num">15</div><p id="n15">Сопровождавшие Павла проводили его до Афин и, получив приказание к Силе и Тимофею, чтобы они скорее пришли к нему, отправились.
+</p>
+<div class="num">16</div><p id="n16">В ожидании их в Афинах Павел возмутился духом при виде этого города, полного идолов.
+</p>
+<div class="num">17</div><p id="n17">Итак он рассуждал в синагоге с Иудеями и с чтущими <i>Бога,</i> и ежедневно на площади со встречающимися.
+</p>
+<div class="num">18</div><p id="n18">Некоторые из эпикурейских и стоических философов стали спорить с ним; и одни говорили: "что&#769; хочет сказать этот суеслов?", а другие: "кажется, он проповедует о чужих божествах", потому что он благовествовал им Иисуса и воскресение.
+</p>
+<div class="num">19</div><p id="n19">И, взяв его, привели в ареопаг и говорили: можем ли мы знать, что это за новое учение, проповедуемое тобою?
+</p>
+<div class="num">20</div><p id="n20">Ибо что-то странное ты влагаешь в уши наши. Посему хотим знать, что&#769; это такое?
+</p>
+<div class="num">21</div><p id="n21">Афиняне же все и живущие <i>у</i> <i>них</i> иностранцы ни в чем охотнее не проводили время, как в том, чтобы говорить или слушать что-нибудь новое.
+</p>
+<div class="num">22</div><p id="n22">И, став Павел среди ареопага, сказал: Афиняне! по всему вижу я, что вы как бы особенно набожны.
+</p>
+<div class="num">23</div><p id="n23">Ибо, проходя и осматривая ваши святыни, я нашел и жертвенник, на котором написано "неведомому Богу". Сего-то, Которого вы, не зная, чтите, я проповедую вам.
+</p>
+<div class="num">24</div><p id="n24">Бог, сотворивший мир и всё, что в нем, Он, будучи Господом неба и земли, не в рукотворенных храмах живет
+</p>
+<div class="num">25</div><p id="n25">и не требует служения рук человеческих, <i>как</i> <i>бы</i> имеющий в чем-либо нужду, Сам дая всему жизнь и дыхание и всё.
+</p>
+<div class="num">26</div><p id="n26">От одной крови Он произвел весь род человеческий для обитания по всему лицу земли, назначив предопределенные времена и пределы их обитанию,
+</p>
+<div class="num">27</div><p id="n27">дабы они искали Бога, не ощутят ли Его и не найдут ли, хотя Он и недалеко от каждого из нас:
+</p>
+<div class="num">28</div><p id="n28">ибо мы Им живем и движемся и существуем, как и некоторые из ваших стихотворцев говорили: "мы Его и род".
+</p>
+<div class="num">29</div><p id="n29">Итак мы, будучи родом Божиим, не должны думать, что Божество подобно золоту, или серебру, или камню, получившему образ от искусства и вымысла человеческого.
+</p>
+<div class="num">30</div><p id="n30">Итак, оставляя времена неведения, Бог ныне повелевает людям всем повсюду покаяться,
+</p>
+<div class="num">31</div><p id="n31">ибо Он назначил день, в который будет праведно судить вселенную, посредством предопределенного Им Мужа, подав удостоверение всем, воскресив Его из мертвых.
+</p>
+<div class="num">32</div><p id="n32">Услышав о воскресении мертвых, одни насмехались, а другие говорили: об этом послушаем тебя в другое время.
+</p>
+<div class="num">33</div><p id="n33">Итак Павел вышел из среды их.
+</p>
+<div class="num">34</div><p id="n34">Некоторые же мужи, пристав к нему, уверовали; между ними был Дионисий Ареопагит и женщина, именем Дамарь, и другие с ними.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="act.18.ru.html">к главе 18</a></div></div>
+
+</body>
+</html>

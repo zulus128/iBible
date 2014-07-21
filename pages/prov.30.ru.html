@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="prov.ru.html">Книга Притчей<br />Соломоновых</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 30
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Слова Агура, сына Иакеева. Вдохновенные изречения, <i>которые</i> сказал этот человек Ифиилу, Ифиилу и Укалу:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">подлинно, я более невежда, нежели кто-либо из людей, и разума человеческого нет у меня,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и не научился я мудрости, и познания святых не имею.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Кто восходил на небо и нисходил? кто собрал ветер в пригоршни свои? кто завязал воду в одежду? кто поставил все пределы земли? какое имя ему? и какое имя сыну его? знаешь ли?
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Всякое слово Бога чисто; Он - щит уповающим на Него.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Не прибавляй к словам Его, чтобы Он не обличил тебя, и ты не оказался лжецом.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Двух вещей я прошу у Тебя, не откажи мне, прежде нежели я умру:
+</p>
+<div class="num">&nbsp;8</div><p id="n8">суету и ложь удали от меня, нищеты и богатства не давай мне, питай меня насущным хлебом,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">дабы, пресытившись, я не отрекся <i>Тебя</i> и не сказал: "кто Господь?" и чтобы, обеднев, не стал красть и употреблять имя Бога моего всуе.
+</p>
+<div class="num">10</div><p id="n10">Не злословь раба пред господином его, чтобы он не проклял тебя, и ты не остался виноватым.
+</p>
+<div class="num">11</div><p id="n11">Есть род, который проклинает отца своего и не благословляет матери своей.
+</p>
+<div class="num">12</div><p id="n12">Есть род, который чист в глазах своих, тогда как не омыт от нечистот своих.
+</p>
+<div class="num">13</div><p id="n13">Есть род - о, как высокомерны глаза его, и как подняты ресницы его!
+</p>
+<div class="num">14</div><p id="n14">Есть род, у которого зубы - мечи, и челюсти - ножи, чтобы пожирать бедных на земле и нищих между людьми.
+</p>
+<div class="num">15</div><p id="n15">У ненасытимости две дочери: "давай, давай!" Вот три ненасытимых, и четыре, которые не скажут: "довольно!"
+</p>
+<div class="num">16</div><p id="n16">Преисподняя и утроба бесплодная, земля, которая не насыщается водою, и огонь, который не говорит: "довольно!"
+</p>
+<div class="num">17</div><p id="n17">Глаз, насмехающийся над отцом и пренебрегающий покорностью к матери, выклюют во&#769;роны дольные, и сожрут птенцы орлиные!
+</p>
+<div class="num">18</div><p id="n18">Три вещи непостижимы для меня, и четырех я не понимаю:
+</p>
+<div class="num">19</div><p id="n19">пути орла на небе, пути змея на скале, пути корабля среди моря и пути мужчины к девице.
+</p>
+<div class="num">20</div><p id="n20">Таков путь и жены прелюбодейной; поела и обтерла рот свой, и говорит: "я ничего худого не сделала".
+</p>
+<div class="num">21</div><p id="n21">От трех трясется земля, четырех она не может носить:
+</p>
+<div class="num">22</div><p id="n22">раба, когда он делается царем; глупого, когда он досыта ест хлеб;
+</p>
+<div class="num">23</div><p id="n23">позорную женщину, когда она выходит замуж, и служанку, когда она занимает место госпожи своей.
+</p>
+<div class="num">24</div><p id="n24">Вот четыре малых на земле, но они мудрее мудрых:
+</p>
+<div class="num">25</div><p id="n25">муравьи - народ не сильный, но летом заготовляют пищу свою;
+</p>
+<div class="num">26</div><p id="n26">горные мыши - народ слабый, но ставят домы свои на скале;
+</p>
+<div class="num">27</div><p id="n27">у саранчи нет царя, но выступает вся она стройно;
+</p>
+<div class="num">28</div><p id="n28">паук лапками цепляется, но бывает в царских чертогах.
+</p>
+<div class="num">29</div><p id="n29">Вот трое имеют стройную походку, и четверо стройно выступают:
+</p>
+<div class="num">30</div><p id="n30">лев, силач между зверями, не посторонится ни перед кем;
+</p>
+<div class="num">31</div><p id="n31">конь и козел, [предводитель стада,] и царь среди народа своего.
+</p>
+<div class="num">32</div><p id="n32">Если ты в заносчивости своей сделал глупость и помыслил злое, то <i>положи</i> руку на уста;
+</p>
+<div class="num">33</div><p id="n33">потому что, как сбивание молока производит масло, толчок в нос производит кровь, так и возбуждение гнева производит ссору.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="prov.31.ru.html">к главе 31</a></div></div>
+
+</body>
+</html>

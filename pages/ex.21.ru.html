@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 21
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И вот законы, которые ты объявишь им:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">если купишь раба Еврея, пусть он работает [тебе] шесть лет, а в седьмой [год] пусть выйдет на волю даром;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">если он пришел один, пусть один и выйдет; а если он женатый, пусть выйдет с ним и жена его;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">если же господин его дал ему жену и она родила ему сынов, или дочерей, то жена и дети ее пусть останутся у господина ее, а он выйдет один;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">но если раб скажет: люблю господина моего, жену мою и детей моих, не пойду на волю,-
+</p>
+<div class="num">&nbsp;6</div><p id="n6">то пусть господин его приведет его пред богов<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;Т. е. пред судей. Пс 81, 1, 2, 6.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p1"></a> и поставит его к двери, или к косяку, и проколет ему господин его ухо шилом, и он останется рабом его вечно.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Если кто продаст дочь свою в рабыни, то она не может выйти, как выходят рабы;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">если она не угодна господину своему и он не обручит ее, пусть позволит выкупить ее; а чужому народу продать ее [господин] не властен, когда сам пренебрег ее;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">если он обручит ее сыну своему, пусть поступит с нею по праву дочерей;
+</p>
+<div class="num">10</div><p id="n10">если же другую возьмет за него, то она не должна лишаться пищи, одежды и супружеского сожития;
+</p>
+<div class="num">11</div><p id="n11">а если он сих трех <i>вещей</i> не сделает для нее, пусть она отойдет даром, без выкупа.
+</p>
+<div class="num">12</div><p id="n12">Кто ударит человека так, что он умрет, да будет предан смерти;
+</p>
+<div class="num">13</div><p id="n13">но если кто не злоумышлял, а Бог попустил ему попасть под руки его, то Я назначу у тебя место, куда убежать [убийце];
+</p>
+<div class="num">14</div><p id="n14">а если кто с намерением умертвит ближнего коварно [и прибежит к жертвеннику], то <i>и</i> от жертвенника Моего бери его на смерть.
+</p>
+<div class="num">15</div><p id="n15">Кто ударит отца своего, или свою мать, того должно предать смерти.
+</p>
+<div class="num">16</div><p id="n16">Кто украдет человека [из сынов Израилевых] и [поработив его] продаст его, или найдется он в руках у него, то должно предать его смерти.
+</p>
+<div class="num">17</div><p id="n17">Кто злословит отца своего, или свою мать, того должно предать смерти.
+</p>
+<div class="num">18</div><p id="n18">Когда ссорятся [двое], и один человек ударит другого камнем, или кулаком, и тот не умрет, но сляжет в постель,
+</p>
+<div class="num">19</div><p id="n19">то, если он встанет и будет выходить из дома с помощью палки, ударивший [его] не будет повинен <i>смерти;</i> только пусть заплатит за остановку в его работе и даст на лечение его.
+</p>
+<div class="num">20</div><p id="n20">А если кто ударит раба своего, или служанку свою палкою, и они умрут под рукою его, то он должен быть наказан;
+</p>
+<div class="num">21</div><p id="n21">но если они день или два дня переживут, то не должно наказывать его, ибо это его серебро.
+</p>
+<div class="num">22</div><p id="n22">Когда дерутся люди, и ударят беременную женщину, и она выкинет, но не будет <i>другого</i> вреда, то взять с <i>виновного</i> пеню, какую наложит на него муж той женщины, и он должен заплатить оную при посредниках;
+</p>
+<div class="num">23</div><p id="n23">а если будет вред, то отдай душу за душу,
+</p>
+<div class="num">24</div><p id="n24">глаз за глаз, зуб за зуб, руку за руку, ногу за ногу,
+</p>
+<div class="num">25</div><p id="n25">обожжение за обожжение, рану за рану, ушиб за ушиб.
+</p>
+<div class="num">26</div><p id="n26">Если кто раба своего ударит в глаз, или служанку свою в глаз, и повредит его, пусть отпустит их на волю за глаз;
+</p>
+<div class="num">27</div><p id="n27">и если выбьет зуб рабу своему, или рабе своей, пусть отпустит их на волю за зуб.
+</p>
+<div class="num">28</div><p id="n28">Если вол забодает мужчину или женщину до смерти, то вола побить камнями и мяса его не есть; а хозяин вола не виноват;
+</p>
+<div class="num">29</div><p id="n29">но если вол бодлив был и вчера и третьего дня, и хозяин его, быв извещен о сем, не стерег его, а он убил мужчину или женщину, то вола побить камнями, и хозяина его предать смерти;
+</p>
+<div class="num">30</div><p id="n30">если на него наложен будет выкуп, пусть даст выкуп за душу свою, какой наложен будет на него.
+</p>
+<div class="num">31</div><p id="n31">Сына ли забодает, дочь ли забодает,- по сему же закону поступать с ним.
+</p>
+<div class="num">32</div><p id="n32">Если вол забодает раба или рабу, то господину их заплатить тридцать сиклей серебра, а вола побить камнями.
+</p>
+<div class="num">33</div><p id="n33">Если кто раскроет яму, или если выкопает яму и не покроет ее, и упадет в нее вол или осел,
+</p>
+<div class="num">34</div><p id="n34">то хозяин ямы должен заплатить, отдать серебро хозяину их, а труп будет его.
+</p>
+<div class="num">35</div><p id="n35">Если чей-нибудь вол забодает до смерти вола у соседа его, пусть продадут живого вола и разделят пополам цену его; также и убитого пусть разделят пополам;
+</p>
+<div class="num">36</div><p id="n36">а если известно было, что вол бодлив был и вчера и третьего дня, но хозяин его [быв извещен о сем] не стерег его, то должен он заплатить вола за вола, а убитый будет его.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.22.ru.html">к главе 22</a></div></div>
+
+</body>
+</html>

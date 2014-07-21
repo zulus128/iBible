@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Моисей пас овец у Иофора, тестя своего, священника Мадиамского. Однажды провел он стадо далеко в пустыню и пришел к горе Божией, Хориву.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И явился ему Ангел Господень в пламени огня из среды тернового куста. И увидел он, что терновый куст горит огнем, но куст не сгорает.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Моисей сказал: пойду и посмотрю на сие великое явление, отчего куст не сгорает.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Господь увидел, что он идет смотреть, и воззвал к нему Бог из среды куста, и сказал: Моисей! Моисей! Он сказал: вот я, [Господи]!
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И сказал Бог: не подходи сюда; сними обувь твою с ног твоих, ибо место, на котором ты стоишь, есть земля святая.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказал [ему]: Я Бог отца твоего, Бог Авраама, Бог Исаака и Бог Иакова. Моисей закрыл лице свое, потому что боялся воззреть на Бога.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И сказал Господь [Моисею]: Я увидел страдание народа Моего в Египте и услышал вопль его от приставников его; Я знаю скорби его
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и иду избавить его от руки Египтян и вывести его из земли сей [и ввести его] в землю хорошую и пространную, где течет молоко и мед, в землю Хананеев, Хеттеев, Аморреев, Ферезеев, [Гергесеев,] Евеев и Иевусеев.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И вот, уже вопль сынов Израилевых дошел до Меня, и Я вижу угнетение, каким угнетают их Египтяне.
+</p>
+<div class="num">10</div><p id="n10">Итак пойди: Я пошлю тебя к фараону [царю Египетскому]; и выведи из Египта народ Мой, сынов Израилевых.
+</p>
+<div class="num">11</div><p id="n11">Моисей сказал Богу: кто я, чтобы мне идти к фараону [царю Египетскому] и вывести из Египта сынов Израилевых?
+</p>
+<div class="num">12</div><p id="n12">И сказал [Бог]: Я буду с тобою, и вот тебе знамение, что Я послал тебя: когда ты выведешь народ [Мой] из Египта, вы совершите служение Богу на этой горе.
+</p>
+<div class="num">13</div><p id="n13">И сказал Моисей Богу: вот, я приду к сынам Израилевым и скажу им: Бог отцов ваших послал меня к вам. А они скажут мне: как Ему имя? Что сказать мне им?
+</p>
+<div class="num">14</div><p id="n14">Бог сказал Моисею: Я есмь Сущий. И сказал: так скажи сынам Израилевым: Сущий [Иегова] послал меня к вам.
+</p>
+<div class="num">15</div><p id="n15">И сказал еще Бог Моисею: так скажи сынам Израилевым: Господь, Бог отцов ваших, Бог Авраама, Бог Исаака и Бог Иакова послал меня к вам. Вот имя Мое на веки, и памятование о Мне из рода в род.
+</p>
+<div class="num">16</div><p id="n16">Пойди, собери старейшин [сынов] Израилевых и скажи им: Господь, Бог отцов ваших, явился мне, Бог Авраама, [Бог] Исаака и [Бог] Иакова, и сказал: Я посетил вас и <i>увидел,</i> что делается с вами в Египте.
+</p>
+<div class="num">17</div><p id="n17">И сказал: Я выведу вас от угнетения Египетского в землю Хананеев, Хеттеев, Аморреев, Ферезеев, [Гергесеев,] Евеев и Иевусеев, в землю, где течет молоко и мед.
+</p>
+<div class="num">18</div><p id="n18">И они послушают голоса твоего, и пойдешь ты и старейшины Израилевы к [фараону] царю Египетскому, и скажете ему: Господь, Бог Евреев, призвал нас; итак отпусти нас в пустыню, на три дня пути, чтобы принести жертву Господу, Богу нашему.
+</p>
+<div class="num">19</div><p id="n19">Но Я знаю, что [фараон] царь Египетский не позволит вам идти, если <i>не</i> <i>принудить</i> <i>его</i> рукою крепкою;
+</p>
+<div class="num">20</div><p id="n20">и простру руку Мою и поражу Египет всеми чудесами Моими, которые сделаю среди его; и после того он отпустит вас.
+</p>
+<div class="num">21</div><p id="n21">И дам народу сему милость в глазах Египтян; и когда пойдете, то пойдете не с пустыми руками:
+</p>
+<div class="num">22</div><p id="n22">каждая женщина выпросит у соседки своей и у живущей в доме ее вещей серебряных и вещей золотых, и одежд, и вы нарядите ими и сыновей ваших и дочерей ваших, и оберете Египтян.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.4.ru.html">к главе 4</a></div></div>
+
+</body>
+</html>

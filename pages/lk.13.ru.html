@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lk.ru.html">Евангелие от Луки</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 13
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В это время пришли некоторые и рассказали Ему о Галилеянах, которых кровь Пилат смешал с жертвами их.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Иисус сказал им на это: думаете ли вы, что эти Галилеяне были грешнее всех Галилеян, что так пострадали?
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Нет, говорю вам, но, если не покаетесь, все та&#769;к же погибнете.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Или думаете ли, что те восемнадцать человек, на которых упала башня Силоамская и побила их, виновнее были всех, живущих в Иерусалиме?
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Нет, говорю вам, но, если не покаетесь, все та&#769;к же погибнете.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказал сию притчу: некто имел в винограднике своем посаженную смоковницу, и пришел искать плода на ней, и не нашел;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и сказал виноградарю: вот, я третий год прихожу искать плода на этой смоковнице и не нахожу; сруби ее: на что она и землю занимает?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Но он сказал ему в ответ: господин! оставь ее и на этот год, пока я окопаю ее и обложу навозом,-
+</p>
+<div class="num">&nbsp;9</div><p id="n9">не принесет ли плода; если же нет, то в следующий <i>год</i> срубишь ее.
+</p>
+<div class="num">10</div><p id="n10">В одной из синагог учил Он в субботу.
+</p>
+<div class="num">11</div><p id="n11">Там была женщина, восемнадцать лет имевшая духа немощи: она была скорчена и не могла выпрямиться.
+</p>
+<div class="num">12</div><p id="n12">Иисус, увидев ее, подозвал и сказал ей: женщина! ты освобождаешься от недуга твоего.
+</p>
+<div class="num">13</div><p id="n13">И возложил на нее руки, и она тотчас выпрямилась и стала славить Бога.
+</p>
+<div class="num">14</div><p id="n14">При этом начальник синагоги, негодуя, что Иисус исцелил в субботу, сказал народу: есть шесть дней, в которые должно делать; в те и приходи&#769;те исцеляться, а не в день субботний.
+</p>
+<div class="num">15</div><p id="n15">Господь сказал ему в ответ: лицемер! не отвязывает ли каждый из вас вола своего или осла от яслей в субботу и не ведет ли поить?
+</p>
+<div class="num">16</div><p id="n16">сию же дочь Авраамову, которую связал сатана вот уже восемнадцать лет, не надлежало ли освободить от уз сих в день субботний?
+</p>
+<div class="num">17</div><p id="n17">И когда говорил Он это, все противившиеся Ему стыдились; и весь народ радовался о всех славных делах Его.
+</p>
+<div class="num">18</div><p id="n18">Он же сказал: чему подобно Царствие Божие? и чему уподоблю его?
+</p>
+<div class="num">19</div><p id="n19">Оно подобно зерну горчичному, которое, взяв, человек посадил в саду своем; и выросло, и стало большим деревом, и птицы небесные укрывались в ветвях его.
+</p>
+<div class="num">20</div><p id="n20">Ещё сказал: чему уподоблю Царствие Божие?
+</p>
+<div class="num">21</div><p id="n21">Оно подобно закваске, которую женщина, взяв, положила в три меры муки, доколе не вскисло всё.
+</p>
+<div class="num">22</div><p id="n22">И проходил по городам и селениям, уча и направляя путь к Иерусалиму.
+</p>
+<div class="num">23</div><p id="n23">Некто сказал Ему: Господи! неужели мало спасающихся? Он же сказал им:
+</p>
+<div class="num">24</div><p id="n24">подвизайтесь войти сквозь тесные врата, ибо, сказываю вам, многие поищут войти, и не возмогут.
+</p>
+<div class="num">25</div><p id="n25">Когда хозяин дома встанет и затворит двери, тогда вы, стоя вне, станете стучать в двери и говорить: Господи! Господи! отвори нам; но Он скажет вам в ответ: не знаю вас, откуда вы.
+</p>
+<div class="num">26</div><p id="n26">Тогда станете говорить: мы ели и пили пред Тобою, и на улицах наших учил Ты.
+</p>
+<div class="num">27</div><p id="n27">Но Он скажет: говорю вам: не знаю вас, откуда вы; отойдите от Меня все делатели неправды.
+</p>
+<div class="num">28</div><p id="n28">Там будет плач и скрежет зубов, когда увидите Авраама, Исаака и Иакова и всех пророков в Царствии Божием, а себя изгоняемыми вон.
+</p>
+<div class="num">29</div><p id="n29">И придут от востока и запада, и севера и юга, и возлягут в Царствии Божием.
+</p>
+<div class="num">30</div><p id="n30">И вот, есть последние, которые будут первыми, и есть первые, которые будут последними.
+</p>
+<div class="num">31</div><p id="n31">В тот день пришли некоторые из фарисеев и говорили Ему: выйди и удались отсюда, ибо Ирод хочет убить Тебя.
+</p>
+<div class="num">32</div><p id="n32">И сказал им: пойдите, скажите этой лисице: се, изгоняю бесов и совершаю исцеления сегодня и завтра, и в третий <i>день</i> кончу;
+</p>
+<div class="num">33</div><p id="n33">а впрочем, Мне должно ходить сегодня, завтра и в последующий день, потому что не бывает, чтобы пророк погиб вне Иерусалима.
+</p>
+<div class="num">34</div><p id="n34">Иерусалим! Иерусалим! избивающий пророков и камнями побивающий посланных к тебе! сколько раз хотел Я собрать чад твоих, как птица птенцов своих под крылья, и вы не захотели!
+</p>
+<div class="num">35</div><p id="n35">Се, оставляется вам дом ваш пуст. Сказываю же вам, что вы не увидите Меня, пока не придет время, когда скажете: благословен Грядый во имя Господне!
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lk.14.ru.html">к главе 14</a></div></div>
+
+</body>
+</html>

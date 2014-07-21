@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mf.ru.html">Евангелие от Матфея</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 24
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И выйдя, Иисус шел от храма; и приступили ученики Его, чтобы показать Ему здания храма.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Иисус же сказал им: видите ли всё это? Истинно говорю вам: не останется здесь камня на камне; всё будет разрушено.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Когда же сидел Он на горе Елеонской, то приступили к Нему ученики наедине и спросили: скажи нам, когда это будет? и какой признак Твоего пришествия и кончины века?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Иисус сказал им в ответ: берегитесь, чтобы кто не прельстил вас,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">ибо многие придут под именем Моим, и будут говорить: "я Христос", и многих прельстят.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Также услышите о войнах и о военных слухах. Смотрите, не ужасайтесь, ибо надлежит всему тому быть, но это еще не конец:
+</p>
+<div class="num">&nbsp;7</div><p id="n7">ибо восстанет народ на народ, и царство на царство; и будут глады, моры и землетрясения по местам;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">всё же это - начало болезней.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Тогда будут предавать вас на мучения и убивать вас; и вы будете ненавидимы всеми народами за имя Мое;
+</p>
+<div class="num">10</div><p id="n10">и тогда соблазнятся многие, и друг друга будут предавать, и возненавидят друг друга;
+</p>
+<div class="num">11</div><p id="n11">и многие лжепророки восстанут, и прельстят многих;
+</p>
+<div class="num">12</div><p id="n12">и, по причине умножения беззакония, во многих охладеет любовь;
+</p>
+<div class="num">13</div><p id="n13">претерпевший же до конца спасется.
+</p>
+<div class="num">14</div><p id="n14">И проповедано будет сие Евангелие Царствия по всей вселенной, во свидетельство всем народам; и тогда придет конец.
+</p>
+<div class="num">15</div><p id="n15">Итак, когда увидите мерзость запустения, реченную через пророка Даниила, стоящую на святом месте,- читающий да разумеет,-
+</p>
+<div class="num">16</div><p id="n16">тогда находящиеся в Иудее да бегут в горы;
+</p>
+<div class="num">17</div><p id="n17">и кто на кровле, тот да не сходит взять что-нибудь из дома своего;
+</p>
+<div class="num">18</div><p id="n18">и кто на поле, тот да не обращается назад взять одежды свои.
+</p>
+<div class="num">19</div><p id="n19">Горе же беременным и питающим сосцами в те дни!
+</p>
+<div class="num">20</div><p id="n20">Моли&#769;тесь, чтобы не случилось бегство ваше зимою или в субботу,
+</p>
+<div class="num">21</div><p id="n21">ибо тогда будет великая скорбь, какой не было от начала мира доныне, и не будет.
+</p>
+<div class="num">22</div><p id="n22">И если бы не сократились те дни, то не спаслась бы никакая плоть; но ради избранных сократятся те дни.
+</p>
+<div class="num">23</div><p id="n23">Тогда, если кто скажет вам: вот, здесь Христос, или там,- не верьте.
+</p>
+<div class="num">24</div><p id="n24">Ибо восстанут лжехристы и лжепророки, и дадут великие знамения и чудеса, чтобы прельстить, если возможно, и избранных.
+</p>
+<div class="num">25</div><p id="n25">Вот, Я наперед сказал вам.
+</p>
+<div class="num">26</div><p id="n26">Итак, если скажут вам: "вот, <i>Он</i> в пустыне",- не выходи&#769;те; "вот, <i>Он</i> в потаенных комнатах",- не верьте;
+</p>
+<div class="num">27</div><p id="n27">ибо, как молния исходит от востока и видна бывает даже до запада, так будет пришествие Сына Человеческого;
+</p>
+<div class="num">28</div><p id="n28">ибо, где будет труп, там соберутся орлы.
+</p>
+<div class="num">29</div><p id="n29">И вдруг, после скорби дней тех, солнце померкнет, и луна не даст света своего, и звезды спадут с неба, и силы небесные поколеблются;
+</p>
+<div class="num">30</div><p id="n30">тогда явится знамение Сына Человеческого на небе; и тогда восплачутся все племена земные и увидят Сына Человеческого, грядущего на облаках небесных с силою и славою великою;
+</p>
+<div class="num">31</div><p id="n31">и пошлет Ангелов Своих с трубою громогласною, и соберут избранных Его от четырех ветров, от края небес до края их.
+</p>
+<div class="num">32</div><p id="n32">От смоковницы возьмите подобие: когда ветви ее становятся уже мягки и пускают листья, то знаете, что близко лето;
+</p>
+<div class="num">33</div><p id="n33">так, когда вы увидите всё сие, знайте, что близко, при дверях.
+</p>
+<div class="num">34</div><p id="n34">Истинно говорю вам: не прейдет род сей, как всё сие будет;
+</p>
+<div class="num">35</div><p id="n35">небо и земля прейдут, но слова Мои не прейдут.
+</p>
+<div class="num">36</div><p id="n36">О дне же том и часе никто не знает, ни Ангелы небесные, а только Отец Мой один;
+</p>
+<div class="num">37</div><p id="n37">но, ка&#769;к было во дни Ноя, так будет и в пришествие Сына Человеческого:
+</p>
+<div class="num">38</div><p id="n38">ибо, ка&#769;к во дни перед потопом ели, пили, женились и выходили замуж, до того дня, как вошел Ной в ковчег,
+</p>
+<div class="num">39</div><p id="n39">и не думали, пока не пришел потоп и не истребил всех,- так будет и пришествие Сына Человеческого;
+</p>
+<div class="num">40</div><p id="n40">тогда будут двое на поле: один берется, а другой оставляется;
+</p>
+<div class="num">41</div><p id="n41">две мелющие в жерновах: одна берется, а другая оставляется.
+</p>
+<div class="num">42</div><p id="n42">Итак бодрствуйте, потому что не знаете, в который час Господь ваш приидет.
+</p>
+<div class="num">43</div><p id="n43">Но это вы знаете, что, если бы ведал хозяин дома, в какую стражу придет вор, то бодрствовал бы и не дал бы подкопать дома своего.
+</p>
+<div class="num">44</div><p id="n44">Потому и вы будьте готовы, ибо в который час не думаете, приидет Сын Человеческий.
+</p>
+<div class="num">45</div><p id="n45">Кто&#769; же верный и благоразумный раб, которого господин его поставил над слугами своими, чтобы давать им пищу во время?
+</p>
+<div class="num">46</div><p id="n46">Блажен тот раб, которого господин его, придя, найдет поступающим так;
+</p>
+<div class="num">47</div><p id="n47">истинно говорю вам, что над всем имением своим поставит его.
+</p>
+<div class="num">48</div><p id="n48">Если же раб тот, будучи зол, скажет в сердце своем: не скоро придет господин мой,
+</p>
+<div class="num">49</div><p id="n49">и начнет бить товарищей своих и есть и пить с пьяницами,-
+</p>
+<div class="num">50</div><p id="n50">то придет господин раба того в день, в который он не ожидает, и в час, в который не думает,
+</p>
+<div class="num">51</div><p id="n51">и рассечет его, и подвергнет его одной участи с лицемерами; там будет плач и скрежет зубов.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mf.25.ru.html">к главе 25</a></div></div>
+
+</body>
+</html>

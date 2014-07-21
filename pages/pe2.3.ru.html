@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="pe2.ru.html">Второе послание Петра</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Это уже второе послание пишу к вам, возлюбленные; в них напоминанием возбуждаю ваш чистый смысл,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">чтобы вы помнили слова, прежде реченные святыми пророками, и заповедь Господа и Спасителя, преданную Апостолами вашими.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Прежде всего знайте, что в последние дни явятся наглые ругатели, поступающие по собственным своим похотям
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и говорящие: где обетование пришествия Его? Ибо с тех пор, как стали умирать отцы, от начала творения, всё остается так же.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Думающие так не знают, что вначале словом Божиим небеса и земля составлены из воды и водою:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">потому тогдашний мир погиб, быв потоплен водою.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">А нынешние небеса и земля, содержимые тем же Словом, сберегаются огню на день суда и погибели нечестивых человеков.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Одно то&#769; не должно быть сокрыто от вас, возлюбленные, что у Господа один день, как тысяча лет, и тысяча лет, как один день.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Не медлит Господь <i>исполнением</i> обетования, как некоторые почитают то медлением; но долготерпит нас, не желая, чтобы кто погиб, но чтобы все пришли к покаянию.
+</p>
+<div class="num">10</div><p id="n10">Придет же день Господень, как тать ночью, и тогда небеса с шумом прейдут, стихии же, разгоревшись, разрушатся, земля и все дела на ней сгорят.
+</p>
+<div class="num">11</div><p id="n11">Если так всё это разрушится, то какими должно быть в святой жизни и благочестии вам,
+</p>
+<div class="num">12</div><p id="n12">ожидающим и желающим пришествия дня Божия, в который воспламененные небеса разрушатся и разгоревшиеся стихии растают?
+</p>
+<div class="num">13</div><p id="n13">Впрочем мы, по обетованию Его, ожидаем нового неба и новой земли, на которых обитает правда.
+</p>
+<div class="num">14</div><p id="n14">Итак, возлюбленные, ожидая сего, потщитесь явиться пред Ним неоскверненными и непорочными в мире;
+</p>
+<div class="num">15</div><p id="n15">и долготерпение Господа нашего почитайте спасением, как и возлюбленный брат наш Павел, по данной ему премудрости, написал вам,
+</p>
+<div class="num">16</div><p id="n16">как он говорит об этом и во всех посланиях, в которых есть нечто неудобовразумительное, что невежды и неутвержденные, к собственной своей погибели, превращают, как и прочие Писания.
+</p>
+<div class="num">17</div><p id="n17">Итак вы, возлюбленные, будучи предварены о сем, берегитесь, чтобы вам не увлечься заблуждением беззаконников и не отпасть от своего утверждения,
+</p>
+<div class="num">18</div><p id="n18">но возрастайте в благодати и познании Господа нашего и Спасителя Иисуса Христа. Ему слава и ныне и в день вечный. Аминь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="pe2.ru.html">Второе послание Петра</a>
+</div></div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jer.ru.html">Книга Пророка Иеремии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 17
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Грех Иуды написан железным резцом, алмазным острием начертан на скрижали сердца их и на рогах жертвенников их.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Как о сыновьях своих, воспоминают они о жертвенниках своих и дубравах своих у зеленых дерев, на высоких холмах.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Гору Мою в поле, имущество твое и все сокровища твои отдам на расхищение, и все высоты твои - за грехи во всех пределах твоих.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И ты чрез себя лишишься наследия твоего, которое Я дал тебе, и отдам тебя в рабство врагам твоим, в землю, которой ты не знаешь, потому что вы воспламенили огонь гнева Моего; он будет гореть во веки.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Так говорит Господь: проклят человек, который надеется на человека и плоть делает своею опорою, и которого сердце удаляется от Господа.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Он будет как вереск в пустыне и не увидит, когда придет доброе, и поселится в местах знойных в степи, на земле бесплодной, необитаемой.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Благословен человек, который надеется на Господа, и которого упование - Господь.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ибо он будет как дерево, посаженное при водах и пускающее корни свои у потока; не знает оно, когда приходит зной; лист его зелен, и во время засухи оно не боится и не перестает приносить плод.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Лукаво сердце <i>человеческое</i> более всего и крайне испорчено; кто узнает его?
+</p>
+<div class="num">10</div><p id="n10">Я, Господь, проникаю сердце и испытываю внутренности, чтобы воздать каждому по пути его и по плодам дел его.
+</p>
+<div class="num">11</div><p id="n11">Куропатка садится на яйца, которых не несла; таков приобретающий богатство неправдою: он оставит его на половине дней своих, и глупцом останется при конце своем.
+</p>
+<div class="num">12</div><p id="n12">Престол славы, возвышенный от начала, есть место освящения нашего.
+</p>
+<div class="num">13</div><p id="n13">Ты, Господи, надежда Израилева; все, оставляющие Тебя, посрамятся. "Отступающие от Меня будут написаны на прахе, потому что оставили Господа, источник воды живой".
+</p>
+<div class="num">14</div><p id="n14">Исцели меня, Господи, и исцелен буду; спаси меня, и спасен буду; ибо Ты хвала моя.
+</p>
+<div class="num">15</div><p id="n15">Вот, они говорят мне: "где слово Господне? пусть оно придет!"
+</p>
+<div class="num">16</div><p id="n16">Я не спешил быть пастырем у Тебя и не желал бедственного дня, Ты это знаешь; что вышло из уст моих, открыто пред лицем Твоим.
+</p>
+<div class="num">17</div><p id="n17">Не будь страшен для меня, Ты - надежда моя в день бедствия.
+</p>
+<div class="num">18</div><p id="n18">Пусть постыдятся гонители мои, а я не буду постыжен; пусть они вострепещут, а я буду бестрепетен; наведи на них день бедствия и сокруши их сугубым сокрушением.
+</p>
+<div class="num">19</div><p id="n19">Так сказал мне Господь: пойди и стань в воротах сынов народа, которыми входят цари Иудейские и которыми они выходят, и во всех воротах Иерусалимских,
+</p>
+<div class="num">20</div><p id="n20">и говори им: слушайте слово Господне, цари Иудейские, и вся Иудея, и все жители Иерусалима, входящие сими воротами.
+</p>
+<div class="num">21</div><p id="n21">Так говорит Господь: берегите души свои и не носите нош в день субботний и не вносите их воротами Иерусалимскими,
+</p>
+<div class="num">22</div><p id="n22">и не выносите нош из домов ваших в день субботний, и не занимайтесь никакою работою, но святите день субботний так, как Я заповедал отцам вашим,
+</p>
+<div class="num">23</div><p id="n23">которые впрочем не послушались и не приклонили уха своего, но сделались жестоковыйными, чтобы не слушать и не принимать наставления.
+</p>
+<div class="num">24</div><p id="n24">И если вы послушаете Меня в том, говорит Господь, чтобы не носить нош воротами сего города в день субботний и чтобы святить субботу, не занимаясь в этот день никакою работою,
+</p>
+<div class="num">25</div><p id="n25">то воротами сего города будут входить цари и князья, сидящие на престоле Давида, ездящие на колесницах и на конях, они и князья их, Иудеи и жители Иерусалима, и город сей будет обитаем вечно.
+</p>
+<div class="num">26</div><p id="n26">И будут приходить из городов Иудейских, и из окрестностей Иерусалима, и из земли Вениаминовой, и с равнины и с гор и с юга, и приносить всесожжение и жертву, и хлебное приношение, и ливан, и благодарственные жертвы в дом Господень.
+</p>
+<div class="num">27</div><p id="n27">А если не послушаете Меня в том, чтобы святить день субботний и не носить нош, входя в ворота Иерусалима в день субботний, то возжгу огонь в воротах его, и он пожрет чертоги Иерусалима и не погаснет.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jer.18.ru.html">к главе 18</a></div></div>
+
+</body>
+</html>

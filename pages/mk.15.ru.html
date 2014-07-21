@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mk.ru.html">Евангелие от Марка</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 15
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Немедленно поутру первосвященники со старейшинами и книжниками и весь синедрион составили совещание и, связав Иисуса, отвели и предали Пилату.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Пилат спросил Его: Ты Царь Иудейский? Он же сказал ему в ответ: ты говоришь.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И первосвященники обвиняли Его во многом.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Пилат же опять спросил Его: Ты ничего не отвечаешь? видишь, как много против Тебя обвинений.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Но Иисус и на это ничего не отвечал, так что Пилат дивился.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">На всякий же праздник отпускал он им одного узника, о котором просили.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Тогда был в узах <i>некто,</i> по имени Варавва, со своими сообщниками, которые во время мятежа сделали убийство.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И народ начал кричать и просить <i>Пилата</i> о том, что&#769; он всегда делал для них.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Он сказал им в ответ: хотите ли, отпущу вам Царя Иудейского?
+</p>
+<div class="num">10</div><p id="n10">Ибо знал, что первосвященники предали Его из зависти.
+</p>
+<div class="num">11</div><p id="n11">Но первосвященники возбудили народ <i>просить,</i> чтобы отпустил им лучше Варавву.
+</p>
+<div class="num">12</div><p id="n12">Пилат, отвечая, опять сказал им: что же хотите, чтобы я сделал с Тем, Которого вы называете Царем Иудейским?
+</p>
+<div class="num">13</div><p id="n13">Они опять закричали: распни Его.
+</p>
+<div class="num">14</div><p id="n14">Пилат сказал им: какое же зло сделал Он? Но они еще сильнее закричали: распни Его.
+</p>
+<div class="num">15</div><p id="n15">Тогда Пилат, желая сделать угодное народу, отпустил им Варавву, а Иисуса, бив, предал на распятие.
+</p>
+<div class="num">16</div><p id="n16">А воины отвели Его внутрь двора, то есть в преторию, и собрали весь полк,
+</p>
+<div class="num">17</div><p id="n17">и одели Его в багряницу, и, сплетши терновый венец, возложили на Него;
+</p>
+<div class="num">18</div><p id="n18">и начали приветствовать Его: радуйся, Царь Иудейский!
+</p>
+<div class="num">19</div><p id="n19">И били Его по голове тростью, и плевали на Него, и, становясь на колени, кланялись Ему.
+</p>
+<div class="num">20</div><p id="n20">Когда же насмеялись над Ним, сняли с Него багряницу, одели Его в собственные одежды Его и повели Его, чтобы распять Его.
+</p>
+<div class="num">21</div><p id="n21">И заставили проходящего некоего Киринеянина Симона, отца Александрова и Руфова, идущего с поля, нести крест Его.
+</p>
+<div class="num">22</div><p id="n22">И привели Его на место Голгофу, что&#769; значит: Лобное место.
+</p>
+<div class="num">23</div><p id="n23">И давали Ему пить вино со смирною; но Он не принял.
+</p>
+<div class="num">24</div><p id="n24">Распявшие Его делили одежды Его, бросая жребий, кому что&#769; взять.
+</p>
+<div class="num">25</div><p id="n25">Был час третий, и распяли Его.
+</p>
+<div class="num">26</div><p id="n26">И была надпись вины Его: Царь Иудейский.
+</p>
+<div class="num">27</div><p id="n27">С Ним распяли двух разбойников, одного по правую, а другого по левую <i>сторону</i> Его.
+</p>
+<div class="num">28</div><p id="n28">И сбылось слово Писания: и к злодеям причтен.
+</p>
+<div class="num">29</div><p id="n29">Проходящие злословили Его, кивая головами своими и говоря: э! разрушающий храм, и в три дня созидающий!
+</p>
+<div class="num">30</div><p id="n30">спаси Себя Самого и сойди со креста.
+</p>
+<div class="num">31</div><p id="n31">Подобно и первосвященники с книжниками, насмехаясь, говорили друг другу: других спасал, а Себя не может спасти.
+</p>
+<div class="num">32</div><p id="n32">Христос, Царь Израилев, пусть сойдет теперь с креста, чтобы мы видели, и уверуем. И распятые с Ним поносили Его.
+</p>
+<div class="num">33</div><p id="n33">В шестом же часу настала тьма по всей земле и <i>продолжалась</i> до часа девятого.
+</p>
+<div class="num">34</div><p id="n34">В девятом часу возопил Иисус громким голосом: Элои&#769;! Элои&#769;! ламма&#769; савахфани&#769;? - что значит: Боже Мой! Боже Мой! для чего Ты Меня оставил?
+</p>
+<div class="num">35</div><p id="n35">Некоторые из стоявших тут, услышав, говорили: вот, Илию зовет.
+</p>
+<div class="num">36</div><p id="n36">А один побежал, наполнил губку уксусом и, наложив на трость, давал Ему пить, говоря: постойте, посмотрим, придет ли Илия снять Его.
+</p>
+<div class="num">37</div><p id="n37">Иисус же, возгласив громко, испустил дух.
+</p>
+<div class="num">38</div><p id="n38">И завеса в храме раздралась надвое, сверху донизу.
+</p>
+<div class="num">39</div><p id="n39">Сотник, стоявший напротив Его, увидев, что Он, та&#769;к возгласив, испустил дух, сказал: истинно Человек Сей был Сын Божий.
+</p>
+<div class="num">40</div><p id="n40">Были <i>тут</i> и женщины, которые смотрели издали: между ними была и Мария Магдалина, и Мария, мать Иакова меньшего и Иосии, и Саломия,
+</p>
+<div class="num">41</div><p id="n41">которые и тогда, как Он был в Галилее, следовали за Ним и служили Ему, и другие многие, вместе с Ним пришедшие в Иерусалим.
+</p>
+<div class="num">42</div><p id="n42">И как уже настал вечер,- потому что была пятница, то есть <i>день</i> перед субботою,-
+</p>
+<div class="num">43</div><p id="n43">пришел Иосиф из Аримафеи, знаменитый член совета, который и сам ожидал Царствия Божия, осмелился войти к Пилату, и просил тела Иисусова.
+</p>
+<div class="num">44</div><p id="n44">Пилат удивился, что Он уже умер, и, призвав сотника, спросил его, давно ли умер?
+</p>
+<div class="num">45</div><p id="n45">И, узнав от сотника, отдал тело Иосифу.
+</p>
+<div class="num">46</div><p id="n46">Он, купив плащаницу и сняв Его, обвил плащаницею, и положил Его во гробе, который был высечен в скале, и привалил камень к двери гроба.
+</p>
+<div class="num">47</div><p id="n47">Мария же Магдалина и Мария Иосиева смотрели, где Его полагали.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mk.16.ru.html">к главе 16</a></div></div>
+
+</body>
+</html>

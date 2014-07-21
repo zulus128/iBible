@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="act.ru.html">Деяния Апостолов</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">При наступлении дня Пятидесятницы все они были единодушно вместе.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И внезапно сделался шум с неба, как бы от несущегося сильного ветра, и наполнил весь дом, где они находились.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И явились им разделяющиеся языки, как бы огненные, и почили по одному на каждом из них.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И исполнились все Духа Святаго, и начали говорить на иных языках, как Дух давал им провещевать.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">В Иерусалиме же находились Иудеи, люди набожные, из всякого народа под небом.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Когда сделался этот шум, собрался народ, и пришел в смятение, ибо каждый слышал их говорящих его наречием.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И все изумлялись и дивились, говоря между собою: сии говорящие не все ли Галилеяне?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Как же мы слышим каждый собственное наречие, в котором родились.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Парфяне, и Мидяне, и Еламиты, и жители Месопотамии, Иудеи и Каппадокии, Понта и Асии,
+</p>
+<div class="num">10</div><p id="n10">Фригии и Памфилии, Египта и частей Ливии, прилежащих к Киринее, и пришедшие из Рима, Иудеи и прозелиты<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;Обращенные из язычников.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p1"></a>,
+</p>
+<div class="num">11</div><p id="n11">критяне и аравитяне, слышим их нашими языками говорящих о великих <i>делах</i> Божиих?
+</p>
+<div class="num">12</div><p id="n12">И изумлялись все и, недоумевая, говорили друг другу: что это значит?
+</p>
+<div class="num">13</div><p id="n13">А иные, насмехаясь, говорили: они напились сладкого вина.
+</p>
+<div class="num">14</div><p id="n14">Петр же, став с одиннадцатью, возвысил голос свой и возгласил им: мужи Иудейские, и все живущие в Иерусалиме! сие да будет вам известно, и внимайте словам моим:
+</p>
+<div class="num">15</div><p id="n15">они не пьяны, как вы думаете, ибо теперь третий час дня;
+</p>
+<div class="num">16</div><p id="n16">но это есть предреченное пророком Иоилем:
+</p>
+<div class="num">17</div><p id="n17">И будет в последние дни, говорит Бог, излию от Духа Моего на всякую плоть, и будут пророчествовать сыны ваши и дочери ваши; и юноши ваши будут видеть видения, и старцы ваши сновидениями вразумляемы будут.
+</p>
+<div class="num">18</div><p id="n18">И на рабов Моих и на рабынь Моих в те дни излию от Духа Моего, и будут пророчествовать.
+</p>
+<div class="num">19</div><p id="n19">И покажу чудеса на небе вверху и знамения на земле внизу, кровь и огонь и курение дыма.
+</p>
+<div class="num">20</div><p id="n20">Солнце превратится во тьму, и луна - в кровь, прежде нежели наступит день Господень, великий и славный.
+</p>
+<div class="num">21</div><p id="n21">И будет: всякий, кто призовет имя Господне, спасется.
+</p>
+<div class="num">22</div><p id="n22">Мужи Израильские! выслушайте слова сии: Иисуса Назорея, Мужа, засвидетельствованного вам от Бога силами и чудесами и знамениями, которые Бог сотворил через Него среди вас, как и сами знаете,
+</p>
+<div class="num">23</div><p id="n23">Сего, по определенному совету и предведению Божию преданного, вы взяли и, пригвоздив руками беззаконных, убили;
+</p>
+<div class="num">24</div><p id="n24">но Бог воскресил Его, расторгнув узы смерти, потому что ей невозможно было удержать Его.
+</p>
+<div class="num">25</div><p id="n25">Ибо Давид говорит о Нем: видел я пред собою Господа всегда, ибо Он одесную меня, дабы я не поколебался.
+</p>
+<div class="num">26</div><p id="n26">Оттого возрадовалось сердце мое и возвеселился язык мой; даже и плоть моя упокоится в уповании,
+</p>
+<div class="num">27</div><p id="n27">ибо Ты не оставишь души моей в аде и не дашь святому Твоему увидеть тления.
+</p>
+<div class="num">28</div><p id="n28">Ты дал мне познать путь жизни, Ты исполнишь меня радостью пред лицем Твоим.
+</p>
+<div class="num">29</div><p id="n29">Мужи братия! да будет позволено с дерзновением сказать вам о праотце Давиде, что он и умер и погребен, и гроб его у нас до сего дня.
+</p>
+<div class="num">30</div><p id="n30">Будучи же пророком и зная, что Бог с клятвою обещал ему от плода чресл его воздвигнуть Христа во плоти и посадить на престоле его,
+</p>
+<div class="num">31</div><p id="n31">Он прежде сказал о воскресении Христа, что не оставлена душа Его в аде, и плоть Его не видела тления.
+</p>
+<div class="num">32</div><p id="n32">Сего Иисуса Бог воскресил, чему все мы свидетели.
+</p>
+<div class="num">33</div><p id="n33">Итак Он, быв вознесен десницею Божиею и приняв от Отца обетование Святаго Духа, излил то, что вы ныне видите и слышите.
+</p>
+<div class="num">34</div><p id="n34">Ибо Давид не восшел на небеса; но сам говорит: сказал Господь Господу моему: седи одесную Меня,
+</p>
+<div class="num">35</div><p id="n35">доколе положу врагов Твоих в подножие ног Твоих.
+</p>
+<div class="num">36</div><p id="n36">Итак твердо знай, весь дом Израилев, что Бог соделал Господом и Христом Сего Иисуса, Которого вы распяли.
+</p>
+<div class="num">37</div><p id="n37">Услышав это, они умилились сердцем и сказали Петру и прочим Апостолам: что нам делать, мужи братия?
+</p>
+<div class="num">38</div><p id="n38">Петр же сказал им: покайтесь, и да крестится каждый из вас во имя Иисуса Христа для прощения грехов; и полу&#769;чите дар Святаго Духа.
+</p>
+<div class="num">39</div><p id="n39">Ибо вам принадлежит обетование и детям вашим и всем дальним, кого ни призовет Господь Бог наш.
+</p>
+<div class="num">40</div><p id="n40">И другими многими словами он свидетельствовал и увещевал, говоря: спасайтесь от рода сего развращенного.
+</p>
+<div class="num">41</div><p id="n41">Итак охотно принявшие слово его крестились, и присоединилось в тот день душ около трех тысяч.
+</p>
+<div class="num">42</div><p id="n42">И они постоянно пребывали в учении Апостолов, в общении и преломлении хлеба и в молитвах.
+</p>
+<div class="num">43</div><p id="n43">Был же страх на всякой душе; и много чудес и знамений совершилось через Апостолов в Иерусалиме.
+</p>
+<div class="num">44</div><p id="n44">Все же верующие были вместе и имели всё общее.
+</p>
+<div class="num">45</div><p id="n45">И продавали имения и всякую собственность, и разделяли всем, смотря по нужде каждого.
+</p>
+<div class="num">46</div><p id="n46">И каждый день единодушно пребывали в храме и, преломляя по домам хлеб, принимали пищу в веселии и простоте сердца,
+</p>
+<div class="num">47</div><p id="n47">хваля Бога и находясь в любви у всего народа. Господь же ежедневно прилагал спасаемых к Церкви.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="act.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

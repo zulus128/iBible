@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 32
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">А Иаков пошел путем своим. [И, взглянув, увидел ополчение Божие ополчившееся.] И встретили его Ангелы Божии.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Иаков, увидев их, сказал: это ополчение Божие. И нарек имя месту тому: Маханаим.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И послал Иаков пред собою вестников к брату своему Исаву в землю Сеир, в область Едом,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и приказал им, сказав: так скажите господину моему Исаву: вот что говорит раб твой Иаков: я жил у Лавана и прожил доныне;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и есть у меня волы и ослы и мелкий скот, и рабы и рабыни; и я послал известить <i>о</i> <i>себе</i> господина моего [Исава], дабы приобрести [рабу твоему] благоволение пред очами твоими.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И возвратились вестники к Иакову и сказали: мы ходили к брату твоему Исаву; он идет навстречу тебе, и с ним четыреста человек.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Иаков очень испугался и смутился; и разделил людей, бывших с ним, и скот мелкий и крупный и верблюдов на два стана.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сказал [Иаков]: если Исав нападет на один стан и побьет его, то остальной стан может спастись.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказал Иаков: Боже отца моего Авраама и Боже отца моего Исаака, Господи [Боже], сказавший мне: возвратись в землю твою, на родину твою, и Я буду благотворить тебе!
+</p>
+<div class="num">10</div><p id="n10">Недостоин я всех милостей и всех благодеяний, которые Ты сотворил рабу Твоему, ибо я с посохом моим перешел этот Иордан, а теперь у меня два стана.
+</p>
+<div class="num">11</div><p id="n11">Избавь меня от руки брата моего, от руки Исава, ибо я боюсь его, чтобы он, придя, не убил меня [и] матери с детьми.
+</p>
+<div class="num">12</div><p id="n12">Ты сказал: Я буду благотворить тебе и сделаю потомство твое, как песок морской, которого не исчислить от множества.
+</p>
+<div class="num">13</div><p id="n13">И ночевал там <i>Иаков</i> в ту ночь. И взял из того, что у него было, [и послал] в подарок Исаву, брату своему:
+</p>
+<div class="num">14</div><p id="n14">двести коз, двадцать козлов, двести овец, двадцать овнов,
+</p>
+<div class="num">15</div><p id="n15">тридцать верблюдиц дойных с жеребятами их, сорок коров, десять волов, двадцать ослиц, десять ослов.
+</p>
+<div class="num">16</div><p id="n16">И дал в руки рабам своим каждое стадо особо и сказал рабам своим: пойдите предо мною и оставляйте расстояние от стада до стада.
+</p>
+<div class="num">17</div><p id="n17">И приказал первому, сказав: когда брат мой Исав встретится тебе и спросит тебя, говоря: чей ты? и куда идешь? и чье это <i>стадо</i> [идет] пред тобою?
+</p>
+<div class="num">18</div><p id="n18">то скажи: раба твоего Иакова; это подарок, посланный господину моему Исаву; вот, и сам он за нами [идет].
+</p>
+<div class="num">19</div><p id="n19">То же [что первому] приказал он и второму, и третьему, и всем, которые шли за стадами, говоря: так скажите Исаву, когда встретите его;
+</p>
+<div class="num">20</div><p id="n20">и скажите: вот, и раб твой Иаков [идет] за нами. Ибо он сказал <i>сам</i> <i>в</i> <i>себе:</i> умилостивлю его дарами, которые идут предо мною, и потом увижу лице его; может быть, и примет меня.
+</p>
+<div class="num">21</div><p id="n21">И пошли дары пред ним, а он ту ночь ночевал в стане.
+</p>
+<div class="num">22</div><p id="n22">И встал в ту ночь, и, взяв двух жен своих и двух рабынь своих, и одиннадцать сынов своих, перешел через Иавок вброд;
+</p>
+<div class="num">23</div><p id="n23">и, взяв их, перевел через поток, и перевел все, что у него <i>было.</i>
+</p>
+<div class="num">24</div><p id="n24">И остался Иаков один. И боролся Некто с ним до появления зари;
+</p>
+<div class="num">25</div><p id="n25">и, увидев, что не одолевает его, коснулся состава бедра его и повредил состав бедра у Иакова, когда он боролся с Ним.
+</p>
+<div class="num">26</div><p id="n26">И сказал [ему]: отпусти Меня, ибо взошла заря. Иаков сказал: не отпущу Тебя, пока не благословишь меня.
+</p>
+<div class="num">27</div><p id="n27">И сказал: как имя твое? Он сказал: Иаков.
+</p>
+<div class="num">28</div><p id="n28">И сказал [ему]: отныне имя тебе будет не Иаков, а Израиль, ибо ты боролся с Богом, и человеков одолевать будешь.
+</p>
+<div class="num">29</div><p id="n29">Спросил и Иаков, говоря: скажи [мне] имя Твое. И Он сказал: на что ты спрашиваешь о имени Моем? [оно чудно.] И благословил его там.
+</p>
+<div class="num">30</div><p id="n30">И нарек Иаков имя месту тому: Пенуэл; ибо, <i>говорил</i> <i>он,</i> я видел Бога лицем к лицу, и сохранилась душа моя.
+</p>
+<div class="num">31</div><p id="n31">И взошло солнце, когда он проходил Пенуэл; и хромал он на бедро свое.
+</p>
+<div class="num">32</div><p id="n32">Поэтому и доныне сыны Израилевы не едят жилы, которая на составе бедра, потому что <i>Боровшийся</i> коснулся жилы на составе бедра Иакова.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.33.ru.html">к главе 33</a></div></div>
+
+</body>
+</html>

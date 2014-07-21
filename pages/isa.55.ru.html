@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="isa.ru.html">Книга Пророка Исаии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 55
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Жаждущие! идите все к водам; даже и вы, у которых нет серебра, идите, покупайте и ешьте; идите, покупайте без серебра и без платы вино и молоко.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Для чего вам отвешивать серебро за то, что не хлеб, и трудовое свое за то, что не насыщает? Послушайте Меня внимательно и вкушайте благо, и душа ваша да насладится туком.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Приклоните ухо ваше и придите ко Мне: послушайте, и жива будет душа ваша,- и дам вам завет вечный, неизменные милости, <i>обещанные</i> Давиду.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Вот, Я дал Его свидетелем для народов, вождем и наставником народам.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Вот, ты призовешь народ, которого ты не знал, и народы, которые тебя не знали, поспешат к тебе ради Господа Бога твоего и ради Святаго Израилева, ибо Он прославил тебя.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Ищите Господа, когда можно найти Его; призывайте Его, когда Он близко.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Да оставит нечестивый путь свой и беззаконник - помыслы свои, и да обратится к Господу, и Он помилует его, и к Богу нашему, ибо Он многомилостив.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Мои мысли - не ваши мысли, ни ваши пути - пути Мои, говорит Господь.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Но как небо выше земли, так пути Мои выше путей ваших, и мысли Мои выше мыслей ваших.
+</p>
+<div class="num">10</div><p id="n10">Как дождь и снег нисходит с неба и туда не возвращается, но напояет землю и делает ее способною рождать и произращать, чтобы она давала семя тому, кто сеет, и хлеб тому, кто ест,-
+</p>
+<div class="num">11</div><p id="n11">так и слово Мое, которое исходит из уст Моих,- оно не возвращается ко Мне тщетным, но исполняет то, что Мне угодно, и совершает то, для чего Я послал его.
+</p>
+<div class="num">12</div><p id="n12">Итак вы выйдете с весельем и будете провожаемы с миром; горы и холмы будут петь пред вами песнь, и все дерева в поле рукоплескать вам.
+</p>
+<div class="num">13</div><p id="n13">Вместо терновника вырастет кипарис; вместо крапивы возрастет мирт; и это будет во славу Господа, в знамение вечное, несокрушимое.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="isa.56.ru.html">к главе 56</a></div></div>
+
+</body>
+</html>

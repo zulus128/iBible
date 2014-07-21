@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="iov.ru.html">Книга Иова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">После того открыл Иов уста свои и проклял день свой.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И начал Иов и сказал:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">погибни день, в который я родился, и ночь, в которую сказано: зачался человек!
+</p>
+<div class="num">&nbsp;4</div><p id="n4">День тот да будет тьмою; да не взыщет его Бог свыше, и да не воссияет над ним свет!
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Да омрачит его тьма и тень смертная, да обложит его туча, да страшатся его, как палящего зноя!
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Ночь та,- да обладает ею мрак, да не сочтется она в днях года, да не войдет в число месяцев!
+</p>
+<div class="num">&nbsp;7</div><p id="n7">О! ночь та - да будет она безлюдна; да не войдет в нее веселье!
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Да проклянут ее проклинающие день, способные разбудить левиафана!
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Да померкнут звезды рассвета ее: пусть ждет она света, и он не приходит, и да не увидит она ресниц денницы
+</p>
+<div class="num">10</div><p id="n10">за то, что не затворила дверей чрева <i>матери</i> моей и не сокрыла горести от очей моих!
+</p>
+<div class="num">11</div><p id="n11">Для чего не умер я, выходя из утробы, и не скончался, когда вышел из чрева?
+</p>
+<div class="num">12</div><p id="n12">Зачем приняли меня колени? зачем было мне сосать сосцы?
+</p>
+<div class="num">13</div><p id="n13">Теперь бы лежал я и почивал; спал бы, и мне было бы покойно
+</p>
+<div class="num">14</div><p id="n14">с царями и советниками земли, которые застраивали для себя пустыни,
+</p>
+<div class="num">15</div><p id="n15">или с князьями, у которых было золото, и которые наполняли домы свои серебром;
+</p>
+<div class="num">16</div><p id="n16">или, как выкидыш сокрытый, я не существовал бы, как младенцы, не увидевшие света.
+</p>
+<div class="num">17</div><p id="n17">Там беззаконные перестают наводить страх, и там отдыхают истощившиеся в силах.
+</p>
+<div class="num">18</div><p id="n18">Там узники вместе наслаждаются покоем и не слышат криков приставника.
+</p>
+<div class="num">19</div><p id="n19">Малый и великий там равны, и раб свободен от господина своего.
+</p>
+<div class="num">20</div><p id="n20">На что дан страдальцу свет, и жизнь огорченным душею,
+</p>
+<div class="num">21</div><p id="n21">которые ждут смерти, и нет ее, которые вырыли бы ее охотнее, нежели клад,
+</p>
+<div class="num">22</div><p id="n22">обрадовались бы до восторга, восхитились бы, что нашли гроб?
+</p>
+<div class="num">23</div><p id="n23"><i>На</i> <i>что</i> <i>дан</i> <i>свет</i> человеку, которого путь закрыт, и которого Бог окружил мраком?
+</p>
+<div class="num">24</div><p id="n24">Вздохи мои предупреждают хлеб мой, и стоны мои льются, как вода,
+</p>
+<div class="num">25</div><p id="n25">ибо ужасное, чего я ужасался, то и постигло меня; и чего я боялся, то и пришло ко мне.
+</p>
+<div class="num">26</div><p id="n26">Нет мне мира, нет покоя, нет отрады: постигло несчастье.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="iov.4.ru.html">к главе 4</a></div></div>
+
+</body>
+</html>

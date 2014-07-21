@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ti2.ru.html">Второе послание к<br />Тимофею</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Павел, волею Божиею Апостол Иисуса Христа, по обетованию жизни во Христе Иисусе,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Тимофею, возлюбленному сыну: благодать, милость, мир от Бога Отца и Христа Иисуса, Господа нашего.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Благодарю Бога, Которому служу от прародителей с чистою совестью, что непрестанно вспоминаю о тебе в молитвах моих днем и ночью,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и желаю видеть тебя, вспоминая о слезах твоих, дабы мне исполниться радости,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">приводя на память нелицемерную веру твою, которая прежде обитала в бабке твоей Лоиде и матери твоей Евнике; уверен, что она и в тебе.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">По сей причине напоминаю тебе возгревать дар Божий, который в тебе через мое рукоположение;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">ибо дал нам Бог духа не боязни, но силы и любви и целомудрия.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Итак, не стыдись свидетельства Господа нашего Иисуса Христа, ни меня, узника Его; но страдай с благовестием Христовым силою Бога,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">спасшего нас и призвавшего званием святым, не по делам нашим, но по Своему изволению и благодати, данной нам во Христе Иисусе прежде вековых времен,
+</p>
+<div class="num">10</div><p id="n10">открывшейся же ныне явлением Спасителя нашего Иисуса Христа, разрушившего смерть и явившего жизнь и нетление через благовестие,
+</p>
+<div class="num">11</div><p id="n11">для которого я поставлен проповедником и Апостолом и учителем язычников.
+</p>
+<div class="num">12</div><p id="n12">По сей причине я и страдаю так; но не стыжусь. Ибо я знаю, в Кого уверовал, и уверен, что Он силен сохранить залог мой на оный день.
+</p>
+<div class="num">13</div><p id="n13">Держись образца здравого учения, которое ты слышал от меня, с верою и любовью во Христе Иисусе.
+</p>
+<div class="num">14</div><p id="n14">Храни добрый залог Духом Святым, живущим в нас.
+</p>
+<div class="num">15</div><p id="n15">Ты знаешь, что все Асийские оставили меня; в числе их Фигелл и Ермоген.
+</p>
+<div class="num">16</div><p id="n16">Да даст Господь милость дому Онисифора за то, что он многократно покоил меня и не стыдился уз моих,
+</p>
+<div class="num">17</div><p id="n17">но, быв в Риме, с великим тщанием искал меня и нашел.
+</p>
+<div class="num">18</div><p id="n18">Да даст ему Господь обрести милость у Господа в оный день; а сколько он служил мне в Ефесе, ты лучше знаешь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ti2.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

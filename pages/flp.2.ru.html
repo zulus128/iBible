@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="flp.ru.html">Послание к Филиппийцам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Итак, если <i>есть</i> какое утешение во Христе, если <i>есть</i> какая отрада любви, если <i>есть</i> какое общение духа, если <i>есть</i> какое милосердие и сострадательность,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">то дополните мою радость: имейте одни мысли, имейте ту же любовь, будьте единодушны и единомысленны;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">ничего <i>не</i> <i>делайте</i> по любопрению или по тщеславию, но по смиренномудрию почитайте один другого высшим себя.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Не о себе <i>только</i> каждый заботься, но каждый и о других.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Ибо в вас должны быть те же чувствования, какие и во Христе Иисусе:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Он, будучи образом Божиим, не почитал хищением быть равным Богу;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">но уничижил Себя Самого, приняв образ раба, сделавшись подобным человекам и по виду став как человек;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">смирил Себя, быв послушным даже до смерти, и смерти крестной.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Посему и Бог превознес Его и дал Ему имя выше всякого имени,
+</p>
+<div class="num">10</div><p id="n10">дабы пред именем Иисуса преклонилось всякое колено небесных, земных и преисподних,
+</p>
+<div class="num">11</div><p id="n11">и всякий язык исповедал, что Господь Иисус Христос в славу Бога Отца.
+</p>
+<div class="num">12</div><p id="n12">Итак, возлюбленные мои, как вы всегда были послушны, не только в присутствии моем, но гораздо более ныне во время отсутствия моего, со страхом и трепетом совершайте свое спасение,
+</p>
+<div class="num">13</div><p id="n13">потому что Бог производит в вас и хотение и действие по <i>Своему</i> благоволению.
+</p>
+<div class="num">14</div><p id="n14">Всё делайте без ропота и сомнения,
+</p>
+<div class="num">15</div><p id="n15">чтобы вам быть неукоризненными и чистыми, чадами Божиими непорочными среди строптивого и развращенного рода, в котором вы сияете, как светила в мире,
+</p>
+<div class="num">16</div><p id="n16">содержа слово жизни, к похвале моей в день Христов, <br /> что я не тщетно подвизался и не тщетно трудился.
+</p>
+<div class="num">17</div><p id="n17">Но если я и соделываюсь жертвою за жертву и служение веры вашей, то радуюсь и сорадуюсь всем вам.
+</p>
+<div class="num">18</div><p id="n18">О сем самом и вы радуйтесь и сорадуйтесь мне.
+</p>
+<div class="num">19</div><p id="n19">Надеюсь же в Господе Иисусе вскоре послать к вам Тимофея, дабы и я, узнав о ваших обстоятельствах, утешился духом.
+</p>
+<div class="num">20</div><p id="n20">Ибо я не имею никого равно усердного, кто бы столь искренно заботился о вас,
+</p>
+<div class="num">21</div><p id="n21">потому что все ищут своего, а не того, что <i>угодно</i> Иисусу Христу.
+</p>
+<div class="num">22</div><p id="n22">А его верность вам известна, потому что он, как сын отцу, служил мне в благовествовании.
+</p>
+<div class="num">23</div><p id="n23">Итак я надеюсь послать его тотчас же, как скоро узна&#769;ю, что будет со мною.
+</p>
+<div class="num">24</div><p id="n24">Я уверен в Господе, что и сам скоро приду к вам.
+</p>
+<div class="num">25</div><p id="n25">Впрочем я почел нужным послать к вам Епафродита, брата и сотрудника и сподвижника моего, а вашего посланника и служителя в нужде моей,
+</p>
+<div class="num">26</div><p id="n26">потому что он сильно желал видеть всех вас и тяжко скорбел о том, что до вас дошел слух о его болезни.
+</p>
+<div class="num">27</div><p id="n27">Ибо он был болен при смерти; но Бог помиловал его, и не его только, но и меня, чтобы не прибавилась мне печаль к печали.
+</p>
+<div class="num">28</div><p id="n28">Посему я скорее послал его, чтобы вы, увидев его снова, возрадовались, и я был менее печален.
+</p>
+<div class="num">29</div><p id="n29">Примите же его в Господе со всякою радостью, и таких имейте в уважении,
+</p>
+<div class="num">30</div><p id="n30">ибо он за дело Христово был близок к смерти, подвергая опасности жизнь, дабы восполнить недостаток ваших услуг мне.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="flp.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

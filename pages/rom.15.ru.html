@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="rom.ru.html">Послание к Римлянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 15
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Мы, сильные, должны сносить немощи бессильных и не себе угождать.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Каждый из нас должен угождать ближнему, во благо, к назиданию.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ибо и Христос не Себе угождал, но, как написано: злословия злословящих Тебя пали на Меня.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">А все, что писано было прежде, написано нам в наставление, чтобы мы терпением и утешением из Писаний сохраняли надежду.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Бог же терпения и утешения да дарует вам быть в единомыслии между собою, по <i>учению</i> Христа Иисуса,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">дабы вы единодушно, едиными устами славили Бога и Отца Господа нашего Иисуса Христа.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Посему принимайте друг друга, как и Христос принял вас в славу Божию.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Разумею то, что Иисус Христос сделался служителем для обрезанных - ради истины Божией, чтобы исполнить обещанное отцам,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">а для язычников - из милости, чтобы славили Бога, как написано: за то&#769; буду славить Тебя, (Господи,) между язычниками, и буду петь имени Твоему.
+</p>
+<div class="num">10</div><p id="n10">И еще сказано: возвеселитесь, язычники, с народом Его.
+</p>
+<div class="num">11</div><p id="n11">И еще: хвали&#769;те Господа, все язычники, и прославляйте Его, все народы.
+</p>
+<div class="num">12</div><p id="n12">Исаия также говорит: будет корень Иессеев, и восстанет владеть народами; на Него язычники надеяться будут.
+</p>
+<div class="num">13</div><p id="n13">Бог же надежды да исполнит вас всякой радости и мира в вере, дабы вы, силою Духа Святаго, обогатились надеждою.
+</p>
+<div class="num">14</div><p id="n14">И сам я уверен о вас, братия мои, что и вы полны благости, исполнены всякого познания и можете наставлять друг друга;
+</p>
+<div class="num">15</div><p id="n15">но писал вам, братия, с некоторою смелостью, отчасти как бы в напоминание вам, по данной мне от Бога благодати
+</p>
+<div class="num">16</div><p id="n16">быть служителем Иисуса Христа у язычников и <i>совершать</i> священнодействие благовествования Божия, дабы сие приношение язычников, будучи освящено Духом Святым, было благоприятно <i>Богу.</i>
+</p>
+<div class="num">17</div><p id="n17">Итак я могу похвалиться в Иисусе Христе в том, что&#769; <i>относится</i> к Богу,
+</p>
+<div class="num">18</div><p id="n18">ибо не осмелюсь сказать что-нибудь такое, чего не совершил Христос через меня, в покорении язычников <i>вере,</i> словом и делом,
+</p>
+<div class="num">19</div><p id="n19">силою знамений и чудес, силою Духа Божия, так что благовествование Христово распространено мною от Иерусалима и окрестности до Иллирика.
+</p>
+<div class="num">20</div><p id="n20">Притом я старался благовествовать не там, где <i>уже</i> было известно имя Христово, дабы не созидать на чужом основании,
+</p>
+<div class="num">21</div><p id="n21">но как написано: не имевшие о Нем известия увидят, и не слышавшие узна&#769;ют.
+</p>
+<div class="num">22</div><p id="n22">Сие-то много раз и препятствовало мне прийти к вам.
+</p>
+<div class="num">23</div><p id="n23">Ныне же, не имея <i>такого</i> места в сих странах, а с давних лет имея желание прийти к вам,
+</p>
+<div class="num">24</div><p id="n24">как только предприму путь в Испанию, приду к вам. Ибо надеюсь, что, проходя, увижусь с вами и что вы проводите меня туда, как скоро наслажусь <i>общением</i> с вами, хотя отчасти.
+</p>
+<div class="num">25</div><p id="n25">А теперь я иду в Иерусалим, чтобы послужить святым,
+</p>
+<div class="num">26</div><p id="n26">ибо Македония и Ахаия усердствуют некоторым подаянием для бедных между святыми в Иерусалиме.
+</p>
+<div class="num">27</div><p id="n27">Усердствуют, да и должники они перед ними. Ибо если язычники сделались участниками в их духовном, то должны и им послужить в телесном.
+</p>
+<div class="num">28</div><p id="n28">Исполнив это и верно доставив им сей плод <i>усердия,</i> я отправлюсь через ваши <i>места</i> в Испанию,
+</p>
+<div class="num">29</div><p id="n29">и уверен, что когда приду к вам, то приду с полным благословением благовествования Христова.
+</p>
+<div class="num">30</div><p id="n30">Между тем умоляю вас, братия, Господом нашим Иисусом Христом и любовью Духа, подвизаться со мною в молитвах за меня к Богу,
+</p>
+<div class="num">31</div><p id="n31">чтобы избавиться мне от неверующих в Иудее и чтобы служение мое для Иерусалима было благоприятно святым,
+</p>
+<div class="num">32</div><p id="n32">дабы мне в радости, если Богу угодно, прийти к вам и успокоиться с вами.
+</p>
+<div class="num">33</div><p id="n33">Бог же мира да будет со всеми вами, аминь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="rom.16.ru.html">к главе 16</a></div></div>
+
+</body>
+</html>

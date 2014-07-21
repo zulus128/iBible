@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="rev.ru.html">Откровение<br />Иоанна Богослова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И после сего видел я четырех Ангелов, стоящих на четырех углах земли, держащих четыре ветра земли, чтобы не дул ветер ни на землю, ни на море, ни на какое дерево.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И видел я иного Ангела, восходящего от востока солнца и имеющего печать Бога живаго. И воскликнул он громким голосом к четырем Ангелам, которым дано вредить земле и морю, говоря:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">не делайте вреда ни земле, ни морю, ни деревам, доколе не положим печати на челах рабов Бога нашего.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И я слышал число запечатленных: запечатленных было сто сорок четыре тысячи из всех колен сынов Израилевых.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Из колена Иудина запечатлено двенадцать тысяч; из колена Рувимова запечатлено двенадцать тысяч; из колена Гадова запечатлено двенадцать тысяч;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">из колена Асирова запечатлено двенадцать тысяч; из колена Неффалимова запечатлено двенадцать тысяч; из колена Манассиина запечатлено двенадцать тысяч;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">из колена Симеонова запечатлено двенадцать тысяч; из колена Левиина запечатлено двенадцать тысяч; из колена Иссахарова запечатлено двенадцать тысяч;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">из колена Завулонова запечатлено двенадцать тысяч; из колена Иосифова запечатлено двенадцать тысяч; из колена Вениаминова запечатлено двенадцать тысяч.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">После сего взглянул я, и вот, великое множество людей, которого никто не мог перечесть, из всех племен и колен, и народов и языков, стояло пред престолом и пред Агнцем в белых одеждах и с пальмовыми ветвями в руках своих.
+</p>
+<div class="num">10</div><p id="n10">И восклицали громким голосом, говоря: спасение Богу нашему, сидящему на престоле, и Агнцу!
+</p>
+<div class="num">11</div><p id="n11">И все Ангелы стояли вокруг престола и старцев и четырех животных, и пали перед престолом на лица свои, и поклонились Богу,
+</p>
+<div class="num">12</div><p id="n12">говоря: аминь! благословение и слава, и премудрость и благодарение, и честь и сила и крепость Богу нашему во веки веков! Аминь.
+</p>
+<div class="num">13</div><p id="n13">И, начав речь, один из старцев спросил меня: сии облеченные в белые одежды кто, и откуда пришли?
+</p>
+<div class="num">14</div><p id="n14">Я сказал ему: ты знаешь, господин. И он сказал мне: это те, которые пришли от великой скорби; они омыли одежды свои и убелили одежды свои Кровию Агнца.
+</p>
+<div class="num">15</div><p id="n15">За это они пребывают <i>ныне</i> перед престолом Бога и служат Ему день и ночь в храме Его, и Сидящий на престоле будет обитать в них.
+</p>
+<div class="num">16</div><p id="n16">Они не будут уже ни алкать, ни жаждать, и не будет палить их солнце и никакой зной:
+</p>
+<div class="num">17</div><p id="n17">ибо Агнец, Который среди престола, будет пасти их и водить их на живые источники вод; и отрет Бог всякую слезу с очей их.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="rev.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 19
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В третий месяц по исходе сынов Израиля из земли Египетской, в самый день новолуния, пришли они в пустыню Синайскую.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И двинулись они из Рефидима, и пришли в пустыню Синайскую, и расположились там станом в пустыне; и расположился там Израиль станом против горы.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Моисей взошел к Богу [на гору], и воззвал к нему Господь с горы, говоря: так скажи дому Иаковлеву и возвести сынам Израилевым:
+</p>
+<div class="num">&nbsp;4</div><p id="n4">вы видели, что Я сделал Египтянам, и как Я носил вас [как бы] на орлиных крыльях, и принес вас к Себе;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">итак, если вы будете слушаться гласа Моего и соблюдать завет Мой, то будете Моим уделом из всех народов, ибо Моя вся земля,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">а вы будете у Меня царством священников и народом святым; вот слова, которые ты скажешь сынам Израилевым.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И пришел Моисей и созвал старейшин народа и предложил им все сии слова, которые заповедал ему Господь.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И весь народ отвечал единогласно, говоря: всё, что сказал Господь, исполним [и будем послушны]. И донес Моисей слова народа Господу.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказал Господь Моисею: вот, Я приду к тебе в густом облаке, дабы слышал народ, как Я буду говорить с тобою, и поверил тебе навсегда. И Моисей объявил слова народа Господу.
+</p>
+<div class="num">10</div><p id="n10">И сказал Господь Моисею: пойди к народу, [объяви] и освяти его сегодня и завтра; пусть вымоют одежды свои,
+</p>
+<div class="num">11</div><p id="n11">чтоб быть готовыми к третьему дню: ибо в третий день сойдет Господь пред глазами всего народа на гору Синай;
+</p>
+<div class="num">12</div><p id="n12">и проведи для народа черту со всех сторон и скажи: берегитесь восходить на гору и прикасаться к подошве ее; всякий, кто прикоснется к горе, предан будет смерти;
+</p>
+<div class="num">13</div><p id="n13">рука да не прикоснется к нему, а пусть побьют его камнями, или застрелят стрелою; скот ли то, или человек, да не останется в живых; во время протяжного трубного звука, [когда облако отойдет от горы,] могут они взойти на гору.
+</p>
+<div class="num">14</div><p id="n14">И сошел Моисей с горы к народу и освятил народ, и они вымыли одежду свою.
+</p>
+<div class="num">15</div><p id="n15">И сказал народу: будьте готовы к третьему дню; не прикасайтесь к женам.
+</p>
+<div class="num">16</div><p id="n16">На третий день, при наступлении утра, были громы и молнии, и густое облако над горою [Синайскою], и трубный звук весьма сильный; и вострепетал весь народ, бывший в стане.
+</p>
+<div class="num">17</div><p id="n17">И вывел Моисей народ из стана в сретение Богу, и стали у подошвы горы.
+</p>
+<div class="num">18</div><p id="n18">Гора же Синай вся дымилась оттого, что Господь сошел на нее в огне; и восходил от нее дым, как дым из печи, и вся гора сильно колебалась;
+</p>
+<div class="num">19</div><p id="n19">и звук трубный становился сильнее и сильнее. Моисей говорил, и Бог отвечал ему голосом.
+</p>
+<div class="num">20</div><p id="n20">И сошел Господь на гору Синай, на вершину горы, и призвал Господь Моисея на вершину горы, и взошел Моисей.
+</p>
+<div class="num">21</div><p id="n21">И сказал Господь Моисею: сойди и подтверди народу, чтобы он не порывался к Господу видеть <i>Его,</i> и чтобы не пали многие из него;
+</p>
+<div class="num">22</div><p id="n22">священники же, приближающиеся к Господу [Богу], должны освятить себя, чтобы не поразил их Господь.
+</p>
+<div class="num">23</div><p id="n23">И сказал Моисей Господу: не может народ взойти на гору Синай, потому что Ты предостерег нас, сказав: проведи черту вокруг горы и освяти ее.
+</p>
+<div class="num">24</div><p id="n24">И Господь сказал ему: пойди, сойди, потом взойди ты и с тобою Аарон; а священники и народ да не порываются восходить к Господу, чтобы [Господь] не поразил их.
+</p>
+<div class="num">25</div><p id="n25">И сошел Моисей к народу и пересказал ему.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.20.ru.html">к главе 20</a></div></div>
+
+</body>
+</html>

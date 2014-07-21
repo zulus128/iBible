@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lam.ru.html">Книга Плач Иеремии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Как помрачил Господь во гневе Своем дщерь Сиона! с небес поверг на землю красу Израиля и не вспомнил о подножии ног Своих в день гнева Своего.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Погубил Господь все жилища Иакова, не пощадил, разрушил в ярости Своей укрепления дщери Иудиной, поверг на землю, отверг царство и князей его, как нечистых:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">в пылу гнева сломил все роги Израилевы, отвел десницу Свою от неприятеля и воспылал в Иакове, как палящий огонь, пожиравший все вокруг;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">натянул лук Свой, как неприятель, направил десницу Свою, как враг, и убил все, вожделенное для глаз; на скинию дщери Сиона излил ярость Свою, как огонь.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Господь стал как неприятель, истребил Израиля, разорил все чертоги его, разрушил укрепления его и распространил у дщери Иудиной сетование и плач.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И отнял ограду Свою, как у сада; разорил Свое место собраний, заставил Господь забыть на Сионе празднества и субботы; и в негодовании гнева Своего отверг царя и священника.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Отверг Господь жертвенник Свой, отвратил сердце Свое от святилища Своего, предал в руки врагов стены чертогов его; в доме Господнем они шумели, как в праздничный день.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Господь определил разрушить стену дщери Сиона, протянул вервь, не отклонил руки Своей от разорения; истребил внешние укрепления, и стены вместе разрушены.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ворота ее вдались в землю; Он разрушил и сокрушил запоры их; царь ее и князья ее - среди язычников; не стало закона, и пророки ее не сподобляются видений от Господа.
+</p>
+<div class="num">10</div><p id="n10">Сидят на земле безмолвно старцы дщери Сионовой, посыпали пеплом свои головы, препоясались вретищем; опустили к земле головы свои девы Иерусалимские.
+</p>
+<div class="num">11</div><p id="n11">Истощились от слез глаза мои, волнуется во мне внутренность моя, изливается на землю печень моя от гибели дщери народа моего, когда дети и грудные младенцы умирают от голода среди городских улиц.
+</p>
+<div class="num">12</div><p id="n12">Матерям своим говорят они: "где хлеб и вино?", умирая, подобно раненым, на улицах городских, изливая души свои в лоно матерей своих.
+</p>
+<div class="num">13</div><p id="n13">Что мне сказать тебе, с чем сравнить тебя, дщерь Иерусалима? чему уподобить тебя, чтобы утешить тебя, дева, дщерь Сиона? ибо рана твоя велика, как море; кто может исцелить тебя?
+</p>
+<div class="num">14</div><p id="n14">Пророки твои провещали тебе пустое и ложное и не раскрывали твоего беззакония, чтобы отвратить твое пленение, и изрекали тебе откровения ложные и приведшие тебя к изгнанию.
+</p>
+<div class="num">15</div><p id="n15">Руками всплескивают о тебе все проходящие путем, свищут и качают головою своею о дщери Иерусалима, говоря: "это ли город, который называли совершенством красоты, радостью всей земли?"
+</p>
+<div class="num">16</div><p id="n16">Разинули на тебя пасть свою все враги твои, свищут и скрежещут зубами, говорят: "поглотили мы его, только этого дня и ждали мы, дождались, увидели!"
+</p>
+<div class="num">17</div><p id="n17">Совершил Господь, что определил, исполнил слово Свое, изреченное в древние дни, разорил без пощады и дал врагу порадоваться над тобою, вознес рог неприятелей твоих.
+</p>
+<div class="num">18</div><p id="n18">Сердце их вопиет к Господу: стена дщери Сиона! лей ручьем слезы день и ночь, не давай себе покоя, не спускай зениц очей твоих.
+</p>
+<div class="num">19</div><p id="n19">Вставай, взывай ночью, при начале каждой стражи; изливай, как воду, сердце твое пред лицем Господа; простирай к Нему руки твои о душе детей твоих, издыхающих от голода на углах всех улиц.
+</p>
+<div class="num">20</div><p id="n20">"Воззри, Господи, и посмотри: кому Ты сделал так, чтобы женщины ели плод свой, младенцев, вскормленных ими? чтобы убиваемы были в святилище Господнем священник и пророк?
+</p>
+<div class="num">21</div><p id="n21">Дети и старцы лежат на земле по улицам; девы мои и юноши мои пали от меча; Ты убивал их в день гнева Твоего, заколал без пощады.
+</p>
+<div class="num">22</div><p id="n22">Ты созвал отовсюду, как на праздник, ужасы мои, и в день гнева Господня никто не спасся, никто не уцелел; тех, которые были мною вскормлены и выращены, враг мой истребил".
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lam.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

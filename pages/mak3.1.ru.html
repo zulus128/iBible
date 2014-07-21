@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mak3.ru.html">Третья книга<br />Маккавейская</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Филопатор, узнав от прибывших к нему, что Антиохом отняты бывшие в его владении местности, отдал приказ всем войскам своим, пешим и конным, и, взяв с собою сестру свою Арсиною, отправился в страну Рафию, где расположены были станом войска Антиоха.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Тогда некто Феодот решился исполнить свой замысел, взял с собою лучших из вверенных ему Птоломеем вооруженных людей и ночью проник в палатку Птоломея, чтобы наедине убить его и тем предотвратить войну.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Но его обманул Досифей, сын Дримила, родом Иудей, впоследствии изменивший закону и отступивший от отеческой веры: он поместил в палатке одного незначительного человека, которому и пришлось принять назначенную Птоломею смерть.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Когда же произошло упорное сражение и дело Антиоха превозмогало, то Арсиноя, распустив волосы, с плачем и слезами ходила по войскам, усильно убеждая, чтобы храбрее сражались за себя, за детей и жен, и обещая, если победят, дать каждому по две мины золота.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И так случилось, что противники поражены были в рукопашном бое, и многие взяты в плен.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Достигнув своей цели, Филопатор рассудил пройти по ближним городам, чтобы ободрить их.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Исполнив это и снабдив капища дарами, он одушевил мужеством подвластных ему.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Когда потом Иудеи отправили к нему от совета и старейшин послов поздравить его, поднести дары и изъявить радость о случившемся, то он пожелал как можно скорее прийти к ним.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Прибыв же в Иерусалим, он принес жертву великому Богу, воздал благодарение и прочее исполнил, приличествующее священному месту;
+</p>
+<div class="num">10</div><p id="n10">и когда вошел туда, то изумлен был величием и благолепием и, удивляясь благоустройству храма, пожелал войти во святилище.
+</p>
+<div class="num">11</div><p id="n11">Ему сказали, что не следует этого делать, ибо никому и из своего народа непозволительно входить туда, и даже священникам, но только одному начальствующему над всеми первосвященнику, и притом однажды в год; но он никак не хотел слушать.
+</p>
+<div class="num">12</div><p id="n12">Прочитали ему закон, но и тогда не оставил он своего намерения, говоря, что он должен войти: пусть они будут лишены этой чести, но не я. И спрашивал, почему, когда он входил в храм, никто из присутствовавших не возбранил ему?
+</p>
+<div class="num">13</div><p id="n13">И когда некто неосмотрительно сказал, что это худо было сделано, он отвечал: но когда это уже сделано, по какой бы то ни было причине, то не должно ли ему во всяком случае войти, хотят ли они того, или не хотят.
+</p>
+<div class="num">14</div><p id="n14">Тогда священники в священных одеждах пали ниц и молились великому Богу, чтобы Он помог им в настоящей крайности и удержал стремление насильственно вторгающегося; храм наполнился воплем и слезами, а остававшиеся в городе сбежались в смущении, полагая, что случилось нечто необычайное.
+</p>
+<div class="num">15</div><p id="n15">И заключенные в своих покоях девы выбегали с матерями и, посыпая пеплом и прахом головы, оглашали улицы рыданиями и стонами.
+</p>
+<div class="num">16</div><p id="n16">Другие же во всем наряде, оставив приготовленный для встречи брачный чертог и подобающий стыд, беспорядочно бегали по городу.
+</p>
+<div class="num">17</div><p id="n17">А матери и кормилицы, оставляя и здесь и там новорожденных детей, иные в домах, другие - на улицах, неудержимо сбегались во всесвятейший храм.
+</p>
+<div class="num">18</div><p id="n18">Так разнообразна была молитва собравшихся по случаю святотатственного покушения.
+</p>
+<div class="num">19</div><p id="n19">Вместе с тем некоторые из граждан возымели смелость не допускать домогавшегося вторгнуться и исполнить свое намерение. Они воззвали, что нужно взяться за оружие и мужественно умереть за закон отеческий, и произвели в храме великое смятение:
+</p>
+<div class="num">20</div><p id="n20">с трудом быв удержаны старейшинами и священниками, они остались в том же молитвенном положении.
+</p>
+<div class="num">21</div><p id="n21">Народ, как и прежде, продолжал молиться. Даже бывшие с царем старейшины многократно пытались отвлечь надменный его ум от предпринятого намерения.
+</p>
+<div class="num">22</div><p id="n22">Но, исполненный дерзости и все пренебрегший, он уже делал шаг вперед, чтобы совершенно исполнить сказанное прежде.
+</p>
+<div class="num">23</div><p id="n23">Видя это, и бывшие с ним начали призывать вместе с нашими Вседержителя, чтобы Он помог в настоящей нужде и не попустил такого беззаконного и надменного поступка.
+</p>
+<div class="num">24</div><p id="n24">От совокупного, напряженного и тяжкого народного вопля происходил невыразимый гул.
+</p>
+<div class="num">25</div><p id="n25">Казалось, что не только люди, но и самые стены и все основания вопияли, как бы умирая уже за осквернение священного места.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mak3.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

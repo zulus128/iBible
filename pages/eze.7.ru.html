@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eze.ru.html">Книга Пророка Иезекииля</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И было ко мне слово Господне:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и ты, сын человеческий, [скажи]: так говорит Господь Бог; земле Израилевой конец,- конец пришел на четыре края земли.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Вот конец тебе; и пошлю на тебя гнев Мой, и буду судить тебя по путям твоим, и возложу на тебя все мерзости твои.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И не пощадит тебя око Мое, и не помилую, и воздам тебе по путям твоим, и мерзости твои с тобою будут, и узнаете, что Я Господь.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Так говорит Господь Бог: беда единственная, вот, идет беда.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Конец пришел, пришел конец, встал на тебя; вот дошла,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">дошла напасть до тебя, житель земли! приходит время, приближается день смятения, а не веселых восклицаний на горах.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Вот, скоро изолью на тебя ярость Мою и совершу над тобою гнев Мой, и буду судить тебя по путям твоим, и возложу на тебя все мерзости твои.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И не пощадит тебя око Мое, и не помилую. По путям твоим воздам тебе, и мерзости твои с тобою будут; и узнаете, что Я Господь каратель.
+</p>
+<div class="num">10</div><p id="n10">Вот день! вот пришла, наступила напасть! жезл вырос, гордость разрослась.
+</p>
+<div class="num">11</div><p id="n11">Восстает сила на жезл нечестия; ничего <i>не</i> <i>останется</i> от них, и от богатства их, и от шума их, и от пышности их.
+</p>
+<div class="num">12</div><p id="n12">Пришло время, наступил день; купивший не радуйся, и продавший не плачь; ибо гнев над всем множеством их.
+</p>
+<div class="num">13</div><p id="n13">Ибо продавший не возвратится к проданному, хотя бы и остались они в живых; ибо пророческое видение о всем множестве их не отменится, и никто своим беззаконием не укрепит своей жизни.
+</p>
+<div class="num">14</div><p id="n14">Затрубят в трубу, и все готовится, но никто не идет на войну: ибо гнев Мой над всем множеством их.
+</p>
+<div class="num">15</div><p id="n15">Вне дома меч, а в доме мор и голод. Кто в поле, тот умрет от меча; а кто в городе, того пожрут голод и моровая язва.
+</p>
+<div class="num">16</div><p id="n16">А уцелевшие из них убегут и будут на горах, как голуби долин; все они будут стонать, каждый за свое беззаконие.
+</p>
+<div class="num">17</div><p id="n17">У всех руки опустятся, и у всех колени задрожат, <i>как</i> вода.
+</p>
+<div class="num">18</div><p id="n18">Тогда они препояшутся вретищем, и обоймет их трепет; и у всех на лицах будет стыд, и у всех на головах плешь.
+</p>
+<div class="num">19</div><p id="n19">Серебро свое они выбросят на улицы, и золото у них будет в пренебрежении. Серебро их и золото их не сильно будет спасти их в день ярости Господа. Они не насытят ими душ своих и не наполнят утроб своих; ибо оно было поводом к беззаконию их.
+</p>
+<div class="num">20</div><p id="n20">И в красных нарядах своих они превращали его в гордость, и делали из него изображения гнусных своих истуканов; за то и сделаю его нечистым для них;
+</p>
+<div class="num">21</div><p id="n21">и отдам его в руки чужим в добычу и беззаконникам земли на расхищение, и они осквернят его.
+</p>
+<div class="num">22</div><p id="n22">И отвращу от них лице Мое, и осквернят сокровенное Мое; и придут туда грабители, и осквернят его.
+</p>
+<div class="num">23</div><p id="n23">Сделай цепь, ибо земля эта наполнена кровавыми злодеяниями, и город полон насилий.
+</p>
+<div class="num">24</div><p id="n24">Я приведу злейших из народов, и завладеют домами их. И положу конец надменности сильных, и будут осквернены святыни их.
+</p>
+<div class="num">25</div><p id="n25">Идет пагуба; будут искать мира, и не найдут.
+</p>
+<div class="num">26</div><p id="n26">Беда пойдет за бедою и весть за вестью; и будут просить у пророка видения, и не станет учения у священника и совета у старцев.
+</p>
+<div class="num">27</div><p id="n27">Царь будет сетовать, и князь облечется в ужас, и у народа земли будут дрожать руки. Поступлю с ними по путям их, и по судам их буду судить их; и узнают, что Я Господь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eze.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

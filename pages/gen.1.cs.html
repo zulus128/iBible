@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.cs.html">Кни1га пeрваz мwmсeова. БытіE</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA №
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Въ начaлэ сотвори2 бGъ нeбо и3 зeмлю.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Землs же бЁ неви1дима и3 неустр0ена, и3 тмA верхY бeздны, и3 д¦ъ б9ій ношaшесz верхY воды2.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И# речE бGъ: да бyдетъ свётъ. И# бhсть свётъ.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И# ви1дэ бGъ свётъ, ћкw добро2, и3 разлучи2 бGъ междY свётомъ и3 междY тм0ю.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И# наречE бGъ свётъ дeнь, ґ тмY наречE н0щь. И# бhсть вeчеръ, и3 бhсть ќтро, дeнь є3ди1нъ.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И# речE бGъ: да бyдетъ твeрдь посредЁ воды2, и3 да бyдетъ разлучaющи посредЁ воды2 и3 воды2. И# бhсть тaкw.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И# сотвори2 бGъ твeрдь, и3 разлучи2 бGъ междY вод0ю, ћже бЁ под8 твeрдію, и3 междY вод0ю, ћже бЁ над8 твeрдію.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И# наречE бGъ твeрдь нeбо. И# ви1дэ бGъ, ћкw добро2. И# бhсть вeчеръ, и3 бhсть ќтро, дeнь вторhй.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И# речE бGъ: да соберeтсz водA, ћже под8 небесeмъ, въ собрaніе є3ди1но, и3 да kви1тсz сyша. И# бhсть тaкw. И# собрaсz водA, ћже под8 небесeмъ, въ собр†ніz <nobr>сво‰,</nobr> и3 kви1сz сyша.
+</p>
+<div class="num">10</div><p id="n10">И# наречE бGъ сyшу зeмлю, и3 собр†ніz в0дъ наречE морS. И# ви1дэ бGъ, ћкw добро2.
+</p>
+<div class="num">11</div><p id="n11">И# речE бGъ: да прорасти1тъ землS бhліе травн0е, сёющее сёмz по р0ду и3 по под0бію, и3 дрeво плодови1тое творsщее пл0дъ, є3мyже сёмz є3гw2 въ нeмъ, по р0ду на земли2. И# бhсть тaкw.
+</p>
+<div class="num">12</div><p id="n12">И# и3знесE землS бhліе травн0е, сёющее сёмz по р0ду и3 по под0бію, и3 дрeво плодови1тое творsщее пл0дъ, є3мyже сёмz є3гw2 въ нeмъ, по р0ду на земли2. И# ви1дэ бGъ, ћкw добро2.
+</p>
+<div class="num">13</div><p id="n13">И# бhсть вeчеръ, и3 бhсть ќтро, дeнь трeтій.
+</p>
+<div class="num">14</div><p id="n14">И# речE бGъ: да бyдутъ свэти6ла на твeрди небeснэй, њсвэщaти зeмлю и3 разлучaти междY днeмъ и3 междY н0щію: и3 да бyдутъ въ знaмєніz и3 во временA, и3 во дни6 и3 въ лBта,
+</p>
+<div class="num">15</div><p id="n15">и3 да бyдутъ въ просвэщeніе на твeрди небeснэй, ћкw свэти1ти по земли2. И# бhсть тaкw.
+</p>
+<div class="num">16</div><p id="n16">И# сотвори2 бGъ двA свэти6ла вели6каz: свэти1ло вели1кое въ нач†ла днE, и3 свэти1ло мeншее въ нач†ла н0щи, и3 ѕвёзды:
+</p>
+<div class="num">17</div><p id="n17">и3 положи2 <nobr>|</nobr> бGъ на твeрди небeснэй, ћкw свэти1ти на зeмлю,
+</p>
+<div class="num">18</div><p id="n18">и3 владёти днeмъ и3 н0щію, и3 разлучaти междY свётомъ и3 междY тм0ю. И# ви1дэ бGъ, ћкw добро2.
+</p>
+<div class="num">19</div><p id="n19">И# бhсть вeчеръ, и3 бhсть ќтро, дeнь четвeртый.
+</p>
+<div class="num">20</div><p id="n20">И# речE бGъ: да и3зведyтъ в0ды гaды дyшъ живhхъ, и3 пти6цы летaющыz по земли2, по твeрди небeснэй. И# бhсть тaкw.
+</p>
+<div class="num">21</div><p id="n21">И# сотвори2 бGъ ки1ты вели6кіz, и3 всsку дyшу жив0тныхъ гадHвъ, ±же и3звед0ша в0ды по родHмъ и4хъ, и3 всsку пти1цу пернaту по р0ду. И# ви1дэ бGъ, ћкw дwбрA.
+</p>
+<div class="num">22</div><p id="n22">И# блгcви2 <nobr>|</nobr> бGъ, гlz: расти1тесz и3 мн0житесz, и3 нап0лните в0ды, ±же въ морsхъ, и3 пти6цы да ўмн0жатсz на земли2.
+</p>
+<div class="num">23</div><p id="n23">И# бhсть вeчеръ, и3 бhсть ќтро, дeнь пsтый.
+</p>
+<div class="num">24</div><p id="n24">И# речE бGъ: да и3зведeтъ землS дyшу жи1ву по р0ду, четверонHгаz и3 гaды, и3 ѕвBри земли2 по р0ду. И# бhсть тaкw.
+</p>
+<div class="num">25</div><p id="n25">И# сотвори2 бGъ ѕвBри земли2 по р0ду, и3 скоты2 по р0ду и4хъ, и3 <nobr>вс‰</nobr> гaды земли2 по р0ду и4хъ. И# ви1дэ бGъ, ћкw дwбрA.
+</p>
+<div class="num">26</div><p id="n26">И# речE бGъ: сотвори1мъ человёка по w4бразу нaшему и3 по под0бію, и3 да њбладaетъ рhбами морски1ми, и3 пти1цами небeсными, (и3 ѕвэрьми2) и3 скотaми, и3 всeю землeю, и3 всёми г†ды пресмыкaющимисz по земли2.
+</p>
+<div class="num">27</div><p id="n27">И# сотвори2 бGъ человёка, по w4бразу б9ію сотвори2 є3го2: мyжа и3 женY сотвори2 и5хъ.
+</p>
+<div class="num">28</div><p id="n28">И# блгcви2 и5хъ бGъ, гlz: расти1тесz и3 мн0житесz, и3 нап0лните зeмлю, и3 госп0дствуйте є4ю, и3 њбладaйте рhбами морски1ми, (и3 ѕвэрьми2) и3 пти1цами небeсными, и3 всёми скотaми, и3 всeю землeю, и3 всёми гaдами пресмыкaющимисz по земли2.
+</p>
+<div class="num">29</div><p id="n29">И# речE бGъ: сE, дaхъ вaмъ всsкую травY сёменную сёющую сёмz, є4же є4сть верхY земли2 всеS: и3 всsкое дрeво, є4же и4мать въ себЁ пл0дъ сёмене сёменнагw, вaмъ бyдетъ въ снёдь:
+</p>
+<div class="num">30</div><p id="n30">и3 всBмъ ѕвэрє1мъ зємнhмъ, и3 всBмъ пти1цамъ небє1снымъ, и3 всsкому гaду пресмыкaющемусz по земли2, и4же и4мать въ себЁ дyшу животA, и3 всsку травY зелeну въ снёдь. И# бhсть тaкw.
+</p>
+<div class="num">31</div><p id="n31">И# ви1дэ бGъ <nobr>вс‰,</nobr> є3ли6ка сотвори2: и3 сE дwбрA ѕэлw2. И# бhсть вeчеръ, и3 бhсть ќтро, дeнь шестhй.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.2.cs.html">главA в7</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 8
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Господь Моисею: пойди к фараону и скажи ему: так говорит Господь: отпусти народ Мой, чтобы он совершил Мне служение;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">если же ты не согласишься отпустить, то вот, Я поражаю всю область твою жабами;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и воскишит река жабами, и они выйдут и войдут в дом твой, и в спальню твою, и на постель твою, и в домы рабов твоих и народа твоего, и в печи твои, и в квашни твои,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и на тебя, и на народ твой, и на всех рабов твоих взойдут жабы.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И сказал Господь Моисею: скажи Аарону [брату твоему]: простри руку твою с жезлом твоим на реки, на потоки и на озера и выведи жаб на землю Египетскую.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Аарон простер руку свою на воды Египетские [и вывел жаб]; и вышли жабы и покрыли землю Египетскую.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">То же сделали и волхвы [Египетские] чарами своими и вывели жаб на землю Египетскую.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И призвал фараон Моисея и Аарона и сказал: помолитесь [обо мне] Господу, чтоб Он удалил жаб от меня и от народа моего, и я отпущу народ <i>Израильский</i> принести жертву Господу.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Моисей сказал фараону: назначь мне сам, когда помолиться за тебя, за рабов твоих и за народ твой, чтобы жабы исчезли у тебя, [у народа твоего,] в домах твоих, и остались только в реке.
+</p>
+<div class="num">10</div><p id="n10">Он сказал: завтра. <i>Моисей</i> отвечал: <i>будет</i> по слову твоему, дабы ты узнал, что нет никого, как Господь Бог наш;
+</p>
+<div class="num">11</div><p id="n11">и удалятся жабы от тебя, от домов твоих [и с полей], и от рабов твоих и от твоего народа; только в реке они останутся.
+</p>
+<div class="num">12</div><p id="n12">Моисей и Аарон вышли от фараона, и Моисей воззвал к Господу о жабах, которых Он навел на фараона.
+</p>
+<div class="num">13</div><p id="n13">И сделал Господь по слову Моисея: жабы вымерли в домах, на дворах и на полях [их];
+</p>
+<div class="num">14</div><p id="n14">и собрали их в груды, и воссмердела земля.
+</p>
+<div class="num">15</div><p id="n15">И увидел фараон, что сделалось облегчение, и ожесточил сердце свое, и не послушал их, как и говорил Господь.
+</p>
+<div class="num">16</div><p id="n16">И сказал Господь Моисею: скажи Аарону: простри [рукою] жезл твой и ударь в персть земную, и [будут мошки на людях и на скоте и на фараоне, и в доме его и на рабах его, вся персть земная] сделается мошками по всей земле Египетской.
+</p>
+<div class="num">17</div><p id="n17">Так они и сделали: Аарон простер руку свою с жезлом своим и ударил в персть земную, и явились мошки на людях и на скоте. Вся персть земная сделалась мошками по всей земле Египетской.
+</p>
+<div class="num">18</div><p id="n18">Старались также и волхвы чарами своими произвести мошек, но не могли. И были мошки на людях и на скоте.
+</p>
+<div class="num">19</div><p id="n19">И сказали волхвы фараону: это перст Божий. Но сердце фараоново ожесточилось, и он не послушал их, как и говорил Господь.
+</p>
+<div class="num">20</div><p id="n20">И сказал Господь Моисею: завтра встань рано и явись пред лице фараона. Вот, он пойдет к воде, и ты скажи ему: так говорит Господь: отпусти народ Мой, чтобы он совершил Мне служение [в пустыне];
+</p>
+<div class="num">21</div><p id="n21">а если не отпустишь народа Моего, то вот, Я пошлю на тебя и на рабов твоих, и на народ твой, и в домы твои песьих мух, и наполнятся домы Египтян песьими мухами и самая земля, на которой они <i>живут;</i><i></i>
+</p>
+<div class="num">22</div><p id="n22">и отделю в тот день землю Гесем, на которой пребывает народ Мой, и там не будет песьих мух, дабы ты знал, что Я Господь [Бог] среди [всей] земли;
+</p>
+<div class="num">23</div><p id="n23">Я сделаю разделение между народом Моим и между народом твоим. Завтра будет сие знамение [на земле].
+</p>
+<div class="num">24</div><p id="n24">Так и сделал Господь: налетело множество песьих мух в дом фараонов, и в домы рабов его, и на всю землю Египетскую: погибала земля от песьих мух.
+</p>
+<div class="num">25</div><p id="n25">И призвал фараон Моисея и Аарона и сказал: пойдите, принесите жертву [Господу] Богу вашему в сей земле.
+</p>
+<div class="num">26</div><p id="n26">Но Моисей сказал: нельзя сего сделать, ибо отвратительно для Египтян жертвоприношение наше Господу, Богу нашему: если мы отвратительную для Египтян жертву станем приносить в глазах их, то не побьют ли они нас камнями?
+</p>
+<div class="num">27</div><p id="n27">мы пойдем в пустыню, на три дня пути, и принесем жертву Господу, Богу нашему, как скажет нам [Господь].
+</p>
+<div class="num">28</div><p id="n28">И сказал фараон: я отпущу вас принести жертву Господу Богу вашему в пустыне, только не уходите далеко; помолитесь обо мне [Господу].
+</p>
+<div class="num">29</div><p id="n29">Моисей сказал: вот, я выхожу от тебя и помолюсь Господу [Богу], и удалятся песьи мухи от фараона, и от рабов его, и от народа его завтра, только фараон пусть перестанет обманывать, не отпуская народа принести жертву Господу.
+</p>
+<div class="num">30</div><p id="n30">И вышел Моисей от фараона и помолился Господу.
+</p>
+<div class="num">31</div><p id="n31">И сделал Господь по слову Моисея и удалил песьих мух от фараона, от рабов его и от народа его: не осталось ни одной.
+</p>
+<div class="num">32</div><p id="n32">Но фараон ожесточил сердце свое и на этот раз и не отпустил народа.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.9.ru.html">к главе 9</a></div></div>
+
+</body>
+</html>

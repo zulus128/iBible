@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ezr1.ru.html">Первая книга Ездры</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И услышали враги Иуды и Вениамина, что возвратившиеся из плена строят храм Господу Богу Израилеву;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и пришли они к Зоровавелю и к главам поколений, и сказали им: будем и мы строить с вами, потому что мы, как и вы, прибегаем к Богу вашему, и Ему приносим жертвы от дней Асардана, царя Сирийского, который перевел нас сюда.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И сказал им Зоровавель и Иисус и прочие главы поколений Израильских: не строить вам вместе с нами дом нашему Богу; мы одни будем строить <i>дом</i> Господу, Богу Израилеву, как повелел нам царь Кир, царь Персидский.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И стал народ земли той ослаблять руки народа Иудейского и препятствовать ему в строении;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и подкупали против них советников, чтобы разрушить предприятие их, во все дни Кира, царя Персидского, и до царствования Дария, царя Персидского.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">А в царствование Ахашвероша, в начале царствования его, написали обвинение на жителей Иудеи и Иерусалима.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И во дни Артаксеркса писали Бишлам, Мифредат, Табеел и прочие товарищи их к Артаксерксу, царю Персидскому. Письмо же написано <i>было</i> буквами Сирийскими и на Сирийском языке.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Рехум советник и Шимшай писец писали одно письмо против Иерусалима к царю Артаксерксу такое:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Тогда-то. Рехум советник и Шимшай писец и прочие товарищи их,- Динеи и Афарсафхеи, Тарпелеи, Апарсы, Арехьяне, Вавилоняне, Сусанцы, Даги, Еламитяне,
+</p>
+<div class="num">10</div><p id="n10">и прочие народы, которых переселил Аснафар [Сеннахирим] великий и славный и поселил в городах Самарийских и в прочих <i>городах</i> за рекою, и прочее.
+</p>
+<div class="num">11</div><p id="n11">И вот список с письма, которое послали к нему: Царю Артаксерксу - рабы твои, люди, <i>живущие</i> за рекою, и прочее.
+</p>
+<div class="num">12</div><p id="n12">Да будет известно царю, что Иудеи, которые вышли от тебя, пришли к нам в Иерусалим, строят <i>этот</i> мятежный и негодный город, и стены делают, и основания <i>их</i> <i>уже</i> исправили.
+</p>
+<div class="num">13</div><p id="n13">Да будет же известно царю, что если этот город будет построен и стены восстановлены, то <i>ни</i> подати, <i>ни</i> налога, ни пошлины не будут давать, и царской казне сделан будет ущерб.
+</p>
+<div class="num">14</div><p id="n14">Так как мы едим соль от дворца царского, и ущерб для царя не можем видеть, поэтому мы посылаем донесение к царю:
+</p>
+<div class="num">15</div><p id="n15">пусть поищут в памятной книге отцов твоих,- и найдешь в книге памятной, и узнаешь, что город сей - город мятежный и вредный для царей и областей, и <i>что</i> отпадения бывали в нем издавна, за что город сей и опустошен.
+</p>
+<div class="num">16</div><p id="n16">Посему мы уведомляем царя, что если город сей будет достроен и стены его доделаны, то после этого не будет у тебя владения за рекою.
+</p>
+<div class="num">17</div><p id="n17">Царь послал ответ Рехуму советнику и Шимшаю писцу и прочим товарищам их, которые живут в Самарии и <i>в</i> прочих <i>городах</i> заречных: Мир... и прочее.
+</p>
+<div class="num">18</div><p id="n18">Письмо, которое вы прислали нам, внятно прочитано предо мною;
+</p>
+<div class="num">19</div><p id="n19">и от меня дано повеление,- и разыскивали, и нашли, что город этот издавна восставал против царей, и производились в нем мятежи и волнения,
+</p>
+<div class="num">20</div><p id="n20">и <i>что</i> <i>были</i> в Иерусалиме цари могущественные и владевшие всем заречьем, и им давали подать, налоги и пошлины.
+</p>
+<div class="num">21</div><p id="n21">Итак дайте приказание, чтобы люди сии перестали работать, и <i>чтобы</i> город сей не строился, доколе от меня не будет дано повеление.
+</p>
+<div class="num">22</div><p id="n22">И будьте осторожны, чтобы не сделать в этом недосмотра. К чему допускать размножение вредного в ущерб царям?
+</p>
+<div class="num">23</div><p id="n23">Как скоро это письмо царя Артаксеркса было прочитано пред Рехумом и Шимшаем писцом и товарищами их, они немедленно пошли в Иерусалим к Иудеям, и сильною вооруженною рукою остановили работу их.
+</p>
+<div class="num">24</div><p id="n24">Тогда остановилась работа при доме Божием, который в Иерусалиме, и остановка сия продолжалась до второго года царствования Дария, царя Персидского.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ezr1.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

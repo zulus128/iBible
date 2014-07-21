@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mak2.ru.html">Вторая книга<br />Маккавейская</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В записях пророка Иеремии находится, что он приказал переселяемым взять от огня, как показано
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и как заповедал пророк, дав переселяемым закон, чтобы они не забывали повелений Господних и не заблуждались мыслями своими, смотря на золотые и серебряные кумиры и на украшение их.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Говоря и другое, подобное сему, он увещевал их не удалять закона из сердца своего.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Было также в писании, что сей пророк, по бывшему ему Божественному откровению, повелел скинии и ковчегу следовать за ним, когда он восходил на гору, с которой Моисей, взойдя, видел наследие Божие.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Придя туда, Иеремия нашел жилище в пещере и внес туда скинию и ковчег и жертвенник кадильный, и заградил вход.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Когда потом пришли некоторые из сопутствовавших, чтобы заметить вход, то не могли найти его.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Когда же Иеремия узнал о сем, то, упрекая их, сказал, что это место останется неизвестным, доколе Бог, умилосердившись, не соберет сонма народа.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И тогда Господь покажет его, и явится слава Господня и облако, как явилось при Моисее, как и Соломон просил, чтобы особенно святилось место.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Было сказано и то, как он, исполненный премудрости, принес жертву обновления и совершения храма.
+</p>
+<div class="num">10</div><p id="n10">Как Моисей молился Господу, и сошел огонь с неба, и потребил жертву, так и Соломон молился, и сошедший огонь истребил жертвы всесожжения.
+</p>
+<div class="num">11</div><p id="n11">И сказал Моисей: так как жертва о грехе не употреблена в пищу, то потреблена огнем.
+</p>
+<div class="num">12</div><p id="n12">Точно так и Соломон торжествовал восемь дней.
+</p>
+<div class="num">13</div><p id="n13">Повествуется также в записях и памятных книгах Неемии, как он, составляя библиотеку, собрал сказания о царях и пророках и о Давиде и письма царей о священных приношениях.
+</p>
+<div class="num">14</div><p id="n14">Подобным образом и Иуда затерянное, по случаю бывшей у нас войны, всё собрал, и оно есть у нас.
+</p>
+<div class="num">15</div><p id="n15">Итак, если вы имеете в этом надобность, пришлите людей, которые вам доставят.
+</p>
+<div class="num">16</div><p id="n16">Намереваясь праздновать очищение, мы писали вам об этом; хорошо сделаете и вы, если будете праздновать эти дни.
+</p>
+<div class="num">17</div><p id="n17">Бог же, сохранивший весь народ Свой и возвративший всем наследие и царство и священство и святилище,
+</p>
+<div class="num">18</div><p id="n18">как обещал в законе,- надеемся на Бога,- Он скоро помилует нас и соберет от поднебесной в место святое.
+</p>
+<div class="num">19</div><p id="n19">Ибо Он избавил нас от великих бед и очистил место.
+</p>
+<div class="num">20</div><p id="n20">О делах же Иуды Маккавея и братьев его и об очищении великого храма и обновлении жертвенника,
+</p>
+<div class="num">21</div><p id="n21">также о войнах против Антиоха Епифана и против сына его Евпатора,
+</p>
+<div class="num">22</div><p id="n22">и о бывших с неба явлениях тем, которые подвизались за Иудеев столь ревностно, что, быв весьма малочисленны, очищали всю страну и преследовали многочисленные толпы неприятелей,
+</p>
+<div class="num">23</div><p id="n23">и воссоздали славный во всей вселенной храм, и освободили город, и восстановили клонившиеся к разрушению законы, когда Господь с великим снисхождением умилосердился над ними;
+</p>
+<div class="num">24</div><p id="n24">о всем этом изложенное Иасоном Киринейским в пяти книгах мы попытаемся кратко начертать в одной книге.
+</p>
+<div class="num">25</div><p id="n25">Ибо, имея в виду множество чисел и трудность, происходящую от обилия содержания, для желающих заняться историческими повествованиями,
+</p>
+<div class="num">26</div><p id="n26">мы озаботились доставить душевное назидание желающим читать, облегчение старающимся удержать в памяти и всем, кому случится читать, пользу;
+</p>
+<div class="num">27</div><p id="n27">хотя для нас, принявших на себя труд сокращения, это нелегкое дело, требующее напряжения и бдительности,
+</p>
+<div class="num">28</div><p id="n28">как нелегко бывает тому, кто готовит пиршество и желает пользы другим. Но, имея в виду благодарность многих, мы охотно принимаем на себя этот труд,
+</p>
+<div class="num">29</div><p id="n29">предоставляя точное изложение подробностей историку и стараясь последовать примерам сокращенного изложения.
+</p>
+<div class="num">30</div><p id="n30">Ибо как строителю нового дома предлежит заботиться обо всем строении, а тому, кто должен заняться резьбою и живописью, надлежит изыскивать только потребное к украшению, так мы думаем и о себе.
+</p>
+<div class="num">31</div><p id="n31">Углубляться и говорить обо всем и исследовать каждую частность свойственно начальному писателю истории.
+</p>
+<div class="num">32</div><p id="n32">Тому же, кто делает сокращение, должно быть предоставлено преследовать только краткость речи и избегать подробных изысканий.
+</p>
+<div class="num">33</div><p id="n33">Итак, в связи с сказанным, начнем теперь повествование: ибо неразумно увеличивать предисловие к истории, а самую историю сокращать.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mak2.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Вот имена сынов Израилевых, которые вошли в Египет с Иаковом [отцом их], вошли каждый со [всем] домом своим:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Рувим, Симеон, Левий и Иуда,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Иссахар, Завулон и Вениамин,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Дан и Неффалим, Гад и Асир.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Всех же душ, происшедших от чресл Иакова, было семьдесят [пять], а Иосиф был <i>уже</i> в Египте.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И умер Иосиф и все братья его и весь род их;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">а сыны Израилевы расплодились и размножились, и возросли и усилились чрезвычайно, и наполнилась ими земля та.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И восстал в Египте новый царь, который не знал Иосифа,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и сказал народу своему: вот, народ сынов Израилевых многочислен и сильнее нас;
+</p>
+<div class="num">10</div><p id="n10">перехитрим же его, чтобы он не размножался; иначе, когда случится война, соединится и он с нашими неприятелями, и вооружится против нас, и выйдет из земли [нашей].
+</p>
+<div class="num">11</div><p id="n11">И поставили над ним начальников работ, чтобы изнуряли его тяжкими работами. И он построил фараону Пифом и Раамсес, города для запасов, [и Он, иначе Илиополь].
+</p>
+<div class="num">12</div><p id="n12">Но чем более изнуряли его, тем более он умножался и тем более возрастал, так что [Египтяне] опасались сынов Израилевых.
+</p>
+<div class="num">13</div><p id="n13">И потому Египтяне с жестокостью принуждали сынов Израилевых к работам
+</p>
+<div class="num">14</div><p id="n14">и делали жизнь их горькою от тяжкой работы над глиною и кирпичами и от всякой работы полевой, от всякой работы, к которой принуждали их с жестокостью.
+</p>
+<div class="num">15</div><p id="n15">Царь Египетский повелел повивальным бабкам Евреянок, из коих одной имя Шифра, а другой Фуа,
+</p>
+<div class="num">16</div><p id="n16">и сказал [им]: когда вы будете повивать у Евреянок, то наблюдайте при родах: если будет сын, то умерщвляйте его, а если дочь, то пусть живет.
+</p>
+<div class="num">17</div><p id="n17">Но повивальные бабки боялись Бога и не делали так, как говорил им царь Египетский, и оставляли детей в живых.
+</p>
+<div class="num">18</div><p id="n18">Царь Египетский призвал повивальных бабок и сказал им: для чего вы делаете такое дело, что оставляете детей в живых?
+</p>
+<div class="num">19</div><p id="n19">Повивальные бабки сказали фараону: Еврейские женщины не так, как Египетские; они здоровы, ибо прежде нежели придет к ним повивальная бабка, они уже рождают.
+</p>
+<div class="num">20</div><p id="n20">За сие Бог делал добро повивальным бабкам, а народ умножался и весьма усиливался.
+</p>
+<div class="num">21</div><p id="n21">И так как повивальные бабки боялись Бога, то Он устроял домы их.
+</p>
+<div class="num">22</div><p id="n22">Тогда фараон всему народу своему повелел, говоря: всякого новорожденного [у Евреев] сына бросайте в реку, а всякую дочь оставляйте в живых.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

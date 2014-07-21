@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nee.ru.html">Книга Неемии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 13
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В тот день читано было из книги Моисеевой вслух народа и найдено написанное в ней: Аммонитянин и Моавитянин не может войти в общество Божие во веки,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">потому что они не встретили сынов Израиля с хлебом и водою и наняли против него Валаама, чтобы проклясть его, но Бог наш обратил проклятие в благословение.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Услышав этот закон, они отделили все иноплеменное от Израиля.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">А прежде того священник Елиашив, приставленный к комнатам при доме Бога нашего, близкий родственник Товии,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">отделал для него большую комнату, в которую прежде клали хлебное приношение, ладан и сосуды, и десятины хлеба, вина и масла, положенные законом для левитов, певцов и привратников, и приношения для священников.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Когда все это <i>происходило,</i> я не был в Иерусалиме, потому что в тридцать втором году Вавилонского царя Артаксеркса я ходил к царю, и по прошествии нескольких дней <i>опять</i> выпросился у царя.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Когда я пришел в Иерусалим и узнал о худом деле, которое сделал Елиашив, отделав для Товии комнату на дворах дома Божия,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">тогда мне было весьма неприятно, и я выбросил все домашние вещи Товиины вон из комнаты
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и сказал, чтобы очистили комнаты, и велел опять внести туда сосуды дома Божия, хлебное приношение и ладан.
+</p>
+<div class="num">10</div><p id="n10">Еще узнал я, что части левитам не отдаются, и что левиты и певцы, делавшие <i>свое</i> дело, разбежались, каждый на свое поле.
+</p>
+<div class="num">11</div><p id="n11">Я сделал <i>за</i> <i>это</i> выговор начальствующим и сказал: зачем оставлен нами дом Божий? И я собрал их и поставил их на место их.
+</p>
+<div class="num">12</div><p id="n12">И все Иудеи стали приносить десятины хлеба, вина и масла в кладовые.
+</p>
+<div class="num">13</div><p id="n13">И приставил я к кладовым Шелемию священника и Садока книжника и Федаию из левитов, и при них Ханана, сына Закхура, сына Матфании, потому что они считались верными. И на них <i>возложено</i> раздавать части братьям своим.
+</p>
+<div class="num">14</div><p id="n14">Помяни меня за это, Боже мой, и не изгладь усердных дел моих, которые я сделал для дома Бога моего и для служения при нем!
+</p>
+<div class="num">15</div><p id="n15">В те дни я увидел в Иудее, что в субботу топчут точила, возят снопы и навьючивают ослов вином, виноградом, смоквами и всяким грузом, и отвозят в субботний день в Иерусалим. И я строго выговорил <i>им</i> в тот же день, когда они продавали съестное.
+</p>
+<div class="num">16</div><p id="n16">И Тиряне жили в <i>Иудее</i> и привозили рыбу и всякий товар и продавали в субботу жителям Иудеи и в Иерусалиме.
+</p>
+<div class="num">17</div><p id="n17">И я сделал выговор знатнейшим из Иудеев и сказал им: зачем вы делаете такое зло и оскверняете день субботний?
+</p>
+<div class="num">18</div><p id="n18">Не так ли поступали отцы ваши, и за то Бог наш навел на нас и на город сей все это бедствие? А вы увеличиваете гнев <i>Его</i> на Израиля, оскверняя субботу.
+</p>
+<div class="num">19</div><p id="n19">После сего, когда смеркалось у ворот Иерусалимских, перед субботою, я велел запирать двери и сказал, чтобы не отпирали их до <i>утра</i> после субботы. И слуг моих я ставил у ворот, чтобы никакая ноша не проходила в день субботний.
+</p>
+<div class="num">20</div><p id="n20">И ночевали торговцы и продавцы всякого товара вне Иерусалима раз и два.
+</p>
+<div class="num">21</div><p id="n21">Но я строго выговорил им и сказал им: зачем вы ночуете возле стены? Если сделаете это в другой раз, я наложу руку на вас. С того времени они не приходили в субботу.
+</p>
+<div class="num">22</div><p id="n22">И сказал я левитам, чтобы они очистились и пришли содержать стражу у ворот, дабы святить день субботний. И за сие помяни меня, Боже мой, и пощади меня по великой милости Твоей!
+</p>
+<div class="num">23</div><p id="n23">Еще в те дни я видел Иудеев, которые взяли себе жен из Азотянок, Аммонитянок и Моавитянок;
+</p>
+<div class="num">24</div><p id="n24">и оттого сыновья их в половину говорят по-азотски, или языком других народов, и не умеют говорить по-иудейски.
+</p>
+<div class="num">25</div><p id="n25">Я сделал за это выговор и проклинал их, и некоторых из мужей бил, рвал у них волоса и заклинал их Богом, чтобы они не отдавали дочерей своих за сыновей их и не брали дочерей их за сыновей своих и за себя.
+</p>
+<div class="num">26</div><p id="n26">Не из-за них ли, <i>говорил</i> <i>я,</i> грешил Соломон, царь Израилев? У многих народов не было такого царя, как он. Он был любим Богом своим, и Бог поставил его царем над всеми Израильтянами; и однако же чужеземные жены ввели в грех и его.
+</p>
+<div class="num">27</div><p id="n27">И можно ли нам слышать о вас, что вы делаете все сие великое зло, грешите пред Богом нашим, принимая в сожительство чужеземных жен?
+</p>
+<div class="num">28</div><p id="n28">И из сыновей Иоиады, сына великого священника Елиашива, один был зятем Санаваллата, Хоронита. Я прогнал его от себя.
+</p>
+<div class="num">29</div><p id="n29">Воспомяни им, Боже мой, что они опорочили священство и завет священнический и левитский!
+</p>
+<div class="num">30</div><p id="n30">Так очистил я их от всего чужеземного и восстановил службы священников и левитов, каждого в деле его,
+</p>
+<div class="num">31</div><p id="n31">и доставку дров в назначенные времена и начатки. Помяни меня, Боже мой, во благо <i>мне</i>!
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nee.ru.html">Книга Неемии</a>
+</div></div>
+
+</body>
+</html>

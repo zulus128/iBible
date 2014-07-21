@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jer.ru.html">Книга Пророка Иеремии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 40
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Слово, которое было к Иеремии от Господа, после того как Навузардан, начальник телохранителей, отпустил его из Рамы, где он взял его скованного цепями среди прочих пленных Иерусалимлян и Иудеев, переселяемых в Вавилон.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Начальник телохранителей взял Иеремию и сказал ему: Господь Бог твой изрек это бедствие на место сие,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и навел его Господь и сделал то, что сказал; потому что вы согрешили пред Господом и не слушались гласа Его, за то и постигло вас это.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Итак вот, я освобождаю тебя сегодня от цепей, которые на руках твоих: если тебе угодно идти со мною в Вавилон, иди, и я буду иметь попечение о тебе; а если не угодно тебе идти со мною в Вавилон, оставайся. Вот, вся земля перед тобою; куда тебе угодно, и куда нравится идти, туда и иди.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Когда он еще не отошел, сказал <i>Навузардан:</i> пойди к Годолии, сыну Ахикама, сына Сафанова, которого царь Вавилонский поставил начальником над городами Иудейскими, и оставайся с ним среди народа; или иди, куда нравится тебе идти. И дал ему начальник телохранителей продовольствие и подарок и отпустил его.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И пришел Иеремия к Годолии, сыну Ахикама, в Массифу, и жил с ним среди народа, остававшегося в стране.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Когда все военачальники, бывшие в поле, они и люди их, услышали, что царь Вавилонский поставил Годолию, сына Ахикама, начальником над страною и поручил ему мужчин и женщин, и детей, и тех из бедных страны, которые не были переселены в Вавилон;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">тогда пришли к Годолии в Массифу и Исмаил, сын Нафании, и Иоанан и Ионафан, сыновья Карея, и Сераия, сын Фанасмефа, и сыновья Офи из Нетофафы, и Иезония, сын Махафы, они и дружина их.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Годолия, сын Ахикама, сына Сафанова, клялся им и людям их, говоря: не бойтесь служить Халдеям, оставайтесь на земле и служите царю Вавилонскому, и будет вам хорошо;
+</p>
+<div class="num">10</div><p id="n10">а я останусь в Массифе, чтобы предстательствовать пред лицем Халдеев, которые будут приходить к нам; вы же собирайте вино и летние плоды, и масло и убирайте в сосуды ваши, и живите в городах ваших, которые заняли.
+</p>
+<div class="num">11</div><p id="n11">Также все Иудеи, которые находились в земле Моавитской и между сыновьями Аммона и в Идумее, и во всех странах, услышали, что царь Вавилонский оставил часть Иудеев и поставил над ними Годолию, сына Ахикама, сына Сафана:
+</p>
+<div class="num">12</div><p id="n12">и возвратились все сии Иудеи из всех мест, куда были изгнаны, и пришли в землю Иудейскую к Годолии в Массифу, и собрали вина и летних плодов очень много.
+</p>
+<div class="num">13</div><p id="n13">Между тем Иоанан, сын Карея, и все военные начальники, бывшие в поле, пришли к Годолии в Массифу
+</p>
+<div class="num">14</div><p id="n14">и сказали ему: знаешь ли ты, что Ваалис, царь сыновей Аммоновых, прислал Исмаила, сына Нафании, чтобы убить тебя? Но Годолия, сын Ахикама, не поверил им.
+</p>
+<div class="num">15</div><p id="n15">Тогда Иоанан, сын Карея, сказал Годолии тайно в Массифе: позволь мне, я пойду и убью Исмаила, сына Нафании, и никто не узнает; зачем допускать, чтобы он убил тебя, и чтобы все Иудеи, собравшиеся к тебе, рассеялись, и чтобы погиб остаток Иуды?
+</p>
+<div class="num">16</div><p id="n16">Но Годолия, сын Ахикама, сказал Иоанану, сыну Карея: не делай этого, ибо ты неправду говоришь об Исмаиле.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jer.41.ru.html">к главе 41</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.ru.html">Псалтирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Псалом 91
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Псалом. Песнь на день субботний.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Благо есть славить Господа и петь имени Твоему, Всевышний,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">возвещать утром милость Твою и истину Твою в ночи,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">на десятиструнном и псалтири, с песнью на гуслях.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Ибо Ты возвеселил меня, Господи, творением Твоим: я восхищаюсь делами рук Твоих.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Как велики дела Твои, Господи! дивно глубоки помышления Твои!
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Человек несмысленный не знает, и невежда не разумеет того.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Тогда как нечестивые возникают, как трава, и делающие беззаконие цветут, чтобы исчезнуть на веки,-
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ты, Господи, высок во веки!
+</p>
+<div class="num">10</div><p id="n10">Ибо вот, враги Твои, Господи,- вот, враги Твои гибнут, и рассыпаются все делающие беззаконие;
+</p>
+<div class="num">11</div><p id="n11">а мой рог Ты возносишь, как рог единорога, и я умащен свежим елеем;
+</p>
+<div class="num">12</div><p id="n12">и око мое смотрит на врагов моих, и уши мои слышат о восстающих на меня злодеях.
+</p>
+<div class="num">13</div><p id="n13">Праведник цветет, как пальма, возвышается подобно кедру на Ливане.
+</p>
+<div class="num">14</div><p id="n14">Насажденные в доме Господнем, они цветут во дворах Бога нашего;
+</p>
+<div class="num">15</div><p id="n15">они и в старости плодовиты, сочны и свежи,
+</p>
+<div class="num">16</div><p id="n16">чтобы возвещать, что праведен Господь, твердыня моя, и нет неправды в Нем.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.92.ru.html">к псалму 92</a></div></div>
+
+</body>
+</html>

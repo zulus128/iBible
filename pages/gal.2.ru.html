@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gal.ru.html">Послание к Галатам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Потом, через четырнадцать лет, опять ходил я в Иерусалим с Варнавою, взяв с собою и Тита.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Ходил же по откровению, и предложил там, и особо знаменитейшим, благовествование, проповедуемое мною язычникам, не напрасно ли я подвизаюсь или подвизался.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Но они и Тита, бывшего со мною, хотя и Еллина, не принуждали обрезаться,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">а вкравшимся лжебратиям, скрытно приходившим подсмотреть за нашею свободою, которую мы имеем во Христе Иисусе, чтобы поработить нас,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">мы ни на час не уступили и не покорились, дабы истина благовествования сохранилась у вас.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И в знаменитых чем-либо, какими бы ни были они когда-либо, для меня нет ничего особенного: Бог не взирает на лице человека. И знаменитые не возложили на меня ничего более.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Напротив того, увидев, что мне вверено благовестие для необрезанных, как Петру для обрезанных
+</p>
+<div class="num">&nbsp;8</div><p id="n8">(ибо Содействовавший Петру в апостольстве у обрезанных содействовал и мне у язычников),
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и, узнав о благодати, данной мне, Иаков и Кифа и Иоанн, почитаемые столпами, подали мне и Варнаве руку общения, чтобы нам <i>идти</i> к язычникам, а им к обрезанным,
+</p>
+<div class="num">10</div><p id="n10">только чтобы мы помнили нищих, что и старался я исполнять в точности.
+</p>
+<div class="num">11</div><p id="n11">Когда же Петр пришел в Антиохию, то я лично противостал ему, потому что он подвергался нареканию.
+</p>
+<div class="num">12</div><p id="n12">Ибо, до прибытия некоторых от Иакова, ел вместе с язычниками; а когда те пришли, стал таиться и устраняться, опасаясь обрезанных.
+</p>
+<div class="num">13</div><p id="n13">Вместе с ним лицемерили и прочие Иудеи, так что даже Варнава был увлечен их лицемерием.
+</p>
+<div class="num">14</div><p id="n14">Но когда я увидел, что они не прямо поступают по истине Евангельской, то сказал Петру при всех: если ты, будучи Иудеем, живешь по-язычески, а не по-иудейски, то для чего язычников принуждаешь жить по-иудейски?
+</p>
+<div class="num">15</div><p id="n15">Мы по природе Иудеи, а не из язычников грешники;
+</p>
+<div class="num">16</div><p id="n16">однако же, узнав, что человек оправдывается не делами закона, а только верою в Иисуса Христа, и мы уверовали во Христа Иисуса, чтобы оправдаться верою во Христа, а не делами закона; ибо делами закона не оправдается никакая плоть.
+</p>
+<div class="num">17</div><p id="n17">Если же, ища оправдания во Христе, мы и сами оказались грешниками, то неужели Христос есть служитель греха? Никак.
+</p>
+<div class="num">18</div><p id="n18">Ибо если я снова созидаю, что разрушил, то сам себя делаю преступником.
+</p>
+<div class="num">19</div><p id="n19">Законом я умер для закона, чтобы жить для Бога. Я сораспялся Христу,
+</p>
+<div class="num">20</div><p id="n20">и уже не я живу, но живет во мне Христос. А что ныне живу во плоти, то живу верою в Сына Божия, возлюбившего меня и предавшего Себя за меня.
+</p>
+<div class="num">21</div><p id="n21">Не отвергаю благодати Божией; а если законом оправдание, то Христос напрасно умер.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gal.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

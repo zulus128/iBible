@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="heb.ru.html">Послание к Евреям</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 13
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Братолюбие <i>между</i> <i>вами</i> да пребывает.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Страннолюбия не забывайте, ибо через него некоторые, не зная, оказали гостеприимство Ангелам.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Помните узников, как бы и вы с ними были в узах, и страждущих, как и сами находитесь в теле.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Брак у всех <i>да</i> <i>будет</i> честен и ложе непорочно; блудников же и прелюбодеев судит Бог.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Имейте нрав несребролюбивый, довольствуясь тем, что есть. Ибо Сам сказал: не оставлю тебя и не покину тебя,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">так что мы смело говорим: Господь мне помощник, и не убоюсь: что сделает мне человек?
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Поминайте наставников ваших, которые проповедовали вам слово Божие, и, взирая на кончину их жизни, подражайте вере их.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Иисус Христос вчера и сегодня и во веки Тот же.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Учениями различными и чуждыми не увлекайтесь; ибо хорошо благодатью укреплять сердца, а не яствами, от которых не получили пользы занимающиеся ими.
+</p>
+<div class="num">10</div><p id="n10">Мы имеем жертвенник, от которого не имеют права питаться служащие скинии.
+</p>
+<div class="num">11</div><p id="n11">Так как тела животных, которых кровь для <i>очищения</i> греха вносится первосвященником во святилище, сжигаются вне стана,-
+</p>
+<div class="num">12</div><p id="n12">то и Иисус, дабы освятить людей Кровию Своею, пострадал вне врат.
+</p>
+<div class="num">13</div><p id="n13">Итак выйдем к Нему за стан, нося Его поругание;
+</p>
+<div class="num">14</div><p id="n14">ибо не имеем здесь постоянного града, но ищем будущего.
+</p>
+<div class="num">15</div><p id="n15">Итак будем через Него непрестанно приносить Богу жертву хвалы, то есть плод уст, прославляющих имя Его.
+</p>
+<div class="num">16</div><p id="n16">Не забывайте также благотворения и общительности, ибо таковые жертвы благоугодны Богу.
+</p>
+<div class="num">17</div><p id="n17">Повинуйтесь наставникам вашим и будьте покорны, ибо они неусыпно пекутся о душах ваших, как обязанные дать отчет; чтобы они делали это с радостью, а не воздыхая, ибо это для вас неполезно.
+</p>
+<div class="num">18</div><p id="n18">Молитесь о нас; ибо мы уверены, что имеем добрую совесть, потому что во всем желаем вести себя честно.
+</p>
+<div class="num">19</div><p id="n19">Особенно же прошу делать это, дабы я скорее возвращен был вам.
+</p>
+<div class="num">20</div><p id="n20">Бог же мира, воздвигший из мертвых Пастыря овец великого Кровию завета вечного, Господа нашего Иисуса <i>Христа,</i>
+</p>
+<div class="num">21</div><p id="n21">да усовершит вас во всяком добром деле, к исполнению воли Его, производя в вас благоугодное Ему через Иисуса Христа. Ему слава во веки веков! Аминь.
+</p>
+<div class="num">22</div><p id="n22">Прошу вас, братия, примите сие слово увещания; я же не много и написал вам.
+</p>
+<div class="num">23</div><p id="n23">Знайте, что брат наш Тимофей освобожден, и я вместе с ним, если он скоро придет, увижу вас.
+</p>
+<div class="num">24</div><p id="n24">Приветствуйте всех наставников ваших и всех святых. Приветствуют вас Италийские.
+</p>
+<div class="num">25</div><p id="n25">Благодать со всеми вами. Аминь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="heb.ru.html">Послание к Евреям</a>
+</div></div>
+
+</body>
+</html>

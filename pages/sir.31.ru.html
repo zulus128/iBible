@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 31
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Бдительность над богатством изнуряет тело, и забота о нем отгоняет сон.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Бдительная забота не дает дремать, и тяжкая болезнь отнимает сон.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Потрудился богатый при умножении имуществ - и в покое насыщается своими благами.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Потрудился бедный при недостатках в жизни - и в покое остается скудным.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Любящий золото не будет прав, и кто гоняется за тлением, наполнится им.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Многие ради золота подверглись падению, и погибель их была пред лицем их;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">оно - дерево преткновения для приносящих ему жертвы, и всякий несмысленный будет уловлен им.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Счастлив богач, который оказался безукоризненным и который не гонялся за золотом.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Кто он? и мы прославим его; ибо он сделал чудо в народе своем.
+</p>
+<div class="num">10</div><p id="n10">Кто был искушаем <i>золотом</i> - и остался непорочным? Да будет это в похвалу ему.
+</p>
+<div class="num">11</div><p id="n11">Кто мог погрешить - и не погрешил, сделать зло - и не сделал?
+</p>
+<div class="num">12</div><p id="n12">Прочно будет богатство его, и о милостынях его будет возвещать собрание.
+</p>
+<div class="num">13</div><p id="n13">Когда ты сядешь за богатый стол, не раскрывай на него гортани твоей
+</p>
+<div class="num">14</div><p id="n14">и не говори: "много же на нем!" Помни, что алчный глаз - злая вещь.
+</p>
+<div class="num">15</div><p id="n15">Что из сотворенного завистливее глаза? Потому он плачет о всем, что видит.
+</p>
+<div class="num">16</div><p id="n16">Куда он посмотрит, не протягивай руки, и не сталкивайся с ним в блюде.
+</p>
+<div class="num">17</div><p id="n17">Суди о ближнем по себе и о всяком действии рассуждай.
+</p>
+<div class="num">18</div><p id="n18">Ешь, как человек, что тебе предложено, и не пресыщайся, чтобы не возненавидели тебя;
+</p>
+<div class="num">19</div><p id="n19">переставай <i>есть</i> первый из вежливости и не будь алчен, чтобы не послужить соблазном;
+</p>
+<div class="num">20</div><p id="n20">и если ты сядешь посреди многих, то не протягивай руки твоей прежде них.
+</p>
+<div class="num">21</div><p id="n21">Немногим довольствуется человек благовоспитанный, и потому он не страдает одышкою на своем ложе.
+</p>
+<div class="num">22</div><p id="n22">Здоровый сон бывает при умеренности желудка: встал рано, и душа его с ним;
+</p>
+<div class="num">23</div><p id="n23">страдание бессонницею и холера и резь в животе бывают у человека ненасытного.
+</p>
+<div class="num">24</div><p id="n24">Если ты обременил себя яствами, то встань из-за стола и отдохни.
+</p>
+<div class="num">25</div><p id="n25">Послушай меня, сын мой, и не пренебреги мною, и впоследствии ты поймешь слова мои.
+</p>
+<div class="num">26</div><p id="n26">Во всех делах твоих будь осмотрителен, и никакая болезнь не приключится тебе.
+</p>
+<div class="num">27</div><p id="n27">Щедрого на хлебы будут благословлять уста, и свидетельство о доброте его - верно;
+</p>
+<div class="num">28</div><p id="n28">против скупого на хлеб будет роптать город, и свидетельство о скупости его - справедливо.
+</p>
+<div class="num">29</div><p id="n29">Против вина не показывай себя храбрым, ибо многих погубило вино.
+</p>
+<div class="num">30</div><p id="n30">Печь испытывает крепость лезвия закалкою; так вино испытывает сердца гордых - пьянством.
+</p>
+<div class="num">31</div><p id="n31">Вино полезно для жизни человека, если будешь пить его умеренно.
+</p>
+<div class="num">32</div><p id="n32">Что за жизнь без вина? оно сотворено на веселие людям.
+</p>
+<div class="num">33</div><p id="n33">Отрада сердцу и утешение душе - вино, умеренно употребляемое вовремя;
+</p>
+<div class="num">34</div><p id="n34">горесть для души - вино, когда пьют его много, при раздражении и ссоре.
+</p>
+<div class="num">35</div><p id="n35">Излишнее употребление вина увеличивает ярость неразумного до преткновения, умаляя крепость его и причиняя раны.
+</p>
+<div class="num">36</div><p id="n36">На пиру за вином не упрекай ближнего и не унижай его во время его веселья;
+</p>
+<div class="num">37</div><p id="n37">не говори ему оскорбительных слов и не обременяй его требованиями.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.32.ru.html">к главе 32</a></div></div>
+
+</body>
+</html>

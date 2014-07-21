@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 43
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Величие высоты, твердь чистоты, вид неба в славном явлении!
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Солнце, когда оно является, возвещает о них при восходе: чудное создание, дело Всевышнего!
+</p>
+<div class="num">&nbsp;3</div><p id="n3">В полдень свой оно иссушает землю, и пред жаром его кто устоит?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Распаляют горн для работ плавильных, но втрое сильнее солнце палит горы: дыша пламенем огня и блистая лучами, оно ослепляет глаза.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Велик Господь, Который сотворил его, и по слову Его оно поспешно пробегает путь свой.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И луна всем в свое время служит указанием времен и знамением века:
+</p>
+<div class="num">&nbsp;7</div><p id="n7">от луны - указание праздника; свет ее умаляется по достижении ею полноты;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">месяц называется по имени ее; она дивно возрастает в своем изменении;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">это - глава вышних строев; она сияет на тверди небесной;
+</p>
+<div class="num">10</div><p id="n10">красота неба, слава звезд, блестящее украшение, владыка на высотах!
+</p>
+<div class="num">11</div><p id="n11">По слову Святаго <i>звезды</i> стоят по чину и не устают на страже своей.
+</p>
+<div class="num">12</div><p id="n12">Взгляни на радугу, и прославь Сотворившего ее: прекрасна она в сиянии своем!
+</p>
+<div class="num">13</div><p id="n13">Величественным кругом своим она обнимает небо; руки Всевышнего распростерли ее.
+</p>
+<div class="num">14</div><p id="n14">Повелением Его скоро сыплется снег, и быстро сверкают молнии суда Его.
+</p>
+<div class="num">15</div><p id="n15">Отверзаются сокровищницы и вылетают из них облака, как птицы.
+</p>
+<div class="num">16</div><p id="n16">Могуществом Своим Он укрепляет облака, и разбиваются камни града;
+</p>
+<div class="num">17</div><p id="n17">от взора Его потрясаются горы, и по изволению Его веет южный ветер.
+</p>
+<div class="num">18</div><p id="n18">Голос грома Его приводит в трепет землю, и северная буря и вихрь.
+</p>
+<div class="num">19</div><p id="n19">Он сыплет снег подобно летящим вниз крылатым, и ниспадение его - как опускающаяся саранча;
+</p>
+<div class="num">20</div><p id="n20">красоте белизны его удивляется глаз, и ниспадению его изумляется сердце.
+</p>
+<div class="num">21</div><p id="n21">И как соль, рассыпает Он по земле иней, который, замерзая, делается остроконечным.
+</p>
+<div class="num">22</div><p id="n22">Подует северный холодный ветер,- и из воды делается лед: он расстилается на всяком вместилище вод, и вода облекается как бы в латы;
+</p>
+<div class="num">23</div><p id="n23">поядает горы, и пожигает пустыню, и, как огонь, опаляет траву.
+</p>
+<div class="num">24</div><p id="n24">Но скорым исцелением всему служит туман; появляющаяся роса прохлаждает от зноя.
+</p>
+<div class="num">25</div><p id="n25">Повелением Своим Господь укрощает бездну и насаждает на ней острова.
+</p>
+<div class="num">26</div><p id="n26">Плавающие по морю рассказывают об опасностях на нем, и мы дивимся тому, что слышим ушами нашими:
+</p>
+<div class="num">27</div><p id="n27">ибо там необычайные и чудные дела, разнообразие всяких животных, роды чудовищ.
+</p>
+<div class="num">28</div><p id="n28">Чрез Него все успешно достигает своего назначения, и все держится словом Его.
+</p>
+<div class="num">29</div><p id="n29">Многое можем мы сказать, и, однако же, не постигнем Его, и конец слов: Он есть всё.
+</p>
+<div class="num">30</div><p id="n30">Где возьмем силу, чтобы прославить Его? ибо Он превыше всех дел Своих.
+</p>
+<div class="num">31</div><p id="n31">Страшен Господь и весьма велик, и дивно могущество Его!
+</p>
+<div class="num">32</div><p id="n32">Прославляя Господа, превозносите Его, сколько можете, но и затем Он будет превосходнее;
+</p>
+<div class="num">33</div><p id="n33">и, величая Его, прибавьте силы: но не труди&#769;тесь, ибо не постигнете.
+</p>
+<div class="num">34</div><p id="n34">Кто видел Его, и объяснит? и кто прославит Его, как Он есть?
+</p>
+<div class="num">35</div><p id="n35">Много сокрыто, что гораздо больше сего; ибо мы видим малую часть дел Его.
+</p>
+<div class="num">36</div><p id="n36">Всё сотворил Господь, и благочестивым даровал мудрость.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.44.ru.html">к главе 44</a></div></div>
+
+</body>
+</html>

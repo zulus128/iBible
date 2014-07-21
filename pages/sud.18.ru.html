@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sud.ru.html">Книга Судей</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 18
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В те дни не было царя у Израиля; и в те дни колено Даново искало себе удела, где бы поселиться, потому что дотоле не выпало ему <i>полного</i> удела между коленами Израилевыми.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И послали сыны Дановы от племени своего пять человек, мужей сильных, из Цоры и Естаола, чтоб осмотреть землю и узнать ее, и сказали им: пойдите, узнайте землю. Они пришли на гору Ефремову к дому Михи и ночевали там.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Находясь у дома Михи, узнали они голос молодого левита и зашли туда и спрашивали его: кто тебя привел сюда? что ты здесь делаешь и зачем ты здесь?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Он сказал им: то и то сделал для меня Миха, нанял меня, и я у него священником.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Они сказали ему: вопроси Бога, чтобы знать нам, успешен ли будет путь наш, в который мы идем.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Священник сказал им: идите с миром; пред Господом путь ваш, в который вы идете.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И пошли те пять мужей, и пришли в Лаис, и увидели народ, который в нем, что он живет покойно, по обычаю Сидонян, тих и беспечен, и что не было в земле той, кто обижал бы в чем, или имел бы власть: от Сидонян они жили далеко, и ни с кем не было у них никакого дела.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И возвратились [оные пять человек] к братьям своим в Цору и Естаол, и сказали им братья их: с чем вы?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Они сказали: встанем и пойдем на них; мы видели землю, она весьма хороша; а вы задумались: не медлите пойти и взять в наследие ту землю;
+</p>
+<div class="num">10</div><p id="n10">когда пойдете вы, придете к народу беспечному, и земля та обширна; Бог предает ее в руки ваши; это такое место, где нет ни в чем недостатка, что <i>получается</i> от земли.
+</p>
+<div class="num">11</div><p id="n11">И отправились оттуда из колена Данова, из Цоры и Естаола, шестьсот мужей, препоясавшись воинским оружием.
+</p>
+<div class="num">12</div><p id="n12">Они пошли и стали станом в Кириаф-Иариме, в Иудее. Посему и называют то место станом Дановым до сего дня. Он позади Кириаф-Иарима.
+</p>
+<div class="num">13</div><p id="n13">Оттуда отправились они на гору Ефремову и пришли к дому Михи.
+</p>
+<div class="num">14</div><p id="n14">И сказали те пять мужей, которые ходили осматривать землю Лаис, братьям своим: знаете ли, что в одном из домов сих есть ефод, терафим, истукан и литый кумир? итак подумайте, что сделать.
+</p>
+<div class="num">15</div><p id="n15">И зашли туда, и вошли в дом молодого левита, в дом Михи, и приветствовали его.
+</p>
+<div class="num">16</div><p id="n16">А шестьсот человек из сынов Дановых, перепоясанные воинским оружием, стояли у ворот.
+</p>
+<div class="num">17</div><p id="n17">Пять же человек, ходивших осматривать землю, пошли, вошли туда, взяли истукан и ефод и терафим и литый кумир. Священник стоял у ворот с теми шестьюстами человек, препоясанных воинским оружием.
+</p>
+<div class="num">18</div><p id="n18">Когда они вошли в дом Михи и взяли истукан, ефод, терафим и литый кумир, священник сказал им: что вы делаете?
+</p>
+<div class="num">19</div><p id="n19">Они сказали ему: молчи, положи руку твою на уста твои и иди с нами и будь у нас отцом и священником; лучше ли тебе быть священником в доме одного человека, нежели быть священником в колене или в племени Израилевом?
+</p>
+<div class="num">20</div><p id="n20">Священник обрадовался, и взял ефод, терафим и истукан [и литый кумир], и пошел с народом.
+</p>
+<div class="num">21</div><p id="n21">Они обратились и пошли, и отпустили детей, скот и тяжести вперед.
+</p>
+<div class="num">22</div><p id="n22">Когда они удалились от дома Михи, [Миха и] жители домов соседних с домом Михи собрались и погнались за сынами Дана,
+</p>
+<div class="num">23</div><p id="n23">и кричали сынам Дана. [Сыны Дановы] оборотились и сказали Михе: что тебе, что ты так кричишь?
+</p>
+<div class="num">24</div><p id="n24">[Миха] сказал: вы взяли богов моих, которых я сделал, и священника, и ушли; чего еще более? как же вы говорите: что тебе?
+</p>
+<div class="num">25</div><p id="n25">Сыны Дановы сказали ему: <i>молчи,</i> чтобы мы не слышали голоса твоего; иначе некоторые из нас, рассердившись, нападут на вас, и ты погубишь себя и семейство твое.
+</p>
+<div class="num">26</div><p id="n26">И пошли сыны Дановы путем своим; Миха же, видя, что они сильнее его, пошел назад и возвратился в дом свой.
+</p>
+<div class="num">27</div><p id="n27">А [сыны Дановы] взяли то, что сделал Миха, и священника, который был у него, и пошли в Лаис, против народа спокойного и беспечного, и побили его мечом, а город сожгли огнем.
+</p>
+<div class="num">28</div><p id="n28">Некому было помочь, потому что он был отдален от Сидона и ни с кем не имел дела. [Город сей] находился в долине, что близ Беф-Рехова. И построили <i>снова</i> город и поселились в нем,
+</p>
+<div class="num">29</div><p id="n29">и нарекли имя городу: Дан, по имени отца своего Дана, сына Израилева; а прежде имя городу тому было: Лаис.
+</p>
+<div class="num">30</div><p id="n30">И поставили у себя сыны Дановы истукан; Ионафан же, сын Гирсона, сына Манассии, сам и сыновья его были священниками в колене Дановом до дня переселения <i>жителей</i> <i>той</i> земли;
+</p>
+<div class="num">31</div><p id="n31">и имели у себя истукан, сделанный Михою, во все то время, когда дом Божий находился в Силоме.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sud.19.ru.html">к главе 19</a></div></div>
+
+</body>
+</html>

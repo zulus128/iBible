@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="deu.ru.html">Второзаконие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И обратились мы и отправились в пустыню к Чермному морю, как говорил мне Господь, и много времени ходили вокруг горы Сеира.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И сказал мне Господь, говоря:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">полно вам ходить вокруг этой горы, обратитесь к северу;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и народу дай повеление и скажи: вы будете проходить пределы братьев ваших, сынов Исавовых, живущих на Сеире, и они убоятся вас; но остерегайтесь
+</p>
+<div class="num">&nbsp;5</div><p id="n5">начинать с ними войну, ибо Я не дам вам земли их ни на стопу ноги, потому что гору Сеир Я дал во владение Исаву;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">пищу покупайте у них за серебро и ешьте; и воду покупайте у них за серебро и пейте;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">ибо Господь, Бог твой, благословил тебя во всяком деле рук твоих, покровительствовал <i>тебе</i> во время путешествия твоего по великой [и страшной] пустыне сей; вот, сорок лет Господь, Бог твой, с тобою; ты ни в чем не терпел недостатка.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И шли мы мимо братьев наших, сынов Исавовых, живущих на Сеире, путем равнины, от Елафа и Ецион-Гавера, и поворотили, и шли к пустыне Моава.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказал мне Господь: не вступай во вражду с Моавом и не начинай с ними войны; ибо Я не дам тебе ничего от земли его во владение, потому что Ар отдал Я во владение сынам Лотовым;
+</p>
+<div class="num">10</div><p id="n10">прежде жили там Эмимы, народ великий, многочисленный и высокий, как <i>сыны</i> Енаковы,
+</p>
+<div class="num">11</div><p id="n11">и они считались между Рефаимами, как <i>сыны</i> Енаковы; Моавитяне же называют их Эмимами;
+</p>
+<div class="num">12</div><p id="n12">а на Сеире жили прежде Хорреи; но сыны Исавовы прогнали их и истребили их от лица своего и поселились вместо их - так, как поступил Израиль с землею наследия своего, которую дал им Господь;
+</p>
+<div class="num">13</div><p id="n13">итак встаньте и пройдите долину Заред. И прошли мы долину Заред.
+</p>
+<div class="num">14</div><p id="n14">С тех пор, как мы пошли в Кадес-Варни и как прошли долину Заред, <i>минуло</i> тридцать восемь лет, и у нас перевелся из среды стана весь род ходящих на войну, как клялся им Господь [Бог];
+</p>
+<div class="num">15</div><p id="n15">да и рука Господня была на них, чтоб истреблять их из среды стана, пока не вымерли.
+</p>
+<div class="num">16</div><p id="n16">Когда же перевелись все ходящие на войну и вымерли из среды народа,
+</p>
+<div class="num">17</div><p id="n17">тогда сказал мне Господь, говоря:
+</p>
+<div class="num">18</div><p id="n18">ты проходишь ныне мимо пределов Моава, мимо Ара,
+</p>
+<div class="num">19</div><p id="n19">и приблизился к Аммонитянам; не вступай с ними во вражду, и не начинай с ними войны, ибо Я не дам тебе ничего от земли сынов Аммоновых во владение, потому что Я отдал ее во владение сынам Лотовым;
+</p>
+<div class="num">20</div><p id="n20">и она считалась землею Рефаимов; прежде жили на ней Рефаимы; Аммонитяне же называют их Замзумимами;
+</p>
+<div class="num">21</div><p id="n21">народ великий, многочисленный и высокий, как <i>сыны</i> Енаковы, и истребил их Господь пред лицем их, и изгнали они их и поселились на месте их,
+</p>
+<div class="num">22</div><p id="n22">как Он сделал для сынов Исавовых, живущих на Сеире, истребив пред лицем их Хорреев, и они изгнали их, и поселились на месте их, и <i>живут</i> до сего дня;
+</p>
+<div class="num">23</div><p id="n23">и Аввеев, живших в селениях до самой Газы, Кафторимы, исшедшие из Кафтора, истребили и поселились на месте их.
+</p>
+<div class="num">24</div><p id="n24">Встаньте, отправьтесь и перейдите поток Арнон; вот, Я предаю в руку твою Сигона, царя Есевонского, Аморреянина, и землю его; начинай овладевать ею, и веди с ним войну;
+</p>
+<div class="num">25</div><p id="n25">с сего дня Я начну распространять страх и ужас пред тобою на народы под всем небом; те, которые услышат о тебе, вострепещут и ужаснутся тебя.
+</p>
+<div class="num">26</div><p id="n26">И послал я послов из пустыни Кедемоф к Сигону, царю Есевонскому, с словами мирными, чтобы сказать:
+</p>
+<div class="num">27</div><p id="n27">позволь пройти мне землею твоею; я пойду дорогою, не сойду ни направо, ни налево;
+</p>
+<div class="num">28</div><p id="n28">пищу продавай мне за серебро, и я буду есть, и воду для питья давай мне за серебро, и я буду пить, только ногами моими пройду -
+</p>
+<div class="num">29</div><p id="n29">так, как сделали мне сыны Исава, живущие на Сеире, и Моавитяне, живущие в Аре, доколе не перейду чрез Иордан в землю, которую Господь, Бог наш, дает нам.
+</p>
+<div class="num">30</div><p id="n30">Но Сигон, царь Есевонский, не согласился позволить пройти нам через свою <i>землю,</i> потому что Господь, Бог твой, ожесточил дух его и сердце его сделал упорным, чтобы предать его в руку твою, как <i>это</i> <i>видно</i> ныне.
+</p>
+<div class="num">31</div><p id="n31">И сказал мне Господь: вот, Я начинаю предавать тебе Сигона [царя Есевонского, Аморреянина,] и землю его; начинай овладевать землею его.
+</p>
+<div class="num">32</div><p id="n32">И Сигон [царь Есевонский] со всем народом своим выступил против нас на сражение к Яаце;
+</p>
+<div class="num">33</div><p id="n33">и предал его Господь, Бог наш, [в руки наши,] и мы поразили его и сынов его и весь народ его,
+</p>
+<div class="num">34</div><p id="n34">и взяли в то время все города его, и предали заклятию все города, мужчин и женщин и детей, не оставили никого в живых;
+</p>
+<div class="num">35</div><p id="n35">только взяли мы себе в добычу скот их и захваченное во взятых нами городах.
+</p>
+<div class="num">36</div><p id="n36">От Ароера, который на берегу потока Арнона, и от города, который на долине, до [горы] Галаада не было города, который был бы неприступен для нас: всё предал Господь, Бог наш, [в руки наши].
+</p>
+<div class="num">37</div><p id="n37">Только к земле Аммонитян ты не подходил, ни к <i>местам</i> [лежащим] близ потока Иавока, ни к городам [которые] на горе, ни ко всему, к чему не повелел [нам] Господь, Бог наш.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="deu.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

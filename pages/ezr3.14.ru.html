@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ezr3.ru.html">Третья книга Ездры</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 14
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И было после трех дней, я сидел под дубом, и вот, голос вышел из куста против меня и сказал: Ездра, Ездра!
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Я сказал: вот я, Господи. И встал на ноги мои.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Тогда сказал Он мне: в кусте Я открылся и говорил Моисею, когда народ Мой был рабом в Египте;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и послал его и вывел народ Мой из Египта, и привел его к горе Синаю и держал его у Себя много дней,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и открыл ему много чудес и показал тайны времен и конец, и заповедал ему, сказав:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">"Эти слова объяви, а прочие скрой".
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И ныне тебе говорю:
+</p>
+<div class="num">&nbsp;8</div><p id="n8">знамения, которые Я показал тебе, и сны, которые ты видел, и толкования, которые слышал, положи в сердце твоем;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">потому что ты взят будешь от людей и будешь обращаться с Сыном Моим и с подобными тебе, доколе не окончатся времена.
+</p>
+<div class="num">10</div><p id="n10">Ибо век потерял свою юность, и времена приближаются к старости,
+</p>
+<div class="num">11</div><p id="n11">так как век разделен на двенадцать частей, и девять частей его и половина десятой части уже прошли,
+</p>
+<div class="num">12</div><p id="n12">и остается то, что после половины десятой части.
+</p>
+<div class="num">13</div><p id="n13">Итак ныне устрой дом твой и вразуми народ твой, утешь уничиженных и отрекись тления,
+</p>
+<div class="num">14</div><p id="n14">и отпусти от себя смертные помышления, отбрось тягости людские, сними с себя немощи естества и отложи в сторону тягостные для тебя помыслы, и готовься переселиться от времен сих.
+</p>
+<div class="num">15</div><p id="n15">Ибо после больше будет бедствий, нежели сколько ты видел ныне.
+</p>
+<div class="num">16</div><p id="n16">Сколько будет слабеть век от старости, столько будет умножаться зло для живущих.
+</p>
+<div class="num">17</div><p id="n17">Еще дальше удалится истина, и приблизится ложь; уже поспешает прийти видение, которое ты видел.
+</p>
+<div class="num">18</div><p id="n18">Тогда отвечал я и сказал: вот, я - пред Тобою, Господи;
+</p>
+<div class="num">19</div><p id="n19">я пойду, как Ты повелел мне, и вразумлю нынешний народ; но кто научит тех, которые потом родятся?
+</p>
+<div class="num">20</div><p id="n20">Ибо век во тьме лежит, и живущие в нем - без света;
+</p>
+<div class="num">21</div><p id="n21">потому что закон Твой сожжен, и оттого никто не знает, что соделано Тобою или что должно им делать.
+</p>
+<div class="num">22</div><p id="n22">Но если я приобрел милость у Тебя, ниспошли на меня Духа Святаго, чтобы я написал все, что было соделано в мире от начала, что было написано в законе Твоем, дабы люди могли найти стезю и дабы те, которые захотят жить в последние времена, могли жить.
+</p>
+<div class="num">23</div><p id="n23">И Он в ответ сказал мне: иди, собери народ и скажи ему, чтобы он не искал тебя в продолжение сорока дней.
+</p>
+<div class="num">24</div><p id="n24">Ты же приготовь себе побольше дощечек и возьми с собою Сария, Даврия, Салемия, Ехана и Асиеля, этих пять, способных писать скоро.
+</p>
+<div class="num">25</div><p id="n25">И приди сюда, и Я возжгу в сердце твоем светильник разума, который не угаснет, доколе не окончится то, что ты начнешь писать.
+</p>
+<div class="num">26</div><p id="n26">И когда ты совершишь это, то иное объяви, а иное тайно передай мудрым. Завтра в этот час ты начнешь писать.
+</p>
+<div class="num">27</div><p id="n27">Тогда я пошел, как Он повелел мне, и собрал весь народ и сказал:
+</p>
+<div class="num">28</div><p id="n28">слушай, Израиль, слова сии:
+</p>
+<div class="num">29</div><p id="n29">отцы наши были странниками в Египте, и освобождены были оттуда,
+</p>
+<div class="num">30</div><p id="n30">и приняли закон жизни, которого не сохранили, который и вы после них нарушили.
+</p>
+<div class="num">31</div><p id="n31">И дана была вам земля в наследие и земля Сион; но отцы ваши и вы делали беззаконие и не держались тех путей, которые Всевышний заповедал вам.
+</p>
+<div class="num">32</div><p id="n32">И Он, как праведный судия, отнял у вас ныне, что даровал вам.
+</p>
+<div class="num">33</div><p id="n33">И ныне вы здесь и братья ваши между вами.
+</p>
+<div class="num">34</div><p id="n34">Если вы будете управлять чувством вашим и образуете сердце ваше, то сохраните жизнь и по смерти полу&#769;чите милость.
+</p>
+<div class="num">35</div><p id="n35">Ибо по смерти настанет суд, когда мы оживем; и тогда имена праведных будут объявлены и показаны дела нечестивых.
+</p>
+<div class="num">36</div><p id="n36">Никто не приходи ко мне ныне и не ищи меня до сорока дней.
+</p>
+<div class="num">37</div><p id="n37">И взял я пять мужей, как Он заповедал мне, и пошли мы в поле и остались там.
+</p>
+<div class="num">38</div><p id="n38">И вот, на другой день голос воззвал ко мне: Ездра! открой уста твои и выпей то, чем Я напою тебя.
+</p>
+<div class="num">39</div><p id="n39">Я открыл уста мои, и вот полная чаша подана была мне, которая была наполнена как бы водою, но цвет того был подобен огню.
+</p>
+<div class="num">40</div><p id="n40">И взял я и пил; и когда я пил, сердце мое дышало разумом и в груди моей возрастала мудрость, ибо дух мой подкреплялся памятью;
+</p>
+<div class="num">41</div><p id="n41">уста мои были открыты и больше не закрывались.
+</p>
+<div class="num">42</div><p id="n42">Всевышний даровал разум пяти мужам, и они ночью писали по порядку, что было говорено им и чего они не знали.
+</p>
+<div class="num">43</div><p id="n43">Ночью они ели хлеб; а я говорил днем и не молчал ночью.
+</p>
+<div class="num">44</div><p id="n44">Написаны же были в сорок дней девяносто четыре книги.
+</p>
+<div class="num">45</div><p id="n45">И когда исполнилось сорок дней,
+</p>
+<div class="num">46</div><p id="n46">Всевышний сказал: первые, которые ты написал, положи открыто, чтобы могли читать и достойные и недостойные,
+</p>
+<div class="num">47</div><p id="n47">но последние семьдесят сбереги, чтобы передать их мудрым из народа;
+</p>
+<div class="num">48</div><p id="n48">потому что в них проводник разума, источник мудрости и река знания. Так я и сделал.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ezr3.15.ru.html">к главе 15</a></div></div>
+
+</body>
+</html>

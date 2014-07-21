@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 8
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И вспомнил Бог о Ное, и о всех зверях, и о всех скотах, [и о всех птицах, и о всех гадах пресмыкающихся,] бывших с ним в ковчеге; и навел Бог ветер на землю, и воды остановились.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И закрылись источники бездны и окна небесные, и перестал дождь с неба.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Вода же постепенно возвращалась с земли, и стала убывать вода по окончании ста пятидесяти дней.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И остановился ковчег в седьмом месяце, в семнадцатый день месяца, на горах Араратских.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Вода постоянно убывала до десятого месяца; в первый день десятого месяца показались верхи гор.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">По прошествии сорока дней Ной открыл сделанное им окно ковчега
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и выпустил ворона, [чтобы видеть, убыла ли вода с земли,] который, вылетев, отлетал и прилетал, пока осушилась земля от воды.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Потом выпустил от себя голубя, чтобы видеть, сошла ли вода с лица земли,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">но голубь не нашел места покоя для ног своих и возвратился к нему в ковчег, ибо вода была еще на поверхности всей земли; и он простер руку свою, и взял его, и принял к себе в ковчег.
+</p>
+<div class="num">10</div><p id="n10">И помедлил еще семь дней других и опять выпустил голубя из ковчега.
+</p>
+<div class="num">11</div><p id="n11">Голубь возвратился к нему в вечернее время, и вот, свежий масличный лист во рту у него, и Ной узнал, что вода сошла с земли.
+</p>
+<div class="num">12</div><p id="n12">Он помедлил еще семь дней других и [опять] выпустил голубя; и он уже не возвратился к нему.
+</p>
+<div class="num">13</div><p id="n13">Шестьсот первого года [жизни Ноевой] к первому [дню] первого месяца иссякла вода на земле; и открыл Ной кровлю ковчега и посмотрел, и вот, обсохла поверхность земли.
+</p>
+<div class="num">14</div><p id="n14">И во втором месяце, к двадцать седьмому дню месяца, земля высохла.
+</p>
+<div class="num">15</div><p id="n15">И сказал [Господь] Бог Ною:
+</p>
+<div class="num">16</div><p id="n16">выйди из ковчега ты и жена твоя, и сыновья твои, и жены сынов твоих с тобою;
+</p>
+<div class="num">17</div><p id="n17">выведи с собою всех животных, которые с тобою, от всякой плоти, из птиц, и скотов, и всех гадов, пресмыкающихся по земле: пусть разойдутся они по земле, и пусть плодятся и размножаются на земле.
+</p>
+<div class="num">18</div><p id="n18">И вышел Ной и сыновья его, и жена его, и жены сынов его с ним;
+</p>
+<div class="num">19</div><p id="n19">все звери, и [весь скот, и] все гады, и все птицы, все движущееся по земле, по родам своим, вышли из ковчега.
+</p>
+<div class="num">20</div><p id="n20">И устроил Ной жертвенник Господу; и взял из всякого скота чистого и из всех птиц чистых и принес во всесожжение на жертвеннике.
+</p>
+<div class="num">21</div><p id="n21">И обонял Господь приятное благоухание, и сказал Господь [Бог] в сердце Своем: не буду больше проклинать землю за человека, потому что помышление сердца человеческого - зло от юности его; и не буду больше поражать всего живущего, как Я сделал:
+</p>
+<div class="num">22</div><p id="n22">впредь во все дни земли сеяние и жатва, холод и зной, лето и зима, день и ночь не прекратятся.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.9.ru.html">к главе 9</a></div></div>
+
+</body>
+</html>

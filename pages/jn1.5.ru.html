@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jn1.ru.html">Первое послание Иоанна</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 5
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Всякий верующий, что Иисус есть Христос, от Бога рожден, и всякий, любящий Родившего, любит и Рожденного от Него.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Что мы любим детей Божиих, узнаём из того, когда любим Бога и соблюдаем заповеди Его.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ибо это есть любовь к Богу, чтобы мы соблюдали заповеди Его; и заповеди Его нетяжки.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Ибо всякий, рожденный от Бога, побеждает мир; и сия есть победа, победившая мир, вера наша.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Кто побеждает мир, как не тот, кто верует, что Иисус есть Сын Божий?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Сей есть Иисус Христос, пришедший водою и кровию и Духом, не водою только, но водою и кровию, и Дух свидетельствует о <i>Нем,</i> потому что Дух есть истина.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Ибо три свидетельствуют на небе: Отец, Слово и Святый Дух; и Сии три суть едино.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И три свидетельствуют на земле: дух, вода и кровь; и сии три об одном.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Если мы принимаем свидетельство человеческое, свидетельство Божие - больше, ибо это есть свидетельство Божие, которым Бог свидетельствовал о Сыне Своем.
+</p>
+<div class="num">10</div><p id="n10">Верующий в Сына Божия имеет свидетельство в себе самом; не верующий Богу представляет Его лживым, потому что не верует в свидетельство, которым Бог свидетельствовал о Сыне Своем.
+</p>
+<div class="num">11</div><p id="n11">Свидетельство сие состоит в том, что Бог даровал нам жизнь вечную, и сия жизнь в Сыне Его.
+</p>
+<div class="num">12</div><p id="n12">Имеющий Сына (Божия) имеет жизнь; не имеющий Сына Божия не имеет жизни.
+</p>
+<div class="num">13</div><p id="n13">Сие написал я вам, верующим во имя Сына Божия, дабы вы знали, что вы, веруя в Сына Божия, имеете жизнь вечную.
+</p>
+<div class="num">14</div><p id="n14">И вот какое дерзновение мы имеем к Нему, что, когда просим чего по воле Его, Он слушает нас.
+</p>
+<div class="num">15</div><p id="n15">А когда мы знаем, что Он слушает нас во всем, чего бы мы ни просили,- знаем и то, что получаем просимое от Него.
+</p>
+<div class="num">16</div><p id="n16">Если кто видит брата своего согрешающего грехом не к смерти, то пусть молится, и <i>Бог</i> даст ему жизнь, <i>то</i> <i>есть</i> согрешающему <i>грехом</i> не к смерти. Есть грех к смерти: не о том говорю, чтобы он молился.
+</p>
+<div class="num">17</div><p id="n17">Всякая неправда есть грех; но есть грех не к смерти.
+</p>
+<div class="num">18</div><p id="n18">Мы знаем, что всякий, рожденный от Бога, не грешит; но рожденный от Бога хранит себя, и лукавый не прикасается к нему.
+</p>
+<div class="num">19</div><p id="n19">Мы знаем, что мы от Бога и что весь мир лежит во зле.
+</p>
+<div class="num">20</div><p id="n20">Знаем также, что Сын Божий пришел и дал нам свет и разум, да позна&#769;ем Бога истинного и да будем в истинном Сыне Его Иисусе Христе. Сей есть истинный Бог и жизнь вечная.
+</p>
+<div class="num">21</div><p id="n21">Дети! храните себя от идолов. Аминь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jn1.ru.html">Первое послание Иоанна</a>
+</div></div>
+
+</body>
+</html>

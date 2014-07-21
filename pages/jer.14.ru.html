@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jer.ru.html">Книга Пророка Иеремии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 14
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Слово Господа, которое было к Иеремии по случаю бездождия.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Плачет Иуда, ворота его распались, почернели на земле, и вопль поднимается в Иерусалиме.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Вельможи посылают слуг своих за водою; они приходят к колодезям и не находят воды; возвращаются с пустыми сосудами; пристыженные и смущенные, они покрывают свои головы.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Так как почва растрескалась оттого, что не было дождя на землю, то и земледельцы в смущении и покрывают свои головы.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Даже и лань рождает на поле и оставляет <i>детей,</i> потому что нет травы.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И дикие ослы стоят на возвышенных местах и глотают, подобно шакалам, воздух; глаза их потускли, потому что нет травы.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Хотя беззакония наши свидетельствуют против нас, но Ты, Господи, твори с нами ради имени Твоего; отступничество наше велико, согрешили мы пред Тобою.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Надежда Израиля, Спаситель его во время скорби! Для чего Ты - как чужой в этой земле, как прохожий, который зашел переночевать?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Для чего Ты - как человек изумленный, как сильный, не имеющий силы спасти? И однако же Ты, Господи, посреди нас, и Твое имя наречено над нами; не оставляй нас.
+</p>
+<div class="num">10</div><p id="n10">Так говорит Господь народу сему: за то, что они любят бродить, не удерживают ног своих, за то Господь не благоволит к ним, припоминает ныне беззакония их и наказывает грехи их.
+</p>
+<div class="num">11</div><p id="n11">И сказал мне Господь: ты не молись о народе сем во благо ему.
+</p>
+<div class="num">12</div><p id="n12">Если они будут поститься, Я не услышу вопля их; и если вознесут всесожжение и дар, не приму их; но мечом и голодом, и моровою язвою истреблю их.
+</p>
+<div class="num">13</div><p id="n13">Тогда сказал я: Господи Боже! вот, пророки говорят им: "не увидите меча, и голода не будет у вас, но постоянный мир дам вам на сем месте".
+</p>
+<div class="num">14</div><p id="n14">И сказал мне Господь: пророки пророчествуют ложное именем Моим; Я не посылал их и не давал им повеления, и не говорил им; они возвещают вам видения ложные и гадания, и пустое и мечты сердца своего.
+</p>
+<div class="num">15</div><p id="n15">Поэтому так говорит Господь о пророках: они пророчествуют именем Моим, а Я не посылал их; они говорят: "меча и голода не будет на сей земле": мечом и голодом будут истреблены эти пророки,
+</p>
+<div class="num">16</div><p id="n16">и народ, которому они пророчествуют, разбросан будет по улицам Иерусалима от голода и меча, и некому будет хоронить их,- они и жены их, и сыновья их, и дочери их; и Я изолью на них зло их.
+</p>
+<div class="num">17</div><p id="n17">И скажи им слово сие: да льются из глаз моих слезы ночь и день, и да не перестают; ибо великим поражением поражена дева, дочь народа моего, тяжким ударом.
+</p>
+<div class="num">18</div><p id="n18">Выхожу я на поле,- и вот, убитые мечом; вхожу в город,- и вот истаевающие от голода; даже и пророк и священник бродят по земле бессознательно.
+</p>
+<div class="num">19</div><p id="n19">Разве Ты совсем отверг Иуду? Разве душе Твоей опротивел Сион? Для чего поразил нас так, что нет нам исцеления? Ждем мира, и ничего доброго нет; ждем времени исцеления, и вот ужасы.
+</p>
+<div class="num">20</div><p id="n20">Сознаем, Господи, нечестие наше, беззаконие отцов наших; ибо согрешили мы пред Тобою.
+</p>
+<div class="num">21</div><p id="n21">Не отрини <i>нас</i> ради имени Твоего; не унижай престола славы Твоей: вспомни, не разрушай завета Твоего с нами.
+</p>
+<div class="num">22</div><p id="n22">Есть ли между суетными <i>богами</i> языческими производящие дождь? или может ли небо <i>само</i> <i>собою</i> подавать ливень? не Ты ли это, Господи, Боже наш? На Тебя надеемся мы; ибо Ты творишь все это.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jer.15.ru.html">к главе 15</a></div></div>
+
+</body>
+</html>

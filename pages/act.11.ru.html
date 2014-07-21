@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="act.ru.html">Деяния Апостолов</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 11
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Услышали Апостолы и братия, бывшие в Иудее, что и язычники приняли слово Божие.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И когда Петр пришел в Иерусалим, обрезанные упрекали его,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">говоря: ты ходил к людям необрезанным и ел с ними.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Петр же начал пересказывать им по порядку, говоря:
+</p>
+<div class="num">&nbsp;5</div><p id="n5">в городе Иоппии я молился, и в исступлении видел видение: сходил некоторый сосуд, как бы большое полотно, за четыре угла спускаемое с неба, и спустилось ко мне.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Я посмотрел в него и, рассматривая, увидел четвероногих земных, зверей, пресмыкающихся и птиц небесных.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И услышал я голос, говорящий мне: встань, Петр, заколи и ешь.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Я же сказал: нет, Господи, ничего скверного или нечистого никогда не входило в уста мои.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И отвечал мне голос вторично с неба: что Бог очистил, того ты не почитай нечистым.
+</p>
+<div class="num">10</div><p id="n10">Это было трижды, и опять поднялось всё на небо.
+</p>
+<div class="num">11</div><p id="n11">И вот, в тот самый час три человека стали перед домом, в котором я был, посланные из Кесарии ко мне.
+</p>
+<div class="num">12</div><p id="n12">Дух сказал мне, чтобы я шел с ними, нимало не сомневаясь. Пошли со мною и сии шесть братьев, и мы пришли в дом <i>того</i> человека.
+</p>
+<div class="num">13</div><p id="n13">Он рассказал нам, как он видел в доме своем Ангела (святого), который стал и сказал ему: пошли в Иоппию людей и призови Симона, называемого Петром;
+</p>
+<div class="num">14</div><p id="n14">он скажет тебе слова, которыми спасешься ты и весь дом твой.
+</p>
+<div class="num">15</div><p id="n15">Когда же начал я говорить, сошел на них Дух Святый, как и на нас вначале.
+</p>
+<div class="num">16</div><p id="n16">Тогда вспомнил я слово Господа, как Он говорил: "Иоанн крестил водою, а вы будете крещены Духом Святым".
+</p>
+<div class="num">17</div><p id="n17">Итак, если Бог дал им такой же дар, как и нам, уверовавшим в Господа Иисуса Христа, то кто же я, чтобы мог воспрепятствовать Богу?
+</p>
+<div class="num">18</div><p id="n18">Выслушав это, они успокоились и прославили Бога, говоря: видно, и язычникам дал Бог покаяние в жизнь.
+</p>
+<div class="num">19</div><p id="n19">Между тем рассеявшиеся от гонения, бывшего после Стефана, прошли до Финикии и Кипра и Антиохии, никому не проповедуя слово, кроме Иудеев.
+</p>
+<div class="num">20</div><p id="n20">Были же некоторые из них Кипряне и Киринейцы, которые, придя в Антиохию, говорили Еллинам, благовествуя Господа Иисуса.
+</p>
+<div class="num">21</div><p id="n21">И была рука Господня с ними, и великое число, уверовав, обратилось к Господу.
+</p>
+<div class="num">22</div><p id="n22">Дошел слух о сем до церкви Иерусалимской, и поручили Варнаве идти в Антиохию.
+</p>
+<div class="num">23</div><p id="n23">Он, прибыв и увидев благодать Божию, возрадовался и убеждал всех держаться Господа искренним сердцем;
+</p>
+<div class="num">24</div><p id="n24">ибо он был муж добрый и исполненный Духа Святаго и веры. И приложилось довольно народа к Господу.
+</p>
+<div class="num">25</div><p id="n25">Потом Варнава пошел в Тарс искать Савла и, найдя его, привел в Антиохию.
+</p>
+<div class="num">26</div><p id="n26">Целый год собирались они в церкви и учили немалое число людей, и ученики в Антиохии в первый раз стали называться Христианами.
+</p>
+<div class="num">27</div><p id="n27">В те дни пришли из Иерусалима в Антиохию пророки.
+</p>
+<div class="num">28</div><p id="n28">И один из них, по имени Агав, встав, предвозвестил Духом, что по всей вселенной будет великий голод, который и был при кесаре Клавдии.
+</p>
+<div class="num">29</div><p id="n29">Тогда ученики положили, каждый по достатку своему, послать пособие братьям, живущим в Иудее,
+</p>
+<div class="num">30</div><p id="n30">что и сделали, послав <i>собранное</i> к пресвитерам через Варнаву и Савла.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="act.12.ru.html">к главе 12</a></div></div>
+
+</body>
+</html>

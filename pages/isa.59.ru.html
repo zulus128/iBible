@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="isa.ru.html">Книга Пророка Исаии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 59
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Вот, рука Господа не сократилась на то, чтобы спасать, и ухо Его не отяжелело для того, чтобы слышать.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Но беззакония ваши произвели разделение между вами и Богом вашим, и грехи ваши отвращают лице <i>Его</i> от вас, чтобы не слышать.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ибо руки ваши осквернены кровью и персты ваши - беззаконием; уста ваши говорят ложь, язык ваш произносит неправду.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Никто не возвышает голоса за правду, и никто не вступается за истину; надеются на пустое и говорят ложь, зачинают зло и рождают злодейство;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">высиживают змеиные яйца и ткут паутину; кто поест яиц их,- умрет, а если раздавит,- выползет ехидна.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Паутины их для одежды негодны, и они не покроются своим произведением; дела их - дела неправедные, и насилие в руках их.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Ноги их бегут ко злу, и они спешат на пролитие невинной крови; мысли их - мысли нечестивые; опустошение и гибель на стезях их.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Пути мира они не знают, и нет суда на стезях их; пути их искривлены, и никто, идущий по ним, не знает мира.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Потому-то и далек от нас суд, и правосудие не достигает до нас; ждем света, и вот тьма,- озарения, и ходим во мраке.
+</p>
+<div class="num">10</div><p id="n10">Осязаем, как слепые стену, и, как без глаз, ходим ощупью; спотыкаемся в полдень, как в сумерки, между живыми - как мертвые.
+</p>
+<div class="num">11</div><p id="n11">Все мы ревем, как медведи, и стонем, как голуби; ожидаем суда, и нет <i>его,- </i>спасения, но оно далеко от нас.
+</p>
+<div class="num">12</div><p id="n12">Ибо преступления наши многочисленны пред Тобою, и грехи наши свидетельствуют против нас; ибо преступления наши с нами, и беззакония наши мы знаем.
+</p>
+<div class="num">13</div><p id="n13">Мы изменили и солгали пред Господом, и отступили от Бога нашего; говорили клевету и измену, зачинали и рождали из сердца лживые слова.
+</p>
+<div class="num">14</div><p id="n14">И суд отступил назад, и правда стала вдали, ибо истина преткнулась на площади, и честность не может войти.
+</p>
+<div class="num">15</div><p id="n15">И не стало истины, и удаляющийся от зла подвергается оскорблению. И Господь увидел это, и противно было очам Его, что нет суда.
+</p>
+<div class="num">16</div><p id="n16">И видел, что нет человека, и дивился, что нет заступника; и помогла Ему мышца Его, и правда Его поддержала Его.
+</p>
+<div class="num">17</div><p id="n17">И Он возложил на Себя правду, как броню, и шлем спасения на главу Свою; и облекся в ризу мщения, как в одежду, и покрыл Себя ревностью, как плащом.
+</p>
+<div class="num">18</div><p id="n18">По мере возмездия, по этой мере Он воздаст противникам Своим - яростью, врагам Своим - местью, островам воздаст должное.
+</p>
+<div class="num">19</div><p id="n19">И убоятся имени Господа на западе и славы Его - на восходе солнца. Если враг придет как река, дуновение Господа прогонит его.
+</p>
+<div class="num">20</div><p id="n20">И придет Искупитель Сиона и <i>сынов</i> Иакова, обратившихся от нечестия, говорит Господь.
+</p>
+<div class="num">21</div><p id="n21">И вот завет Мой с ними, говорит Господь: Дух Мой, Который на тебе, и слова Мои, которые вложил Я в уста твои, не отступят от уст твоих и от уст потомства твоего, и от уст потомков потомства твоего, говорит Господь, отныне и до века.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="isa.60.ru.html">к главе 60</a></div></div>
+
+</body>
+</html>

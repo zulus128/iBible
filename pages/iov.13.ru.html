@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="iov.ru.html">Книга Иова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 13
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Вот, все <i>это</i> видело око мое, слышало ухо мое и заметило для себя.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Сколько знаете вы, знаю и я: не ниже я вас.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Но я к Вседержителю хотел бы говорить и желал бы состязаться с Богом.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">А вы сплетчики лжи; все вы бесполезные врачи.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">О, если бы вы только молчали! это было бы <i>вменено</i> вам в мудрость.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Выслушайте же рассуждения мои и вникните в возражение уст моих.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Надлежало ли вам ради Бога говорить неправду и для Него говорить ложь?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Надлежало ли вам быть лицеприятными к Нему и за Бога так препираться?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Хорошо ли будет, когда Он испытает вас? Обманете ли Его, как обманывают человека?
+</p>
+<div class="num">10</div><p id="n10">Строго накажет Он вас, хотя вы и скрытно лицемерите.
+</p>
+<div class="num">11</div><p id="n11">Неужели величие Его не устрашает вас, и страх Его не нападает на вас?
+</p>
+<div class="num">12</div><p id="n12">Напоминания ваши подобны пеплу; оплоты ваши - оплоты глиняные.
+</p>
+<div class="num">13</div><p id="n13">Замолчите предо мною, и я буду говорить, что бы ни постигло меня.
+</p>
+<div class="num">14</div><p id="n14">Для чего мне терзать тело мое зубами моими и душу мою полагать в руку мою?
+</p>
+<div class="num">15</div><p id="n15">Вот, Он убивает меня, но я буду надеяться; я желал бы только отстоять пути мои пред лицем Его!
+</p>
+<div class="num">16</div><p id="n16">И это уже в оправдание мне, потому что лицемер не пойдет пред лице Его!
+</p>
+<div class="num">17</div><p id="n17">Выслушайте внимательно слово мое и объяснение мое ушами вашими.
+</p>
+<div class="num">18</div><p id="n18">Вот, я завел судебное дело: знаю, что буду прав.
+</p>
+<div class="num">19</div><p id="n19">Кто в состоянии оспорить меня? Ибо я скоро умолкну и испущу дух.
+</p>
+<div class="num">20</div><p id="n20">Двух только <i>вещей</i> не делай со мною, и тогда я не буду укрываться от лица Твоего:
+</p>
+<div class="num">21</div><p id="n21">удали от меня руку Твою, и ужас Твой да не потрясает меня.
+</p>
+<div class="num">22</div><p id="n22">Тогда зови, и я буду отвечать, или буду говорить я, а Ты отвечай мне.
+</p>
+<div class="num">23</div><p id="n23">Сколько у меня пороков и грехов? покажи мне беззаконие мое и грех мой.
+</p>
+<div class="num">24</div><p id="n24">Для чего скрываешь лице Твое и считаешь меня врагом Тебе?
+</p>
+<div class="num">25</div><p id="n25">Не сорванный ли листок Ты сокрушаешь и не сухую ли соломинку преследуешь?
+</p>
+<div class="num">26</div><p id="n26">Ибо Ты пишешь на меня горькое и вменяешь мне грехи юности моей,
+</p>
+<div class="num">27</div><p id="n27">и ставишь в колоду ноги мои и подстерегаешь все стези мои,- гонишься по следам ног моих.
+</p>
+<div class="num">28</div><p id="n28">А он, как гниль, распадается, как одежда, изъеденная молью.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="iov.14.ru.html">к главе 14</a></div></div>
+
+</body>
+</html>

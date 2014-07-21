@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="iov.cs.html">Јwвъ</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA к7и
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1"><nobr>Е$сть</nobr> бо сребрY мёсто, toнyдуже и3 бывaетъ, и3 мёсто злaту, toнyдуже њчищaетсz.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Желёзо бо и3з8 земли2 раждaетсz, мёдь же рaвнw кaменію сэчeтсz.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Чи1нъ положи2 тмЁ, и3 <nobr>вс‰</nobr> концы6 сaмъ и3спытyетъ, камhкъ тмы2 и3 сёнь смeрти.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Пресэчeніе пот0ка t прaха: забывaющіи же пyть прaвый и3знемог0ша, t человBкъ подвиг0шасz.
+</p>
+<div class="num">&nbsp;5</div><p id="n5"><nobr>Е$сть</nobr> землS, и3з8 неsже и3зhдетъ хлёбъ: под8 нeю њбрати1сz ћкw џгнь.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Мёсто сапфjра кaменіе є3S, и3 пeрсть злaто є3мY.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">СтезS, не познA є3S пти1ца, и3 не ўзрЁ ю5 џко сyпово,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и3 не ходи1ша по нeй сhнове величaвыхъ, и3 не прeйде по нeй лeвъ.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">На несэк0мэ кaмени прострE рyку свою2, преврати1 же и3з8 корeніz г0ры:
+</p>
+<div class="num">10</div><p id="n10">брeги рёкъ раст0рже, всsкое же честн0е ви1дэ џко моE:
+</p>
+<div class="num">11</div><p id="n11">глубины6 же рёкъ tкры2 и3 показA си1лу свою2 на свётъ.
+</p>
+<div class="num">12</div><p id="n12">Премyдрость же tкyду њбрётесz; и3 к0е мёсто є4сть вёдэніz;
+</p>
+<div class="num">13</div><p id="n13">Не вёсть человёкъ пути2 є3S, нижE њбрётесz въ человёцэхъ.
+</p>
+<div class="num">14</div><p id="n14">Бeздна речE: нёсть во мнЁ: и3 м0ре речE: нёсть со мн0ю.
+</p>
+<div class="num">15</div><p id="n15">Не дaстсz сокр0вище за ню2, и3 не и3звёситсz сребро2 на и3змэнeніе є3S,
+</p>
+<div class="num">16</div><p id="n16">и3 не сравни1тсz со злaтомъ сwфjрскимъ, со џнmxомъ честнhмъ и3 сапфjромъ:
+</p>
+<div class="num">17</div><p id="n17">не рaвно бyдетъ є4й злaто и3 крmстaль, и3 и3змэнeніе є3S сосyди злaти.
+</p>
+<div class="num">18</div><p id="n18">ПревысHкаz и3 би1серіе не помsнутсz, и3 притzжи2 премyдрость пaче внyтреннэйшихъ:
+</p>
+<div class="num">19</div><p id="n19">не ўравни1тсz є4й топaзій є3fі0пскій, со злaтомъ чи1стымъ не сравни1тсz.
+</p>
+<div class="num">20</div><p id="n20">Премyдрость же tкyду њбрётесz; и3 к0е мёсто є4сть рaзуму;
+</p>
+<div class="num">21</div><p id="n21">Ўтаи1сz t всsкагw человёка, и3 t пти1цъ небeсныхъ скрhсz.
+</p>
+<div class="num">22</div><p id="n22">Пaгуба и3 смeрть рек0стэ: слhшахомъ є3S слaву.
+</p>
+<div class="num">23</div><p id="n23">БGъ блaгw познA є3S пyть: сaмъ бо вёсть мёсто є3S.
+</p>
+<div class="num">24</div><p id="n24"><nobr>И$бо</nobr> сaмъ поднебeсную всю2 надзирaетъ, вёдый, ±же на земли2, <nobr>вс‰,</nobr> ±же сотвори2.
+</p>
+<div class="num">25</div><p id="n25">Вётрwвъ вёсъ и3 водЁ мёру є3гдA сотвори1лъ,
+</p>
+<div class="num">26</div><p id="n26">тaкw ви1дzй сочтE, и3 пyть въ сотрzсeніи гласHвъ,
+</p>
+<div class="num">27</div><p id="n27">тогдA ви1дэ ю5 и3 повёда ю5, ўгот0вавъ и3зслёди
+</p>
+<div class="num">28</div><p id="n28">и3 речE человёку: сE, благочeстіе є4сть премyдрость, ґ є4же ўдалsтисz t ѕлA є4сть вёдэніе.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="iov.29.cs.html">главA к7f</a></div></div>
+
+</body>
+</html>

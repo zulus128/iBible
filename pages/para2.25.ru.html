@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para2.ru.html">Вторая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 25
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Двадцати пяти лет воцарился Амасия и двадцать девять лет царствовал в Иерусалиме; имя матери его Иегоаддань из Иерусалима.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И делал он угодное в очах Господних, но не от полного сердца.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Когда утвердилось за ним царство, тогда он умертвил рабов своих, убивших царя, отца его.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Но детей их не умертвил, так как написано в законе, в книге Моисеевой, где заповедал Господь, говоря: не должны быть умерщвляемы отцы за детей, и дети не должны быть умерщвляемы за отцов, но каждый за свое преступление должен умереть.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И собрал Амасия Иудеев и поставил их по поколениям под власть тысяченачальников и стоначальников, всех Иудеев и Вениаминян, и пересчитал их от двадцати лет и выше, и нашел их триста тысяч человек отборных, ходящих на войну, держащих копье и щит.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И <i>еще</i> нанял из Израильтян сто тысяч храбрых воинов за сто талантов серебра.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Но человек Божий пришел к нему и сказал: царь! пусть не идет с тобою войско Израильское, потому что нет Господа с Израильтянами, со всеми сынами Ефрема.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Но иди ты <i>один,</i> делай дело, мужественно подвизайся на войне. <i>Иначе</i> повергнет тебя Бог пред лицем врага, ибо есть сила у Бога поддержать и повергнуть.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказал Амасия человеку Божию: что же делать со ста талантами, которые я отдал войску Израильскому? И сказал человек Божий: может Господь дать тебе более сего.
+</p>
+<div class="num">10</div><p id="n10">И отделил их Амасия,- войско, пришедшее к нему из <i>земли</i> Ефремовой,- чтоб они шли в свое место. И возгорелся сильно гнев их на Иудею, и они пошли назад в свое место, в пылу гнева.
+</p>
+<div class="num">11</div><p id="n11">А Амасия отважился и повел народ свой, и пошел на долину Соляную и побил сынов Сеира десять тысяч;
+</p>
+<div class="num">12</div><p id="n12">и десять тысяч живых взяли сыны Иудины в плен, и привели их на вершину скалы, и низринули их с вершины скалы, и все они разбились совершенно.
+</p>
+<div class="num">13</div><p id="n13">Войско же, которое Амасия отослал обратно, чтоб оно не ходило с ним на войну, рассыпалось по городам Иудеи от Самарии до Вефорона и перебило в них три тысячи, и награбило множество добычи.
+</p>
+<div class="num">14</div><p id="n14">Амасия, придя после поражения Идумеян, принес богов сынов Сеира и поставил их у себя богами, и пред ними кланялся и им кадил.
+</p>
+<div class="num">15</div><p id="n15">И воспылал гнев Господа на Амасию, и послал Он к нему пророка, и тот сказал ему: зачем ты прибегаешь к богам народа сего, которые не избавили народа своего от руки твоей?
+</p>
+<div class="num">16</div><p id="n16">Когда он говорил ему, <i>царь</i> отвечал: разве советником царским поставили тебя? перестань, чтоб не убили тебя. И перестал пророк, сказав: знаю, что решил Бог погубить тебя, потому что ты сделал сие и не слушаешь совета моего.
+</p>
+<div class="num">17</div><p id="n17">И посоветовался Амасия, царь Иудейский, и послал к Иоасу, сыну Иоахаза, сына Ииуева, царю Израильскому, сказать: выходи, повидаемся лично.
+</p>
+<div class="num">18</div><p id="n18">И послал Иоас, царь Израильский, к Амасии, царю Иудейскому, сказать: терн, который на Ливане, послал к кедру, который на Ливане же, сказать: отдай дочь свою в жену сыну моему. Но прошли звери дикие, которые на Ливане, и истоптали этот терн.
+</p>
+<div class="num">19</div><p id="n19">Ты говоришь: вот я побил Идумеян,- и вознеслось сердце твое до тщеславия. Сиди лучше у себя дома. К чему тебе затевать опасное дело? Падешь ты и Иудея с тобою.
+</p>
+<div class="num">20</div><p id="n20">Но не послушался Амасия, так как от Бога <i>было</i> это, дабы предать их в руку <i>Иоаса</i> за то, что стали прибегать к богам Идумейским.
+</p>
+<div class="num">21</div><p id="n21">И выступил Иоас, царь Израильский, и увиделись лично, он и Амасия, царь Иудейский, в Вефсамисе Иудейском.
+</p>
+<div class="num">22</div><p id="n22">И были разбиты Иудеи Израильтянами, и разбежались каждый в шатер свой.
+</p>
+<div class="num">23</div><p id="n23">И Амасию, царя Иудейского, сына Иоаса, сына Иоахазова, захватил Иоас, царь Израильский, в Вефсамисе и привел его в Иерусалим, и разрушил стену Иерусалимскую от ворот Ефремовых до ворот уго&#769;льных, на четыреста локтей;
+</p>
+<div class="num">24</div><p id="n24">и <i>взял</i> все золото и серебро, и все сосуды, находившиеся в доме Божием у Овед-Едома, и сокровища дома царского, и заложников, и возвратился в Самарию.
+</p>
+<div class="num">25</div><p id="n25">И жил Амасия, сын Иоасов, царь Иудейский, по смерти Иоаса, сына Иоахазова, царя Израильского, пятнадцать лет.
+</p>
+<div class="num">26</div><p id="n26">Прочие дела Амасии, первые и последние, описаны в книге царей Иудейских и Израильских.
+</p>
+<div class="num">27</div><p id="n27">И после того времени, как Амасия отступил от Господа, составили против него заговор в Иерусалиме, и он убежал в Лахис. И послали за ним в Лахис, и умертвили его там.
+</p>
+<div class="num">28</div><p id="n28">И привезли его на конях, и похоронили его с отцами его в городе Иудином.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para2.26.ru.html">к главе 26</a></div></div>
+
+</body>
+</html>

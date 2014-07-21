@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eze.ru.html">Книга Пророка Иезекииля</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 31
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В одиннадцатом году, в третьем <i>месяце</i>, в первый день месяца, было ко мне слово Господне:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">сын человеческий! скажи фараону, царю Египетскому, и народу его: кому ты равняешь себя в величии твоем?
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Вот, Ассур был кедр на Ливане, с красивыми ветвями и тенистою листвою, и высокий ростом; вершина его находилась среди толстых сучьев.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Воды растили его, бездна поднимала его, реки ее окружали питомник его, и она протоки свои посылала ко всем деревам полевым.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Оттого высота его перевысила все дерева полевые, и сучьев на нем было много, и ветви его умножались, и сучья его становились длинными от множества вод, когда он разрастался.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">На сучьях его вили гнезда всякие птицы небесные, под ветвями его выводили детей всякие звери полевые, и под тенью его жили всякие многочисленные народы.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Он красовался высотою роста своего, длиною ветвей своих, ибо корень его был у великих вод.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Кедры в саду Божием не затемняли его; кипарисы не равнялись сучьям его, и каштаны не были величиною с ветви его, ни одно дерево в саду Божием не равнялось с ним красотою своею.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Я украсил его множеством ветвей его, так что все дерева Едемские в саду Божием завидовали ему.
+</p>
+<div class="num">10</div><p id="n10">Посему так сказал Господь Бог: за то, что ты высок стал ростом и вершину твою выставил среди толстых сучьев, и сердце его возгордилось величием его,-
+</p>
+<div class="num">11</div><p id="n11">за то Я отдал его в руки властителю народов; он поступил с ним, как надобно; за беззаконие его Я отверг его.
+</p>
+<div class="num">12</div><p id="n12">И срубили его чужеземцы, лютейшие из народов, и повергли его на горы; и на все долины упали ветви его; и сучья его сокрушились на всех лощинах земли, и из-под тени его ушли все народы земли, и оставили его.
+</p>
+<div class="num">13</div><p id="n13">На обломках его поместились всякие птицы небесные, и в сучьях были всякие полевые звери.
+</p>
+<div class="num">14</div><p id="n14">Это для того, чтобы никакие дерева при водах не величались высоким ростом своим и не поднимали вершины своей из среды толстых сучьев, и чтобы не прилеплялись к ним из-за высоты их дерева, пьющие воду; ибо все они будут преданы смерти, в преисподнюю страну вместе с сынами человеческими, отшедшими в могилу.
+</p>
+<div class="num">15</div><p id="n15">Так говорит Господь Бог: в тот день, когда он сошел в могилу, Я сделал сетование о нем, затворил ради него бездну и остановил реки ее, и задержал большие воды и омрачил по нем Ливан, и все дерева полевые были в унынии по нем.
+</p>
+<div class="num">16</div><p id="n16">Шумом падения его Я привел в трепет народы, когда низвел его в преисподнюю, к отшедшим в могилу, и обрадовались в преисподней стране все дерева Едема, отличные и наилучшие Ливанские, все, пьющие воду;
+</p>
+<div class="num">17</div><p id="n17">ибо и они с ним отошли в преисподнюю, к пораженным мечом, и союзники его, жившие под тенью его, среди народов.
+</p>
+<div class="num">18</div><p id="n18">Итак которому из дерев Едемских равнялся ты в славе и величии? Но теперь наравне с деревами Едемскими ты будешь низведен в преисподнюю, будешь лежать среди необрезанных, с пораженными мечом. Это фараон и все множество народа его, говорит Господь Бог.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eze.32.ru.html">к главе 32</a></div></div>
+
+</body>
+</html>

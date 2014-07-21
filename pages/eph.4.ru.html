@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eph.ru.html">Послание к Ефесянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Итак я, узник в Господе, умоляю вас поступать достойно звания, в которое вы призваны,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">со всяким смиренномудрием и кротостью и долготерпением, снисходя друг ко другу любовью,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">стараясь сохранять единство духа в союзе мира.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Одно тело и один дух, как вы и призваны к одной надежде вашего звания;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">один Господь, одна вера, одно крещение,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">один Бог и Отец всех, Который над всеми, и через всех, и во всех нас.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Каждому же из нас дана благодать по мере дара Христова.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Посему и сказано: восшед на высоту, пленил плен и дал дары человекам.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">А "восшел" что&#769; означает, как не то, что Он и нисходил прежде в преисподние места земли?
+</p>
+<div class="num">10</div><p id="n10">Нисшедший, Он же есть и восшедший превыше всех небес, дабы наполнить все.
+</p>
+<div class="num">11</div><p id="n11">И Он поставил одних Апостолами, других пророками, иных Евангелистами, иных пастырями и учителями,
+</p>
+<div class="num">12</div><p id="n12">к совершению святых, на дело служения, для созидания Тела Христова,
+</p>
+<div class="num">13</div><p id="n13">доколе все придем в единство веры и познания Сына Божия, в мужа совершенного, в меру полного возраста Христова;
+</p>
+<div class="num">14</div><p id="n14">дабы мы не были более младенцами, колеблющимися и увлекающимися всяким ветром учения, по лукавству человеков, по хитрому искусству обольщения,
+</p>
+<div class="num">15</div><p id="n15">но истинною любовью все возращали в Того, Который есть глава Христос,
+</p>
+<div class="num">16</div><p id="n16">из Которого все тело, составляемое и совокупляемое посредством всяких взаимно скрепляющих связей, при действии в свою меру каждого члена, получает приращение для созидания самого себя в любви.
+</p>
+<div class="num">17</div><p id="n17">Посему я говорю и заклинаю Господом, чтобы вы более не поступали, как поступают прочие народы, по суетности ума своего,
+</p>
+<div class="num">18</div><p id="n18">будучи помрачены в разуме, отчуждены от жизни Божией, по причине их невежества и ожесточения сердца их.
+</p>
+<div class="num">19</div><p id="n19">Они, дойдя до бесчувствия, предались распутству так, что делают всякую нечистоту с ненасытимостью.
+</p>
+<div class="num">20</div><p id="n20">Но вы не так познали Христа;
+</p>
+<div class="num">21</div><p id="n21">потому что вы слышали о Нем и в Нем научились,- так как истина во Иисусе,-
+</p>
+<div class="num">22</div><p id="n22">отложить прежний образ жизни ветхого человека, истлевающего в обольстительных похотях,
+</p>
+<div class="num">23</div><p id="n23">а обновиться духом ума вашего
+</p>
+<div class="num">24</div><p id="n24">и облечься в нового человека, созданного по Богу, в праведности и святости истины.
+</p>
+<div class="num">25</div><p id="n25">Посему, отвергнув ложь, говорите истину каждый ближнему своему, потому что мы члены друг другу.
+</p>
+<div class="num">26</div><p id="n26">Гневаясь, не согрешайте: солнце да не зайдет во гневе вашем;
+</p>
+<div class="num">27</div><p id="n27">и не давайте места диаволу.
+</p>
+<div class="num">28</div><p id="n28">Кто крал, вперед не кради, а лучше трудись, делая своими руками полезное, чтобы было из чего уделять нуждающемуся.
+</p>
+<div class="num">29</div><p id="n29">Никакое гнилое слово да не исходит из уст ваших, а только доброе для назидания в вере, дабы оно доставляло благодать слушающим.
+</p>
+<div class="num">30</div><p id="n30">И не оскорбляйте Святаго Духа Божия, Которым вы запечатлены в день искупления.
+</p>
+<div class="num">31</div><p id="n31">Всякое раздражение и ярость, и гнев, и крик, и злоречие со всякою злобою да будут удалены от вас;
+</p>
+<div class="num">32</div><p id="n32">но будьте друг ко другу добры, сострадательны, прощайте друг друга, как и Бог во Христе простил вас.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eph.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

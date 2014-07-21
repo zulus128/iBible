@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para1.ru.html">Первая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Сыновья Иссахара: Фола, Фуа, Иашув и Шимрон, четверо.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Сыновья Фолы: Уззий, Рефаия, Иериил, Иахмай, Ивсам и Самуил, главные в поколениях Фолы, люди воинственные в своих поколениях; число их во дни Давида было двадцать две тысячи и шестьсот.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Сын Уззия: Израхия; а сыновья Израхии: Михаил, Овадиа, Иоиль и Ишшия, пятеро. Все они главные.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">У них, по родам их, по поколениям их, было готово к сражению войска тридцать шесть тысяч; потому что у них было много жен и сыновей.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Братьев же их, во всех поколениях Иссахаровых, людей воинственных, было восемьдесят семь тысяч, внесенных в родословные записи.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">У Вениамина: Бела, Бехер и Иедиаил, трое.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Сыновья Белы: Ецбон, Уззий, Уззиил, Иеримоф и Ири, пятеро, главы поколений, люди воинственные. В родословных списках записано их двадцать две тысячи тридцать четыре.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Сыновья Бехера: Земира, Иоаш, Елиезер, Елиоенай, Омри, Иремоф, Авия, Анафоф и Алемеф: все эти сыновья Бехера.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">В родословных списках записано их по родам их, по главам поколений, людей воинственных - двадцать тысяч и двести.
+</p>
+<div class="num">10</div><p id="n10">Сын Иедиаила: Билган. Сыновья Билгана: Иеус, Вениамин, Егуд, Хенаана, Зефан, Фарсис и Ахишахар.
+</p>
+<div class="num">11</div><p id="n11">Все эти сыновья Иедиаила были главами поколений, люди воинственные; семнадцать тысяч и двести было выходящих на войну.
+</p>
+<div class="num">12</div><p id="n12">И Шупим и Хупим, сыновья Ира; Хушим, сын Ахера.
+</p>
+<div class="num">13</div><p id="n13">Сыновья Неффалима: Иахцеил, Гуни, Иецер и Шиллем, дети Валлы.
+</p>
+<div class="num">14</div><p id="n14">Сыновья Манассии: Асриил, которого родила наложница его Арамеянка; она же родила Махира, отца Галаадова.
+</p>
+<div class="num">15</div><p id="n15">Махир взял в жену сестру Хупима и Шупима,- имя сестры их Мааха; имя второму Салпаад. У Салпаада были <i>только</i> дочери.
+</p>
+<div class="num">16</div><p id="n16">Мааха, жена Махирова, родила сына и нарекла ему имя Кереш, а имя брату его Шереш. Сыновья его: Улам и Рекем.
+</p>
+<div class="num">17</div><p id="n17">Сын Улама: Бедан. Вот сыновья Галаада, сына Махира, сына Манассиина.
+</p>
+<div class="num">18</div><p id="n18">Сестра его Молехеф родила Ишгода, Авиезера и Махлу.
+</p>
+<div class="num">19</div><p id="n19">Сыновья Шемиды были: Ахиан, Шехем, Ликхи и Аниам.
+</p>
+<div class="num">20</div><p id="n20">Сыновья Ефрема: Шутелах, и Беред, сын его, и Фахаф, сын его, и Елеада, сын его, и Фахаф, сын его,
+</p>
+<div class="num">21</div><p id="n21">и Завад, сын его, и Шутелах, сын его, и Езер и Елеад. И убили их жители Гефа, уроженцы той земли, за то, что они пошли захватить стада их.
+</p>
+<div class="num">22</div><p id="n22">И плакал о них Ефрем, отец их, много дней, и приходили братья его утешать его.
+</p>
+<div class="num">23</div><p id="n23">Потом он вошел к жене своей, и она зачала и родила сына, и он нарек ему имя: Берия, потому что несчастье постигло дом его.
+</p>
+<div class="num">24</div><p id="n24">И дочь у него <i>была</i> Шеера. Она построила Беф-Орон нижний и верхний и Уззен-Шееру.
+</p>
+<div class="num">25</div><p id="n25">И Рефай, сын его, и Решеф, и Фелах, сын его, и Фахан, сын его,
+</p>
+<div class="num">26</div><p id="n26">Лаедан, сын его, Аммиуд, сын его, Елишама, сын его,
+</p>
+<div class="num">27</div><p id="n27">Нон, сын его, Иисус, сын его.
+</p>
+<div class="num">28</div><p id="n28">Владения их и места жительства их <i>были:</i> Вефиль и зависящие от него города; к востоку Нааран, к западу Гезер и зависящие от него города; Сихем и зависящие от него города до Газы и зависящих от нее городов.
+</p>
+<div class="num">29</div><p id="n29">А со стороны сыновей Манассииных: Беф-Сан и зависящие от него города, Фаанах и зависящие от него города, Мегиддо и зависящие от него города, Дор и зависящие от него города. В них жили сыновья Иосифа, сына Израилева.
+</p>
+<div class="num">30</div><p id="n30">Сыновья Асира: Имна, Ишва, Ишви и Берия, и сестра их Серах.
+</p>
+<div class="num">31</div><p id="n31">Сыновья Берии: Хевер и Малхиил. Он отец Бирзаифа.
+</p>
+<div class="num">32</div><p id="n32">Хевер родил Иафлета, Шомера и Хофама, и Шую, сестру их.
+</p>
+<div class="num">33</div><p id="n33">Сыновья Иафлета: Пасах, Бимгал и Ашваф. Вот сыновья Иафлета.
+</p>
+<div class="num">34</div><p id="n34">Сыновья Шемера: Ахи, Рохга, Ихубба и Арам.
+</p>
+<div class="num">35</div><p id="n35">Сыновья Гелема, брата его: Цофах, Имна, Шелеш и Амал.
+</p>
+<div class="num">36</div><p id="n36">Сыновья Цофаха: Суах, Харнефер, Шуал, Бери, Имра,
+</p>
+<div class="num">37</div><p id="n37">Бецер, Год, Шамма, Шилша, Ифран и Беера.
+</p>
+<div class="num">38</div><p id="n38">Сыновья Иефера: Иефунни, Фиспа и Ара.
+</p>
+<div class="num">39</div><p id="n39">Сыновья Уллы: Арах, Ханниил и Риция.
+</p>
+<div class="num">40</div><p id="n40">Все эти сыновья Асира, главы поколений, люди отборные, воинственные, главные начальники. Записано у них в родословных списках в войске, для войны, по счету двадцать шесть тысяч человек.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para1.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

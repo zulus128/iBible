@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.ru.html">Псалтирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Псалом 73
+  </p>
+
+
+  <div class="main-text">
+<p id="a0">Учение Асафа.
+</p>
+<div class="num">&nbsp;1</div><p id="n1">Для чего, Боже, отринул нас навсегда? возгорелся гнев Твой на овец пажити Твоей?
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Вспомни сонм Твой, <i>который</i> Ты стяжал издревле, искупил в жезл достояния Твоего,- эту гору Сион, на которой Ты веселился.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Подвигни стопы Твои к вековым развалинам: все разрушил враг во святилище.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Рыкают враги Твои среди собраний Твоих; поставили знаки свои вместо знамений <i>наших;</i>
+</p>
+<div class="num">&nbsp;5</div><p id="n5">показывали себя подобными поднимающему вверх секиру на сплетшиеся ветви дерева;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и ныне все резьбы в нем в один раз разрушили секирами и бердышами;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">предали огню святилище Твое; совсем осквернили жилище имени Твоего;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">сказали в сердце своем: "разорим их совсем",- и сожгли все места собраний Божиих на земле.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Знамений наших мы не видим, нет уже пророка, и нет с нами, кто знал бы, доколе <i>это будет.</i>
+</p>
+<div class="num">10</div><p id="n10">Доколе, Боже, будет поносить враг? вечно ли будет хулить противник имя Твое?
+</p>
+<div class="num">11</div><p id="n11">Для чего отклоняешь руку Твою и десницу Твою? Из среды недра Твоего порази <i>их.</i><i></i>
+</p>
+<div class="num">12</div><p id="n12">Боже, Царь мой от века, устрояющий спасение посреди земли!
+</p>
+<div class="num">13</div><p id="n13">Ты расторг силою Твоею море, Ты сокрушил головы змиев в воде;
+</p>
+<div class="num">14</div><p id="n14">Ты сокрушил голову левиафана, отдал его в пищу людям пустыни, [Ефиопским];
+</p>
+<div class="num">15</div><p id="n15">Ты иссек источник и поток, Ты иссушил сильные реки.
+</p>
+<div class="num">16</div><p id="n16">Твой день и Твоя ночь: Ты уготовал светила и солнце;
+</p>
+<div class="num">17</div><p id="n17">Ты установил все пределы земли, лето и зиму Ты учредил.
+</p>
+<div class="num">18</div><p id="n18">Вспомни же: враг поносит Господа, и люди безумные хулят имя Твое.
+</p>
+<div class="num">19</div><p id="n19">Не предай зверям душу горлицы Твоей; собрания убогих Твоих не забудь навсегда.
+</p>
+<div class="num">20</div><p id="n20">Призри на завет Твой; ибо наполнились все мрачные места земли жилищами насилия.
+</p>
+<div class="num">21</div><p id="n21">Да не возвратится угнетенный посрамленным; нищий и убогий да восхвалят имя Твое.
+</p>
+<div class="num">22</div><p id="n22">Восстань, Боже, защити дело Твое, вспомни вседневное поношение Твое от безумного;
+</p>
+<div class="num">23</div><p id="n23">не забудь крика врагов Твоих; шум восстающих против Тебя непрестанно поднимается.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.74.ru.html">к псалму 74</a></div></div>
+
+</body>
+</html>

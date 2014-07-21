@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mih.ru.html">Книга Пророка Михея</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Горе мне! ибо со мною теперь - как по собрании летних плодов, как по уборке винограда: ни одной ягоды для еды, ни спелого плода, которого желает душа моя.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Не стало милосердых на земле, нет правдивых между людьми; все строят ковы, чтобы проливать кровь; каждый ставит брату своему сеть.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Руки их обращены к тому, чтобы уметь делать зло; начальник требует подарков, и судья судит за взятки, а вельможи высказывают злые хотения души своей и извращают дело.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Лучший из них - как терн, и справедливый - хуже колючей изгороди, день провозвестников Твоих, посещение Твое наступает; ныне постигнет их смятение.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Не верьте другу, не полагайтесь на приятеля; от лежащей на лоне твоем стереги двери уст твоих.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Ибо сын позорит отца, дочь восстает против матери, невестка - против свекрови своей; враги человеку - домашние его.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">А я буду взирать на Господа, уповать на Бога спасения моего: Бог мой услышит меня.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Не радуйся ради меня, неприятельница моя! хотя я упал, но встану; хотя я во мраке, но Господь свет для меня.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Гнев Господень я буду нести, потому что согрешил пред Ним, доколе Он не решит дела моего и не совершит суда надо мною; тогда Он выведет меня на свет, и я увижу правду Его.
+</p>
+<div class="num">10</div><p id="n10">И увидит это неприятельница моя и стыд покроет ее, говорившую мне: "где Господь Бог твой?" Насмотрятся на нее глаза мои, как она будет попираема подобно грязи на улицах.
+</p>
+<div class="num">11</div><p id="n11">В день сооружения стен твоих, в этот день отдалится определение.
+</p>
+<div class="num">12</div><p id="n12">В тот день придут к тебе из Ассирии и городов Египетских, и от Египта до реки <i>Евфрата,</i> и от моря до моря, и от горы до горы.
+</p>
+<div class="num">13</div><p id="n13">А земля та будет пустынею за <i>вину</i> жителей ее, за плоды деяний их.
+</p>
+<div class="num">14</div><p id="n14">Паси народ Твой жезлом Твоим, овец наследия Твоего, обитающих уединенно в лесу среди Кармила; да пасутся они на Васане и Галааде, как во дни древние!
+</p>
+<div class="num">15</div><p id="n15">Как во дни исхода твоего из земли Египетской, явлю ему дивные дела.
+</p>
+<div class="num">16</div><p id="n16">Увидят это народы и устыдятся при всем могуществе своем; положат руку на уста, уши их сделаются глухими;
+</p>
+<div class="num">17</div><p id="n17">будут лизать прах как змея, как черви земные выползут они из укреплений своих; устрашатся Господа Бога нашего и убоятся Тебя.
+</p>
+<div class="num">18</div><p id="n18">Кто Бог, как Ты, прощающий беззаконие и не вменяющий преступления остатку наследия Твоего? не вечно гневается Он, потому что любит миловать.
+</p>
+<div class="num">19</div><p id="n19">Он опять умилосердится над нами, изгладит беззакония наши. Ты ввергнешь в пучину морскую все грехи наши.
+</p>
+<div class="num">20</div><p id="n20">Ты явишь верность Иакову, милость Аврааму, которую с клятвою обещал отцам нашим от дней первых
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mih.ru.html">Книга Пророка Михея</a>
+</div></div>
+
+</body>
+</html>

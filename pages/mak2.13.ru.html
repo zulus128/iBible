@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mak2.ru.html">Вторая книга<br />Маккавейская</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 13
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В сто сорок девятом году дошел слух до бывших с Иудою, что Антиох Евпатор идет на Иудею со множеством войска
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и с ним Лисий, опекун и государственный правитель, и у каждого Еллинское войско, сто десять тысяч пеших, пять тысяч триста конных, двадцать два слона и триста колесниц с косами.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Присоединился к ним и Менелай, с большим притворством побуждая Антиоха, не ради спасения отечества, но в надежде получить начальство.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Но Царь царей воздвиг гнев Антиоха на преступника, и когда Лисий объяснил, что <i>Менелай</i> был виновником всех зол, то он приказал отвести его в Берию и по тамошнему обычаю умертвить.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">В том месте находится башня в пятьдесят локтей, наполненная пеплом; в ней было орудие, обращавшееся вокруг и спускавшееся в пепел.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Там всегда низвергают на погибель виновного в святотатстве или превзошедшего меру других зол.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Такою-то смертью пришлось умереть нечестивому Менелаю и не иметь погребения в земле,- и весьма справедливо.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ибо когда он совершил много грехов против алтаря <i>Господня</i>, которого огонь и пепел был свят, то и получил смерть в пепле.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Между тем царь, ожесточившийся в своих замыслах, продолжал шествие, намереваясь причинить Иудеям бедствия горшие тех, какие были при отце его.
+</p>
+<div class="num">10</div><p id="n10">Когда узнал об этом Иуда, то велел народу день и ночь призывать Господа, чтобы Он и ныне, как и прежде, явил им Свою помощь при опасности лишиться закона и отечества и святаго храма
+</p>
+<div class="num">11</div><p id="n11">и чтобы народ, только что немного успокоившийся, не отдал в порабощение злохульным язычникам.
+</p>
+<div class="num">12</div><p id="n12">Все единодушно исполнили это и в продолжение трех дней с плачем и постом и коленопреклонением непрестанно молились милосердому Господу; тогда Иуда, ободрив их, приказал им быть в готовности.
+</p>
+<div class="num">13</div><p id="n13">Оставшись же наедине со старейшинами, держал совет, намереваясь прежде, нежели царское войско войдет в Иудею и овладеет городом, выйти и решить дело с помощью Господа.
+</p>
+<div class="num">14</div><p id="n14">Предоставив попечение о себе Создателю мира, он убеждал бывших с ним сражаться мужественно до смерти за законы, за храм, город, отечество и права гражданские и расположил войско около Модина.
+</p>
+<div class="num">15</div><p id="n15">Дав бывшим с ним условный знак "Божия победа", он с избранными сильными юношами ночью устремился на царский шатер, убил в войске до четырех тысяч человек и, кроме того, самого большого слона с помещавшимся на нем народом.
+</p>
+<div class="num">16</div><p id="n16">Наконец, исполнив войско страха и смятения, они благополучно отошли.
+</p>
+<div class="num">17</div><p id="n17">Произошло это уже на рассвете дня, при покровительстве Господа.
+</p>
+<div class="num">18</div><p id="n18">Царь же, опытом дознав отважность Иудеев, пытался овладеть местами посредством хитрости.
+</p>
+<div class="num">19</div><p id="n19">И приступил он к Вефсуре, твердой крепости Иудейской, но был обращен в бегство и потерпел поражение и потерю;
+</p>
+<div class="num">20</div><p id="n20">Иуда же присылал бывшим в крепости все нужное.
+</p>
+<div class="num">21</div><p id="n21">Некто Родок из войска Иудейского объявил врагам об этой тайне, но был отыскан, схвачен и заключен.
+</p>
+<div class="num">22</div><p id="n22">Во второй раз царь вступил в переговоры с жителями Вефсуры; дал им и от них получил мир, удалился и обратился против бывших с Иудою, но был побежден.
+</p>
+<div class="num">23</div><p id="n23">Узнав же, что Филипп, оставленный в Антиохии правителем, отложился, он пришел в смущение: стал уговаривать Иудеев, смирился и клялся исполнить все справедливые требования, затем примирился с ними и принес жертву, почтил храм и оказал милости городу,
+</p>
+<div class="num">24</div><p id="n24">принял Маккавея и поставил его военачальником от Птолемаиды до самого Геррин.
+</p>
+<div class="num">25</div><p id="n25">Потом пошел он в Птолемаиду: Птолемаидяне недовольны были договором, негодовали на условия и хотели отменить их.
+</p>
+<div class="num">26</div><p id="n26">Вошел на судилище Лисий, защищался по возможности, уговорил их, успокоил, сделал благосклонными и отправился в Антиохию. Так окончилось нашествие и возвращение царя.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mak2.14.ru.html">к главе 14</a></div></div>
+
+</body>
+</html>

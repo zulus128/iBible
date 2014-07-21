@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para2.ru.html">Вторая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 13
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В восемнадцатый год царствования Иеровоама воцарился Авия над Иудою.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Три года он царствовал в Иерусалиме; имя матери его Михаия, дочь Уриилова, из Гивы. И была война у Авии с Иеровоамом.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И вывел Авия на войну войско, состоявшее из людей храбрых, из четырехсот тысяч человек отборных; а Иеровоам выступил против него на войну с восемью стами тысяч человек, <i>также</i> отборных, храбрых.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И стал Авия на вершине горы Цемараимской, одной из гор Ефремовых, и говорил: послушайте меня, Иеровоам и все Израильтяне!
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Не знаете ли вы, что Господь Бог Израилев дал царство Давиду над Израилем навек, ему и сыновьям его, по завету соли [вечному]?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Но восстал Иеровоам, сын Наватов, раб Соломона, сына Давидова, и возмутился против господина своего.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И собрались вокруг него люди пустые, люди развращенные, и укрепились против Ровоама, сына Соломонова; Ровоам же был молод и слаб сердцем и не устоял против них.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И ныне вы думаете устоять против царства Господня в руке сынов Давидовых, <i>потому</i> <i>что</i> вас великое множество, и у вас золотые тельцы, которых Иеровоам сделал вам богами.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Не вы ли изгнали священников Господних, сынов Аарона, и левитов, и поставили у себя священников, какие у народов <i>других</i> земель? Всякий, кто приходит для посвящения своего с тельцом и с семью овнами, делается <i>у</i> <i>вас</i> священником лжебогов.
+</p>
+<div class="num">10</div><p id="n10">А у нас - Господь Бог наш; мы не оставляли Его, и Господу служат священники, сыны Аароновы, и левиты при <i>своем</i> деле.
+</p>
+<div class="num">11</div><p id="n11">И сожигают они Господу всесожжения каждое утро и каждый вечер, и благовонное курение, и полагают рядами хлебы на столе чистом, и <i>зажигают</i> золотой светильник и лампады его, чтобы горели каждый вечер, потому что мы соблюдаем установление Господа Бога нашего, а вы оставили Его.
+</p>
+<div class="num">12</div><p id="n12">И вот, у нас во главе Бог, и священники Его, и трубы громогласные, чтобы греметь против вас. Сыны Израилевы! не воюйте с Господом Богом отцов ваших, ибо не получите успеха.
+</p>
+<div class="num">13</div><p id="n13">Между тем Иеровоам послал отряд в засаду с тыла им, так что <i>сам</i> <i>он</i> был впереди Иудеев, а засада позади их.
+</p>
+<div class="num">14</div><p id="n14">И оглянулись Иудеи, и вот, им битва спереди и сзади; и возопили они к Господу, а священники затрубили трубами.
+</p>
+<div class="num">15</div><p id="n15">И воскликнули Иудеи. И когда воскликнули Иудеи, Бог поразил Иеровоама и всех Израильтян пред лицем Авии и Иуды.
+</p>
+<div class="num">16</div><p id="n16">И побежали сыны Израилевы от Иудеев, и предал их Бог в руки им.
+</p>
+<div class="num">17</div><p id="n17">И произвели у них Авия и народ его поражение сильное; и пало убитых у Израиля пятьсот тысяч человек отборных.
+</p>
+<div class="num">18</div><p id="n18">И смирились тогда сыны Израилевы, и были сильны сыны Иудины, потому что уповали на Господа Бога отцов своих.
+</p>
+<div class="num">19</div><p id="n19">И преследовал Авия Иеровоама и взял у него города: Вефиль и зависящие от него города, и Иешану и зависящие от нее города, и Ефрон и зависящие от него города.
+</p>
+<div class="num">20</div><p id="n20">И не входил уже в силу Иеровоам во дни Авии. И поразил его Господь, и он умер.
+</p>
+<div class="num">21</div><p id="n21">Авия же усилился; и взял себе четырнадцать жен и родил двадцать два сына и шестнадцать дочерей.
+</p>
+<div class="num">22</div><p id="n22">Прочие деяния Авии и его поступки и слова описаны в сказании пророка Адды.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para2.14.ru.html">к главе 14</a></div></div>
+
+</body>
+</html>

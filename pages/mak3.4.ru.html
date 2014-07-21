@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mak3.ru.html">Третья книга<br />Маккавейская</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Везде, куда приходило это повеление, у язычников учреждались народные пиршества с радостными кликами, как будто закореневшая издавна в душе вражда теперь обнаружилась дерзновенно.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">А у Иудеев началась неутешная скорбь, горький плач и рыдание; ибо жгли сердце достигавшие со всех сторон стоны оплакивающих неожиданную, внезапно определенную им погибель.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Какая область или город, или какое обитаемое место, или какие дороги не наполнились их плачем и воплями?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Жестоко и без всякой жалости они были вместе высылаемы властями каждого города, так что при виде этой необыкновенной кары и некоторые из врагов, смотря на общее страдание и помышляя о неведомой превратности жизни, оплакивали злополучнейшее их изгнание.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Гнали толпу престарелых, покрытых сединами, сгорбленных от старческой слабости в ногах, и по требованию насильственного изгнания бесстыдно принуждали их к скорейшему шествию.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Отроковицы, только что сочетавшиеся супружеским союзом и вошедшие в брачный чертог, вместо ликования начали плач, посыпали пеплом благоухавшие от мастей волосы, были ведены непокрытыми и вместо брачных песней поднимали общий вопль, будучи мучимы истязаниями иноплеменных. В оковах они открыто влекомы были с насилием, до ввержения в корабль.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">А их супруги, вместо венков перевязанные по шеям веревками, в цветущем юношеском возрасте, вместо пиршества и наслаждения молодости, проводили остальные дни брака в плаче, ибо под ногами у себя видели открытый ад.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Везены они были по подобию зверей под игом железных оков; одни прикованы были за шеи к корабельным скамьям, другие крепкими узами привязаны были за ноги. Кроме того, накрытые плотным помостом, они отлучены были от света, так что, со всех сторон окруженные тьмою, во все время плавания содержались подобно злоумышленникам.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Когда же они привезены были на место, называемое Схедия, и плавание было окончено, как назначено было царем, тогда он приказал поставить их перед городом на конском ристалище, которое имело обширную окружность и весьма удобно было для примерного поругания в виду всех, шедших в город и обратно отправлявшихся внутрь страны, так чтобы они ни с войском не имели сообщения, ни вообще не были удостоены никакого крова.
+</p>
+<div class="num">10</div><p id="n10">Когда это было исполнено и <i>царь</i> услышал, что одноплеменники их часто выходят тайно из города оплакивать позорное бедствие братьев, то весьма разгневался и приказал и с этими поступить точно так же, как и с теми, чтобы они никак не меньшее получили наказание.
+</p>
+<div class="num">11</div><p id="n11">Он велел переписать весь народ по именам, не для тяжкого рабского служения, незадолго пред сим возвещенного, а для того, чтобы, измучив их объявленными казнями, вконец погубить в один день.
+</p>
+<div class="num">12</div><p id="n12">И хотя эта перепись производилась с крайнею поспешностью и ревностным старанием от восхода до захождения солнца, но совершенно окончить ее не могли в продолжение сорока дней.
+</p>
+<div class="num">13</div><p id="n13">Царь же, чрезмерно и непрестанно предаваясь удовольствию, пред всеми идолами учреждал пиршества, и умом, далеко уклонившимся от истины, и нечистыми устами славословил тех, которые глухи и не могут говорить или подать помощи, а на величайшего Бога произносил неподобающее.
+</p>
+<div class="num">14</div><p id="n14">После сказанного промежутка времени писцы донесли царю, что они не в состоянии сделать переписи Иудеев, по причине бесчисленного их множества; притом еще большее число их находится в областях; одни остаются в домах, другие рассеяны по разным местам, так что сделать этого невозможно даже всем властям в Египте.
+</p>
+<div class="num">15</div><p id="n15">Когда же царь еще строже угрожал им, предполагая, что они подкуплены дарами и коварно избегали наказания, тогда пришлось осязательно убедить его в том. Они доказали, что недостает у них ни хартий, ни необходимых для того письменных тростей.
+</p>
+<div class="num">16</div><p id="n16">Это было действие непобедимого небесного Промысла, помогавшего Иудеям.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mak3.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

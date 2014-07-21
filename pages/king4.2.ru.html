@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king4.ru.html">Четвертая книга Царств</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В то время, как Господь восхотел вознести Илию в вихре на небо, шел Илия с Елисеем из Галгала.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И сказал Илия Елисею: останься здесь, ибо Господь посылает меня в Вефиль. Но Елисей сказал: жив Господь и жива душа твоя! не оставлю тебя. И пошли они в Вефиль.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И вышли сыны пророков, которые в Вефиле, к Елисею и сказали ему: знаешь ли, что сегодня Господь вознесет господина твоего над главою твоею? Он сказал: я также знаю, молчите.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И сказал ему Илия: Елисей, останься здесь, ибо Господь посылает меня в Иерихон. И сказал он: жив Господь и жива душа твоя! не оставлю тебя. И пришли в Иерихон.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И подошли сыны пророков, которые в Иерихоне, к Елисею и сказали ему: знаешь ли, что сегодня Господь берет господина твоего и вознесет над главою твоею? Он сказал: я также знаю, молчите.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказал ему Илия: останься здесь, ибо Господь посылает меня к Иордану. И сказал он: жив Господь и жива душа твоя! не оставлю тебя. И пошли оба.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Пятьдесят человек из сынов пророческих пошли и стали вдали напротив их, а они оба стояли у Иордана.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И взял Илия милоть свою, и свернул, и ударил ею по воде, и расступилась она туда и сюда, и перешли оба посуху.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Когда они перешли, Илия сказал Елисею: проси, что&#769; сделать тебе, прежде нежели я буду взят от тебя. И сказал Елисей: дух, который в тебе, пусть будет на мне вдвойне.
+</p>
+<div class="num">10</div><p id="n10">И сказал он: трудного ты просишь. Если увидишь, как я буду взят от тебя, то будет тебе так, а если не увидишь, не будет.
+</p>
+<div class="num">11</div><p id="n11">Когда они шли и дорогою разговаривали, вдруг явилась колесница огненная и кони огненные, и разлучили их обоих, и понесся Илия в вихре на небо.
+</p>
+<div class="num">12</div><p id="n12">Елисей же смотрел и воскликнул: отец мой, отец мой, колесница Израиля и конница его! И не видел его более. И схватил он одежды свои и разодрал их на две части.
+</p>
+<div class="num">13</div><p id="n13">И поднял милоть Илии, упавшую с него, и пошел назад, и стал на берегу Иордана;
+</p>
+<div class="num">14</div><p id="n14">и взял милоть Илии, упавшую с него, и ударил ею по воде, и сказал: где Господь, Бог Илии,- Он Самый? И ударил по воде, и она расступилась туда и сюда, и перешел Елисей.
+</p>
+<div class="num">15</div><p id="n15">И увидели его сыны пророков, которые в Иерихоне, издали, и сказали: опочил дух Илии на Елисее. И пошли навстречу ему, и поклонились ему до земли,
+</p>
+<div class="num">16</div><p id="n16">и сказали ему: вот, есть <i>у</i> <i>нас,</i> рабов твоих, человек пятьдесят, люди сильные; пусть бы они пошли и поискали господина твоего; может быть, унес его Дух Господень и поверг его на одной из гор, или на одной из долин. Он же сказал: не посылайте.
+</p>
+<div class="num">17</div><p id="n17">Но они приступали к нему долго, так что наскучили ему, и он сказал: пошлите. И послали пятьдесят человек, и искали три дня, и не нашли его,
+</p>
+<div class="num">18</div><p id="n18">и возвратились к нему, между тем как он оставался в Иерихоне, и сказал им: не говорил ли я вам: не ходите?
+</p>
+<div class="num">19</div><p id="n19">И сказали жители того города Елисею: вот, положение этого города хорошо, как видит господин мой; но вода нехороша и земля бесплодна.
+</p>
+<div class="num">20</div><p id="n20">И сказал он: дайте мне новую чашу и положите туда соли. И дали ему.
+</p>
+<div class="num">21</div><p id="n21">И вышел он к истоку воды, и бросил туда соли, и сказал: так говорит Господь: Я сделал воду сию здоровою, не будет от нее впредь ни смерти, ни бесплодия.
+</p>
+<div class="num">22</div><p id="n22">И вода стала здоровою до сего дня, по слову Елисея, которое он сказал.
+</p>
+<div class="num">23</div><p id="n23">И пошел он оттуда в Вефиль. Когда он шел дорогою, малые дети вышли из города и насмехались над ним и говорили ему: иди, плешивый! иди, плешивый!
+</p>
+<div class="num">24</div><p id="n24">Он оглянулся и увидел их и проклял их именем Господним. И вышли две медведицы из леса и растерзали из них сорок два ребенка.
+</p>
+<div class="num">25</div><p id="n25">Отсюда пошел он на гору Кармил, а оттуда возвратился в Самарию.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king4.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

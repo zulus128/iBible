@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para1.ru.html">Первая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сии также пришли к Давиду в Секелаг, когда он еще укрывался от Саула, сына Кисова, и были из храбрых, помогавших в сражении.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Вооруженные луком, правою и левою рукою <i>бросавшие</i> каменья и <i>стрелявшие</i> стрелами из лука,- из братьев Саула, от Вениамина:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">главный Ахиезер, за ним Иоас, сыновья Шемаи, из Гивы; Иезиел и Фелет, сыновья Азмавефа; Бераха и Иегу из Анафофа;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Ишмаия Гаваонитянин, храбрый из тридцати и <i>начальствовавший</i> над тридцатью; Иеремия, Иахазиил, Иоханан и Иозавад из Гедеры.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Елузай, Иеримоф, Веалия, Шемария, Сафатия Харифиянин;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Елкана, Ишшияху, Азариил, Иоезер и Иошавам, Кореяне;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и Иоела и Зевадия, сыновья Иерохама, из Гедора.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И из Гадитян перешли к Давиду в укрепление, в пустыню, люди мужественные, воинственные, вооруженные щитом и копьем; лица львиные - лица их, и они быстры как серны на горах.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Главный Езер, второй Овадия, третий Елиав,
+</p>
+<div class="num">10</div><p id="n10">четвертый Мишманна, пятый Иеремия,
+</p>
+<div class="num">11</div><p id="n11">шестой Афай, седьмой Елиел,
+</p>
+<div class="num">12</div><p id="n12">восьмой Иоханан, девятый Елзавад,
+</p>
+<div class="num">13</div><p id="n13">десятый Иеремия, одиннадцатый Махбанай.
+</p>
+<div class="num">14</div><p id="n14">Они из сыновей Гадовых <i>были</i> главами в войске: меньший над сотнею, и больший над тысячею.
+</p>
+<div class="num">15</div><p id="n15">Они-то перешли Иордан в первый месяц, когда он выступает из берегов своих, и разогнали всех живших в долинах к востоку и западу.
+</p>
+<div class="num">16</div><p id="n16">Пришли также и из сыновей Вениаминовых и Иудиных в укрепление к Давиду.
+</p>
+<div class="num">17</div><p id="n17">Давид вышел навстречу им и сказал им: если с миром пришли вы ко мне, чтобы помогать мне, то да будет у меня с вами одно сердце; а если для того, чтобы коварно предать меня врагам моим, тогда как нет порока на руках моих, то да видит Бог отцов наших и рассудит.
+</p>
+<div class="num">18</div><p id="n18">И объял дух Амасая, главу тридцати, <i>и</i> <i>сказал</i> <i>он:</i> мир тебе Давид, и с тобою, сын Иессеев; мир тебе, и мир помощникам твоим; ибо помогает тебе Бог твой. Тогда принял их Давид и поставил их во главе войска.
+</p>
+<div class="num">19</div><p id="n19">И из колена Манассиина перешли <i>некоторые</i> к Давиду, когда он шел с Филистимлянами на войну против Саула, но не помогал им, потому что предводители Филистимские, посоветовавшись, отослали его, говоря: на нашу голову он перейдет к господину своему Саулу.
+</p>
+<div class="num">20</div><p id="n20">Когда он возвращался в Секелаг, тогда перешли к нему из Манассиян: Аднах, Иозавад, Иедиаел, Михаил, Иозавад, Елигу и Цилльфай, тысяченачальники у Манассиян.
+</p>
+<div class="num">21</div><p id="n21">И они помогали Давиду против полчищ, ибо все это были люди храбрые и были начальниками в войске.
+</p>
+<div class="num">22</div><p id="n22">Так с каждым днем приходили к Давиду на помощь до того, что его ополчение стало велико, как ополчение Божие.
+</p>
+<div class="num">23</div><p id="n23">Вот число главных в войске, которые пришли к Давиду в Хеврон, чтобы передать ему царство Саулово, по слову Господню:
+</p>
+<div class="num">24</div><p id="n24">сыновей Иудиных, носящих щит и копье, было шесть тысяч восемьсот готовых к войне;
+</p>
+<div class="num">25</div><p id="n25">из сыновей Симеоновых, людей храбрых, в войске было семь тысяч и сто;
+</p>
+<div class="num">26</div><p id="n26">из сыновей Левииных четыре тысячи шестьсот;
+</p>
+<div class="num">27</div><p id="n27">и Иоддай, князь от <i>племени</i> Аарона, и с ним три тысячи семьсот;
+</p>
+<div class="num">28</div><p id="n28">и Садок, мужественный юноша, и род его, двадцать два начальника;
+</p>
+<div class="num">29</div><p id="n29">из сыновей Вениаминовых, братьев Сауловых, три тысячи,- но еще многие из них держались дома Саулова;
+</p>
+<div class="num">30</div><p id="n30">из сыновей Ефремовых двадцать тысяч восемьсот людей мужественных, людей именитых в родах своих;
+</p>
+<div class="num">31</div><p id="n31">из полуколена Манассиина восемнадцать тысяч, которые вызваны были поименно, чтобы пойти воцарить Давида;
+</p>
+<div class="num">32</div><p id="n32">из сынов Иссахаровых <i>пришли</i> люди разумные, которые знали, что&#769; когда надлежало делать Израилю,- их было двести главных, и все братья их следовали слову их;
+</p>
+<div class="num">33</div><p id="n33">из <i>колена</i> Завулонова готовых к сражению, вооруженных всякими военными оружиями, пятьдесят тысяч, в строю, единодушных;
+</p>
+<div class="num">34</div><p id="n34">из <i>колена</i> Неффалимова тысяча вождей и с ними тридцать семь тысяч с щитами и копьями;
+</p>
+<div class="num">35</div><p id="n35">из <i>колена</i> Данова готовых к войне двадцать восемь тысяч шестьсот;
+</p>
+<div class="num">36</div><p id="n36">от Асира воинов, готовых к сражению, сорок тысяч;
+</p>
+<div class="num">37</div><p id="n37">из-за Иордана, от колена Рувимова, Гадова и полуколена Манассиина, сто двадцать тысяч, со всяким воинским оружием.
+</p>
+<div class="num">38</div><p id="n38">Все эти воины, в строю, от полного сердца пришли в Хеврон воцарить Давида над всем Израилем. Да и все прочие Израильтяне были единодушны, чтобы воцарить Давида.
+</p>
+<div class="num">39</div><p id="n39">И пробыли там у Давида три дня, ели и пили, потому что братья их <i>всё</i> приготовили для них;
+</p>
+<div class="num">40</div><p id="n40">да и близкие к ним, даже до <i>колена</i> Иссахарова, Завулонова и Неффалимова, привозили все съестное на ослах, и верблюдах, и мулах, и волах: муку, смоквы, и изюм, и вино, и елей, и крупного и мелкого скота множество, так как радость была для Израиля.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para1.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

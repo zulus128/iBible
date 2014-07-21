@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nav.ru.html">Книга Иисуса Навина</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 15
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Жребий колену сынов Иудиных, по племенам их, выпал такой: в смежности с Идумеею была пустыня Син, к югу, при конце Фемана;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">южным пределом их был край моря Соленого от простирающегося к югу залива;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">на юге идет он к возвышенности Акраввимской, проходит Цин и, восходя с южной стороны к Кадес-Варне, проходит Хецрон и, восходя до Аддара, [идет на западной стороне Кадеса,] поворачивает к Каркае,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">потом проходит Ацмон, идет к потоку Египетскому, так что конец сего предела есть море. Сей будет южный ваш предел.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Пределом же к востоку [все] море Соленое, до устья Иордана; а предел с северной стороны <i>начинается</i> от залива моря, от устья Иордана;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">отсюда предел восходит к Беф-Хогле и проходит с северной стороны к Беф-Араве, и идет предел вверх до камня Богана, сына Рувимова;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">потом восходит предел к Давиру от долины Ахор и на севере поворачивает к Галгалу, который против возвышенности Адуммима, лежащего с южной стороны потока; отсюда предел проходит к водам Ен-Шемеша и оканчивается у Ен-Рогела;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">отсюда предел идет вверх к долине сына Енномова с южной стороны Иевуса, который <i>есть</i> Иерусалим, и восходит предел на вершину горы, которая к западу против долины Енномовой, которая на краю долины Рефаимов к северу;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">от вершины горы предел поворачивает к источнику вод Нефтоах и идет к городам горы Ефрона, и поворачивает предел к Ваалу, который <i>есть</i> Кириаф-Иарим;
+</p>
+<div class="num">10</div><p id="n10">потом поворачивает предел от Ваала к морю [и идет] к горе Сеиру, и идет северною стороною горы Иеарим, которая <i>есть</i> Кесалон, и, нисходя к Вефсамису, проходит чрез Фимну;
+</p>
+<div class="num">11</div><p id="n11">отсюда предел идет северною стороною Екрона, и поворачивает предел к Шикарону, проходит чрез гору [земли] Ваал и доходит до Иавнеила, и оканчивается предел у моря. Западный предел составляет великое море.
+</p>
+<div class="num">12</div><p id="n12">Вот предел сынов Иудиных с племенами их со всех сторон.
+</p>
+<div class="num">13</div><p id="n13">И Халеву, сыну Иефонниину, [Иисус] дал часть среди сынов Иудиных, как повелел Господь Иисусу; [и дал ему Иисус] Кириаф-Арбы, отца Енакова, иначе Хеврон.
+</p>
+<div class="num">14</div><p id="n14">И выгнал оттуда Халев [сын Иефонниин] трех сынов Енаковых: Шешая, Ахимана и Фалмая, детей Енаковых.
+</p>
+<div class="num">15</div><p id="n15">Отсюда [Халев] пошел против жителей Давира [имя Давиру прежде <i>было</i> Кириаф-Сефер].
+</p>
+<div class="num">16</div><p id="n16">И сказал Халев: кто поразит Кириаф-Сефер и возьмет его, тому отдам Ахсу, дочь мою, в жену.
+</p>
+<div class="num">17</div><p id="n17">И взял его Гофониил, [младший] сын Кеназа, брата Халевова, и отдал он в жену ему Ахсу, дочь свою.
+</p>
+<div class="num">18</div><p id="n18">Когда надлежало ей идти, ее научили просить у отца ее поле, и она сошла с осла. Халев сказал ей: что тебе?
+</p>
+<div class="num">19</div><p id="n19">Она сказала: дай мне благословение; ты дал мне землю полуденную, дай мне и источники вод. И дал он ей источники верхние и источники нижние.
+</p>
+<div class="num">20</div><p id="n20">Вот удел колена сынов Иудиных, по племенам их:
+</p>
+<div class="num">21</div><p id="n21">города с края колена сынов Иудиных в смежности с Идумеею на юге были: Кавцеил, Едер и Иагур,
+</p>
+<div class="num">22</div><p id="n22">Кина, Димона, Адада,
+</p>
+<div class="num">23</div><p id="n23">Кедес, Асор и Ифнан,
+</p>
+<div class="num">24</div><p id="n24">Зиф, Телем и Валоф,
+</p>
+<div class="num">25</div><p id="n25">Гацор-Хадафа, Кириаф, Хецрон, иначе Гацор,
+</p>
+<div class="num">26</div><p id="n26">Амам, Шема и Молада,
+</p>
+<div class="num">27</div><p id="n27">Хацар-Гадда, Хешмон и Веф-Палет,
+</p>
+<div class="num">28</div><p id="n28">Хацар-Шуал, Вирсавия и Визиофея [и села их и предместья их,]
+</p>
+<div class="num">29</div><p id="n29">Ваала, Иим и Ацем,
+</p>
+<div class="num">30</div><p id="n30">Елфолад, Кесил и Хорма,
+</p>
+<div class="num">31</div><p id="n31">Циклаг, Мадмана и Сансана,
+</p>
+<div class="num">32</div><p id="n32">Леваоф, Шелихим, Аин и Риммон: всех двадцать девять городов с их селами.
+</p>
+<div class="num">33</div><p id="n33">На низменных местах: Ештаол, Цора и Ашна,
+</p>
+<div class="num">34</div><p id="n34">Заноах, Ен-Ганним, Таппуах и Гаенам,
+</p>
+<div class="num">35</div><p id="n35">Иармуф, Одоллам, [Немра,] Сохо и Азека,
+</p>
+<div class="num">36</div><p id="n36">Шаараим, Адифаим, Гедера или Гедерофаим: четырнадцать городов с их селами.
+</p>
+<div class="num">37</div><p id="n37">Ценан, Хадаша, Мигдал-Гад,
+</p>
+<div class="num">38</div><p id="n38">Дилеан, Мицфе и Иокфеил,
+</p>
+<div class="num">39</div><p id="n39">Лахис, Воцкаф и Еглон,
+</p>
+<div class="num">40</div><p id="n40">Хаббон, Лахмас и Хифлис,
+</p>
+<div class="num">41</div><p id="n41">Гедероф, Беф-Дагон, Наема и Макед: шестнадцать городов с их селами.
+</p>
+<div class="num">42</div><p id="n42">Ливна, Ефер и Ашан,
+</p>
+<div class="num">43</div><p id="n43">Иффах, Ашна и Нецив,
+</p>
+<div class="num">44</div><p id="n44">Кеила, Ахзив и Мареша [и Едом]: девять городов с их селами.
+</p>
+<div class="num">45</div><p id="n45">Екрон с зависящими от него <i>городами</i> и селами его,
+</p>
+<div class="num">46</div><p id="n46">и от Екрона к морю все, что находится около Азота, с селами их,
+</p>
+<div class="num">47</div><p id="n47">Азот, зависящие от него города и села его, Газа, зависящие от нее города и села ее, до самого потока Египетского и великого моря, которое <i>есть</i> предел.
+</p>
+<div class="num">48</div><p id="n48">На горах: Шамир, Иаттир и Сохо,
+</p>
+<div class="num">49</div><p id="n49">Данна, Кириаф-Санна, иначе Давир,
+</p>
+<div class="num">50</div><p id="n50">Анаф, Ештемо и Аним,
+</p>
+<div class="num">51</div><p id="n51">Гошен, Холон и Гило: одиннадцать городов с их селами.
+</p>
+<div class="num">52</div><p id="n52">Арав, Дума и Ешан,
+</p>
+<div class="num">53</div><p id="n53">Ианум, Беф-Таппуах и Афека,
+</p>
+<div class="num">54</div><p id="n54">Хумта, Кириаф-Арбы, иначе Хеврон, и Цигор: девять городов с их селами.
+</p>
+<div class="num">55</div><p id="n55">Маон, Кармил, Зиф и Юта,
+</p>
+<div class="num">56</div><p id="n56">Изреель, Иокдам и Заноах,
+</p>
+<div class="num">57</div><p id="n57">Каин, Гива и Фимна: десять городов с их селами.
+</p>
+<div class="num">58</div><p id="n58">Халхул, Беф-Цур и Гедор,
+</p>
+<div class="num">59</div><p id="n59">Маараф, Беф-Аноф и Елтекон: шесть городов с их селами. [Феко, Ефрафа, иначе Вифлеем, Фагор, Етам, Кулон, Татами, Сорес, Карем, Галлим, Вефир и Манохо: одиннадцать городов с их селами.]
+</p>
+<div class="num">60</div><p id="n60">Кириаф-Ваал, иначе Кириаф-Иарим, и Аравва: два города с их селами [и предместьями].
+</p>
+<div class="num">61</div><p id="n61">В пустыне: Беф-Арава, Миддин и Секаха,
+</p>
+<div class="num">62</div><p id="n62">Нившан, Ир-Мелах и Ен-Геди: шесть городов с их селами.
+</p>
+<div class="num">63</div><p id="n63">Но Иевусеев, жителей Иерусалима, не могли изгнать сыны Иудины, и потому Иевусеи живут с сынами Иуды в Иерусалиме даже до сего дня.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nav.16.ru.html">к главе 16</a></div></div>
+
+</body>
+</html>

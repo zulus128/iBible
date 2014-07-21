@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="rom.ru.html">Послание к Римлянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 11
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Итак, спрашиваю: неужели Бог отверг народ Свой? Никак. Ибо и я Израильтянин, от семени Авраамова, из колена Вениаминова.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Не отверг Бог народа Своего, который Он наперед знал. <br /> Или не знаете, что говорит Писание в <i>повествовании</i> <i>об</i> Илии? как он жалуется Богу на Израиля, говоря:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Господи! пророков Твоих убили, жертвенники Твои разрушили; остался я один, и моей души ищут.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Что же говорит ему Божеский ответ? Я соблюл Себе семь тысяч человек, которые не преклонили колени перед Ваалом.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Так и в нынешнее время, по избранию благодати, сохранился остаток.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Но если по благодати, то не по делам; иначе благодать не была бы уже благодатью. А если по делам, то это уже не благодать; иначе дело не есть уже дело.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Что же? Израиль, чего искал, того не получил; избранные же получили, а прочие ожесточились,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">как написано: Бог дал им дух усыпления, глаза, которыми не видят, и уши, которыми не слышат, даже до сего дня.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И Давид говорит: да будет трапеза их сетью, тенетами и петлею в возмездие им;
+</p>
+<div class="num">10</div><p id="n10">да помрачатся глаза их, чтобы не видеть, и хребет их да будет согбен навсегда.
+</p>
+<div class="num">11</div><p id="n11">Итак спрашиваю: неужели они преткнулись, чтобы <i>совсем</i> пасть? Никак. Но от их падения спасение язычникам, чтобы возбудить в них ревность.
+</p>
+<div class="num">12</div><p id="n12">Если же падение их - богатство миру, и оскудение их - богатство язычникам, то тем более полнота их.
+</p>
+<div class="num">13</div><p id="n13">Вам говорю, язычникам. Как Апостол язычников, я прославляю служение мое.
+</p>
+<div class="num">14</div><p id="n14">Не возбужу ли ревность в <i>сродниках</i> моих по плоти и не спасу ли некоторых из них?
+</p>
+<div class="num">15</div><p id="n15">Ибо если отвержение их - примирение мира, то что <i>будет</i> принятие, как не жизнь из мертвых?
+</p>
+<div class="num">16</div><p id="n16">Если начаток свят, то и целое; и если корень свят, то и ветви.
+</p>
+<div class="num">17</div><p id="n17">Если же некоторые из ветвей отломились, а ты, дикая маслина, привился на место их и стал общником корня и сока маслины,
+</p>
+<div class="num">18</div><p id="n18">то не превозносись перед ветвями. Если же превозносишься, <i>то</i> <i>вспомни,</i> <i>что</i> не ты корень держишь, но корень тебя.
+</p>
+<div class="num">19</div><p id="n19">Скажешь: "ветви отломились, чтобы мне привиться".
+</p>
+<div class="num">20</div><p id="n20">Хорошо. Они отломились неверием, а ты держишься верою: не гордись, но бойся.
+</p>
+<div class="num">21</div><p id="n21">Ибо если Бог не пощадил природных ветвей, то смотри, пощадит ли и тебя.
+</p>
+<div class="num">22</div><p id="n22">Итак видишь благость и строгость Божию: строгость к отпадшим, а благость к тебе, если пребудешь в благости <i>Божией;</i> иначе и ты будешь отсечен.
+</p>
+<div class="num">23</div><p id="n23">Но и те, если не пребудут в неверии, привьются, потому что Бог силен опять привить их.
+</p>
+<div class="num">24</div><p id="n24">Ибо если ты отсечен от дикой по природе маслины и не по природе привился к хорошей маслине, то тем более сии природные привьются к своей маслине.
+</p>
+<div class="num">25</div><p id="n25">Ибо не хочу оставить вас, братия, в неведении о тайне сей,- чтобы вы не мечтали о себе,- что ожесточение произошло в Израиле отчасти, <i>до</i> <i>времени,</i> пока войдет полное <i>число</i> язычников;
+</p>
+<div class="num">26</div><p id="n26">и так весь Израиль спасется, как написано: придет от Сиона Избавитель, и отвратит нечестие от Иакова.
+</p>
+<div class="num">27</div><p id="n27">И сей завет им от Меня, когда сниму с них грехи их.
+</p>
+<div class="num">28</div><p id="n28">В отношении к благовестию, они враги ради вас; а в отношении к избранию, возлюбленные <i>Божии</i> ради отцов.
+</p>
+<div class="num">29</div><p id="n29">Ибо дары и призвание Божие непреложны.
+</p>
+<div class="num">30</div><p id="n30">Как и вы некогда были непослушны Богу, а ныне помилованы, по непослушанию их,
+</p>
+<div class="num">31</div><p id="n31">так и они теперь непослушны для помилования вас, чтобы и сами они были помилованы.
+</p>
+<div class="num">32</div><p id="n32">Ибо всех заключил Бог в непослушание, чтобы всех помиловать.
+</p>
+<div class="num">33</div><p id="n33">О, бездна богатства и премудрости и ведения Божия! Как непостижимы судьбы Его и неисследимы пути Его!
+</p>
+<div class="num">34</div><p id="n34">Ибо кто познал ум Господень? Или кто был советником Ему?
+</p>
+<div class="num">35</div><p id="n35">Или кто дал Ему наперед, чтобы Он должен был воздать?
+</p>
+<div class="num">36</div><p id="n36">Ибо все из Него, Им и к Нему. Ему слава во веки, аминь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="rom.12.ru.html">к главе 12</a></div></div>
+
+</body>
+</html>

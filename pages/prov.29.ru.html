@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="prov.ru.html">Книга Притчей<br />Соломоновых</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 29
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Человек, который, будучи обличаем, ожесточает выю свою, внезапно сокрушится, и не будет <i>ему</i> исцеления.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Когда умножаются праведники, веселится народ, а когда господствует нечестивый, народ стенает.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Человек, любящий мудрость, радует отца своего; а кто знается с блудницами, тот расточает имение.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Царь правосудием утверждает землю, а любящий подарки разоряет ее.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Человек, льстящий другу своему, расстилает сеть ногам его.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">В грехе злого человека - сеть <i>для</i> <i>него,</i> а праведник веселится и радуется.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Праведник тщательно вникает в тяжбу бедных, а нечестивый не разбирает дела.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Люди развратные возмущают город, а мудрые утишают мятеж.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Умный человек, судясь с человеком глупым, сердится ли, смеется ли,- не имеет покоя.
+</p>
+<div class="num">10</div><p id="n10">Кровожадные люди ненавидят непорочного, а праведные заботятся о его жизни.
+</p>
+<div class="num">11</div><p id="n11">Глупый весь гнев свой изливает, а мудрый сдерживает его.
+</p>
+<div class="num">12</div><p id="n12">Если правитель слушает ложные речи, то и все служащие у него нечестивы.
+</p>
+<div class="num">13</div><p id="n13">Бедный и лихоимец встречаются друг с другом; но свет глазам того и другого дает Господь.
+</p>
+<div class="num">14</div><p id="n14">Если царь судит бедных по правде, то престол его навсегда утвердится.
+</p>
+<div class="num">15</div><p id="n15">Розга и обличение дают мудрость; но отрок, оставленный в небрежении, делает стыд своей матери.
+</p>
+<div class="num">16</div><p id="n16">При умножении нечестивых умножается беззаконие; но праведники увидят падение их.
+</p>
+<div class="num">17</div><p id="n17">Наказывай сына твоего, и он даст тебе покой, и доставит радость душе твоей.
+</p>
+<div class="num">18</div><p id="n18">Без откровения свыше народ необуздан, а соблюдающий закон блажен.
+</p>
+<div class="num">19</div><p id="n19">Словами не научится раб, потому что, хотя он понимает <i>их,</i> но не слушается.
+</p>
+<div class="num">20</div><p id="n20">Видал ли ты человека опрометчивого в словах своих? на глупого больше надежды, нежели на него.
+</p>
+<div class="num">21</div><p id="n21">Если с детства воспитывать раба в неге, то впоследствии он захочет быть сыном.
+</p>
+<div class="num">22</div><p id="n22">Человек гневливый заводит ссору, и вспыльчивый много грешит.
+</p>
+<div class="num">23</div><p id="n23">Гордость человека унижает его, а смиренный духом приобретает честь.
+</p>
+<div class="num">24</div><p id="n24">Кто делится с вором, тот ненавидит душу свою; слышит он проклятие, но не объявляет о том.
+</p>
+<div class="num">25</div><p id="n25">Боязнь пред людьми ставит сеть; а надеющийся на Господа будет безопасен.
+</p>
+<div class="num">26</div><p id="n26">Многие ищут <i>благосклонного</i> лица правителя, но судьба человека - от Господа.
+</p>
+<div class="num">27</div><p id="n27">Мерзость для праведников - человек неправедный, и мерзость для нечестивого - идущий прямым путем.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="prov.30.ru.html">к главе 30</a></div></div>
+
+</body>
+</html>

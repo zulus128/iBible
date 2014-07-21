@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lev.ru.html">Левит</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 10
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Надав и Авиуд, сыны Аароновы, взяли каждый свою кадильницу, и положили в них огня, и вложили в него курений, и принесли пред Господа огонь чуждый, которого Он не велел им;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и вышел огонь от Господа и сжег их, и умерли они пред лицем Господним.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И сказал Моисей Аарону: вот о чем говорил Господь, когда сказал: в приближающихся ко Мне освящусь и пред всем народом прославлюсь. Аарон молчал.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И позвал Моисей Мисаила и Елцафана, сынов Узиила, дяди Ааронова, и сказал им: пойдите, вынесите братьев ваших из святилища за стан.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И пошли и вынесли их в хитонах их за стан, как сказал Моисей.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Аарону же и Елеазару и Ифамару, сынам его, Моисей сказал: голов ваших не обнажайте и одежд ваших не раздирайте, чтобы вам не умереть и не навести гнева на все общество; но братья ваши, весь дом Израилев, могут плакать о сожженных, которых сожег Господь,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и из дверей скинии собрания не выходите, чтобы не умереть вам, ибо на вас елей помазания Господня. И сделали по слову Моисея.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сказал Господь Аарону, говоря:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">вина и крепких напитков не пей ты и сыны твои с тобою, когда входите в скинию собрания, [или приступаете к жертвеннику,] чтобы не умереть. <i>Это</i> вечное постановление в роды ваши,
+</p>
+<div class="num">10</div><p id="n10">чтобы вы могли отличать священное от несвященного и нечистое от чистого,
+</p>
+<div class="num">11</div><p id="n11">и научать сынов Израилевых всем уставам, которые изрек им Господь чрез Моисея.
+</p>
+<div class="num">12</div><p id="n12">И сказал Моисей Аарону и Елеазару и Ифамару, оставшимся сынам его: возьмите приношение хлебное, оставшееся от жертв Господних, и ешьте его пресное у жертвенника, ибо это великая святыня;
+</p>
+<div class="num">13</div><p id="n13">и ешьте его на святом месте, ибо это участок твой и участок сынов твоих из жертв Господних: так мне повелено [от Господа];
+</p>
+<div class="num">14</div><p id="n14">и грудь потрясания и плечо возношения ешьте на чистом месте, ты и сыновья твои и дочери твои с тобою, ибо это дано в участок тебе и в участок сынам твоим из мирных жертв сынов Израилевых;
+</p>
+<div class="num">15</div><p id="n15">плечо возношения и грудь потрясания должны они приносить с жертвами тука, потрясая пред лицем Господним, и да будет это вечным участком тебе и сыновьям твоим [и дочерям твоим] с тобою, как повелел Господь [Моисею].
+</p>
+<div class="num">16</div><p id="n16">И козла жертвы за грех искал Моисей, и вот, он сожжен. И разгневался [Моисей] на Елеазара и Ифамара, оставшихся сынов Аароновых, и сказал:
+</p>
+<div class="num">17</div><p id="n17">почему вы не ели жертвы за грех на святом месте? ибо она святыня великая, и она дана вам, чтобы снимать грехи с общества и очищать их пред Господом;
+</p>
+<div class="num">18</div><p id="n18">вот, кровь ее не внесена внутрь святилища, а вы должны были есть ее на святом месте, как повелено мне.
+</p>
+<div class="num">19</div><p id="n19">Аарон сказал Моисею: вот, сегодня принесли они жертву свою за грех и всесожжение свое пред Господом, и это случилось со мною; если я сегодня съем жертву за грех, будет ли это угодно Господу?
+</p>
+<div class="num">20</div><p id="n20">И услышал Моисей и одобрил.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lev.11.ru.html">к главе 11</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king3.ru.html">Третья книга Царств</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">[Когда утвердилось царство в руках Соломона,] Соломон породнился с фараоном, царем Египетским, и взял за себя дочь фараона и ввел ее в город Давидов, доколе не построил дома своего и дома Господня и стены вокруг Иерусалима.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Народ еще приносил жертвы на высотах, ибо не был построен дом имени Господа до того времени.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И возлюбил Соломон Господа, ходя по уставу Давида, отца своего; но и он приносил жертвы и курения на высотах.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И пошел царь в Гаваон, чтобы принести там жертву, ибо там был главный жертвенник. Тысячу всесожжений вознес Соломон на том жертвеннике.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">В Гаваоне явился Господь Соломону во сне ночью, и сказал Бог: проси, что дать тебе.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказал Соломон: Ты сделал рабу Твоему Давиду, отцу моему, великую милость; и за то, что он ходил пред Тобою в истине и правде и с искренним сердцем пред Тобою, Ты сохранил ему эту великую милость и даровал ему сына, который сидел бы на престоле его, как это и есть ныне;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и ныне, Господи Боже мой, Ты поставил раба Твоего царем вместо Давида, отца моего; но я отрок малый, не знаю ни моего выхода, ни входа;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и раб Твой - среди народа Твоего, который избрал Ты, народа столь многочисленного, что по множеству его нельзя ни исчислить его, ни обозреть;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">даруй же рабу Твоему сердце разумное, чтобы судить народ Твой и различать, что добро и что зло; ибо кто может управлять этим многочисленным народом Твоим?
+</p>
+<div class="num">10</div><p id="n10">И благоугодно было Господу, что Соломон просил этого.
+</p>
+<div class="num">11</div><p id="n11">И сказал ему Бог: за то, что ты просил этого и не просил себе долгой жизни, не просил себе богатства, не просил себе душ врагов твоих, но просил себе разума, чтоб уметь судить,-
+</p>
+<div class="num">12</div><p id="n12">вот, Я сделаю по слову твоему: вот, Я даю тебе сердце мудрое и разумное, так что подобного тебе не было прежде тебя, и после тебя не восстанет подобный тебе;
+</p>
+<div class="num">13</div><p id="n13">и то, чего ты не просил, Я даю тебе, и богатство и славу, так что не будет подобного тебе между царями во все дни твои;
+</p>
+<div class="num">14</div><p id="n14">и если будешь ходить путем Моим, сохраняя уставы Мои и заповеди Мои, как ходил отец твой Давид, Я продолжу и дни твои.
+</p>
+<div class="num">15</div><p id="n15">И пробудился Соломон, и вот, <i>это</i> <i>было</i> сновидение. И пошел он в Иерусалим и стал [пред жертвенником] пред ковчегом завета Господня, и принес всесожжения и совершил <i>жертвы</i> мирные, и сделал большой пир для всех слуг своих.
+</p>
+<div class="num">16</div><p id="n16">Тогда пришли две женщины блудницы к царю и стали пред ним.
+</p>
+<div class="num">17</div><p id="n17">И сказала одна женщина: о, господин мой! я и эта женщина живем в одном доме; и я родила при ней в этом доме;
+</p>
+<div class="num">18</div><p id="n18">на третий день после того, как я родила, родила и эта женщина; и были мы вместе, и в доме никого постороннего с нами не было; только мы две были в доме;
+</p>
+<div class="num">19</div><p id="n19">и умер сын этой женщины ночью, ибо она заспала его;
+</p>
+<div class="num">20</div><p id="n20">и встала она ночью, и взяла сына моего от меня, когда я, раба твоя, спала, и положила его к своей груди, а своего мертвого сына положила к моей груди;
+</p>
+<div class="num">21</div><p id="n21">утром я встала, чтобы покормить сына моего, и вот, он был мертвый; а когда я всмотрелась в него утром, то это был не мой сын, которого я родила.
+</p>
+<div class="num">22</div><p id="n22">И сказала другая женщина: нет, мой сын живой, а твой сын мертвый. А та говорила ей: нет, твой сын мертвый, а мой живой. И говорили они так пред царем.
+</p>
+<div class="num">23</div><p id="n23">И сказал царь: эта говорит: мой сын живой, а твой сын мертвый; а та говорит: нет, твой сын мертвый, а мой сын живой.
+</p>
+<div class="num">24</div><p id="n24">И сказал царь: подайте мне меч. И принесли меч к царю.
+</p>
+<div class="num">25</div><p id="n25">И сказал царь: рассеките живое дитя надвое и отдайте половину одной и половину другой.
+</p>
+<div class="num">26</div><p id="n26">И отвечала та женщина, которой сын был живой, царю, ибо взволновалась вся внутренность ее от жалости к сыну своему: о, господин мой! отдайте ей этого ребенка живого и не умерщвляйте его. А другая говорила: пусть же не будет ни мне, ни тебе, рубите.
+</p>
+<div class="num">27</div><p id="n27">И отвечал царь и сказал: отдайте этой живое дитя, и не умерщвляйте его: она - его мать.
+</p>
+<div class="num">28</div><p id="n28">И услышал весь Израиль о суде, как рассудил царь; и стали бояться царя, ибо увидели, что мудрость Божия в нем, чтобы производить суд.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king3.4.ru.html">к главе 4</a></div></div>
+
+</body>
+</html>

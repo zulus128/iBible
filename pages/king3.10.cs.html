@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king3.cs.html">G цaрствъ</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA ‹
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# цари1ца сaвска ўслhша и4мz соломHне и3 и4мz гDне, и3 пріи1де и3скуси1ти є3го2 при1тчами:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и3 пріи1де во їеrли1мъ съ си1лою тsжкою ѕэлw2: и3 на велблю1дэхъ привез0ша ґрwмaты и3 злaта мн0гw ѕэлw2, и3 кaменіе драг0е: и3 вни1де къ соломHну и3 глаг0ла є3мY <nobr>вс‰,</nobr> є3ли6ка и3мЁ на сeрдцы своeмъ.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И# возвэсти2 є4й соломHнъ <nobr>вс‰</nobr> глаг0лы є3S: и3 не бЁ сл0во презрёно t царS, є3г0же не возвэсти2 є4й.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И# ви1дэ цари1ца сaвска вeсь смhслъ соломHнь и3 д0мъ є3г0же создA,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и3 снBди соломw6ни, и3 жили6ща nтрокHвъ є3гw2, и3 предстоsніе служaщихъ є3мY, и3 њблачeніе є3гw2, и3 віночeрпцы є3гw2, и3 всесожжє1ніz є3гw2, ±же приношaше во хрaмэ гDни, и3 внЁ себє2 бhсть,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и3 речE къ соломHну царю2: и4стинна сyть словесA, ±же слhшахъ въ земли2 моeй,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">њ словесёхъ твои1хъ и3 њ смhслэ твоeмъ: и3 не ћхъ вёры глаг0лющымъ ми2, д0ндеже пріид0хъ сёмw, и3 ви1дэста џчи мои2: и3 сE, нёсть ни п0лъ тогw2, ћкоже ми2 повёдаша: приложи1лъ є3си2 премyдрость и3 благ†z къ си6мъ пaче всsкагw слyха, є3г0же слhшахъ въ земли2 моeй:
+</p>
+<div class="num">&nbsp;8</div><p id="n8">блажє1нны жєны2 <nobr>тво‰,</nobr> блажeни џтроцы твои2 сjи, и5же предстоsтъ пред8 тоб0ю всегдA, слhшаще всsкій смhслъ тв0й:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">бyди гDь бGъ тв0й блгcвeнъ, и4же восхотЁ тS дaти на прест0лъ <nobr>ї}левъ,</nobr> понeже возлюби2 гDь <nobr>ї}лz</nobr> ўтверди1ти во вёки и3 постaви тS царS над8 ни1ми твори1ти сyдъ въ прaвдэ и3 въ судбaхъ и4хъ.
+</p>
+<div class="num">10</div><p id="n10">И# дадE соломHну сто2 и3 двaдесzть тал†нтъ злaта, и3 ґрwмaты мнHги ѕэлw2, и3 кaменіе драг0е: не пріид0ша є3щE таковы6z ґрwмaты во мн0жествэ, ±же дадE цари1ца сaвска царю2 соломHну.
+</p>
+<div class="num">11</div><p id="n11">И# корaбль хірaмль приносsщь злaто и3з8 сwфjра, (и3) принесE древA нетє1сана мнHга ѕэлw2, и3 кaменіе драг0е.
+</p>
+<div class="num">12</div><p id="n12">И# сотвори2 цaрь дрeвомъ нетeсанымъ подпHры хрaму гDню и3 д0му царeву, и3 сопBли и3 гyсли пэвцє1мъ: не пріид0ша по сeмъ такwвaz древесA нетє1санаz на земли2, нижE ви6дэна бhша гдЁ дaже до днE сегw2.
+</p>
+<div class="num">13</div><p id="n13">И# цaрь соломHнъ дадE цари1цэ сaвстэй <nobr>вс‰,</nobr> є3ли6ка восхотЁ и3 є3ли6ки проси2 ў негw2, кромЁ всёхъ, ±же дадE є4й рукaма свои1ма соломHнъ цaрь, И# возврати1сz, и3 tи1де въ зeмлю свою2, самA и3 вси2 џтроцы є3S.
+</p>
+<div class="num">14</div><p id="n14">И# бЁ вёсъ принесeннагw злaта соломHну во є3ди1но лёто шeсть сHтъ и3 шестьдесsтъ и3 шeсть тал†нтъ злaта,
+</p>
+<div class="num">15</div><p id="n15">кромЁ дaней t п0дданныхъ и3 t купцHвъ и3 t всёхъ царeй стрaнныхъ и3 t воев0дъ земнhхъ.
+</p>
+<div class="num">16</div><p id="n16">И# сотвори2 цaрь соломHнъ три1ста к0пій златhхъ к0ванныхъ, по три1ста златhхъ во є3ди1но копіE вдёла:
+</p>
+<div class="num">17</div><p id="n17">и3 три1ста щитHвъ к0ванныхъ златhхъ, по три2 ли6тры злaта бsше на к0емждо щитЁ: и3 дадE <nobr>|</nobr> цaрь во хрaмъ дубрaвы лівaнскіz.
+</p>
+<div class="num">18</div><p id="n18">И# сотвори2 цaрь прест0лъ t костeй слон0выхъ вeлій и3 позлати2 є3го2 злaтомъ и3скушeнымъ:
+</p>
+<div class="num">19</div><p id="n19">шeсть степeней прест0лу, и3 џбразы телцHвъ прест0лу созади2, и3 вeрхъ прест0ла крyглъ бЁ созади2 є3гw2, и3 рyцэ сю1ду и3 сю1ду на прест0лэ сэдaлища, и3 двA льв† стwsща при рукaхъ,
+</p>
+<div class="num">20</div><p id="n20">и3 дванaдесzть львы2 стоsще тY на шести2 степeнехъ сю1ду и3 сю1ду: не бsше тaкw во всsкомъ цaрствэ.
+</p>
+<div class="num">21</div><p id="n21">И# вси2 сосyди, и5же бsху при царЁ соломHнэ, злaти бёша, и3 ўмыв†лницы зл†ты и3 вси2 сосyди въ хрaмэ дубрaвы лівaнскіz златоков†нны: не бsше сребрA, понeже за ничто2 бЁ сребро2 во дни6 соломw6ни:
+</p>
+<div class="num">22</div><p id="n22">корaбль бо fарсjйскій царю2 соломHну на м0ри съ корабли6 хірaмлими, є3ди1ною во тріeхъ лётэхъ прихождaше царeви корaбль и3з8 fарсjса и3 приношaше злaто и3 сребро2, и3 зyбы слонHвы, и3 пjfики и3 п†вы, и3 кaменіе т0ченое и3 тeсаное.
+</p>
+<div class="num">23</div><p id="n23">И# возвели1чисz соломHнъ пaче всёхъ царeй земнhхъ и3 богaтствомъ и3 смhсломъ.
+</p>
+<div class="num">24</div><p id="n24">И# вси2 цaріе зeмстіи и3скaху ви1дэти лицE соломHна, є4же бы ўслhшати смhсла є3гw2, є3г0же дадE є3мY гDь въ сeрдцы є3гw2:
+</p>
+<div class="num">25</div><p id="n25">и3 тjи приношaху кjйждо дaры <nobr>сво‰,</nobr> и3 сосyды зл†ты и3 срє1брzны, и3 ри6зы, ст†кти и3 слaдкwсти, и3 к0ни и3 мски2 на всsкое лёто.
+</p>
+<div class="num">26</div><p id="n26">И# собрA соломHнъ колесни6цы и3 к0ни, и3 бsху соломHну четhредесzть тhсzщъ кобыли1цъ въ колєсни1цы, и3 дванaдесzть тhсzщъ к0нныхъ: и3 постaви <nobr>|</nobr> во градёхъ колесни1цъ, ґ (друзjи бsху) ў царS во їеrли1мэ: и3 бЁ властели1нъ всBмъ царє1мъ t рэки2 и3 до земли2 и3ноплемє1нникъ и3 до предBлъ є3гЂпта.
+</p>
+<div class="num">27</div><p id="n27">И# сложи2 цaрь злaто и3 сребро2 во їеrли1мэ ћкоже кaменіе, и3 кeдры сложи2 ћкоже черни1чіе, є4же на п0ли во мн0жествэ.
+</p>
+<div class="num">28</div><p id="n28">И# привождaху соломHну к0ни t є3гЂпта и3 t fекyz купцы2 цaрстіи и3 куповaху t fекyz промёною.
+</p>
+<div class="num">29</div><p id="n29">И# прихождaху колєсни1цы и3з8 є3гЂпта за шeсть сHтъ срeбрєникъ, и3 к0нь за сто2 пzтьдесsтъ срeбрєникъ: тaкожде и3 ко всBмъ царє1мъ хетт‡мскимъ и3 сmр‡йскимъ по м0рю и3схождaху.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king3.11.cs.html">главA №i</a></div></div>
+
+</body>
+</html>

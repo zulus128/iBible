@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="isa.ru.html">Книга Пророка Исаии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 36
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И было в четырнадцатый год царя Езекии, пошел Сеннахирим, царь Ассирийский, против всех укрепленных городов Иудеи и взял их.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И послал царь Ассирийский из Лахиса в Иерусалим к царю Езекии Рабсака с большим войском; и он остановился у водопровода верхнего пруда на дороге поля белильничьего.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И вышел к нему Елиаким, сын Хелкиин, начальник дворца, и Севна писец, и Иоах, сын Асафов, дееписатель.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И сказал им Рабсак: скажите Езекии: так говорит царь великий, царь Ассирийский: что это за упование, на которое ты уповаешь?
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Я думаю, <i>что</i> это одни пустые слова, <i>а</i> для войны нужны совет и сила: итак на кого ты уповаешь, что отложился от меня?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Вот, ты думаешь опереться на Египет, на эту трость надломленную, которая, если кто опрется на нее, войдет тому в руку и проколет ее! Таков фараон, царь Египетский, для всех уповающих на него.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">А если скажешь мне: "на Господа, Бога нашего мы уповаем", то на того ли, которого высоты и жертвенники отменил Езекия и сказал Иуде и Иерусалиму: "пред сим только жертвенником поклоняйтесь"?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Итак вступи в союз с господином моим, царем Ассирийским; я дам тебе две тысячи коней; можешь ли достать себе всадников на них?
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И как ты хочешь заставить отступить вождя, одного из малейших рабов господина моего, надеясь на Египет, ради колесниц и коней?
+</p>
+<div class="num">10</div><p id="n10">Да разве я без воли Господней пошел на землю сию, чтобы разорить ее? Господь сказал мне: пойди на землю сию и разори ее.
+</p>
+<div class="num">11</div><p id="n11">И сказал Елиаким и Севна и Иоах Рабсаку: говори рабам твоим по-арамейски, потому что мы понимаем, а не говори с нами по-иудейски, вслух народа, который на стене.
+</p>
+<div class="num">12</div><p id="n12">И сказал Рабсак: разве <i>только</i> к господину твоему и к тебе послал меня господин мой сказать слова сии? Нет, <i>также</i> и к людям, которые сидят на стене, чтобы есть помет свой и пить мочу свою с вами.
+</p>
+<div class="num">13</div><p id="n13">И встал Рабсак, и возгласил громким голосом по-иудейски, и сказал: слушайте слово царя великого, царя Ассирийского!
+</p>
+<div class="num">14</div><p id="n14">Так говорит царь: пусть не обольщает вас Езекия, ибо он не может спасти вас;
+</p>
+<div class="num">15</div><p id="n15">и пусть не обнадеживает вас Езекия Господом, говоря: "спасет нас Господь; не будет город сей отдан в руки царя Ассирийского".
+</p>
+<div class="num">16</div><p id="n16">Не слушайте Езекии, ибо так говорит царь Ассирийский: примиритесь со мною и выйдите ко мне, и пусть каждый ест плоды виноградной лозы своей и смоковницы своей, и пусть каждый пьет воду из своего колодезя,
+</p>
+<div class="num">17</div><p id="n17">доколе я не приду и не возьму вас в землю такую же, как и ваша земля, в землю хлеба и вина, в землю плодов и виноградников.
+</p>
+<div class="num">18</div><p id="n18"><i>Итак</i> да не обольщает вас Езекия, говоря: "Господь спасет нас". Спасли ли боги народов, каждый свою землю, от руки царя Ассирийского?
+</p>
+<div class="num">19</div><p id="n19">Где боги Емафа и Арпада? Где боги Сепарваима? Спасли ли они Самарию от руки моей?
+</p>
+<div class="num">20</div><p id="n20">Который из всех богов земель сих спас землю свою от руки моей? Так неужели спасет Господь Иерусалим от руки моей?
+</p>
+<div class="num">21</div><p id="n21">Но они молчали и не отвечали ему ни слова, потому что от царя дано было приказание: не отвечайте ему.
+</p>
+<div class="num">22</div><p id="n22">И пришел Елиаким, сын Хелкиин, начальник дворца, и Севна писец, и Иоах, сын Асафов, дееписатель, к Езекии в разодранных одеждах и пересказали ему слова Рабсака.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="isa.37.ru.html">к главе 37</a></div></div>
+
+</body>
+</html>

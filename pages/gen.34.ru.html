@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 34
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Дина, дочь Лии, которую она родила Иакову, вышла посмотреть на дочерей земли той.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И увидел ее Сихем, сын Еммора Евеянина, князя земли той, и взял ее, и спал с нею, и сделал ей насилие.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И прилепилась душа его к Дине, дочери Иакова, и он полюбил девицу и говорил по сердцу девицы.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И сказал Сихем Еммору, отцу своему, говоря: возьми мне эту девицу в жену.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Иаков слышал, что [сын Емморов] обесчестил Дину, дочь его, но как сыновья его были со скотом его в поле, то Иаков молчал, пока не пришли они.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И вышел Еммор, отец Сихемов, к Иакову, поговорить с ним.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Сыновья же Иакова пришли с поля, и когда услышали, то огорчились мужи те и воспылали гневом, потому что бесчестие сделал он Израилю, переспав с дочерью Иакова, а так не надлежало делать.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Еммор стал говорить им, и сказал: Сихем, сын мой, прилепился душею к дочери вашей; дайте же ее в жену ему;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">породнитесь с нами; отдавайте за нас дочерей ваших, а наших дочерей берите себе [за сыновей ваших];
+</p>
+<div class="num">10</div><p id="n10">и живите с нами; земля сия [пространна] пред вами, живите и промышляйте на ней и приобретайте ее во владение.
+</p>
+<div class="num">11</div><p id="n11">Сихем же сказал отцу ее и братьям ее: только бы мне найти благоволение в очах ваших, я дам, что ни скажете мне;
+</p>
+<div class="num">12</div><p id="n12">назначьте самое большое вено и дары; я дам, что ни скажете мне, только отдайте мне девицу в жену.
+</p>
+<div class="num">13</div><p id="n13">И отвечали сыновья Иакова Сихему и Еммору, отцу его, с лукавством; а говорили так потому, что он обесчестил Дину, сестру их;
+</p>
+<div class="num">14</div><p id="n14">и сказали им [Симеон и Левий, братья Дины, сыновья Лиины]: не можем этого сделать, выдать сестру нашу за человека, который необрезан, ибо это бесчестно для нас;
+</p>
+<div class="num">15</div><p id="n15">только на том условии мы согласимся с вами [и поселимся у вас], если вы будете как мы, чтобы и у вас весь мужеский пол был обрезан;
+</p>
+<div class="num">16</div><p id="n16">и будем отдавать за вас дочерей наших и брать за себя ваших дочерей, и будем жить с вами, и составим один народ;
+</p>
+<div class="num">17</div><p id="n17">а если не послушаетесь нас в том, чтобы обрезаться, то мы возьмем дочь нашу и удалимся.
+</p>
+<div class="num">18</div><p id="n18">И понравились слова сии Еммору и Сихему, сыну Емморову.
+</p>
+<div class="num">19</div><p id="n19">Юноша не умедлил исполнить это, потому что любил дочь Иакова. А он более всех уважаем был из дома отца своего.
+</p>
+<div class="num">20</div><p id="n20">И пришел Еммор и Сихем, сын его, к воротам города своего, и стали говорить жителям города своего и сказали:
+</p>
+<div class="num">21</div><p id="n21">сии люди мирны с нами; пусть они селятся на земле и промышляют на ней; земля же вот пространна пред ними. Станем брать дочерей их себе в жены и наших дочерей выдавать за них.
+</p>
+<div class="num">22</div><p id="n22">Только на том условии сии люди соглашаются жить с нами и быть одним народом, чтобы и у нас обрезан был весь мужеский пол, как они обрезаны.
+</p>
+<div class="num">23</div><p id="n23">Не для нас ли стада их, и имение их, и весь скот их? Только [в том] согласимся с ними, и будут жить с нами.
+</p>
+<div class="num">24</div><p id="n24">И послушались Еммора и Сихема, сына его, все выходящие из ворот города его: и обрезан был весь мужеский пол,- все выходящие из ворот города его.
+</p>
+<div class="num">25</div><p id="n25">На третий день, когда они были в болезни, два сына Иакова, Симеон и Левий, братья Динины, взяли каждый свой меч, и смело напали на город, и умертвили весь мужеский пол;
+</p>
+<div class="num">26</div><p id="n26">и самого Еммора и Сихема, сына его, убили мечом; и взяли Дину из дома Сихемова и вышли.
+</p>
+<div class="num">27</div><p id="n27">Сыновья Иакова пришли к убитым и разграбили город за то, что обесчестили [Дину] сестру их.
+</p>
+<div class="num">28</div><p id="n28">Они взяли мелкий и крупный скот их, и ослов их, и что ни было в городе, и что ни было в поле;
+</p>
+<div class="num">29</div><p id="n29">и все богатство их, и всех детей их, и жен их взяли в плен, и разграбили всё, что было в [городе, и всё, что было в] домах.
+</p>
+<div class="num">30</div><p id="n30">И сказал Иаков Симеону и Левию: вы возмутили меня, сделав меня ненавистным для [всех] жителей сей земли, для Хананеев и Ферезеев. У меня людей мало; соберутся против меня, поразят меня, и истреблен буду я и дом мой.
+</p>
+<div class="num">31</div><p id="n31">Они же сказали: а разве можно поступать с сестрою нашею, как с блудницею!
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.35.ru.html">к главе 35</a></div></div>
+
+</body>
+</html>

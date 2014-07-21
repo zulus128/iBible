@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="hos.ru.html">Книга Пророка Осии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 9
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Не радуйся, Израиль, до восторга, как <i>другие</i> народы, ибо ты блудодействуешь, удалившись от Бога твоего: любишь блудодейные дары на всех гумнах.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Гумно и точило не будут питать их, и <i>надежда</i> на виноградный сок обманет их.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Не будут они жить на земле Господней: Ефрем возвратится в Египет, и в Ассирии будут есть нечистое.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Не будут возливать Господу вина, и неугодны Ему будут жертвы их; они будут для них, как хлеб похоронный: все, которые будут есть его, осквернятся, ибо хлеб их - для души их, а в дом Господень он не войдет.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Что будете делать в день торжества и в день праздника Господня?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Ибо вот, они уйдут по причине опустошения; Египет соберет их, Мемфис похоронит их; драгоценностями их из серебра завладеет крапива, колючий терн будет в шатрах их.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Пришли дни посещения, пришли дни воздаяния; да узнает Израиль, что глуп прорицатель, безумен выдающий себя за вдохновенного, по причине множества беззаконий твоих и великой враждебности.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ефрем - страж подле Бога моего; пророк - сеть птицелова на всех путях его; соблазн в доме Бога его.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Глубоко упали они, развратились, как во дни Гивы; Он вспомнит нечестие их, накажет их за грехи их.
+</p>
+<div class="num">10</div><p id="n10">Как виноград в пустыне, Я нашел Израиля; как первую ягоду на смоковнице, в первое время ее, увидел Я отцов ваших,- но они пошли к Ваал-Фегору и предались постыдному, и сами стали мерзкими, как те, которых возлюбили.
+</p>
+<div class="num">11</div><p id="n11">У Ефремлян, как птица улетит слава [чадородия]: ни рождения, ни беременности, ни зачатия [не будет].
+</p>
+<div class="num">12</div><p id="n12">А хотя бы они и воспитали детей своих, отниму их; ибо горе им, когда удалюсь от них!
+</p>
+<div class="num">13</div><p id="n13">Ефрем, как Я видел его до Тира, насажден на прекрасной местности; однако Ефрем выведет детей своих к убийце.
+</p>
+<div class="num">14</div><p id="n14">Дай им, Господи: что Ты дашь им? дай им утробу нерождающую и сухие сосцы.
+</p>
+<div class="num">15</div><p id="n15">Все зло их в Галгале: там Я возненавидел их за злые дела их; изгоню их из дома Моего, не буду больше любить их; все князья их - отступники.
+</p>
+<div class="num">16</div><p id="n16">Поражен Ефрем; иссох корень их,- не будут приносить они плода, а если и будут рождать, Я умерщвлю вожделенный плод утробы их.
+</p>
+<div class="num">17</div><p id="n17">Отвергнет их Бог мой, потому что они не послушались Его, и будут скитальцами между народами.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="hos.10.ru.html">к главе 10</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="eze.ru.html">Книга Пророка Иезекииля</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 29
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В десятом году, в десятом <i>месяце</i>, в двенадцатый <i>день</i> месяца, было ко мне слово Господне:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">сын человеческий! обрати лице твое к фараону, царю Египетскому, и изреки пророчество на него и на весь Египет.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Говори и скажи: так говорит Господь Бог: вот, Я - на тебя, фараон, царь Египетский, большой крокодил, который, лежа среди рек своих, говоришь: "моя река, и я создал ее для себя".
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Но Я вложу крюк в челюсти твои и к чешуе твоей прилеплю рыб из рек твоих, и вытащу тебя из рек твоих со всею рыбою рек твоих, прилипшею к чешуе твоей;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и брошу тебя в пустыне, тебя и всю рыбу из рек твоих, ты упадешь на открытое поле, не уберут и не подберут тебя; отдам тебя на съедение зверям земным и птицам небесным.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И узнают все обитатели Египта, что Я Господь; потому что они дому Израилеву были подпорою тростниковою.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Когда они ухватились за тебя рукою, ты расщепился и все плечо исколол им; и когда они оперлись о тебя, ты сломился и изранил все чресла им.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Посему так говорит Господь Бог: вот, Я наведу на тебя меч, и истреблю у тебя людей и скот.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сделается земля Египетская пустынею и степью; и узнают, что Я Господь. Так как он говорит: "моя река, и я создал ее";
+</p>
+<div class="num">10</div><p id="n10">то вот, Я - на реки твои, и сделаю землю Египетскую пустынею из пустынь от Мигдола до Сиены, до самого предела Ефиопии.
+</p>
+<div class="num">11</div><p id="n11">Не будет проходить по ней нога человеческая, и нога скотов не будет проходить по ней, и не будут обитать на ней сорок лет.
+</p>
+<div class="num">12</div><p id="n12">И сделаю землю Египетскую пустынею среди земель опустошенных; и города ее среди опустелых городов будут пустыми сорок лет, и рассею Египтян по народам, и развею их по землям.
+</p>
+<div class="num">13</div><p id="n13">Ибо так говорит Господь Бог: по окончании сорока лет Я соберу Египтян из народов, между которыми они будут рассеяны;
+</p>
+<div class="num">14</div><p id="n14">и возвращу плен Египта, и обратно приведу их в землю Пафрос, в землю происхождения их, и там они будут царством слабым.
+</p>
+<div class="num">15</div><p id="n15">Оно будет слабее <i>других</i> царств, и не будет более возноситься над народами; Я умалю их, чтобы они не господствовали над народами.
+</p>
+<div class="num">16</div><p id="n16">И не будут впредь дому Израилеву опорою, припоминающею беззаконие их, когда они обращались к нему; и узнают, что Я Господь Бог.
+</p>
+<div class="num">17</div><p id="n17">В двадцать седьмом году, в первом <i>месяце</i>, в первый <i>день</i> месяца, было ко мне слово Господне:
+</p>
+<div class="num">18</div><p id="n18">сын человеческий! Навуходоносор, царь Вавилонский, утомил свое войско большими работами при Тире; все головы оплешивели и все плечи стерты; а ни ему, ни войску его нет вознаграждения от Тира за работы, которые он употребил против него.
+</p>
+<div class="num">19</div><p id="n19">Посему так говорит Господь Бог: вот, Я Навуходоносору, царю Вавилонскому, даю землю Египетскую, чтобы он обобрал богатство ее и произвел грабеж в ней, и ограбил награбленное ею, и это будет вознаграждением войску его.
+</p>
+<div class="num">20</div><p id="n20">В награду за дело, которое он произвел в нем, Я отдаю ему землю Египетскую, потому что они делали это для Меня, сказал Господь Бог.
+</p>
+<div class="num">21</div><p id="n21">В тот день возвращу рог дому Израилеву, и тебе открою уста среди них, и узнают, что Я Господь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="eze.30.ru.html">к главе 30</a></div></div>
+
+</body>
+</html>

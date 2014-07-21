@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="varuh.ru.html">Книга Пророка Варуха</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Вот книга заповедей Божиих и закон, пребывающий вовек. Все, держащиеся ее, будут жить, а оставляющие ее умрут.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Обратись, Иаков, и возьми ее, ходи при сиянии света ее.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Не отдавай другому славы твоей, и полезного для тебя - чужому народу.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Счастливы мы, Израиль, что мы знаем, что благоугодно Богу.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Дерзай, народ мой, памятник Израиля!
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Вы преданы язычникам не на погибель, но за то, что вы прогневали Бога, вы преданы врагам;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">ибо раздражили Сотворившего вас, принося жертвы бесам, а не Богу.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Вы забыли питающего вас вечного Бога, а также огорчили и воспитавший вас Иерусалим,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">ибо он видел пришедший на вас гнев от Бога и говорил: "слушайте, сожители Сиона, Бог навел на меня великую скорбь,
+</p>
+<div class="num">10</div><p id="n10">ибо я видел пленение сыновей моих и дочерей, которое навел на них Вечный.
+</p>
+<div class="num">11</div><p id="n11">Я питал их с радостью, а отпустил с плачем и горестью.
+</p>
+<div class="num">12</div><p id="n12">Никто не радуйся о мне, вдовствующем и оставленном многими; я опустел за грехи детей моих, ибо они уклонились от закона Божия;
+</p>
+<div class="num">13</div><p id="n13">не познали уставов Его, не ходили путями заповедей Бога, и не вступили на стези учения в правде Его.
+</p>
+<div class="num">14</div><p id="n14">Придите, сожители Сиона, и вспомните пленение сыновей моих и дочерей, которое навел на них Вечный.
+</p>
+<div class="num">15</div><p id="n15">Ибо Он навел на них народ издалека, народ наглый и иноязычный, ибо не устыдились старца, и не сжалились над младенцем,
+</p>
+<div class="num">16</div><p id="n16">и увели у вдовы <i>сыновей</i> возлюбленных, и лишили одинокую дочерей.
+</p>
+<div class="num">17</div><p id="n17">Я же чем могу помочь вам?
+</p>
+<div class="num">18</div><p id="n18">Кто навел на вас сии бедствия, Тот и избавит вас от руки врагов ваших.
+</p>
+<div class="num">19</div><p id="n19">Идите, дети, идите, ибо я остался пуст.
+</p>
+<div class="num">20</div><p id="n20">Я снял с себя одежду мира и оделся вретищем моления моего; буду взывать к Вечному во дни мои.
+</p>
+<div class="num">21</div><p id="n21">Дерзайте, дети, взывайте к Богу, и Он избавит вас от насилия, от руки врагов.
+</p>
+<div class="num">22</div><p id="n22">Ибо от Вечного я ожидал спасения вашего, и мне пришла от Святаго радость о милости, которая скоро придет к вам от Вечного, Спасителя нашего.
+</p>
+<div class="num">23</div><p id="n23">Я отпускал вас с печалью и горестью, но Бог возвратит мне вас с радостью и весельем навеки.
+</p>
+<div class="num">24</div><p id="n24">Ибо, как ныне сожители Сиона видели пленение ваше, так увидят скоро спасение ваше от Бога, которое придет к вам с великою славою и величием Вечного.
+</p>
+<div class="num">25</div><p id="n25">Дети! потерпите постигший вас от Бога гнев: преследовал тебя враг, но ты скоро увидишь погибель его, и наступишь ему на шею.
+</p>
+<div class="num">26</div><p id="n26">Воспитанные у меня в неге пошли жесткими путями, схвачены, как стадо, расхищенное врагами.
+</p>
+<div class="num">27</div><p id="n27">Дерзайте, дети, и взывайте к Богу, ибо о вас вспомнит Тот, Кто навел на вас это.
+</p>
+<div class="num">28</div><p id="n28">Какова была решимость ваша, чтобы удалиться от Бога, увеличьте ее в десять раз, чтобы обратиться и искать Его,
+</p>
+<div class="num">29</div><p id="n29">ибо Тот, Который навел на вас сии бедствия, наведет на вас вечное веселье со спасением".
+</p>
+<div class="num">30</div><p id="n30">Дерзай, Иерусалим! Даровавший тебе имя утешит тебя.
+</p>
+<div class="num">31</div><p id="n31">Несчастны те, которые оскорбляли тебя и радовались твоему падению.
+</p>
+<div class="num">32</div><p id="n32">Несчастны города, которым служили дети твои, несчастна <i>земля,</i> принявшая сыновей твоих,
+</p>
+<div class="num">33</div><p id="n33">ибо, как она радовалась о твоем падении и веселилась о твоем поражении, так будет скорбеть о своем опустошении.
+</p>
+<div class="num">34</div><p id="n34">Я отниму у нее радость о множестве <i>ее</i> народа, и хвастовство ее <i>будет</i> в печаль;
+</p>
+<div class="num">35</div><p id="n35">ибо придет на нее огонь от Вечного на долгие дни, и весьма долгое время она будет обитаема бесами.
+</p>
+<div class="num">36</div><p id="n36">Оглянись, Иерусалим, на восток, и посмотри на радость, грядущую к тебе от Бога.
+</p>
+<div class="num">37</div><p id="n37">Вот, идут сыновья твои, которых ты отпустил, идут собранные от востока до запада словом Святаго, радуясь о славе Божией.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="varuh.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

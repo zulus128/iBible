@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nee.ru.html">Книга Неемии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 8
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Когда наступил седьмой месяц, и сыны Израилевы <i>жили</i> по городам своим, тогда собрался весь народ, как один человек, на площадь, которая пред Водяными воротами, и сказали книжнику Ездре, чтоб он принес книгу закона Моисеева, который заповедал Господь Израилю.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И принес священник Ездра закон пред собрание мужчин и женщин, и всех, которые могли понимать, в первый день седьмого месяца;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и читал из него на площади, которая пред Водяными воротами, от рассвета до полудня, пред мужчинами и женщинами и всеми, которые могли понимать; и уши всего народа <i>были</i> <i>приклонены</i> к книге закона.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Книжник Ездра стоял на деревянном возвышении, которое для сего сделали, а подле него, по правую руку его, стояли Маттифия и Шема, и Анаия и Урия, и Хелкия и Маасея, а по левую руку его Федаия и Мисаил, и Малхия и Хашум, и Хашбаддана, и Захария и Мешуллам.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И открыл Ездра книгу пред глазами всего народа, потому что он стоял выше всего народа. И когда он открыл ее, весь народ встал.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И благословил Ездра Господа Бога великого. И весь народ отвечал: аминь, аминь, поднимая вверх руки свои,- и поклонялись и повергались пред Господом лицем до земли.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Иисус, Ванаия, Шеревия, Иамин, Аккув, Шавтай, Годия, Маасея, Клита, Азария, Иозавад, Ханан, Фелаия и левиты поясняли народу закон, между тем как народ стоял на своем месте.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И читали из книги, из закона Божия, внятно, и присоединяли толкование, и <i>народ</i> понимал прочитанное.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Тогда Неемия, он же Тиршафа, и книжник Ездра, священник, и левиты, учившие народ, сказали всему народу: день сей свят Господу Богу вашему; не печальтесь и не плачьте, потому что весь народ плакал, слушая слова закона.
+</p>
+<div class="num">10</div><p id="n10">И сказал им: пойдите, ешьте тучное и пейте сладкое, и посылайте части тем, у кого ничего не приготовлено, потому что день сей свят Господу нашему. И не печальтесь, потому что радость пред Господом - подкрепление для вас.
+</p>
+<div class="num">11</div><p id="n11">И левиты успокаивали весь народ, говоря: перестаньте, ибо день сей свят, не печальтесь.
+</p>
+<div class="num">12</div><p id="n12">И пошел весь народ есть, и пить, и посылать части, и праздновать с великим веселием, ибо поняли слова, которые сказали им.
+</p>
+<div class="num">13</div><p id="n13">На другой день собрались главы поколений от всего народа, священники и левиты к книжнику Ездре, чтобы он изъяснял им слова закона.
+</p>
+<div class="num">14</div><p id="n14">И нашли написанное в законе, который Господь дал чрез Моисея, чтобы сыны Израилевы в седьмом месяце, в праздник, жили в кущах.
+</p>
+<div class="num">15</div><p id="n15">И потому объявили и провозгласили по всем городам своим и в Иерусалиме, говоря: пойдите на гору и несите ветви маслины садовой и ветви маслины дикой, и ветви миртовые и ветви пальмовые, и ветви <i>других</i> широколиственных дерев, чтобы сделать кущи по написанному.
+</p>
+<div class="num">16</div><p id="n16">И пошел народ, и принесли, и сделали себе кущи, каждый на своей кровле и на дворах своих, и на дворах дома Божия, и на площади у Водяных ворот, и на площади у Ефремовых ворот.
+</p>
+<div class="num">17</div><p id="n17">Все общество возвратившихся из плена сделало кущи и жило в кущах. От дней Иисуса, сына Навина, до этого дня не делали так сыны Израилевы. Радость была весьма великая.
+</p>
+<div class="num">18</div><p id="n18">И читали из книги закона Божия каждый день, от первого дня до последнего дня. И праздновали праздник семь дней, а в восьмой день попразднество по уставу.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nee.9.ru.html">к главе 9</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para1.ru.html">Первая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Сыновья Иуды: Фарес, Есром, Харми, Хур и Шовал.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Реаия, сын Шовала, родил Иахафа; Иахаф родил Ахума и Лагада: от них племена Цорян.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И сии сыновья Етама: Изреель, Ишма и Идбаш, и сестра их, по имени Гацлелпони,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Пенуел, отец Гедора, и Езер, отец Хуша. Вот сыновья Хура, первенца Ефрафы, отца Вифлеема.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">У Ахшура, отца Фекои, были две жены: Хела и Наара.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И родила ему Наара Ахузама, Хефера, Фимни и Ахашфари; это сыновья Наары.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Сыновья Хелы: Цереф, Цохар и Ефнан.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Коц родил: Анува и Цовева и племена Ахархела, сына Гарумова.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Иавис был знаменитее своих братьев. Мать дала ему имя Иавис, сказав: я родила его с болезнью.
+</p>
+<div class="num">10</div><p id="n10">И воззвал Иавис к Богу Израилеву <i>и</i> сказал: о, если бы Ты благословил меня Твоим благословением, распространил пределы мои, и рука Твоя была со мною, охраняя <i>меня</i> от зла, чтобы я не горевал!.. И Бог ниспослал <i>ему,</i> чего он просил.
+</p>
+<div class="num">11</div><p id="n11">Хелув же, брат Шухи, родил Махира; он есть отец Ештона.
+</p>
+<div class="num">12</div><p id="n12">Ештон родил Беф-Рафу, Пасеаха и Техинну, отца города Нааса [брата Селома Кенезиина и Ахазова]; это жители Рехи.
+</p>
+<div class="num">13</div><p id="n13">Сыновья Кеназа: Гофониил и Сераия. Сын Гофониила: Хафаф.
+</p>
+<div class="num">14</div><p id="n14">Меонофай родил Офру, а Сераия родил Иоава, родоначальника долины плотников, потому что они были плотники.
+</p>
+<div class="num">15</div><p id="n15">Сыновья Халева, сына Иефонниина: Ир, Ила и Наам. Сын Илы: Кеназ.
+</p>
+<div class="num">16</div><p id="n16">Сыновья Иегаллелела: Зиф, Зифа, Фирия и Асареел.
+</p>
+<div class="num">17</div><p id="n17">Сыновья Езры: Иефер, Меред, Ефер и Иалон; Иефер же родил Мерома, Шаммая и Ишбаха, отца Ешфемои.
+</p>
+<div class="num">18</div><p id="n18">И жена его Иудия родила Иереда, отца Гедора, и Хевера, отца Сохо, и Иекуфиила, отца Занаоха. Это сыновья Бифьи, дочери фараоновой, которую взял Меред.
+</p>
+<div class="num">19</div><p id="n19">Сыновья жены его Годии, сестры Нахама, отца Кеилы: Гарми и Ешфемоа - Маахатянин.
+</p>
+<div class="num">20</div><p id="n20">Сыновья Симеона: Амнон, Ринна, Бенханан и Филон. Сыновья Ишия: Зохеф и Бензохеф.
+</p>
+<div class="num">21</div><p id="n21">Сыновья Силома, сына Иудина: Ир, отец Лехи, и Лаеда, отец Мареши, и семейства выделывавших виссон, из дома Ашбеи,
+</p>
+<div class="num">22</div><p id="n22">и Иоким, и жители Хозевы, и Иоаш и Сараф, которые имели владение в Моаве, и Иашувилехем; но это события древние.
+</p>
+<div class="num">23</div><p id="n23">Они <i>были</i> горшечники, и жили при садах и в огородах; у царя для работ его жили они там.
+</p>
+<div class="num">24</div><p id="n24">Сыновья Симеона: Немуил, Иамин, Иарив, Зерах и Саул.
+</p>
+<div class="num">25</div><p id="n25">Шаллум сын его; его сын Мивсам; его сын Мишма.
+</p>
+<div class="num">26</div><p id="n26">Сыновья Мишмы: Хаммуил, сын его; его сын Закур; его сын Шимей.
+</p>
+<div class="num">27</div><p id="n27">У Шимея <i>было</i> шестнадцать сыновей и шесть дочерей; у братьев же его сыновей <i>было</i> немного, и все племя их не так было многочисленно, как племя сынов Иуды.
+</p>
+<div class="num">28</div><p id="n28">Они жили в Вирсавии, Моладе, Хацаршуале,
+</p>
+<div class="num">29</div><p id="n29">в Билге, в Ецеме, в Фоладе,
+</p>
+<div class="num">30</div><p id="n30">в Вефуиле, в Хорме, в Циклаге,
+</p>
+<div class="num">31</div><p id="n31">в Беф-Маркавофе, в Хацарсусиме, в Беф-Биреи и в Шаариме. Вот города их до царствования Давидова,
+</p>
+<div class="num">32</div><p id="n32">с селами их: Етам, Аин, Риммон, Фокен и Ашан,- пять городов.
+</p>
+<div class="num">33</div><p id="n33">И все селения их, которые находились вокруг сих городов до Ваала; вот места жительства их и родословия их.
+</p>
+<div class="num">34</div><p id="n34">Мешовав, Иамлех и Иосия, сын Амассии,
+</p>
+<div class="num">35</div><p id="n35">Иоил и Иегу, сын Иошиви, сына Сераии, сына Асиилова,
+</p>
+<div class="num">36</div><p id="n36">Елиоенай, Иакова, Ишохаия, Асаия, Адиил, Ишимиил и Ванея,
+</p>
+<div class="num">37</div><p id="n37">и Зиза, сын Шифия, сын Аллона, сын Иедаии, сын Шимрия, сын Шемаии.
+</p>
+<div class="num">38</div><p id="n38">Сии поименованные <i>были</i> князьями племен своих, и дом отцов их разделился на многие отрасли.
+</p>
+<div class="num">39</div><p id="n39">Они доходили до Герары и до восточной стороны долины, чтобы найти пастбища для стад своих;
+</p>
+<div class="num">40</div><p id="n40">и нашли пастбища тучные и хорошие и землю обширную, спокойную и безопасную, потому что до них жило там <i>только</i> немного Хамитян.
+</p>
+<div class="num">41</div><p id="n41">И пришли сии, по именам записанные, во дни Езекии, царя Иудейского, и перебили кочующих и оседлых, которые там находились, и истребили их навсегда и поселились на месте их, ибо там были пастбища для стад их.
+</p>
+<div class="num">42</div><p id="n42">Из них же, из сынов Симеоновых, пошли к горе Сеир пятьсот человек: Фелатия, Неария, Рефаия и Узиил, сыновья Ишия, <i>были</i> во главе их;
+</p>
+<div class="num">43</div><p id="n43">и побили уцелевший там остаток Амаликитян, и живут там до сего дня.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para1.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

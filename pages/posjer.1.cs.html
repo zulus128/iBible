@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="posjer.cs.html">Послaніе іеремjино</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA №
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Списaніе послaніz ко tводи6мымъ плённикwмъ въ вавmлHнъ t царS вавmлHнскагw, є4же послA їеремjа, возвэсти1ти и5мъ, ћкоже повелёно бhсть є3мY t бGа.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">ГрBхъ рaди, и4миже согрэши1сте пред8 бGомъ, tведeтесz въ вавmлHнъ плэнeни навуходон0соромъ царeмъ вавmлHнскимъ.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Вшeдше ќбw въ вавmлHнъ, бyдете тaмw лBта мнHга и3 врeмz д0лго, до седми2 родHвъ: пот0мъ же и3зведY вaсъ tтyду съ ми1ромъ.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Нн7э же ќзрите въ вавmлHнэ б0ги срє1брzны и3 зл†ты, и3 кaмєнны и3 <nobr>древ‰ны</nobr> на рaменахъ носи6мы, показyющыz стрaхъ kзhкwмъ.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Блюди1тесz u5бо, да не и3 вы2 и3ноплемeнникwмъ ўпод0битесz, и3 стрaхъ пріи1метъ вaсъ t ни1хъ: ви1дэвше нар0дъ напреди2 и3 созади2 и4хъ клaнzющьсz и5мъ, рцhте ќбw во ўмЁ: тебЁ лёпо є4сть клaнzтисz, вLко!
+</p>
+<div class="num">&nbsp;6</div><p id="n6">ЃгGлъ бо м0й съ вaми є4сть, сeй взыскyетъ дyшъ вaшихъ.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Љзhкъ бо и4хъ и3зстр0ганъ є4сть древодёлею, тjи же позлащeни и3 посрeбрени, лжи1ви же сyть и3 не м0гутъ глаг0лати,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и3 ћкоже дэви1цэ красотолюби1вэй взeмлюще злaто, ўстроsютъ вэнцы2 на главы6 богHвъ свои1хъ.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Тёмже ўкрадaютъ t ни1хъ жерцы2 злaто и3 сребро2 и3 себЁ ўпотреблsютъ.
+</p>
+<div class="num">10</div><p id="n10">Дадsтъ же t ни1хъ и3 блудни1цамъ сyщымъ въ домY, ґ б0ги ўкрашaютъ ѓки человёкwвъ ри1зами, б0ги златы6z и3 срє1брzныz и3 <nobr>древ‰ныz.</nobr>
+</p>
+<div class="num">11</div><p id="n11">Тjи же не ўцэлёютъ t ржи2 и3 м0ліz, њдёютъ же <nobr>|</nobr> въ багрzни1цу.
+</p>
+<div class="num">12</div><p id="n12">Њтирaютъ ли1ца и5мъ прaха рaди, и4же t хрaма, и4же є4сть мн0жайшій на ни1хъ.
+</p>
+<div class="num">13</div><p id="n13">И# ски1петръ и4мутъ, ћкw человёкъ и3 ћкw судіS страны2, и4же согрэшaющагw къ себЁ не ўбіeтъ.
+</p>
+<div class="num">14</div><p id="n14"><nobr>И$мать</nobr> же и3 мeчь въ десни1цэ и3 сэки1ру, сaмъ же себE t рaти и3 t разбHйникъ не tи1метъ: tсю1ду знaеми сyть, ћкw не сyть б0зи: не ўб0йтесz u5бо и4хъ.
+</p>
+<div class="num">15</div><p id="n15">Ћкоже бо сосyдъ человёческъ сокрушeнъ непотрeбенъ бывaетъ,
+</p>
+<div class="num">16</div><p id="n16">тaцы сyть б0зи и4хъ: є3гдa же постaвлени бyдутъ въ домёхъ, џчи и4хъ пHлны сyть прaха t ногY входsщихъ.
+</p>
+<div class="num">17</div><p id="n17">И# ћкоже комY преwби1дэвшу царS, заключeни бывaютъ дворы2, и3ли2 ћкw на смeрть tводи1му, хрaмы и4хъ ўтверждaютъ жерцы2 двeрьми и3 замкaми и3 зав0рами, да t разбHйникъ њкрaдени не бyдутъ.
+</p>
+<div class="num">18</div><p id="n18">Свэти6ла жгyтъ и5мъ, и3 мн0жае нeже себЁ, t ни1хже ни є3ди1но м0гутъ ви1дэти.
+</p>
+<div class="num">19</div><p id="n19">Сyть ќбw ћкw бeрвна въ домY, сердцa же и4хъ т0чатъ чє1рви, и5же t земли2, и3 nдeжду и4хъ, nни1 же не чyвствуютъ сегw2.
+</p>
+<div class="num">20</div><p id="n20">Њчернёло є4сть лицE и4хъ t дhма хрaмины:
+</p>
+<div class="num">21</div><p id="n21">по тэлесeмъ и4хъ и3 по главЁ парsтъ нетопыри6 нощнjи, и3 л†стовицы и3 пти6цы, тaкожде и3 котки2 (скaчутъ).
+</p>
+<div class="num">22</div><p id="n22">T тогw2 ўвёсте, ћкw не сyть б0зи не ўб0йтесz u5бо и4хъ.
+</p>
+<div class="num">23</div><p id="n23">Злaто бо лежaщее на ни1хъ на красY, ѓще не њчи1ститъ кто2 t ржи2, не возблистaютъ: є3гдa бо сливaху и5хъ, не чyвствоваша.
+</p>
+<div class="num">24</div><p id="n24">За всsку цёну кyплени сyть, въ ни1хже нёсть дyха.
+</p>
+<div class="num">25</div><p id="n25">Без8 н0гъ на рaмэхъ н0сzтсz, kвлsюще своE безчeстіе человёкwмъ, њсрамлsютсz же и3 служaщіи и5мъ:
+</p>
+<div class="num">26</div><p id="n26">занeже, є3гдA когдA падyтсz на зeмлю, и3 не м0гутъ сaми востaти: и3 ѓще кто2 постaвитъ <nobr>|</nobr> прsмw, не м0гутъ поступи1ти, и3 ѓще преклонsтсz, не м0гутъ и3спрaвити себE, но ћкw мертвецє1мъ дaры и5мъ полагaютъ.
+</p>
+<div class="num">27</div><p id="n27">Трє1бы же и4хъ продаю1ще жерцы2 на ѕло2 ўпотреблsютъ: тaкожде и3 жєны2 и4хъ варsтъ t ни1хъ, ни є3ди1ному же ўб0гу, ни нeмощну подаю1тъ:
+</p>
+<div class="num">28</div><p id="n28">трeбъ и4хъ нечи6стыz и3 кровотHчныz жєны2 прикасaютсz. Ўразумёвше u5бо t си1хъ, ћкw не сyть б0зи, не б0йтесz и4хъ.
+</p>
+<div class="num">29</div><p id="n29">Tкyду бо прозовyтсz б0зи, ћкw жєны2 слyжатъ богHмъ срє1брzнымъ и3 златы6мъ и3 <nobr>древ‰нымъ;</nobr>
+</p>
+<div class="num">30</div><p id="n30">И# во хрaмэхъ и4хъ жерцы2 сэдaютъ, и3мyще ри6зы растє1рзаны и3 главы6 и3 брады6 њбри6ты, и4хже главы6 не покровє1ны сyть:
+</p>
+<div class="num">31</div><p id="n31">ревyтъ же вопію1ще пред8 бHги свои1ми, ћкоже нёцыи на вeчери мертвецA.
+</p>
+<div class="num">32</div><p id="n32">T ри1зъ и4хъ взeмлюще жерцы2, њдэвaютъ жєны2 <nobr>сво‰</nobr> и3 дёти.
+</p>
+<div class="num">33</div><p id="n33">И# ѓще t когw2 ѕло2 пострaждутъ и3ли2 добро2, не м0гутъ tдaти: ни царS м0гутъ постaвити, ни tsти:
+</p>
+<div class="num">34</div><p id="n34">тaкожде ни богaтства ни мёди м0гутъ дaти. Ѓще кто2 и5мъ что2 њбэщaвъ не tдaстъ, не воспр0сzтъ.
+</p>
+<div class="num">35</div><p id="n35">T смeрти человёка не и3збaвzтъ, ни мeнша t крёпка не tи1мутъ:
+</p>
+<div class="num">36</div><p id="n36">человёка слёпа къ видёнію не навратsтъ, въ нyжди человёку не пом0гутъ,
+</p>
+<div class="num">37</div><p id="n37">вдовы2 не поми1луютъ и3 сиротЁ добрA не сотворsтъ.
+</p>
+<div class="num">38</div><p id="n38">Под0бни сyть кaменію наг0рному б0зи и4хъ древsни и3 кaменни, и3 позлащeни и3 посрeбрени, служaщіи же и5мъ посрaмzтсz.
+</p>
+<div class="num">39</div><p id="n39">Кaкw u5бо м0щно мнёти и3ли2 прозвaти <nobr>|</nobr> богaми;
+</p>
+<div class="num">40</div><p id="n40">Ктомy же и3 сaми тjи халдeє не чтyтъ и4хъ: и5же є3гдA ќзрzтъ нёма не могyща глаг0лати, прин0сzтъ є3го2 къ ви1лу, є3мyже м0лzтсz, да глаг0летъ, ѓки си1льну сyщу почyти.
+</p>
+<div class="num">41</div><p id="n41">И# не м0гутъ тjи разумёвше сіE њстaвити <nobr>|,</nobr> чyвства бо не и4мутъ.
+</p>
+<div class="num">42</div><p id="n42">Жєнh же њбложє1ны ќжами на распyтіихъ сэдsтъ, кадsщz њтрeбы.
+</p>
+<div class="num">43</div><p id="n43">Е#гдa же кот0раz t ни1хъ привлечeна t нёкоегw мимоходsща бyдетъ съ ни1мъ, бли1жнюю ўкарsетъ, ћкw не спод0биласz ћкоже и3 nнA, ни ќже є3S прет0ргнулосz.
+</p>
+<div class="num">44</div><p id="n44"><nobr>Вс‰</nobr> бывaємаz въ ни1хъ лжи6ва сyть: кaкw u5бо м0щно мнёти и3ли2 прозывaти <nobr>|</nobr> богaми бhти;
+</p>
+<div class="num">45</div><p id="n45">Древодёлzми и3 златари6 сотворeни сyть: ничт0же и4но бывaютъ, но є4же хотsтъ худ0жницы, то2 бывaютъ.
+</p>
+<div class="num">46</div><p id="n46">И# сaми, и5же и5хъ творsтъ, не бывaютъ долговёчни.
+</p>
+<div class="num">47</div><p id="n47">Кaкw u5бо сотворє1ннаz и4ми м0гутъ бhти б0зи; њстaвиша бо по себЁ лжY и3 ўкори1зну пот0мъ бyдущымъ:
+</p>
+<div class="num">48</div><p id="n48">є3гдa бо пріи1детъ на ни1хъ рaть и3 ѕл†z, совэщавaютъ междY соб0ю жерцы2, гдЁ скрhютсz съ ни1ми.
+</p>
+<div class="num">49</div><p id="n49">Кaкw u5бо нёсть чyвствовати, ћкw не сyть б0зи, и5же не и3збавлsютъ себE t рaти, ни t ѕлA;
+</p>
+<div class="num">50</div><p id="n50">Древsни сyще и3 кaменни, и3 позлащeни и3 посрeбрени, познaютсz пот0мъ kзhкwмъ всBмъ, ћкw лжA сyть: и3 царє1мъ ћвни бyдутъ, ћкw не сyть б0зи, но дэлA рyкъ человёческихъ, и3 ни є3ди1но дёло б9іе въ ни1хъ є4сть:
+</p>
+<div class="num">51</div><p id="n51">комY u5бо нёсть разyмно, ћкw не сyть б0зи;
+</p>
+<div class="num">52</div><p id="n52">Царs бо странЁ не поставлsютъ, ни дождS человёкwмъ подаю1тъ,
+</p>
+<div class="num">53</div><p id="n53">ни судA разсyдzтъ и3 не и3збaвzтъ t њби1ды, нeмощни сyще:
+</p>
+<div class="num">54</div><p id="n54">ћкоже бо врaны междY нeбомъ и3 землeю сyть: и3 є3гдA падeтъ џгнь на хрaмэ богHвъ древsныхъ и3ли2 кaменныхъ, и3ли2 позлащeныхъ и3ли2 посрeбреныхъ, жерцы2 и4хъ и3збёгнутъ и3 ўцэлёютъ, nни1 же ћкw бeрвна посредЁ сгорsтъ.
+</p>
+<div class="num">55</div><p id="n55">Царю1 же и3 р†тнымъ не стaнутъ проти1ву: u5бо кaкw м0щно мнёти и3ли2 пріsти, ћкw б0зи сyть;
+</p>
+<div class="num">56</div><p id="n56">Ни t разбHйникъ, ни t татeй и3збaвzтъ себE б0зи древsни и3 кaменни, и3 посрeбрени и3 позлащeни.
+</p>
+<div class="num">57</div><p id="n57">И%хже преwдолёвше и3 взeмше злaто и3 сребро2 и3 ри6зы и4хъ, tи1дутъ, нижE сaми себЁ пом0гутъ.
+</p>
+<div class="num">58</div><p id="n58">Тёмже лyчше є4сть цaрь показyzй своE мyжество, и3ли2 сосyдъ въ домY потрeбенъ, є3г0же ўпотреблsетъ владsй и4мъ, нeжели лжи1віи б0зи: и3ли2 двeрь въ домY стрегyщи ±же въ нeмъ, нeжели лжи1віи б0зи: и3 древsный ст0лпъ въ домY цaрстэмъ, нeжели лжи1віи б0зи.
+</p>
+<div class="num">59</div><p id="n59">С0лнце бо и3 лунA и3 ѕвёзды, свBтлы сyще и3 посылaємы на потрeбу, благопослушли6вы сyть.
+</p>
+<div class="num">60</div><p id="n60">Тaкожде и3 м0лніz, є3гдA блистaетъ, благови1дна є4сть: тaкожде и3 вётръ во всeй странЁ вёетъ.
+</p>
+<div class="num">61</div><p id="n61">И# њблакHмъ є3гдA повели1тсz t бGа и3ти2 на всю2 вселeнную, совершaютъ повелённое.
+</p>
+<div class="num">62</div><p id="n62">Џгнь же пyщенъ свhше и3стреби1ти г0ры и3 дубр†вы твори1тъ повелённое: сjи же ни њбразHмъ, нижE си1ламъ и4хъ ўпод0блени сyть.
+</p>
+<div class="num">63</div><p id="n63">Тёмже ни мнёти м0щно, ни прозывaти и5хъ бhти б0ги, не си6льнымъ и5мъ сyщымъ ни прю2 разсуди1ти, ни добрA сотвори1ти человёкwмъ.
+</p>
+<div class="num">64</div><p id="n64">Разумёвше u5бо, ћкw не сyть б0зи, не б0йтесz и4хъ.
+</p>
+<div class="num">65</div><p id="n65">Ни царeй бо прокленyтъ, нижE благословsтъ.
+</p>
+<div class="num">66</div><p id="n66">Знaменіz же на небеси2 и3 во kзhцэхъ не покaжутъ: ни просвэтsтъ ћкw с0лнце, ни њсвэтsтъ ћкw лунA.
+</p>
+<div class="num">67</div><p id="n67">Ѕвёріе лyчше и4хъ сyть, и5же м0гутъ, и3збёге под8 кр0въ, себE п0льзовати.
+</p>
+<div class="num">68</div><p id="n68">Ни є3ди1нымъ u5бо w4бразомъ є4сть нaмъ ћвэ, ћкw сyть б0зи: тёмже не б0йтесz и4хъ.
+</p>
+<div class="num">69</div><p id="n69">Ћкоже бо во nв0щницэ пужaло ничесHже храни1тъ, тaкожде и3 б0зи и4хъ сyть древsни и3 кaменни, и3 посрeбрени и3 позлащeни.
+</p>
+<div class="num">70</div><p id="n70">Тёмъ же w4бразомъ и3 хврaстъ, и4же во њгрaдэ, на нeмже <nobr>вс‰</nobr> пти6цы сэдaютъ: тaкожде и3 мертвецY повeржену во тмЁ под0бни сyть б0зи и4хъ, древsни, позлащeни и3 посрeбрени.
+</p>
+<div class="num">71</div><p id="n71">T багрzни1цы, (въ ню1же њдёzни,) и3 t мрaмора, и4же на ни1хъ плёснивэетъ, познaйте, ћкw не сyть б0зи: тjи бо послэди2 и3з8zдeни бyдутъ t чeрвіz и3 бyдутъ во ўкори1зну во странЁ.
+</p>
+<div class="num">72</div><p id="n72">Лyчше u5бо є4сть человёкъ прaведенъ не и3мёzй кумjрwвъ, бyдетъ бо далeче t ўкори1зны.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="posjer.cs.html">Послaніе іеремjино</a>
+</div></div>
+
+</body>
+</html>

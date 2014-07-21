@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 15
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">После сих происшествий было слово Господа к Авраму в видении [ночью], и сказано: не бойся, Аврам; Я твой щит; награда твоя [будет] весьма велика.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Аврам сказал: Владыка Господи! что Ты дашь мне? я остаюсь бездетным; распорядитель в доме моем этот Елиезер из Дамаска.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И сказал Аврам: вот, Ты не дал мне потомства, и вот, домочадец мой наследник мой.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И было слово Господа к нему, и сказано: не будет он твоим наследником, но тот, кто произойдет из чресл твоих, будет твоим наследником.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И вывел его вон и сказал [ему]: посмотри на небо и сосчитай звезды, если ты можешь счесть их. И сказал ему: столько будет у тебя потомков.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Аврам поверил Господу, и Он вменил ему это в праведность.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И сказал ему: Я Господь, Который вывел тебя из Ура Халдейского, чтобы дать тебе землю сию во владение.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Он сказал: Владыка Господи! по чему мне узнать, что я буду владеть ею?
+</p>
+<div class="num">&nbsp;9</div><p id="n9"><i>Господь</i> сказал ему: возьми Мне трехлетнюю телицу, трехлетнюю козу, трехлетнего овна, горлицу и молодого голубя.
+</p>
+<div class="num">10</div><p id="n10">Он взял всех их, рассек их пополам и положил одну часть против другой; только птиц не рассек.
+</p>
+<div class="num">11</div><p id="n11">И налетели на трупы хищные птицы; но Аврам отгонял их.
+</p>
+<div class="num">12</div><p id="n12">При захождении солнца крепкий сон напал на Аврама, и вот, напал на него ужас и мрак великий.
+</p>
+<div class="num">13</div><p id="n13">И сказал <i>Господь</i> Авраму: знай, что потомки твои будут пришельцами в земле не своей, и поработят их, и будут угнетать их четыреста лет,
+</p>
+<div class="num">14</div><p id="n14">но Я произведу суд над народом, у которого они будут в порабощении; после сего они выйдут [сюда] с большим имуществом,
+</p>
+<div class="num">15</div><p id="n15">а ты отойдешь к отцам твоим в мире <i>и</i> будешь погребен в старости доброй;
+</p>
+<div class="num">16</div><p id="n16">в четвертом роде возвратятся они сюда: ибо <i>мера</i> беззаконий Аморреев доселе еще не наполнилась.
+</p>
+<div class="num">17</div><p id="n17">Когда зашло солнце и наступила тьма, вот, дым <i>как</i> <i>бы</i> <i>из</i> печи и пламя огня прошли между рассеченными <i>животными.</i>
+</p>
+<div class="num">18</div><p id="n18">В этот день заключил Господь завет с Аврамом, сказав: потомству твоему даю Я землю сию, от реки Египетской до великой реки, реки Евфрата:
+</p>
+<div class="num">19</div><p id="n19">Кенеев, Кенезеев, Кедмонеев,
+</p>
+<div class="num">20</div><p id="n20">Хеттеев, Ферезеев, Рефаимов,
+</p>
+<div class="num">21</div><p id="n21">Аморреев, Хананеев, [Евеев,] Гергесеев и Иевусеев.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.16.ru.html">к главе 16</a></div></div>
+
+</body>
+</html>

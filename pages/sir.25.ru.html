@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 25
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Тремя я украсилась и стала прекрасною пред Господом и людьми:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">это - единомыслие между братьями и любовь между ближними, и жена и муж, согласно живущие между собою.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И три рода <i>людей</i> возненавидела душа моя, и очень отвратительна для меня жизнь их:
+</p>
+<div class="num">&nbsp;4</div><p id="n4">надменного нищего, лживого богача и старика-прелюбодея, ослабевающего в рассудке.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Чего не собрал ты в юности,- как же можешь приобрести в старости твоей?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Как прилично сединам судить, и старцам - уметь давать совет!
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Как прекрасна мудрость старцев и как приличны людям почтенным рассудительность и совет!
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Венец старцев - многосторонняя опытность, и хвала их - страх Господень.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Девять помышлений похвалил я в сердце, а десятое выскажу языком:
+</p>
+<div class="num">10</div><p id="n10"><i>это</i> человек, радующийся о детях и при жизни видящий падение врагов.
+</p>
+<div class="num">11</div><p id="n11">Блажен, кто живет с женою разумною, кто не погрешает языком и не служит недостойному себя.
+</p>
+<div class="num">12</div><p id="n12">Блажен, кто приобрел мудрость и передает ее в уши слушающих.
+</p>
+<div class="num">13</div><p id="n13">Как велик тот, кто нашел премудрость! но он не выше того, кто боится Господа.
+</p>
+<div class="num">14</div><p id="n14">Страх Господень все превосходит, и имеющий его с кем может быть сравнен?
+</p>
+<div class="num">15</div><p id="n15"><i>Можно перенести</i> всякую рану, только не рану сердечную, и всякую злость, только не злость женскую,
+</p>
+<div class="num">16</div><p id="n16">всякое нападение, только не нападение от ненавидящих, и всякое мщение, только не мщение врагов;
+</p>
+<div class="num">17</div><p id="n17">нет головы ядовитее головы змеиной, и нет ярости сильнее ярости врага.
+</p>
+<div class="num">18</div><p id="n18">Соглашусь лучше жить со львом и драконом, нежели жить со злою женою.
+</p>
+<div class="num">19</div><p id="n19">Злость жены изменяет взгляд ее и делает лице ее мрачным, как у медведя.
+</p>
+<div class="num">20</div><p id="n20">Сядет муж ее среди друзей своих и, услышав <i>о ней</i>, горько вздохнет.
+</p>
+<div class="num">21</div><p id="n21">Всякая злость мала в сравнении со злостью жены; жребий грешника да падет на нее.
+</p>
+<div class="num">22</div><p id="n22">Что восхождение по песку для ног старика, то сварливая жена для тихого мужа.
+</p>
+<div class="num">23</div><p id="n23">Не засматривайся на красоту женскую и не похотствуй на жену.
+</p>
+<div class="num">24</div><p id="n24">Досада, стыд и большой срам, когда жена будет преобладать над своим мужем.
+</p>
+<div class="num">25</div><p id="n25">Сердце унылое и лице печальное и рана сердечная - злая жена.
+</p>
+<div class="num">26</div><p id="n26">Опущенные руки и расслабленные колени - жена, которая не счастливит своего мужа.
+</p>
+<div class="num">27</div><p id="n27">От жены начало греха, и чрез нее все мы умираем.
+</p>
+<div class="num">28</div><p id="n28">Не давай воде выхода, ни злой жене - власти;
+</p>
+<div class="num">29</div><p id="n29">если она не ходит под рукою твоею, то отсеки ее от плоти твоей.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.26.ru.html">к главе 26</a></div></div>
+
+</body>
+</html>

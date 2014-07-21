@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jn.ru.html">Евангелие от Иоанна</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 16
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Сие сказал Я вам, чтобы вы не соблазнились.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Изгонят вас из синагог; даже наступает время, когда всякий, убивающий вас, будет думать, что он тем служит Богу.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Так будут поступать, потому что не познали ни Отца, ни Меня.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Но Я сказал вам сие для того, чтобы вы, когда придет то время, вспомнили, что Я сказывал вам о том; не говорил же сего вам сначала, потому что был с вами.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">А теперь иду к Пославшему Меня, и никто из вас не спрашивает Меня: куда идешь?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Но оттого, что Я сказал вам это, печалью исполнилось сердце ваше.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Но Я истину говорю вам: лучше для вас, чтобы Я пошел; ибо, если Я не пойду, Утешитель не приидет к вам; а если пойду, то пошлю Его к вам,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и Он, придя, обличит мир о грехе и о правде и о суде:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">о грехе, что не веруют в Меня;
+</p>
+<div class="num">10</div><p id="n10">о правде, что Я иду к Отцу Моему, и уже не увидите Меня;
+</p>
+<div class="num">11</div><p id="n11">о суде же, что князь мира сего осужден.
+</p>
+<div class="num">12</div><p id="n12">Еще многое имею сказать вам; но вы теперь не можете вместить.
+</p>
+<div class="num">13</div><p id="n13">Когда же приидет Он, Дух истины, то наставит вас на всякую истину: ибо не от Себя говорить будет, но будет говорить, что услышит, и будущее возвестит вам.
+</p>
+<div class="num">14</div><p id="n14">Он прославит Меня, потому что от Моего возьмет и возвестит вам.
+</p>
+<div class="num">15</div><p id="n15">Все, что имеет Отец, есть Мое; потому Я сказал, что от Моего возьмет и возвестит вам.
+</p>
+<div class="num">16</div><p id="n16">Вскоре вы не увидите Меня, и опять вскоре увидите Меня, ибо Я иду к Отцу.
+</p>
+<div class="num">17</div><p id="n17">Тут <i>некоторые</i> из учеников Его сказали один другому: что это Он говорит нам: вскоре не увидите Меня, и опять вскоре увидите Меня, и: Я иду к Отцу?
+</p>
+<div class="num">18</div><p id="n18">Итак они говорили: что это говорит Он: "вскоре"? Не знаем, что говорит.
+</p>
+<div class="num">19</div><p id="n19">Иисус, уразумев, что хотят спросить Его, сказал им: о том ли спрашиваете вы один другого, что Я сказал: вскоре не увидите Меня, и опять вскоре увидите Меня?
+</p>
+<div class="num">20</div><p id="n20">Истинно, истинно говорю вам: вы восплачете и возрыдаете, а мир возрадуется; вы печальны будете, но печаль ваша в радость будет.
+</p>
+<div class="num">21</div><p id="n21">Женщина, когда рождает, терпит скорбь, потому что пришел час ее; но когда родит младенца, уже не помнит скорби от радости, потому что родился человек в мир.
+</p>
+<div class="num">22</div><p id="n22">Так и вы теперь имеете печаль; но Я увижу вас опять, и возрадуется сердце ваше, и радости вашей никто не отнимет у вас;
+</p>
+<div class="num">23</div><p id="n23">и в тот день вы не спросите Меня ни о чем. <br /> Истинно, истинно говорю вам: о чем ни попросите Отца во имя Мое, даст вам.
+</p>
+<div class="num">24</div><p id="n24">Доныне вы ничего не просили во имя Мое; проси&#769;те, и полу&#769;чите, чтобы радость ваша была совершенна.
+</p>
+<div class="num">25</div><p id="n25">Доселе Я говорил вам притчами; но наступает время, когда уже не буду говорить вам притчами, но прямо возвещу вам об Отце.
+</p>
+<div class="num">26</div><p id="n26">В тот день будете просить во имя Мое, и не говорю вам, что Я буду просить Отца о вас:
+</p>
+<div class="num">27</div><p id="n27">ибо Сам Отец любит вас, потому что вы возлюбили Меня и уверовали, что Я исшел от Бога.
+</p>
+<div class="num">28</div><p id="n28">Я исшел от Отца и пришел в мир; и опять оставляю мир и иду к Отцу.
+</p>
+<div class="num">29</div><p id="n29">Ученики Его сказали Ему: вот, теперь Ты прямо говоришь, и притчи не говоришь никакой.
+</p>
+<div class="num">30</div><p id="n30">Теперь видим, что Ты знаешь все и не имеешь нужды, чтобы кто спрашивал Тебя. Посему веруем, что Ты от Бога исшел.
+</p>
+<div class="num">31</div><p id="n31">Иисус отвечал им: теперь веруете?
+</p>
+<div class="num">32</div><p id="n32">Вот, наступает час, и настал уже, что вы рассеетесь каждый в свою <i>сторону</i> и Меня оставите одного; но Я не один, потому что Отец со Мною.
+</p>
+<div class="num">33</div><p id="n33">Сие сказал Я вам, чтобы вы имели во Мне мир. В мире будете иметь скорбь; но мужайтесь: Я победил мир.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jn.17.ru.html">к главе 17</a></div></div>
+
+</body>
+</html>

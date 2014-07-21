@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И отвечал Моисей и сказал: а если они не поверят мне и не послушают голоса моего и скажут: не явился тебе Господь? [что сказать им?]
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И сказал ему Господь: что это в руке у тебя? Он отвечал: жезл.
+</p>
+<div class="num">&nbsp;3</div><p id="n3"><i>Господь</i> сказал: брось его на землю. Он бросил его на землю, и жезл превратился в змея, и Моисей побежал от него.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И сказал Господь Моисею: простри руку твою и возьми его за хвост. Он простер руку свою, и взял его [за хвост]; и он стал жезлом в руке его.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Это для того, чтобы поверили [тебе], что явился тебе Господь, Бог отцов их, Бог Авраама, Бог Исаака и Бог Иакова.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Еще сказал ему Господь: положи руку твою к себе в пазуху. И он положил руку свою к себе в пазуху, вынул ее [из пазухи своей], и вот, рука его побелела от проказы, как снег.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">[Еще] сказал [ему Господь]: положи опять руку твою к себе в пазуху. И он положил руку свою к себе в пазуху; и вынул ее из пазухи своей, и вот, она опять стала такою же, как тело его.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Если они не поверят тебе и не послушают голоса первого знамения, то поверят голосу знамения другого;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">если же не поверят и двум сим знамениям и не послушают голоса твоего, то возьми воды <i>из</i> реки и вылей на сушу; и вода, взятая из реки, сделается кровью на суше.
+</p>
+<div class="num">10</div><p id="n10">И сказал Моисей Господу: о, Господи! человек я не речистый, <i>и</i> <i>таков</i> <i>был</i> и вчера и третьего дня, и когда Ты начал говорить с рабом Твоим: я тяжело говорю и косноязычен.
+</p>
+<div class="num">11</div><p id="n11">Господь сказал [Моисею]: кто дал уста человеку? кто делает немым, или глухим, или зрячим, или слепым? не Я ли Господь [Бог]?
+</p>
+<div class="num">12</div><p id="n12">итак пойди, и Я буду при устах твоих и научу тебя, что тебе говорить.
+</p>
+<div class="num">13</div><p id="n13">[Моисей] сказал: Господи! пошли другого, кого можешь послать.
+</p>
+<div class="num">14</div><p id="n14">И возгорелся гнев Господень на Моисея, и Он сказал: разве нет у тебя Аарона брата, Левитянина? Я знаю, что он может говорить [вместо тебя], и вот, он выйдет навстречу тебе, и, увидев тебя, возрадуется в сердце своем;
+</p>
+<div class="num">15</div><p id="n15">ты будешь ему говорить и влагать слова [Мои] в уста его, а Я буду при устах твоих и при устах его и буду учить вас, что вам делать;
+</p>
+<div class="num">16</div><p id="n16">и будет говорить он вместо тебя к народу; итак он будет твоими устами, а ты будешь ему вместо Бога;
+</p>
+<div class="num">17</div><p id="n17">и жезл сей [который был обращен в змея] возьми в руку твою: им ты будешь творить знамения.
+</p>
+<div class="num">18</div><p id="n18">И пошел Моисей, и возвратился к Иофору, тестю своему, и сказал ему: пойду я, и возвращусь к братьям моим, которые в Египте, и посмотрю, живы ли еще они? И сказал Иофор Моисею: иди с миром. [Спустя много времени умер царь Египетский.]
+</p>
+<div class="num">19</div><p id="n19">И сказал Господь Моисею в [земле] Мадиамской: пойди, возвратись в Египет, ибо умерли все, искавшие души твоей.
+</p>
+<div class="num">20</div><p id="n20">И взял Моисей жену свою и сыновей своих, посадил их на осла и отправился в землю Египетскую. И жезл Божий Моисей взял в руку свою.
+</p>
+<div class="num">21</div><p id="n21">И сказал Господь Моисею: когда пойдешь и возвратишься в Египет, смотри, все чудеса, которые Я поручил тебе, сделай пред лицем фараона, а Я ожесточу сердце его, и он не отпустит народа.
+</p>
+<div class="num">22</div><p id="n22">И скажи фараону: так говорит Господь [Бог Еврейский]: Израиль <i>есть</i> сын Мой, первенец Мой;
+</p>
+<div class="num">23</div><p id="n23">Я говорю тебе: отпусти сына Моего, чтобы он совершил Мне служение; а если не отпустишь его, то вот, Я убью сына твоего, первенца твоего.
+</p>
+<div class="num">24</div><p id="n24">Дорогою на ночлеге случилось, что встретил его Господь и хотел умертвить его.
+</p>
+<div class="num">25</div><p id="n25">Тогда Сепфора, взяв каменный нож, обрезала крайнюю плоть сына своего и, бросив к ногам его, сказала: ты жених крови у меня.
+</p>
+<div class="num">26</div><p id="n26">И отошел от него <i>Господь.</i> Тогда сказала она: жених крови - по обрезанию.
+</p>
+<div class="num">27</div><p id="n27">И Господь сказал Аарону: пойди навстречу Моисею в пустыню. И он пошел, и встретился с ним при горе Божией, и поцеловал его.
+</p>
+<div class="num">28</div><p id="n28">И пересказал Моисей Аарону все слова Господа, Который его послал, и все знамения, которые Он заповедал.
+</p>
+<div class="num">29</div><p id="n29">И пошел Моисей с Аароном, и собрали они всех старейшин сынов Израилевых,
+</p>
+<div class="num">30</div><p id="n30">и пересказал [им] Аарон все слова, которые говорил Господь Моисею; и сделал <i>Моисей</i> знамения пред глазами народа,
+</p>
+<div class="num">31</div><p id="n31">и поверил народ; и услышали, что Господь посетил сынов Израилевых и увидел страдание их, и преклонились они и поклонились.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

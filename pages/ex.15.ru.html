@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 15
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Пою Господу, ибо Он высоко превознесся; коня и всадника его ввергнул в море.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Господь крепость моя и слава моя, Он был мне спасением. Он Бог мой, и прославлю Его; Бог отца моего, и превознесу Его.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Господь муж брани, Иегова имя Ему.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Колесницы фараона и войско его ввергнул Он в море, и избранные военачальники его потонули в Чермном море.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Пучины покрыли их: они пошли в глубину, как камень.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Десница Твоя, Господи, прославилась силою; десница Твоя, Господи, сразила врага.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Величием славы Твоей Ты низложил восставших против Тебя. Ты послал гнев Твой, и он попалил их, как солому.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">От дуновения Твоего расступились воды, влага стала, как стена, огустели пучины в сердце моря.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Враг сказал: погонюсь, настигну, разделю добычу; насытится ими душа моя, обнажу меч мой, истребит их рука моя.
+</p>
+<div class="num">10</div><p id="n10">Ты дунул духом Твоим, и покрыло их море: они погрузились, как свинец, в великих водах.
+</p>
+<div class="num">11</div><p id="n11">Кто, как Ты, Господи, между богами? Кто, как Ты, величествен святостью, досточтим хвалами, Творец чудес?
+</p>
+<div class="num">12</div><p id="n12">Ты простер десницу Твою: поглотила их земля.
+</p>
+<div class="num">13</div><p id="n13">Ты ведешь милостью Твоею народ сей, который Ты избавил,- сопровождаешь силою Твоею в жилище святыни Твоей.
+</p>
+<div class="num">14</div><p id="n14">Услышали народы и трепещут: ужас объял жителей Филистимских;
+</p>
+<div class="num">15</div><p id="n15">тогда смутились князья Едомовы, трепет объял вождей Моавитских, уныли все жители Ханаана.
+</p>
+<div class="num">16</div><p id="n16">Да нападет на них страх и ужас; от величия мышцы Твоей да онемеют они, как камень, доколе проходит народ Твой, Господи, доколе проходит сей народ, который Ты приобрел.
+</p>
+<div class="num">17</div><p id="n17">Введи его и насади его на горе достояния Твоего, на месте, которое Ты соделал жилищем Себе, Господи, во святилище, <i>которое</i> создали руки Твои, Владыка!
+</p>
+<div class="num">18</div><p id="n18">Господь будет царствовать во веки и в вечность.
+</p>
+<div class="num">19</div><p id="n19">Когда вошли кони фараона с колесницами его и с всадниками его в море, то Господь обратил на них во&#769;ды морские, а сыны Израилевы прошли по суше среди моря.
+</p>
+<div class="num">20</div><p id="n20">И взяла Мариам пророчица, сестра Ааронова, в руку свою тимпан, и вышли за нею все женщины с тимпанами и ликованием.
+</p>
+<div class="num">21</div><p id="n21">И воспела Мариам пред ними: пойте Господу, ибо высоко превознесся Он, коня и всадника его ввергнул в море.
+</p>
+<div class="num">22</div><p id="n22">И повел Моисей Израильтян от Чермного моря, и они вступили в пустыню Сур; и шли они три дня по пустыне и не находили воды.
+</p>
+<div class="num">23</div><p id="n23">Пришли в Мерру - и не могли пить воды в Мерре, ибо она была горька, почему и наречено тому [месту] имя: Мерра<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;Горечь.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p1"></a>.
+</p>
+<div class="num">24</div><p id="n24">И возроптал народ на Моисея, говоря: что нам пить?
+</p>
+<div class="num">25</div><p id="n25">[Моисей] возопил к Господу, и Господь показал ему дерево, и он бросил его в воду, и вода сделалась сладкою. Там <i>Бог</i> дал <i>народу</i> устав и закон и там испытывал его.
+</p>
+<div class="num">26</div><p id="n26">И сказал: если ты будешь слушаться гласа Господа, Бога твоего, и делать угодное пред очами Его, и внимать заповедям Его, и соблюдать все уставы Его, то не наведу на тебя ни одной из болезней, которые навел Я на Египет, ибо Я Господь [Бог твой], целитель твой.
+</p>
+<div class="num">27</div><p id="n27">И пришли в Елим; там <i>было</i> двенадцать источников воды и семьдесят финиковых дерев, и расположились там станом при водах.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.16.ru.html">к главе 16</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 6
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И не делайся врагом из друга, ибо худое имя получает в удел стыд и позор; так - и грешник двоязычный.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Не возноси себя в помыслах души твоей, чтобы душа твоя не была растерзана, как вол:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">листья твои ты истребишь и плоды твои погубишь, и останешься, как сухое дерево.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Душа лукавая погубит своего обладателя и сделает его посмешищем врагов.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Сладкие уста умножат друзей, и доброречивый язык умножит приязнь.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Живущих с тобою в мире да будет много, а советником твоим - один из тысячи.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Если хочешь приобрести друга, приобретай его по испытании и не скоро вверяйся ему.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Бывает друг в нужное для него время, и не останется с тобой в день скорби твоей;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и бывает друг, который превращается во врага и откроет ссору к поношению твоему.
+</p>
+<div class="num">10</div><p id="n10">Бывает другом участник в трапезе, и не останется с тобою в день скорби твоей.
+</p>
+<div class="num">11</div><p id="n11">В имении твоем он будет как ты, и дерзко будет обращаться с домочадцами твоими;
+</p>
+<div class="num">12</div><p id="n12">но если ты будешь унижен, он будет против тебя и скроется от лица твоего.
+</p>
+<div class="num">13</div><p id="n13">Отдаляйся от врагов твоих и будь осмотрителен с друзьями твоими.
+</p>
+<div class="num">14</div><p id="n14">Верный друг - крепкая защита: кто нашел его, нашел сокровище.
+</p>
+<div class="num">15</div><p id="n15">Верному другу нет цены, и нет меры доброте его.
+</p>
+<div class="num">16</div><p id="n16">Верный друг - врачевство для жизни, и боящиеся Господа найдут его.
+</p>
+<div class="num">17</div><p id="n17">Боящийся Господа направляет дружбу свою так, что, каков он сам, таким делается и друг его.
+</p>
+<div class="num">18</div><p id="n18">Сын мой! от юности твоей предайся учению, и до седин твоих найдешь мудрость.
+</p>
+<div class="num">19</div><p id="n19">Приступай к ней как пашущий и сеющий и ожидай добрых плодов ее:
+</p>
+<div class="num">20</div><p id="n20">ибо малое время потрудишься в возделывании ее, и скоро будешь есть плоды ее.
+</p>
+<div class="num">21</div><p id="n21">Для невежд она очень сурова, и неразумный не останется с нею:
+</p>
+<div class="num">22</div><p id="n22">она будет на нем как тяжелый камень испытания, и он не замедлит сбросить ее.
+</p>
+<div class="num">23</div><p id="n23">Премудрость соответствует имени своему, и немногим открывается.
+</p>
+<div class="num">24</div><p id="n24">Послушай, сын мой, и прими мнение мое, и не отвергни совета моего.
+</p>
+<div class="num">25</div><p id="n25">Наложи на ноги твои путы ее и на шею твою цепь ее.
+</p>
+<div class="num">26</div><p id="n26">Подставь ей плечо твое, и носи ее и не тяготись узами ее.
+</p>
+<div class="num">27</div><p id="n27">Приблизься к ней всею душею твоею, и всею силою твоею соблюдай пути ее.
+</p>
+<div class="num">28</div><p id="n28">Исследуй и ищи, и она будет познана тобою и, сделавшись обладателем ее, не покидай ее;
+</p>
+<div class="num">29</div><p id="n29">ибо наконец ты найдешь в ней успокоение, и она обратится в радость тебе.
+</p>
+<div class="num">30</div><p id="n30">Путы ее будут тебе крепкою защитою, и цепи ее - славным одеянием;
+</p>
+<div class="num">31</div><p id="n31">ибо на ней украшение золотое, и узы ее - гиацинтовые нити.
+</p>
+<div class="num">32</div><p id="n32">Как одеждою славы ты облечешься ею, и возложишь ее на себя как венец радости.
+</p>
+<div class="num">33</div><p id="n33">Сын мой! если ты пожелаешь ее, то научишься, и если предашься ей душею твоею, то будешь ко всему способен.
+</p>
+<div class="num">34</div><p id="n34">Если с любовью будешь слушать <i>ее</i>, то поймешь ее, и если приклонишь ухо твое, то будешь мудр.
+</p>
+<div class="num">35</div><p id="n35">Бывай в собрании старцев, и кто мудр, прилепись к тому; люби слушать всякую священную повесть, и притчи разумные да не ускользают от тебя.
+</p>
+<div class="num">36</div><p id="n36">Если увидишь разумного, ходи к нему с раннего утра, и пусть нога твоя истирает пороги дверей его.
+</p>
+<div class="num">37</div><p id="n37">Размышляй о повелениях Господа и всегда поучайся в заповедях Его: Он укрепит твое сердце, и желание премудрости дастся тебе.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.7.ru.html">к главе 7</a></div></div>
+
+</body>
+</html>

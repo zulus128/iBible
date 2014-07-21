@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 18
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И явился ему Господь у дубравы Мамре, когда он сидел при входе в шатер [свой], во время зноя дневного.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Он возвел очи свои и взглянул, и вот, три мужа стоят против него. Увидев, он побежал навстречу им от входа в шатер [свой] и поклонился до земли,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и сказал: Владыка! если я обрел благоволение пред очами Твоими, не пройди мимо раба Твоего;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и принесут немного воды, и омоют ноги ваши; и отдохните под сим деревом,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">а я принесу хлеба, и вы подкрепите сердца ваши; потом пойдите [в путь свой]; так как вы идете мимо раба вашего. Они сказали: сделай так, как говоришь.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И поспешил Авраам в шатер к Сарре и сказал [ей]: поскорее замеси три саты лучшей муки и сделай пресные хлебы.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И побежал Авраам к стаду, и взял теленка нежного и хорошего, и дал отроку, и тот поспешил приготовить его.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И взял масла и молока и теленка приготовленного, и поставил перед ними, а сам стоял подле них под деревом. И они ели.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказали ему: где Сарра, жена твоя? Он отвечал: здесь, в шатре.
+</p>
+<div class="num">10</div><p id="n10">И сказал <i>один</i> <i>из</i> <i>них:</i> Я опять буду у тебя в это же время [в следующем году], и будет сын у Сарры, жены твоей. А Сарра слушала у входа в шатер, сзади его.
+</p>
+<div class="num">11</div><p id="n11">Авраам же и Сарра были стары и в летах преклонных, и обыкновенное у женщин у Сарры прекратилось.
+</p>
+<div class="num">12</div><p id="n12">Сарра внутренно рассмеялась, сказав: мне ли, когда я состарилась, иметь сие утешение? и господин мой стар.
+</p>
+<div class="num">13</div><p id="n13">И сказал Господь Аврааму: отчего это [сама в себе] рассмеялась Сарра, сказав: "неужели я действительно могу родить, когда я состарилась"?
+</p>
+<div class="num">14</div><p id="n14">Есть ли что трудное для Господа? В назначенный срок буду Я у тебя в следующем году, и [будет] у Сарры сын.
+</p>
+<div class="num">15</div><p id="n15">Сарра же не призналась, а сказала: я не смеялась. Ибо она испугалась. Но Он сказал [ей]: нет, ты рассмеялась.
+</p>
+<div class="num">16</div><p id="n16">И встали те мужи и оттуда отправились к Содому [и Гоморре]; Авраам же пошел с ними, проводить их.
+</p>
+<div class="num">17</div><p id="n17">И сказал Господь: утаю ли Я от Авраама [раба Моего], что хочу делать!
+</p>
+<div class="num">18</div><p id="n18">От Авраама точно произойдет народ великий и сильный, и благословятся в нем все народы земли,
+</p>
+<div class="num">19</div><p id="n19">ибо Я избрал его для того, чтобы он заповедал сынам своим и дому своему после себя, ходить путем Господним, творя правду и суд; и исполнит Господь над Авраамом [все], что сказал о нем.
+</p>
+<div class="num">20</div><p id="n20">И сказал Господь: вопль Содомский и Гоморрский, велик он, и грех их, тяжел он весьма;
+</p>
+<div class="num">21</div><p id="n21">сойду и посмотрю, точно ли они поступают так, каков вопль на них, восходящий ко Мне, или нет; узнаю.
+</p>
+<div class="num">22</div><p id="n22">И обратились мужи оттуда и пошли в Содом; Авраам же еще стоял пред лицем Господа.
+</p>
+<div class="num">23</div><p id="n23">И подошел Авраам и сказал: неужели Ты погубишь праведного с нечестивым [и с праведником будет то же, что с нечестивым]?
+</p>
+<div class="num">24</div><p id="n24">может быть, есть в этом городе пятьдесят праведников? неужели Ты погубишь, и не пощадишь [всего] места сего ради пятидесяти праведников, [если они находятся] в нем?
+</p>
+<div class="num">25</div><p id="n25">не может быть, чтобы Ты поступил так, чтобы Ты погубил праведного с нечестивым, чтобы то же было с праведником, что с нечестивым; не может быть от Тебя! Судия всей земли поступит ли неправосудно?
+</p>
+<div class="num">26</div><p id="n26">Господь сказал: если Я найду в городе Содоме пятьдесят праведников, то Я ради них пощажу [весь город и] все место сие.
+</p>
+<div class="num">27</div><p id="n27">Авраам сказал в ответ: вот, я решился говорить Владыке, я, прах и пепел:
+</p>
+<div class="num">28</div><p id="n28">может быть, до пятидесяти праведников недостанет пяти, неужели за <i>недостатком</i> пяти Ты истребишь весь город? Он сказал: не истреблю, если найду там сорок пять.
+</p>
+<div class="num">29</div><p id="n29"><i>Авраам</i> продолжал говорить с Ним и сказал: может быть, найдется там сорок? Он сказал: не сделаю <i>того</i> и ради сорока.
+</p>
+<div class="num">30</div><p id="n30">И сказал <i>Авраам:</i> да не прогневается Владыка, что я буду говорить: может быть, найдется там тридцать? Он сказал: не сделаю, если найдется там тридцать.
+</p>
+<div class="num">31</div><p id="n31"><i>Авраам</i> сказал: вот, я решился говорить Владыке: может быть, найдется там двадцать? Он сказал: не истреблю ради двадцати.
+</p>
+<div class="num">32</div><p id="n32"><i>Авраам</i> сказал: да не прогневается Владыка, что я скажу еще однажды: может быть, найдется там десять? Он сказал: не истреблю ради десяти.
+</p>
+<div class="num">33</div><p id="n33">И пошел Господь, перестав говорить с Авраамом; Авраам же возвратился в свое место.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.19.ru.html">к главе 19</a></div></div>
+
+</body>
+</html>

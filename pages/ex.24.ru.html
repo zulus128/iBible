@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 24
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И Моисею сказал Он: взойди к Господу ты и Аарон, Надав и Авиуд и семьдесят из старейшин Израилевых, и поклонитесь [Господу] издали;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Моисей один пусть приблизится к Господу, а они пусть не приближаются, и народ пусть не восходит с ним.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И пришел Моисей и пересказал народу все слова Господни и все законы. И отвечал весь народ в один голос, и сказали: все, что сказал Господь, сделаем [и будем послушны].
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И написал Моисей все слова Господни и, встав рано поутру, поставил под горою жертвенник и двенадцать камней, по <i>числу</i> двенадцати колен Израилевых;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и послал юношей из сынов Израилевых, и принесли они всесожжения, и заклали тельцов в мирную жертву Господу [Богу].
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Моисей, взяв половину крови, влил в чаши, а <i>другою</i> половиною окропил жертвенник;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и взял книгу завета и прочитал вслух народу, и сказали они: всё, что сказал Господь, сделаем и будем послушны.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И взял Моисей крови и окропил народ, говоря: вот кровь завета, который Господь заключил с вами о всех словах сих.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Потом взошел Моисей и Аарон, Надав и Авиуд и семьдесят из старейшин Израилевых,
+</p>
+<div class="num">10</div><p id="n10">и видели [место стояния] Бога Израилева; и под ногами Его нечто подобное работе из чистого сапфира и, как самое небо, ясное.
+</p>
+<div class="num">11</div><p id="n11">И Он не простер руки Своей на избранных из сынов Израилевых: они видели [место] Бога, и ели и пили.
+</p>
+<div class="num">12</div><p id="n12">И сказал Господь Моисею: взойди ко Мне на гору и будь там; и дам тебе скрижали каменные, и закон и заповеди, которые Я написал для научения их.
+</p>
+<div class="num">13</div><p id="n13">И встал Моисей с Иисусом, служителем своим, и пошел Моисей на гору Божию,
+</p>
+<div class="num">14</div><p id="n14">а старейшинам сказал: оставайтесь здесь, доколе мы не возвратимся к вам; вот Аарон и Ор с вами; кто будет иметь дело, пусть приходит к ним.
+</p>
+<div class="num">15</div><p id="n15">И взошел Моисей на гору, и покрыло облако гору,
+</p>
+<div class="num">16</div><p id="n16">и слава Господня осенила гору Синай; и покрывало ее облако шесть дней, а в седьмой день [Господь] воззвал к Моисею из среды облака.
+</p>
+<div class="num">17</div><p id="n17">Вид же славы Господней на вершине горы был пред глазами сынов Израилевых, как огонь поядающий.
+</p>
+<div class="num">18</div><p id="n18">Моисей вступил в средину облака и взошел на гору; и был Моисей на горе сорок дней и сорок ночей.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.25.ru.html">к главе 25</a></div></div>
+
+</body>
+</html>

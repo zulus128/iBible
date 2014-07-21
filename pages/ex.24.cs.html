@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.cs.html">Кни1га вторaz мwmсeова. И#сх0дъ</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA к7д
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# мwmсeю речE: взhди ко гDу ты2 и3 ґарHнъ, и3 надaвъ и3 ґвіyдъ и3 сeдмьдесzтъ стaрєцъ <nobr>ї}левыхъ,</nobr> и3 да покл0нzтсz и3здалeче гDу:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и3 да пристyпитъ мwmсeй є3ди1нъ къ бGу, nни1 же да не пристyпzтъ: и3 лю1діе съ ни1ми да не взhдутъ.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Пріи1де же мwmсeй и3 повёда лю1демъ <nobr>вс‰</nobr> словесA б9іz и3 њправд†ніz. Tвэщaша же вси2 лю1діе глaсомъ є3ди1нымъ, глаг0люще: <nobr>вс‰</nobr> словесA, ±же гlа гDь, сотвори1мъ и3 послyшаемъ.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И# написA мwmсeй <nobr>вс‰</nobr> словесA гDнz: њбyтрэвъ же мwmсeй заyтра, создA nлтaрь под8 гор0ю, и3 дванaдесzть кaменій въ дванaдесzть племeнъ <nobr>ї}левыхъ:</nobr>
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и3 послA ю4ношы сынHвъ <nobr>ї}левыхъ,</nobr> и3 принес0ша всесожжє1ніz, и3 пожр0ша жeртву спcніz гDу бGу телцы2.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Взeмъ же мwmсeй полови1ну кр0ве, вліS въ чaшы, полови1ну же кр0ве возліS на nлтaрь,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">и3 взeмъ кни1гу завёта, прочтE лю1демъ во ќшы. И# рек0ша: <nobr>вс‰,</nobr> є3ли6ка гlа гDь, сотвори1мъ и3 послyшаемъ.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Взeмъ же мwmсeй кр0вь, њкропи2 лю1ди и3 речE: сE, кр0вь завёта, є3г0же завэщA гDь къ вaмъ њ всёхъ словесёхъ си1хъ.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И# взhде мwmсeй и3 ґарHнъ, и3 надaвъ и3 ґвіyдъ и3 сeдмьдесzтъ t стaрєцъ <nobr>ї}левыхъ,</nobr>
+</p>
+<div class="num">10</div><p id="n10">и3 ви1дэша мёсто, и3дёже стоsше бGъ <nobr>ї}левъ:</nobr> и3 под8 ногaма є3гw2 ћкw дёло кaмене сапфjра, и3 ћкw видёніе твeрди небeсныz чистот0ю.
+</p>
+<div class="num">11</div><p id="n11">И# t и3збрaнныхъ <nobr>ї}левыхъ</nobr> не повреди1сz ни є3ди1нъ: и3 kви1шасz на мёстэ б9іи, и3 kд0ша, и3 пи1ша.
+</p>
+<div class="num">12</div><p id="n12">И# речE гDь къ мwmсeю: взhди ко мнЁ на г0ру и3 стaни тaмw, и3 дaмъ ти2 скриж†ли кaмєнныz, зак0нъ и3 зaпwвэди, ±же написaхъ законоположи1ти и5мъ.
+</p>
+<div class="num">13</div><p id="n13">И# востaвъ мwmсeй и3 їисyсъ предстоsвый є3мY, взыд0ша на г0ру б9ію
+</p>
+<div class="num">14</div><p id="n14">и3 стaрцємъ рёша: пожди1те въ молчaніи здЁ, д0ндеже возврати1мсz къ вaмъ: и3 сE, ґарHнъ и3 w4ръ съ вaми: ѓще комY случи1тсz сyдъ, да и4дутъ къ ни6мъ.
+</p>
+<div class="num">15</div><p id="n15">И# взhде мwmсeй на г0ру, и3 покры2 w4блакъ г0ру,
+</p>
+<div class="num">16</div><p id="n16">и3 сни1де слaва б9іz на г0ру сінaйскую, и3 покры2 ю5 w4блакъ шeсть днjй. И# воззвA гDь мwmсeа въ дeнь седмhй и3з8 среды2 w4блака:
+</p>
+<div class="num">17</div><p id="n17">њбли1чіе же слaвы гDни, ћкw џгнь пламенyz на версЁ горы2, пред8 сhны <nobr>ї}лєвы.</nobr>
+</p>
+<div class="num">18</div><p id="n18">И# вни1де мwmсeй въ средY w4блака и3 взhде на г0ру, и3 бЁ тaмw на горЁ четhредесzть днjй и3 четhредесzть нощeй.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.25.cs.html">главA к7є</a></div></div>
+
+</body>
+</html>

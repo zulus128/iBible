@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king3.ru.html">Третья книга Царств</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 15
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В восемнадцатый год царствования Иеровоама, сына Наватова, Авия воцарился над Иудеями.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Три года он царствовал в Иерусалиме; имя матери его Мааха, дочь Авессалома.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Он ходил во всех грехах отца своего, которые тот делал прежде него, и сердце его не было предано Господу Богу его, как сердце Давида, отца его.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Но ради Давида Господь Бог его дал ему светильник в Иерусалиме, восставив по нем сына его и утвердив Иерусалим,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">потому что Давид делал угодное пред очами Господа и не отступал от всего того, что Он заповедал ему, во все дни жизни своей, кроме поступка с Уриею Хеттеянином.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И война была между Ровоамом и Иеровоамом во все дни жизни их.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Прочие дела Авии, всё, что он сделал, описано в летописи царей Иудейских. И была война между Авиею и Иеровоамом.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И почил Авия с отцами своими, и похоронили его в городе Давидовом. И воцарился Аса, сын его, вместо него.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">В двадцатый год <i>царствования</i> Иеровоама, царя Израильского, воцарился Аса над Иудеями
+</p>
+<div class="num">10</div><p id="n10">и сорок один год царствовал в Иерусалиме; имя матери его Ана&#769;, дочь Авессалома.
+</p>
+<div class="num">11</div><p id="n11">Аса делал угодное пред очами Господа, как Давид, отец его.
+</p>
+<div class="num">12</div><p id="n12">Он изгнал блудников из земли и отверг всех идолов, которых сделали отцы его,
+</p>
+<div class="num">13</div><p id="n13">и даже мать свою Ану&#769; лишил звания царицы за то, что она сделала истукан Астарты; и изрубил Аса истукан ее и сжег у потока Кедрона.
+</p>
+<div class="num">14</div><p id="n14">Высоты же не были уничтожены. Но сердце Асы было предано Господу во все дни его.
+</p>
+<div class="num">15</div><p id="n15">И внес он в дом Господень вещи, посвященные отцом его, и вещи, посвященные им: серебро и золото и сосуды.
+</p>
+<div class="num">16</div><p id="n16">И война была между Асою и Ваасою, царем Израильским, во все дни их.
+</p>
+<div class="num">17</div><p id="n17">И вышел Вааса, царь Израильский, против Иудеи и начал строить Раму, чтобы никто не выходил и не уходил к Асе, царю Иудейскому.
+</p>
+<div class="num">18</div><p id="n18">И взял Аса все серебро и золото, остававшееся в сокровищницах дома Господня и в сокровищницах дома царского, и дал его в руки слуг своих, и послал их царь Аса к Венададу, сыну Тавримона, сына Хезионова, царю Сирийскому, жившему в Дамаске, и сказал:
+</p>
+<div class="num">19</div><p id="n19">союз да будет между мною и между тобою, <i>как</i> <i>был</i> между отцом моим и между отцом твоим; вот, я посылаю тебе в дар серебро и золото; расторгни союз твой с Ваасою, царем Израильским, чтобы он отошел от меня.
+</p>
+<div class="num">20</div><p id="n20">И послушался Венадад царя Асы, и послал военачальников своих против городов Израильских, и поразил Аин и Дан и Авел-Беф-Мааху и весь Киннероф, по всей земле Неффалима.
+</p>
+<div class="num">21</div><p id="n21">Услышав <i>о</i> <i>сем,</i> Вааса перестал строить Раму и возвратился в Фирцу.
+</p>
+<div class="num">22</div><p id="n22">Царь же Аса созвал всех Иудеев, никого не исключая, и вынесли они из Рамы камни и дерева, которые Вааса употреблял для строения. И выстроил из них царь Аса Гиву Вениаминову и Мицпу.
+</p>
+<div class="num">23</div><p id="n23">Все прочие дела Асы и все подвиги его, и всё, что он сделал, и города, которые он построил, описаны в летописи царей Иудейских, кроме того, что в старости своей он был болен ногами.
+</p>
+<div class="num">24</div><p id="n24">И почил Аса с отцами своими и погребен с отцами своими в городе Давида, отца своего. И воцарился Иосафат, сын его, вместо него.
+</p>
+<div class="num">25</div><p id="n25">Нават же, сын Иеровоамов, воцарился над Израилем во второй год Асы, царя Иудейского, и царствовал над Израилем два года.
+</p>
+<div class="num">26</div><p id="n26">И делал он неугодное пред очами Господа, ходил путем отца своего и во грехах его, которыми тот ввел Израиля в грех.
+</p>
+<div class="num">27</div><p id="n27">И сделал против него заговор Вааса, сын Ахии, из дома Иссахарова, и убил его Вааса при Гавафоне Филистимском, когда Нават и все Израильтяне осаждали Гавафон;
+</p>
+<div class="num">28</div><p id="n28">и умертвил его Вааса в третий год Асы, царя Иудейского, и воцарился вместо него.
+</p>
+<div class="num">29</div><p id="n29">Когда он воцарился, то избил весь дом Иеровоамов, не оставил ни души у Иеровоама, доколе не истребил его, по слову Господа, которое Он изрек чрез раба Своего Ахию Силомлянина,
+</p>
+<div class="num">30</div><p id="n30">за грехи Иеровоама, которые он сам делал и которыми ввел в грех Израиля, за оскорбление, которым он прогневал Господа Бога Израилева.
+</p>
+<div class="num">31</div><p id="n31">Прочие дела Навата, всё, что он сделал, описано в летописи царей Израильских.
+</p>
+<div class="num">32</div><p id="n32">И война была между Асою и Ваасою, царем Израильским, во все дни их.
+</p>
+<div class="num">33</div><p id="n33">В третий год Асы, царя Иудейского, воцарился Вааса, сын Ахии, над всеми Израильтянами в Фирце <i>и</i> <i>царствовал</i> двадцать четыре года.
+</p>
+<div class="num">34</div><p id="n34">И делал неугодное пред очами Господними и ходил путем Иеровоама и во грехах его, которыми тот ввел в грех Израиля.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king3.16.ru.html">к главе 16</a></div></div>
+
+</body>
+</html>

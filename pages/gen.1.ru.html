@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В начале сотворил Бог небо и землю.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Земля же была безвидна и пуста, и тьма над бездною, и Дух Божий носился над водою.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И сказал Бог: да будет свет. И стал свет.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И увидел Бог свет, что он хорош, и отделил Бог свет от тьмы.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И назвал Бог свет днем, а тьму ночью. И был вечер, и было утро: день один.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказал Бог: да будет твердь посреди воды, и да отделяет она воду от воды. [И стало так.]
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И создал Бог твердь, и отделил воду, которая под твердью, от воды, которая над твердью. И стало так.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И назвал Бог твердь небом. [И увидел Бог, что <i>это</i> хорошо.] И был вечер, и было утро: день второй.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И сказал Бог: да соберется вода, которая под небом, в одно место, и да явится суша. И стало так. [И собралась вода под небом в свои места, и явилась суша.]
+</p>
+<div class="num">10</div><p id="n10">И назвал Бог сушу землею, а собрание вод назвал морями. И увидел Бог, что <i>это</i> хорошо.
+</p>
+<div class="num">11</div><p id="n11">И сказал Бог: да произрастит земля зелень, траву, сеющую семя [по роду и по подобию <i>ее,</i> и] дерево плодовитое, приносящее по роду своему плод, в котором семя его на земле. И стало так.
+</p>
+<div class="num">12</div><p id="n12">И произвела земля зелень, траву, сеющую семя по роду [и по подобию] ее, и дерево [плодовитое], приносящее плод, в котором семя его по роду его [на земле]. И увидел Бог, что <i>это</i> хорошо.
+</p>
+<div class="num">13</div><p id="n13">И был вечер, и было утро: день третий.
+</p>
+<div class="num">14</div><p id="n14">И сказал Бог: да будут светила на тверди небесной [для освещения земли и] для отделения дня от ночи, и для знамений, и времен, и дней, и годов;
+</p>
+<div class="num">15</div><p id="n15">и да будут они светильниками на тверди небесной, чтобы светить на землю. И стало так.
+</p>
+<div class="num">16</div><p id="n16">И создал Бог два светила великие: светило большее, для управления днем, и светило меньшее, для управления ночью, и звезды;
+</p>
+<div class="num">17</div><p id="n17">и поставил их Бог на тверди небесной, чтобы светить на землю,
+</p>
+<div class="num">18</div><p id="n18">и управлять днем и ночью, и отделять свет от тьмы. И увидел Бог, что <i>это</i> хорошо.
+</p>
+<div class="num">19</div><p id="n19">И был вечер, и было утро: день четвёртый.
+</p>
+<div class="num">20</div><p id="n20">И сказал Бог: да произведет вода пресмыкающихся, душу живую; и птицы да полетят над землею, по тверди небесной. [И стало так.]
+</p>
+<div class="num">21</div><p id="n21">И сотворил Бог рыб больших и всякую душу животных пресмыкающихся, которых произвела вода, по роду их, и всякую птицу пернатую по роду ее. И увидел Бог, что <i>это</i> хорошо.
+</p>
+<div class="num">22</div><p id="n22">И благословил их Бог, говоря: плодитесь и размножайтесь, и наполняйте воды в морях, и птицы да размножаются на земле.
+</p>
+<div class="num">23</div><p id="n23">И был вечер, и было утро: день пятый.
+</p>
+<div class="num">24</div><p id="n24">И сказал Бог: да произведет земля душу живую по роду ее, скотов, и гадов, и зверей земных по роду их. И стало так.
+</p>
+<div class="num">25</div><p id="n25">И создал Бог зверей земных по роду их, и скот по роду его, и всех гадов земных по роду их. И увидел Бог, что <i>это</i> хорошо.
+</p>
+<div class="num">26</div><p id="n26">И сказал Бог: сотворим человека по образу Нашему [и] по подобию Нашему, и да владычествуют они над рыбами морскими, и над птицами небесными, [и над зверями,] и над скотом, и над всею землею, и над всеми гадами, пресмыкающимися по земле.
+</p>
+<div class="num">27</div><p id="n27">И сотворил Бог человека по образу Своему, по образу Божию сотворил его; мужчину и женщину сотворил их.
+</p>
+<div class="num">28</div><p id="n28">И благословил их Бог, и сказал им Бог: плодитесь и размножайтесь, и наполняйте землю, и обладайте ею, и владычествуйте над рыбами морскими [и над зверями,] и над птицами небесными, [и над всяким скотом, и над всею землею,] и над всяким животным, пресмыкающимся по земле.
+</p>
+<div class="num">29</div><p id="n29">И сказал Бог: вот, Я дал вам всякую траву, сеющую семя, какая есть на всей земле, и всякое дерево, у которого плод древесный, сеющий семя; - вам <i>сие</i> будет в пищу;
+</p>
+<div class="num">30</div><p id="n30">а всем зверям земным, и всем птицам небесным, и всякому [гаду,] пресмыкающемуся по земле, в котором душа живая, <i>дал</i> Я всю зелень травную в пищу. И стало так.
+</p>
+<div class="num">31</div><p id="n31">И увидел Бог все, что Он создал, и вот, хорошо весьма. И был вечер, и было утро: день шестой.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

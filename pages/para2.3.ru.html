@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para2.ru.html">Вторая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И начал Соломон строить дом Господень в Иерусалиме на горе Мориа, которая указана была Давиду, отцу его, на месте, которое приготовил Давид, на гумне Орны Иевусеянина.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Начал же он строить во второй <i>день</i> второго месяца, в четвертый год царствования своего.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И вот основание, <i>положенное</i> Соломоном при строении дома Божия: длина <i>его</i> шестьдесят локтей, по прежней мере, а ширина двадцать локтей;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и притвор, который пред домом, длиною по ширине дома в двадцать локтей, а вышиною во сто двадцать. И обложил его внутри чистым золотом.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Дом же главный обшил деревом кипарисовым и обложил его лучшим золотом, и выделал на нем пальмы и цепочки.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И обложил дом дорогими камнями для красоты; золото же <i>было</i> золото Парваимское.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И покрыл дом, бревна, пороги и стены его, [и окна] и двери его золотом, и вырезал на стенах херувимов.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сделал Святое Святых: длина его по широте дома в двадцать локтей, и ширина его в двадцать локтей; и покрыл его лучшим золотом на шестьсот талантов.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">В гвоздях весу до пятидесяти сиклей золота [в каждом гвозде]. Горницы также покрыл золотом.
+</p>
+<div class="num">10</div><p id="n10">И сделал он во Святом Святых двух херувимов резной работы и покрыл их золотом.
+</p>
+<div class="num">11</div><p id="n11">Крылья херувимов длиною <i>были</i> в двадцать локтей. Одно крыло в пять локтей касалось стены дома, а другое крыло в пять же локтей сходилось с крылом другого херувима;
+</p>
+<div class="num">12</div><p id="n12"><i>равно</i> и крыло другого херувима в пять локтей касалось стены дома, а другое крыло в пять локтей сходилось с крылом другого херувима.
+</p>
+<div class="num">13</div><p id="n13">Крылья сих херувимов <i>были</i> распростерты на двадцать локтей; и они стояли на ногах своих, лицами своими к храму.
+</p>
+<div class="num">14</div><p id="n14">И сделал завесу из яхонтовой, пурпуровой и багряной <i>ткани</i> и из виссона и изобразил на ней херувимов.
+</p>
+<div class="num">15</div><p id="n15">И сделал пред храмом два столба, длиною по тридцати пяти локтей, и капитель на верху каждого в пять локтей.
+</p>
+<div class="num">16</div><p id="n16">И сделал цепочки, <i>как</i> во святилище, и положил на верху столбов, и сделал сто гранатовых яблок и положил на цепочки.
+</p>
+<div class="num">17</div><p id="n17">И поставил столбы пред храмом, один по правую сторону, другой по левую, и дал имя правому Иахин, а левому имя Воаз.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para2.4.ru.html">к главе 4</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 29
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И встал Иаков и пошел в землю сынов востока [к Лавану, сыну Вафуила Арамеянина, к брату Ревекки, матери Иакова и Исава].
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И увидел: вот, на поле колодезь, и там три стада мелкого скота, лежавшие около него, потому что из того колодезя поили стада. Над устьем колодезя был большой камень.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Когда собирались туда все стада, отваливали камень от устья колодезя и поили овец; потом опять клали камень на свое место, на устье колодезя.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Иаков сказал им [пастухам]: братья мои! откуда вы? Они сказали: мы из Харрана.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Он сказал им: знаете ли вы Лавана, сына Нахорова? Они сказали: знаем.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Он еще сказал им: здравствует ли он? Они сказали: здравствует; и вот, Рахиль, дочь его, идет с овцами.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И сказал [Иаков]: вот, дня еще много; не время собирать скот; напойте овец и пойдите, пасите.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Они сказали: не можем, пока не соберутся все стада, и не отвалят камня от устья колодезя; тогда будем мы поить овец.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Еще он говорил с ними, как пришла Рахиль [дочь Лавана] с мелким скотом отца своего, потому что она пасла [мелкий скот отца своего].
+</p>
+<div class="num">10</div><p id="n10">Когда Иаков увидел Рахиль, дочь Лавана, брата матери своей, и овец Лавана, брата матери своей, то подошел Иаков, отвалил камень от устья колодезя и напоил овец Лавана, брата матери своей.
+</p>
+<div class="num">11</div><p id="n11">И поцеловал Иаков Рахиль и возвысил голос свой и заплакал.
+</p>
+<div class="num">12</div><p id="n12">И сказал Иаков Рахили, что он родственник отцу ее и что он сын Ревеккин. А она побежала и сказала отцу своему [всё сие].
+</p>
+<div class="num">13</div><p id="n13">Лаван, услышав о Иакове, сыне сестры своей, выбежал ему навстречу, обнял его и поцеловал его, и ввел его в дом свой; и он рассказал Лавану всё сие.
+</p>
+<div class="num">14</div><p id="n14">Лаван же сказал ему: подлинно ты кость моя и плоть моя. И жил у него <i>Иаков</i> целый месяц.
+</p>
+<div class="num">15</div><p id="n15">И Лаван сказал Иакову: неужели ты даром будешь служить мне, потому что ты родственник? скажи мне, что заплатить тебе?
+</p>
+<div class="num">16</div><p id="n16">У Лавана же было две дочери; имя старшей: Лия; имя младшей: Рахиль.
+</p>
+<div class="num">17</div><p id="n17">Лия была слаба глазами, а Рахиль была красива станом и красива лицем.
+</p>
+<div class="num">18</div><p id="n18">Иаков полюбил Рахиль и сказал: я буду служить тебе семь лет за Рахиль, младшую дочь твою.
+</p>
+<div class="num">19</div><p id="n19">Лаван сказал [ему]: лучше отдать мне ее за тебя, нежели отдать ее за другого кого; живи у меня.
+</p>
+<div class="num">20</div><p id="n20">И служил Иаков за Рахиль семь лет; и они показались ему за несколько дней, потому что он любил ее.
+</p>
+<div class="num">21</div><p id="n21">И сказал Иаков Лавану: дай жену мою, потому что мне уже исполнилось время, чтобы войти к ней.
+</p>
+<div class="num">22</div><p id="n22">Лаван созвал всех людей того места и сделал пир.
+</p>
+<div class="num">23</div><p id="n23">Вечером же взял [Лаван] дочь свою Лию и ввел ее к нему; и вошел к ней [Иаков].
+</p>
+<div class="num">24</div><p id="n24">И дал Лаван служанку свою Зелфу в служанки дочери своей Лии.
+</p>
+<div class="num">25</div><p id="n25">Утром же оказалось, что это Лия. И [Иаков] сказал Лавану: что это сделал ты со мною? не за Рахиль ли я служил у тебя? зачем ты обманул меня?
+</p>
+<div class="num">26</div><p id="n26">Лаван сказал: в нашем месте так не делают, чтобы младшую выдать прежде старшей;
+</p>
+<div class="num">27</div><p id="n27">окончи неделю этой, потом дадим тебе и ту за службу, которую ты будешь служить у меня еще семь лет других.
+</p>
+<div class="num">28</div><p id="n28">Иаков так и сделал и окончил неделю этой. И [Лаван] дал Рахиль, дочь свою, ему в жену.
+</p>
+<div class="num">29</div><p id="n29">И дал Лаван служанку свою Валлу в служанки дочери своей Рахили.
+</p>
+<div class="num">30</div><p id="n30">[Иаков] вошел и к Рахили, и любил Рахиль больше, нежели Лию; и служил у него еще семь лет других.
+</p>
+<div class="num">31</div><p id="n31">Господь [Бог] узрел, что Лия была нелюбима, и отверз утробу ее, а Рахиль была неплодна.
+</p>
+<div class="num">32</div><p id="n32">Лия зачала и родила [Иакову] сына, и нарекла ему имя: Рувим, потому что сказала она: Господь призрел на мое бедствие [и дал мне сына], ибо теперь будет любить меня муж мой.
+</p>
+<div class="num">33</div><p id="n33">И зачала [Лия] опять и родила [Иакову второго] сына, и сказала: Господь услышал, что я нелюбима, и дал мне и сего. И нарекла ему имя: Симеон.
+</p>
+<div class="num">34</div><p id="n34">И зачала еще и родила сына, и сказала: теперь-то прилепится ко мне муж мой, ибо я родила ему трех сынов. От сего наречено ему имя: Левий.
+</p>
+<div class="num">35</div><p id="n35">И еще зачала и родила сына, и сказала: теперь-то я восхвалю Господа. Посему нарекла ему имя Иуда. И перестала рождать.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.30.ru.html">к главе 30</a></div></div>
+
+</body>
+</html>

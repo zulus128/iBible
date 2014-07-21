@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 14
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Блажен человек, который не погрешал устами своими и не уязвлен был печалью греха.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Блажен, кого не зазирает душа его и кто не потерял надежды своей.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Не добро богатство человеку скупому. И на что имение человеку недоброжелательному?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Кто собирает, отнимая у души своей, тот собирает для других, и благами его будут пресыщаться другие.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Кто зол для себя, для кого будет добр? И не будет он иметь радости от имения своего.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Нет хуже человека, который недоброжелателен к самому себе, и это - воздаяние за злобу его.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Если он и делает добро, то делает в забывчивости, и после обнаруживает зло свое.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Зол, кто имеет завистливые глаза, отвращает лицо и презирает души.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Глаза любостяжательного не насыщаются какою-либо частью, и неправда злого иссушает душу.
+</p>
+<div class="num">10</div><p id="n10">Злой глаз завистлив даже на хлеб и в столе своем терпит скудость.
+</p>
+<div class="num">11</div><p id="n11">Сын мой! по состоянию твоему делай добро себе и приношения Господу достойно приноси.
+</p>
+<div class="num">12</div><p id="n12">Помни, что смерть не медлит, и завет ада не открыт тебе:
+</p>
+<div class="num">13</div><p id="n13">прежде, нежели умрешь, делай добро другу, и по силе твоей простирай твою руку и давай ему.
+</p>
+<div class="num">14</div><p id="n14">Не лишай себя доброго дня, и часть доброго желания да не пройдет мимо тебя.
+</p>
+<div class="num">15</div><p id="n15">Не другим ли оставишь ты стяжания твои и плоды усилий твоих для раздела по жребию?
+</p>
+<div class="num">16</div><p id="n16">Давай и принимай, и утешай душу твою,
+</p>
+<div class="num">17</div><p id="n17">ибо в аде нельзя найти утех.
+</p>
+<div class="num">18</div><p id="n18">Всякая плоть, как одежда, ветшает; ибо от века - определение: "смертью умрешь".
+</p>
+<div class="num">19</div><p id="n19">Как зеленеющие листья на густом дереве - одни спадают, а другие вырастают: так и род от плоти и крови - один умирает, а другой рождается.
+</p>
+<div class="num">20</div><p id="n20">Всякая вещь, подверженная тлению, исчезает, и сделавший ее умирает с нею.
+</p>
+<div class="num">21</div><p id="n21">Блажен человек, который упражняется в мудрости и в разуме своем поучается святому.
+</p>
+<div class="num">22</div><p id="n22">Кто размышляет в сердце своем о путях ее, тот получит разумение и в тайнах ее.
+</p>
+<div class="num">23</div><p id="n23">Выходи за нею, как ловчий, и строй засаду на путях ее.
+</p>
+<div class="num">24</div><p id="n24">Кто приклоняется к окнам ее, тот послушает и при дверях ее.
+</p>
+<div class="num">25</div><p id="n25">Кто обращается вблизи дома ее, тот вобьет гвоздь и в стенах ее, поставит палатку свою подле нее и будет обитать в жилище благ.
+</p>
+<div class="num">26</div><p id="n26">Он положит детей своих под кровом ее и будет иметь ночлег под сенью ее.
+</p>
+<div class="num">27</div><p id="n27">Он прикроется ею от зноя и будет жить в славе ее.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.15.ru.html">к главе 15</a></div></div>
+
+</body>
+</html>

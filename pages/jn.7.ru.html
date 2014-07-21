@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jn.ru.html">Евангелие от Иоанна</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">После сего Иисус ходил по Галилее, ибо по Иудее не хотел ходить, потому что Иудеи искали убить Его.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Приближался праздник Иудейский - поставление кущей.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Тогда братья Его сказали Ему: выйди отсюда и пойди в Иудею, чтобы и ученики Твои видели дела, которые Ты делаешь.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Ибо никто не делает чего-либо втайне, и ищет сам быть известным. Если Ты творишь такие дела, то яви Себя миру.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Ибо и братья Его не веровали в Него.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">На это Иисус сказал им: Мое время еще не настало, а для вас всегда время.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Вас мир не может ненавидеть, а Меня ненавидит, потому что Я свидетельствую о нем, что дела его злы.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Вы пойдите на праздник сей; а Я еще не пойду на сей праздник, потому что Мое время еще не исполнилось.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Сие сказав им, остался в Галилее.
+</p>
+<div class="num">10</div><p id="n10">Но когда пришли братья Его, тогда и Он пришел на праздник не явно, а как бы тайно.
+</p>
+<div class="num">11</div><p id="n11">Иудеи же искали Его на празднике и говорили: где Он?
+</p>
+<div class="num">12</div><p id="n12">И много толков было о Нем в народе: одни говорили, что Он добр; а другие говорили: нет, но обольщает народ.
+</p>
+<div class="num">13</div><p id="n13">Впрочем никто не говорил о Нем явно, боясь Иудеев.
+</p>
+<div class="num">14</div><p id="n14">Но в половине уже праздника вошел Иисус в храм и учил.
+</p>
+<div class="num">15</div><p id="n15">И дивились Иудеи, говоря: как Он знает Писания, не учившись?
+</p>
+<div class="num">16</div><p id="n16">Иисус, отвечая им, сказал: Мое учение - не Мое, но Пославшего Меня;
+</p>
+<div class="num">17</div><p id="n17">кто хочет творить волю Его, тот узнает о сем учении, от Бога ли оно, или Я Сам от Себя говорю.
+</p>
+<div class="num">18</div><p id="n18">Говорящий сам от себя ищет славы себе; а Кто ищет славы Пославшему Его, Тот истинен, и нет неправды в Нем.
+</p>
+<div class="num">19</div><p id="n19">Не дал ли вам Моисей закона? и никто из вас не поступает по закону. За что ищете убить Меня?
+</p>
+<div class="num">20</div><p id="n20">Народ сказал в ответ: не бес ли в Тебе? кто ищет убить Тебя?
+</p>
+<div class="num">21</div><p id="n21">Иисус, продолжая речь, сказал им: одно дело сделал Я, и все вы дивитесь.
+</p>
+<div class="num">22</div><p id="n22">Моисей дал вам обрезание (хотя оно не от Моисея, но от отцов), и в субботу вы обрезываете человека.
+</p>
+<div class="num">23</div><p id="n23">Если в субботу принимает человек обрезание, чтобы не был нарушен закон Моисеев,- на Меня ли негодуете за то, что Я всего человека исцелил в субботу?
+</p>
+<div class="num">24</div><p id="n24">Не суди&#769;те по наружности, но суди&#769;те судом праведным.
+</p>
+<div class="num">25</div><p id="n25">Тут некоторые из Иерусалимлян говорили: не Тот ли это, Которого ищут убить?
+</p>
+<div class="num">26</div><p id="n26">Вот, Он говорит явно, и ничего не говорят Ему: не удостоверились ли начальники, что Он подлинно Христос?
+</p>
+<div class="num">27</div><p id="n27">Но мы знаем Его, откуда Он; Христос же когда придет, никто не будет знать, откуда Он.
+</p>
+<div class="num">28</div><p id="n28">Тогда Иисус возгласил в храме, уча и говоря: и знаете Меня, и знаете, откуда Я; и Я пришел не Сам от Себя, но истинен Пославший Меня, Которого вы не знаете.
+</p>
+<div class="num">29</div><p id="n29">Я знаю Его, потому что Я от Него, и Он послал Меня.
+</p>
+<div class="num">30</div><p id="n30">И искали схватить Его, но никто не наложил на Него руки&#769;, потому что еще не пришел час Его.
+</p>
+<div class="num">31</div><p id="n31">Многие же из народа уверовали в Него и говорили: когда придет Христос, неужели сотворит больше знамений, нежели сколько Сей сотворил?
+</p>
+<div class="num">32</div><p id="n32">Услышали фарисеи такие толки о Нем в народе, и послали фарисеи и первосвященники служителей - схватить Его.
+</p>
+<div class="num">33</div><p id="n33">Иисус же сказал им: еще недолго быть Мне с вами, и пойду к Пославшему Меня;
+</p>
+<div class="num">34</div><p id="n34">будете искать Меня, и не найдете; и где буду Я, <i>туда</i> вы не можете прийти.
+</p>
+<div class="num">35</div><p id="n35">При сем Иудеи говорили между собою: куда Он хочет идти, так что мы не найдем Его? Не хочет ли Он идти в Еллинское рассеяние и учить Еллинов?
+</p>
+<div class="num">36</div><p id="n36">Что значат сии слова, которые Он сказал: будете искать Меня, и не найдете; и где буду Я, <i>туда</i> вы не можете прийти?
+</p>
+<div class="num">37</div><p id="n37">В последний же великий день праздника стоял Иисус и возгласил, говоря: кто жаждет, иди ко Мне и пей.
+</p>
+<div class="num">38</div><p id="n38">Кто верует в Меня, у того, как сказано в Писании, из чрева потекут реки воды живой.
+</p>
+<div class="num">39</div><p id="n39">Сие сказал Он о Духе, Которого имели принять верующие в Него: ибо еще не было на них Духа Святаго, потому что Иисус еще не был прославлен.
+</p>
+<div class="num">40</div><p id="n40">Многие из народа, услышав сии слова, говорили: Он точно пророк.
+</p>
+<div class="num">41</div><p id="n41">Другие говорили: это Христос. А иные говорили: разве из Галилеи Христос придет?
+</p>
+<div class="num">42</div><p id="n42">Не сказано ли в Писании, что Христос придет от семени Давидова и из Вифлеема, из того места, откуда был Давид?
+</p>
+<div class="num">43</div><p id="n43">Итак произошла о Нем распря в народе.
+</p>
+<div class="num">44</div><p id="n44">Некоторые из них хотели схватить Его; но никто не наложил на Него рук.
+</p>
+<div class="num">45</div><p id="n45">Итак служители возвратились к первосвященникам и фарисеям, и сии сказали им: для чего вы не привели Его?
+</p>
+<div class="num">46</div><p id="n46">Служители отвечали: никогда человек не говорил так, как Этот Человек.
+</p>
+<div class="num">47</div><p id="n47">Фарисеи сказали им: неужели и вы прельстились?
+</p>
+<div class="num">48</div><p id="n48">Уверовал ли в Него кто из начальников, или из фарисеев?
+</p>
+<div class="num">49</div><p id="n49">Но этот народ невежда в законе, проклят он.
+</p>
+<div class="num">50</div><p id="n50">Никодим, приходивший к Нему ночью, будучи один из них, говорит им:
+</p>
+<div class="num">51</div><p id="n51">судит ли закон наш человека, если прежде не выслушают его и не узнают, что он делает?
+</p>
+<div class="num">52</div><p id="n52">На это сказали ему: и ты не из Галилеи ли? рассмотри и увидишь, что из Галилеи не приходит пророк.
+</p>
+<div class="num">53</div><p id="n53">И разошлись все по домам.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jn.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

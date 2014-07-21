@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.ru.html">Псалтирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Псалом 33
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Псалом Давида, когда он притворился безумным пред Авимелехом и был изгнан от него и удалился.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Благословлю Господа во всякое время; хвала Ему непрестанно в устах моих.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Господом будет хвалиться душа моя; услышат кроткие и возвеселятся.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Величайте Господа со мною, и превознесем имя Его вместе.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Я взыскал Господа, и Он услышал меня, и от всех опасностей моих избавил меня.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Кто обращал взор к Нему, те просвещались, и лица их не постыдятся.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Сей нищий воззвал,- и Господь услышал и спас его от всех бед его.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ангел Господень ополчается вокруг боящихся Его и избавляет их.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Вкусите, и увидите, как благ Господь! Блажен человек, который уповает на Него!
+</p>
+<div class="num">10</div><p id="n10">Бойтесь Господа, [все] святые Его, ибо нет скудости у боящихся Его.
+</p>
+<div class="num">11</div><p id="n11">Скимны бедствуют и терпят голод, а ищущие Господа не терпят нужды ни в каком благе.
+</p>
+<div class="num">12</div><p id="n12">Придите, дети, послушайте меня: страху Господню научу вас.
+</p>
+<div class="num">13</div><p id="n13">Хочет ли человек жить и любит ли долгоденствие, чтобы видеть благо?
+</p>
+<div class="num">14</div><p id="n14">Удерживай язык свой от зла и уста свои от коварных слов.
+</p>
+<div class="num">15</div><p id="n15">Уклоняйся от зла и делай добро; ищи мира и следуй за ним.
+</p>
+<div class="num">16</div><p id="n16">Очи Господни <i>обращены</i> на праведников, и уши Его - к воплю их.
+</p>
+<div class="num">17</div><p id="n17">Но лице Господне против делающих зло, чтобы истребить с земли память о них.
+</p>
+<div class="num">18</div><p id="n18">Взывают [праведные], и Господь слышит, и от всех скорбей их избавляет их.
+</p>
+<div class="num">19</div><p id="n19">Близок Господь к сокрушенным сердцем и смиренных духом спасет.
+</p>
+<div class="num">20</div><p id="n20">Много скорбей у праведного, и от всех их избавит его Господь.
+</p>
+<div class="num">21</div><p id="n21">Он хранит все кости его; ни одна из них не сокрушится.
+</p>
+<div class="num">22</div><p id="n22">Убьет грешника зло, и ненавидящие праведного погибнут.
+</p>
+<div class="num">23</div><p id="n23">Избавит Господь душу рабов Своих, и никто из уповающих на Него не погибнет.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.34.ru.html">к псалму 34</a></div></div>
+
+</body>
+</html>

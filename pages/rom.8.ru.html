@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="rom.ru.html">Послание к Римлянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 8
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Итак нет ныне никакого осуждения тем, которые во Христе Иисусе живут не по плоти, но по духу,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">потому что закон духа жизни во Христе Иисусе освободил меня от закона греха и смерти.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Как закон, ослабленный плотию, был бессилен, то Бог послал Сына Своего в подобии плоти греховной <i>в</i> <i>жертву</i> за грех и осудил грех во плоти,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">чтобы оправдание закона исполнилось в нас, живущих не по плоти, но по духу.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Ибо живущие по плоти о плотском помышляют, а живущие по духу - о духовном.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Помышления плотские суть смерть, а помышления духовные - жизнь и мир,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">потому что плотские помышления суть вражда против Бога; ибо закону Божию не покоряются, да и не могут.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Посему живущие по плоти Богу угодить не могут.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Но вы не по плоти живете, а по духу, если только Дух Божий живет в вас. Если же кто Духа Христова не имеет, тот <i>и</i> не Его.
+</p>
+<div class="num">10</div><p id="n10">А если Христос в вас, то тело мертво для греха, но дух жив для праведности.
+</p>
+<div class="num">11</div><p id="n11">Если же Дух Того, Кто воскресил из мертвых Иисуса, живет в вас, то Воскресивший Христа из мертвых оживит и ваши смертные тела Духом Своим, живущим в вас.
+</p>
+<div class="num">12</div><p id="n12">Итак, братия, мы не должники плоти, чтобы жить по плоти;
+</p>
+<div class="num">13</div><p id="n13">ибо если живете по плоти, то умрете, а если духом умерщвляете дела плотские, то живы будете.
+</p>
+<div class="num">14</div><p id="n14">Ибо все, водимые Духом Божиим, суть сыны Божии.
+</p>
+<div class="num">15</div><p id="n15">Потому что вы не приняли духа рабства, <i>чтобы</i> опять <i>жить</i> в страхе, но приняли Духа усыновления, Которым взываем: "Авва, Отче!"
+</p>
+<div class="num">16</div><p id="n16">Сей самый Дух свидетельствует духу нашему, что мы - дети Божии.
+</p>
+<div class="num">17</div><p id="n17">А если дети, то и наследники, наследники Божии, сонаследники же Христу, если только с Ним страдаем, чтобы с Ним и прославиться.
+</p>
+<div class="num">18</div><p id="n18">Ибо думаю, что нынешние временные страдания ничего не стоят в сравнении с тою славою, которая откроется в нас.
+</p>
+<div class="num">19</div><p id="n19">Ибо тварь с надеждою ожидает откровения сынов Божиих,
+</p>
+<div class="num">20</div><p id="n20">потому что тварь покорилась суете не добровольно, но по воле покорившего ее, в надежде,
+</p>
+<div class="num">21</div><p id="n21">что и сама тварь освобождена будет от рабства тлению в свободу славы детей Божиих.
+</p>
+<div class="num">22</div><p id="n22">Ибо знаем, что вся тварь совокупно стенает и мучится доныне;
+</p>
+<div class="num">23</div><p id="n23">и не только <i>она,</i> но и мы сами, имея начаток Духа, и мы в себе стенаем, ожидая усыновления, искупления тела нашего.
+</p>
+<div class="num">24</div><p id="n24">Ибо мы спасены в надежде. Надежда же, когда видит, не есть надежда; ибо если кто видит, то чего ему и надеяться?
+</p>
+<div class="num">25</div><p id="n25">Но когда надеемся того, чего не видим, тогда ожидаем в терпении.
+</p>
+<div class="num">26</div><p id="n26">Также и Дух подкрепляет нас в немощах наших; ибо мы не знаем, о чем молиться, как должно, но Сам Дух ходатайствует за нас воздыханиями неизреченными.
+</p>
+<div class="num">27</div><p id="n27">Испытующий же сердца знает, какая мысль у Духа, потому что Он ходатайствует за святых по <i>воле</i> Божией.
+</p>
+<div class="num">28</div><p id="n28">Притом знаем, что любящим Бога, призванным по <i>Его</i> изволению, все содействует ко благу.
+</p>
+<div class="num">29</div><p id="n29">Ибо кого Он предузнал, тем и предопределил быть подобными образу Сына Своего, дабы Он был первородным между многими братиями.
+</p>
+<div class="num">30</div><p id="n30">А кого Он предопределил, тех и призвал, а кого призвал, тех и оправдал; а кого оправдал, тех и прославил.
+</p>
+<div class="num">31</div><p id="n31">Что же сказать на это? Если Бог за нас, кто против нас?
+</p>
+<div class="num">32</div><p id="n32">Тот, Который Сына Своего не пощадил, но предал Его за всех нас, как с Ним не дарует нам и всего?
+</p>
+<div class="num">33</div><p id="n33">Кто будет обвинять избранных Божиих? Бог оправдывает <i>их.</i>
+</p>
+<div class="num">34</div><p id="n34">Кто осуждает? Христос Иисус умер, но и воскрес: Он и одесную Бога, Он и ходатайствует за нас.
+</p>
+<div class="num">35</div><p id="n35">Кто отлучит нас от любви Божией: скорбь, или теснота, или гонение, или голод, или нагота, или опасность, или меч? как написано:
+</p>
+<div class="num">36</div><p id="n36">за Тебя умерщвляют нас всякий день, считают нас за овец, <i>обреченных</i> на заклание.
+</p>
+<div class="num">37</div><p id="n37">Но все сие преодолеваем силою Возлюбившего нас.
+</p>
+<div class="num">38</div><p id="n38">Ибо я уверен, что ни смерть, ни жизнь, ни Ангелы, ни Начала, ни Силы, ни настоящее, ни будущее,
+</p>
+<div class="num">39</div><p id="n39">ни высота, ни глубина, ни другая какая тварь не может отлучить нас от любви Божией во Христе Иисусе, Господе нашем.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="rom.9.ru.html">к главе 9</a></div></div>
+
+</body>
+</html>

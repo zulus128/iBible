@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="co1.ru.html">Первое послание к<br />Коринфянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 10
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Не хочу оставить вас, братия, в неведении, что отцы наши все были под облаком, и все прошли сквозь море;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и все крестились в Моисея в облаке и в море;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и все ели одну и ту же духовную пищу;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и все пили одно и то же духовное питие: ибо пили из духовного последующего камня; камень же был Христос.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Но не о многих из них благоволил Бог, ибо они поражены были в пустыне.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">А это были образы для нас, чтобы мы не были похотливы на злое, как они были похотливы.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Не будьте также идолопоклонниками, как некоторые из них, о которых написано: народ сел есть и пить, и встал играть.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Не станем блудодействовать, как некоторые из них блудодействовали, и в один день погибло их двадцать три тысячи.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Не станем искушать Христа, как некоторые из них искушали и погибли от змей.
+</p>
+<div class="num">10</div><p id="n10">Не ропщите, как некоторые из них роптали и погибли от истребителя.
+</p>
+<div class="num">11</div><p id="n11">Все это происходило с ними, <i>как</i> образы; а описано в наставление нам, достигшим последних веков.
+</p>
+<div class="num">12</div><p id="n12">Посему, кто думает, что он стои&#769;т, берегись, чтобы не упасть.
+</p>
+<div class="num">13</div><p id="n13">Вас постигло искушение не иное, как человеческое; и верен Бог, Который не попустит вам быть искушаемыми сверх сил, но при искушении даст и облегчение, так чтобы вы могли перенести.
+</p>
+<div class="num">14</div><p id="n14">Итак, возлюбленные мои, убегайте идолослужения.
+</p>
+<div class="num">15</div><p id="n15">Я говорю <i>вам</i> как рассудительным; сами рассуди&#769;те о том, что говорю.
+</p>
+<div class="num">16</div><p id="n16">Чаша благословения, которую благословляем, не есть ли приобщение Крови Христовой? Хлеб, который преломляем, не есть ли приобщение Тела Христова?
+</p>
+<div class="num">17</div><p id="n17">Один хлеб, и мы многие одно тело; ибо все причащаемся от одного хлеба.
+</p>
+<div class="num">18</div><p id="n18">Посмотрите на Израиля по плоти: те, которые едят жертвы, не участники ли жертвенника?
+</p>
+<div class="num">19</div><p id="n19">Что же я говорю? То ли, что идол есть что-нибудь, или идоложертвенное значит что-нибудь?
+</p>
+<div class="num">20</div><p id="n20"><i>Нет,</i> но что язычники, принося жертвы, приносят бесам, а не Богу. Но я не хочу, чтобы вы были в общении с бесами.
+</p>
+<div class="num">21</div><p id="n21">Не можете пить чашу Господню и чашу бесовскую; не можете быть участниками в трапезе Господней и в трапезе бесовской.
+</p>
+<div class="num">22</div><p id="n22">Неужели мы <i>решимся</i> раздражать Господа? Разве мы сильнее Его?
+</p>
+<div class="num">23</div><p id="n23">Все мне позволительно, но не все полезно; все мне позволительно, но не все назидает.
+</p>
+<div class="num">24</div><p id="n24">Никто не ищи своего, но каждый <i>пользы</i> другого.
+</p>
+<div class="num">25</div><p id="n25">Все, что продается на торгу, ешьте без всякого исследования, для <i>спокойствия</i> совести;
+</p>
+<div class="num">26</div><p id="n26">ибо Господня земля, и что&#769; наполняет ее.
+</p>
+<div class="num">27</div><p id="n27">Если кто из неверных позовет вас, и вы захотите пойти, то все, предлагаемое вам, ешьте без всякого исследования, для <i>спокойствия</i> совести.
+</p>
+<div class="num">28</div><p id="n28">Но если кто скажет вам: это идоложертвенное,- то не ешьте ради того, кто объявил вам, и ради совести. Ибо Господня земля, и что&#769; наполняет ее.
+</p>
+<div class="num">29</div><p id="n29">Совесть же разумею не свою, а другого: ибо для чего моей свободе быть судимой чужою совестью?
+</p>
+<div class="num">30</div><p id="n30">Если я с благодарением принимаю <i>пищу,</i> то для чего порицать меня за то, за что я благодарю?
+</p>
+<div class="num">31</div><p id="n31">Итак, едите ли, пьете ли, или иное что делаете, все делайте в славу Божию.
+</p>
+<div class="num">32</div><p id="n32">Не подавайте соблазна ни Иудеям, ни Еллинам, ни церкви Божией,
+</p>
+<div class="num">33</div><p id="n33">так, как и я угождаю всем во всем, ища не своей пользы, но <i>пользы</i> многих, чтобы они спаслись.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="co1.11.ru.html">к главе 11</a></div></div>
+
+</body>
+</html>

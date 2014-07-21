@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lev.ru.html">Левит</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Если какая душа хочет принести Господу жертву приношения хлебного, пусть принесет пшеничной муки, и вольет на нее елея, и положит на нее ливана,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и принесет ее к сынам Аароновым, священникам, и возьмет полную горсть муки с елеем и со всем ливаном, и сожжет сие священник в память на жертвеннике; <i>это</i> жертва, благоухание, приятное Господу;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">а остатки от приношения хлебного Аарону и сынам его: <i>это</i> великая святыня из жертв Господних.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Если же приносишь жертву приношения хлебного из печеного в печи, <i>то</i> <i>приноси</i> пшеничные хлебы пресные, смешанные с елеем, и лепешки пресные, помазанные елеем.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Если жертва твоя приношение хлебное со сковороды, то это должна быть пшеничная мука, смешанная с елеем, пресная;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">разломи ее на куски и влей на нее елея: это приношение хлебное [Господу].
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Если жертва твоя приношение хлебное из горшка, то должно сделать оное из пшеничной муки с елеем,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и принеси приношение, которое из сего составлено, Господу; представь оное священнику, а он принесет его к жертвеннику;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и возьмет священник из сей жертвы часть в память и сожжет на жертвеннике: <i>это</i> жертва, благоухание, приятное Господу;
+</p>
+<div class="num">10</div><p id="n10">а остатки приношения хлебного Аарону и сынам его: <i>это</i> великая святыня из жертв Господних.
+</p>
+<div class="num">11</div><p id="n11">Никакого приношения хлебного, которое прино&#769;сите Господу, не делайте квасного, ибо ни квасного, ни меду не должны вы сожигать в жертву Господу;
+</p>
+<div class="num">12</div><p id="n12">как приношение начатков приноси&#769;те их Господу, а на жертвенник не должно возносить их в приятное благоухание.
+</p>
+<div class="num">13</div><p id="n13">Всякое приношение твое хлебное соли&#769; солью, и не оставляй жертвы твоей без соли завета Бога твоего: при всяком приношении твоем приноси [Господу Богу твоему] соль.
+</p>
+<div class="num">14</div><p id="n14">Если приносишь Господу приношение хлебное из первых плодов, приноси в дар от первых плодов твоих из колосьев, высушенных на огне, растолченные зерна,
+</p>
+<div class="num">15</div><p id="n15">и влей на них елея, и положи на них ливана: это приношение хлебное;
+</p>
+<div class="num">16</div><p id="n16">и сожжет священник в память часть зерен и елея со всем ливаном: <i>это</i> жертва Господу.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lev.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

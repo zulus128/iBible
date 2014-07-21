@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="king1.ru.html">Первая книга Царств</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 19
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И говорил Саул Ионафану, сыну своему, и всем слугам своим, чтобы умертвить Давида; но Ионафан, сын Саула, очень любил Давида.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И известил Ионафан Давида, говоря: отец мой Саул ищет умертвить тебя; итак берегись завтра; скройся и будь в потаенном месте;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">а я выйду и стану подле отца моего на поле, где ты будешь, и поговорю о тебе отцу моему, и что увижу, расскажу тебе.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И говорил Ионафан доброе о Давиде Саулу, отцу своему, и сказал ему: да не грешит царь против раба своего Давида, ибо он ничем не согрешил против тебя, и дела его весьма полезны для тебя;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">он подвергал опасности душу свою, чтобы поразить Филистимлянина, и Господь соделал великое спасение всему Израилю; ты видел <i>это</i> и радовался; для чего же ты хочешь согрешить <i>против</i> невинной крови и умертвить Давида без причины?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И послушал Саул голоса Ионафана и поклялся Саул: жив Господь, <i>Давид</i> не умрет.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И позвал Ионафан Давида, и пересказал ему Ионафан все слова сии, и привел Ионафан Давида к Саулу, и он был при нем, как вчера и третьего дня.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Опять началась война, и вышел Давид, и воевал с Филистимлянами, и нанес им великое поражение, и они побежали от него.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И злой дух от Бога напал на Саула, и он сидел в доме своем, и копье его было в руке его, а Давид играл рукою своею на струнах.
+</p>
+<div class="num">10</div><p id="n10">И хотел Саул пригвоздить Давида копьем к стене, но Давид отскочил от Саула, и копье вонзилось в стену; Давид же убежал и спасся в ту ночь.
+</p>
+<div class="num">11</div><p id="n11">И послал Саул слуг в дом к Давиду, чтобы стеречь его и убить его до утра. И сказала Давиду Мелхола, жена его: если ты не спасешь души твоей в эту ночь, то завтра будешь убит.
+</p>
+<div class="num">12</div><p id="n12">И спустила Мелхола Давида из окна, и он пошел, и убежал и спасся.
+</p>
+<div class="num">13</div><p id="n13">Мелхола же взяла статую и положила на постель, а в изголовье ее положила козью кожу, и покрыла одеждою.
+</p>
+<div class="num">14</div><p id="n14">И послал Саул слуг, чтобы взять Давида; но <i>Мелхола</i> сказала: он болен.
+</p>
+<div class="num">15</div><p id="n15">И послал Саул слуг, чтобы осмотреть Давида, говоря: принесите его ко мне на постели, чтоб убить его.
+</p>
+<div class="num">16</div><p id="n16">И пришли слуги, и вот, на постели статуя, а в изголовье ее козья кожа.
+</p>
+<div class="num">17</div><p id="n17">Тогда Саул сказал Мелхоле: для чего ты так обманула меня и отпустила врага моего, чтоб он убежал? И сказала Мелхола Саулу: он сказал мне: отпусти меня, иначе я убью тебя.
+</p>
+<div class="num">18</div><p id="n18">И убежал Давид и спасся, и пришел к Самуилу в Раму и рассказал ему все, что делал с ним Саул. И пошел он с Самуилом, и остановились они в Навафе [в Раме].
+</p>
+<div class="num">19</div><p id="n19">И донесли Саулу, говоря: вот, Давид в Навафе, в Раме.
+</p>
+<div class="num">20</div><p id="n20">И послал Саул слуг взять Давида, и <i>когда</i> увидели они сонм пророков пророчествующих и Самуила, начальствующего над ними, то Дух Божий сошел на слуг Саула, и они стали пророчествовать.
+</p>
+<div class="num">21</div><p id="n21">Донесли <i>об</i> <i>этом</i> Саулу, и он послал других слуг, но и эти стали пророчествовать. Потом послал Саул третьих слуг, и эти стали пророчествовать.
+</p>
+<div class="num">22</div><p id="n22">[Разгневавшись,] Саул сам пошел в Раму, и дошел до большого источника, что в Сефе, и спросил, говоря: где Самуил и Давид? И сказали: вот, в Навафе, в Раме.
+</p>
+<div class="num">23</div><p id="n23">И пошел он туда в Наваф в Раме, и на него сошел Дух Божий, и он шел и пророчествовал, доколе не пришел в Наваф в Раме.
+</p>
+<div class="num">24</div><p id="n24">И снял и он одежды свои, и пророчествовал пред Самуилом, и весь день тот и всю ту ночь лежал неодетый; поэтому говорят: "неужели и Саул во пророках?"
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="king1.20.ru.html">к главе 20</a></div></div>
+
+</body>
+</html>

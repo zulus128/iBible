@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="num.ru.html">Числа</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 27
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И пришли дочери Салпаада, сына Хеферова, сына Галаадова, сына Махирова, сына Манассиина из поколения Манассии, сына Иосифова, и вот имена дочерей его: Махла, Ноа, Хогла, Милка и Фирца;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и предстали пред Моисея и пред Елеазара священника, и пред князей и пред все общество, у входа скинии собрания, и сказали:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">отец наш умер в пустыне, и он не был в числе сообщников, собравшихся против Господа со скопищем Кореевым, но за свой грех умер, и сыновей у него не было;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">за что исчезать имени отца нашего из племени его, потому что нет у него сына? дай нам удел среди братьев отца нашего.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И представил Моисей дело их Господу.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказал Господь Моисею:
+</p>
+<div class="num">&nbsp;7</div><p id="n7">правду говорят дочери Салпаадовы; дай им наследственный удел среди братьев отца их и передай им удел отца их;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и сынам Израилевым объяви и скажи: если кто умрет, не имея у себя сына, то передавайте удел его дочери его;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">если же нет у него дочери, передавайте удел его братьям его;
+</p>
+<div class="num">10</div><p id="n10">если же нет у него братьев, отдайте удел его братьям отца его;
+</p>
+<div class="num">11</div><p id="n11">если же нет братьев отца его, отдайте удел его близкому его родственнику из поколения его, чтоб он наследовал его; и да будет это для сынов Израилевых постановлено в закон, как повелел Господь Моисею.
+</p>
+<div class="num">12</div><p id="n12">И сказал Господь Моисею: взойди на сию гору Аварим, [которая по эту сторону Иордана, на сию гору Нево,] и посмотри на землю [Ханаанскую], которую Я даю сынам Израилевым [во владение];
+</p>
+<div class="num">13</div><p id="n13">и когда посмотришь на нее, приложись к народу своему и ты, как приложился Аарон, брат твой, [на горе Ор];
+</p>
+<div class="num">14</div><p id="n14">потому что вы не послушались повеления Моего в пустыне Син, во время распри общества, чтоб явить пред глазами их святость Мою при водах. [Это воды Меривы при Кадесе в пустыне Син.]
+</p>
+<div class="num">15</div><p id="n15">И сказал Моисей Господу, говоря:
+</p>
+<div class="num">16</div><p id="n16">да поставит Господь, Бог духов всякой плоти, над обществом сим человека,
+</p>
+<div class="num">17</div><p id="n17">который выходил бы пред ними и который входил бы пред ними, который выводил бы их и который приводил бы их, чтобы не осталось общество Господне, как овцы, у которых нет пастыря.
+</p>
+<div class="num">18</div><p id="n18">И сказал Господь Моисею: возьми себе Иисуса, сына Навина, человека, в котором есть Дух, и возложи на него руку твою,
+</p>
+<div class="num">19</div><p id="n19">и поставь его пред Елеазаром священником и пред всем обществом, и дай ему наставление пред глазами их,
+</p>
+<div class="num">20</div><p id="n20">и дай ему от славы твоей, чтобы слушало его все общество сынов Израилевых;
+</p>
+<div class="num">21</div><p id="n21">и будет он обращаться к Елеазару священнику и спрашивать его о решении, посредством урима пред Господом; и по его слову должны выходить, и по его слову должны входить он и все сыны Израилевы с ним и все общество.
+</p>
+<div class="num">22</div><p id="n22">И сделал Моисей, как повелел ему Господь [Бог], и взял Иисуса, и поставил его пред Елеазаром священником и пред всем обществом;
+</p>
+<div class="num">23</div><p id="n23">и возложил на него руки свои и дал ему наставление, как говорил Господь чрез Моисея.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="num.28.ru.html">к главе 28</a></div></div>
+
+</body>
+</html>

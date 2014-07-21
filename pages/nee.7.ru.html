@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nee.ru.html">Книга Неемии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Когда стена была построена, и я вставил двери, и поставлены были на свое служение привратники и певцы и левиты,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">тогда приказал я брату моему Ханани и начальнику Иерусалимской крепости Хананию, ибо он более многих других был человек верный и богобоязненный,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и сказал я им: пусть не отворяют ворот Иерусалимских, доколе не обогреет солнце, и доколе они стоят, пусть замыкают и запирают двери. И поставил я стражами жителей Иерусалима, каждого на свою стражу и каждого напротив дома его.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Но город был пространен и велик, а народа в нем было немного, и домы не были построены.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И положил мне Бог мой на сердце собрать знатнейших и начальствующих и народ, чтобы сделать перепись. И нашел я родословную перепись тех, которые сначала пришли, и в ней написано:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">вот жители страны, которые отправились из пленников, переселенных Навуходоносором, царем Вавилонским, и возвратились в Иерусалим и Иудею, каждый в свой город,-
+</p>
+<div class="num">&nbsp;7</div><p id="n7">те, которые пошли с Зоровавелем, Иисусом, Неемиею, Азариею, Раамиею, Нахманием, Мардохеем, Билшаном, Мисферефом, Бигваем, Нехумом, Вааною. Число людей народа Израилева:
+</p>
+<div class="num">&nbsp;8</div><p id="n8">сыновей Пароша две тысячи сто семьдесят два.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Сыновей Сафатии триста семьдесят два.
+</p>
+<div class="num">10</div><p id="n10">Сыновей Араха шестьсот пятьдесят два.
+</p>
+<div class="num">11</div><p id="n11">Сыновей Пахаф-Моава, из сыновей Иисуса и Иоава, две тысячи восемьсот восемнадцать.
+</p>
+<div class="num">12</div><p id="n12">Сыновей Елама тысяча двести пятьдесят четыре.
+</p>
+<div class="num">13</div><p id="n13">Сыновей Заффу восемьсот сорок пять.
+</p>
+<div class="num">14</div><p id="n14">Сыновей Закхая семьсот шестьдесят.
+</p>
+<div class="num">15</div><p id="n15">Сыновей Биннуя шестьсот сорок восемь.
+</p>
+<div class="num">16</div><p id="n16">Сыновей Бевая шестьсот двадцать восемь.
+</p>
+<div class="num">17</div><p id="n17">Сыновей Азгада две тысячи триста двадцать два.
+</p>
+<div class="num">18</div><p id="n18">Сыновей Адоникама шестьсот шестьдесят семь.
+</p>
+<div class="num">19</div><p id="n19">Сыновей Бигвая две тысячи шестьсот семь.
+</p>
+<div class="num">20</div><p id="n20">Сыновей Адина шестьсот пятьдесят пять.
+</p>
+<div class="num">21</div><p id="n21">Сыновей Атера из <i>дома</i> Езекии девяносто восемь.
+</p>
+<div class="num">22</div><p id="n22">Сыновей Хашума триста двадцать восемь.
+</p>
+<div class="num">23</div><p id="n23">Сыновей Вецая триста двадцать четыре.
+</p>
+<div class="num">24</div><p id="n24">Сыновей Харифа сто двенадцать.
+</p>
+<div class="num">25</div><p id="n25">Уроженцев Гаваона девяносто пять.
+</p>
+<div class="num">26</div><p id="n26">Жителей Вифлеема и Нетофы сто восемьдесят восемь.
+</p>
+<div class="num">27</div><p id="n27">Жителей Анафофа сто двадцать восемь.
+</p>
+<div class="num">28</div><p id="n28">Жителей Беф-Азмавефа сорок два.
+</p>
+<div class="num">29</div><p id="n29">Жителей Кириаф-Иарима, Кефиры и Беерофа семьсот сорок три.
+</p>
+<div class="num">30</div><p id="n30">Жителей Рамы и Гевы шестьсот двадцать один.
+</p>
+<div class="num">31</div><p id="n31">Жителей Михмаса сто двадцать два.
+</p>
+<div class="num">32</div><p id="n32">Жителей Вефиля и Гая сто двадцать три.
+</p>
+<div class="num">33</div><p id="n33">Жителей Нево другого пятьдесят два.
+</p>
+<div class="num">34</div><p id="n34">Сыновей Елама другого тысяча двести пятьдесят четыре.
+</p>
+<div class="num">35</div><p id="n35">Сыновей Харима триста двадцать.
+</p>
+<div class="num">36</div><p id="n36">Уроженцев Иерихона триста сорок пять.
+</p>
+<div class="num">37</div><p id="n37">Уроженцев Лода, Хадида и Оно семьсот двадцать один.
+</p>
+<div class="num">38</div><p id="n38">Уроженцев Сенаи три тысячи девятьсот тридцать.
+</p>
+<div class="num">39</div><p id="n39">Священников, сыновей Иедаии, из дома Иисусова, девятьсот семьдесят три.
+</p>
+<div class="num">40</div><p id="n40">Сыновей Иммера тысяча пятьдесят два.
+</p>
+<div class="num">41</div><p id="n41">Сыновей Пашхура тысяча двести сорок семь.
+</p>
+<div class="num">42</div><p id="n42">Сыновей Харима тысяча семнадцать.
+</p>
+<div class="num">43</div><p id="n43">Левитов: сыновей Иисуса, из <i>дома</i> Кадмиилова, из дома сыновей Годевы, семьдесят четыре.
+</p>
+<div class="num">44</div><p id="n44">Певцов: сыновей Асафа сто сорок восемь.
+</p>
+<div class="num">45</div><p id="n45">Привратники: сыновья Шаллума, сыновья Атера, сыновья Талмона, сыновья Аккува, сыновья Хатиты, сыновья Шовая - сто тридцать восемь.
+</p>
+<div class="num">46</div><p id="n46">Нефинеи: сыновья Цихи, сыновья Хасуфы, сыновья Таббаофа,
+</p>
+<div class="num">47</div><p id="n47">сыновья Кироса, сыновья Сии, сыновья Фадона,
+</p>
+<div class="num">48</div><p id="n48">сыновья Леваны, сыновья Хагавы, сыновья Салмая,
+</p>
+<div class="num">49</div><p id="n49">сыновья Ханана, сыновья Гиддела, сыновья Гахара,
+</p>
+<div class="num">50</div><p id="n50">сыновья Реаии, сыновья Рецина, сыновья Некоды,
+</p>
+<div class="num">51</div><p id="n51">сыновья Газзама, сыновья Уззы, сыновья Пасеаха,
+</p>
+<div class="num">52</div><p id="n52">сыновья Весая, сыновья Меунима, сыновья Нефишсима,
+</p>
+<div class="num">53</div><p id="n53">сыновья Бакбука, сыновья Хакуфы, сыновья Хархура,
+</p>
+<div class="num">54</div><p id="n54">сыновья Бацлифа, сыновья Мехиды, сыновья Харши,
+</p>
+<div class="num">55</div><p id="n55">сыновья Баркоса, сыновья Сисары, сыновья Фамаха,
+</p>
+<div class="num">56</div><p id="n56">сыновья Нециаха, сыновья Хатифы.
+</p>
+<div class="num">57</div><p id="n57">Сыновья рабов Соломоновых: сыновья Сотая, сыновья Соферефа, сыновья Фериды,
+</p>
+<div class="num">58</div><p id="n58">сыновья Иаалы, сыновья Даркона, сыновья Гиддела,
+</p>
+<div class="num">59</div><p id="n59">сыновья Сафатии, сыновья Хаттила, сыновья Похереф-Гаццевайима, сыновья Амона.
+</p>
+<div class="num">60</div><p id="n60">Всех нефинеев и сыновей рабов Соломоновых триста девяносто два.
+</p>
+<div class="num">61</div><p id="n61">И вот вышедшие из Тел-Мелаха, Тел-Харши, Херув-Аддона и Иммера; но они не могли показать о поколении своем и о племени своем, от Израиля ли они.
+</p>
+<div class="num">62</div><p id="n62">Сыновья Делаии, сыновья Товии, сыновья Некоды - шестьсот сорок два.
+</p>
+<div class="num">63</div><p id="n63">И из священников: сыновья Ховаии, сыновья Гаккоца, сыновья Верзеллия, который взял жену из дочерей Верзеллия Галаадитянина и стал называться их именем.
+</p>
+<div class="num">64</div><p id="n64">Они искали родословной своей записи, и не нашлось, и потому исключены из священства.
+</p>
+<div class="num">65</div><p id="n65">И Тиршафа сказал им, чтоб они не ели великой святыни, доколе не восстанет священник с уримом и туммимом.
+</p>
+<div class="num">66</div><p id="n66">Все общество вместе <i>состояло</i> из сорока двух тысяч трехсот шестидесяти <i>человек,</i><i></i>
+</p>
+<div class="num">67</div><p id="n67">кроме рабов их и рабынь их, которых было семь тысяч триста тридцать семь; и при них певцов и певиц двести сорок пять.
+</p>
+<div class="num">68</div><p id="n68">Коней у них было семьсот тридцать шесть, лошаков у них двести сорок пять,
+</p>
+<div class="num">69</div><p id="n69">верблюдов четыреста тридцать пять, ослов шесть тысяч семьсот двадцать.
+</p>
+<div class="num">70</div><p id="n70">Некоторые главы поколений дали вклады на производство работ. Тиршафа дал в сокровищницу золотом тысячу драхм, пятьдесят чаш, пятьсот тридцать священнических одежд.
+</p>
+<div class="num">71</div><p id="n71">И некоторые из глав поколений дали в сокровищницу на производство работ двадцать тысяч драхм золота и две тысячи двести мин серебра.
+</p>
+<div class="num">72</div><p id="n72">Прочие из народа дали двадцать тысяч драхм золота и две тысячи мин серебра и шестьдесят семь священнических одежд.
+</p>
+<div class="num">73</div><p id="n73">И стали жить священники и левиты, и привратники и певцы, и народ и нефинеи, и весь Израиль в городах своих.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nee.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

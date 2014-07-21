@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ps.ru.html">Псалтирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Псалом 34
+  </p>
+
+
+  <div class="main-text">
+<p id="a0">Псалом Давида.
+</p>
+<div class="num">&nbsp;1</div><p id="n1">Вступись, Господи, в тяжбу с тяжущимися со мною, побори борющихся со мною;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">возьми щит и латы и восстань на помощь мне;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">обнажи меч и прегради <i>путь</i> преследующим меня; скажи душе моей: "Я - спасение твое!"
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Да постыдятся и посрамятся ищущие души моей; да обратятся назад и покроются бесчестием умышляющие мне зло;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">да будут они, как прах пред лицем ветра, и Ангел Господень да прогоняет <i>их;</i>
+</p>
+<div class="num">&nbsp;6</div><p id="n6">да будет путь их темен и скользок, и Ангел Господень да преследует их,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">ибо они без вины скрыли для меня яму - сеть свою, без вины выкопали <i>ее</i> для души моей.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Да придет на него гибель неожиданная, и сеть его, которую он скрыл <i>для</i> <i>меня,</i> да уловит его самого; да впадет в нее на погибель.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">А моя душа будет радоваться о Господе, будет веселиться о спасении от Него.
+</p>
+<div class="num">10</div><p id="n10">Все кости мои скажут: "Господи! кто подобен Тебе, избавляющему слабого от сильного, бедного и нищего от грабителя его?"
+</p>
+<div class="num">11</div><p id="n11">Восстали на меня свидетели неправедные: чего я не знаю, о том допрашивают меня;
+</p>
+<div class="num">12</div><p id="n12">воздают мне злом за добро, сиротством душе моей.
+</p>
+<div class="num">13</div><p id="n13">Я во время болезни их одевался во вретище, изнурял постом душу мою, и молитва моя возвращалась в недро мое.
+</p>
+<div class="num">14</div><p id="n14">Я поступал, как бы это был друг мой, брат мой; я ходил скорбный, с поникшею головою, как бы оплакивающий мать.
+</p>
+<div class="num">15</div><p id="n15">А когда я претыкался, они радовались и собирались; собирались ругатели против меня, не знаю за что, поносили и не переставали;
+</p>
+<div class="num">16</div><p id="n16">с лицемерными насмешниками скрежетали на меня зубами своими.
+</p>
+<div class="num">17</div><p id="n17">Господи! долго ли будешь смотреть <i>на</i> <i>это?</i> Отведи душу мою от злодейств их, от львов - одинокую мою.
+</p>
+<div class="num">18</div><p id="n18">Я прославлю Тебя в собрании великом, среди народа многочисленного восхвалю Тебя,
+</p>
+<div class="num">19</div><p id="n19">чтобы не торжествовали надо мною враждующие против меня неправедно, и не перемигивались глазами ненавидящие меня безвинно;
+</p>
+<div class="num">20</div><p id="n20">ибо не о мире говорят они, но против мирных земли составляют лукавые замыслы;
+</p>
+<div class="num">21</div><p id="n21">расширяют на меня уста свои; говорят: "хорошо! хорошо! видел глаз наш".
+</p>
+<div class="num">22</div><p id="n22">Ты видел, Господи, не умолчи; Господи! не удаляйся от меня.
+</p>
+<div class="num">23</div><p id="n23">Подвигнись, пробудись для суда моего, для тяжбы моей, Боже мой и Господи мой!
+</p>
+<div class="num">24</div><p id="n24">Суди меня по правде Твоей, Господи, Боже мой, и да не торжествуют они надо мною;
+</p>
+<div class="num">25</div><p id="n25">да не говорят в сердце своем: "хорошо! [хорошо!] по душе нашей!" Да не говорят: "мы поглотили его".
+</p>
+<div class="num">26</div><p id="n26">Да постыдятся и посрамятся все, радующиеся моему несчастью; да облекутся в стыд и позор величающиеся надо мною.
+</p>
+<div class="num">27</div><p id="n27">Да радуются и веселятся желающие правоты моей и говорят непрестанно: "да возвеличится Господь, желающий мира рабу Своему!"
+</p>
+<div class="num">28</div><p id="n28">И язык мой будет проповедовать правду Твою и хвалу Твою всякий день.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ps.35.ru.html">к псалму 35</a></div></div>
+
+</body>
+</html>

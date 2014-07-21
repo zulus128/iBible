@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para1.ru.html">Первая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 11
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И собрались все Израильтяне к Давиду в Хеврон и сказали: вот, мы кость твоя и плоть твоя;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и вчера, и третьего дня, когда еще Саул был царем, ты выводил и вводил Израиля, и Господь Бог твой сказал тебе: "ты будешь пасти народ Мой, Израиля и ты будешь вождем народа Моего Израиля".
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И пришли все старейшины Израилевы к царю в Хеврон, и заключил с ними Давид завет в Хевроне пред лицем Господним; и они помазали Давида в царя над Израилем, по слову Господню, чрез Самуила.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И пошел Давид и весь Израиль к Иерусалиму, то есть к Иевусу. А там были Иевусеи, жители той земли.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И сказали жители Иевуса Давиду: не войдешь сюда. Но Давид взял крепость Сион; это город Давидов.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказал Давид: кто прежде всех поразит Иевусеев, тот будет главою и военачальником. И взошел прежде всех Иоав, сын Саруи, и сделался главою.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Давид жил в той крепости, потому и называли ее городом Давидовым.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И он обстроил город кругом, <i>начиная</i> от Милло, всю окружность, а Иоав возобновил остальные <i>части</i> города.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И преуспевал Давид, и возвышался более и более, и Господь Саваоф <i>был</i> с ним.
+</p>
+<div class="num">10</div><p id="n10">Вот главные из сильных у Давида, которые крепко подвизались с ним в царстве его, вместе со всем Израилем, чтобы воцарить его, по слову Господню, над Израилем,
+</p>
+<div class="num">11</div><p id="n11">и вот число храбрых, которые были у Давида: Иесваал, сын Ахамани, главный из тридцати. Он поднял копье свое на триста человек и поразил их в один раз.
+</p>
+<div class="num">12</div><p id="n12">По нем Елеазар, сын Додо Ахохиянина, из трех храбрых:
+</p>
+<div class="num">13</div><p id="n13">он был с Давидом в Фасдамиме, куда Филистимляне собрались на войну. Там часть поля была засеяна ячменем, и народ побежал от Филистимлян;
+</p>
+<div class="num">14</div><p id="n14">но они стали среди поля, сберегли его и поразили Филистимлян. И даровал Господь спасение великое!
+</p>
+<div class="num">15</div><p id="n15">Трое сих главных из тридцати вождей взошли на скалу к Давиду, в пещеру Одоллам, когда стан Филистимлян был расположен в долине Рефаимов.
+</p>
+<div class="num">16</div><p id="n16">Давид тогда был в укрепленном месте, а охранное войско Филистимлян было тогда в Вифлееме.
+</p>
+<div class="num">17</div><p id="n17">И сильно захотелось <i>пить</i> Давиду, и он сказал: кто напоит меня водою из колодезя Вифлеемского, что у ворот?
+</p>
+<div class="num">18</div><p id="n18">Тогда эти трое пробились сквозь стан Филистимский и почерпнули воды из колодезя Вифлеемского, что у ворот, и взяли, и принесли Давиду. Но Давид не захотел пить ее и вылил ее во славу Господа,
+</p>
+<div class="num">19</div><p id="n19">и сказал: сохрани меня Господь, чтоб я сделал это! Стану ли я пить кровь мужей сих, полагавших души свои! Ибо с опасностью собственной жизни они принесли <i>воду.</i> И не захотел пить ее. Вот что сделали трое этих храбрых.
+</p>
+<div class="num">20</div><p id="n20">И Авесса, брат Иоава, был главным из трех: он убил копьем своим триста человек, и был в славе у тех троих.
+</p>
+<div class="num">21</div><p id="n21">Из трех он был знатнейшим и был начальником; но с теми тремя не равнялся.
+</p>
+<div class="num">22</div><p id="n22">Ванея, сын Иодая, мужа храброго, великий по делам, из Кавцеила: он поразил двух Ариилов Моавитских; он же сошел и убил льва во рве, в снежное время;
+</p>
+<div class="num">23</div><p id="n23">он же убил Египтянина, человека ростом в пять локтей: в руке Египтянина было копье, как навой у ткачей, а он подошел к нему с палкою и, вырвав копье из руки Египтянина, убил его его же копьем:
+</p>
+<div class="num">24</div><p id="n24">вот что сделал Ванея, сын Иодая. И он был в славе у тех троих храбрых;
+</p>
+<div class="num">25</div><p id="n25">он был знатнее тридцати, но с тремя не равнялся, и Давид поставил его ближайшим исполнителем своих приказаний.
+</p>
+<div class="num">26</div><p id="n26">А главные из воинов: Асаил, брат Иоава; Елханан, сын Додо, из Вифлеема;
+</p>
+<div class="num">27</div><p id="n27">Шамма Гародитянин; Херец Пелонитянин;
+</p>
+<div class="num">28</div><p id="n28">Ира, сын Икеша, Фекоитянин; Евиезер Анафофянин;
+</p>
+<div class="num">29</div><p id="n29">Сивхай Хушатянин; Илай Ахохиянин;
+</p>
+<div class="num">30</div><p id="n30">Магарай Нетофафянин; Хелед, сын Вааны, Нетофафянин;
+</p>
+<div class="num">31</div><p id="n31">Иттай, сын Рибая, из Гивы Вениаминовой; Ванея Пирафонянин;
+</p>
+<div class="num">32</div><p id="n32">Хурай из Нагале-Гааша; Авиел из Аравы;
+</p>
+<div class="num">33</div><p id="n33">Азмавеф Бахарумиянин; Елияхба Шаалбонянин.
+</p>
+<div class="num">34</div><p id="n34">Сыновья Гашема Гизонитянина: Ионафан, сын Шаге, Гараритянин;
+</p>
+<div class="num">35</div><p id="n35">Ахиам, сын Сахара, Гараритянин; Елифал, сын Уры;
+</p>
+<div class="num">36</div><p id="n36">Хефер из Махеры; Ахиа Пелонитянин;
+</p>
+<div class="num">37</div><p id="n37">Хецрой Кармилитянин; Наарай, сын Езбая;
+</p>
+<div class="num">38</div><p id="n38">Иоиль, брат Нафана; Мивхар, сын Гагрия;
+</p>
+<div class="num">39</div><p id="n39">Целек Аммонитянин; Нахарай Берофянин, оруженосец Иоава, сына Саруи;
+</p>
+<div class="num">40</div><p id="n40">Ира Ифриянин; Гареб Ифриянин;
+</p>
+<div class="num">41</div><p id="n41">Урия Хеттеянин; Завад, сын Ахлая;
+</p>
+<div class="num">42</div><p id="n42">Адина, сын Шизы, Рувимлянин, глава Рувимлян, и у него <i>было</i> тридцать;
+</p>
+<div class="num">43</div><p id="n43">Ханан, сын Маахи; Иосафат Мифниянин;
+</p>
+<div class="num">44</div><p id="n44">Уззия Аштерофянин; Шама и Иеиел, сыновья Хофама Ароерянина;
+</p>
+<div class="num">45</div><p id="n45">Иедиаел, сын Шимрия, и Иоха, брат его, Фициянин;
+</p>
+<div class="num">46</div><p id="n46">Елиел из Махавима, и Иеривай и Иошавия, сыновья Елнаама, и Ифма Моавитянин;
+</p>
+<div class="num">47</div><p id="n47">Елиел, Овед и Иасиел из Мецоваи.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para1.12.ru.html">к главе 12</a></div></div>
+
+</body>
+</html>

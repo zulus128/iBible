@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para1.ru.html">Первая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 6
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Сыновья Левия: Гирсон, Кааф и Мерари.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Сыновья Каафа: Амрам, Ицгар, Хеврон и Узиил.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Дети Амрама: Аарон, Моисей и Мариам. Сыновья Аарона: Надав, Авиуд, Елеазар и Ифамар.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Елеазар родил Финееса, Финеес родил Авишуя;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Авишуй родил Буккия, Буккий родил Озию;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Озия родил Зерахию, Зерахия родил Мераиофа;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Мераиоф родил Амарию, Амария родил Ахитува;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ахитув родил Садока, Садок родил Ахимааса;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ахимаас родил Азарию, Азария родил Иоанана;
+</p>
+<div class="num">10</div><p id="n10">Иоанан родил Азарию,- это тот, который был священником в храме, построенном Соломоном в Иерусалиме.
+</p>
+<div class="num">11</div><p id="n11">И родил Азария Амарию, Амария родил Ахитува;
+</p>
+<div class="num">12</div><p id="n12">Ахитув родил Садока, Садок родил Селлума;
+</p>
+<div class="num">13</div><p id="n13">Селлум родил Хелкию, Хелкия родил Азарию;
+</p>
+<div class="num">14</div><p id="n14">Азария родил Сераию, Сераия родил Иоседека.
+</p>
+<div class="num">15</div><p id="n15">Иоседек пошел <i>в</i> <i>плен,</i> когда Господь переселил Иудеев и Иерусалимлян рукою Навуходоносора.
+</p>
+<div class="num">16</div><p id="n16">Итак сыновья Левия: Гирсон, Кааф и Мерари.
+</p>
+<div class="num">17</div><p id="n17">Вот имена сыновей Гирсоновых: Ливни и Шимей.
+</p>
+<div class="num">18</div><p id="n18">Сыновья Каафа: Амрам, Ицгар, Хеврон и Узиил.
+</p>
+<div class="num">19</div><p id="n19">Сыновья Мерари: Махли и Муши. Вот потомки Левия по родам их.
+</p>
+<div class="num">20</div><p id="n20">У Гирсона: Ливни, сын его; Иахав, сын его; Зимма, сын его;
+</p>
+<div class="num">21</div><p id="n21">Иоах, сын его; Иддо, сын его; Зерах, сын его; Иеафрай, сын его.
+</p>
+<div class="num">22</div><p id="n22">Сыновья Каафа: Аминадав, сын его; Корей, сын его; Асир, сын его;
+</p>
+<div class="num">23</div><p id="n23">Елкана, сын его; Евиасаф, сын его; Асир, сын его;
+</p>
+<div class="num">24</div><p id="n24">Тахаф, сын его; Уриил, сын его; Узия, сын его; Саул, сын его.
+</p>
+<div class="num">25</div><p id="n25">Сыновья Елканы: Амасай и Ахимоф.
+</p>
+<div class="num">26</div><p id="n26">Елкана, сын его; Цофай, сын его; Нахаф, сын его;
+</p>
+<div class="num">27</div><p id="n27">Елиаф, сын его; Иерохам, сын его, Елкана, сын его; [Самуил, сын его].
+</p>
+<div class="num">28</div><p id="n28">Сыновья Самуила: первенец Иоиль, второй Авия.
+</p>
+<div class="num">29</div><p id="n29">Сыновья Мерари: Махли; Ливни, сын его; Шимей, сын его; Уза, сын его;
+</p>
+<div class="num">30</div><p id="n30">Шима, сын его; Хаггия, сын его; Асаия, сын его.
+</p>
+<div class="num">31</div><p id="n31">Вот те, которых Давид поставил начальниками над певцами в доме Господнем, со времени поставления в нем ковчега.
+</p>
+<div class="num">32</div><p id="n32">Они служили певцами пред скиниею собрания, доколе Соломон не построил дома Господня в Иерусалиме. И они становились на службу свою по уставу своему.
+</p>
+<div class="num">33</div><p id="n33">Вот те, которые становились с сыновьями своими: из сыновей Каафовых - Еман певец, сын Иоиля, сын Самуила,
+</p>
+<div class="num">34</div><p id="n34">сын Елканы, сын Иерохама, сын Елиила, сын Тоаха,
+</p>
+<div class="num">35</div><p id="n35">сын Цуфа, сын Елканы, сын Махафа, сын Амасая,
+</p>
+<div class="num">36</div><p id="n36">сын Елканы, сын Иоиля, сын Азарии, сын Цефании,
+</p>
+<div class="num">37</div><p id="n37">сын Тахафа, сын Асира, сын Авиасафа, сын Корея,
+</p>
+<div class="num">38</div><p id="n38">сын Ицгара, сын Каафа, сын Левия, сын Израиля;
+</p>
+<div class="num">39</div><p id="n39">и брат его Асаф, стоявший на правой стороне его,- Асаф, сын Берехии, сын Шимы,
+</p>
+<div class="num">40</div><p id="n40">сын Михаила, сын Ваасеи, сын Малхии,
+</p>
+<div class="num">41</div><p id="n41">сын Ефния, сын Зераха, сын Адаии,
+</p>
+<div class="num">42</div><p id="n42">сын Ефана, сын Зиммы, сын Шимия,
+</p>
+<div class="num">43</div><p id="n43">сын Иахафа, сын Гирсона, сын Левия.
+</p>
+<div class="num">44</div><p id="n44">А из сыновей Мерари, братьев их,- на левой стороне: Ефан, сын Кишия, сын Авдия, сын Маллуха,
+</p>
+<div class="num">45</div><p id="n45">сын Хашавии, сын Амасии, сын Хелкии,
+</p>
+<div class="num">46</div><p id="n46">сын Амция, сын Вания, сын Шемера,
+</p>
+<div class="num">47</div><p id="n47">сын Махлия, сын Мушия, сын Мерари, сын Левия.
+</p>
+<div class="num">48</div><p id="n48">Братья их левиты определены на всякие службы при доме Божием;
+</p>
+<div class="num">49</div><p id="n49">Аарон же и сыновья его сожигали на жертвеннике всесожжения и на жертвеннике кадильном, и совершали всякое священнодействие во Святом Святых и для очищения Израиля во всем, как заповедал раб Божий Моисей.
+</p>
+<div class="num">50</div><p id="n50">Вот сыновья Аарона: Елеазар, сын его; Финеес, сын его; Авиуд, сын его;
+</p>
+<div class="num">51</div><p id="n51">Буккий, сын его; Уззий, сын его; Зерахия, сын его;
+</p>
+<div class="num">52</div><p id="n52">Мераиоф, сын его; Амария, сын его; Ахитув, сын его;
+</p>
+<div class="num">53</div><p id="n53">Садок, сын его; Ахимаас, сын его.
+</p>
+<div class="num">54</div><p id="n54">И вот жилища их по селениям их в пределах их: сыновьям Аарона из племени Каафова, так как жребий выпал им,
+</p>
+<div class="num">55</div><p id="n55">дали Хеврон, в земле Иудиной, и предместья его вокруг его;
+</p>
+<div class="num">56</div><p id="n56">поля же сего города и села его отдали Халеву, сыну Иефонниину.
+</p>
+<div class="num">57</div><p id="n57">Сыновьям Аарона дали также города убежищ: Хеврон и Ливну с их предместьями, Иаттир и Ештемоа и предместья его,
+</p>
+<div class="num">58</div><p id="n58">и Хилен и предместья его, Давир и предместья его,
+</p>
+<div class="num">59</div><p id="n59">и Ашан и предместья его, Вефсамис и предместья его,
+</p>
+<div class="num">60</div><p id="n60">а от колена Вениаминова - Геву и предместья ее, и Аллемеф и предместья его, и Анафоф и предместья его: всех городов их в племенах их тринадцать городов.
+</p>
+<div class="num">61</div><p id="n61">Остальным сыновьям Каафа, из семейств этого колена, <i>дано</i> по жребию десять городов из удела половины колена Манассиина.
+</p>
+<div class="num">62</div><p id="n62">Сыновьям Гирсона по племенам их, от колена Иссахарова, и от колена Асирова, и от колена Неффалимова, и от колена Манассиина в Васане, <i>дано</i> тринадцать городов.
+</p>
+<div class="num">63</div><p id="n63">Сыновьям Мерари по племенам их, от колена Рувимова, и от колена Гадова, и от колена Завулонова, <i>дано</i> по жребию двенадцать городов.
+</p>
+<div class="num">64</div><p id="n64">Так дали сыны Израилевы левитам города и предместья их.
+</p>
+<div class="num">65</div><p id="n65">Дали они по жребию от колена сыновей Иудиных, и от колена сыновей Симеоновых, и от колена сыновей Вениаминовых те города, которые они назвали по именам.
+</p>
+<div class="num">66</div><p id="n66">Некоторым же племенам сыновей Каафовых даны были города от колена Ефремова.
+</p>
+<div class="num">67</div><p id="n67">И дали им города убежищ: Сихем и предместья его на горе Ефремовой, и Гезер и предместья его,
+</p>
+<div class="num">68</div><p id="n68">и Иокмеам и предместья его, и Беф-Орон и предместья его,
+</p>
+<div class="num">69</div><p id="n69">и Аиалон и предместья его, и Гаф-Риммон и предместья его;
+</p>
+<div class="num">70</div><p id="n70">от половины колена Манассиина - Анер и предместья его, Билеам и предместья его. Это поколению остальных сыновей Каафовых.
+</p>
+<div class="num">71</div><p id="n71">Сыновьям Гирсона от племени полуколена Манассиина <i>дали</i> Голан в Васане и предместья его, и Аштароф и предместья его.
+</p>
+<div class="num">72</div><p id="n72">От колена Иссахарова - Кедес и предместья его, Давраф и предместья его,
+</p>
+<div class="num">73</div><p id="n73">и Рамоф и предместья его, и Анем и предместья его;
+</p>
+<div class="num">74</div><p id="n74">от колена Асирова - Машал и предместья его, и Авдон и предместья его,
+</p>
+<div class="num">75</div><p id="n75">и Хукок и предместья его, и Рехов и предместья его;
+</p>
+<div class="num">76</div><p id="n76">от колена Неффалимова - Кедес в Галилее и предместья его, и Хаммон и предместья его, и Кириафаим и предместья его.
+</p>
+<div class="num">77</div><p id="n77">А прочим сыновьям Мерариным - от колена Завулонова Риммон и предместья его, Фавор и предместья его.
+</p>
+<div class="num">78</div><p id="n78">По ту сторону Иордана, против Иерихона, на восток от Иордана, от колена Рувимова <i>дали</i> Восор в пустыне и предместья его, и Иаацу и предместья ее,
+</p>
+<div class="num">79</div><p id="n79">и Кедемоф и предместья его, и Мефааф и предместья его;
+</p>
+<div class="num">80</div><p id="n80">от колена Гадова - Рамоф в Галааде и предместья его, и Маханаим и предместья его,
+</p>
+<div class="num">81</div><p id="n81">и Есевон и предместья его, и Иазер и предместья его.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para1.7.ru.html">к главе 7</a></div></div>
+
+</body>
+</html>

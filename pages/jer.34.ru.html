@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jer.ru.html">Книга Пророка Иеремии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 34
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Слово, которое было к Иеремии от Господа, когда Навуходоносор, царь Вавилонский, и все войско его и все царства земли, подвластные руке его, и все народы воевали против Иерусалима и против всех городов его:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">так говорит Господь, Бог Израилев: иди и скажи Седекии, царю Иудейскому, и скажи ему: так говорит Господь: вот, Я отдаю город сей в руки царя Вавилонского, и он сожжет его огнем;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и ты не избежишь от руки его, но непременно будешь взят и предан в руки его, и глаза твои увидят глаза царя Вавилонского, и уста его будут говорить твоим устам, и пойдешь в Вавилон.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Впрочем слушай слово Господне, Седекия, царь Иудейский! так говорит Господь о тебе: ты не умрешь от меча;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">ты умрешь в мире, и как для отцов твоих, прежних царей, которые были прежде тебя, сожигали <i>при</i> <i>погребении</i> <i>благовония,</i> так сожгут и для тебя и оплачут тебя: "увы, государь!", ибо Я изрек это слово, говорит Господь.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Иеремия пророк все слова сии пересказал Седекии, царю Иудейскому, в Иерусалиме.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Между тем войско царя Вавилонского воевало против Иерусалима и против всех городов Иудейских, которые еще оставались, против Лахиса и Азеки; ибо из городов Иудейских сии только оставались, как города укрепленные.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Слово, которое было к Иеремии от Господа после того, как царь Седекия заключил завет со всем народом, бывшим в Иерусалиме, чтобы объявить свободу,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">чтобы каждый отпустил на волю раба своего и рабу свою, Еврея и Евреянку, чтобы никто из них не держал в рабстве Иудея, брата своего.
+</p>
+<div class="num">10</div><p id="n10">И послушались все князья и весь народ, которые вступили в завет, чтобы отпустить каждому раба своего и каждому рабу свою на волю, чтобы не держать их впредь в рабах,- и послушались и отпустили;
+</p>
+<div class="num">11</div><p id="n11">но после того, раздумавши, стали брать назад рабов и рабынь, которых отпустили на волю, и принудили их быть рабами и рабынями.
+</p>
+<div class="num">12</div><p id="n12">И было слово Господне к Иеремии от Господа:
+</p>
+<div class="num">13</div><p id="n13">так говорит Господь, Бог Израилев: Я заключил завет с отцами вашими, когда вывел их из земли Египетской, из дома рабства, и сказал:
+</p>
+<div class="num">14</div><p id="n14">"в конце седьмого года отпускайте каждый брата своего, Еврея, который продал себя тебе; пусть он работает тебе шесть лет, а потом отпусти его от себя на волю"; но отцы ваши не послушали Меня и не приклонили уха своего.
+</p>
+<div class="num">15</div><p id="n15">Вы ныне обратились и поступили справедливо пред очами Моими, объявив каждый свободу ближнему своему, и заключили предо Мною завет в доме, над которым наречено имя Мое;
+</p>
+<div class="num">16</div><p id="n16">но потом раздумали и обесславили имя Мое, и возвратили к себе каждый раба своего и каждый рабу свою, которых отпустили на волю, куда душе их угодно, и принуждаете их быть у вас рабами и рабынями.
+</p>
+<div class="num">17</div><p id="n17">Посему так говорит Господь: вы не послушались Меня в том, чтобы каждый объявил свободу брату своему и ближнему своему; за то вот Я, говорит Господь, объявляю вам свободу подвергнуться мечу, моровой язве и голоду, и отдам вас на озлобление во все царства земли;
+</p>
+<div class="num">18</div><p id="n18">и отдам преступивших завет Мой и не устоявших в словах завета, который они заключили пред лицем Моим, рассекши тельца надвое и пройдя между рассеченными частями его,
+</p>
+<div class="num">19</div><p id="n19">князей Иудейских и князей Иерусалимских, евнухов и священников и весь народ земли, проходивший между рассеченными частями тельца,-
+</p>
+<div class="num">20</div><p id="n20">отдам их в руки врагов их и в руки ищущих души&#769; их, и трупы их будут пищею птицам небесным и зверям земным.
+</p>
+<div class="num">21</div><p id="n21">И Седекию, царя Иудейского, и князей его отдам в руки врагов их и в руки ищущих души их и в руки войска царя Вавилонского, которое отступило от вас.
+</p>
+<div class="num">22</div><p id="n22">Вот, Я дам повеление, говорит Господь, и возвращу их к этому городу, и они нападут на него, и возьмут его, и сожгут его огнем, и города Иудеи сделаю пустынею необитаемою.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jer.35.ru.html">к главе 35</a></div></div>
+
+</body>
+</html>

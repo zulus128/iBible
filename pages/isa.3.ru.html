@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="isa.ru.html">Книга Пророка Исаии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Вот, Господь, Господь Саваоф, отнимет у Иерусалима и у Иуды посох и трость, всякое подкрепление хлебом и всякое подкрепление водою,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">храброго вождя и воина, судью и пророка, и прозорливца и старца,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">пятидесятника и вельможу и советника, и мудрого художника и искусного в слове.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И дам им отроков в начальники, и дети будут господствовать над ними.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И в народе один будет угнетаем другим, и каждый - ближним своим; юноша будет нагло превозноситься над старцем, и простолюдин над вельможею.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Тогда ухватится человек за брата своего, в семействе отца своего, <i>и</i> <i>скажет:</i> у тебя <i>есть</i> одежда, будь нашим вождем, и да будут эти развалины под рукою твоею.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">А <i>он</i> с клятвою скажет: не могу исцелить <i>ран</i> <i>общества;</i> и в моем доме нет ни хлеба, ни одежды; не делайте меня вождем народа.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Так рушился Иерусалим, и пал Иуда, потому что язык их и дела их - против Господа, оскорбительны для очей славы Его.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Выражение лиц их свидетельствует против них, и о грехе своем они рассказывают открыто, как Содомляне, не скрывают: горе душе их! ибо сами на себя навлекают зло.
+</p>
+<div class="num">10</div><p id="n10">Скажите праведнику, что благо <i>ему,</i> ибо он будет вкушать плоды дел своих;
+</p>
+<div class="num">11</div><p id="n11">а беззаконнику - горе, ибо будет ему возмездие за <i>дела</i> рук его.
+</p>
+<div class="num">12</div><p id="n12">Притеснители народа Моего - дети, и женщины господствуют над ним. Народ Мой! вожди твои вводят тебя в заблуждение и путь стезей твоих испортили.
+</p>
+<div class="num">13</div><p id="n13">Восстал Господь на суд - и стоит, чтобы судить народы.
+</p>
+<div class="num">14</div><p id="n14">Господь вступает в суд со старейшинами народа Своего и с князьями его: вы опустошили виноградник; награбленное у бедного - в ваших домах;
+</p>
+<div class="num">15</div><p id="n15">что вы тесните народ Мой и угнетаете бедных? говорит Господь, Господь Саваоф.
+</p>
+<div class="num">16</div><p id="n16">И сказал Господь: за то, что дочери Сиона надменны и ходят, подняв шею и обольщая взорами, и выступают величавою поступью и гремят цепочками на ногах,-
+</p>
+<div class="num">17</div><p id="n17">оголит Господь темя дочерей Сиона и обнажит Господь срамоту их;
+</p>
+<div class="num">18</div><p id="n18">в тот день отнимет Господь красивые цепочки на ногах и звездочки, и луночки,
+</p>
+<div class="num">19</div><p id="n19">серьги, и ожерелья, и опахала, увясла и запястья, и пояса, и сосудцы с духами, и привески волшебные,
+</p>
+<div class="num">20</div><p id="n20">перстни и кольца в носу,
+</p>
+<div class="num">21</div><p id="n21">верхнюю одежду и нижнюю, и платки, и кошельки,
+</p>
+<div class="num">22</div><p id="n22">светлые тонкие епанчи и повязки, и покрывала.
+</p>
+<div class="num">23</div><p id="n23">И будет вместо благовония зловоние, и вместо пояса будет веревка, и вместо завитых волос - плешь, и вместо широкой епанчи - узкое вретище, вместо красоты - клеймо.
+</p>
+<div class="num">24</div><p id="n24">Мужи твои падут от меча, и храбрые твои - на войне.
+</p>
+<div class="num">25</div><p id="n25">И будут воздыхать и плакать ворота <i>столицы,</i> и будет она сидеть на земле опустошенная.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="isa.4.ru.html">к главе 4</a></div></div>
+
+</body>
+</html>

@@ -87,12 +87,36 @@
                                     <constraint firstAttribute="height" constant="45" id="b1o-sA-RwL"/>
                                 </constraints>
                             </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3L-51-9JY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="523"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="vgj-LN-DjU"/>
+                                </connections>
+                            </webView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKd-qh-dQM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="523"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="jz3-h1-cto"/>
+                                </connections>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="oKd-qh-dQM" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="5wv-rT-H1p"/>
                             <constraint firstItem="gsJ-JF-Msf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="KBl-ID-Mkw"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gsJ-JF-Msf" secondAttribute="bottom" id="RpT-WE-CXR"/>
+                            <constraint firstAttribute="trailing" secondItem="oKd-qh-dQM" secondAttribute="trailing" id="Xcr-VS-kPe"/>
+                            <constraint firstItem="oKd-qh-dQM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="a1r-To-mIA"/>
+                            <constraint firstItem="G3L-51-9JY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="cmk-VC-YdQ"/>
+                            <constraint firstItem="gsJ-JF-Msf" firstAttribute="top" secondItem="G3L-51-9JY" secondAttribute="bottom" id="iGW-IC-dRm"/>
                             <constraint firstAttribute="trailing" secondItem="gsJ-JF-Msf" secondAttribute="trailing" id="o3P-Ax-k24"/>
+                            <constraint firstItem="gsJ-JF-Msf" firstAttribute="top" secondItem="oKd-qh-dQM" secondAttribute="bottom" id="tfH-uB-Qjq"/>
+                            <constraint firstItem="G3L-51-9JY" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="ugy-sE-JER"/>
+                            <constraint firstAttribute="trailing" secondItem="G3L-51-9JY" secondAttribute="trailing" id="y8A-Cf-lro"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0yg-DO-6z5"/>
@@ -101,8 +125,10 @@
                         <outlet property="buttonMenu" destination="hY8-ez-lcu" id="D7h-Pk-X8F"/>
                         <outlet property="buttonRus" destination="RrS-WE-8N4" id="u8P-cv-Qqs"/>
                         <outlet property="csHeight" destination="3oq-FG-KuQ" id="1rU-BH-JNf"/>
+                        <outlet property="csWebView" destination="oKd-qh-dQM" id="xUi-9R-NP7"/>
                         <outlet property="csWidth" destination="58Q-EC-gs7" id="3n8-4r-kXM"/>
                         <outlet property="innerViewHeight" destination="b1o-sA-RwL" id="sHr-8D-Rxj"/>
+                        <outlet property="ruWebView" destination="G3L-51-9JY" id="Ei2-Ex-rR2"/>
                         <outlet property="rusHeight" destination="eKf-4p-wgp" id="llF-7m-TGl"/>
                         <outlet property="rusWidth" destination="NA8-1d-dtS" id="Pcf-cv-MyO"/>
                         <outlet property="spaceBetweenRuCs" destination="rvi-Xa-xsp" id="XuT-Ma-ZF0"/>

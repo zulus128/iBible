@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="num.ru.html">Числа</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 8
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Господь Моисею, говоря:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">объяви Аарону и скажи ему: когда ты будешь зажигать лампады, то на передней стороне светильника должны гореть семь лампад.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Аарон так и сделал: на передней стороне светильника зажег лампады его, как повелел Господь Моисею.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И вот устройство светильника: чеканный он из золота, от стебля его и до цветов чеканный; по образу, который показал Господь Моисею, он сделал светильник.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И сказал Господь Моисею, говоря:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">возьми левитов из среды сынов Израилевых и очисти их;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">а чтобы очистить их, поступи с ними так: окропи их очистительною водою, и пусть они обреют бритвою все тело свое и вымоют одежды свои, и будут чисты;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и пусть возьмут тельца и хлебное приношение к нему, пшеничной муки, смешанной с елеем, и другого тельца возьми в жертву за грех;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и приведи левитов пред скинию собрания; и собери все общество сынов Израилевых
+</p>
+<div class="num">10</div><p id="n10">и приведи левитов их пред Господа, и пусть возложат сыны Израилевы руки свои на левитов;
+</p>
+<div class="num">11</div><p id="n11">Аарон же пусть совершит над левитами посвящение их пред Господом от сынов Израилевых, чтобы отправляли они служение Господу;
+</p>
+<div class="num">12</div><p id="n12">а левиты пусть возложат руки свои на голову тельцов, и принеси одного в жертву за грех, а другого во всесожжение Господу, для очищения левитов;
+</p>
+<div class="num">13</div><p id="n13">и поставь левитов пред Аароном и пред сынами его, и соверши над ними посвящение их Господу;
+</p>
+<div class="num">14</div><p id="n14">и так отдели левитов от сынов Израилевых, чтобы левиты были Моими.
+</p>
+<div class="num">15</div><p id="n15">После сего войдут левиты служить скинии собрания, когда ты очистишь их и совершишь над ними посвящение их; ибо они отданы Мне из сынов Израилевых:
+</p>
+<div class="num">16</div><p id="n16">вместо всех первенцев из сынов Израилевых, разверзающих всякие ложесна, Я беру их Себе;
+</p>
+<div class="num">17</div><p id="n17">ибо Мои все первенцы у сынов Израилевых, от человека до скота: в тот день, когда Я поразил всех первенцев в земле Египетской, Я освятил их Себе
+</p>
+<div class="num">18</div><p id="n18">и взял левитов вместо всех первенцев у сынов Израилевых;
+</p>
+<div class="num">19</div><p id="n19">и отдал левитов Аарону и сынам его из среды сынов Израилевых, чтобы они отправляли службы за сынов Израилевых при скинии собрания и служили охранением для сынов Израилевых, чтобы не постигло сынов Израилевых поражение, когда бы сыны Израилевы приступили к святилищу.
+</p>
+<div class="num">20</div><p id="n20">И сделали так Моисей и Аарон и все общество сынов Израилевых с левитами: как повелел Господь Моисею о левитах, так и сделали с ними сыны Израилевы.
+</p>
+<div class="num">21</div><p id="n21">И очистились левиты и омыли одежды свои, и совершил над ними Аарон посвящение их пред Господом, и очистил их Аарон, чтобы сделать их чистыми;
+</p>
+<div class="num">22</div><p id="n22">после сего вошли левиты отправлять службы свои в скинии собрания пред Аароном и пред сынами его. Как повелел Господь Моисею о левитах, так и сделали они с ними.
+</p>
+<div class="num">23</div><p id="n23">И сказал Господь Моисею, говоря:
+</p>
+<div class="num">24</div><p id="n24">вот <i>закон</i> о левитах: от двадцати пяти лет и выше должны вступать они в службу для работ при скинии собрания,
+</p>
+<div class="num">25</div><p id="n25">а в пятьдесят лет должны прекращать отправление работ и более не работать:
+</p>
+<div class="num">26</div><p id="n26">тогда пусть помогают они братьям своим содержать стражу при скинии собрания, работать же - пусть не работают; так поступай с левитами касательно служения их.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="num.9.ru.html">к главе 9</a></div></div>
+
+</body>
+</html>

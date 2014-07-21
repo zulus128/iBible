@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mf.ru.html">Евангелие от Матфея</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В то время проходил Иисус в субботу засеянными полями; ученики же Его взалкали и начали срывать колосья и есть.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Фарисеи, увидев это, сказали Ему: вот, ученики Твои делают, чего не должно делать в субботу.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Он же сказал им: разве вы не читали, что сделал Давид, когда взалкал сам и бывшие с ним?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">как он вошел в дом Божий и ел хлебы предложения, которых не должно было есть ни ему, ни бывшим с ним, а только одним священникам?
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Или не читали ли вы в законе, что в субботы священники в храме нарушают субботу, однако невиновны?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Но говорю вам, что здесь Тот, Кто больше храма;
+</p>
+<div class="num">&nbsp;7</div><p id="n7">если бы вы знали, что&#769; значит: милости хочу, а не жертвы, то не осудили бы невиновных,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">ибо Сын Человеческий есть господин и субботы.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И, отойдя оттуда, вошел Он в синагогу их.
+</p>
+<div class="num">10</div><p id="n10">И вот, там был человек, имеющий сухую руку. И спросили Иисуса, чтобы обвинить Его: можно ли исцелять в субботы?
+</p>
+<div class="num">11</div><p id="n11">Он же сказал им: кто из вас, имея одну овцу, если она в субботу упадет в яму, не возьмет ее и не вытащит?
+</p>
+<div class="num">12</div><p id="n12">Сколько же лучше человек овцы! Итак можно в субботы делать добро.
+</p>
+<div class="num">13</div><p id="n13">Тогда говорит человеку тому: протяни руку твою. И он протянул, и стала она здорова, как другая.
+</p>
+<div class="num">14</div><p id="n14">Фарисеи же, выйдя, имели совещание против Него, как бы погубить Его. Но Иисус, узнав, удалился оттуда.
+</p>
+<div class="num">15</div><p id="n15">И последовало за Ним множество народа, и Он исцелил их всех
+</p>
+<div class="num">16</div><p id="n16">и запретил им объявлять о Нем,
+</p>
+<div class="num">17</div><p id="n17">да сбудется реченное через пророка Исаию, который говорит:
+</p>
+<div class="num">18</div><p id="n18">Се, Отрок Мой, Которого Я избрал, Возлюбленный Мой, Которому благоволит душа Моя. Положу дух Мой на Него, и возвестит народам суд;
+</p>
+<div class="num">19</div><p id="n19">не воспрекословит, не возопиет, и никто не услышит на улицах голоса Его;
+</p>
+<div class="num">20</div><p id="n20">трости надломленной не переломит, и льна курящегося не угасит, доколе не доставит суду победы;
+</p>
+<div class="num">21</div><p id="n21">и на имя Его будут уповать народы.
+</p>
+<div class="num">22</div><p id="n22">Тогда привели к Нему бесноватого слепого и немого; и исцелил его, так что слепой и немой стал и говорить и видеть.
+</p>
+<div class="num">23</div><p id="n23">И дивился весь народ и говорил: не это ли Христос, сын Давидов?
+</p>
+<div class="num">24</div><p id="n24">Фарисеи же, услышав <i>сие,</i> сказали: Он изгоняет бесов не иначе, как <i>силою</i> веельзевула, князя бесовского.
+</p>
+<div class="num">25</div><p id="n25">Но Иисус, зная помышления их, сказал им: всякое царство, разделившееся само в себе, опустеет; и всякий город или дом, разделившийся сам в себе, не устоит.
+</p>
+<div class="num">26</div><p id="n26">И если сатана сатану изгоняет, то он разделился сам с собою: как же устоит царство его?
+</p>
+<div class="num">27</div><p id="n27">И если Я <i>силою</i> веельзевула изгоняю бесов, то сыновья ваши чьею <i>силою</i> изгоняют? Посему они будут вам судьями.
+</p>
+<div class="num">28</div><p id="n28">Если же Я Духом Божиим изгоняю бесов, то конечно достигло до вас Царствие Божие.
+</p>
+<div class="num">29</div><p id="n29">Или, как может кто войти в дом сильного и расхитить вещи его, если прежде не свяжет сильного? и тогда расхитит дом его.
+</p>
+<div class="num">30</div><p id="n30">Кто не со Мною, тот против Меня; и кто не собирает со Мною, тот расточает.
+</p>
+<div class="num">31</div><p id="n31">Посему говорю вам: всякий грех и хула простятся человекам, а хула на Духа не простится человекам;
+</p>
+<div class="num">32</div><p id="n32">если кто скажет слово на Сына Человеческого, простится ему; если же кто скажет на Духа Святаго, не простится ему ни в сем веке, ни в будущем.
+</p>
+<div class="num">33</div><p id="n33">Или признайте дерево хорошим и плод его хорошим; или признайте дерево худым и плод его худым, ибо дерево познается по плоду.
+</p>
+<div class="num">34</div><p id="n34">Порождения ехиднины! как вы можете говорить доброе, будучи злы? Ибо от избытка сердца говорят уста.
+</p>
+<div class="num">35</div><p id="n35">Добрый человек из доброго сокровища выносит доброе, а злой человек из злого сокровища выносит злое.
+</p>
+<div class="num">36</div><p id="n36">Говорю же вам, что за всякое праздное слово, какое скажут люди, дадут они ответ в день суда:
+</p>
+<div class="num">37</div><p id="n37">ибо от слов своих оправдаешься, и от слов своих осудишься.
+</p>
+<div class="num">38</div><p id="n38">Тогда некоторые из книжников и фарисеев сказали: Учитель! хотелось бы нам видеть от Тебя знамение.
+</p>
+<div class="num">39</div><p id="n39">Но Он сказал им в ответ: род лукавый и прелюбодейный ищет знамения; и знамение не дастся ему, кроме знамения Ионы пророка;
+</p>
+<div class="num">40</div><p id="n40">ибо как Иона был во чреве кита три дня и три ночи, так и Сын Человеческий будет в сердце земли три дня и три ночи.
+</p>
+<div class="num">41</div><p id="n41">Ниневитяне восстанут на суд с родом сим и осудят его, ибо они покаялись от проповеди Иониной; и вот, здесь больше Ионы.
+</p>
+<div class="num">42</div><p id="n42">Царица южная восстанет на суд с родом сим и осудит его, ибо она приходила от пределов земли послушать мудрости Соломоновой; и вот, здесь больше Соломона.
+</p>
+<div class="num">43</div><p id="n43">Когда нечистый дух выйдет из человека, то ходит по безводным местам, ища покоя, и не находит;
+</p>
+<div class="num">44</div><p id="n44">тогда говорит: возвращусь в дом мой, откуда я вышел. И, придя, находит <i>его</i> незанятым, выметенным и убранным;
+</p>
+<div class="num">45</div><p id="n45">тогда идет и берет с собою семь других духов, злейших себя, и, войдя, живут там; и бывает для человека того последнее хуже первого. Так будет и с этим злым родом.
+</p>
+<div class="num">46</div><p id="n46">Когда же Он еще говорил к народу, Матерь и братья Его стояли вне <i>дома,</i> желая говорить с Ним.
+</p>
+<div class="num">47</div><p id="n47">И некто сказал Ему: вот Матерь Твоя и братья Твои стоят вне, желая говорить с Тобою.
+</p>
+<div class="num">48</div><p id="n48">Он же сказал в ответ говорившему: кто Матерь Моя? и кто братья Мои?
+</p>
+<div class="num">49</div><p id="n49">И, указав рукою Своею на учеников Своих, сказал: вот матерь Моя и братья Мои;
+</p>
+<div class="num">50</div><p id="n50">ибо, кто будет исполнять волю Отца Моего Небесного, тот Мне брат, и сестра, и матерь.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mf.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

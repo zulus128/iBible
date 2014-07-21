@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 29
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Кто оказывает милость, тот дает взаем ближнему, и кто поддерживает его своею рукою, тот соблюдает заповеди.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Давай взаймы ближнему во время нужды его и сам в свое время возвращай ближнему.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Твердо держи слово и будь верен ему - и ты во всякое время найдешь нужное для тебя.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Многие считали заем находкою и причинили огорчение тем, которые помогли им.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Доколе не получит, он будет целовать руку его и из-за денег ближнего смирит голос;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">а в срок отдачи он будет протягивать время и будет отвечать уныло и жаловаться на время.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Если он будет в состоянии, то едва половину принесет - и это вменит ему в находку;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">а если будет не в состоянии, то заимодавец лишился своих денег и без причины приобрел себе врага в нем:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">он воздаст ему проклятиями и бранью и вместо почтения воздаст бесчестием.
+</p>
+<div class="num">10</div><p id="n10">Многие по причине такого лукавства уклоняются <i>от ссуды</i>, опасаясь напрасно потерпеть утрату.
+</p>
+<div class="num">11</div><p id="n11">Но к бедному ты будь снисходителен и милостынею ему не медли;
+</p>
+<div class="num">12</div><p id="n12">ради заповеди помоги бедному и в нужде его не отпускай его ни с чем.
+</p>
+<div class="num">13</div><p id="n13">Трать серебро для брата и друга и не давай ему заржаветь под камнем на погибель;
+</p>
+<div class="num">14</div><p id="n14">располагай сокровищем твоим по заповедям Всевышнего, и оно принесет тебе более пользы, нежели золото;
+</p>
+<div class="num">15</div><p id="n15">заключи в кладовых твоих милостыню, и она избавит тебя от всякого несчастья:
+</p>
+<div class="num">16</div><p id="n16">лучше крепкого щита и твердого копья она защитит тебя против врага.
+</p>
+<div class="num">17</div><p id="n17">Добрый человек поручится за ближнего, а потерявший стыд оставит его.
+</p>
+<div class="num">18</div><p id="n18">Не забывай благодеяний поручителя; ибо он дал душу свою за тебя.
+</p>
+<div class="num">19</div><p id="n19">Грешник расстроит состояние поручителя, и неблагодарный в душе оставит своего избавителя.
+</p>
+<div class="num">20</div><p id="n20">Поручительство привело в разорение многих достаточных людей и пошатнуло их, как волна морская;
+</p>
+<div class="num">21</div><p id="n21">мужей могущественных изгнало из домов, и они блуждали между чужими народами.
+</p>
+<div class="num">22</div><p id="n22">Грешник, принимающий на себя поручительство и ищущий корысти, впадет в тяжбу.
+</p>
+<div class="num">23</div><p id="n23">Помогай ближнему по силе твоей и берегись, чтобы тебе не впасть <i>в то же</i>.
+</p>
+<div class="num">24</div><p id="n24">Главная потребность для жизни - вода и хлеб, и одежда и дом, прикрывающий наготу.
+</p>
+<div class="num">25</div><p id="n25">Лучше жизнь бедного под дощатым кровом, нежели роскошные пиршества в чужих <i>домах</i>.
+</p>
+<div class="num">26</div><p id="n26">Будь доволен малым, как и многим.
+</p>
+<div class="num">27</div><p id="n27">Худая жизнь - <i>скитаться</i> из дома в дом, и где водворишься, не посмеешь и рта открыть;
+</p>
+<div class="num">28</div><p id="n28">будешь подавать пищу и питье без благодарности, да и сверх того еще услышишь горькое:
+</p>
+<div class="num">29</div><p id="n29">"пойди сюда, пришлец, приготовь стол и, если есть что у тебя, накорми меня";
+</p>
+<div class="num">30</div><p id="n30">"удались, пришлец, ради почетного лица: брат пришел ко мне в гости, дом нужен".
+</p>
+<div class="num">31</div><p id="n31">Тяжел для человека с чувством упрек за приют в доме и порицание за одолжение.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.30.ru.html">к главе 30</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="iov.ru.html">Книга Иова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 20
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И отвечал Софар Наамитянин и сказал:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">размышления мои побуждают меня отвечать, и я поспешаю выразить их.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Упрек, позорный для меня, выслушал я, и дух разумения моего ответит за меня.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Разве не знаешь ты, что от века,- с того времени, как поставлен человек на земле,-
+</p>
+<div class="num">&nbsp;5</div><p id="n5">веселье беззаконных кратковременно, и радость лицемера мгновенна?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Хотя бы возросло до небес величие его, и голова его касалась облаков,-
+</p>
+<div class="num">&nbsp;7</div><p id="n7">как помет его, на веки пропадает он; видевшие его скажут: где он?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Как сон, улетит, и не найдут его; и, как ночное видение, исчезнет.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Глаз, видевший его, больше не увидит его, и уже не усмотрит его место его.
+</p>
+<div class="num">10</div><p id="n10">Сыновья его будут заискивать у нищих, и руки его возвратят похищенное им.
+</p>
+<div class="num">11</div><p id="n11">Кости его наполнены грехами юности его, и с ним лягут они в прах.
+</p>
+<div class="num">12</div><p id="n12">Если сладко во рту его зло, и он таит его под языком своим,
+</p>
+<div class="num">13</div><p id="n13">бережет и не бросает его, а держит его в устах своих,
+</p>
+<div class="num">14</div><p id="n14">то эта пища его в утробе его превратится в желчь аспидов внутри его.
+</p>
+<div class="num">15</div><p id="n15">Имение, которое он глотал, изблюет: Бог исторгнет его из чрева его.
+</p>
+<div class="num">16</div><p id="n16">Змеиный яд он сосет; умертвит его язык ехидны.
+</p>
+<div class="num">17</div><p id="n17">Не видать ему ручьев, рек, текущих медом и молоком!
+</p>
+<div class="num">18</div><p id="n18">Нажитое трудом возвратит, не проглотит; по мере имения его будет и расплата его, а он не порадуется.
+</p>
+<div class="num">19</div><p id="n19">Ибо он угнетал, отсылал бедных; захватывал домы, которых не строил;
+</p>
+<div class="num">20</div><p id="n20">не знал сытости во чреве своем и в жадности своей не щадил ничего.
+</p>
+<div class="num">21</div><p id="n21">Ничего не спаслось от обжорства его, зато не устоит счастье его.
+</p>
+<div class="num">22</div><p id="n22">В полноте изобилия будет тесно ему; всякая рука обиженного поднимется на него.
+</p>
+<div class="num">23</div><p id="n23">Когда будет чем наполнить утробу его, Он пошлет на него ярость гнева Своего и одождит на него болезни в плоти его.
+</p>
+<div class="num">24</div><p id="n24">Убежит ли он от оружия железного,- пронзит его лук медный;
+</p>
+<div class="num">25</div><p id="n25">станет вынимать <i>стрелу,- </i>и она выйдет из тела, выйдет, сверкая сквозь желчь его; ужасы смерти найдут на него!
+</p>
+<div class="num">26</div><p id="n26">Все мрачное сокрыто внутри его; будет пожирать его огонь, никем не раздуваемый; зло постигнет и оставшееся в шатре его.
+</p>
+<div class="num">27</div><p id="n27">Небо откроет беззаконие его, и земля восстанет против него.
+</p>
+<div class="num">28</div><p id="n28">Исчезнет стяжание дома его; все расплывется в день гнева Его.
+</p>
+<div class="num">29</div><p id="n29">Вот удел человеку беззаконному от Бога и наследие, определенное ему Вседержителем!
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="iov.21.ru.html">к главе 21</a></div></div>
+
+</body>
+</html>

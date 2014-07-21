@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mf.ru.html">Евангелие от Матфея</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 20
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Ибо Царство Небесное подобно хозяину дома, который вышел рано поутру нанять работников в виноградник свой
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и, договорившись с работниками по динарию на день, послал их в виноградник свой;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">выйдя около третьего часа, он увидел других, стоящих на торжище праздно,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и им сказал: идите и вы в виноградник мой, и что&#769; следовать будет, дам вам. Они пошли.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Опять выйдя около шестого и девятого часа, сделал то&#769; же.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Наконец, выйдя около одиннадцатого часа, он нашел других, стоящих праздно, и говорит им: что&#769; вы стоите здесь целый день праздно?
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Они говорят ему: никто нас не нанял. Он говорит им: идите и вы в виноградник мой, и что&#769; следовать будет, полу&#769;чите.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Когда же наступил вечер, говорит господин виноградника управителю своему: позови работников и отдай им плату, начав с последних до первых.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И пришедшие около одиннадцатого часа получили по динарию.
+</p>
+<div class="num">10</div><p id="n10">Пришедшие же первыми думали, что они получат больше, но получили и они по динарию;
+</p>
+<div class="num">11</div><p id="n11">и, получив, стали роптать на хозяина дома
+</p>
+<div class="num">12</div><p id="n12">и говорили: эти последние работали один час, и ты сравнял их с нами, перенесшими тягость дня и зной.
+</p>
+<div class="num">13</div><p id="n13">Он же в ответ сказал одному из них: друг! я не обижаю тебя; не за динарий ли ты договорился со мною?
+</p>
+<div class="num">14</div><p id="n14">возьми свое и пойди; я же хочу дать этому последнему <i>то&#769;</i> <i>же,</i> что&#769; и тебе;
+</p>
+<div class="num">15</div><p id="n15">разве я не властен в своем делать, что&#769; хочу? или глаз твой завистлив оттого, что я добр?
+</p>
+<div class="num">16</div><p id="n16">Так будут последние первыми, и первые последними, ибо много званых, а мало избранных.
+</p>
+<div class="num">17</div><p id="n17">И, восходя в Иерусалим, Иисус дорогою отозвал двенадцать учеников одних, и сказал им:
+</p>
+<div class="num">18</div><p id="n18">вот, мы восходим в Иерусалим, и Сын Человеческий предан будет первосвященникам и книжникам, и осудят Его на смерть;
+</p>
+<div class="num">19</div><p id="n19">и предадут Его язычникам на поругание и биение и распятие; и в третий день воскреснет.
+</p>
+<div class="num">20</div><p id="n20">Тогда приступила к Нему мать сыновей Зеведеевых с сыновьями своими, кланяясь и чего-то прося у Него.
+</p>
+<div class="num">21</div><p id="n21">Он сказал ей: чего ты хочешь? Она говорит Ему: скажи, чтобы сии два сына мои сели у Тебя один по правую сторону, а другой по левую в Царстве Твоем.
+</p>
+<div class="num">22</div><p id="n22">Иисус сказал в ответ: не знаете, чего просите. Можете ли пить чашу, которую Я буду пить, или креститься крещением, которым Я крещусь? Они говорят Ему: можем.
+</p>
+<div class="num">23</div><p id="n23">И говорит им: чашу Мою будете пить, и крещением, которым Я крещусь, будете креститься, но дать сесть у Меня по правую сторону и по левую - не от Меня <i>зависит,</i> но кому уготовано Отцем Моим.
+</p>
+<div class="num">24</div><p id="n24">Услышав <i>сие,</i> <i>прочие</i> десять <i>учеников</i> вознегодовали на двух братьев.
+</p>
+<div class="num">25</div><p id="n25">Иисус же, подозвав их, сказал: вы знаете, что князья народов господствуют над ними, и вельможи властвуют ими;
+</p>
+<div class="num">26</div><p id="n26">но между вами да не будет так: а кто хочет между вами быть бо&#769;льшим, да будет вам слугою;
+</p>
+<div class="num">27</div><p id="n27">и кто хочет между вами быть первым, да будет вам рабом;
+</p>
+<div class="num">28</div><p id="n28">так как Сын Человеческий не <i>для</i> <i>того</i> пришел, чтобы Ему служили, но чтобы послужить и отдать душу Свою для искупления многих.
+</p>
+<div class="num">29</div><p id="n29">И когда выходили они из Иерихона, за Ним следовало множество народа.
+</p>
+<div class="num">30</div><p id="n30">И вот, двое слепых, сидевшие у дороги, услышав, что Иисус идет мимо, начали кричать: помилуй нас, Господи, Сын Давидов!
+</p>
+<div class="num">31</div><p id="n31">Народ же заставлял их молчать; но они еще громче стали кричать: помилуй нас, Господи, Сын Давидов!
+</p>
+<div class="num">32</div><p id="n32">Иисус, остановившись, подозвал их и сказал: чего вы хотите от Меня?
+</p>
+<div class="num">33</div><p id="n33">Они говорят Ему: Господи! чтобы открылись глаза наши.
+</p>
+<div class="num">34</div><p id="n34">Иисус же, умилосердившись, прикоснулся к глазам их; и тотчас прозрели глаза их, и они пошли за Ним.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mf.21.ru.html">к главе 21</a></div></div>
+
+</body>
+</html>

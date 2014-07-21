@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para1.ru.html">Первая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 22
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Давид: вот дом Господа Бога и вот жертвенник для всесожжений Израиля.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И приказал Давид собрать пришельцев, находившихся в земле Израильской, и поставил каменотесов, чтобы обтесывать камни для построения дома Божия.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И множество железа для гвоздей к дверям ворот и для связей заготовил Давид, и множество меди без весу,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и кедровых дерев без счету, потому что Сидоняне и Тиряне доставили Давиду множество кедровых дерев.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И сказал Давид: Соломон, сын мой, молод и малосилен, а дом, который следует выстроить для Господа, должен быть весьма величествен, на славу и украшение пред всеми землями: итак буду я заготовлять для него. И заготовил Давид до смерти своей много.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И призвал Соломона, сына своего, и завещал ему построить дом Господу Богу Израилеву.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И сказал Давид Соломону: сын мой! у меня было на сердце построить дом во имя Господа, Бога моего,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">но было ко мне слово Господне, и сказано: "ты пролил много крови и вел большие войны; ты не должен строить дома имени Моему, потому что пролил много крови на землю пред лицем Моим.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Вот, у тебя родится сын: он будет человек мирный; Я дам ему покой от всех врагов его кругом: посему имя ему будет Соломон. И мир и покой дам Израилю во дни его.
+</p>
+<div class="num">10</div><p id="n10">Он построит дом имени Моему, и он будет Мне сыном, а Я ему отцом, и утвержу престол царства его над Израилем навек".
+</p>
+<div class="num">11</div><p id="n11">И ныне, сын мой! да будет Господь с тобою, чтобы ты был благоуспешен и построил дом Господу Богу твоему, как Он говорил о тебе.
+</p>
+<div class="num">12</div><p id="n12">Да даст тебе Господь смысл и разум, и поставит тебя над Израилем; и соблюди закон Господа Бога твоего.
+</p>
+<div class="num">13</div><p id="n13">Тогда ты будешь благоуспешен, если будешь стараться исполнять уставы и законы, которые заповедал Господь Моисею для Израиля. Будь тверд и мужествен, не бойся и не унывай.
+</p>
+<div class="num">14</div><p id="n14">И вот, я при скудости моей приготовил для дома Господня сто тысяч талантов золота и тысячу тысяч талантов серебра, а меди и железу нет веса, потому что их множество; и дерева и камни я также заготовил, а ты еще прибавь к этому.
+</p>
+<div class="num">15</div><p id="n15">У тебя множество рабочих, и каменотесов, резчиков и плотников, и всяких способных на всякое дело;
+</p>
+<div class="num">16</div><p id="n16">золоту, серебру и меди и железу нет счета: начни и делай; Господь будет с тобою.
+</p>
+<div class="num">17</div><p id="n17">И завещал Давид всем князьям Израилевым помогать Соломону, сыну его:
+</p>
+<div class="num">18</div><p id="n18">не с вами ли Господь Бог наш, давший вам покой со всех сторон? потому что Он предал в руки мои жителей земли, и покорилась земля пред Господом и пред народом Его.
+</p>
+<div class="num">19</div><p id="n19">Итак расположите сердце ваше и душу вашу к тому, чтобы взыскать Господа Бога вашего. Встаньте и постройте святилище Господу Богу, чтобы перенести ковчег завета Господня и священные сосуды Божии в дом, созидаемый имени Господню.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para1.23.ru.html">к главе 23</a></div></div>
+
+</body>
+</html>

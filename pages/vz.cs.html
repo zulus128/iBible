@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+	<p class="zavet-menu" id="zavet-menu">
+		<!--a class="sel" href="vz.cs.html"-->&nbsp;Ветхий&nbsp;завет<!--/a-->&nbsp;&nbsp;<a href="nz.cs.html">Новый&nbsp;завет</a>
+	</p>
+
+
+
+	<p class="book-in-list">
+      <a href="gen.cs.html">
+        <div class="book-point" id="book-gen"><div class="caption-abbr">
+          Быт
+        </div></div>
+
+        <div class="book-name">
+          Бытие
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="ex.cs.html">
+        <div class="book-point" id="book-ex"><div class="caption-abbr">
+          Исх
+        </div></div>
+
+        <div class="book-name">
+          Исход
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="lev.cs.html">
+        <div class="book-point" id="book-lev"><div class="caption-abbr">
+          Лев
+        </div></div>
+
+        <div class="book-name">
+          Левит
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="num.cs.html">
+        <div class="book-point" id="book-num"><div class="caption-abbr">
+          Чис
+        </div></div>
+
+        <div class="book-name">
+          Числа
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="deu.cs.html">
+        <div class="book-point" id="book-deu"><div class="caption-abbr">
+          Втор
+        </div></div>
+
+        <div class="book-name">
+          Второзаконие
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="nav.cs.html">
+        <div class="book-point" id="book-nav"><div class="caption-abbr">
+          Нав
+        </div></div>
+
+        <div class="book-name">
+          Книга Иисуса Навина
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="sud.cs.html">
+        <div class="book-point" id="book-sud"><div class="caption-abbr">
+          Суд
+        </div></div>
+
+        <div class="book-name">
+          Книга Судей
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="ruf.cs.html">
+        <div class="book-point" id="book-ruf"><div class="caption-abbr">
+          Руф
+        </div></div>
+
+        <div class="book-name">
+          Книга Руфь
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="king1.cs.html">
+        <div class="book-point" id="book-king1"><div class="caption-abbr">
+          1Цар
+        </div></div>
+
+        <div class="book-name">
+          Первая книга Царств
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="king2.cs.html">
+        <div class="book-point" id="book-king2"><div class="caption-abbr">
+          2Цар
+        </div></div>
+
+        <div class="book-name">
+          Вторая книга Царств
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="king3.cs.html">
+        <div class="book-point" id="book-king3"><div class="caption-abbr">
+          3Цар
+        </div></div>
+
+        <div class="book-name">
+          Третья книга Царств
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="king4.cs.html">
+        <div class="book-point" id="book-king4"><div class="caption-abbr">
+          4Цар
+        </div></div>
+
+        <div class="book-name">
+          Четвертая книга Царств
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="para1.cs.html">
+        <div class="book-point" id="book-para1"><div class="caption-abbr">
+          1Пар
+        </div></div>
+
+        <div class="book-name">
+          Первая книга<br />Паралипоменон
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="para2.cs.html">
+        <div class="book-point" id="book-para2"><div class="caption-abbr">
+          2Пар
+        </div></div>
+
+        <div class="book-name">
+          Вторая книга<br />Паралипоменон
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="ezr1.cs.html">
+        <div class="book-point" id="book-ezr1"><div class="caption-abbr">
+          1Езд
+        </div></div>
+
+        <div class="book-name">
+          Первая книга Ездры
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="nee.cs.html">
+        <div class="book-point" id="book-nee"><div class="caption-abbr">
+          Неем
+        </div></div>
+
+        <div class="book-name">
+          Книга Неемии
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="ezr2.cs.html">
+        <div class="book-point" id="book-ezr2"><div class="caption-abbr">
+          2Езд
+        </div></div>
+
+        <div class="book-name">
+          Вторая книга Ездры
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="tov.cs.html">
+        <div class="book-point" id="book-tov"><div class="caption-abbr">
+          Тов
+        </div></div>
+
+        <div class="book-name">
+          Книга Товита
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="jdi.cs.html">
+        <div class="book-point" id="book-jdi"><div class="caption-abbr">
+          Иудифь
+        </div></div>
+
+        <div class="book-name">
+          Книга Иудифь
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="esf.cs.html">
+        <div class="book-point" id="book-esf"><div class="caption-abbr">
+          Есф
+        </div></div>
+
+        <div class="book-name">
+          Книга Есфирь
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="iov.cs.html">
+        <div class="book-point" id="book-iov"><div class="caption-abbr">
+          Иов
+        </div></div>
+
+        <div class="book-name">
+          Книга Иова
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="ps.cs.html">
+        <div class="book-point" id="book-ps"><div class="caption-abbr">
+          Пс
+        </div></div>
+
+        <div class="book-name">
+          Псалтирь
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="prov.cs.html">
+        <div class="book-point" id="book-prov"><div class="caption-abbr">
+          Прит
+        </div></div>
+
+        <div class="book-name">
+          Книга Притчей<br />Соломоновых
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="eccl.cs.html">
+        <div class="book-point" id="book-eccl"><div class="caption-abbr">
+          Екк
+        </div></div>
+
+        <div class="book-name">
+          Книга Екклесиаста
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="song.cs.html">
+        <div class="book-point" id="book-song"><div class="caption-abbr">
+          Песн
+        </div></div>
+
+        <div class="book-name">
+          Песнь Песней
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="prem.cs.html">
+        <div class="book-point" id="book-prem"><div class="caption-abbr">
+          Прем
+        </div></div>
+
+        <div class="book-name">
+          Книга Премудрости<br />Соломона
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="sir.cs.html">
+        <div class="book-point" id="book-sir"><div class="caption-abbr">
+          Сир
+        </div></div>
+
+        <div class="book-name">
+          Книга Премудрости<br />Иисуса, сына Сирахова
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="isa.cs.html">
+        <div class="book-point" id="book-isa"><div class="caption-abbr">
+          Ис
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Исаии
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="jer.cs.html">
+        <div class="book-point" id="book-jer"><div class="caption-abbr">
+          Иер
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Иеремии
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="lam.cs.html">
+        <div class="book-point" id="book-lam"><div class="caption-abbr">
+          Плач
+        </div></div>
+
+        <div class="book-name">
+          Книга Плач Иеремии
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="posjer.cs.html">
+        <div class="book-point" id="book-posjer"><div class="caption-abbr">
+          Посл.Иер
+        </div></div>
+
+        <div class="book-name">
+          Послание Иеремии
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="varuh.cs.html">
+        <div class="book-point" id="book-varuh"><div class="caption-abbr">
+          Вар
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Варуха
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="eze.cs.html">
+        <div class="book-point" id="book-eze"><div class="caption-abbr">
+          Иез
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Иезекииля
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="dan.cs.html">
+        <div class="book-point" id="book-dan"><div class="caption-abbr">
+          Дан
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Даниила
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="hos.cs.html">
+        <div class="book-point" id="book-hos"><div class="caption-abbr">
+          Ос
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Осии
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="joe.cs.html">
+        <div class="book-point" id="book-joe"><div class="caption-abbr">
+          Иоил
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Иоиля
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="am.cs.html">
+        <div class="book-point" id="book-am"><div class="caption-abbr">
+          Амос
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Амоса
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="avd.cs.html">
+        <div class="book-point" id="book-avd"><div class="caption-abbr">
+          Авд
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Авдия
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="jona.cs.html">
+        <div class="book-point" id="book-jona"><div class="caption-abbr">
+          Иона
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Ионы
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="mih.cs.html">
+        <div class="book-point" id="book-mih"><div class="caption-abbr">
+          Мих
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Михея
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="nau.cs.html">
+        <div class="book-point" id="book-nau"><div class="caption-abbr">
+          Наум
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Наума
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="avv.cs.html">
+        <div class="book-point" id="book-avv"><div class="caption-abbr">
+          Авв
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Аввакума
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="sof.cs.html">
+        <div class="book-point" id="book-sof"><div class="caption-abbr">
+          Соф
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Софонии
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="agg.cs.html">
+        <div class="book-point" id="book-agg"><div class="caption-abbr">
+          Агг
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Аггея
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="zah.cs.html">
+        <div class="book-point" id="book-zah"><div class="caption-abbr">
+          Зах
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Захарии
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="mal.cs.html">
+        <div class="book-point" id="book-mal"><div class="caption-abbr">
+          Мал
+        </div></div>
+
+        <div class="book-name">
+          Книга Пророка Малахии
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="mak1.cs.html">
+        <div class="book-point" id="book-mak1"><div class="caption-abbr">
+          1Мак
+        </div></div>
+
+        <div class="book-name">
+          Первая книга<br />Маккавейская
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="mak2.cs.html">
+        <div class="book-point" id="book-mak2"><div class="caption-abbr">
+          2Мак
+        </div></div>
+
+        <div class="book-name">
+          Вторая книга<br />Маккавейская
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="mak3.cs.html">
+        <div class="book-point" id="book-mak3"><div class="caption-abbr">
+          3Мак
+        </div></div>
+
+        <div class="book-name">
+          Третья книга<br />Маккавейская
+        </div>
+      </a>
+    </p>
+
+
+
+	<p class="book-in-list">
+      <a href="ezr3.cs.html">
+        <div class="book-point" id="book-ezr3"><div class="caption-abbr">
+          3Езд
+        </div></div>
+
+        <div class="book-name">
+          Третья книга Ездры
+        </div>
+      </a>
+    </p>
+
+
+</body>
+</html>

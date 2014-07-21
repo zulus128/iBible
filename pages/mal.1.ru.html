@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mal.ru.html">Книга Пророка Малахии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 1
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Пророческое слово Господа к Израилю через Малахию.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Я возлюбил вас, говорит Господь. А вы говорите: "в чем явил Ты любовь к нам?" - Не брат ли Исав Иакову? говорит Господь; и однако же Я возлюбил Иакова,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">а Исава возненавидел и предал горы его опустошению, и владения его - шакалам пустыни.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Если Едом скажет: "мы разорены, но мы восстановим разрушенное", то Господь Саваоф говорит: они построят, а Я разрушу, и прозовут их областью нечестивою, народом, на который Господь прогневался навсегда.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И увидят это глаза ваши, и вы скажете: "возвеличился Господь над пределами Израиля!"
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Сын чтит отца и раб - господина своего; если Я Отец, то где почтение ко Мне? и если Я Господь, то где благоговение предо Мною? говорит Господь Саваоф вам, священники, бесславящие имя Мое. Вы говорите: "чем мы бесславим имя Твое?"
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Вы приносите на жертвенник Мой нечистый хлеб, и говорите: "чем мы бесславим Тебя?" - Тем, что говорите: "трапеза Господня не стоит уважения".
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И когда приносите в жертву слепое, не худо ли это? или когда приносите хромое и больное, не худо ли это? Поднеси это твоему князю; будет ли он доволен тобою и благосклонно ли примет тебя? говорит Господь Саваоф.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Итак молитесь Богу, чтобы помиловал нас; а когда такое исходит из рук ваших, то может ли Он милостиво принимать вас? говорит Господь Саваоф.
+</p>
+<div class="num">10</div><p id="n10">Лучше кто-нибудь из вас запер бы двери, чтобы напрасно не держали огня на жертвеннике Моем. Нет Моего благоволения к вам, говорит Господь Саваоф, и приношение из рук ваших неблагоугодно Мне.
+</p>
+<div class="num">11</div><p id="n11">Ибо от востока солнца до запада велико будет имя Мое между народами, и на всяком месте будут приносить фимиам имени Моему, чистую жертву; велико будет имя Мое между народами, говорит Господь Саваоф.
+</p>
+<div class="num">12</div><p id="n12">А вы хулите его тем, что говорите: "трапеза Господня не стоит уважения, и доход от нее - пища ничтожная".
+</p>
+<div class="num">13</div><p id="n13">Притом говорите: "вот сколько труда!" и пренебрегаете ею, говорит Господь Саваоф, и приносите украденное, хромое и больное, и такого же свойства приносите хлебный дар: могу ли с благоволением принимать это из рук ваших? говорит Господь.
+</p>
+<div class="num">14</div><p id="n14">Проклят лживый, у которого в стаде есть неиспорченный самец, и он дал обет, а приносит в жертву Господу поврежденное: ибо Я Царь великий, и имя Мое страшно у народов.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mal.2.ru.html">к главе 2</a></div></div>
+
+</body>
+</html>

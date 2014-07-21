@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mf.ru.html">Евангелие от Матфея</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 6
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Смотрите, не творите милостыни вашей пред людьми с тем, чтобы они видели вас: иначе не будет вам награды от Отца вашего Небесного.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Итак, когда творишь милостыню, не труби перед собою, как делают лицемеры в синагогах и на улицах, чтобы прославляли их люди. Истинно говорю вам: они уже получают награду свою.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">У тебя же, когда творишь милостыню, пусть левая рука твоя не знает, что делает правая,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">чтобы милостыня твоя была втайне; и Отец твой, видящий тайное, воздаст тебе явно.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И, когда молишься, не будь, как лицемеры, которые любят в синагогах и на углах улиц, останавливаясь, молиться, чтобы показаться перед людьми. Истинно говорю вам, что они уже получают награду свою.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Ты же, когда молишься, войди в комнату твою и, затворив дверь твою, помолись Отцу твоему, Который втайне; и Отец твой, видящий тайное, воздаст тебе явно.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">А молясь, не говорите лишнего, как язычники, ибо они думают, что в многословии своем будут услышаны;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">не уподобляйтесь им, ибо знает Отец ваш, в чем вы имеете нужду, прежде вашего прошения у Него.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Молитесь же так: Отче наш, сущий на небесах! да святится имя Твое;
+</p>
+<div class="num">10</div><p id="n10">да приидет Царствие Твое; да будет воля Твоя и на земле, как на небе;
+</p>
+<div class="num">11</div><p id="n11">хлеб наш насущный дай нам на сей день;
+</p>
+<div class="num">12</div><p id="n12">и прости нам долги наши, как и мы прощаем должникам нашим;
+</p>
+<div class="num">13</div><p id="n13">и не введи нас в искушение, но избавь нас от лукавого. Ибо Твое есть Царство и сила и слава во веки. Аминь.
+</p>
+<div class="num">14</div><p id="n14">Ибо если вы будете прощать людям согрешения их, то простит и вам Отец ваш Небесный,
+</p>
+<div class="num">15</div><p id="n15">а если не будете прощать людям согрешения их, то и Отец ваш не простит вам согрешений ваших.
+</p>
+<div class="num">16</div><p id="n16">Также, когда поститесь, не будьте унылы, как лицемеры, ибо они принимают на себя мрачные лица, чтобы показаться людям постящимися. Истинно говорю вам, что они уже получают награду свою.
+</p>
+<div class="num">17</div><p id="n17">А ты, когда постишься, помажь голову твою и умой лице твое,
+</p>
+<div class="num">18</div><p id="n18">чтобы явиться постящимся не пред людьми, но пред Отцом твоим, Который втайне; и Отец твой, видящий тайное, воздаст тебе явно.
+</p>
+<div class="num">19</div><p id="n19">Не собирайте себе сокровищ на земле, где моль и ржа истребляют и где воры подкапывают и крадут,
+</p>
+<div class="num">20</div><p id="n20">но собирайте себе сокровища на небе, где ни моль, ни ржа не истребляют и где воры не подкапывают и не крадут,
+</p>
+<div class="num">21</div><p id="n21">ибо где сокровище ваше, там будет и сердце ваше.
+</p>
+<div class="num">22</div><p id="n22">Светильник для тела есть око. Итак, если око твое будет чисто, то всё тело твое будет светло;
+</p>
+<div class="num">23</div><p id="n23">если же око твое будет худо, то всё тело твое будет темно. Итак, если свет, который в тебе, тьма, то какова же тьма?
+</p>
+<div class="num">24</div><p id="n24">Никто не может служить двум господам: ибо или одного будет ненавидеть, а другого любить; или одному станет усердствовать, а о другом нерадеть. Не можете служить Богу и маммоне<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;Богатству.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p1"></a>.
+</p>
+<div class="num">25</div><p id="n25">Посему говорю вам: не заботьтесь для души вашей, что вам есть и что пить, ни для тела вашего, во что одеться. Душа не больше ли пищи, и тело одежды?
+</p>
+<div class="num">26</div><p id="n26">Взгляните на птиц небесных: они ни сеют, ни жнут, ни собирают в житницы; и Отец ваш Небесный питает их. Вы не гораздо ли лучше их?
+</p>
+<div class="num">27</div><p id="n27">Да и кто из вас, заботясь, может прибавить себе росту <i>хотя</i> на один локоть?
+</p>
+<div class="num">28</div><p id="n28">И об одежде что заботитесь? Посмотрите на полевые лилии, как они растут: ни трудятся, ни прядут;
+</p>
+<div class="num">29</div><p id="n29">но говорю вам, что и Соломон во всей славе своей не одевался так, ка&#769;к всякая из них;
+</p>
+<div class="num">30</div><p id="n30">если же траву полевую, которая сегодня есть, а завтра будет брошена в печь, Бог так одевает, кольми паче вас, маловеры!
+</p>
+<div class="num">31</div><p id="n31">Итак не заботьтесь и не говорите: что нам есть? или что пить? или во что одеться?
+</p>
+<div class="num">32</div><p id="n32">потому что всего этого ищут язычники, и потому что Отец ваш Небесный знает, что вы имеете нужду во всем этом.
+</p>
+<div class="num">33</div><p id="n33">Ищите же прежде Царства Божия и правды Его, и это все приложится вам.
+</p>
+<div class="num">34</div><p id="n34">Итак не заботьтесь о завтрашнем дне, ибо завтрашний <i>сам</i> будет заботиться о своем: довольно для <i>каждого</i> дня своей заботы.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mf.7.ru.html">к главе 7</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 49
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Память Иосии - как состав фимиама, приготовленный искусством мироварника:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">во всяких устах она будет сладка, как мед и как музыка при угощении вином.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Он успешно действовал в обращении народа и истребил мерзости беззакония;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">он направил к Господу сердце свое и во дни беззаконных утвердил благочестие.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Кроме Давида, Езекии и Иосии, все тяжко согрешили,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">ибо оставили закон Всевышнего; цари Иудейские престали,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">ибо предали рог свой другим и славу свою - чужому народу.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Избранный город святыни сожжен, и улицы его опустошены, как предсказал Иеремия,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">которого они оскорбляли, хотя он еще во чреве освящен был в пророка, чтобы искоренять, поражать и погублять, равно как строить и насаждать.
+</p>
+<div class="num">10</div><p id="n10">Иезекииль видел явление славы, которую <i>Бог</i> показал ему в херувимской колеснице;
+</p>
+<div class="num">11</div><p id="n11">он напоминал о врагах под образом дождя и возвещал доброе тем, которые исправляли пути свои.
+</p>
+<div class="num">12</div><p id="n12">И двенадцать пророков - да процветут кости их от места своего! - утешали Иакова и спасали их верною надеждою.
+</p>
+<div class="num">13</div><p id="n13">Как возвеличим Зоровавеля? И он - как перстень на правой руке;
+</p>
+<div class="num">14</div><p id="n14">также Иисус, сын Иоседека: они во дни свои построили дом и восстановили святый храм Господу, предназначенный к вечной славе.
+</p>
+<div class="num">15</div><p id="n15">Велика память и Неемии, который воздвиг нам павшие стены, поставил ворота и запоры и возобновил разрушенные домы наши.
+</p>
+<div class="num">16</div><p id="n16">Не было на земле никого из сотворенных, подобного Еноху,- ибо он был восхи&#769;щен от земли,-
+</p>
+<div class="num">17</div><p id="n17">и не родился такой муж, как Иосиф, глава братьев, опора народа,- и кости его были почтены.
+</p>
+<div class="num">18</div><p id="n18">Прославились между людьми Сим и Сиф, но выше всего живущего в творении - Адам.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.50.ru.html">к главе 50</a></div></div>
+
+</body>
+</html>

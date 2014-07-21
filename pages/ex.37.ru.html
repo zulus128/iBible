@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 37
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сделал Веселеил ковчег из дерева ситтим; длина его два локтя с половиною, ширина его полтора локтя и высота его полтора локтя;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и обложил его чистым золотом внутри и снаружи и сделал вокруг него золотой венец;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и вылил для него четыре кольца золотых, на четырех нижних углах его: два кольца на одной стороне его и два кольца на другой стороне его.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И сделал шесты из дерева ситтим и обложил их золотом;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и вложил шесты в кольца, по сторонам ковчега, чтобы носить ковчег.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сделал крышку из чистого золота: длина ее два локтя с половиною, а ширина полтора локтя.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И сделал двух херувимов из золота: чеканной работы сделал их на обоих концах крышки,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">одного херувима с одного конца, а другого херувима с другого конца: выдавшимися из крышки сделал херувимов с обоих концов ее;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и были херувимы с распростертыми вверх крыльями и покрывали крыльями своими крышку, а лицами своими были <i>обращены</i> друг к другу; к крышке <i>были</i> лица херувимов.
+</p>
+<div class="num">10</div><p id="n10">И сделал стол из дерева ситтим длиною в два локтя, шириною в локоть и вышиною в полтора локтя,
+</p>
+<div class="num">11</div><p id="n11">и обложил его золотом чистым, и сделал вокруг него золотой венец;
+</p>
+<div class="num">12</div><p id="n12">и сделал вокруг него стенки в ладонь и сделал золотой венец у стенок его;
+</p>
+<div class="num">13</div><p id="n13">и вылил для него четыре кольца золотых и утвердил кольца на четырех углах, у четырех ножек его;
+</p>
+<div class="num">14</div><p id="n14">при стенках были кольца, чтобы влагать шесты для ношения стола;
+</p>
+<div class="num">15</div><p id="n15">и сделал шесты из дерева ситтим и обложил их золотом для ношения стола.
+</p>
+<div class="num">16</div><p id="n16">Потом сделал сосуды, принадлежащие к столу: блюда, кадильницы, кружки и чаши, чтобы возливать ими, из чистого золота.
+</p>
+<div class="num">17</div><p id="n17">И сделал светильник из золота чистого, чеканный сделал светильник; стебель его, ветви его, чашечки его, яблоки его и цветы его <i>выходили</i> из него;
+</p>
+<div class="num">18</div><p id="n18">шесть ветвей выходило из боков его: три ветви светильника из одного бока его и три ветви светильника из другого бока его;
+</p>
+<div class="num">19</div><p id="n19">три чашечки были наподобие миндального цветка, яблоко и цветы на одной ветви, и три чашечки наподобие миндального цветка, яблоко и цветы на другой ветви: так на <i>всех</i> шести ветвях, выходящих из светильника;
+</p>
+<div class="num">20</div><p id="n20">а на <i>стебле</i> светильника было четыре чашечки наподобие миндального цветка с яблоками и цветами;
+</p>
+<div class="num">21</div><p id="n21">у шести ветвей, выходящих из него, яблоко под первыми двумя ветвями, и яблоко под <i>вторыми</i> двумя ветвями, и яблоко под <i>третьими</i> двумя ветвями;
+</p>
+<div class="num">22</div><p id="n22">яблоки и ветви их выходили из него; весь он <i>был</i> чеканный, цельный, из чистого золота.
+</p>
+<div class="num">23</div><p id="n23">И сделал к нему семь лампад, и щипцы к нему и лотки к нему, из чистого золота;
+</p>
+<div class="num">24</div><p id="n24">из таланта чистого золота сделал его со всеми принадлежностями его.
+</p>
+<div class="num">25</div><p id="n25">И сделал жертвенник курения из дерева ситтим: длина его локоть и ширина его локоть, четыреугольный, вышина его два локтя; из него выходили роги его;
+</p>
+<div class="num">26</div><p id="n26">и обложил его чистым золотом, верх его и стороны его кругом, и роги его, и сделал к нему золотой венец вокруг;
+</p>
+<div class="num">27</div><p id="n27">под венцом его на двух углах его сделал два кольца золотых; с двух сторон его сделал их, чтобы вкладывать в них шесты для ношения его;
+</p>
+<div class="num">28</div><p id="n28">шесты сделал из дерева ситтим и обложил их золотом.
+</p>
+<div class="num">29</div><p id="n29">И сделал миро для священного помазания и курение благовонное, чистое, искусством составляющего масти.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.38.ru.html">к главе 38</a></div></div>
+
+</body>
+</html>

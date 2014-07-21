@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 13
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И поднялся Аврам из Египта, сам и жена его, и всё, что у него было, и Лот с ним, на юг.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И был Аврам очень богат скотом, и серебром, и золотом.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И продолжал он переходы свои от юга до Вефиля, до места, где прежде был шатер его между Вефилем и между Гаем,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">до места жертвенника, который он сделал там вначале; и там призвал Аврам имя Господа.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И у Лота, который ходил с Аврамом, также был мелкий и крупный скот и шатры.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И непоместительна была земля для них, чтобы жить вместе, ибо имущество их было так велико, что они не могли жить вместе.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И был спор между пастухами скота Аврамова и между пастухами скота Лотова; и Хананеи и Ферезеи жили тогда в той земле.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И сказал Аврам Лоту: да не будет раздора между мною и тобою, и между пастухами моими и пастухами твоими, ибо мы родственники;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">не вся ли земля пред тобою? отделись же от меня: если ты налево, то я направо; а если ты направо, то я налево.
+</p>
+<div class="num">10</div><p id="n10">Лот возвел очи свои и увидел всю окрестность Иорданскую, что она, прежде нежели истребил Господь Содом и Гоморру, вся до Сигора орошалась водою, как сад Господень, как земля Египетская;
+</p>
+<div class="num">11</div><p id="n11">и избрал себе Лот всю окрестность Иорданскую; и двинулся Лот к востоку. И отделились они друг от друга.
+</p>
+<div class="num">12</div><p id="n12">Аврам стал жить на земле Ханаанской; а Лот стал жить в городах окрестности и раскинул шатры до Содома.
+</p>
+<div class="num">13</div><p id="n13">Жители же Содомские были злы и весьма грешны пред Господом.
+</p>
+<div class="num">14</div><p id="n14">И сказал Господь Авраму, после того как Лот отделился от него: возведи очи твои и с места, на котором ты теперь, посмотри к северу и к югу, и к востоку и к западу;
+</p>
+<div class="num">15</div><p id="n15">ибо всю землю, которую ты видишь, тебе дам Я и потомству твоему навеки,
+</p>
+<div class="num">16</div><p id="n16">и сделаю потомство твое, как песок земной; если кто может сосчитать песок земной, то и потомство твое сочтено будет;
+</p>
+<div class="num">17</div><p id="n17">встань, пройди по земле сей в долготу и в широту ее, ибо Я тебе дам ее [и потомству твоему навсегда].
+</p>
+<div class="num">18</div><p id="n18">И двинул Аврам шатер, и пошел, и поселился у дубравы Мамре, что в Хевроне; и создал там жертвенник Господу.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.14.ru.html">к главе 14</a></div></div>
+
+</body>
+</html>

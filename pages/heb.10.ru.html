@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="heb.ru.html">Послание к Евреям</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 10
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Закон, имея тень будущих благ, а не самый образ вещей, одними и теми же жертвами, каждый год постоянно приносимыми, никогда не может сделать совершенными приходящих <i>с</i> <i>ними.</i>
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Иначе перестали бы приносить <i>их,</i> потому что приносящие жертву, быв очищены однажды, не имели бы уже никакого сознания грехов.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Но жертвами каждогодно напоминается о грехах,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">ибо невозможно, чтобы кровь тельцов и козлов уничтожала грехи.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Посему <i>Христос,</i> входя в мир, говорит: жертвы и приношения Ты не восхотел, но тело уготовал Мне.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Всесожжения и <i>жертвы</i> за грех неугодны Тебе.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Тогда Я сказал: вот, иду, <i>как</i> в начале книги написано о Мне, исполнить волю Твою, Боже.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Сказав прежде, что "ни жертвы, ни приношения, ни всесожжений, ни <i>жертвы</i> за грех,- которые приносятся по закону,- Ты не восхотел и не благоизволил",
+</p>
+<div class="num">&nbsp;9</div><p id="n9">потом прибавил: "вот, иду исполнить волю Твою, Боже". Отменяет первое, чтобы постановить второе.
+</p>
+<div class="num">10</div><p id="n10">По сей-то воле освящены мы единократным принесением тела Иисуса Христа.
+</p>
+<div class="num">11</div><p id="n11">И всякий священник ежедневно стои&#769;т в служении, и многократно приносит одни и те же жертвы, которые никогда не могут истребить грехов.
+</p>
+<div class="num">12</div><p id="n12">Он же, принеся одну жертву за грехи, навсегда воссел одесную Бога,
+</p>
+<div class="num">13</div><p id="n13">ожидая затем, доколе враги Его будут положены в подножие ног Его.
+</p>
+<div class="num">14</div><p id="n14">Ибо Он одним приношением навсегда сделал совершенными освящаемых.
+</p>
+<div class="num">15</div><p id="n15"><i>О</i> <i>сем</i> свидетельствует нам и Дух Святый; ибо сказано:
+</p>
+<div class="num">16</div><p id="n16">Вот завет, который завещаю им после тех дней, говорит Господь: вложу законы Мои в сердца их, и в мыслях их напишу их,
+</p>
+<div class="num">17</div><p id="n17">и грехов их и беззаконий их не воспомяну более.
+</p>
+<div class="num">18</div><p id="n18">А где прощение грехов, там не нужно приношение за них.
+</p>
+<div class="num">19</div><p id="n19">Итак, братия, имея дерзновение входить во святилище посредством Крови Иисуса Христа, путем новым и живым,
+</p>
+<div class="num">20</div><p id="n20">который Он вновь открыл нам через завесу, то есть плоть Свою,
+</p>
+<div class="num">21</div><p id="n21">и <i>имея</i> великого Священника над домом Божиим,
+</p>
+<div class="num">22</div><p id="n22">да приступаем с искренним сердцем, с полною верою, кроплением очистив сердца от порочной совести, и омыв тело водою чистою,
+</p>
+<div class="num">23</div><p id="n23">будем держаться исповедания упования неуклонно, ибо верен Обещавший.
+</p>
+<div class="num">24</div><p id="n24">Будем внимательны друг ко другу, поощряя к любви и добрым делам.
+</p>
+<div class="num">25</div><p id="n25">Не будем оставлять собрания своего, как есть у некоторых обычай; но будем увещевать <i>друг</i> <i>друга,</i> и тем более, чем более усматриваете приближение дня оного.
+</p>
+<div class="num">26</div><p id="n26">Ибо если мы, получив познание истины, произвольно грешим, то не остается более жертвы за грехи,
+</p>
+<div class="num">27</div><p id="n27">но некое страшное ожидание суда и ярость огня, готового пожрать противников.
+</p>
+<div class="num">28</div><p id="n28"><i>Если</i> отвергшийся закона Моисеева, при двух или трех свидетелях, без милосердия <i>наказывается</i> смертью,
+</p>
+<div class="num">29</div><p id="n29">то сколь тягчайшему, думаете, наказанию повинен будет тот, кто попирает Сына Божия и не почитает за святыню Кровь завета, которою освящен, и Духа благодати оскорбляет?
+</p>
+<div class="num">30</div><p id="n30">Мы знаем Того, Кто сказал: у Меня отмщение, Я воздам, говорит Господь. И еще: Господь будет судить народ Свой.
+</p>
+<div class="num">31</div><p id="n31">Страшно впасть в руки Бога живаго!
+</p>
+<div class="num">32</div><p id="n32">Вспомните прежние дни ваши, когда вы, быв просвещены, выдержали великий подвиг страданий,
+</p>
+<div class="num">33</div><p id="n33">то сами среди поношений и скорбей служа зрелищем <i>для</i> <i>других,</i> то принимая участие в других, находившихся в таком же <i>состоянии;</i>
+</p>
+<div class="num">34</div><p id="n34">ибо вы и моим узам сострадали и расхищение имения вашего приняли с радостью, зная, что есть у вас на небесах имущество лучшее и непреходящее.
+</p>
+<div class="num">35</div><p id="n35">Итак не оставляйте упования вашего, которому предстоит великое воздаяние.
+</p>
+<div class="num">36</div><p id="n36">Терпение нужно вам, чтобы, исполнив волю Божию, получить обещанное;
+</p>
+<div class="num">37</div><p id="n37">ибо еще немного, очень немного, и Грядущий придет и не умедлит.
+</p>
+<div class="num">38</div><p id="n38">Праведный верою жив будет; а если <i>кто</i> поколеблется, не благоволит к тому душа Моя.
+</p>
+<div class="num">39</div><p id="n39">Мы же не из колеблющихся на погибель, но <i>стои&#769;м</i> в вере к спасению души.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="heb.11.ru.html">к главе 11</a></div></div>
+
+</body>
+</html>

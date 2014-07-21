@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para2.ru.html">Вторая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И положил Соломон построить дом имени Господню и дом царский для себя.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И отчислил Соломон семьдесят тысяч носильщиков и восемьдесят тысяч каменосеков в горах, и надзирателей над ними три тысячи шестьсот.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И послал Соломон к Хираму, царю Тирскому, сказать: как поступал ты с Давидом, отцом моим, и присылал ему кедры на построение дома для его жительства, <i>так</i> <i>поступи</i> <i>и</i> <i>со</i> <i>мною.</i>
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Вот я строю дом имени Господа Бога моего, для посвящения Ему, чтобы возжигать пред Ним благовонное курение, представлять постоянно хлебы предложения и <i>возносить</i> <i>там</i> всесожжения утром и вечером в субботы, и в новомесячия, и в праздники Господа Бога нашего, что навсегда заповедано Израилю.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И дом, который я строю, велик, потому что велик Бог наш, выше всех богов.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И достанет ли у кого силы построить Ему дом, когда небо и небеса небес не вмещают Его? И кто я, чтобы мог построить Ему дом? Разве <i>только</i> для курения пред лицем Его.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Итак пришли мне человека, умеющего делать <i>изделия</i> из золота, и из серебра, и из меди, и из железа, и из <i>пряжи</i> пурпурового, багряного и яхонтового <i>цвета,</i> и знающего вырезывать резную работу, вместе с художниками, какие есть у меня в Иудее и в Иерусалиме, которых приготовил Давид, отец мой.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И пришли мне кедровых дерев, и кипарису и певгового дерева с Ливана, ибо я знаю, что рабы твои умеют рубить дерева Ливанские. И вот рабы мои пойдут с рабами твоими,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">чтобы мне приготовить множество дерев, потому что дом, который я строю, великий и чудный.
+</p>
+<div class="num">10</div><p id="n10">И вот древосекам, рубящим дерева, рабам твоим, я даю в пищу: пшеницы двадцать тысяч ко&#769;ров, и ячменю двадцать тысяч ко&#769;ров, и вина двадцать тысяч батов, и оливкового масла двадцать тысяч батов.
+</p>
+<div class="num">11</div><p id="n11">И отвечал Хирам, царь Тирский, письмом, которое прислал к Соломону: по любви к народу Своему, Господь поставил тебя царем над ним.
+</p>
+<div class="num">12</div><p id="n12">И <i>еще</i> сказал Хирам: благословен Господь Бог Израилев, создавший небо и землю, давший царю Давиду сына мудрого, имеющего смысл и разум, который намерен строить дом Господу и дом царский для себя.
+</p>
+<div class="num">13</div><p id="n13">Итак я посылаю [тебе] человека умного, имеющего знания, Хирам-Авия,
+</p>
+<div class="num">14</div><p id="n14">сына <i>одной</i> женщины из дочерей Дановых,- а отец его Тирянин,- умеющего делать <i>изделия</i> из золота и из серебра, из меди, из железа, из камней и из дерев, из <i>пряжи</i> пурпурового, яхонтового <i>цвета,</i> и из виссона, и из багряницы, и вырезывать всякую резьбу, и исполнять все, что будет поручено ему вместе с художниками твоими и с художниками господина моего Давида, отца твоего.
+</p>
+<div class="num">15</div><p id="n15">А пшеницу и ячмень, оливковое масло и вино, о которых говорил ты, господин мой, пошли рабам твоим.
+</p>
+<div class="num">16</div><p id="n16">Мы же нарубим дерев с Ливана, сколько нужно тебе, и пригоним их в плотах по морю в Яфу, а ты отвезешь их в Иерусалим.
+</p>
+<div class="num">17</div><p id="n17">И исчислил Соломон всех пришельцев, бывших <i>тогда</i> в земле Израилевой, после исчисления их, сделанного Давидом, отцом его,- и нашлось их сто пятьдесят три тысячи шестьсот.
+</p>
+<div class="num">18</div><p id="n18">И сделал он из них семьдесят тысяч носильщиков и восемьдесят тысяч каменосеков на горах и три тысячи шестьсот надзирателей, чтобы они побуждали народ к работе.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para2.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

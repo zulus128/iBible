@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 50
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Симон, сын Онии, великий священник, при жизни своей исправил дом и во дни свои укрепил храм:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">им положено основание двойного возвышения - возведение высокой ограды храма;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">во дни его уменьшено водохранилище, окружность медного моря;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">чтобы предохранить народ свой от бедствия, он укрепил город против осады.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Как величествен был он среди народа, при выходе из завесы храма!
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Как утренняя звезда среди облаков, как луна полная во днях,
+</p>
+<div class="num">&nbsp;7</div><p id="n7">как солнце, сияющее над храмом Всевышнего, и как радуга, сияющая в величественных облаках,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">как цвет роз в весенние дни, как лилии при источниках вод, как ветвь ливана в летние дни,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">как огонь с ладаном в кадильнице,
+</p>
+<div class="num">10</div><p id="n10">как кованый золотой сосуд, украшенный всякими драгоценными камнями,
+</p>
+<div class="num">11</div><p id="n11">как маслина с плодами и как возвышающийся до облаков кипарис.
+</p>
+<div class="num">12</div><p id="n12">Когда он принимал великолепную одежду и облекался во все величественное украшение, то, при восхождении к святому жертвеннику, освещал блеском окружность святилища.
+</p>
+<div class="num">13</div><p id="n13">Также, когда он принимал <i>жертвенные</i> части из рук священников, стоя у огня жертвенника,-
+</p>
+<div class="num">14</div><p id="n14">вокруг него был венец братьев, как отрасли кедра на Ливане, и они окружали его как финиковые ветви,
+</p>
+<div class="num">15</div><p id="n15">и все сыны Аарона в славе своей, и приношение Господу в руках их пред всем собранием Израиля.
+</p>
+<div class="num">16</div><p id="n16">В довершение служб на алтаре, чтобы увенчать приношение Всевышнему Вседержителю,
+</p>
+<div class="num">17</div><p id="n17">он простирал свою руку к жертвенной чаше, лил в нее из винограда кровь и выливал ее к подножию жертвенника в воню&#769; благоухания Вышнему Всецарю.
+</p>
+<div class="num">18</div><p id="n18">Тогда сыны Аароновы восклицали, трубили коваными трубами и издавали громкий голос в напоминание пред Всевышним.
+</p>
+<div class="num">19</div><p id="n19">Тогда весь народ вместе спешил падать лицем на землю, чтобы поклониться Господу своему, Вседержителю, Богу Вышнему;
+</p>
+<div class="num">20</div><p id="n20">а песнопевцы восхваляли Его своими голосами; в пространном храме раздавалось сладостное пение,
+</p>
+<div class="num">21</div><p id="n21">и народ молился Господу Всевышнему молитвою пред Милосердым, доколе совершалось славословие Господа,- и так оканчивали они службу Ему.
+</p>
+<div class="num">22</div><p id="n22">Тогда он, сойдя, поднимал руки свои на все собрание сынов Израилевых, чтобы устами своими преподать благословение Господа и похвалиться именем Его;
+</p>
+<div class="num">23</div><p id="n23">народ повторял поклонение, чтобы принять благословение от Всевышнего.
+</p>
+<div class="num">24</div><p id="n24">И ныне все благословляйте Бога, Который везде совершает великие дела, Который продлил дни наши от утробы и поступает с нами по милости Своей:
+</p>
+<div class="num">25</div><p id="n25">да даст Он нам веселие сердца, и да будет во дни наши мир в Израиле до дней века;
+</p>
+<div class="num">26</div><p id="n26">да сохранит милость Свою к нам и в свое время да избавит нас!
+</p>
+<div class="num">27</div><p id="n27">Двумя народами гнушается душа моя, а третий не есть народ:
+</p>
+<div class="num">28</div><p id="n28"><i>это</i> сидящие на горе Сеир, Филистимляне и глупый народ, живущий в Сикимах.
+</p>
+<div class="num">29</div><p id="n29">Учение мудрости и благоразумия начертал в книге сей я, Иисус, сын Сирахов, Иерусалимлянин, который излил мудрость от сердца своего.
+</p>
+<div class="num">30</div><p id="n30">Блажен, кто будет упражняться в сих <i>наставлениях</i>,- и кто положит их на сердце, тот сделается мудрым;
+</p>
+<div class="num">31</div><p id="n31">а если будет исполнять, то все возможет; ибо свет Господень - путь его. <i></i>
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.51.ru.html">к главе 51</a></div></div>
+
+</body>
+</html>

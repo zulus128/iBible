@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nav.cs.html">Кни1га їисyса наvи1на</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA G
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И# востA заyтра їисyсъ, и3 воздвиг0шасz и3з8 саттjна, и3 пріид0ша до їoрдaна т0й и3 вси2 сhнове <nobr>ї}лєвы,</nobr> и3 стaша тaмw прeжде нeже прейти2.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И# бhсть по тріeхъ днeхъ, проид0ша книгHчіz чрез8 п0лкъ,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и3 заповёдаша лю1демъ, глаг0люще: є3гдA ќзрите ківHтъ завёта гDа бGа нaшегw, и3 жерцы2 нaшz, и3 леvjты воздвизaющыz є3го2, да воздви1гнетесz и3 вы2 t мёстъ вaшихъ и3 п0йдете в8слёдъ є3гw2:
+</p>
+<div class="num">&nbsp;4</div><p id="n4">но подaлэе да бyдетъ междY вaми и3 џнымъ, є3ли1кw двЁ тhсzщы лакHтъ стaнете: не прибли1житесz къ немY, да ўвёсте пyть, по немyже п0йдете: не ходи1сте бо путeмъ тёмъ ни вчерA, ни трeтіzгw днE.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И# речE їисyсъ къ лю1демъ: њчи1ститесz наyтріе, ћкw заyтра сотвори1тъ въ вaсъ гDь ч{днаz.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И# речE їисyсъ къ жерцє1мъ: воздви1гните ківHтъ завёта гDнz и3 пред8иди1те пред8 людьми2. И# взsша жерцы2 ківHтъ завёта гDнz и3 и3д0ша пред8 людьми2.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И# речE гDь ко їисyсу: въ сeй дeнь начинaю возвышaти тS пред8 всёми сынми2 <nobr>ї}левыми,</nobr> да ўвёдzтъ, ћкоже бёхъ съ мwmсeомъ, тaкw бyду и3 съ тоб0ю:
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и3 нн7э заповёждь жерцє1мъ воздвизaющымъ ківHтъ завёта, глаг0лz: є3гдA вни1дете на чaсть воды2 їoрдaна, и3 во їoрдaнэ стaнете.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И# речE їисyсъ сынHмъ <nobr>ї}лєвымъ:</nobr> приступи1те сёмw, и3 слhшите сл0во гDа бGа вaшегw:
+</p>
+<div class="num">10</div><p id="n10">въ си1хъ ўвёсте, ћкw гDь живsй въ вaсъ и3 потреблszй потреби1тъ t лицA вaшегw хананeа и3 хеттeа, и3 ферезeа и3 є3veа, и3 гергесeа и3 ґморрeа и3 їевусeа:
+</p>
+<div class="num">11</div><p id="n11">сE, ківHтъ завёта гDа всеS земли2 прех0дитъ їoрдaнъ:
+</p>
+<div class="num">12</div><p id="n12">и3збери1те себЁ дванaдесzть мужeй t сынHвъ <nobr>ї}левыхъ,</nobr> є3ди1наго t коегHждо плeмене,
+</p>
+<div class="num">13</div><p id="n13">и3 бyдетъ є3гдA почjютъ н0зи жерцє1въ воздвизaющихъ ківHтъ завёта гDа всеS земли2 въ водЁ їoрдaна, водA їoрдaнова њскудёетъ, водa же низтекyщаz стaнетъ.
+</p>
+<div class="num">14</div><p id="n14">И# бhсть є3гдA воздви1гнушасz лю1діе t кyщъ свои1хъ прейти2 їoрдaнъ, жерцh же воздвиг0ша ківHтъ завёта гDнz пред8 людьми2:
+</p>
+<div class="num">15</div><p id="n15">є3гдa же внид0ша жерцы2 воздви1жуще ківHтъ завёта гDнz во їoрдaнъ, и3 н0зи жерцє1въ воздвизaющихъ ківHтъ завёта гDнz њмочи1шасz въ чaсти воды2 їoрдaна, їoрдaнъ же наполнsшесz во <nobr>вс‰</nobr> краи6 <nobr>сво‰,</nobr> ћкоже во дни6 жaтвы пшени1цы:
+</p>
+<div class="num">16</div><p id="n16">и3 стaша в0ды текyщыz свhше, стA њгустёніе є3ди1но tлучи1вшеесz далeче ѕэлw2 ѕэлw2 t ґдами2 грaда дaже до страны2 каріаfіарjма: низтекyщаz же низтечE въ м0ре ґрaвско, въ м0ре слaное, д0ндеже до концA њскудЁ.
+</p>
+<div class="num">17</div><p id="n17">И# лю1діе стоsху прsмw їеріхHну. И# стaша жерцы2 воздвизaющіи ківHтъ завёта гDнz на сyсэ посредЁ їoрдaна: и3 вси2 сhнове <nobr>ї}лєвы</nobr> прехождaху по сyху, д0ндеже скончaша вси2 лю1діе преходsще їoрдaнъ.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nav.4.cs.html">главA д7</a></div></div>
+
+</body>
+</html>

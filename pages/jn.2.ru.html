@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jn.ru.html">Евангелие от Иоанна</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">На третий день был брак в Кане Галилейской, и Матерь Иисуса была там.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Был также зван Иисус и ученики Его на брак.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И как недоставало вина, то Матерь Иисуса говорит Ему: вина нет у них.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Иисус говорит Ей: что Мне и Тебе, Же&#769;но? еще не пришел час Мой.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Матерь Его сказала служителям: что скажет Он вам, то сделайте.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Было же тут шесть каменных водоносов, стоявших <i>по</i> <i>обычаю</i> очищения Иудейского, вмещавших по две или по три меры.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Иисус говорит им: наполните сосуды водою. И наполнили их до верха.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И говорит им: теперь почерпните и несите к распорядителю пира. И понесли.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Когда же распорядитель отведал воды, сделавшейся вином,- а он не знал, откуда <i>это</i> <i>вино,</i> знали только служители, почерпавшие воду,- тогда распорядитель зовет жениха
+</p>
+<div class="num">10</div><p id="n10">и говорит ему: всякий человек подает сперва хорошее вино, а когда напьются, тогда худшее; а ты хорошее вино сберег доселе.
+</p>
+<div class="num">11</div><p id="n11">Так положил Иисус начало чудесам в Кане Галилейской и явил славу Свою; и уверовали в Него ученики Его.
+</p>
+<div class="num">12</div><p id="n12">После сего пришел Он в Капернаум, Сам и Матерь Его, и братья его, и ученики Его; и там пробыли немного дней.
+</p>
+<div class="num">13</div><p id="n13">Приближалась Пасха Иудейская, и Иисус пришел в Иерусалим
+</p>
+<div class="num">14</div><p id="n14">и нашел, что в храме продавали волов, овец и голубей, и сидели меновщики денег.
+</p>
+<div class="num">15</div><p id="n15">И, сделав бич из веревок, выгнал из храма всех, <i>также</i> и овец и волов; и деньги у меновщиков рассыпал, а столы их опрокинул.
+</p>
+<div class="num">16</div><p id="n16">И сказал продающим голубей: возьмите это отсюда и до&#769;ма Отца Моего не делайте домом торговли.
+</p>
+<div class="num">17</div><p id="n17">При сем ученики Его вспомнили, что написано: ревность по доме Твоем снедает Меня.
+</p>
+<div class="num">18</div><p id="n18">На это Иудеи сказали: каким знамением докажешь Ты нам, что <i>имеешь</i> <i>власть</i> так поступать?
+</p>
+<div class="num">19</div><p id="n19">Иисус сказал им в ответ: разрушьте храм сей, и Я в три дня воздвигну его.
+</p>
+<div class="num">20</div><p id="n20">На это сказали Иудеи: сей храм строился сорок шесть лет, и Ты в три дня воздвигнешь его?
+</p>
+<div class="num">21</div><p id="n21">А Он говорил о храме тела Своего.
+</p>
+<div class="num">22</div><p id="n22">Когда же воскрес Он из мертвых, то ученики Его вспомнили, что Он говорил это, и поверили Писанию и слову, которое сказал Иисус.
+</p>
+<div class="num">23</div><p id="n23">И когда Он был в Иерусалиме на празднике Пасхи, то многие, видя чудеса, которые Он творил, уверовали во имя Его.
+</p>
+<div class="num">24</div><p id="n24">Но Сам Иисус не вверял Себя им, потому что знал всех
+</p>
+<div class="num">25</div><p id="n25">и не имел нужды, чтобы кто засвидетельствовал о человеке, ибо Сам знал, что в человеке.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jn.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

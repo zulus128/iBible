@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="nee.ru.html">Книга Неемии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В месяце Нисане, в двадцатый год царя Артаксеркса, <i>было</i> перед ним вино. И я взял вино и подал царю, и, казалось, не был печален перед ним.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Но царь сказал мне: отчего лице у тебя печально; ты не болен, этого нет, а верно печаль на сердце? Я сильно испугался
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и сказал царю: да живет царь во веки! Как не быть печальным лицу моему, когда город, дом гробов отцов моих, в запустении, и ворота его сожжены огнем!
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И сказал мне царь: чего же ты желаешь? Я помолился Богу небесному
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и сказал царю: если царю благоугодно, и если в благоволении раб твой пред лицем твоим, то пошли меня в Иудею, в город, <i>где</i> гробы отцов моих, чтоб я обстроил его.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И сказал мне царь и царица, которая сидела подле него: сколько времени продлится путь твой, и когда возвратишься? И благоугодно было царю послать меня, после того как я назначил время.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И сказал я царю: если царю благоугодно, то дал бы мне письма к заречным областеначальникам, чтоб они давали мне пропуск, доколе я не дойду до Иудеи,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и письмо к Асафу, хранителю царских лесов, чтоб он дал мне дерев для ворот крепости, которая при доме <i>Божием,</i> и для городской стены, и для дома, в котором бы мне жить. И дал мне царь, так как благодеющая рука Бога моего была надо мною.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И пришел я к заречным областеначальникам и отдал им царские письма. Послал же со мною царь воинских начальников со всадниками.
+</p>
+<div class="num">10</div><p id="n10">Когда услышал <i>сие</i> Санаваллат, Хоронит и Товия, Аммонитский раб, то им было весьма досадно, что пришел человек заботиться о благе сынов Израилевых.
+</p>
+<div class="num">11</div><p id="n11">И пришел я в Иерусалим. И пробыв там три дня,
+</p>
+<div class="num">12</div><p id="n12">встал я ночью с немногими людьми, <i>бывшими</i> при мне, и никому не сказал, что&#769; Бог мой положил мне на сердце сделать для Иерусалима; животного же не было со мною никакого, кроме того, на котором я ехал.
+</p>
+<div class="num">13</div><p id="n13">И проехал я ночью через ворота Долины перед источником Драконовым к воротам Навозным, и осмотрел я стены Иерусалима разрушенные и его ворота, сожженные огнем.
+</p>
+<div class="num">14</div><p id="n14">И подъехал я к воротам Источника и к царскому водоему, но <i>там</i> не было места пройти животному, которое было подо мною,-
+</p>
+<div class="num">15</div><p id="n15">и я поднялся назад по лощине ночью и осматривал стену, и проехав <i>опять</i> воротами Долины, возвратился.
+</p>
+<div class="num">16</div><p id="n16">И начальствующие не знали, куда я ходил и что я делаю: ни Иудеям, ни священникам, ни знатнейшим, ни начальствующим, ни прочим производителям работ я дотоле ничего не открывал.
+</p>
+<div class="num">17</div><p id="n17">И сказал я им: вы видите бедствие, в каком мы находимся; Иерусалим пуст и ворота его сожжены огнем; пойдем, построим стену Иерусалима, и не будем впредь <i>в</i> <i>таком</i> уничижении.
+</p>
+<div class="num">18</div><p id="n18">И я рассказал им о благодеявшей мне руке Бога моего, а также и слова царя, которые он говорил мне. И сказали они: будем строить,- и укрепили руки свои на благое <i>дело.</i>
+</p>
+<div class="num">19</div><p id="n19">Услышав это, Санаваллат, Хоронит и Товия, Аммонитский раб, и Гешем Аравитянин смеялись над нами и с презрением говорили: что это за дело, которое вы делаете? уже не думаете ли возмутиться против царя?
+</p>
+<div class="num">20</div><p id="n20">Я дал им ответ и сказал им: Бог Небесный, Он благопоспешит нам, и мы, рабы Его, станем строить, а вам нет части и права и памяти в Иерусалиме.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="nee.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

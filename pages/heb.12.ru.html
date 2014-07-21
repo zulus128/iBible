@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="heb.ru.html">Послание к Евреям</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Посему и мы, имея вокруг себя такое облако свидетелей, свергнем с себя всякое бремя и запинающий нас грех и с терпением будем проходить предлежащее нам поприще,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">взирая на начальника и совершителя веры Иисуса, Который, вместо предлежавшей Ему радости, претерпел крест, пренебрегши посрамление, и воссел одесную престола Божия.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Помыслите о Претерпевшем такое над Собою поругание от грешников, чтобы вам не изнемочь и не ослабеть душами вашими.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Вы еще не до крови сражались, подвизаясь против греха,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и забыли утешение, которое предлагается вам, как сынам: сын мой! не пренебрегай наказания Господня, и не унывай, когда Он обличает тебя.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Ибо Господь, кого любит, того наказывает; бьет же всякого сына, которого принимает.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Если вы терпите наказание, то Бог поступает с вами, как с сынами. Ибо есть ли какой сын, которого бы не наказывал отец?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Если же остаетесь без наказания, которое всем обще, то вы незаконные дети, а не сыны.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Притом, <i>если</i> мы, будучи наказываемы плотскими родителями нашими, боялись их, то не гораздо ли более должны покориться Отцу духов, чтобы жить?
+</p>
+<div class="num">10</div><p id="n10">Те наказывали нас по своему произволу для немногих дней; а Сей - для пользы, чтобы нам иметь участие в святости Его.
+</p>
+<div class="num">11</div><p id="n11">Всякое наказание в настоящее время кажется не радостью, а печалью; но после наученным через него доставляет мирный плод праведности.
+</p>
+<div class="num">12</div><p id="n12">Итак укрепите опустившиеся руки и ослабевшие колени
+</p>
+<div class="num">13</div><p id="n13">и ходите прямо ногами вашими, дабы хромлющее не совратилось, а лучше исправилось.
+</p>
+<div class="num">14</div><p id="n14">Старайтесь иметь мир со всеми и святость, без которой никто не увидит Господа.
+</p>
+<div class="num">15</div><p id="n15">Наблюдайте, чтобы кто не лишился благодати Божией; чтобы какой горький корень, возникнув, не причинил вреда, и чтобы им не осквернились многие;
+</p>
+<div class="num">16</div><p id="n16">чтобы не было <i>между</i> <i>вами</i> какого блудника, или нечестивца, который бы, как Исав, за одну снедь отказался от своего первородства.
+</p>
+<div class="num">17</div><p id="n17">Ибо вы знаете, что после того он, желая наследовать благословение, был отвержен; не мог переменить мыслей <i>отца,</i> хотя и просил о том со слезами.
+</p>
+<div class="num">18</div><p id="n18">Вы приступили не к горе, осязаемой и пылающей огнем, не ко тьме и мраку и буре,
+</p>
+<div class="num">19</div><p id="n19">не к трубному звуку и гласу глаголов, который слышавшие просили, чтобы к ним более не было продолжаемо слово,
+</p>
+<div class="num">20</div><p id="n20">ибо они не могли стерпеть того, что заповедуемо было: если и зверь прикоснется к горе, будет побит камнями (или поражен стрелою);
+</p>
+<div class="num">21</div><p id="n21">и столь ужасно было это видение, <i>что</i> <i>и</i> Моисей сказал: "я в страхе и трепете".
+</p>
+<div class="num">22</div><p id="n22">Но вы приступили к горе Сиону и ко граду Бога живаго, к небесному Иерусалиму и тьмам Ангелов,
+</p>
+<div class="num">23</div><p id="n23">к торжествующему собору и церкви первенцев, написанных на небесах, и к Судии всех Богу, и к духам праведников, достигших совершенства,
+</p>
+<div class="num">24</div><p id="n24">и к Ходатаю нового завета Иисусу, и к Крови кропления, говорящей лучше, нежели Авелева.
+</p>
+<div class="num">25</div><p id="n25">Смотрите, не отвратитесь и вы от говорящего. Если те, не послушав глаголавшего на земле, не избегли <i>наказания,</i> то тем более <i>не</i> <i>избежим</i> мы, если отвратимся от <i>Глаголющего</i> с небес,
+</p>
+<div class="num">26</div><p id="n26">Которого глас тогда поколебал землю, и Который ныне дал такое обещание: еще раз поколеблю не только землю, но и небо.
+</p>
+<div class="num">27</div><p id="n27">Слова: "еще раз" означают изменение колеблемого, как сотворенного, чтобы пребыло непоколебимое.
+</p>
+<div class="num">28</div><p id="n28">Итак мы, приемля царство непоколебимое, будем хранить благодать, которою будем служить благоугодно Богу, с благоговением и страхом,
+</p>
+<div class="num">29</div><p id="n29">потому что Бог наш есть огнь поядающий.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="heb.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

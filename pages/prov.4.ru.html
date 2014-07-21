@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="prov.ru.html">Книга Притчей<br />Соломоновых</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Слушайте, дети, наставление отца, и внимайте, чтобы научиться разуму,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">потому что я преподал вам доброе учение. Не оставляйте заповеди моей.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Ибо и я был сын у отца моего, нежно любимый и единственный у матери моей,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и он учил меня и говорил мне: да удержит сердце твое слова мои; храни заповеди мои, и живи.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Приобретай мудрость, приобретай разум: не забывай этого и не уклоняйся от слов уст моих.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Не оставляй ее, и она будет охранять тебя; люби ее, и она будет оберегать тебя.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Главное - мудрость: приобретай мудрость, и всем имением твоим приобретай разум.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Высоко цени ее, и она возвысит тебя; она прославит тебя, если ты прилепишься к ней;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">возложит на голову твою прекрасный венок, доставит тебе великолепный венец.
+</p>
+<div class="num">10</div><p id="n10">Слушай, сын мой, и прими слова мои,- и умножатся тебе лета жизни.
+</p>
+<div class="num">11</div><p id="n11">Я указываю тебе путь мудрости, веду тебя по стезям прямым.
+</p>
+<div class="num">12</div><p id="n12">Когда пойдешь, не будет стеснен ход твой, и когда побежишь, не споткнешься.
+</p>
+<div class="num">13</div><p id="n13">Крепко держись наставления, не оставляй, храни его, потому что оно - жизнь твоя.
+</p>
+<div class="num">14</div><p id="n14">Не вступай на стезю нечестивых и не ходи по пути злых;
+</p>
+<div class="num">15</div><p id="n15">оставь его, не ходи по нему, уклонись от него и пройди мимо;
+</p>
+<div class="num">16</div><p id="n16">потому что они не заснут, если не сделают зла; пропадает сон у них, если они не доведут кого до падения;
+</p>
+<div class="num">17</div><p id="n17">ибо они едят хлеб беззакония и пьют вино хищения.
+</p>
+<div class="num">18</div><p id="n18">Стезя праведных - как светило лучезарное, которое более и более светлеет до полного дня.
+</p>
+<div class="num">19</div><p id="n19">Путь же беззаконных - как тьма; они не знают, обо что споткнутся.
+</p>
+<div class="num">20</div><p id="n20">Сын мой! словам моим внимай, и к речам моим приклони ухо твое;
+</p>
+<div class="num">21</div><p id="n21">да не отходят они от глаз твоих; храни их внутри сердца твоего:
+</p>
+<div class="num">22</div><p id="n22">потому что они жизнь для того, кто нашел их, и здравие для всего тела его.
+</p>
+<div class="num">23</div><p id="n23">Больше всего хранимого храни сердце твое, потому что из него источники жизни.
+</p>
+<div class="num">24</div><p id="n24">Отвергни от себя лживость уст, и лукавство языка удали от себя.
+</p>
+<div class="num">25</div><p id="n25">Глаза твои пусть прямо смотрят, и ресницы твои да направлены будут прямо пред тобою.
+</p>
+<div class="num">26</div><p id="n26">Обдумай стезю для ноги твоей, и все пути твои да будут тверды.
+</p>
+<div class="num">27</div><p id="n27">Не уклоняйся ни направо, ни налево; удали ногу твою от зла,
+</p>
+<div class="num">28</div><p id="n28">[потому что пути правые наблюдает Господь, а левые - испорчены.
+</p>
+<div class="num">29</div><p id="n29">Он же прямыми сделает пути твои, и шествия твои в мире устроит.]
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="prov.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

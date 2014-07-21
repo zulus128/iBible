@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="deu.ru.html">Второзаконие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 32
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Внимай, небо, я буду говорить; и слушай, земля, слова уст моих.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Польется как дождь учение мое, как роса речь моя, как мелкий дождь на зелень, как ливень на траву.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Имя Господа прославляю; воздайте славу Богу нашему.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Он твердыня; совершенны дела Его, и все пути Его праведны; Бог верен, и нет неправды [в Нем]; Он праведен и истинен;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">но они развратились пред Ним, они не дети Его по своим порокам, род строптивый и развращенный.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Сие ли воздаете вы Господу, народ глупый и несмысленный? не Он ли Отец твой, <i>Который</i> усвоил тебя, создал тебя и устроил тебя?
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Вспомни дни древние, помысли о летах прежних родов; спроси отца твоего, и он возвестит тебе, старцев твоих, и они скажут тебе.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Когда Всевышний давал уделы народам и расселял сынов человеческих, тогда поставил пределы народов по числу сынов Израилевых<span onclick="var el = this.getElementsByTagName('span')[0];el.style.display = (el.style.display == 'none') ? 'inline' : 'none'" style="color:red;display:inline;">*<span style="background-color:#EEEEEE;color:#333333;display:none;"> &ndash;&nbsp;В греческом переводе: по числу Ангелов Божиих.<img src="data:image/png;base64,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" style="width:16px;height:16px;" /></span></span><a name="p1"></a>;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">ибо часть Господа народ Его, Иаков наследственный удел Его.
+</p>
+<div class="num">10</div><p id="n10">Он нашел его в пустыне, в степи печальной и дикой, ограждал его, смотрел за ним, хранил его, как зеницу ока Своего;
+</p>
+<div class="num">11</div><p id="n11">как орел вызывает гнездо свое, носится над птенцами своими, распростирает крылья свои, берет их и носит их на перьях своих,
+</p>
+<div class="num">12</div><p id="n12">так Господь один водил его, и не было с Ним чужого бога.
+</p>
+<div class="num">13</div><p id="n13">Он вознес его на высоту земли и кормил произведениями полей, и питал его медом из камня и елеем из твердой скалы,
+</p>
+<div class="num">14</div><p id="n14">маслом коровьим и молоком овечьим, и туком агнцев и овнов Васанских и козлов, и тучною пшеницею, и ты пил вино, кровь виноградных ягод.
+</p>
+<div class="num">15</div><p id="n15">И [ел Иаков, и] утучнел Израиль, и стал упрям; утучнел, отолстел и разжирел; и оставил он Бога, создавшего его, и презрел твердыню спасения своего.
+</p>
+<div class="num">16</div><p id="n16"><i>Богами</i> чуждыми они раздражили Его и мерзостями [своими] разгневали Его:
+</p>
+<div class="num">17</div><p id="n17">приносили жертвы бесам, а не Богу, богам, которых они не знали, новым, <i>которые</i> пришли от соседей и о которых не помышляли отцы ваши.
+</p>
+<div class="num">18</div><p id="n18">А Заступника, родившего тебя, ты забыл, и не помнил Бога, создавшего тебя.
+</p>
+<div class="num">19</div><p id="n19">Господь увидел [и вознегодовал], и в негодовании пренебрег сынов Своих и дочерей Своих,
+</p>
+<div class="num">20</div><p id="n20">и сказал: сокрою лице Мое от них [и] увижу, какой будет конец их; ибо они род развращенный; дети, в которых нет верности;
+</p>
+<div class="num">21</div><p id="n21">они раздражили Меня не богом, суетными своими огорчили Меня: и Я раздражу их не народом, народом бессмысленным огорчу их;
+</p>
+<div class="num">22</div><p id="n22">ибо огонь возгорелся во гневе Моем, жжет до ада преисподнего, и поядает землю и произведения ее, и попаляет основания гор;
+</p>
+<div class="num">23</div><p id="n23">соберу на них бедствия и истощу на них стрелы Мои:
+</p>
+<div class="num">24</div><p id="n24"><i>будут</i> истощены голодом, истреблены горячкою и лютою заразою; и пошлю на них зубы зверей и яд ползающих по земле;
+</p>
+<div class="num">25</div><p id="n25">извне будет губить их меч, а в домах ужас - и юношу, и девицу, и грудного младенца, и покрытого сединою старца.
+</p>
+<div class="num">26</div><p id="n26">Я сказал бы: рассею их и изглажу из среды людей память о них;
+</p>
+<div class="num">27</div><p id="n27">но отложил это ради озлобления врагов, чтобы враги его не возомнили и не сказали: наша рука высока, и не Господь сделал все сие.
+</p>
+<div class="num">28</div><p id="n28">Ибо они народ, потерявший рассудок, и нет в них смысла.
+</p>
+<div class="num">29</div><p id="n29">О, если бы они рассудили, подумали о сем, уразумели, что с ними будет!
+</p>
+<div class="num">30</div><p id="n30">Как бы мог один преследовать тысячу и двое прогонять тьму, если бы Заступник их не предал их, и Господь не отдал их!
+</p>
+<div class="num">31</div><p id="n31">Ибо заступник их не таков, как наш Заступник; сами враги наши судьи в том.
+</p>
+<div class="num">32</div><p id="n32">Ибо виноград их от виноградной лозы Содомской и с полей Гоморрских; ягоды их ягоды ядовитые, грозды их горькие;
+</p>
+<div class="num">33</div><p id="n33">вино их яд драконов и гибельная отрава аспидов.
+</p>
+<div class="num">34</div><p id="n34">Не сокрыто ли это у Меня? не запечатано ли в хранилищах Моих?
+</p>
+<div class="num">35</div><p id="n35">У Меня отмщение и воздаяние, когда поколеблется нога их; ибо близок день погибели их, скоро наступит уготованное для них.
+</p>
+<div class="num">36</div><p id="n36">Но Господь будет судить народ Свой и над рабами Своими умилосердится, когда Он увидит, что рука их ослабела, и не стало ни заключенных, ни оставшихся <i>вне.
+</p>
+<div class="num">37</div><p id="n37">Тогда скажет [Господь]: где боги их, твердыня, на которую они надеялись,
+</p>
+<div class="num">38</div><p id="n38">которые ели тук жертв их [и] пили вино возлияний их? пусть они восстанут и помогут вам, пусть будут для вас покровом!
+</p>
+<div class="num">39</div><p id="n39">Видите ныне, [видите,] что это Я, Я - и нет Бога, кроме Меня: Я умерщвляю и оживляю, Я поражаю и Я исцеляю, и никто не избавит от руки Моей.
+</p>
+<div class="num">40</div><p id="n40">Я подъемлю к небесам руку Мою и [клянусь десницею Моею и] говорю: живу Я вовек!
+</p>
+<div class="num">41</div><p id="n41">Когда изострю сверкающий меч Мой, и рука Моя приимет суд, то отмщу врагам Моим и ненавидящим Меня воздам;
+</p>
+<div class="num">42</div><p id="n42">упою стрелы Мои кровью, и меч Мой насытится плотью, кровью убитых и пленных, головами начальников врага.
+</p>
+<div class="num">43</div><p id="n43">[Веселитесь, небеса, вместе с Ним, и поклонитесь Ему, все Ангелы Божии.] Веселитесь, язычники, с народом Его [и да укрепятся все сыны Божии]! ибо Он отмстит за кровь рабов Своих, и воздаст мщение врагам Своим, [и ненавидящим Его воздаст,] и очистит [Господь] землю Свою <i>и</i> народ Свой!
+</p>
+<div class="num">44</div><p id="n44">[И написал Моисей песнь сию в тот день, и научил ей сынов Израилевых.] И пришел Моисей [к народу] и изрек все слова песни сей вслух народа, он и Иисус, сын Навин.
+</p>
+<div class="num">45</div><p id="n45">Когда Моисей изрек все слова сии всему Израилю,
+</p>
+<div class="num">46</div><p id="n46">тогда сказал им: положите на сердце ваше все слова, которые я объявил вам сегодня, и завещевайте их детям своим, чтобы они старались исполнять все слова закона сего;
+</p>
+<div class="num">47</div><p id="n47">ибо это не пустое для вас, но это жизнь ваша, и чрез это вы долгое время пробудете на той земле, в которую вы идете чрез Иордан, чтоб овладеть ею.
+</p>
+<div class="num">48</div><p id="n48">И говорил Господь Моисею в тот же самый день и сказал:
+</p>
+<div class="num">49</div><p id="n49">взойди на сию гору Аварим, на гору Нево, которая в земле Моавитской, против Иерихона, и посмотри на землю Ханаанскую, которую я даю во владение сынам Израилевым;
+</p>
+<div class="num">50</div><p id="n50">и умри на горе, на которую ты взойдешь, и приложись к народу твоему, как умер Аарон, брат твой, на горе Ор, и приложился к народу своему,
+</p>
+<div class="num">51</div><p id="n51">за то, что вы согрешили против Меня среди сынов Израилевых при водах Меривы в Кадесе, в пустыне Син, за то, что не явили святости Моей среди сынов Израилевых;
+</p>
+<div class="num">52</div><p id="n52">пред <i>собою</i> ты увидишь землю, а не войдешь туда, в землю, которую Я даю сынам Израилевым.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="deu.33.ru.html">к главе 33</a></div></div>
+
+</body>
+</html>

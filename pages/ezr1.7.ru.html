@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ezr1.ru.html">Первая книга Ездры</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">После сих происшествий, в царствование Артаксеркса, царя Персидского, Ездра, сын Сераии, сын Азарии, сын Хелкии,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">сын Шаллума, сын Садока, сын Ахитува,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">сын Амарии, сын Азарии, сын Марайофа,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">сын Захарии, сын Уззия, сын Буккия,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">сын Авишуя, сын Финееса, сын Елеазара, сын Аарона первосвященника,-
+</p>
+<div class="num">&nbsp;6</div><p id="n6">сей Ездра вышел из Вавилона. Он был книжник, сведущий в законе Моисеевом, который дал Господь Бог Израилев. И дал ему царь все по желанию его, так как рука Господа Бога его <i>была</i> над ним.
+</p>
+<div class="num">&nbsp;7</div><p id="n7"><i>С</i> <i>ним</i> пошли в Иерусалим и <i>некоторые</i> из сынов Израилевых, и из священников и левитов, и певцов и привратников и нефинеев в седьмой год царя Артаксеркса.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И пришел он в Иерусалим в пятый месяц,- в седьмой же год царя.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ибо в первый день первого месяца <i>было</i> начало выхода из Вавилона, и в первый день пятого месяца он пришел в Иерусалим, так как благодеющая рука Бога его была над ним,
+</p>
+<div class="num">10</div><p id="n10">потому что Ездра расположил сердце свое к тому, чтобы изучать закон Господень и исполнять <i>его,</i> и учить в Израиле закону и правде.
+</p>
+<div class="num">11</div><p id="n11">И вот содержание письма, которое дал царь Артаксеркс Ездре священнику, книжнику, учившему словам заповедей Господа и законов Его в Израиле:
+</p>
+<div class="num">12</div><p id="n12">Артаксеркс, царь царей, Ездре священнику, учителю закона Бога небесного совершенному, и прочее.
+</p>
+<div class="num">13</div><p id="n13">От меня дано повеление, чтобы в царстве моем всякий из народа Израилева и из священников его и левитов, желающий идти в Иерусалим, шел с тобою.
+</p>
+<div class="num">14</div><p id="n14">Так как ты посылаешься от царя и семи советников его, чтобы обозреть Иудею и Иерусалим по закону Бога твоего, находящемуся в руке твоей,
+</p>
+<div class="num">15</div><p id="n15">и чтобы доставить серебро и золото, которое царь и советники его пожертвовали Богу Израилеву, Которого жилище в Иерусалиме,
+</p>
+<div class="num">16</div><p id="n16">и все серебро и золото, которое ты соберешь во всей области Вавилонской, вместе с доброхотными даяниями от народа и священников, которые пожертвуют они для дома Бога своего, что в Иерусалиме;
+</p>
+<div class="num">17</div><p id="n17">поэтому немедленно купи на эти деньги волов, овнов, агнцев и хлебных приношений к ним и возлияний для них, и принеси их на жертвенник дома Бога вашего в Иерусалиме.
+</p>
+<div class="num">18</div><p id="n18">И что тебе и братьям твоим заблагорассудится сделать из остального серебра и золота, то по воле Бога вашего делайте.
+</p>
+<div class="num">19</div><p id="n19">И сосуды, которые даны тебе для служб <i>в</i> доме Бога твоего, поставь пред Богом Иерусалимским.
+</p>
+<div class="num">20</div><p id="n20">И прочее потребное для дома Бога твоего, что ты признаешь нужным, давай из дома царских сокровищ.
+</p>
+<div class="num">21</div><p id="n21">И от меня царя Артаксеркса дается повеление всем сокровищехранителям, которые за рекою: все, чего потребует у вас Ездра священник, учитель закона Бога небесного, немедленно давайте:
+</p>
+<div class="num">22</div><p id="n22">серебра до ста талантов, и пшеницы до ста ко&#769;ров, и вина до ста ба&#769;тов, и до ста же батов масла, а соли без обозначения <i>количества.</i><i></i>
+</p>
+<div class="num">23</div><p id="n23">Все, что повелено Богом небесным, должно делаться со тщанием для дома Бога небесного; [смотрите, чтобы кто не простер руки на дом Бога небесного,] дабы не <i>было</i> гнева <i>Его</i> на царство, царя и сыновей его.
+</p>
+<div class="num">24</div><p id="n24">И даем вам знать, чтобы <i>ни</i> на кого <i>из</i> священников или левитов, певцов, привратников, нефинеев и служащих при этом доме Божием, не налагать <i>ни</i> подати, <i>ни</i> налога, ни пошлины.
+</p>
+<div class="num">25</div><p id="n25">Ты же, Ездра, по премудрости Бога твоего, которая в руке твоей, поставь правителей и судей, чтоб они судили весь народ за рекою,- всех знающих законы Бога твоего, а кто не знает, тех учите.
+</p>
+<div class="num">26</div><p id="n26">Кто же не будет исполнять закон Бога твоего и закон царя, над тем немедленно пусть производят суд, на смерть ли, или на изгнание, или на денежную пеню, или на заключение в темницу.
+</p>
+<div class="num">27</div><p id="n27">Благословен Господь, Бог отцов наших, вложивший в сердце царя - украсить дом Господень, который в Иерусалиме,
+</p>
+<div class="num">28</div><p id="n28">и склонивший на меня милость царя и советников его, и всех могущественных князей царя! И я ободрился, ибо рука Господа Бога моего <i>была</i> надо мною, и собрал я глав Израиля, чтоб они пошли со мною.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ezr1.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

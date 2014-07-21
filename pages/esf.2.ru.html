@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="esf.ru.html">Книга Есфирь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 2
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">После сего, когда утих гнев царя Артаксеркса, он вспомнил об Астинь и о том, что она сделала, и что было определено о ней.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И сказали отроки царя, служившие при нем: пусть бы поискали царю молодых красивых девиц,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и пусть бы назначил царь наблюдателей во все области своего царства, которые собрали бы всех молодых девиц, красивых видом, в престольный город Сузы, в дом жен под надзор Гегая, царского евнуха, стража жен, и пусть бы выдавали им притиранья [и прочее, что нужно];
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и девица, которая понравится глазам царя, пусть будет царицею вместо Астинь. И угодно было слово это в глазах царя, и он так и сделал.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Был в Сузах, городе престольном, один Иудеянин, имя его Мардохей, сын Иаира, сын Семея, сын Киса, из колена Вениаминова.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Он был переселен из Иерусалима вместе с пленниками, выведенными с Иехониею, царем Иудейским, которых переселил Навуходоносор, царь Вавилонский.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И был он воспитателем Гадассы,- она же Есфирь,- дочери дяди его, так как не было у нее ни отца, ни матери. Девица эта была красива станом и пригожа лицем. И по смерти отца ее и матери ее, Мардохей взял ее к себе вместо дочери.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Когда объявлено было повеление царя и указ его, и когда собраны были многие девицы в престольный город Сузы под надзор Гегая, тогда взята была и Есфирь в царский дом под надзор Гегая, стража жен.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И понравилась эта девица глазам его и приобрела у него благоволение, и он поспешил выдать ей притиранья и <i>все,</i> <i>назначенное</i> <i>на</i> часть ее, и приставить к ней семь девиц, достойных быть при ней, из дома царского, и переместил ее и девиц ее в лучшее отделение женского дома.
+</p>
+<div class="num">10</div><p id="n10">Не сказывала Есфирь ни о народе своем, ни о родстве своем, потому что Мардохей дал ей приказание, чтобы она не сказывала.
+</p>
+<div class="num">11</div><p id="n11">И всякий день Мардохей приходил ко двору женского дома, чтобы наведываться о здоровье Есфири и о том, что делается с нею.
+</p>
+<div class="num">12</div><p id="n12">Когда наступало время каждой девице входить к царю Артаксерксу, после того, как в течение двенадцати месяцев выполнено было над нею все, определенное женщинам,- ибо столько времени продолжались дни притиранья их: шесть месяцев мирровым маслом и шесть месяцев ароматами и другими притираньями женскими,-
+</p>
+<div class="num">13</div><p id="n13">тогда девица входила к царю. Чего бы она ни потребовала, ей давали всё для выхода из женского дома в дом царя.
+</p>
+<div class="num">14</div><p id="n14">Вечером она входила и утром возвращалась в другой дом женский под надзор Шаазгаза, царского евнуха, стража наложниц; и уже не входила к царю, разве только царь пожелал бы ее, и она призывалась бы по имени.
+</p>
+<div class="num">15</div><p id="n15">Когда настало время Есфири, дочери Аминадава, дяди Мардохея, который взял ее к себе вместо дочери,- идти к царю, тогда она не просила ничего, кроме того, о чем сказал ей Гегай, евнух царский, страж жен. И приобрела Есфирь расположение <i>к</i> <i>себе</i> в глазах всех, видевших ее.
+</p>
+<div class="num">16</div><p id="n16">И взята была Есфирь к царю Артаксерксу, в царский дом его, в десятом месяце, то есть в месяце Тебефе, в седьмой год его царствования.
+</p>
+<div class="num">17</div><p id="n17">И полюбил царь Есфирь более всех жен, и она приобрела его благоволение и благорасположение более всех девиц; и он возложил царский венец на голову ее и сделал ее царицею на место Астинь.
+</p>
+<div class="num">18</div><p id="n18">И сделал царь большой пир для всех князей своих и для служащих при нем,- пир ради Есфири, и сделал льготу областям и роздал дары с царственною щедростью.
+</p>
+<div class="num">19</div><p id="n19">И когда во второй раз собраны были девицы, и Мардохей сидел у ворот царских,
+</p>
+<div class="num">20</div><p id="n20">Есфирь все еще не сказывала о родстве своем и о народе своем, как приказал ей Мардохей; а слово Мардохея Есфирь выполняла <i>и</i> <i>теперь</i> так же, как тогда, когда была у него на воспитании.
+</p>
+<div class="num">21</div><p id="n21">В это время, как Мардохей сидел у ворот царских, два царских евнуха, Гавафа и Фарра, оберегавшие порог, озлобились [за то, что предпочтен был Мардохей], и замышляли наложить руку на царя Артаксеркса.
+</p>
+<div class="num">22</div><p id="n22">Узнав о том, Мардохей сообщил царице Есфири, а Есфирь сказала царю от имени Мардохея.
+</p>
+<div class="num">23</div><p id="n23">Дело было исследовано и найдено <i>верным,</i> и их обоих повесили на дереве. И было вписано о благодеянии Мардохея в книгу дневных записей у царя.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="esf.3.ru.html">к главе 3</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="act.ru.html">Деяния Апостолов</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 25
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Фест, прибыв в область, через три дня отправился из Кесарии в Иерусалим.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Тогда первосвященник и знатнейшие из Иудеев явились к нему <i>с</i> <i>жалобою</i> на Павла и убеждали его,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">прося, чтобы он сделал милость, вызвал его в Иерусалим; и злоумышляли убить его на дороге.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Но Фест отвечал, что Павел содержится в Кесарии под стражею и что он сам скоро отправится туда.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Итак, сказал он, которые из вас могут, пусть пойдут со мною, и если есть что-нибудь за этим человеком, пусть обвиняют его.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Пробыв же у них не больше восьми или десяти дней, возвратился в Кесарию, и на другой день, сев на судейское место, повелел привести Павла.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Когда он явился, стали кругом пришедшие из Иерусалима Иудеи, принося на Павла многие и тяжкие обвинения, которых не могли доказать.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Он же в оправдание свое сказал: я не сделал никакого преступления ни против закона Иудейского, ни против храма, ни против кесаря.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Фест, желая сделать угождение Иудеям, сказал в ответ Павлу: хочешь ли идти в Иерусалим, чтобы я там судил тебя в этом?
+</p>
+<div class="num">10</div><p id="n10">Павел сказал: я стою&#769; перед судом кесаревым, где мне и следует быть судиму. Иудеев я ничем не обидел, как и ты хорошо знаешь.
+</p>
+<div class="num">11</div><p id="n11">Ибо, если я неправ и сделал что-нибудь, достойное смерти, то не отрекаюсь умереть; а если ничего того нет, в чем сии обвиняют меня, то никто не может выдать меня им. Требую суда кесарева.
+</p>
+<div class="num">12</div><p id="n12">Тогда Фест, поговорив с советом, отвечал: ты потребовал суда кесарева, к кесарю и отправишься.
+</p>
+<div class="num">13</div><p id="n13">Через несколько дней <br /> царь Агриппа и Вереника прибыли в Кесарию поздравить Феста.
+</p>
+<div class="num">14</div><p id="n14">И как они провели там много дней, то Фест предложил царю дело Павлово, говоря: <i>здесь</i> есть человек, оставленный Феликсом в узах,
+</p>
+<div class="num">15</div><p id="n15">на которого, в бытность мою в Иерусалиме, <i>с</i> <i>жалобою</i> явились первосвященники и старейшины Иудейские, требуя осуждения его.
+</p>
+<div class="num">16</div><p id="n16">Я отвечал им, что у Римлян нет обыкновения выдавать какого-нибудь человека на смерть, прежде нежели обвиняемый будет иметь обвинителей налицо и получит свободу защищаться против обвинения.
+</p>
+<div class="num">17</div><p id="n17">Когда же они пришли сюда, то, без всякого отлагательства, на другой же день сел я на судейское место и повелел привести того человека.
+</p>
+<div class="num">18</div><p id="n18">Обступив его, обвинители не представили ни одного из обвинений, какие я предполагал;
+</p>
+<div class="num">19</div><p id="n19">но они имели некоторые споры с ним об их Богопочитании и о каком-то Иисусе умершем, о Котором Павел утверждал, что Он жив.
+</p>
+<div class="num">20</div><p id="n20">Затрудняясь в решении этого вопроса, я сказал: хочет ли он идти в Иерусалим и там быть судимым в этом?
+</p>
+<div class="num">21</div><p id="n21">Но как Павел потребовал, чтобы он оставлен был на рассмотрение Августово, то я велел содержать его под стражею до тех пор, как пошлю его к кесарю.
+</p>
+<div class="num">22</div><p id="n22">Агриппа же сказал Фесту: хотел бы и я послушать этого человека. Завтра же, отвечал тот, услышишь его.
+</p>
+<div class="num">23</div><p id="n23">На другой день, когда Агриппа и Вереника пришли с великою пышностью и вошли в судебную палату с тысяченачальниками и знатнейшими гражданами, по приказанию Феста приведен был Павел.
+</p>
+<div class="num">24</div><p id="n24">И сказал Фест: царь Агриппа и все присутствующие с нами мужи! вы видите того, против которого всё множество Иудеев приступали ко мне в Иерусалиме и здесь и кричали, что ему не должно более жить.
+</p>
+<div class="num">25</div><p id="n25">Но я нашел, что он не сделал ничего, достойного смерти; и как он сам потребовал суда у Августа, то я решился послать его <i>к</i> <i>нему.</i>
+</p>
+<div class="num">26</div><p id="n26">Я не имею ничего верного написать о нем государю; посему привел его пред вас, и особенно пред тебя, царь Агриппа, дабы, по рассмотрении, было мне что написать.
+</p>
+<div class="num">27</div><p id="n27">Ибо, мне кажется, нерассудительно послать узника и не показать обвинений на него.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="act.26.ru.html">к главе 26</a></div></div>
+
+</body>
+</html>

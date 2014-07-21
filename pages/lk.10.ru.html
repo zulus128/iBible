@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lk.ru.html">Евангелие от Луки</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 10
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">После сего избрал Господь и других семьдесят <i>учеников,</i> и послал их по два пред лицем Своим во всякий город и место, куда Сам хотел идти,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и сказал им: жатвы много, а делателей мало; итак, молите Господина жатвы, чтобы выслал делателей на жатву Свою.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Идите! Я посылаю вас, как агнцев среди волков.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Не берите ни мешка, ни сумы&#769;, ни обуви, и никого на дороге не приветствуйте.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">В какой дом войдете, сперва говорите: мир дому сему;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и если будет там сын мира, то почиет на нём мир ваш, а если нет, то к вам возвратится.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">В доме же том оставайтесь, ешьте и пейте, что у них есть, ибо трудящийся достоин награды за труды свои; не переходите из дома в дом.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И если придёте в какой город и примут вас, ешьте, что вам предложат,
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и исцеляйте находящихся в нём больных, и говорите им: приблизилось к вам Царствие Божие.
+</p>
+<div class="num">10</div><p id="n10">Если же придете в какой город и не примут вас, то, выйдя на улицу, скажите:
+</p>
+<div class="num">11</div><p id="n11">и прах, прилипший к нам от вашего города, отрясаем вам; однако же знайте, что приблизилось к вам Царствие Божие.
+</p>
+<div class="num">12</div><p id="n12">Сказываю вам, что Содому в день оный будет отраднее, нежели городу тому.
+</p>
+<div class="num">13</div><p id="n13">Горе тебе, Хоразин! горе тебе, Вифсаида! ибо если бы в Тире и Сидоне явлены были силы, явленные в вас, то давно бы они, сидя во вретище и пепле, покаялись;
+</p>
+<div class="num">14</div><p id="n14">но и Тиру и Сидону отраднее будет на суде, нежели вам.
+</p>
+<div class="num">15</div><p id="n15">И ты, Капернаум, до неба вознесшийся, до ада низвергнешься.
+</p>
+<div class="num">16</div><p id="n16">Слушающий вас Меня слушает, и отвергающийся вас Меня отвергается; а отвергающийся Меня отвергается Пославшего Меня.
+</p>
+<div class="num">17</div><p id="n17">Семьдесят <i>учеников</i> возвратились с радостью и говорили: Господи! и бесы повинуются нам о имени Твоем.
+</p>
+<div class="num">18</div><p id="n18">Он же сказал им: Я видел сатану, спадшего с неба, как молнию;
+</p>
+<div class="num">19</div><p id="n19">се, даю вам власть наступать на змей и скорпионов и на всю силу вражью, и ничто не повредит вам;
+</p>
+<div class="num">20</div><p id="n20">однако ж тому не радуйтесь, что духи вам повинуются, но радуйтесь тому, что имена ваши написаны на небесах.
+</p>
+<div class="num">21</div><p id="n21">В тот час возрадовался духом Иисус и сказал: славлю Тебя, Отче, Господи неба и земли, что Ты утаил сие от мудрых и разумных и открыл младенцам. Ей, Отче! Ибо таково было Твое благоволение.
+</p>
+<div class="num">22</div><p id="n22">И, обратившись к ученикам, сказал: всё предано Мне Отцем Моим; и кто есть Сын, не знает никто, кроме Отца, и кто есть Отец, <i>не</i> <i>знает</i> <i>никто,</i> кроме Сына, и кому Сын хочет открыть.
+</p>
+<div class="num">23</div><p id="n23">И, обратившись к ученикам, сказал им особо: блаженны очи, видящие то, что вы видите!
+</p>
+<div class="num">24</div><p id="n24">ибо сказываю вам, что многие пророки и цари желали видеть, что&#769; вы видите, и не видели, и слышать, что&#769; вы слышите, и не слышали.
+</p>
+<div class="num">25</div><p id="n25">И вот, один законник встал и, искушая Его, сказал: Учитель! что&#769; мне делать, чтобы наследовать жизнь вечную?
+</p>
+<div class="num">26</div><p id="n26">Он же сказал ему: в законе что&#769; написано? ка&#769;к читаешь?
+</p>
+<div class="num">27</div><p id="n27">Он сказал в ответ: возлюби Господа Бога твоего всем сердцем твоим, и всею душею твоею, и всею крепостию твоею, и всем разумением твоим, и ближнего твоего, как самого себя.
+</p>
+<div class="num">28</div><p id="n28"><i>Иисус</i> сказал ему: правильно ты отвечал; так поступай, и будешь жить.
+</p>
+<div class="num">29</div><p id="n29">Но он, желая оправдать себя, сказал Иисусу: а кто мой ближний?
+</p>
+<div class="num">30</div><p id="n30">На это сказал Иисус: некоторый человек шел из Иерусалима в Иерихон и попался разбойникам, которые сняли с него одежду, изранили его и ушли, оставив его едва живым.
+</p>
+<div class="num">31</div><p id="n31">По случаю один священник шел тою дорогою и, увидев его, прошел мимо.
+</p>
+<div class="num">32</div><p id="n32">Также и левит, быв на том месте, подошел, посмотрел и прошел мимо.
+</p>
+<div class="num">33</div><p id="n33">Самарянин же некто, проезжая, нашел на него и, увидев его, сжалился
+</p>
+<div class="num">34</div><p id="n34">и, подойдя, перевязал ему раны, возливая масло и вино; и, посадив его на своего осла, привез его в гостиницу и позаботился о нем;
+</p>
+<div class="num">35</div><p id="n35">а на другой день, отъезжая, вынул два динария, дал содержателю гостиницы и сказал ему: позаботься о нем; и если издержишь что более, я, когда возвращусь, отдам тебе.
+</p>
+<div class="num">36</div><p id="n36">Кто из этих троих, думаешь ты, был ближний попавшемуся разбойникам?
+</p>
+<div class="num">37</div><p id="n37">Он сказал: оказавший ему милость. Тогда Иисус сказал ему: иди, и ты поступай так же.
+</p>
+<div class="num">38</div><p id="n38">В продолжение пути их пришел Он в одно селение; здесь женщина, именем Марфа, приняла Его в дом свой;
+</p>
+<div class="num">39</div><p id="n39">у неё была сестра, именем Мария, которая села у ног Иисуса и слушала слово Его.
+</p>
+<div class="num">40</div><p id="n40">Марфа же заботилась о большом угощении и, подойдя, сказала: Господи! или Тебе нужды нет, что сестра моя одну меня оставила служить? скажи ей, чтобы помогла мне.
+</p>
+<div class="num">41</div><p id="n41">Иисус же сказал ей в ответ: Марфа! Марфа! ты заботишься и суетишься о многом,
+</p>
+<div class="num">42</div><p id="n42">а одно только нужно; Мария же избрала благую часть, которая не отнимется у неё.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lk.11.ru.html">к главе 11</a></div></div>
+
+</body>
+</html>

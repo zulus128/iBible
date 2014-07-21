@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="co1.ru.html">Первое послание к<br />Коринфянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 6
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Как смеет кто у вас, имея дело с другим, судиться у нечестивых, а не у святых?
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Разве не знаете, что святые будут судить мир? Если же вами будет судим мир, то неужели вы недостойны судить маловажные <i>дела?</i>
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Разве не знаете, что мы будем судить ангелов, не тем ли более <i>дела</i> житейские?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">А вы, когда имеете житейские тяжбы, поставляете <i>своими</i> <i>судьями</i> ничего не значащих в церкви.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">К стыду вашему говорю: неужели нет между вами ни одного разумного, который мог бы рассудить между братьями своими?
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Но брат с братом судится, и притом перед неверными.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И то уже весьма унизительно для вас, что вы имеете тяжбы между собою. Для чего бы вам лучше не оставаться обиженными? для чего бы вам лучше не терпеть лишения?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Но вы <i>сами</i> обижаете и отнимаете, и притом у братьев.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Или не знаете, что неправедные Царства Божия не наследуют? Не обманывайтесь: ни блудники, ни идолослужители, ни прелюбодеи, ни малакии, ни мужеложники,
+</p>
+<div class="num">10</div><p id="n10">ни воры, ни лихоимцы, ни пьяницы, ни злоречивые, ни хищники - Царства Божия не наследуют.
+</p>
+<div class="num">11</div><p id="n11">И такими были некоторые из вас; но омылись, но освятились, но оправдались именем Господа нашего Иисуса Христа и Духом Бога нашего.
+</p>
+<div class="num">12</div><p id="n12">Все мне позволительно, но не все полезно; все мне позволительно, но ничто не должно обладать мною.
+</p>
+<div class="num">13</div><p id="n13">Пища для чрева, и чрево для пищи; но Бог уничтожит и то и другое. Тело же не для блуда, но для Господа, и Господь для тела.
+</p>
+<div class="num">14</div><p id="n14">Бог воскресил Господа, воскресит и нас силою Своею.
+</p>
+<div class="num">15</div><p id="n15">Разве не знаете, что тела&#769; ваши суть члены Христовы? Итак отниму ли члены у Христа, чтобы сделать <i>их</i> членами блудницы? Да не будет!
+</p>
+<div class="num">16</div><p id="n16">Или не знаете, что совокупляющийся с блудницею становится одно тело <i>с</i> <i>нею?</i> ибо сказано: два будут одна плоть.
+</p>
+<div class="num">17</div><p id="n17">А соединяющийся с Господом есть один дух с Господом.
+</p>
+<div class="num">18</div><p id="n18">Бегайте блуда; всякий грех, какой делает человек, есть вне тела, а блудник грешит против собственного тела.
+</p>
+<div class="num">19</div><p id="n19">Не знаете ли, что тела&#769; ваши суть храм живущего в вас Святаго Духа, Которого имеете вы от Бога, и вы не свои?
+</p>
+<div class="num">20</div><p id="n20">Ибо вы куплены <i>дорогою</i> ценою. <br /> Посему прославляйте Бога и в телах ваших и в душах ваших, которые суть Божии.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="co1.7.ru.html">к главе 7</a></div></div>
+
+</body>
+</html>

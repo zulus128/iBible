@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="jdi.ru.html">Книга Иудифь</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 11
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Олоферн сказал ей: ободрись, жена; не бойся сердцем твоим, потому что я не сделал зла никому, кто добровольно решился служить Навуходоносору, царю всей земли.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И теперь, если бы народ твой, живущий в нагорной стране, не пренебрег мною, я не поднял бы на них копья моего; но они сами это сделали для себя.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Скажи же мне: почему ты бежала от них и пришла к нам? Ты найдешь себе <i>здесь</i> спасение; не бойся: ты будешь жива в эту ночь и после,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">потому что тебя никто не обидит, напротив, всякий будет благодетельствовать тебе, как бывает с рабами господина моего, царя Навуходоносора.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Иудифь сказала ему: выслушай слова рабы твоей; пусть раба говорит пред лицем твоим: я не скажу лжи господину моему в эту ночь.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И если ты последуешь словам рабы твоей, то Бог чрез тебя совершит дело, и господин мой не ошибется в своих предприятиях.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Да живет Навуходоносор, царь всей земли, и да живет держава его, пославшего тебя для исправления всякой души, потому что не только люди чрез тебя будут служить ему, но и звери полевые, и скот, и птицы небесные чрез твою силу будут жить под властью Навуходоносора и всего дома его.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Ибо мы слышали о твоей мудрости и хитрости ума твоего, и всей земле известно, что ты один добр во всем царстве, силен в знании и дивен в воинских подвигах.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">А что говорил Ахиор в собрании твоем, мы слышали слова его, потому что мужи Ветилуи оставили его в живых, и он рассказал им все, о чем говорил тебе.
+</p>
+<div class="num">10</div><p id="n10">Посему, владыка-господин, не оставляй без внимания сло&#769;ва его, но сложи его в сердце твоем, потому что оно истинно: род наш не наказывается, меч не имеет силы над нами, если они не грешат пред Богом своим.
+</p>
+<div class="num">11</div><p id="n11">Итак, чтобы господин мой не был отражен и безуспешен и чтобы их постигла смерть,- овладел ими грех, которым они прогневляют Бога своего, делая то, чего не следует;
+</p>
+<div class="num">12</div><p id="n12">потому что у них оказался недостаток в пище и вся вода истощилась,- и <i>вот</i>, они решились броситься на скот свой и думают питаться всем, что Бог строго запретил в законе Своем употреблять в пищу.
+</p>
+<div class="num">13</div><p id="n13">Даже начатки пшеницы и десятины вина и масла, которые, по освящении, хранятся для священников, предстоящих пред лицем Бога нашего в Иерусалиме, они решились употребить, тогда как и руками касаться их не следовало никому из народа.
+</p>
+<div class="num">14</div><p id="n14">Они послали в Иерусалим, так как и тамошние жители делали это, принести к ним разрешение на то собрания старейшин.
+</p>
+<div class="num">15</div><p id="n15">И как скоро им дано будет известие, и они сделают это, то в тот же день будут преданы тебе на погубление.
+</p>
+<div class="num">16</div><p id="n16">Вот почему я, раба твоя, узнав обо всем этом, бежала от них, и Бог послал меня сделать вместе с тобою такие дела, которым изумится вся земля, где только услышат о них,
+</p>
+<div class="num">17</div><p id="n17">ибо раба твоя благочестива и день и ночь служит Богу Небесному. Теперь, господин мой, я останусь у тебя; только пусть раба твоя по ночам выходит на долину молиться Богу,- и Он откроет мне, когда они сделают свое преступление.
+</p>
+<div class="num">18</div><p id="n18">Я приду и объявлю тебе, и ты выходи <i>тогда</i> со всем твоим войском,- и никто из них не противостанет тебе.
+</p>
+<div class="num">19</div><p id="n19">Я поведу тебя чрез Иудею, доколе не дойдем до Иерусалима; поставлю среди его седалище твое, и ты погонишь их, как овец, не имеющих пастуха,- и пес не пошевелит против тебя языком своим. Это сказано мне по откровению и объявлено мне, и я послана возвестить тебе.
+</p>
+<div class="num">20</div><p id="n20">Понравились слова ее Олоферну и всем слугам его. Они дивились мудрости ее и говорили:
+</p>
+<div class="num">21</div><p id="n21">от края до края земли нет такой жены по красоте лица и по разумным речам.
+</p>
+<div class="num">22</div><p id="n22">Олоферн сказал ей: хорошо Бог сделал, что вперед этого народа послал тебя, чтобы в руках наших была сила, а среди презревших господина моего - гибель.
+</p>
+<div class="num">23</div><p id="n23">Прекрасна ты лицем, и добры речи твои. Если ты сделаешь, как сказала, то твой Бог будет моим Богом; ты будешь жить в доме царя Навуходоносора и будешь именита во всей земле.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="jdi.12.ru.html">к главе 12</a></div></div>
+
+</body>
+</html>

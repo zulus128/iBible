@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="mk.ru.html">Евангелие от Марка</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 8
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В те дни, когда собралось весьма много народа и нечего было им есть, Иисус, призвав учеников Своих, сказал им:
+</p>
+<div class="num">&nbsp;2</div><p id="n2">жаль Мне народа, что уже три дня находятся при Мне, и нечего им есть.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Если неевшими отпущу их в домы их, ослабеют в дороге, ибо некоторые из них пришли издалека.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Ученики Его отвечали Ему: откуда мог бы кто <i>взять</i> здесь в пустыне хлебов, чтобы накормить их?
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И спросил их: сколько у вас хлебов? Они сказали: семь.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Тогда велел народу возлечь на землю; и, взяв семь хлебов и воздав благодарение, преломил и дал ученикам Своим, чтобы они раздали; и они раздали народу.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Было у них и немного рыбок: благословив, Он велел раздать и их.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И ели, и насытились; и набрали оставшихся кусков семь корзин.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Евших же было около четырех тысяч. И отпустил их.
+</p>
+<div class="num">10</div><p id="n10">И тотчас войдя в лодку с учениками Своими, прибыл в пределы Далмануфские.
+</p>
+<div class="num">11</div><p id="n11">Вышли фарисеи, начали с Ним спорить и требовали от Него знамения с неба, искушая Его.
+</p>
+<div class="num">12</div><p id="n12">И Он, глубоко вздохнув, сказал: для чего род сей требует знамения? Истинно говорю вам, не дастся роду сему знамение.
+</p>
+<div class="num">13</div><p id="n13">И, оставив их, опять вошел в лодку и отправился на ту сторону.
+</p>
+<div class="num">14</div><p id="n14">При сем ученики Его забыли взять хлебов и кроме одного хлеба не имели с собою в лодке.
+</p>
+<div class="num">15</div><p id="n15">А Он заповедал им, говоря: смотрите, берегитесь закваски фарисейской и закваски Иродовой.
+</p>
+<div class="num">16</div><p id="n16">И, рассуждая между собою, говорили: <i>это</i> <i>значит,</i> что хлебов нет у нас.
+</p>
+<div class="num">17</div><p id="n17">Иисус, уразумев, говорит им: что рассуждаете о том, что нет у вас хлебов? Еще ли не понимаете и не разумеете? Еще ли окаменено у вас сердце?
+</p>
+<div class="num">18</div><p id="n18">Имея очи, не видите? имея уши, не слышите? и не помните?
+</p>
+<div class="num">19</div><p id="n19">Когда Я пять хлебов преломил для пяти тысяч <i>человек,</i> сколько полных коробов набрали вы кусков? Говорят Ему: двенадцать.
+</p>
+<div class="num">20</div><p id="n20">А когда семь для четырех тысяч, сколько корзин набрали вы оставшихся кусков? Сказали: семь.
+</p>
+<div class="num">21</div><p id="n21">И сказал им: как же не разумеете?
+</p>
+<div class="num">22</div><p id="n22">Приходит в Вифсаиду; и приводят к Нему слепого и просят, чтобы прикоснулся к нему.
+</p>
+<div class="num">23</div><p id="n23">Он, взяв слепого за руку, вывел его вон из селения и, плюнув ему на глаза, возложил на него руки и спросил его: видит ли что?
+</p>
+<div class="num">24</div><p id="n24">Он, взглянув, сказал: вижу проходящих людей, как деревья.
+</p>
+<div class="num">25</div><p id="n25">Потом опять возложил руки на глаза ему и велел ему взглянуть. И он исцелел и стал видеть все ясно.
+</p>
+<div class="num">26</div><p id="n26">И послал его домой, сказав: не заходи в селение и не рассказывай никому в селении.
+</p>
+<div class="num">27</div><p id="n27">И пошел Иисус с учениками Своими в селения Кесарии Филипповой. Дорогою Он спрашивал учеников Своих: за кого почитают Меня люди?
+</p>
+<div class="num">28</div><p id="n28">Они отвечали: за Иоанна Крестителя; другие же - за Илию; а иные - за одного из пророков.
+</p>
+<div class="num">29</div><p id="n29">Он говорит им: а вы за кого почитаете Меня? Петр сказал Ему в ответ: Ты Христос.
+</p>
+<div class="num">30</div><p id="n30">И запретил им, чтобы никому не говорили о Нем.
+</p>
+<div class="num">31</div><p id="n31">И начал учить их, что Сыну Человеческому много должно пострадать, быть отвержену старейшинами, первосвященниками и книжниками, и быть убиту, и в третий день воскреснуть.
+</p>
+<div class="num">32</div><p id="n32">И говорил о сем открыто. Но Петр, отозвав Его, начал прекословить Ему.
+</p>
+<div class="num">33</div><p id="n33">Он же, обратившись и взглянув на учеников Своих, воспретил Петру, сказав: отойди от Меня, сатана, потому что ты думаешь не о том, что Божие, но что человеческое.
+</p>
+<div class="num">34</div><p id="n34">И, подозвав народ с учениками Своими, сказал им: <br /> кто хочет идти за Мною, отвергнись себя, и возьми крест свой, и следуй за Мною.
+</p>
+<div class="num">35</div><p id="n35">Ибо кто хочет душу свою сберечь, тот потеряет ее, а кто потеряет душу свою ради Меня и Евангелия, тот сбережет ее.
+</p>
+<div class="num">36</div><p id="n36">Ибо какая польза человеку, если он приобретет весь мир, а душе своей повредит?
+</p>
+<div class="num">37</div><p id="n37">Или какой выкуп даст человек за душу свою?
+</p>
+<div class="num">38</div><p id="n38">Ибо кто постыдится Меня и Моих слов в роде сем прелюбодейном и грешном, того постыдится и Сын Человеческий, когда приидет в славе Отца Своего со святыми Ангелами.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="mk.9.ru.html">к главе 9</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="prem.ru.html">Книга Премудрости<br />Соломона</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Лучше бездетность с добродетелью, ибо память о ней бессмертна: она признается и у Бога и у людей.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Когда она присуща, ей подражают, а когда отойдет, стремятся к ней: и в вечности увенчанная она торжествует, как одержавшая победу непорочными подвигами.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">А плодородное множество нечестивых не принесет пользы, и прелюбодейные отрасли не дадут корней в глубину и не достигнут незыблемого основания;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и хотя на время позеленеют в ветвях, но, не имея твердости, поколеблются от ветра и порывом ветров искоренятся;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">некрепкие ветви переломятся, и плод их <i>будет</i> бесполезен, незрел для пищи и ни к чему не годен;
+</p>
+<div class="num">&nbsp;6</div><p id="n6">ибо дети, рождаемые от беззаконных сожитий, суть свидетели разврата против родителей при допросе их.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">А праведник, если и рановременно умрет, будет в покое,
+</p>
+<div class="num">&nbsp;8</div><p id="n8">ибо не в долговечности честная старость и не числом лет измеряется:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">мудрость есть седина для людей, и беспорочная жизнь - возраст старости.
+</p>
+<div class="num">10</div><p id="n10">Как благоугодивший Богу, он возлюблен, и, как живший посреди грешников, преставлен,
+</p>
+<div class="num">11</div><p id="n11">восхищен, чтобы злоба не изменила разума его, или коварство не прельстило души его.
+</p>
+<div class="num">12</div><p id="n12">Ибо упражнение в нечестии помрачает доброе, и волнение похоти развращает ум незлобивый.
+</p>
+<div class="num">13</div><p id="n13">Достигнув совершенства в короткое время, он исполнил долгие лета;
+</p>
+<div class="num">14</div><p id="n14">ибо душа его была угодна Господу, потому и ускорил он из среды нечестия. А люди видели это и не поняли, даже и не подумали о том,
+</p>
+<div class="num">15</div><p id="n15">что благодать и милость со святыми Его и промышление об избранных Его.
+</p>
+<div class="num">16</div><p id="n16">Праведник, умирая, осудит живых нечестивых, и скоро достигшая совершенства юность - долголетнюю старость неправедного;
+</p>
+<div class="num">17</div><p id="n17">ибо они увидят кончину мудрого и не поймут, что Господь определил о нем и для чего поставил его в безопасность;
+</p>
+<div class="num">18</div><p id="n18">они увидят и уничтожат его, но Господь посмеется им;
+</p>
+<div class="num">19</div><p id="n19">и после сего будут они бесчестным трупом и позором между умершими навек, ибо Он повергнет их ниц безгласными и сдвинет их с оснований, и они вконец запустеют и будут в скорби, и память их погибнет;
+</p>
+<div class="num">20</div><p id="n20">в сознании грехов своих они предстанут со страхом, и беззакония их осудят их в лице их.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="prem.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

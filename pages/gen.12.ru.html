@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="gen.ru.html">Бытие</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 12
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И сказал Господь Авраму: пойди из земли твоей, от родства твоего и из дома отца твоего [и иди] в землю, которую Я укажу тебе;
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и Я произведу от тебя великий народ, и благословлю тебя, и возвеличу имя твое, и будешь ты в благословение;
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Я благословлю благословляющих тебя, и злословящих тебя прокляну; и благословятся в тебе все племена земные.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">И пошел Аврам, как сказал ему Господь; и с ним пошел Лот. Аврам был семидесяти пяти лет, когда вышел из Харрана.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И взял Аврам с собою Сару, жену свою, Лота, сына брата своего, и все имение, которое они приобрели, и всех людей, которых они имели в Харране; и вышли, чтобы идти в землю Ханаанскую; и пришли в землю Ханаанскую.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">И прошел Аврам по земле сей [по длине ее] до места Сихема, до дубравы Море&#769;. В этой земле тогда [жили] Хананеи.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">И явился Господь Авраму и сказал [ему]: потомству твоему отдам Я землю сию. И создал там [Аврам] жертвенник Господу, Который явился ему.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Оттуда двинулся он к горе, на восток от Вефиля; и поставил шатер свой <i>так,</i> <i>что</i> <i>от</i> <i>него</i> Вефиль <i>был</i> на запад, а Гай на восток; и создал там жертвенник Господу и призвал имя Господа [явившегося ему].
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И поднялся Аврам и продолжал идти к югу.
+</p>
+<div class="num">10</div><p id="n10">И был голод в той земле. И сошел Аврам в Египет, пожить там, потому что усилился голод в земле той.
+</p>
+<div class="num">11</div><p id="n11">Когда же он приближался к Египту, то сказал Саре, жене своей: вот, я знаю, что ты женщина, прекрасная видом;
+</p>
+<div class="num">12</div><p id="n12">и когда Египтяне увидят тебя, то скажут: это жена его; и убьют меня, а тебя оставят в живых;
+</p>
+<div class="num">13</div><p id="n13">скажи же, что ты мне сестра, дабы мне хорошо было ради тебя, и дабы жива была душа моя чрез тебя.
+</p>
+<div class="num">14</div><p id="n14">И было, когда пришел Аврам в Египет, Египтяне увидели, что она женщина весьма красивая;
+</p>
+<div class="num">15</div><p id="n15">увидели ее и вельможи фараоновы и похвалили ее фараону; и взята была она в дом фараонов.
+</p>
+<div class="num">16</div><p id="n16">И Авраму хорошо было ради ее; и был у него мелкий и крупный скот и ослы, и рабы и рабыни, и лошаки и верблюды.
+</p>
+<div class="num">17</div><p id="n17">Но Господь поразил тяжкими ударами фараона и дом его за Сару, жену Аврамову.
+</p>
+<div class="num">18</div><p id="n18">И призвал фараон Аврама и сказал: что ты это сделал со мною? для чего не сказал мне, что она жена твоя?
+</p>
+<div class="num">19</div><p id="n19">для чего ты сказал: она сестра моя? и я взял было ее себе в жену. И теперь вот жена твоя; возьми [ее] и пойди.
+</p>
+<div class="num">20</div><p id="n20">И дал о нем фараон повеление людям, и проводили его, и жену его, и все, что у него было, [и Лота с ним].
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="gen.13.ru.html">к главе 13</a></div></div>
+
+</body>
+</html>

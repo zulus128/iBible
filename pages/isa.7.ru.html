@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="isa.ru.html">Книга Пророка Исаии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И было во дни Ахаза, сына Иоафамова, сына Озии, царя Иудейского, Рецин, царь Сирийский, и Факей, сын Ремалиин, царь Израильский, пошли против Иерусалима, чтобы завоевать его, но не могли завоевать.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И было возвещено дому Давидову и сказано: Сирияне расположились в земле Ефремовой; и всколебалось сердце его и сердце народа его, как колеблются от ветра дерева в лесу.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">И сказал Господь Исаии: выйди ты и сын твой Шеар-ясув навстречу Ахазу, к концу водопровода верхнего пруда, на дорогу к полю белильничьему,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">и скажи ему: наблюдай и будь спокоен; не страшись и да не унывает сердце твое от двух концов этих дымящихся головней, от разгоревшегося гнева Рецина и Сириян и сына Ремалиина.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Сирия, Ефрем и сын Ремалиин умышляют против тебя зло, говоря:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">пойдем на Иудею и возмутим ее, и овладеем ею и поставим в ней царем сына Тавеилова.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Но Господь Бог так говорит: это не состоится и не сбудется;
+</p>
+<div class="num">&nbsp;8</div><p id="n8">ибо глава Сирии - Дамаск, и глава Дамаска - Рецин; а чрез шестьдесят пять лет Ефрем перестанет быть народом;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и глава Ефрема - Самария, и глава Самарии - сын Ремалиин. Если вы не верите, то потому, что вы не удостоверены.
+</p>
+<div class="num">10</div><p id="n10">И продолжал Господь говорить к Ахазу, и сказал:
+</p>
+<div class="num">11</div><p id="n11">проси себе знамения у Господа Бога твоего: проси или в глубине, или на высоте.
+</p>
+<div class="num">12</div><p id="n12">И сказал Ахаз: не буду просить и не буду искушать Господа.
+</p>
+<div class="num">13</div><p id="n13">Тогда сказал <i>Исаия:</i> слушайте же, дом Давидов! разве мало для вас затруднять людей, что вы хотите затруднять и Бога моего?
+</p>
+<div class="num">14</div><p id="n14">Итак Сам Господь даст вам знамение: се, Дева во чреве приимет и родит Сына, и нарекут имя Ему: Еммануил.
+</p>
+<div class="num">15</div><p id="n15">Он будет питаться молоком и медом, доколе не будет разуметь отвергать худое и избирать доброе;
+</p>
+<div class="num">16</div><p id="n16">ибо прежде нежели Этот Младенец будет разуметь отвергать худое и избирать доброе, земля та, которой ты страшишься, будет оставлена обоими царями ее.
+</p>
+<div class="num">17</div><p id="n17">Но наведет Господь на тебя и на народ твой и на дом отца твоего дни, какие не приходили со времени отпадения Ефрема от Иуды, наведет царя Ассирийского.
+</p>
+<div class="num">18</div><p id="n18">И будет в тот день: даст знак Господь мухе, которая при устье реки Египетской, и пчеле, которая в земле Ассирийской,-
+</p>
+<div class="num">19</div><p id="n19">и прилетят и усядутся все они по долинам опустелым и по расселинам скал, и по всем колючим кустарникам, и по всем деревам.
+</p>
+<div class="num">20</div><p id="n20">В тот день обреет Господь бритвою, нанятою по ту сторону реки, царем Ассирийским, голову и волоса на ногах, и даже отнимет бороду.
+</p>
+<div class="num">21</div><p id="n21">И будет в тот день: кто будет содержать корову и двух овец,
+</p>
+<div class="num">22</div><p id="n22">по изобилию молока, которое они дадут, будет есть масло; маслом и медом будут питаться все, оставшиеся в этой земле.
+</p>
+<div class="num">23</div><p id="n23">И будет в тот день: на всяком месте, где росла тысяча виноградных лоз на тысячу сребреников, будет терновник и колючий кустарник.
+</p>
+<div class="num">24</div><p id="n24">Со стрелами и луками будут ходить туда, ибо вся земля будет терновником и колючим кустарником.
+</p>
+<div class="num">25</div><p id="n25">И ни на одну из гор, которые расчищались бороздниками, не пойдешь, боясь терновника и колючего кустарника: туда будут выгонять волов, и мелкий скот будет топтать их.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="isa.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

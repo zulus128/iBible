@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="co1.ru.html">Первое послание к<br />Коринфянам</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 4
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Итак каждый должен разуметь нас, как служителей Христовых и домостроителей таин Божиих.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">От домостроителей же требуется, чтобы каждый оказался верным.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Для меня очень мало значит, ка&#769;к судите обо мне вы или <i>ка&#769;к</i> <i>судят</i> другие люди; я и сам не сужу о себе.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Ибо <i>хотя</i> я ничего не знаю за собою, но тем не оправдываюсь; судия же мне Господь.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Посему не суди&#769;те никак прежде времени, пока не придет Господь, Который и осветит скрытое во мраке и обнаружит сердечные намерения, и тогда каждому будет похвала от Бога.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Это, братия, приложил я к себе и Аполлосу ради вас, чтобы вы научились от нас не мудрствовать сверх того, что написано, и не превозносились один перед другим.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Ибо кто отличает тебя? Что ты имеешь, чего бы не получил? А если получил, что хвалишься, как будто не получил?
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Вы уже пресытились, вы уже обогатились, вы стали царствовать без нас. О, если бы вы <i>и</i> <i>в</i> <i>самом</i> <i>деле</i> царствовали, чтобы и нам с вами царствовать!
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Ибо я думаю, что нам, последним посланникам, Бог судил быть как бы приговоренными к смерти, потому что мы сделались позорищем для мира, для Ангелов и человеков.
+</p>
+<div class="num">10</div><p id="n10">Мы безумны Христа ради, а вы мудры во Христе; мы немощны, а вы крепки; вы в славе, а мы в бесчестии.
+</p>
+<div class="num">11</div><p id="n11">Даже доныне терпим голод и жажду, и наготу и побои, и скитаемся,
+</p>
+<div class="num">12</div><p id="n12">и трудимся, работая своими руками. Злословят нас, мы благословляем; гонят нас, мы терпим;
+</p>
+<div class="num">13</div><p id="n13">хулят нас, мы молим; мы как сор для мира, <i>как</i> прах, всеми <i>попираемый</i> доныне.
+</p>
+<div class="num">14</div><p id="n14">Не к постыжению вашему пишу сие, но вразумляю вас, как возлюбленных детей моих.
+</p>
+<div class="num">15</div><p id="n15">Ибо, хотя у вас тысячи наставников во Христе, но не много отцов; я родил вас во Христе Иисусе благовествованием.
+</p>
+<div class="num">16</div><p id="n16">Посему умоляю вас: подражайте мне, как я Христу.
+</p>
+<div class="num">17</div><p id="n17">Для сего я послал к вам Тимофея, моего возлюбленного и верного в Господе сына, который напомнит вам о путях моих во Христе, как я учу везде во всякой церкви.
+</p>
+<div class="num">18</div><p id="n18">Как я не иду к вам, то некоторые <i>у</i> <i>вас</i> возгордились;
+</p>
+<div class="num">19</div><p id="n19">но я скоро приду к вам, если угодно будет Господу, и испытаю не слова возгордившихся, а силу,
+</p>
+<div class="num">20</div><p id="n20">ибо Царство Божие не в слове, а в силе.
+</p>
+<div class="num">21</div><p id="n21">Чего вы хотите? с жезлом прийти к вам, или с любовью и духом кротости?
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="co1.5.ru.html">к главе 5</a></div></div>
+
+</body>
+</html>

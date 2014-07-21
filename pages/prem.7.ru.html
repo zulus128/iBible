@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="prem.ru.html">Книга Премудрости<br />Соломона</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И я человек смертный, подобный всем, потомок первозданного земнородного.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">И я в утробе матерней образовался в плоть в десятимесячное время, сгустившись в крови от семени мужа и услаждения, соединенного со сном,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и я, родившись, начал дышать общим воздухом и ниспал на ту же землю, первый голос обнаружил плачем одинаково со всеми,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">вскормлен в пеленах и заботах;
+</p>
+<div class="num">&nbsp;5</div><p id="n5">ибо ни один царь не имел иного начала рождения:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">один для всех вход в жизнь и одинаковый исход.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Посему я молился, и дарован мне разум; я взывал, и сошел на меня дух премудрости.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Я предпочел ее скипетрам и престолам и богатство почитал за ничто в сравнении с нею;
+</p>
+<div class="num">&nbsp;9</div><p id="n9">драгоценного камня я не сравнил с нею, потому что перед нею все золото - ничтожный песок, а серебро - грязь в сравнении с нею.
+</p>
+<div class="num">10</div><p id="n10">Я полюбил ее более здоровья и красоты и избрал ее предпочтительно перед светом, ибо свет ее неугасим.
+</p>
+<div class="num">11</div><p id="n11">А вместе с нею пришли ко мне все блага и несметное богатство через руки ее;
+</p>
+<div class="num">12</div><p id="n12">я радовался всему, потому что премудрость руководствовала ими, но я не знал, что она - виновница их.
+</p>
+<div class="num">13</div><p id="n13">Без хитрости я научился, и без зависти преподаю, не скрываю богатства ее,
+</p>
+<div class="num">14</div><p id="n14">ибо она есть неистощимое сокровище для людей; пользуясь ею, они входят в содружество с Богом, посредством даров учения.
+</p>
+<div class="num">15</div><p id="n15">Только дал бы мне Бог говорить по разумению и достойно мыслить о дарованном, ибо Он есть руководитель к мудрости и исправитель мудрых.
+</p>
+<div class="num">16</div><p id="n16">Ибо в руке Его и мы и слова наши, и всякое разумение и искусство делания.
+</p>
+<div class="num">17</div><p id="n17">Сам Он даровал мне неложное познание существующего, чтобы познать устройство мира и действие стихий,
+</p>
+<div class="num">18</div><p id="n18">начало, конец и средину времен, смены поворотов и перемены времен,
+</p>
+<div class="num">19</div><p id="n19">круги годов и положение звезд,
+</p>
+<div class="num">20</div><p id="n20">природу животных и свойства зверей, стремления ветров и мысли людей, различия растений и силы корней.
+</p>
+<div class="num">21</div><p id="n21">Познал я все, и сокровенное и явное, ибо научила меня Премудрость, художница всего.
+</p>
+<div class="num">22</div><p id="n22">Она есть дух разумный, святый, единородный, многочастный, тонкий, удобоподвижный, светлый, чистый, ясный, невредительный, благолюбивый, скорый, неудержимый,
+</p>
+<div class="num">23</div><p id="n23">благодетельный, человеколюбивый, твердый, непоколебимый, спокойный, беспечальный, всевидящий и проникающий все умные, чистые, тончайшие духи.
+</p>
+<div class="num">24</div><p id="n24">Ибо премудрость подвижнее всякого движения, и по чистоте своей сквозь все проходит и проникает.
+</p>
+<div class="num">25</div><p id="n25">Она есть дыхание силы Божией и чистое излияние славы Вседержителя: посему ничто оскверненное не войдет в нее.
+</p>
+<div class="num">26</div><p id="n26">Она есть отблеск вечного света и чистое зеркало действия Божия и образ благости Его.
+</p>
+<div class="num">27</div><p id="n27">Она - одна, но может все, и, пребывая в самой себе, все обновляет, и, переходя из рода в род в святые души, приготовляет друзей Божиих и пророков;
+</p>
+<div class="num">28</div><p id="n28">ибо Бог никого не любит, кроме живущего с премудростью.
+</p>
+<div class="num">29</div><p id="n29">Она прекраснее солнца и превосходнее сонма звезд; в сравнении со светом она выше;
+</p>
+<div class="num">30</div><p id="n30">ибо свет сменяется ночью, а премудрости не превозмогает злоба.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="prem.8.ru.html">к главе 8</a></div></div>
+
+</body>
+</html>

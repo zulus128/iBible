@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="para1.ru.html">Первая книга<br />Паралипоменон</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 26
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Вот распределение привратников: из Кореян: Мешелемия, сын Корея, из сыновей Асафовых.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Сыновья Мешелемии: первенец Захария, второй Иедиаил, третий Зевадия, четвертый Иафниил,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">пятый Елам, шестой Иегоханан, седьмой Елиегоэнай.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Сыновья Овед-Едома: первенец Шемаия, второй Иегозавад, третий Иоах, четвертый Сахар, пятый Нафанаил,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">шестой Аммиил, седьмой Иссахар, восьмой Пеульфай, потому что Бог благословил его.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">У сына его Шемаии родились также сыновья, начальствовавшие в своем роде, потому что они были люди сильные.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Сыновья Шемаии: Офни, Рефаил, Овед и Елзавад, братья его, люди сильные, Елия, Семахия [и Иеваком].
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Все они из сыновей Овед-Едома; они и сыновья их, и братья их были люди прилежные и к службе способные: их было у Овед-Едома шестьдесят два.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">У Мешелемии сыновей и братьев, людей способных, <i>было</i> восемнадцать.
+</p>
+<div class="num">10</div><p id="n10">У Хосы, из сыновей Мерариных, сыновья: Шимри главный,- хотя он не был первенцем, но отец его поставил его главным;
+</p>
+<div class="num">11</div><p id="n11">второй Хелкия, третий Тевалия, четвертый Захария; всех сыновей и братьев у Хосы было тринадцать.
+</p>
+<div class="num">12</div><p id="n12">Вот распределение привратников по главам семейств, способных на службу вместе с братьями их, для служения в доме Господнем.
+</p>
+<div class="num">13</div><p id="n13">И бросили они жребии, как малый, так и большой, по своим семействам, на каждые ворота.
+</p>
+<div class="num">14</div><p id="n14">И выпал жребий на восток Шелемии; и Захарии, сыну его, умному советнику, бросили жребий, и вышел ему жребий на север;
+</p>
+<div class="num">15</div><p id="n15">Овед-Едому на юг, а сыновьям его при кладовых.
+</p>
+<div class="num">16</div><p id="n16">Шупиму и Хосе на запад, у ворот Шаллехет, где дорога поднимается и где стража против стражи.
+</p>
+<div class="num">17</div><p id="n17">К востоку по шести левитов, к северу по четыре, к югу по четыре, а у кладовых по два.
+</p>
+<div class="num">18</div><p id="n18">К западу у притвора на дороге по четыре, а у самого притвора по два.
+</p>
+<div class="num">19</div><p id="n19">Вот распределение привратников из сыновей Кореевых и сыновей Мерариных.
+</p>
+<div class="num">20</div><p id="n20">Левиты же, братья их, <i>смотрели</i> за сокровищами дома Божия и за сокровищницами посвященных вещей.
+</p>
+<div class="num">21</div><p id="n21">Сыновья Лаедана, сына Герсонова - от Лаедана, гла&#769;вы семейств от Лаедана Герсонского: Иехиел.
+</p>
+<div class="num">22</div><p id="n22">Сыновья Иехиела: Зефам и Иоиль, брат его, <i>смотрели</i> за сокровищами дома Господня,
+</p>
+<div class="num">23</div><p id="n23">вместе с потомками Амрама, Ицгара, Хеврона, Озиила.
+</p>
+<div class="num">24</div><p id="n24">Шевуил, сын Гирсона, сына Моисеева, <i>был</i> главным смотрителем за сокровищницами.
+</p>
+<div class="num">25</div><p id="n25">У брата его Елиезера сын Рехавия, у него сын Исаия, у него сын Иорам, у него сын Зихрий, у него сын Шеломиф.
+</p>
+<div class="num">26</div><p id="n26">Шеломиф и братья его <i>смотрели</i> за всеми сокровищницами посвященных вещей, которые посвятил царь Давид и главы семейств и тысяченачальники, стоначальники и предводители войска.
+</p>
+<div class="num">27</div><p id="n27">Из завоеваний и из добыч они посвящали на поддержание дома Господня.
+</p>
+<div class="num">28</div><p id="n28">И все, что посвятил Самуил пророк, и Саул, сын Киса, и Авенир, сын Нира, и Иоав, сын Саруи, все посвященное <i>было</i> на руках у Шеломифа и братьев его.
+</p>
+<div class="num">29</div><p id="n29">Из племени Ицгарова: Хенания и сыновья его <i>определены</i> на внешнее служение у Израильтян, писцами и судьями.
+</p>
+<div class="num">30</div><p id="n30">Из племени Хевронова: Хашавия и братья его, люди мужественные, тысяча семьсот, имели надзор над Израилем по эту сторону Иордана к западу, по всяким делам <i>служения</i> Господня и по службе царской.
+</p>
+<div class="num">31</div><p id="n31">У племени Хевронова Иерия <i>был</i> главою Хевронян, в их родах, в поколениях. В сороковой год царствования Давида они исчислены, и найдены между ними люди мужественные в Иазере Галаадском.
+</p>
+<div class="num">32</div><p id="n32">И братья его, люди способные, две тысячи семьсот, были главы семейств. Их поставил царь Давид над коленом Рувимовым и Гадовым и полуколеном Манассииным, по всем делам Божиим и делам царя.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="para1.27.ru.html">к главе 27</a></div></div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ex.ru.html">Исход</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 18
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">И услышал Иофор, священник Мадиамский, тесть Моисеев, о всем, что сделал Бог для Моисея и для Израиля, народа Своего, когда вывел Господь Израиля из Египта,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">и взял Иофор, тесть Моисеев, Сепфору, жену Моисееву, пред тем возвращенную,
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и двух сынов ее, из которых одному имя Гирсам, потому что говорил <i>Моисей:</i> я пришлец в земле чужой;
+</p>
+<div class="num">&nbsp;4</div><p id="n4">а другому имя Елиезер, потому что [говорил он] Бог отца моего был мне помощником и избавил меня от меча фараонова.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">И пришел Иофор, тесть Моисея, с сыновьями его и женою его к Моисею в пустыню, где он расположился станом у горы Божией,
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и дал знать Моисею: я, тесть твой Иофор, иду к тебе, и жена твоя, и два сына ее с нею.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Моисей вышел навстречу тестю своему, и поклонился [ему], и целовал его, и после взаимного приветствия они вошли в шатер.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">И рассказал Моисей тестю своему о всем, что сделал Господь с фараоном и со [всеми] Египтянами за Израиля, и о всех трудностях, какие встретили их на пути, и как избавил их Господь [из руки фараона и из руки Египтян].
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Иофор радовался о всех благодеяниях, которые Господь явил Израилю, когда избавил его из руки Египтян [и из руки фараона],
+</p>
+<div class="num">10</div><p id="n10">и сказал Иофор: благословен Господь, Который избавил вас из руки Египтян и из руки фараоновой, Который избавил народ сей из-под власти Египтян;
+</p>
+<div class="num">11</div><p id="n11">ныне узнал я, что Господь велик паче всех богов, в том самом, чем они превозносились над <i>Израильтянами.</i>
+</p>
+<div class="num">12</div><p id="n12">И принес Иофор, тесть Моисеев, всесожжение и жертвы Богу; и пришел Аарон и все старейшины Израилевы есть хлеба с тестем Моисеевым пред Богом.
+</p>
+<div class="num">13</div><p id="n13">На другой день сел Моисей судить народ, и стоял народ пред Моисеем с утра до вечера.
+</p>
+<div class="num">14</div><p id="n14">И видел [Иофор,] тесть Моисеев, всё, что он делает с народом, и сказал: что это такое делаешь ты с народом? для чего ты сидишь один, а весь народ стоит пред тобою с утра до вечера?
+</p>
+<div class="num">15</div><p id="n15">И сказал Моисей тестю своему: народ приходит ко мне просить суда у Бога;
+</p>
+<div class="num">16</div><p id="n16">когда случается у них какое дело, они приходят ко мне, и я сужу между тем и другим и объявляю [им] уставы Божии и законы Его.
+</p>
+<div class="num">17</div><p id="n17">Но тесть Моисеев сказал ему: не хорошо это ты делаешь:
+</p>
+<div class="num">18</div><p id="n18">ты измучишь и себя и народ сей, который с тобою, ибо слишком тяжело для тебя это дело: ты один не можешь исправлять его;
+</p>
+<div class="num">19</div><p id="n19">итак послушай слов моих; я дам тебе совет, и будет Бог с тобою: будь ты для народа посредником пред Богом и представляй Богу дела [его];
+</p>
+<div class="num">20</div><p id="n20">научай их уставам [Божиим] и законам [Его], указывай им путь [Его], по которому они должны идти, и дела, которые они должны делать;
+</p>
+<div class="num">21</div><p id="n21">ты же усмотри [себе] из всего народа людей способных, боящихся Бога, людей правдивых, ненавидящих корысть, и поставь [их] над ним тысяченачальниками, стоначальниками, пятидесятиначальниками и десятиначальниками [и письмоводителями];
+</p>
+<div class="num">22</div><p id="n22">пусть они судят народ во всякое время и о всяком важном деле доносят тебе, а все малые дела судят сами: и будет тебе легче, и они понесут с тобою <i>бремя;</i><i></i>
+</p>
+<div class="num">23</div><p id="n23">если ты сделаешь это, и Бог повелит тебе, то ты можешь устоять, и весь народ сей будет отходить в свое место с миром.
+</p>
+<div class="num">24</div><p id="n24">И послушал Моисей слов тестя своего и сделал все, что он говорил [ему];
+</p>
+<div class="num">25</div><p id="n25">и выбрал Моисей из всего Израиля способных людей и поставил их начальниками народа, тысяченачальниками, стоначальниками, пятидесятиначальниками и десятиначальниками [и письмоводителями],
+</p>
+<div class="num">26</div><p id="n26">и судили они народ во всякое время; о [всех] делах важных доносили Моисею, а все малые дела судили сами.
+</p>
+<div class="num">27</div><p id="n27">И отпустил Моисей тестя своего, и он пошел в землю свою.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ex.19.ru.html">к главе 19</a></div></div>
+
+</body>
+</html>

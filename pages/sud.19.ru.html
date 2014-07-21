@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sud.ru.html">Книга Судей</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 19
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">В те дни, когда не было царя у Израиля, жил один левит на склоне горы Ефремовой. Он взял себе наложницу из Вифлеема Иудейского.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Наложница его поссорилась с ним и ушла от него в дом отца своего в Вифлеем Иудейский и была там четыре месяца.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Муж ее встал и пошел за нею, чтобы поговорить к сердцу ее и возвратить ее к себе. С ним был слуга его и пара ослов. Она ввела его в дом отца своего.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Отец этой молодой женщины, увидев его, с радостью встретил его, и удержал его тесть его, отец молодой женщины. И пробыл он у него три дня; они ели и пили и ночевали там.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">В четвертый день встали они рано, и он встал, чтоб идти. И сказал отец молодой женщины зятю своему: подкрепи сердце твое куском хлеба, и потом пойдете.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Они остались, и оба вместе ели и пили. И сказал отец молодой женщины человеку тому: останься еще на ночь, и пусть повеселится сердце твое.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Человек тот встал, было, чтоб идти, но тесть его упросил его, и он опять ночевал там.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">На пятый день встал он поутру, чтоб идти. И сказал отец молодой женщины той: подкрепи сердце твое [хлебом], и помедлите, доколе преклонится день. И ели оба они [и пили].
+</p>
+<div class="num">&nbsp;9</div><p id="n9">И встал тот человек, чтоб идти, сам он, наложница его и слуга его. И сказал ему тесть его, отец молодой женщины: вот, день преклонился к вечеру, ночуйте, пожалуйте; вот, дню скоро конец, ночуй здесь, пусть повеселится сердце твое; завтра пораньше встанете в путь ваш, и пойдешь в дом твой.
+</p>
+<div class="num">10</div><p id="n10">Но муж не согласился ночевать, встал и пошел; и пришел к Иевусу, что <i>ныне</i> Иерусалим; с ним пара навьюченных ослов и наложница его с ним.
+</p>
+<div class="num">11</div><p id="n11">Когда они были близ Иевуса, день уже очень преклонился. И сказал слуга господину своему: зайдем в этот город Иевусеев и ночуем в нем.
+</p>
+<div class="num">12</div><p id="n12">Господин его сказал ему: нет, не пойдем в город иноплеменников, которые не из сынов Израилевых, но дойдем до Гивы.
+</p>
+<div class="num">13</div><p id="n13">И сказал слуге своему: дойдем до одного из сих мест и ночуем в Гиве, или в Раме.
+</p>
+<div class="num">14</div><p id="n14">И пошли, и шли, и закатилось солнце подле Гивы Вениаминовой.
+</p>
+<div class="num">15</div><p id="n15">И повернули они туда, чтобы пойти ночевать в Гиве. И пришел он и сел на улице в городе; но никто не приглашал их в дом для ночлега.
+</p>
+<div class="num">16</div><p id="n16">И вот, идет один старик с работы своей с поля вечером; он родом был с горы Ефремовой и жил в Гиве. Жители же места сего были сыны Вениаминовы.
+</p>
+<div class="num">17</div><p id="n17">Он, подняв глаза свои, увидел прохожего на улице городской. И сказал старик: куда идешь? и откуда ты пришел?
+</p>
+<div class="num">18</div><p id="n18">Он сказал ему: мы идем из Вифлеема Иудейского к горе Ефремовой, откуда я; я ходил в Вифлеем Иудейский, а теперь иду к дому Господа; и никто не приглашает меня в дом;
+</p>
+<div class="num">19</div><p id="n19">у нас есть и солома и корм для ослов наших; также хлеб и вино для меня и для рабы твоей и для сего слуги есть у рабов твоих; ни в чем нет недостатка.
+</p>
+<div class="num">20</div><p id="n20">Старик сказал ему: будь спокоен: весь недостаток твой на мне, только не ночуй на улице.
+</p>
+<div class="num">21</div><p id="n21">И ввел его в дом свой и дал корму ослам [его], а сами они омыли ноги свои и ели и пили.
+</p>
+<div class="num">22</div><p id="n22">Тогда как они развеселили сердца свои, вот, жители города, люди развратные, окружили дом, стучались в двери и говорили старику, хозяину дома: выведи человека, вошедшего в дом твой, мы познаем его.
+</p>
+<div class="num">23</div><p id="n23">Хозяин дома вышел к ним и сказал им: нет, братья мои, не делайте зла, когда человек сей вошел в дом мой, не делайте этого безумия;
+</p>
+<div class="num">24</div><p id="n24">вот у меня дочь девица, и у него наложница, выведу я их, смирите их и делайте с ними, что вам угодно; а с человеком сим не делайте этого безумия.
+</p>
+<div class="num">25</div><p id="n25">Но они не хотели слушать его. Тогда муж взял свою наложницу и вывел к ним на улицу. Они познали ее, и ругались над нею всю ночь до утра. И отпустили ее при появлении зари.
+</p>
+<div class="num">26</div><p id="n26">И пришла женщина пред появлением зари, и упала у дверей дома того человека, у которого был господин ее, <i>и</i> <i>лежала</i> до света.
+</p>
+<div class="num">27</div><p id="n27">Господин ее встал поутру, отворил двери дома и вышел, чтоб идти в путь свой: и вот, наложница его лежит у дверей дома, и руки ее на пороге.
+</p>
+<div class="num">28</div><p id="n28">Он сказал ей: вставай, пойдем. Но ответа не было, [потому что она умерла]. Он положил ее на осла, встал и пошел в свое место.
+</p>
+<div class="num">29</div><p id="n29">Придя в дом свой, взял нож и, взяв наложницу свою, разрезал ее по членам ее на двенадцать частей и послал во все пределы Израилевы.
+</p>
+<div class="num">30</div><p id="n30">Всякий, видевший это, говорил: не бывало и не видано было подобного сему от дня исшествия сынов Израилевых из земли Египетской до сего дня. [Посланным же от себя людям он дал приказание и сказал: так говорите всему Израилю: бывало ли когда подобное сему?] Обратите внимание на это, посоветуйтесь и скажите.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sud.20.ru.html">к главе 20</a></div></div>
+
+</body>
+</html>

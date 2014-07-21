@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="ezr1.ru.html">Первая книга Ездры</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 5
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Но пророк Аггей и пророк Захария, сын Адды, говорили Иудеям, которые в Иудее и Иерусалиме, пророческие речи во имя Бога Израилева.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Тогда встали Зоровавель, сын Салафиилов, и Иисус, сын Иоседеков, и начали строить дом Божий в Иерусалиме, и с ними пророки Божии, подкреплявшие их.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">В то время пришел к ним Фафнай, заречный областеначальник, и Шефар-Бознай и товарищи их, и так сказали им: кто дал вам разрешение строить дом сей и доделывать стены сии?
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Тогда мы сказали им имена тех людей, которые строят это здание.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Но око Бога их было над старейшинами Иудейскими, и те не возбраняли им, доколе дело не отправили к Дарию, и доколе не пришло решение по этому делу.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Вот содержание письма, которое послал Фафнай, заречный областеначальник, и Шефар-Бознай с товарищами своими - Афарсахеями, которые за рекою, к царю Дарию.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">В донесении, которое они послали к нему, вот что написано: Дарию царю - всякий мир!
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Да будет известно царю, что мы ходили в Иудейскую область, к дому Бога великого; и строится он из больших камней, и дерево вкладывается в стены; и работа сия производится быстро и с успехом идет в руках их.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Тогда мы спросили у старейшин тех и так сказали им: кто дал вам разрешение строить дом сей и стены сии доделывать?
+</p>
+<div class="num">10</div><p id="n10">И сверх того об именах их мы спросили их, чтобы дать знать тебе и написать имена тех людей, которые главными у них.
+</p>
+<div class="num">11</div><p id="n11">И они ответили нам такими словами: мы рабы Бога неба и земли и строим дом, который был построен за много лет прежде сего,- и великий царь у Израиля строил его и довершил его.
+</p>
+<div class="num">12</div><p id="n12">Когда же отцы наши прогневали Бога небесного, Он предал их в руку Навуходоносора, царя Вавилонского, Халдеянина; и дом сей он разрушил, и народ переселил в Вавилон.
+</p>
+<div class="num">13</div><p id="n13">Но в первый год Кира, царя Вавилонского, царь Кир дал разрешение построить сей дом Божий;
+</p>
+<div class="num">14</div><p id="n14">да и сосуды дома Божия, золотые и серебряные, которые Навуходоносор вынес из храма Иерусалимского и отнес в храм Вавилонский,- вынес Кир царь из храма Вавилонского; и отдали <i>их</i> по имени Шешбацару, которого он назначил областеначальником,
+</p>
+<div class="num">15</div><p id="n15">и сказал ему: возьми сии сосуды, пойди и отнеси их в храм Иерусалимский, и пусть дом Божий строится на своем месте.
+</p>
+<div class="num">16</div><p id="n16">Тогда Шешбацар тот пришел, положил основания дома Божия в Иерусалиме; и с тех пор доселе он строится, и еще не кончен.
+</p>
+<div class="num">17</div><p id="n17">Итак, если царю благоугодно, пусть поищут в доме царских сокровищ, там в Вавилоне, точно ли царем Киром дано разрешение строить сей дом Божий в Иерусалиме, и царскую волю о сем пусть пришлют к нам.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="ezr1.6.ru.html">к главе 6</a></div></div>
+
+</body>
+</html>

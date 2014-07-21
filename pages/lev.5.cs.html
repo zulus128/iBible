@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 21px "Hirmos UCS";
+			line-height: 1.35em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 18px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 0 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="lev.cs.html">Кни1га трeтіz мwmсeова. Леvjтъ</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  ГлавA є7
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Ѓще же душA согрэши1тъ, и3 ўслhшитъ глaсъ клsтвы, и3 сeй свидётель и3ли2 ви1дэ и3ли2 свёда, ѓще не возвэсти1тъ, пріи1метъ грёхъ.
+</p>
+<div class="num">&nbsp;2</div><p id="n2">ДушA џна, ћже ѓще прик0снетсz ко всsкой вeщи нечи1стэй, и3ли2 мертвечи1нэ, и3ли2 ѕвэроsдинэ нечи1стэй, и3ли2 мертвечи1намъ гнyсностей нечи1стыхъ, и3ли2 мертвечи1намъ скотHвъ нечи1стыхъ, и3 мертвечи1нэ г†дъ нечи1стыхъ, и3 забhвъ и5хъ њскверни1тсz:
+</p>
+<div class="num">&nbsp;3</div><p id="n3">и3ли2 прик0снетсz нечистотЁ человёчи, t всsкіz нечистоты2 є3гw2, є4йже прикоснyвсz њскверни1тсz, и3 забyдетъ, посeмъ же ўвёсть, пови1ненъ бyдетъ грэхY.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">ДушA беззак0ннаz, ѓще њбэщaетъ ўстнaма свои1ма ѕлЁ и3ли2 д0брэ сотвори1ти, по всBмъ, є3ли6ка и3зречeтъ человёкъ съ клsтвою, и3 ўтаи1тсz є3гw2 пред8 nчесы2, и3 сeй ўвёсть, и3 согрэши1тъ є3ди1но что2 t си1хъ,
+</p>
+<div class="num">&nbsp;5</div><p id="n5">и3 и3сповёсть грёхъ, и4мже согрэши2 проти1ву себє2:
+</p>
+<div class="num">&nbsp;6</div><p id="n6">и3 да принесeтъ гDу њ грэсЁ, и4мже согрэши2, жeнскъ п0лъ, t nвeцъ ѓгницу, и3ли2 к0зу t к0зъ грэхA рaди: и3 да пом0литсz њ нeмъ жрeцъ грэхA рaди є3гw2, и4мже согрэши2, и3 њстaвитсz є3мY грёхъ.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Ѓще же не м0жетъ рукA є3гw2 дов0лства и3мёти на џвцу, да принесeтъ грэхA рaди своегw2, и4мже согрэши2, двЁ гHрлицы, и3ли2 двA птєнцA голуби6на гDу, є3ди1нъ грэхA рaди и3 є3ди1нъ во всесожжeніе:
+</p>
+<div class="num">&nbsp;8</div><p id="n8">и3 принесeтъ <nobr>|</nobr> къ жерцY, и3 приведeтъ жрeцъ є4же за грёхъ прeжде, и3 да tт0ргнетъ жрeцъ главY є3гw2 созади2, но да не tлучи1тъ:
+</p>
+<div class="num">&nbsp;9</div><p id="n9">и3 да покропи1тъ t кр0ве, ћже за грёхъ, на стёну nлтарS, њстaнокъ же кр0ве да и3сцэди1тъ на стоsло nлтарS: њ грэсё бо є4сть:
+</p>
+<div class="num">10</div><p id="n10">и3 вторhмъ да сотвори1тъ всесожжeніе, ћкоже подобaетъ, и3 да пом0литсz њ нeмъ жрeцъ грэхA рaди є3гw2, и4мже согрэши2, и3 њстaвитсz є3мY.
+</p>
+<div class="num">11</div><p id="n11">Ѓще же не њбрsщетъ рукA є3гw2 супрyга г0рлицъ, и3ли2 двyхъ птенцє1въ голуби1ныхъ, и3 принесeтъ дaръ св0й за грёхъ, десsтую чaсть мBры є4фі муки2 пшени1чны за грёхъ: да не возліeтъ на ню2 є3лeа, нижE да возложи1тъ на ню2 лівaна, понeже њ грэсЁ є4сть:
+</p>
+<div class="num">12</div><p id="n12">и3 да принесeтъ ю5 къ жерцY, и3 взeмъ жрeцъ t неS п0лну г0рсть въ пaмzть є3гw2, возложи1тъ на жeртвенникъ всесожжeніz гDнz: њ грэсё (бо) є4сть:
+</p>
+<div class="num">13</div><p id="n13">и3 да пом0литсz њ нeмъ жрeцъ грэхA рaди є3гw2, и4мже согрэши2 t є3ди1нагw си1хъ, и3 њстaвитсz є3мY: њстaнокъ же бyдетъ жерцY, ћкоже жeртва муки2 пшени1чны.
+</p>
+<div class="num">14</div><p id="n14">И# речE гDь къ мwmсeю, гlz:
+</p>
+<div class="num">15</div><p id="n15">душA ћже ѓще забyдетъ забвeніемъ, и3 согрэши1тъ не хотsщи t с™hнь гDнихъ, и3 да принесeтъ њ преступлeніи своeмъ гDу nвнA непор0чна t nвeцъ, є3мyже цэнA сребрA сjклєвъ, по сjклю свzтhхъ, њ нeмже согрэши2:
+</p>
+<div class="num">16</div><p id="n16">и3 є4же согрэши2 t с™hхъ, да tдaстъ є5, и3 пsтую чaсть приложи1тъ нaнь, и3 дaстъ є5 жерцY: и3 жрeцъ да пом0литсz њ нeмъ nвн0мъ преступлeніz є3гw2, и3 њстaвитсz є3мY.
+</p>
+<div class="num">17</div><p id="n17">И# душA ћже ѓще согрэши1тъ, и3 сотвори1тъ є3ди1ну t всёхъ зaповэдій гDнихъ, и4хже не лёть є4сть твори1ти, и3 не ўвёдэ, и3 согрэши1тъ, и3 пріи1метъ грёхъ св0й,
+</p>
+<div class="num">18</div><p id="n18">и3 да принесeтъ nвнA непор0чна t nвeцъ, цэн0ю сребрA грэхA рaди, къ жерцY: и3 да пом0литсz њ нeмъ жрeцъ, њ невёдэніи є3гw2, є3гHже не вёдэ, и3 сaмъ не вёдzше, и3 њстaвитсz є3мY:
+</p>
+<div class="num">19</div><p id="n19">согрэши1 бо согрэшeніемъ пред8 гDемъ.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="lev.6.cs.html">главA ѕ7</a></div></div>
+
+</body>
+</html>

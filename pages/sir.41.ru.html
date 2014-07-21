@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sir.ru.html">Книга Премудрости<br />Иисуса, сына Сирахова</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 41
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">О, смерть! как горько воспоминание о тебе для человека, который спокойно живет в своих владениях,
+</p>
+<div class="num">&nbsp;2</div><p id="n2">для человека, который ничем не озабочен и во всем счастлив и еще в силах принимать пищу.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">О, смерть! отраден твой приговор для человека, нуждающегося и изнемогающего в силах,
+</p>
+<div class="num">&nbsp;4</div><p id="n4">для престарелого и обремененного заботами обо всем, для не имеющего надежды и потерявшего терпение.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Не бойся смертного приговора: вспомни о предках твоих и потомках. Это приговор от Господа над всякою плотью.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Итак, для чего ты отвращаешься от того, что благоугодно Всевышнему? десять ли, сто ли, или тысяча лет,-
+</p>
+<div class="num">&nbsp;7</div><p id="n7">в аде нет исследования о <i>времени</i> жизни.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Дети грешников бывают дети отвратительные и общаются с нечестивыми.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Наследие детей грешников погибнет, и вместе с племенем их будет распространяться бесславие.
+</p>
+<div class="num">10</div><p id="n10">Нечестивого отца будут укорять дети, потому что за него они терпят бесславие.
+</p>
+<div class="num">11</div><p id="n11">Горе вам, люди нечестивые, которые оставили закон Бога Всевышнего!
+</p>
+<div class="num">12</div><p id="n12">Когда вы рождаетесь, то рождаетесь на проклятие; и когда умираете, то получаете в удел свой проклятие.
+</p>
+<div class="num">13</div><p id="n13">Все, что из земли, возвратится в землю: так нечестивые - от проклятия в погибель.
+</p>
+<div class="num">14</div><p id="n14">Плач людей бывает о телах их, но грешников и имя недоброе изгладится.
+</p>
+<div class="num">15</div><p id="n15">Заботься об имени, ибо оно пребудет с тобою долее, нежели многие тысячи золота:
+</p>
+<div class="num">16</div><p id="n16">дням доброй жизни есть число, но доброе имя пребывает вовек.
+</p>
+<div class="num">17</div><p id="n17">Соблюдайте, дети, наставление в мире; а сокрытая мудрость и сокровище невидимое - какая в них польза?
+</p>
+<div class="num">18</div><p id="n18">Лучше человек, скрывающий свою глупость, нежели человек, скрывающий свою мудрость.
+</p>
+<div class="num">19</div><p id="n19">Итак, стыдитесь того, о чем я скажу,
+</p>
+<div class="num">20</div><p id="n20">ибо не всякую стыдливость хорошо соблюдать и не всё всеми одобряется по истине.
+</p>
+<div class="num">21</div><p id="n21">Стыдитесь пред отцом и матерью блуда, пред начальником и властелином - лжи;
+</p>
+<div class="num">22</div><p id="n22">пред судьею и князем - преступления, пред собранием и народом - беззакония;
+</p>
+<div class="num">23</div><p id="n23">пред товарищем и другом - неправды, пред соседями - кражи:
+</p>
+<div class="num">24</div><p id="n24">стыдитесь сего и пред истиною Бога и завета Его. Стыдись и облокачивания на стол, обмана при займе и отдаче;
+</p>
+<div class="num">25</div><p id="n25">стыдись молчания пред приветствующими, смотрения на распутную женщину, отвращения лица от родственника,
+</p>
+<div class="num">26</div><p id="n26">отнятия доли и дара, помысла на замужнюю женщину, ухаживания за своею служанкою,
+</p>
+<div class="num">27</div><p id="n27">и не подходи к постели ее;
+</p>
+<div class="num">28</div><p id="n28">пред друзьями стыдись слов укорительных,- и после того, как ты дал, не попрекай,-
+</p>
+<div class="num">29</div><p id="n29">повторения слухов и разглашения слов тайных. И будешь истинно стыдлив и приобретешь благорасположение всякого человека.
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sir.42.ru.html">к главе 42</a></div></div>
+
+</body>
+</html>

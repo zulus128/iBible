@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no;" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8;" />
+
+	<style type="text/css">
+
+		body {
+		font: 18px Helvetica,Arial,sans-serif;
+			line-height: 1.55em;		}
+
+		a {
+			text-decoration:none;
+			color: #000000;
+		}
+
+		.zavet-menu {
+			overflow: hidden;
+			margin: 20px -5px 22px 2px;
+			line-height: 1.5em;
+			color: #000000;
+			font-size: 30px;
+			padding: 0 -10px 0 0;
+		}
+
+		.zavet-menu a {
+			color: #AAAAAA;
+			font-size: 30px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.zavet-menu a.sel {
+			color: #000000;
+		}
+
+		div.book-point {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 8px 0 5px 5px;
+
+			padding: 0;
+		}
+
+		div.book-point a {
+			color: #FFFFFF;
+		}
+
+		div.book-point div.caption {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 12px 0 0 0;
+			color: #FFFFFF;
+			font-size: 25px;
+
+			width: 51px;
+			text-align: center;
+		}
+
+		div.book-point div.caption-abbr {
+			display: inline-block;
+			margin: 0 0 0 -1px;
+			padding: 24px 0 0 1px;
+			font-size: 27px;
+
+			width: 51px;
+		}
+
+		span.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		.book-name {
+			display: inline-block;
+			vertical-align: bottom;
+			margin: 0 5px 2px 4px;
+		}
+
+		.book-title {
+			font-size: 24px;
+			margin: 10px 0 15px 11px;
+			line-height: 1.35em;
+		}
+
+		.num {
+			color: #999999;
+			font: 13px Helvetica,Arial,sans-serif;
+			display: block;
+			position: relative;
+			left: -15px;
+			top: 16px;
+			height: 20px;
+			margin: -11px 0 -9px 9px;
+			padding: 0;
+		}
+
+		.main-text p {
+			margin: 0 5px 0 11px;
+		}
+
+		.end-link {
+			background: none repeat scroll 0 0 #1BA1E2;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 10px 7px 10px;
+		}
+		.end-link a {
+			color: #FFFFFF;
+		}
+		.end-link-wrapper {
+			margin: 60px 0 90px 0;
+			text-align: center;
+		}
+
+		.book-in-list {
+			margin: 20px 0 -18px 0;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		function getVisibleDiv()
+		{
+			tags = ['DIV', 'P'];
+			for (i = 0; i < document.all.length; i++)
+			{
+				if ((tags.indexOf(document.all(i).tagName.toUpperCase()) !== -1) && document.all(i).id)
+				{
+					var fromScreenTop = document.all(i).offsetTop - window.pageYOffset;
+					if (fromScreenTop > -1)
+						return document.all(i).id + '#' + fromScreenTop;
+				}
+			}
+			return '#0';
+		}
+
+		function scrollToDiv(idPos)
+		{
+			var arr = idPos.split("#");
+			id = arr[0];
+			pos = arr[1];
+
+			window.scrollTo(0, document.getElementById(id).offsetTop - pos);
+		}
+	</script>
+
+</head>
+<body>
+
+  <p class="zavet-menu" id="zavet-menu">
+    <a href="sof.ru.html">Книга Пророка Софонии</a>
+  </p>
+
+  <p class="book-title" id="book-title">
+  Глава 3
+  </p>
+
+
+  <div class="main-text">
+<div class="num">&nbsp;1</div><p id="n1">Горе городу нечистому и оскверненному, притеснителю!
+</p>
+<div class="num">&nbsp;2</div><p id="n2">Не слушает голоса, не принимает наставления, на Господа не уповает, к Богу своему не приближается.
+</p>
+<div class="num">&nbsp;3</div><p id="n3">Князья его посреди него - рыкающие львы, судьи его - вечерние волки, не оставляющие до утра ни одной кости.
+</p>
+<div class="num">&nbsp;4</div><p id="n4">Пророки его - люди легкомысленные, вероломные; священники его оскверняют святыню, попирают закон.
+</p>
+<div class="num">&nbsp;5</div><p id="n5">Господь праведен посреди него, не делает неправды, каждое утро являет суд Свой неизменно; но беззаконник не знает стыда.
+</p>
+<div class="num">&nbsp;6</div><p id="n6">Я истребил народы, разрушены твердыни их; пустыми сделал улицы их, так что никто уже не ходит по ним; разорены города их: нет ни одного человека, нет жителей.
+</p>
+<div class="num">&nbsp;7</div><p id="n7">Я говорил: "бойся только Меня, принимай наставление!" и не будет истреблено жилище его, и не постигнет его зло, какое Я постановил о нем; а они прилежно старались портить все свои действия.
+</p>
+<div class="num">&nbsp;8</div><p id="n8">Итак ждите Меня, говорит Господь, до того дня, когда Я восстану для опустошения, ибо Мною определено собрать народы, созвать царства, чтобы излить на них негодование Мое, всю ярость гнева Моего; ибо огнем ревности Моей пожрана будет вся земля.
+</p>
+<div class="num">&nbsp;9</div><p id="n9">Тогда опять Я дам народам уста чистые, чтобы все призывали имя Господа и служили Ему единодушно.
+</p>
+<div class="num">10</div><p id="n10">Из заречных стран Ефиопии поклонники Мои, дети рассеянных Моих, принесут Мне дары.
+</p>
+<div class="num">11</div><p id="n11">В тот день ты не будешь срамить себя всякими поступками твоими, какими ты грешил против Меня, ибо тогда Я удалю из среды твоей тщеславящихся твоею знатностью, и не будешь более превозноситься на святой горе Моей.
+</p>
+<div class="num">12</div><p id="n12">Но оставлю среди тебя народ смиренный и простой, и они будут уповать на имя Господне.
+</p>
+<div class="num">13</div><p id="n13">Остатки Израиля не будут делать неправды, не станут говорить лжи, и не найдется в устах их языка коварного, ибо сами будут пастись и покоиться, и никто не потревожит их.
+</p>
+<div class="num">14</div><p id="n14">Ликуй, дщерь Сиона! торжествуй, Израиль! веселись и радуйся от всего сердца, дщерь Иерусалима!
+</p>
+<div class="num">15</div><p id="n15">Отменил Господь приговор над тобою, прогнал врага твоего! Господь, царь Израилев, посреди тебя: уже более не увидишь зла.
+</p>
+<div class="num">16</div><p id="n16">В тот день скажут Иерусалиму: "не бойся", и Сиону: "да не ослабевают руки твои!"
+</p>
+<div class="num">17</div><p id="n17">Господь Бог твой среди тебя, Он силен спасти тебя; возвеселится о тебе радостью, будет милостив по любви Своей, будет торжествовать о тебе с ликованием.
+</p>
+<div class="num">18</div><p id="n18">Сетующих о торжественных празднествах Я соберу: твои они, на них тяготеет поношение.
+</p>
+<div class="num">19</div><p id="n19">Вот, Я стесню всех притеснителей твоих в то время и спасу хромлющее, и соберу рассеянное, и приведу их в почет и именитость на всей этой земле поношения их.
+</p>
+<div class="num">20</div><p id="n20">В то время приведу вас и тогда же соберу вас, ибо сделаю вас именитыми и почетными между всеми народами земли, когда возвращу плен ваш перед глазами вашими, говорит Господь
+</p>
+</div><div class="end-link-wrapper" id="end-link-wrapper"><div class="end-link"><a href="sof.ru.html">Книга Пророка Софонии</a>
+</div></div>
+
+</body>
+</html>

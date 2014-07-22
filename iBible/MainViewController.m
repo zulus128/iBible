@@ -84,8 +84,28 @@
     return @"N/a";
 }
 
+- (int) getBookIdByNum:(int) num {
+    
+    NSDictionary* d1 = [self.res objectAtIndex:num];
+    NSString* shortEn1 = [d1 objectForKey:JSON_BOOK_SHORTEN];
+
+    for(int i = 1; i <= self.bookjson.count; i++) {
+        
+        NSDictionary* d = [self.bookjson objectForKey:[NSString stringWithFormat:@"%d", i]];
+        NSString* shortEn = [d objectForKey:JSON_BOOK_SHORTEN];
+        if([shortEn isEqualToString:shortEn1]) {
+            
+            return i;
+        }
+    }
+    
+    return -1;
+
+}
 
 - (void) saveLastOpenChapter:(int)chap forBook:(int)book {
+    
+    NSLog(@" save chap:%d, book:%d", chap, book);
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     [prefs setInteger:chap forKey:[NSString stringWithFormat:CURCHAP_USERDEF, book]];
@@ -97,6 +117,7 @@
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     int n = [prefs integerForKey:[NSString stringWithFormat:CURCHAP_USERDEF, book]];
+    NSLog(@"load for book:%d, chap:%d", book, (n > 0)?n:1);
     return (n > 0)?n:1;
 }
 
@@ -186,7 +207,7 @@
     } else {
         
         NSLog(@"Parsing groups: OK!");
-        NSLog(@"Parsing groups: OK! %@", self.grsjson);
+//        NSLog(@"Parsing groups: OK! %@", self.grsjson);
     }
     
     NSString* bkPath = [[NSBundle mainBundle] pathForResource:@"books" ofType:@"json"];
@@ -201,7 +222,7 @@
     } else {
         
         NSLog(@"Parsing books: OK!");
-        NSLog(@"Parsing books: OK! %@", self.bookjson);
+//        NSLog(@"Parsing books: OK! %@", self.bookjson);
     }
     
 }
@@ -644,9 +665,10 @@
     if(nChapts % CHAPT_COLUMNS)
         lines++;
     
-    int last = [self loadLastOpenChapterForBook:n];
+    int last = [self loadLastOpenChapterForBook:[self getBookIdByNum:n]];
     
-    NSLog(@"chapters = %d, lines = %d", nChapts, lines);
+//    NSLog(@"chapters = %d, lines = %d", nChapts, lines);
+    
 //    NSArray* col = [NSArray arrayWithObjects:[UIColor blueColor],[UIColor yellowColor],[UIColor greenColor],[UIColor grayColor],[UIColor redColor],[UIColor magentaColor],[UIColor cyanColor],[UIColor orangeColor],[UIColor purpleColor],[UIColor brownColor],[UIColor blackColor], nil];
     
     NSMutableArray* arrLines = [NSMutableArray arrayWithCapacity:lines];
@@ -728,9 +750,14 @@
 - (void) closeChapts:(int)n {
 
     if((openedChapts < 0) && (n >= 0)) {
-
+        
         openedChapts = n;
         [self openChapts:n];
+        return;
+    }
+    
+    if((openedChapts < 0) && (n < 0)) {
+        
         return;
     }
     
@@ -796,7 +823,13 @@
     
     UIButton* bt = (UIButton*)sender;
     NSLog(@"chapter %d selected", bt.tag);
+ 
+    NSString* path = [self getPathForBook:[self getBookIdByNum:openedChapts] andChapter:bt.tag];
+    [self myNavigate:path];
     
+    [self closeChapts:-1];
+    [self hideMenu];
+
 }
 
 - (void) refreshNoRes:(BOOL)anim {

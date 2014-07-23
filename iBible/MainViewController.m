@@ -59,6 +59,14 @@
     int lastchap = [self loadLastOpenChapterForBook:lastbook];
     NSString* path = [self getPathForBook:lastbook andChapter:lastchap];
     [self myNavigate:path];
+    
+    for(int i = 1; i <= self.grsjson.count; i++) {
+        
+        NSDictionary* gr = [self.grsjson objectForKey:[NSString stringWithFormat:@"%d", i]];
+        NSString* bk = [gr objectForKey:JSON_GROUP_LASTCODE];
+        NSNumber* ch = [gr valueForKey:JSON_GROUP_LASTCHAPTER];
+        [self saveLastOpenBookWithName:bk andChapter:ch.intValue];
+    }
 }
 
 - (NSString*) getPathForBook:(int)book andChapter:(int)chap {
@@ -70,18 +78,13 @@
     return path;
 }
 
-- (NSString*) getBookShortNameForCode:(NSString*)code/* andChapter:(int)ch*/ {
+//- (NSString*) getBookShortNameForCode:(NSString*)code {
+- (int) getBookNumberForGroup:(int)gr {
     
-    for(NSDictionary* d in [self.bookjson allValues]) {
-        
-        NSString* shortEn = [d objectForKey:JSON_BOOK_SHORTEN];
-        if([shortEn isEqualToString:code]) {
-            
-            return [d objectForKey:JSON_BOOK_SHORTRU];
-        }
-    }
-    
-    return @"N/a";
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    int n = [prefs integerForKey:[NSString stringWithFormat:GROUPBOOK_USERDEF, gr]];
+    return n;
+
 }
 
 - (int) getBookIdByNum:(int) num {
@@ -257,7 +260,7 @@
 //        filteredBooks = [[self.bookjson allValues] filteredArrayUsingPredicate:filter];
 //    }
 
-    NSLog(@"cnt = %d", filteredBooks.count);
+//    NSLog(@"cnt = %d", filteredBooks.count);
     return filteredBooks;
 }
 
@@ -280,12 +283,10 @@
 
 - (IBAction)langButtonPressed:(id)sender {
 
-//    float x, w;
     UIView* but;
     switch (((UIButton*)sender).tag) {
         default: {
-//            x = self.buttonRus.frame.origin.x;
-//            w = self.buttonRus.frame.size.width;
+            
             but = self.buttonRus;
             self.curLanguage = lngRu;
             self.ruWebView.hidden = NO;
@@ -295,8 +296,7 @@
             break;
         }
         case lngCs: {
-//            x = self.buttonCs.frame.origin.x;
-//            w = self.buttonCs.frame.size.width;
+
             but = self.buttonCs;
             self.curLanguage = lngCs;
             self.csWebView.hidden = NO;
@@ -307,16 +307,11 @@
         }
     }
 
-//    float y = [self getScreenHeight] - 3.5f;
-//    y = 300;
-//    NSLog(@"y = %f", [self getScreenHeight]);
     UIView* prev = [self.view viewWithTag:UNDERLINE_TAG];
     [prev removeFromSuperview];
-//    UIView* new = [[UIView alloc] initWithFrame:CGRectMake(x, y, w, 3.5f)];
     UIView* new = [[UIView alloc] initWithFrame:CGRectMake(0, but.frame.size.height - 0.5f, but.frame.size.width, 3.5f)];
     new.tag = UNDERLINE_TAG;
     new.backgroundColor = [UIColor colorWithRed:102/255.0f green:76/255.0f blue:15/255.0f alpha:1];
-//    [self.view addSubview:new];
     
     [but addSubview:new];
     
@@ -503,7 +498,7 @@
     for(int i = 1; i <= self.grsjson.count; i++) {
         
         NSDictionary* gr = [self.grsjson objectForKey:[NSString stringWithFormat:@"%d", i]];
-        NSLog(@"i = %d, gr = %@", i, [gr objectForKey:JSON_BOOK_LASTCODE]);
+//        NSLog(@"i = %d, gr = %@", i, [gr objectForKey:JSON_BOOK_LASTCODE]);
         
         UIView* grview = [[UIView alloc] initWithFrame:CGRectMake(16.0f + (i - 1) * 95 - COVER_DELTAX, 40.5f, 80 + 2 * COVER_DELTAX, 100 + COVER_DELTAY)];
 //        grview.backgroundColor = [UIColor greenColor];
@@ -527,9 +522,15 @@
 //        cpart.backgroundColor = [UIColor blueColor];
         cpart.textColor = [UIColor colorWithRed:0xb4/255.0f green:0x94/255.0f blue:0x4f/255.0f alpha:1.0f];
         cpart.font = FONT_COVER_NAME;
-        NSString* cn = [self getBookShortNameForCode:[gr objectForKey:JSON_BOOK_LASTCODE]];
-        NSNumber* nn = [gr valueForKey:JSON_BOOK_LASTCHAPTER];
-        cpart.text = [NSString stringWithFormat:@"%@. %d", cn, nn.intValue];
+
+//        NSString* cn = [self getBookShortNameForCode:[gr objectForKey:JSON_BOOK_LASTCODE]];
+        int bnn = [self getBookNumberForGroup:i];
+        NSDictionary* d = [self.bookjson objectForKey:[NSString stringWithFormat:@"%d", bnn]];
+        NSString* cn = [d objectForKey:JSON_BOOK_SHORTRU];
+
+//        NSNumber* nn = [gr valueForKey:JSON_BOOK_LASTCHAPTER];
+        int nn = [self loadLastOpenChapterForBook:bnn];
+        cpart.text = [NSString stringWithFormat:@"%@. %d", cn, nn];
         [cpart setTextAlignment:NSTextAlignmentCenter];
         [grview addSubview:cpart];
         

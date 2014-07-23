@@ -33,10 +33,10 @@
 //#define SEARCHRES_LINE_HEIGHT 75.0f
 
 #define JSON_GROUP_NAME @"name"
+#define JSON_GROUP_LASTCODE @"default_last_book_code"
+#define JSON_GROUP_LASTCHAPTER @"default_last_book_chapter"
 #define JSON_BOOK_SHORTRU @"ShortRu"
 #define JSON_BOOK_SHORTEN @"ShortEn"
-#define JSON_BOOK_LASTCODE @"default_last_book_code"
-#define JSON_BOOK_LASTCHAPTER @"default_last_book_chapter"
 #define JSON_BOOK_DISPLAYNAME @"DisplayName"
 #define JSON_BOOK_CHAPTERS_CNT @"NChapters"
 #define JSON_BOOK_GROUPNUM @"Group"

@@ -60,12 +60,20 @@
     NSString* path = [self getPathForBook:lastbook andChapter:lastchap];
     [self myNavigate:path];
     
-    for(int i = 1; i <= self.grsjson.count; i++) {
+    int nft = [prefs integerForKey:NOTFIRSTTIME_USERDEF];
+    if(!nft) {
+
+        for(int i = 1; i <= self.grsjson.count; i++) {
+            
+            NSDictionary* gr = [self.grsjson objectForKey:[NSString stringWithFormat:@"%d", i]];
+            NSString* bk = [gr objectForKey:JSON_GROUP_LASTCODE];
+            NSNumber* ch = [gr valueForKey:JSON_GROUP_LASTCHAPTER];
+            [self saveLastOpenBookWithName:bk andChapter:ch.intValue];
+        }
         
-        NSDictionary* gr = [self.grsjson objectForKey:[NSString stringWithFormat:@"%d", i]];
-        NSString* bk = [gr objectForKey:JSON_GROUP_LASTCODE];
-        NSNumber* ch = [gr valueForKey:JSON_GROUP_LASTCHAPTER];
-        [self saveLastOpenBookWithName:bk andChapter:ch.intValue];
+        [prefs setInteger:1 forKey:NOTFIRSTTIME_USERDEF];
+        [prefs synchronize];
+
     }
 }
 
@@ -337,6 +345,7 @@
                          [blue removeFromSuperview];
                          [menu removeFromSuperview];
                          
+                         statusBarVisible = NO;
                          [self setNeedsStatusBarAppearanceUpdate];
 
                      }];
@@ -348,6 +357,7 @@
     //    CGRect sb = [[UIApplication sharedApplication] statusBarFrame];
     //    NSLog(@"sbh = %f", sb.size.height);
 
+    statusBarVisible = YES;
     [self setNeedsStatusBarAppearanceUpdate];
   
     UIView* blue = [self getBlueFon];
@@ -655,7 +665,7 @@
 - (void) btSelected:(id)sender {
 
     UIButton* bt = (UIButton*)sender;
-    NSLog(@"button %d pressed", bt.tag);
+//    NSLog(@"button %d pressed", bt.tag);
 
     [self closeChapts:bt.tag];
 
@@ -736,15 +746,20 @@
 
     self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT;
 
+    UIView* mView = [self.view viewWithTag:MENU_TAG];
+    //    NSLog(@"mnn = %f", mView.frame.size.height);
     UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
     CGPoint p = scrollView.contentOffset;
     float c = closeAffectsPos?(closedLines * SEARCHRES_LINE_HEIGHT):0;
     float d = 0;
-    float diff = 190 - fcurr.origin.y + p.y - c;
+    float korrScreen = 504 - mView.frame.size.height;
+    float diff = 190 - korrScreen - fcurr.origin.y + p.y - c;
 //    NSLog(@"scrolldiff = %f, %f", diff, lines * SEARCHRES_LINE_HEIGHT);
     if(diff < lines * SEARCHRES_LINE_HEIGHT)
         d = lines * SEARCHRES_LINE_HEIGHT - diff;
 //    NSLog(@"d = %f, c = %f", d, c);
+
+    
     scrollView.contentOffset = CGPointMake(p.x, p.y - c + d);
 
     [UIView animateWithDuration:SPREADLIST_DELAY * lines delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
@@ -861,7 +876,7 @@
 - (void) cpSelected:(id)sender {
     
     UIButton* bt = (UIButton*)sender;
-    NSLog(@"chapter %d selected", bt.tag);
+//    NSLog(@"chapter %d selected", bt.tag);
  
     if(bt.tag != last) {
 
@@ -959,7 +974,15 @@
     [self handleInnerTap:nil];
     
     int n = recognizer.view.tag;
-    NSLog(@"group %d tapped", n);
+//    NSLog(@"group %d tapped", n);
+    
+    int bnn = [self getBookNumberForGroup:n];
+    int nn = [self loadLastOpenChapterForBook:bnn];
+
+    NSString* path = [self getPathForBook:bnn andChapter:nn];
+    [self myNavigate:path];
+    [self hideMenu];
+
 }
 
 - (void) keyboardDidHide:(NSNotification*)notification {
@@ -988,7 +1011,7 @@
 //    NSLog(@"menu pressed");
     inMenu = !inMenu;
     
-    statusBarVisible = inMenu;
+//    statusBarVisible = inMenu;
 //    [self setNeedsStatusBarAppearanceUpdate];
 
     [self refreshUnderline];

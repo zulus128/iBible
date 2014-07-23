@@ -7,9 +7,12 @@
 //
 // http://stackoverflow.com/questions/15583077/how-does-scrollview-work-with-autolayout-and-why-does-setting-the-bottom-vertic/18404262#18404262
 
+//6f91094272cf3d98655b5dcf5903a7ccf7fb9b60
+
 #import <UIKit/UIKit.h>
 
 #define LNG_USERDEF @"cur_lng_save"
+#define NOTFIRSTTIME_USERDEF @"not_first_time"
 #define CURCHAP_USERDEF @"book%d"
 #define CURBOOK_USERDEF @"last_book"
 #define GROUPBOOK_USERDEF @"group%d_book"

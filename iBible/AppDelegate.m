@@ -13,6 +13,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    [APLLogger startNewSessionWithApplicationKey:@"6f91094272cf3d98655b5dcf5903a7ccf7fb9b60"];
+
 //    for (NSString *familyName in [UIFont familyNames]) {
 //        
 //        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {

@@ -103,21 +103,21 @@
 
 }
 
-- (void) saveLastOpenChapter:(int)chap forBook:(int)book {
-    
-    NSLog(@" save chap:%d, book:%d", chap, book);
-    
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    [prefs setInteger:chap forKey:[NSString stringWithFormat:CURCHAP_USERDEF, book]];
-    [prefs synchronize];
-    
-}
+//- (void) saveLastOpenChapter:(int)chap forBook:(int)book {
+//    
+////    NSLog(@" save chap:%d, book:%d", chap, book);
+//    
+//    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+//    [prefs setInteger:chap forKey:[NSString stringWithFormat:CURCHAP_USERDEF, book]];
+//    [prefs synchronize];
+//    
+//}
 
 - (int) loadLastOpenChapterForBook:(int)book {
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     int n = [prefs integerForKey:[NSString stringWithFormat:CURCHAP_USERDEF, book]];
-    NSLog(@"load for book:%d, chap:%d", book, (n > 0)?n:1);
+//    NSLog(@"load for book:%d, chap:%d", book, (n > 0)?n:1);
     return (n > 0)?n:1;
 }
 
@@ -136,7 +136,7 @@
     return (n > 0)?n:1;
 }
 
-- (int) saveLastOpenBookWithName:(NSString*)sbook {
+- (int) saveLastOpenBookWithName:(NSString*)sbook andChapter:(int)chap {
     
     for(int i = 1; i <= self.bookjson.count; i++) {
         
@@ -144,9 +144,16 @@
         NSString* shortEn = [d objectForKey:JSON_BOOK_SHORTEN];
         if([shortEn isEqualToString:sbook]) {
 
+            NSNumber* grn = [d objectForKey:JSON_BOOK_GROUPNUM];
+
             NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+
             [prefs setInteger:i forKey:CURBOOK_USERDEF];
+            [prefs setInteger:i forKey:[NSString stringWithFormat:GROUPBOOK_USERDEF, grn.intValue]];
+            [prefs setInteger:chap forKey:[NSString stringWithFormat:CURCHAP_USERDEF, i]];
+
             [prefs synchronize];
+            
             return i;
         }
     }
@@ -446,6 +453,7 @@
     self.innerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 200)];
 //    innerView.backgroundColor = [UIColor redColor];
     [scroll addSubview:self.innerView];
+    
     [self.innerView setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     [scroll addConstraint:[NSLayoutConstraint constraintWithItem:self.self.innerView attribute:NSLayoutAttributeLeft
@@ -665,11 +673,14 @@
     if(nChapts % CHAPT_COLUMNS)
         lines++;
     
-    int last = [self loadLastOpenChapterForBook:[self getBookIdByNum:n]];
+    last = [self loadLastOpenChapterForBook:[self getBookIdByNum:n]];
     
 //    NSLog(@"chapters = %d, lines = %d", nChapts, lines);
     
 //    NSArray* col = [NSArray arrayWithObjects:[UIColor blueColor],[UIColor yellowColor],[UIColor greenColor],[UIColor grayColor],[UIColor redColor],[UIColor magentaColor],[UIColor cyanColor],[UIColor orangeColor],[UIColor purpleColor],[UIColor brownColor],[UIColor blackColor], nil];
+  
+    CGRect f = sres.frame;
+    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height + lines * SEARCHRES_LINE_HEIGHT);
     
     NSMutableArray* arrLines = [NSMutableArray arrayWithCapacity:lines];
     for(int j = lines; j >= 1; j--) {
@@ -680,7 +691,7 @@
 //        line.backgroundColor = (UIColor*)[col objectAtIndex:j];
         line.backgroundColor = [UIColor whiteColor];
         [arrLines addObject:line];
-        
+  
         float deltaY = (j == lines)?2.0f:0.0f;
         UIView* vert = [[UIView alloc] initWithFrame:CGRectMake(17.5f, 0, 2.5f, SEARCHRES_LINE_HEIGHT - deltaY)];
         vert.backgroundColor = VERTLINE_COLOR;
@@ -706,7 +717,7 @@
                     [button1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
                     button1.layer.cornerRadius = 15;
                     button1.frame = CGRectMake(19.0f + i * 40 + 5, 0 + 3, 30, 30);
-
+                    lastb = button1;
                     
                 }
                 else {
@@ -721,7 +732,20 @@
         }
 
     }
-    
+
+    self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT;
+
+    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
+    CGPoint p = scrollView.contentOffset;
+    float c = closeAffectsPos?(closedLines * SEARCHRES_LINE_HEIGHT):0;
+    float d = 0;
+    float diff = 190 - fcurr.origin.y + p.y - c;
+//    NSLog(@"scrolldiff = %f, %f", diff, lines * SEARCHRES_LINE_HEIGHT);
+    if(diff < lines * SEARCHRES_LINE_HEIGHT)
+        d = lines * SEARCHRES_LINE_HEIGHT - diff;
+//    NSLog(@"d = %f, c = %f", d, c);
+    scrollView.contentOffset = CGPointMake(p.x, p.y - c + d);
+
     [UIView animateWithDuration:SPREADLIST_DELAY * lines delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
                      animations:^{
                          
@@ -731,15 +755,16 @@
                              CGRect f = bu.frame;
                              bu.frame = CGRectMake(f.origin.x, f.origin.y + lines * SEARCHRES_LINE_HEIGHT, f.size.width, f.size.height);
                          }
-                         
+
                          for(int i = lines - 1; i >= 0; i--) {
                              
                              UIView* v = [arrLines objectAtIndex:i];
                              CGRect f = v.frame;
                              v.frame = CGRectMake(0, f.origin.y + (lines - i - 1) * SEARCHRES_LINE_HEIGHT, 300, f.size.height);
                          }
-
-
+                         
+                         
+                      
                      }
                      completion:^(BOOL finished) {
                          
@@ -749,8 +774,11 @@
 
 - (void) closeChapts:(int)n {
 
+    closedLines = 0;
+    closeAffectsPos = NO;
+    
     if((openedChapts < 0) && (n >= 0)) {
-        
+    
         openedChapts = n;
         [self openChapts:n];
         return;
@@ -771,8 +799,17 @@
     int lines = nChapts / CHAPT_COLUMNS;
     if(nChapts % CHAPT_COLUMNS)
         lines++;
+    
+    closedLines = lines;
+    if(openedChapts < n)
+        closeAffectsPos = YES;
+        
+    CGRect f = sres.frame;
+    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height - lines * SEARCHRES_LINE_HEIGHT);
 
-    [UIView animateWithDuration:SPREADLIST_DELAY * lines delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
+    self.scrollHeight.constant = self.scrollHeight.constant - lines * SEARCHRES_LINE_HEIGHT;
+
+    [UIView animateWithDuration:(n < -1)?0:(SPREADLIST_DELAY * lines) delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
                      animations:^{
                          
                          for (int i = (openedChapts + 1); i < self.res.count; i++) {
@@ -781,6 +818,7 @@
                              CGRect f = bu.frame;
                              bu.frame = CGRectMake(f.origin.x, f.origin.y - lines * SEARCHRES_LINE_HEIGHT, f.size.width, f.size.height);
                          }
+                       
 
                          for(UIView* v in sres.subviews) {
                              if(v.tag == CHAPTER_LINE_TAG) {
@@ -824,10 +862,35 @@
     UIButton* bt = (UIButton*)sender;
     NSLog(@"chapter %d selected", bt.tag);
  
+    if(bt.tag != last) {
+
+        bt.backgroundColor = LASTCHAP_COLOR;
+        [bt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        bt.layer.cornerRadius = 15;
+        CGRect f = bt.frame;
+        bt.frame = CGRectMake(f.origin.x + 5, f.origin.y + 3, 30, 30);
+
+        lastb.backgroundColor = [UIColor clearColor];
+        [lastb setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        f = lastb.frame;
+        lastb.frame = CGRectMake(f.origin.x - 5, f.origin.y - 3, 40, SEARCHRES_LINE_HEIGHT);
+    }
+    
+        
+
     NSString* path = [self getPathForBook:[self getBookIdByNum:openedChapts] andChapter:bt.tag];
     [self myNavigate:path];
     
-    [self closeChapts:-1];
+//    [self closeChapts:-2];
+//    [self hideMenu];
+
+    [self performSelector:@selector(closeMC) withObject:nil afterDelay:0.1f];
+
+}
+
+- (void) closeMC {
+
+    [self closeChapts:-2];
     [self hideMenu];
 
 }
@@ -971,9 +1034,9 @@
     [self.csWebView loadHTMLString:text1 baseURL:nil];
     
     NSArray* arr = [path componentsSeparatedByString:@"."];
-    int n = [self saveLastOpenBookWithName:[arr objectAtIndex:0]];
     int chap = ((NSString*)[arr objectAtIndex:1]).intValue;
-    [self saveLastOpenChapter:chap forBook:n];
+    int n = [self saveLastOpenBookWithName:[arr objectAtIndex:0] andChapter:chap];
+//    [self saveLastOpenChapter:chap forBook:n];
     
 //    if (original)
 //        [self navigateOthers:path];

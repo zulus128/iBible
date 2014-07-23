@@ -12,6 +12,8 @@
 #define LNG_USERDEF @"cur_lng_save"
 #define CURCHAP_USERDEF @"book%d"
 #define CURBOOK_USERDEF @"last_book"
+#define GROUPBOOK_USERDEF @"group%d_book"
+//#define GROUPCHAP_USERDEF @"group%d_chap"
 
 #define UNDERLINE_TAG 1122
 #define BLUEFON_TAG 1123
@@ -37,6 +39,7 @@
 #define JSON_BOOK_LASTCHAPTER @"default_last_book_chapter"
 #define JSON_BOOK_DISPLAYNAME @"DisplayName"
 #define JSON_BOOK_CHAPTERS_CNT @"NChapters"
+#define JSON_BOOK_GROUPNUM @"Group"
 
 #define CHAPT_COLUMNS 7
 #define SPREADLIST_DELAY 0.03f
@@ -54,6 +57,10 @@ enum {lngRu, lngCs};
     BOOL keybShow;
     float keybHeight;
     int openedChapts;
+    int closedLines;
+    BOOL closeAffectsPos;
+    int last;
+    UIButton* lastb;
 }
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *rusWidth;

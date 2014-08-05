@@ -634,6 +634,14 @@
 
 - (float) getHeightForLinesCount:(int)n {
     
+    float sum = 0;
+    for (int i = 0; i < n; i++) {
+        
+        NSNumber* numb = [self.heights objectAtIndex:i];
+        sum += numb.floatValue;
+    }
+    
+    return sum;
 }
 
 - (void) setSearchResults:(NSString*) text {
@@ -685,13 +693,36 @@
         UIView* sbar = [self.innerView viewWithTag:SEARCHBAR_TAG];
         CGRect f = sres.frame;
 //        sres.frame = CGRectMake(f.origin.x, sbar.frame.origin.y + 45, f.size.width, self.res.count * SEARCHRES_LINE_HEIGHT);
+        self.heights = [NSMutableArray array];
+        
         for(int i = 0; i < self.res.count; i++) {
             
+
             NSDictionary* item = [self.res objectAtIndex:i];
+            NSString* name = [item objectForKey:JSON_BOOK_DISPLAYNAME];
+
+            CGSize maximumLabelSize = CGSizeMake(280, 145);
+            CGRect textRect = [name boundingRectWithSize:maximumLabelSize
+                                                 options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
+                                              attributes:@{NSFontAttributeName:FONT_SEARCHRES_NAME}
+                                                 context:nil];
+//            NSLog(@"%f", textRect.size.height);
+            float hhh = (textRect.size.height > 22)?SEARCHRES_LINE_HEIGHT2:SEARCHRES_LINE_HEIGHT1;
+            NSNumber* hhhnum = [NSNumber numberWithFloat:hhh];
+            [self.heights addObject:hhhnum];
             UIButton* button1 = [UIButton buttonWithType:UIButtonTypeCustom];
             [button1 addTarget:self action:@selector(btSelected:) forControlEvents:UIControlEventTouchUpInside];
-            button1.frame = CGRectMake(19.0, [self getHeightForLinesCount:i], 280, SEARCHRES_LINE_HEIGHT);
-            [button1 setTitle:[item objectForKey:JSON_BOOK_DISPLAYNAME] forState:UIControlStateNormal];
+            button1.frame = CGRectMake(19.0, [self getHeightForLinesCount:i], 280, hhh);
+//            [button1 setTitle:name forState:UIControlStateNormal];
+            
+            NSMutableParagraphStyle *style  = [[NSMutableParagraphStyle alloc] init];
+            style.minimumLineHeight = hhh;
+            style.maximumLineHeight = hhh;
+//            NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+//            style.lineSpacing = 8;
+//            style.l
+            NSDictionary *attributtes = @{NSParagraphStyleAttributeName : style};
+            [button1 setAttributedTitle:[[NSAttributedString alloc] initWithString:name attributes:attributtes] forState:UIControlStateNormal];
             button1.tag = (TEXTBUTT_TAG + i);
             [[button1 titleLabel] setFont:FONT_SEARCHRES_NAME];
             button1.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -745,20 +776,19 @@
 //            lines1++;
 //    }
     
-    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
-    CGPoint p = scrollView.contentOffset;
+//    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
+//    CGPoint p = scrollView.contentOffset;
     UIView* mView = [self.view viewWithTag:MENU_TAG];
     float scrHeight = mView.frame.size.height;
-//    float currPos = fcurr.origin.y;
-    NSLog(@" height = %f", scrHeight);
-    //    float d = currPos + lines * SEARCHRES_LINE_HEIGHT;
-    float d = n * SEARCHRES_LINE_HEIGHT + 280;//280 - head size
-    if((lines + 1) * SEARCHRES_LINE_HEIGHT < scrHeight)
-        d -= scrHeight - (lines + 1) * SEARCHRES_LINE_HEIGHT;
+//    NSLog(@" height = %f", scrHeight);
+//    float d = n * SEARCHRES_LINE_HEIGHT + 280;//280 - head size
+    float d = [self getHeightForLinesCount:n] + 280;//280 - head size
+    if((lines + 1) * SEARCHRES_LINE_HEIGHT1 < scrHeight)
+        d -= scrHeight - (lines + 1) * SEARCHRES_LINE_HEIGHT1;
     
 //    if(d < p.y)
 //        d = p.y;
-    NSLog(@"d = %f", d);
+//    NSLog(@"d = %f", d);
     return d;
 
 }
@@ -783,12 +813,12 @@
 //    NSArray* col = [NSArray arrayWithObjects:[UIColor blueColor],[UIColor yellowColor],[UIColor greenColor],[UIColor grayColor],[UIColor redColor],[UIColor magentaColor],[UIColor cyanColor],[UIColor orangeColor],[UIColor purpleColor],[UIColor brownColor],[UIColor blackColor], nil];
   
     CGRect f = sres.frame;
-    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height + lines * SEARCHRES_LINE_HEIGHT);
+    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height + lines * SEARCHRES_LINE_HEIGHT1);
     
     NSMutableArray* arrLines = [NSMutableArray arrayWithCapacity:lines];
     for(int j = lines; j >= 1; j--) {
         
-        UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, fcurr.origin.y + 1 * SEARCHRES_LINE_HEIGHT, 300, SEARCHRES_LINE_HEIGHT)];
+        UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, fcurr.origin.y + 1 * SEARCHRES_LINE_HEIGHT1, 300, SEARCHRES_LINE_HEIGHT1)];
         line.tag = CHAPTER_LINE_TAG;
         [sres addSubview:line];
 //        line.backgroundColor = (UIColor*)[col objectAtIndex:j];
@@ -796,7 +826,7 @@
         [arrLines addObject:line];
   
         float deltaY = (j == lines)?2.0f:0.0f;
-        UIView* vert = [[UIView alloc] initWithFrame:CGRectMake(17.5f, 0, 2.5f, SEARCHRES_LINE_HEIGHT - deltaY)];
+        UIView* vert = [[UIView alloc] initWithFrame:CGRectMake(17.5f, 0, 2.5f, SEARCHRES_LINE_HEIGHT1 - deltaY)];
         vert.backgroundColor = VERTLINE_COLOR;
         [line addSubview:vert];
         
@@ -827,7 +857,7 @@
                 
                     button1.backgroundColor = [UIColor clearColor];
                     [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-                    button1.frame = CGRectMake(19.0f + i * 40, 0, 40, SEARCHRES_LINE_HEIGHT);
+                    button1.frame = CGRectMake(19.0f + i * 40, 0, 40, SEARCHRES_LINE_HEIGHT1);
 
                 }
                 [line addSubview:button1];
@@ -836,7 +866,7 @@
 
     }
 
-    self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT;
+    self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT1;
 
 //    UIView* mView = [self.view viewWithTag:MENU_TAG];
 //    NSLog(@"mnn = %f", mView.frame.size.height);
@@ -870,14 +900,14 @@
                              
                              UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
                              CGRect f = bu.frame;
-                             bu.frame = CGRectMake(f.origin.x, f.origin.y + lines * SEARCHRES_LINE_HEIGHT, f.size.width, f.size.height);
+                             bu.frame = CGRectMake(f.origin.x, f.origin.y + lines * SEARCHRES_LINE_HEIGHT1, f.size.width, f.size.height);
                          }
 
                          for(int i = lines - 1; i >= 0; i--) {
                              
                              UIView* v = [arrLines objectAtIndex:i];
                              CGRect f = v.frame;
-                             v.frame = CGRectMake(0, f.origin.y + (lines - i - 1) * SEARCHRES_LINE_HEIGHT, 300, f.size.height);
+                             v.frame = CGRectMake(0, f.origin.y + (lines - i - 1) * SEARCHRES_LINE_HEIGHT1, 300, f.size.height);
                          }
                          
                          
@@ -915,12 +945,12 @@
     last = [self loadLastOpenChapterForBook:[self getBookIdByNum:n]];
     
     CGRect f = sres.frame;
-    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height + lines * SEARCHRES_LINE_HEIGHT);
+    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height + lines * SEARCHRES_LINE_HEIGHT1);
     
     NSMutableArray* arrLines = [NSMutableArray arrayWithCapacity:lines];
     for(int j = lines; j >= 1; j--) {
         
-        UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, fcurr.origin.y + 1 * SEARCHRES_LINE_HEIGHT, 300, SEARCHRES_LINE_HEIGHT)];
+        UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, fcurr.origin.y + 1 * SEARCHRES_LINE_HEIGHT1, 300, SEARCHRES_LINE_HEIGHT1)];
         line.tag = CHAPTER_LINE_TAG_NEXT;
         [sres addSubview:line];
         //        line.backgroundColor = (UIColor*)[col objectAtIndex:j];
@@ -928,7 +958,7 @@
         [arrLines addObject:line];
         
         float deltaY = (j == lines)?2.0f:0.0f;
-        UIView* vert = [[UIView alloc] initWithFrame:CGRectMake(17.5f, 0, 2.5f, SEARCHRES_LINE_HEIGHT - deltaY)];
+        UIView* vert = [[UIView alloc] initWithFrame:CGRectMake(17.5f, 0, 2.5f, SEARCHRES_LINE_HEIGHT1 - deltaY)];
         vert.backgroundColor = VERTLINE_COLOR;
         [line addSubview:vert];
         
@@ -959,7 +989,7 @@
                     
                     button1.backgroundColor = [UIColor clearColor];
                     [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-                    button1.frame = CGRectMake(19.0f + i * 40, 0, 40, SEARCHRES_LINE_HEIGHT);
+                    button1.frame = CGRectMake(19.0f + i * 40, 0, 40, SEARCHRES_LINE_HEIGHT1);
                     
                 }
                 [line addSubview:button1];
@@ -968,7 +998,8 @@
         
     }
     
-    float topgap = lines1 * SEARCHRES_LINE_HEIGHT;
+//    float topgap = lines1 * SEARCHRES_LINE_HEIGHT;
+    float topgap = [self getHeightForLinesCount:lines1];
     UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
     float d = [self getYdiff:n];
     CGPoint p = scrollView.contentOffset;
@@ -990,26 +1021,23 @@
                          
                          for(UIView* v in sres.subviews) {
                              if(v.tag == CHAPTER_LINE_TAG) {
-                                 //                                 NSLog(@"go to : %f", fcurr1.origin.y + lines1 * SEARCHRES_LINE_HEIGHT);
-                                 
                                  [sres sendSubviewToBack:v];
-                                 v.frame = CGRectMake(0, fcurr1.origin.y + topgap, 300, SEARCHRES_LINE_HEIGHT);
+                                 v.frame = CGRectMake(0, fcurr1.origin.y + topgap, 300, SEARCHRES_LINE_HEIGHT1);
                              }
-                             
                          }
                          
                          for (int i = (n + 1); i < self.res.count; i++) {
                              
                              UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
                              CGRect f = bu.frame;
-                             bu.frame = CGRectMake(f.origin.x, f.origin.y + lines * SEARCHRES_LINE_HEIGHT, f.size.width, f.size.height);
+                             bu.frame = CGRectMake(f.origin.x, f.origin.y + lines * SEARCHRES_LINE_HEIGHT1, f.size.width, f.size.height);
                          }
                          
                          for(int i = lines - 1; i >= 0; i--) {
                              
                              UIView* v = [arrLines objectAtIndex:i];
                              CGRect f = v.frame;
-                             v.frame = CGRectMake(0, f.origin.y + (lines - i - 1) * SEARCHRES_LINE_HEIGHT, 300, f.size.height);
+                             v.frame = CGRectMake(0, f.origin.y + (lines - i - 1) * SEARCHRES_LINE_HEIGHT1, 300, f.size.height);
                          }
                          
                          
@@ -1054,7 +1082,7 @@
                          float val = ((p.y - topgap) >= 0)?(p.y - topgap):0;
                          scrollView.contentOffset = CGPointMake(p.x, val);
                          
-                         self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT - topgap;
+                         self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT1 - topgap;
 
                      }];
     
@@ -1086,12 +1114,12 @@
     last = [self loadLastOpenChapterForBook:[self getBookIdByNum:n]];
     
     CGRect f = sres.frame;
-    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height + lines * SEARCHRES_LINE_HEIGHT);
+    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height + lines * SEARCHRES_LINE_HEIGHT1);
     
     NSMutableArray* arrLines = [NSMutableArray arrayWithCapacity:lines];
     for(int j = lines; j >= 1; j--) {
         
-        UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, fcurr.origin.y + 1 * SEARCHRES_LINE_HEIGHT, 300, SEARCHRES_LINE_HEIGHT)];
+        UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, fcurr.origin.y + 1 * SEARCHRES_LINE_HEIGHT1, 300, SEARCHRES_LINE_HEIGHT1)];
         line.tag = CHAPTER_LINE_TAG_NEXT;
         [sres addSubview:line];
         //        line.backgroundColor = (UIColor*)[col objectAtIndex:j];
@@ -1099,7 +1127,7 @@
         [arrLines addObject:line];
         
         float deltaY = (j == lines)?2.0f:0.0f;
-        UIView* vert = [[UIView alloc] initWithFrame:CGRectMake(17.5f, 0, 2.5f, SEARCHRES_LINE_HEIGHT - deltaY)];
+        UIView* vert = [[UIView alloc] initWithFrame:CGRectMake(17.5f, 0, 2.5f, SEARCHRES_LINE_HEIGHT1 - deltaY)];
         vert.backgroundColor = VERTLINE_COLOR;
         [line addSubview:vert];
         
@@ -1130,7 +1158,7 @@
                     
                     button1.backgroundColor = [UIColor clearColor];
                     [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-                    button1.frame = CGRectMake(19.0f + i * 40, 0, 40, SEARCHRES_LINE_HEIGHT);
+                    button1.frame = CGRectMake(19.0f + i * 40, 0, 40, SEARCHRES_LINE_HEIGHT1);
                     
                 }
                 [line addSubview:button1];
@@ -1139,8 +1167,9 @@
         
     }
     
-    float topgap = lines1 * SEARCHRES_LINE_HEIGHT;
-    self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT - topgap;
+//    float topgap = lines1 * SEARCHRES_LINE_HEIGHT;
+    float topgap = [self getHeightForLinesCount:lines1];
+    self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT1 - topgap;
     UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
     float d = [self getYdiff:n];
     CGPoint p = scrollView.contentOffset;
@@ -1163,7 +1192,7 @@
                          for(UIView* v in sres.subviews) {
                              if(v.tag == CHAPTER_LINE_TAG) {
                                  
-                                 v.frame = CGRectMake(0, fcurr1.origin.y + 1 * SEARCHRES_LINE_HEIGHT, 300, SEARCHRES_LINE_HEIGHT);
+                                 v.frame = CGRectMake(0, fcurr1.origin.y + 1 * SEARCHRES_LINE_HEIGHT1, 300, SEARCHRES_LINE_HEIGHT1);
                              }
                              
                          }
@@ -1172,14 +1201,14 @@
                              
                              UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
                              CGRect f = bu.frame;
-                             bu.frame = CGRectMake(f.origin.x, f.origin.y + lines * SEARCHRES_LINE_HEIGHT, f.size.width, f.size.height);
+                             bu.frame = CGRectMake(f.origin.x, f.origin.y + lines * SEARCHRES_LINE_HEIGHT1, f.size.width, f.size.height);
                          }
                          
                          for(int i = lines - 1; i >= 0; i--) {
                              
                              UIView* v = [arrLines objectAtIndex:i];
                              CGRect f = v.frame;
-                             v.frame = CGRectMake(0, f.origin.y + (lines - i - 1) * SEARCHRES_LINE_HEIGHT, 300, f.size.height);
+                             v.frame = CGRectMake(0, f.origin.y + (lines - i - 1) * SEARCHRES_LINE_HEIGHT1, 300, f.size.height);
                          }
                          
                          
@@ -1274,9 +1303,9 @@
         closeAffectsPos = YES;
         
     CGRect f = sres.frame;
-    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height - lines * SEARCHRES_LINE_HEIGHT);
+    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height - lines * SEARCHRES_LINE_HEIGHT1);
 
-    self.scrollHeight.constant = self.scrollHeight.constant - lines * SEARCHRES_LINE_HEIGHT;
+    self.scrollHeight.constant = self.scrollHeight.constant - lines * SEARCHRES_LINE_HEIGHT1;
 
     [UIView animateWithDuration:(n < -1)?0:(SPREADLIST_DELAY * lines) delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
                      animations:^{
@@ -1285,14 +1314,14 @@
                              
                              UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
                              CGRect f = bu.frame;
-                             bu.frame = CGRectMake(f.origin.x, f.origin.y - lines * SEARCHRES_LINE_HEIGHT, f.size.width, f.size.height);
+                             bu.frame = CGRectMake(f.origin.x, f.origin.y - lines * SEARCHRES_LINE_HEIGHT1, f.size.width, f.size.height);
                          }
                        
 
                          for(UIView* v in sres.subviews) {
                              if(v.tag == CHAPTER_LINE_TAG) {
                                  
-                                 v.frame = CGRectMake(0, fcurr.origin.y + 1 * SEARCHRES_LINE_HEIGHT, 300, SEARCHRES_LINE_HEIGHT);
+                                 v.frame = CGRectMake(0, fcurr.origin.y + 1 * SEARCHRES_LINE_HEIGHT1, 300, SEARCHRES_LINE_HEIGHT1);
                              }
                              
                          }
@@ -1345,7 +1374,7 @@
         lastb.backgroundColor = [UIColor clearColor];
         [lastb setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         f = lastb.frame;
-        lastb.frame = CGRectMake(f.origin.x - 5, f.origin.y - 3, 40, SEARCHRES_LINE_HEIGHT);
+        lastb.frame = CGRectMake(f.origin.x - 5, f.origin.y - 3, 40, SEARCHRES_LINE_HEIGHT1);
     }
     
         

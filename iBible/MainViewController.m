@@ -83,6 +83,15 @@
 
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
+    UISearchBar* sb = (UISearchBar*)[self.innerView viewWithTag:SEARCHBAR_TAG];
+    if(!sb.text.length)
+        [sb resignFirstResponder];
+
+}
+
 - (NSString*) getPathForBook:(int)book andChapter:(int)chap {
 
     NSDictionary* b = [self.bookjson objectForKey:[NSString stringWithFormat:@"%d", book]];
@@ -428,6 +437,9 @@
     [blue addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[view(==44)]-0-|" options:0 metrics:nil views:viewsDictionary]];
     [button setTranslatesAutoresizingMaskIntoConstraints:NO];
 
+    UITapGestureRecognizer *blueFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleBlueTap:)];
+    [blue addGestureRecognizer:blueFingerTap];
+
     return blue;
 }
 
@@ -482,6 +494,7 @@
     [scroll setTranslatesAutoresizingMaskIntoConstraints:NO];
     scroll.backgroundColor = MENU_FON_COLOR;
     scroll.tag = SCROLL_TAG;
+    scroll.delegate = self;
     
     self.innerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 200)];
 //    innerView.backgroundColor = [UIColor redColor];
@@ -619,6 +632,10 @@
     return menu;
 }
 
+- (float) getHeightForLinesCount:(int)n {
+    
+}
+
 - (void) setSearchResults:(NSString*) text {
     
 //    self.res = [self searchBooks:[NSString stringWithFormat:@"'%@'", text]];
@@ -667,13 +684,13 @@
         
         UIView* sbar = [self.innerView viewWithTag:SEARCHBAR_TAG];
         CGRect f = sres.frame;
-        sres.frame = CGRectMake(f.origin.x, sbar.frame.origin.y + 45, f.size.width, self.res.count * SEARCHRES_LINE_HEIGHT);
+//        sres.frame = CGRectMake(f.origin.x, sbar.frame.origin.y + 45, f.size.width, self.res.count * SEARCHRES_LINE_HEIGHT);
         for(int i = 0; i < self.res.count; i++) {
             
             NSDictionary* item = [self.res objectAtIndex:i];
             UIButton* button1 = [UIButton buttonWithType:UIButtonTypeCustom];
             [button1 addTarget:self action:@selector(btSelected:) forControlEvents:UIControlEventTouchUpInside];
-            button1.frame = CGRectMake(19.0, SEARCHRES_LINE_HEIGHT * i, 280, SEARCHRES_LINE_HEIGHT);
+            button1.frame = CGRectMake(19.0, [self getHeightForLinesCount:i], 280, SEARCHRES_LINE_HEIGHT);
             [button1 setTitle:[item objectForKey:JSON_BOOK_DISPLAYNAME] forState:UIControlStateNormal];
             button1.tag = (TEXTBUTT_TAG + i);
             [[button1 titleLabel] setFont:FONT_SEARCHRES_NAME];
@@ -684,6 +701,8 @@
 
             [sres addSubview:button1];
         }
+
+        sres.frame = CGRectMake(f.origin.x, sbar.frame.origin.y + 45, f.size.width, [self getHeightForLinesCount:self.res.count]);
         
         self.scrollHeight.constant = sbar.frame.origin.y + ((sres.frame.size.height > 460)?sres.frame.size.height:460) + 40;
 
@@ -692,10 +711,55 @@
 
 - (void) btSelected:(id)sender {
 
+    UIView* sb = [self.innerView viewWithTag:SEARCHBAR_TAG];
+    [sb resignFirstResponder];
+
     UIButton* bt = (UIButton*)sender;
 //    NSLog(@"button %d pressed", bt.tag);
 
     [self closeChapts:(bt.tag - TEXTBUTT_TAG)];
+
+}
+
+- (float) getYdiff:(int)n  {
+    
+//    UIView* sres = [self.innerView viewWithTag:SEARCHRESULTS_TAG];
+//    UIView* curr = [sres viewWithTag:(TEXTBUTT_TAG + n)];
+//    CGRect fcurr = curr.frame;
+
+    NSDictionary* item = [self.res objectAtIndex:n];
+    NSNumber* nch = [item valueForKey:JSON_BOOK_CHAPTERS_CNT];
+    int nChapts = nch.intValue;
+    int lines = nChapts / CHAPT_COLUMNS;
+    if(nChapts % CHAPT_COLUMNS)
+        lines++;
+    
+//    int lines1 = 0;
+//    if(openedChapts >= 0) {
+//
+//        NSDictionary* item1= [self.res objectAtIndex:openedChapts];
+//        NSNumber* nch1 = [item1 valueForKey:JSON_BOOK_CHAPTERS_CNT];
+//        int nChapts1 = nch1.intValue;
+//        lines1 = nChapts1 / CHAPT_COLUMNS;
+//        if(nChapts1 % CHAPT_COLUMNS)
+//            lines1++;
+//    }
+    
+    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
+    CGPoint p = scrollView.contentOffset;
+    UIView* mView = [self.view viewWithTag:MENU_TAG];
+    float scrHeight = mView.frame.size.height;
+//    float currPos = fcurr.origin.y;
+    NSLog(@" height = %f", scrHeight);
+    //    float d = currPos + lines * SEARCHRES_LINE_HEIGHT;
+    float d = n * SEARCHRES_LINE_HEIGHT + 280;//280 - head size
+    if((lines + 1) * SEARCHRES_LINE_HEIGHT < scrHeight)
+        d -= scrHeight - (lines + 1) * SEARCHRES_LINE_HEIGHT;
+    
+//    if(d < p.y)
+//        d = p.y;
+    NSLog(@"d = %f", d);
+    return d;
 
 }
 
@@ -775,7 +839,7 @@
     self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT;
 
 //    UIView* mView = [self.view viewWithTag:MENU_TAG];
-//    //    NSLog(@"mnn = %f", mView.frame.size.height);
+//    NSLog(@"mnn = %f", mView.frame.size.height);
 //    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
 //    CGPoint p = scrollView.contentOffset;
 //    float c = closeAffectsPos?(closedLines * SEARCHRES_LINE_HEIGHT):0;
@@ -785,14 +849,23 @@
 ////    NSLog(@"scrolldiff = %f, %f", diff, lines * SEARCHRES_LINE_HEIGHT);
 //    if(diff < lines * SEARCHRES_LINE_HEIGHT)
 //        d = lines * SEARCHRES_LINE_HEIGHT - diff;
-////    NSLog(@"d = %f, c = %f", d, c);
-//
-//    
+//    if(d > (mView.frame.size.height - 200))
+//        d = mView.frame.size.height - 200;
+//    NSLog(@"d = %f, c = %f", d, c);
+
 //    scrollView.contentOffset = CGPointMake(p.x, p.y - c + d);
 
+    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
+    float d = [self getYdiff:n];
+    CGPoint p = scrollView.contentOffset;
+    if(d < p.y)
+        d = p.y;
+    
     [UIView animateWithDuration:SPREADLIST_DELAY * lines delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
                      animations:^{
                          
+                         scrollView.contentOffset = CGPointMake(0, d);
+
                          for (int i = (n + 1); i < self.res.count; i++) {
                              
                              UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
@@ -896,11 +969,17 @@
     }
     
     float topgap = lines1 * SEARCHRES_LINE_HEIGHT;
-//    self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT - topgap;
-    
+    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
+    float d = [self getYdiff:n];
+    CGPoint p = scrollView.contentOffset;
+    if(d < (p.y - topgap))
+        d = (p.y - topgap);
+
     [UIView animateWithDuration:SPREADLIST_DELAY * lines delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
                      animations:^{
                          
+                         scrollView.contentOffset = CGPointMake(0, topgap + d);
+
                          for (int i = openedChapts; i >= 0; i--) {
                              
                              UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
@@ -970,11 +1049,9 @@
                              CGRect fr = v.frame;
                              v.frame = CGRectMake(fr.origin.x, fr.origin.y - topgap, fr.size.width, fr.size.height);
                          }
-//                         float topgap1 = lines * SEARCHRES_LINE_HEIGHT - topgap;
                          UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
                          CGPoint p = scrollView.contentOffset;
                          float val = ((p.y - topgap) >= 0)?(p.y - topgap):0;
-                         NSLog(@"topgap = %f, p.y = %f, val = %f", topgap / SEARCHRES_LINE_HEIGHT, p.y, val);
                          scrollView.contentOffset = CGPointMake(p.x, val);
                          
                          self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT - topgap;
@@ -1064,10 +1141,17 @@
     
     float topgap = lines1 * SEARCHRES_LINE_HEIGHT;
     self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT - topgap;
-    
+    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
+    float d = [self getYdiff:n];
+    CGPoint p = scrollView.contentOffset;
+    if(d < (p.y - 0))
+        d = (p.y - 0);
+
     [UIView animateWithDuration:(n < -1)?0:(SPREADLIST_DELAY * lines) delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
                      animations:^{
                          
+                         scrollView.contentOffset = CGPointMake(0, d);
+
                          for (int i = (openedChapts + 1); i < self.res.count; i++) {
                              
                              UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
@@ -1084,23 +1168,6 @@
                              
                          }
 
-//                         for (int i = openedChapts; i >= 0; i--) {
-//                             
-//                             UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
-//                             CGRect f = bu.frame;
-//                             bu.frame = CGRectMake(f.origin.x, f.origin.y + topgap, f.size.width, f.size.height);
-//                         }
-//                         
-//                         
-//                         for(UIView* v in sres.subviews) {
-//                             if(v.tag == CHAPTER_LINE_TAG) {
-//                                 //                                 NSLog(@"go to : %f", fcurr1.origin.y + lines1 * SEARCHRES_LINE_HEIGHT);
-//                                 //                                 [sres sendSubviewToBack:v];
-//                                 v.frame = CGRectMake(0, fcurr1.origin.y + topgap, 300, SEARCHRES_LINE_HEIGHT);
-//                             }
-//                             
-//                         }
-                         
                          for (int i = (n + 1); i < self.res.count; i++) {
                              
                              UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
@@ -1261,6 +1328,9 @@
 
 - (void) cpSelected:(id)sender {
     
+    UIView* sb = [self.innerView viewWithTag:SEARCHBAR_TAG];
+    [sb resignFirstResponder];
+
     UIButton* bt = (UIButton*)sender;
 //    NSLog(@"chapter %d selected", bt.tag);
  
@@ -1331,6 +1401,8 @@
     if(openedChapts > 0)
         [self closeChapts:-1];
 
+    [self scrollToSearch];
+    
 //    NSLog(@"search: %@", searchText);
     [self setSearchResults:searchText];
     
@@ -1348,6 +1420,11 @@
     [scrollView setContentOffset:CGPointMake(0, 230) animated:YES];
 
     [self closeChapts:-1];
+}
+
+- (void)handleBlueTap:(UITapGestureRecognizer *)recognizer {
+
+    [self hideMenu];
 }
 
 - (void)handleInnerTap:(UITapGestureRecognizer *)recognizer {

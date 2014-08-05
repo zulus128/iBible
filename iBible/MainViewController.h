@@ -35,8 +35,8 @@
 #define COVER_DELTAX 7.0f
 #define COVER_DELTAY 40.0f
 
-#define SEARCHRES_LINE_HEIGHT 37.5f
-//#define SEARCHRES_LINE_HEIGHT 75.0f
+#define SEARCHRES_LINE_HEIGHT1 37.5f
+#define SEARCHRES_LINE_HEIGHT2 47.0f
 
 #define JSON_GROUP_NAME @"name"
 #define JSON_GROUP_LASTCODE @"default_last_book_code"
@@ -56,7 +56,7 @@ enum {lngRu, lngCs};
 - (BOOL) containsString: (NSString*) substring;
 @end
 
-@interface MainViewController : UIViewController <UISearchBarDelegate> {
+@interface MainViewController : UIViewController <UISearchBarDelegate, UIScrollViewDelegate> {
     
     BOOL statusBarVisible;
     BOOL inMenu;
@@ -90,6 +90,7 @@ enum {lngRu, lngCs};
 @property (nonatomic, strong) NSDictionary* bookjson;
 @property (nonatomic, strong) UIView* innerView;
 @property (nonatomic, strong) NSArray* res;
+@property (nonatomic, strong) NSArray* heights;
 @property (nonatomic, strong) NSLayoutConstraint* scrollHeight;
 
 @property (nonatomic, retain) NSString * viewPath;

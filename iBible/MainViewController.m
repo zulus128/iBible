@@ -75,6 +75,12 @@
         [prefs synchronize];
 
     }
+    
+    self.blue = [self getBlueFon];
+    self.menu = [self getMenu];
+    
+    [self refreshGroupsViews];
+
 }
 
 - (NSString*) getPathForBook:(int)book andChapter:(int)chap {
@@ -165,6 +171,8 @@
 
             [prefs synchronize];
             
+            [self refreshGroupsViews];
+
             return i;
         }
     }
@@ -342,11 +350,14 @@
                      }
                      completion:^(BOOL finished) {
                          
-                         [blue removeFromSuperview];
-                         [menu removeFromSuperview];
+//                         [blue removeFromSuperview];
+//                         [menu removeFromSuperview];
                          
                          statusBarVisible = NO;
                          [self setNeedsStatusBarAppearanceUpdate];
+                         
+                         inMenu = NO;
+
 
                      }];
 
@@ -356,24 +367,25 @@
     
     //    CGRect sb = [[UIApplication sharedApplication] statusBarFrame];
     //    NSLog(@"sbh = %f", sb.size.height);
-
+    
     statusBarVisible = YES;
     [self setNeedsStatusBarAppearanceUpdate];
   
-    UIView* blue = [self getBlueFon];
-    UIView* menu = [self getMenu];
+//    UIView* blue = [self getBlueFon];
+//    UIView* menu = [self getMenu];
     
-    blue.alpha = 0.01f;
-    menu.alpha = 0.01f;
+    self.blue.alpha = 0.01f;
+    self.menu.alpha = 0.01f;
     [UIView animateWithDuration:MENUFADE_DELAY delay:0.0 options:UIViewAnimationOptionCurveEaseOut|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
                      animations:^{
                          
-                         blue.alpha = 1;
-                         menu.alpha = 1;
+                         self.blue.alpha = 1;
+                         self.menu.alpha = 1;
                          
                      }
                      completion:^(BOOL finished) {
                          
+                         inMenu = YES;
 
                      }];
     
@@ -385,6 +397,7 @@
     blue.tag = BLUEFON_TAG;
     blue.backgroundColor = [UIColor colorWithRed:0x0e/255.0f green:0x22/255.0f blue:0x33/255.0f alpha:0.9f];
     [self.view addSubview:blue];
+    blue.alpha = 0;
     
     [blue setTranslatesAutoresizingMaskIntoConstraints:NO];
     
@@ -418,11 +431,26 @@
     return blue;
 }
 
+- (void) refreshGroupsViews {
+    
+    for(int i = 1; i <= self.grsjson.count; i++) {
+        
+        UILabel* cpart = (UILabel*)[self.menu viewWithTag:(GROUPBOOK_LABEL_TAG + i)];
+
+        int bnn = [self getBookNumberForGroup:i];
+        NSDictionary* d = [self.bookjson objectForKey:[NSString stringWithFormat:@"%d", bnn]];
+        NSString* cn = [d objectForKey:JSON_BOOK_SHORTRU];
+        int nn = [self loadLastOpenChapterForBook:bnn];
+        cpart.text = [NSString stringWithFormat:@"%@. %d", cn, nn];
+    }
+}
+
 - (UIView*) getMenu {
     
     UIView* menu= [[UIView alloc] initWithFrame:CGRectMake(10, 10, 100, 100)];
     menu.tag = MENU_TAG;
     [self.view addSubview:menu];
+    menu.alpha = 0;
     [menu setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:menu attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view                                                          attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0]];
     
@@ -532,15 +560,14 @@
 //        cpart.backgroundColor = [UIColor blueColor];
         cpart.textColor = [UIColor colorWithRed:0xb4/255.0f green:0x94/255.0f blue:0x4f/255.0f alpha:1.0f];
         cpart.font = FONT_COVER_NAME;
+        cpart.tag = (GROUPBOOK_LABEL_TAG + i);
 
-//        NSString* cn = [self getBookShortNameForCode:[gr objectForKey:JSON_BOOK_LASTCODE]];
-        int bnn = [self getBookNumberForGroup:i];
-        NSDictionary* d = [self.bookjson objectForKey:[NSString stringWithFormat:@"%d", bnn]];
-        NSString* cn = [d objectForKey:JSON_BOOK_SHORTRU];
-
-//        NSNumber* nn = [gr valueForKey:JSON_BOOK_LASTCHAPTER];
-        int nn = [self loadLastOpenChapterForBook:bnn];
-        cpart.text = [NSString stringWithFormat:@"%@. %d", cn, nn];
+//        int bnn = [self getBookNumberForGroup:i];
+//        NSDictionary* d = [self.bookjson objectForKey:[NSString stringWithFormat:@"%d", bnn]];
+//        NSString* cn = [d objectForKey:JSON_BOOK_SHORTRU];
+//        int nn = [self loadLastOpenChapterForBook:bnn];
+//        cpart.text = [NSString stringWithFormat:@"%@. %d", cn, nn];
+        
         [cpart setTextAlignment:NSTextAlignmentCenter];
         [grview addSubview:cpart];
         
@@ -648,11 +675,12 @@
             [button1 addTarget:self action:@selector(btSelected:) forControlEvents:UIControlEventTouchUpInside];
             button1.frame = CGRectMake(19.0, SEARCHRES_LINE_HEIGHT * i, 280, SEARCHRES_LINE_HEIGHT);
             [button1 setTitle:[item objectForKey:JSON_BOOK_DISPLAYNAME] forState:UIControlStateNormal];
-            button1.tag = i;
+            button1.tag = (TEXTBUTT_TAG + i);
             [[button1 titleLabel] setFont:FONT_SEARCHRES_NAME];
             button1.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
             [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             button1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+            button1.backgroundColor = [UIColor whiteColor];
 
             [sres addSubview:button1];
         }
@@ -667,14 +695,14 @@
     UIButton* bt = (UIButton*)sender;
 //    NSLog(@"button %d pressed", bt.tag);
 
-    [self closeChapts:bt.tag];
+    [self closeChapts:(bt.tag - TEXTBUTT_TAG)];
 
 }
 
 - (void) openChapts:(int)n {
 
     UIView* sres = [self.innerView viewWithTag:SEARCHRESULTS_TAG];
-    UIView* curr = [sres viewWithTag:n];
+    UIView* curr = [sres viewWithTag:(TEXTBUTT_TAG + n)];
     CGRect fcurr = curr.frame;
 
     NSDictionary* item = [self.res objectAtIndex:n];
@@ -746,28 +774,28 @@
 
     self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT;
 
-    UIView* mView = [self.view viewWithTag:MENU_TAG];
-    //    NSLog(@"mnn = %f", mView.frame.size.height);
-    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
-    CGPoint p = scrollView.contentOffset;
-    float c = closeAffectsPos?(closedLines * SEARCHRES_LINE_HEIGHT):0;
-    float d = 0;
-    float korrScreen = 504 - mView.frame.size.height;
-    float diff = 190 - korrScreen - fcurr.origin.y + p.y - c;
-//    NSLog(@"scrolldiff = %f, %f", diff, lines * SEARCHRES_LINE_HEIGHT);
-    if(diff < lines * SEARCHRES_LINE_HEIGHT)
-        d = lines * SEARCHRES_LINE_HEIGHT - diff;
-//    NSLog(@"d = %f, c = %f", d, c);
-
-    
-    scrollView.contentOffset = CGPointMake(p.x, p.y - c + d);
+//    UIView* mView = [self.view viewWithTag:MENU_TAG];
+//    //    NSLog(@"mnn = %f", mView.frame.size.height);
+//    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
+//    CGPoint p = scrollView.contentOffset;
+//    float c = closeAffectsPos?(closedLines * SEARCHRES_LINE_HEIGHT):0;
+//    float d = 0;
+//    float korrScreen = 504 - mView.frame.size.height;
+//    float diff = 190 - korrScreen - fcurr.origin.y + p.y - c;
+////    NSLog(@"scrolldiff = %f, %f", diff, lines * SEARCHRES_LINE_HEIGHT);
+//    if(diff < lines * SEARCHRES_LINE_HEIGHT)
+//        d = lines * SEARCHRES_LINE_HEIGHT - diff;
+////    NSLog(@"d = %f, c = %f", d, c);
+//
+//    
+//    scrollView.contentOffset = CGPointMake(p.x, p.y - c + d);
 
     [UIView animateWithDuration:SPREADLIST_DELAY * lines delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
                      animations:^{
                          
                          for (int i = (n + 1); i < self.res.count; i++) {
                              
-                             UIView* bu = [sres viewWithTag:i];
+                             UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
                              CGRect f = bu.frame;
                              bu.frame = CGRectMake(f.origin.x, f.origin.y + lines * SEARCHRES_LINE_HEIGHT, f.size.width, f.size.height);
                          }
@@ -788,8 +816,353 @@
 
 }
 
+- (void) closeChaptsReverse:(int)n {
+    
+    UIView* sres = [self.innerView viewWithTag:SEARCHRESULTS_TAG];
+    UIView* curr = [sres viewWithTag:(TEXTBUTT_TAG + n)];
+    CGRect fcurr = curr.frame;
+    UIView* curr1 = [sres viewWithTag:(TEXTBUTT_TAG + openedChapts)];
+    CGRect fcurr1 = curr1.frame;
+    //    NSLog(@"curr1 = %f", fcurr1.origin.y);
+    
+    NSDictionary* item1= [self.res objectAtIndex:openedChapts];
+    NSNumber* nch1 = [item1 valueForKey:JSON_BOOK_CHAPTERS_CNT];
+    int nChapts1 = nch1.intValue;
+    int lines1 = nChapts1 / CHAPT_COLUMNS;
+    if(nChapts1 % CHAPT_COLUMNS)
+        lines1++;
+    
+    NSDictionary* item = [self.res objectAtIndex:n];
+    NSNumber* nch = [item valueForKey:JSON_BOOK_CHAPTERS_CNT];
+    int nChapts = nch.intValue;
+    int lines = nChapts / CHAPT_COLUMNS;
+    if(nChapts % CHAPT_COLUMNS)
+        lines++;
+    
+    last = [self loadLastOpenChapterForBook:[self getBookIdByNum:n]];
+    
+    CGRect f = sres.frame;
+    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height + lines * SEARCHRES_LINE_HEIGHT);
+    
+    NSMutableArray* arrLines = [NSMutableArray arrayWithCapacity:lines];
+    for(int j = lines; j >= 1; j--) {
+        
+        UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, fcurr.origin.y + 1 * SEARCHRES_LINE_HEIGHT, 300, SEARCHRES_LINE_HEIGHT)];
+        line.tag = CHAPTER_LINE_TAG_NEXT;
+        [sres addSubview:line];
+        //        line.backgroundColor = (UIColor*)[col objectAtIndex:j];
+        line.backgroundColor = [UIColor whiteColor];
+        [arrLines addObject:line];
+        
+        float deltaY = (j == lines)?2.0f:0.0f;
+        UIView* vert = [[UIView alloc] initWithFrame:CGRectMake(17.5f, 0, 2.5f, SEARCHRES_LINE_HEIGHT - deltaY)];
+        vert.backgroundColor = VERTLINE_COLOR;
+        [line addSubview:vert];
+        
+        for(int i = 0; i < CHAPT_COLUMNS; i++) {
+            
+            int num = (j - 1) * CHAPT_COLUMNS + 1 + i;
+            if(num <= nChapts) {
+                
+                UIButton* button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+                [button1 addTarget:self action:@selector(cpSelected:) forControlEvents:UIControlEventTouchUpInside];
+                
+                [button1 setTitle:[NSString stringWithFormat:@"%d", num] forState:UIControlStateNormal];
+                button1.tag = num;
+                [[button1 titleLabel] setFont:(num > 99)?FONT_DIGITS_AFTER99_NAME:FONT_DIGITS_BEFORE99_NAME];
+                button1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+                button1.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+                //                button1.backgroundColor = (UIColor*)[col objectAtIndex:i];
+                if(last == num) {
+                    
+                    button1.backgroundColor = LASTCHAP_COLOR;
+                    [button1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                    button1.layer.cornerRadius = 15;
+                    button1.frame = CGRectMake(19.0f + i * 40 + 5, 0 + 3, 30, 30);
+                    lastb = button1;
+                    
+                }
+                else {
+                    
+                    button1.backgroundColor = [UIColor clearColor];
+                    [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+                    button1.frame = CGRectMake(19.0f + i * 40, 0, 40, SEARCHRES_LINE_HEIGHT);
+                    
+                }
+                [line addSubview:button1];
+            }
+        }
+        
+    }
+    
+    float topgap = lines1 * SEARCHRES_LINE_HEIGHT;
+//    self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT - topgap;
+    
+    [UIView animateWithDuration:SPREADLIST_DELAY * lines delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
+                     animations:^{
+                         
+                         for (int i = openedChapts; i >= 0; i--) {
+                             
+                             UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
+                             CGRect f = bu.frame;
+                             bu.frame = CGRectMake(f.origin.x, f.origin.y + topgap, f.size.width, f.size.height);
+                         }
+                         
+                         
+                         for(UIView* v in sres.subviews) {
+                             if(v.tag == CHAPTER_LINE_TAG) {
+                                 //                                 NSLog(@"go to : %f", fcurr1.origin.y + lines1 * SEARCHRES_LINE_HEIGHT);
+                                 
+                                 [sres sendSubviewToBack:v];
+                                 v.frame = CGRectMake(0, fcurr1.origin.y + topgap, 300, SEARCHRES_LINE_HEIGHT);
+                             }
+                             
+                         }
+                         
+                         for (int i = (n + 1); i < self.res.count; i++) {
+                             
+                             UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
+                             CGRect f = bu.frame;
+                             bu.frame = CGRectMake(f.origin.x, f.origin.y + lines * SEARCHRES_LINE_HEIGHT, f.size.width, f.size.height);
+                         }
+                         
+                         for(int i = lines - 1; i >= 0; i--) {
+                             
+                             UIView* v = [arrLines objectAtIndex:i];
+                             CGRect f = v.frame;
+                             v.frame = CGRectMake(0, f.origin.y + (lines - i - 1) * SEARCHRES_LINE_HEIGHT, 300, f.size.height);
+                         }
+                         
+                         
+                         
+                     }
+                     completion:^(BOOL finished) {
+                         
+                         for(UIView* v in sres.subviews) {
+                             
+                             if(v.tag == CHAPTER_LINE_TAG) {
+                                 
+                                 [v removeFromSuperview];
+                             }
+                             
+                         }
+                         for(UIView* v in sres.subviews) {
+                             if(v.tag == CHAPTER_LINE_TAG_NEXT) {
+                                 
+                                 v.tag = CHAPTER_LINE_TAG;
+                                 
+                             }
+                         }
+                         
+                         
+                         if(openedChapts == n) {
+                             
+                             openedChapts = -1;
+                             
+                         }
+                         else {
+                             
+                             openedChapts = n;
+                         }
+                         
+                         for(UIView* v in sres.subviews) {
+                             
+                             CGRect fr = v.frame;
+                             v.frame = CGRectMake(fr.origin.x, fr.origin.y - topgap, fr.size.width, fr.size.height);
+                         }
+//                         float topgap1 = lines * SEARCHRES_LINE_HEIGHT - topgap;
+                         UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
+                         CGPoint p = scrollView.contentOffset;
+                         float val = ((p.y - topgap) >= 0)?(p.y - topgap):0;
+                         NSLog(@"topgap = %f, p.y = %f, val = %f", topgap / SEARCHRES_LINE_HEIGHT, p.y, val);
+                         scrollView.contentOffset = CGPointMake(p.x, val);
+                         
+                         self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT - topgap;
+
+                     }];
+    
+}
+
+- (void) closeChaptsForward:(int)n {
+    
+    UIView* sres = [self.innerView viewWithTag:SEARCHRESULTS_TAG];
+    UIView* curr = [sres viewWithTag:(TEXTBUTT_TAG + n)];
+    CGRect fcurr = curr.frame;
+    UIView* curr1 = [sres viewWithTag:(TEXTBUTT_TAG + openedChapts)];
+    CGRect fcurr1 = curr1.frame;
+    //    NSLog(@"curr1 = %f", fcurr1.origin.y);
+    
+    NSDictionary* item1= [self.res objectAtIndex:openedChapts];
+    NSNumber* nch1 = [item1 valueForKey:JSON_BOOK_CHAPTERS_CNT];
+    int nChapts1 = nch1.intValue;
+    int lines1 = nChapts1 / CHAPT_COLUMNS;
+    if(nChapts1 % CHAPT_COLUMNS)
+        lines1++;
+    
+    NSDictionary* item = [self.res objectAtIndex:n];
+    NSNumber* nch = [item valueForKey:JSON_BOOK_CHAPTERS_CNT];
+    int nChapts = nch.intValue;
+    int lines = nChapts / CHAPT_COLUMNS;
+    if(nChapts % CHAPT_COLUMNS)
+        lines++;
+    
+    last = [self loadLastOpenChapterForBook:[self getBookIdByNum:n]];
+    
+    CGRect f = sres.frame;
+    sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height + lines * SEARCHRES_LINE_HEIGHT);
+    
+    NSMutableArray* arrLines = [NSMutableArray arrayWithCapacity:lines];
+    for(int j = lines; j >= 1; j--) {
+        
+        UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, fcurr.origin.y + 1 * SEARCHRES_LINE_HEIGHT, 300, SEARCHRES_LINE_HEIGHT)];
+        line.tag = CHAPTER_LINE_TAG_NEXT;
+        [sres addSubview:line];
+        //        line.backgroundColor = (UIColor*)[col objectAtIndex:j];
+        line.backgroundColor = [UIColor whiteColor];
+        [arrLines addObject:line];
+        
+        float deltaY = (j == lines)?2.0f:0.0f;
+        UIView* vert = [[UIView alloc] initWithFrame:CGRectMake(17.5f, 0, 2.5f, SEARCHRES_LINE_HEIGHT - deltaY)];
+        vert.backgroundColor = VERTLINE_COLOR;
+        [line addSubview:vert];
+        
+        for(int i = 0; i < CHAPT_COLUMNS; i++) {
+            
+            int num = (j - 1) * CHAPT_COLUMNS + 1 + i;
+            if(num <= nChapts) {
+                
+                UIButton* button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+                [button1 addTarget:self action:@selector(cpSelected:) forControlEvents:UIControlEventTouchUpInside];
+                
+                [button1 setTitle:[NSString stringWithFormat:@"%d", num] forState:UIControlStateNormal];
+                button1.tag = num;
+                [[button1 titleLabel] setFont:(num > 99)?FONT_DIGITS_AFTER99_NAME:FONT_DIGITS_BEFORE99_NAME];
+                button1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+                button1.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+                //                button1.backgroundColor = (UIColor*)[col objectAtIndex:i];
+                if(last == num) {
+                    
+                    button1.backgroundColor = LASTCHAP_COLOR;
+                    [button1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                    button1.layer.cornerRadius = 15;
+                    button1.frame = CGRectMake(19.0f + i * 40 + 5, 0 + 3, 30, 30);
+                    lastb = button1;
+                    
+                }
+                else {
+                    
+                    button1.backgroundColor = [UIColor clearColor];
+                    [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+                    button1.frame = CGRectMake(19.0f + i * 40, 0, 40, SEARCHRES_LINE_HEIGHT);
+                    
+                }
+                [line addSubview:button1];
+            }
+        }
+        
+    }
+    
+    float topgap = lines1 * SEARCHRES_LINE_HEIGHT;
+    self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT - topgap;
+    
+    [UIView animateWithDuration:(n < -1)?0:(SPREADLIST_DELAY * lines) delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
+                     animations:^{
+                         
+                         for (int i = (openedChapts + 1); i < self.res.count; i++) {
+                             
+                             UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
+                             CGRect f = bu.frame;
+                             bu.frame = CGRectMake(f.origin.x, f.origin.y - topgap, f.size.width, f.size.height);
+                         }
+                         
+                         
+                         for(UIView* v in sres.subviews) {
+                             if(v.tag == CHAPTER_LINE_TAG) {
+                                 
+                                 v.frame = CGRectMake(0, fcurr1.origin.y + 1 * SEARCHRES_LINE_HEIGHT, 300, SEARCHRES_LINE_HEIGHT);
+                             }
+                             
+                         }
+
+//                         for (int i = openedChapts; i >= 0; i--) {
+//                             
+//                             UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
+//                             CGRect f = bu.frame;
+//                             bu.frame = CGRectMake(f.origin.x, f.origin.y + topgap, f.size.width, f.size.height);
+//                         }
+//                         
+//                         
+//                         for(UIView* v in sres.subviews) {
+//                             if(v.tag == CHAPTER_LINE_TAG) {
+//                                 //                                 NSLog(@"go to : %f", fcurr1.origin.y + lines1 * SEARCHRES_LINE_HEIGHT);
+//                                 //                                 [sres sendSubviewToBack:v];
+//                                 v.frame = CGRectMake(0, fcurr1.origin.y + topgap, 300, SEARCHRES_LINE_HEIGHT);
+//                             }
+//                             
+//                         }
+                         
+                         for (int i = (n + 1); i < self.res.count; i++) {
+                             
+                             UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
+                             CGRect f = bu.frame;
+                             bu.frame = CGRectMake(f.origin.x, f.origin.y + lines * SEARCHRES_LINE_HEIGHT, f.size.width, f.size.height);
+                         }
+                         
+                         for(int i = lines - 1; i >= 0; i--) {
+                             
+                             UIView* v = [arrLines objectAtIndex:i];
+                             CGRect f = v.frame;
+                             v.frame = CGRectMake(0, f.origin.y + (lines - i - 1) * SEARCHRES_LINE_HEIGHT, 300, f.size.height);
+                         }
+                         
+                         
+                         
+                     }
+                     completion:^(BOOL finished) {
+                         
+                         for(UIView* v in sres.subviews) {
+                             
+                             if(v.tag == CHAPTER_LINE_TAG) {
+                                 
+                                 [v removeFromSuperview];
+                             }
+                             
+                         }
+                         for(UIView* v in sres.subviews) {
+                             if(v.tag == CHAPTER_LINE_TAG_NEXT) {
+                                 
+                                 v.tag = CHAPTER_LINE_TAG;
+                                 
+                             }
+                         }
+                         
+                         
+                         if(openedChapts == n) {
+                             
+                             openedChapts = -1;
+                             
+                         }
+                         else {
+                             
+                             openedChapts = n;
+                         }
+                         
+                         
+                     }];
+    
+}
+
 - (void) closeChapts:(int)n {
 
+//    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
+//    CGPoint p = scrollView.contentOffset;
+//    NSLog(@"p = %f", p.y);
+    
+//    if(n < -1) {
+//    
+//        return;
+//    }
+    
     closedLines = 0;
     closeAffectsPos = NO;
     
@@ -804,9 +1177,22 @@
         
         return;
     }
+
+//    NSLog(@"opened = %d, n = %d", openedChapts, n);
+    if(openedChapts < n) {
+       
+        [self closeChaptsReverse:n];
+        return;
+    }
+    
+    if((openedChapts > n) && (n >= 0)) {
+        
+        [self closeChaptsForward:n];
+        return;
+    }
     
     UIView* sres = [self.innerView viewWithTag:SEARCHRESULTS_TAG];
-    UIView* curr = [sres viewWithTag:openedChapts];
+    UIView* curr = [sres viewWithTag:(TEXTBUTT_TAG + openedChapts)];
     CGRect fcurr = curr.frame;
     
     NSDictionary* item = [self.res objectAtIndex:openedChapts];
@@ -830,7 +1216,7 @@
                          
                          for (int i = (openedChapts + 1); i < self.res.count; i++) {
                              
-                             UIView* bu = [sres viewWithTag:i];
+                             UIView* bu = [sres viewWithTag:(TEXTBUTT_TAG + i)];
                              CGRect f = bu.frame;
                              bu.frame = CGRectMake(f.origin.x, f.origin.y - lines * SEARCHRES_LINE_HEIGHT, f.size.width, f.size.height);
                          }
@@ -864,8 +1250,8 @@
                          else {
                              
                              openedChapts = n;
-                             if(n >= 0)
-                                 [self openChapts:n];
+//                             if(n >= 0)
+//                                 [self openChapts:n];
                          }
 
                          
@@ -900,14 +1286,15 @@
 //    [self closeChapts:-2];
 //    [self hideMenu];
 
-    [self performSelector:@selector(closeMC) withObject:nil afterDelay:0.1f];
+    [self performSelector:@selector(closeMC) withObject:nil afterDelay:0.5f];
+    [self hideMenu];
 
 }
 
 - (void) closeMC {
 
     [self closeChapts:-2];
-    [self hideMenu];
+//    [self hideMenu];
 
 }
 
@@ -1009,14 +1396,14 @@
 - (IBAction)menuButtonPressed:(id)sender {
     
 //    NSLog(@"menu pressed");
-    inMenu = !inMenu;
+//    inMenu = !inMenu;
     
 //    statusBarVisible = inMenu;
 //    [self setNeedsStatusBarAppearanceUpdate];
 
     [self refreshUnderline];
 
-    if(inMenu) {
+    if(!inMenu) {
         
         [self showMenu];
     }
@@ -1059,24 +1446,8 @@
     
     NSArray* arr = [path componentsSeparatedByString:@"."];
     int chap = ((NSString*)[arr objectAtIndex:1]).intValue;
-    int n = [self saveLastOpenBookWithName:[arr objectAtIndex:0] andChapter:chap];
-//    [self saveLastOpenChapter:chap forBook:n];
-    
-//    if (original)
-//        [self navigateOthers:path];
+    [self saveLastOpenBookWithName:[arr objectAtIndex:0] andChapter:chap];
 }
-
-//- (void)navigateOthers:(NSString *)path
-//{
-//    if ([other isViewLoaded])
-//        [self.other myNavigate:path];
-//    else
-//    {
-//        [other loadView];
-//        [other viewDidLoad];
-//        [self performSelector:@selector(navigateOthers:) withObject:path afterDelay:0.1];
-//    }
-//}
 
 #pragma mark - Custom user functions
 

@@ -26,6 +26,9 @@
 #define NORESULTS_TAG 1127
 #define SCROLL_TAG 1128
 #define CHAPTER_LINE_TAG 5000
+#define CHAPTER_LINE_TAG_NEXT 5001
+#define GROUPBOOK_LABEL_TAG 7000
+#define TEXTBUTT_TAG 8000
 
 #define MENUFADE_DELAY 0.2f
 
@@ -91,5 +94,8 @@ enum {lngRu, lngCs};
 
 @property (nonatomic, retain) NSString * viewPath;
 @property (nonatomic, retain) NSString * viewPos;
+
+@property (nonatomic, strong) UIView* menu;
+@property (nonatomic, strong) UIView* blue;
 
 @end

@@ -36,7 +36,7 @@
 #define COVER_DELTAY 40.0f
 
 #define SEARCHRES_LINE_HEIGHT1 37.5f
-#define SEARCHRES_LINE_HEIGHT2 57.0f
+#define SEARCHRES_LINE_HEIGHT2 59.0f
 
 #define JSON_GROUP_NAME @"name"
 #define JSON_GROUP_LASTCODE @"default_last_book_code"
@@ -67,6 +67,7 @@ enum {lngRu, lngCs};
     BOOL closeAffectsPos;
     int last;
     UIButton* lastb;
+    BOOL iniScroll;
 }
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *rusWidth;

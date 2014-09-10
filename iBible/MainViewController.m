@@ -365,9 +365,15 @@
 //                         [blue removeFromSuperview];
 //                         [menu removeFromSuperview];
                          
-                         statusBarVisible = NO;
-                         [self setNeedsStatusBarAppearanceUpdate];
+//                         statusBarVisible = NO;
+//                         [self setNeedsStatusBarAppearanceUpdate];
                          
+                         [UIView animateWithDuration:0.15f animations:^{
+                             
+                             statusBarVisible = NO;
+                             [self setNeedsStatusBarAppearanceUpdate];
+                         }];
+
                          inMenu = NO;
 
 
@@ -382,7 +388,13 @@
     
     statusBarVisible = YES;
     [self setNeedsStatusBarAppearanceUpdate];
-  
+    
+//    [UIView animateWithDuration:0.3f animations:^{
+//
+//        statusBarVisible = YES;
+//        [self setNeedsStatusBarAppearanceUpdate];
+//    }];
+    
 //    UIView* blue = [self getBlueFon];
 //    UIView* menu = [self getMenu];
     
@@ -398,6 +410,8 @@
                      completion:^(BOOL finished) {
                          
                          inMenu = YES;
+//                         statusBarVisible = YES;
+//                         [self setNeedsStatusBarAppearanceUpdate];
 
                      }];
     
@@ -645,7 +659,8 @@
     
 //    self.res = [self searchBooks:[NSString stringWithFormat:@"'%@'", text]];
     self.res = [self searchBooks:text];
-//    NSLog(@"res = %@", self.res);
+    //    NSLog(@"res = %@", self.res);
+//    NSLog(@"res = %d", self.res.count);
 
     UIView* noresv = [self.innerView viewWithTag:NORESULTS_TAG];
     [noresv removeFromSuperview];
@@ -720,6 +735,7 @@
         sres.frame = CGRectMake(f.origin.x, sbar.frame.origin.y + 45, f.size.width, [self getHeightForLinesCount:(int)self.res.count]);
         
         self.scrollHeight.constant = sbar.frame.origin.y + ((sres.frame.size.height > 460)?sres.frame.size.height:460) + 40;
+//        NSLog(@"h1 = %f", self.scrollHeight.constant);
 
     }
 }
@@ -826,6 +842,7 @@
     }
 
     self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT1;
+//    NSLog(@"h2 = %f", self.scrollHeight.constant);
 
     UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
     float d = [self getYdiff:n];
@@ -1026,6 +1043,7 @@
                          scrollView.contentOffset = CGPointMake(p.x, val);
                          
                          self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT1 - topgap;
+//                         NSLog(@"h3 = %f", self.scrollHeight.constant);
 
                      }];
     
@@ -1114,6 +1132,7 @@
 //    float topgap = lines1 * SEARCHRES_LINE_HEIGHT;
     float topgap = [self getHeightForLinesCount:lines1];
     self.scrollHeight.constant = self.scrollHeight.constant + lines * SEARCHRES_LINE_HEIGHT1 - topgap;
+//    NSLog(@"h4 = %f", self.scrollHeight.constant);
     UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
     float d = [self getYdiff:n];
     CGPoint p = scrollView.contentOffset;
@@ -1250,6 +1269,7 @@
     sres.frame = CGRectMake(f.origin.x, f.origin.y, f.size.width, f.size.height - lines * SEARCHRES_LINE_HEIGHT1);
 
     self.scrollHeight.constant = self.scrollHeight.constant - lines * SEARCHRES_LINE_HEIGHT1;
+//    NSLog(@"h5 = %f", self.scrollHeight.constant);
 
     [UIView animateWithDuration:(n < -1)?0:(SPREADLIST_DELAY * lines) delay:0.0 options:UIViewAnimationOptionCurveEaseIn|UIViewAnimationOptionAllowUserInteraction|UIViewKeyframeAnimationOptionBeginFromCurrentState
                      animations:^{
@@ -1330,7 +1350,15 @@
 //    [self hideMenu];
 
     [self performSelector:@selector(closeMC) withObject:nil afterDelay:0.5f];
+    [self performSelector:@selector(closeMC1) withObject:nil afterDelay:0.6f];
     [self hideMenu];
+
+}
+
+- (void) closeMC1 {
+    
+    UIScrollView* scrollView = (UIScrollView*)[self.view viewWithTag:SCROLL_TAG];
+    scrollView.contentOffset = CGPointZero;
 
 }
 
@@ -1343,6 +1371,12 @@
 
 - (void) refreshNoRes:(BOOL)anim {
 
+    
+//    NSLog(@"res = %d", self.res.count);
+
+    if(self.res.count)
+        return;
+    
     UIView* nores = [self.innerView viewWithTag:NORESULTS_TAG];
 
     UIView* sbar = [self.innerView viewWithTag:SEARCHBAR_TAG];
@@ -1366,6 +1400,7 @@
                      }];
 
     self.scrollHeight.constant = sbar.frame.origin.y - 40 + [self getScreenHeight];
+//    NSLog(@"h6 = %f", self.scrollHeight.constant);
 
 }
 
@@ -1419,6 +1454,9 @@
 
     NSString* path = [self getPathForBook:bnn andChapter:nn];
     [self myNavigate:path];
+
+    [self performSelector:@selector(closeMC1) withObject:nil afterDelay:0.6f];
+
     [self hideMenu];
 
 }
